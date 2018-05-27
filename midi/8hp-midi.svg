@@ -1,0 +1,268 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="40.300mm" height="128.400mm" version="1.1"
+     viewBox="0 0 40.300 128.400"
+     xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink" 
+     xmlns:fpd="http://www.schaeffer-ag.de">
+  <desc>Created with the Front Panel Designer by the export of the file '8hp-midi.fpd'.</desc>
+  <defs>
+    <pattern id="revside-fill" x="1" y="1" width="1.5" height="1.5" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="1" y2="1" style="stroke-width:0.2; stroke:black; stroke-dasharray:none;" />
+      <line x1="0" y1="1" x2="1" y2="0" style="stroke-width:0.2; stroke:black; stroke-dasharray:none;" />
+    </pattern>
+    <pattern id="revside-fill-silver" x="1" y="1" width="1.5" height="1.5" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="1.5" y2="1.5" style="stroke-width:0.2; stroke:#e0e0e0; stroke-dasharray:none;" />
+      <line x1="0" y1="1.5" x2="1.5" y2="0" style="stroke-width:0.2; stroke:#e0e0e0; stroke-dasharray:none;" />
+    </pattern>
+  </defs>
+<g transform="scale(1,-1) translate(0, -128.400)" 
+   fill-rule="evenodd"
+   style="stroke-linecap:round; stroke-linejoin:round; stroke-opacity:1.0; stroke-opacity:1.0;">
+<path d="
+M40.300 128.400
+L40.300 0.000
+L0.000 0.000
+L0.000 128.400
+L40.300 128.400
+" 
+fill="#cccccc" vector-effect="non-scaling-stroke" stroke="#000000" stroke-width="0.100mm" />
+<path d="
+M6.000 125.500
+A1.500,1.500 0 1,0 9.000,125.500
+A1.500,1.500 0 1,0 6.000,125.500
+" 
+fill="#ffffff" vector-effect="non-scaling-stroke" stroke="#000000" stroke-width="0.100mm" />
+<path d="
+M6.000 3.000
+A1.500,1.500 0 1,0 9.000,3.000
+A1.500,1.500 0 1,0 6.000,3.000
+" 
+fill="#ffffff" vector-effect="non-scaling-stroke" stroke="#000000" stroke-width="0.100mm" />
+<path d="
+M13.250 94.952
+A7.250,7.250 0 1,0 27.750,94.952
+A7.250,7.250 0 1,0 13.250,94.952
+" 
+fill="#ffffff" vector-effect="non-scaling-stroke" stroke="#000000" stroke-width="0.100mm" />
+<path d="
+M8.021 94.952
+A1.229,1.229 0 1,0 10.479,94.952
+A1.229,1.229 0 1,0 8.021,94.952
+" 
+fill="#ffffff" vector-effect="non-scaling-stroke" stroke="#000000" stroke-width="0.100mm" />
+<path d="
+M10.750 94.952
+A1.500,1.500 0 1,1 9.250,93.452
+" 
+fill="none" vector-effect="non-scaling-stroke" stroke="#000000" stroke-width="0.100mm" />
+<path d="
+M30.521 94.952
+A1.229,1.229 0 1,0 32.979,94.952
+A1.229,1.229 0 1,0 30.521,94.952
+" 
+fill="#ffffff" vector-effect="non-scaling-stroke" stroke="#000000" stroke-width="0.100mm" />
+<path d="
+M33.250 94.952
+A1.500,1.500 0 1,1 31.750,93.452
+" 
+fill="none" vector-effect="non-scaling-stroke" stroke="#000000" stroke-width="0.100mm" />
+<path d="
+M13.250 64.000
+A7.250,7.250 0 1,0 27.750,64.000
+A7.250,7.250 0 1,0 13.250,64.000
+" 
+fill="#ffffff" vector-effect="non-scaling-stroke" stroke="#000000" stroke-width="0.100mm" />
+<path d="
+M8.021 64.000
+A1.229,1.229 0 1,0 10.479,64.000
+A1.229,1.229 0 1,0 8.021,64.000
+" 
+fill="#ffffff" vector-effect="non-scaling-stroke" stroke="#000000" stroke-width="0.100mm" />
+<path d="
+M10.750 64.000
+A1.500,1.500 0 1,1 9.250,62.500
+" 
+fill="none" vector-effect="non-scaling-stroke" stroke="#000000" stroke-width="0.100mm" />
+<path d="
+M30.521 64.000
+A1.229,1.229 0 1,0 32.979,64.000
+A1.229,1.229 0 1,0 30.521,64.000
+" 
+fill="#ffffff" vector-effect="non-scaling-stroke" stroke="#000000" stroke-width="0.100mm" />
+<path d="
+M33.250 64.000
+A1.500,1.500 0 1,1 31.750,62.500
+" 
+fill="none" vector-effect="non-scaling-stroke" stroke="#000000" stroke-width="0.100mm" />
+<path d="
+M13.250 33.048
+A7.250,7.250 0 1,0 27.750,33.048
+A7.250,7.250 0 1,0 13.250,33.048
+" 
+fill="#ffffff" vector-effect="non-scaling-stroke" stroke="#000000" stroke-width="0.100mm" />
+<path d="
+M8.021 33.048
+A1.229,1.229 0 1,0 10.479,33.048
+A1.229,1.229 0 1,0 8.021,33.048
+" 
+fill="#ffffff" vector-effect="non-scaling-stroke" stroke="#000000" stroke-width="0.100mm" />
+<path d="
+M10.750 33.048
+A1.500,1.500 0 1,1 9.250,31.548
+" 
+fill="none" vector-effect="non-scaling-stroke" stroke="#000000" stroke-width="0.100mm" />
+<path d="
+M30.521 33.048
+A1.229,1.229 0 1,0 32.979,33.048
+A1.229,1.229 0 1,0 30.521,33.048
+" 
+fill="#ffffff" vector-effect="non-scaling-stroke" stroke="#000000" stroke-width="0.100mm" />
+<path d="
+M33.250 33.048
+A1.500,1.500 0 1,1 31.750,31.548
+" 
+fill="none" vector-effect="non-scaling-stroke" stroke="#000000" stroke-width="0.100mm" />
+<path d="
+M40.300 128.400
+L40.300 0.000
+L0.000 0.000
+L0.000 128.400
+L40.300 128.400
+" 
+fill="none" vector-effect="non-scaling-stroke" stroke="#000000" stroke-width="0.100mm" />
+<path d="
+M-1.000 0.000
+L1.000 0.000
+M0.000 -1.000
+L0.000 1.000
+" 
+fill="none" vector-effect="non-scaling-stroke" stroke="#ff0000" stroke-width="0.100mm" />
+<path d="
+M6.500 125.500
+L8.500 125.500
+M7.500 124.500
+L7.500 126.500
+" 
+fill="none" vector-effect="non-scaling-stroke" stroke="#ff0000" stroke-width="0.100mm" />
+<path d="
+M6.500 3.000
+L8.500 3.000
+M7.500 2.000
+L7.500 4.000
+" 
+fill="none" vector-effect="non-scaling-stroke" stroke="#ff0000" stroke-width="0.100mm" />
+<path d="
+M19.500 94.952
+L21.500 94.952
+M20.500 93.952
+L20.500 95.952
+" 
+fill="none" vector-effect="non-scaling-stroke" stroke="#808080" stroke-width="0.100mm" />
+<path d="
+M8.250 94.952
+L10.250 94.952
+M9.250 93.952
+L9.250 95.952
+" 
+fill="none" vector-effect="non-scaling-stroke" stroke="#00d000" stroke-width="0.100mm" />
+<path d="
+M30.750 94.952
+L32.750 94.952
+M31.750 93.952
+L31.750 95.952
+" 
+fill="none" vector-effect="non-scaling-stroke" stroke="#00d000" stroke-width="0.100mm" />
+<path d="
+M19.500 94.952
+L21.500 94.952
+M20.500 93.952
+L20.500 95.952
+" 
+fill="none" vector-effect="non-scaling-stroke" stroke="#808080" stroke-width="0.100mm" />
+<path d="
+M19.500 94.952
+L21.500 94.952
+M20.500 93.952
+L20.500 95.952
+" 
+fill="none" vector-effect="non-scaling-stroke" stroke="#00d000" stroke-width="0.100mm" />
+<path d="
+M19.500 64.000
+L21.500 64.000
+M20.500 63.000
+L20.500 65.000
+" 
+fill="none" vector-effect="non-scaling-stroke" stroke="#808080" stroke-width="0.100mm" />
+<path d="
+M8.250 64.000
+L10.250 64.000
+M9.250 63.000
+L9.250 65.000
+" 
+fill="none" vector-effect="non-scaling-stroke" stroke="#00d000" stroke-width="0.100mm" />
+<path d="
+M30.750 64.000
+L32.750 64.000
+M31.750 63.000
+L31.750 65.000
+" 
+fill="none" vector-effect="non-scaling-stroke" stroke="#00d000" stroke-width="0.100mm" />
+<path d="
+M19.500 64.000
+L21.500 64.000
+M20.500 63.000
+L20.500 65.000
+" 
+fill="none" vector-effect="non-scaling-stroke" stroke="#808080" stroke-width="0.100mm" />
+<path d="
+M19.500 64.000
+L21.500 64.000
+M20.500 63.000
+L20.500 65.000
+" 
+fill="none" vector-effect="non-scaling-stroke" stroke="#00d000" stroke-width="0.100mm" />
+<path d="
+M19.500 33.048
+L21.500 33.048
+M20.500 32.048
+L20.500 34.048
+" 
+fill="none" vector-effect="non-scaling-stroke" stroke="#808080" stroke-width="0.100mm" />
+<path d="
+M8.250 33.048
+L10.250 33.048
+M9.250 32.048
+L9.250 34.048
+" 
+fill="none" vector-effect="non-scaling-stroke" stroke="#00d000" stroke-width="0.100mm" />
+<path d="
+M30.750 33.048
+L32.750 33.048
+M31.750 32.048
+L31.750 34.048
+" 
+fill="none" vector-effect="non-scaling-stroke" stroke="#00d000" stroke-width="0.100mm" />
+<path d="
+M19.500 33.048
+L21.500 33.048
+M20.500 32.048
+L20.500 34.048
+" 
+fill="none" vector-effect="non-scaling-stroke" stroke="#808080" stroke-width="0.100mm" />
+<path d="
+M19.500 33.048
+L21.500 33.048
+M20.500 32.048
+L20.500 34.048
+" 
+fill="none" vector-effect="non-scaling-stroke" stroke="#00d000" stroke-width="0.100mm" />
+<path d="
+M19.500 64.000
+L21.500 64.000
+M20.500 63.000
+L20.500 65.000
+" 
+fill="none" vector-effect="non-scaling-stroke" stroke="#ff0000" stroke-width="0.100mm" />
+</g>
+</svg>
