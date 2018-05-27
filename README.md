@@ -3,7 +3,30 @@ A set of eurorack compatible panels for electronics components
 
 arduino and teensy micro-controller boards
 
-<table><tr><td>
+<table>
+<tr>
+<td>
+USB host & device panel
+</td>
+      
+<td>
+3 x neutrik xlr 1/4" audio jack panel 
+</td>
+      
+<td>
+Teensy guitar audio pro shield panel
+</td>
+      
+<td>
+midi
+</td>
+      
+<td>
+1.4" TFT display
+</td>
+</tr>
+
+<tr><td>
       
 ![teensy midi eurorack adapter](https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/usb/12hp-usb-host-A-and-type-B.svg?sanitize=true "teensy midi eurorack adapter") 
 
