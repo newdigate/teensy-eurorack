@@ -2330,6 +2330,24 @@ A1.600,1.600 0 1,0 14.400,38.250
 " 
 fill="#ffffff" vector-effect="non-scaling-stroke" stroke="#000000" stroke-width="0.100mm" />
 <path d="
+M20.000 75.000
+A5.000,5.000 0 1,0 30.000,75.000
+A5.000,5.000 0 1,0 20.000,75.000
+" 
+fill="#ffffff" vector-effect="non-scaling-stroke" stroke="#000000" stroke-width="0.100mm" />
+<path d="
+M20.000 55.000
+A5.000,5.000 0 1,0 30.000,55.000
+A5.000,5.000 0 1,0 20.000,55.000
+" 
+fill="#ffffff" vector-effect="non-scaling-stroke" stroke="#000000" stroke-width="0.100mm" />
+<path d="
+M20.000 95.000
+A5.000,5.000 0 1,0 30.000,95.000
+A5.000,5.000 0 1,0 20.000,95.000
+" 
+fill="#ffffff" vector-effect="non-scaling-stroke" stroke="#000000" stroke-width="0.100mm" />
+<path d="
 M80.940 128.400
 L80.940 0.000
 L0.000 0.000
@@ -2419,6 +2437,34 @@ M37.750 102.000
 L39.750 102.000
 M38.750 101.000
 L38.750 103.000
+" 
+fill="none" vector-effect="non-scaling-stroke" stroke="#ff0000" stroke-width="0.100mm" />
+<path d="
+M24.000 75.000
+L26.000 75.000
+M25.000 74.000
+L25.000 76.000
+" 
+fill="none" vector-effect="non-scaling-stroke" stroke="#00d000" stroke-width="0.100mm" />
+<path d="
+M24.000 55.000
+L26.000 55.000
+M25.000 54.000
+L25.000 56.000
+" 
+fill="none" vector-effect="non-scaling-stroke" stroke="#00d000" stroke-width="0.100mm" />
+<path d="
+M24.000 95.000
+L26.000 95.000
+M25.000 94.000
+L25.000 96.000
+" 
+fill="none" vector-effect="non-scaling-stroke" stroke="#00d000" stroke-width="0.100mm" />
+<path d="
+M24.000 75.000
+L26.000 75.000
+M25.000 74.000
+L25.000 76.000
 " 
 fill="none" vector-effect="non-scaling-stroke" stroke="#ff0000" stroke-width="0.100mm" />
 </g>
