@@ -6,15 +6,15 @@ arduino and teensy micro-controller boards
 <table>
 <tr>
 <td>
-USB host & device panel
+USB host & device 
 </td>
       
 <td>
-3 x neutrik xlr 1/4" audio jack panel 
+neutrik audio jack  
 </td>
       
 <td>
-Teensy guitar audio pro shield panel
+guitar audio pro shield 
 </td>
       
 <td>
