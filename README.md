@@ -28,7 +28,10 @@ midi
 <td>
 2.8" TFT display
 </td>
-
+<td>
+      
+100 x 80mm pcb
+</td>
 </tr>
 
 <tr><td>
@@ -56,6 +59,8 @@ midi
 ![teensy 2.8" tft display adapter](https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/tft/ili9341/2.8-inch/20hp-tft-2.8inch-ili9341-horiz-w-7-rot-enc.svg?sanitize=true "teensy 2.8 inch 320 x 240 16bit color tft display adapter") 
      
 </td><td>
+      
+![Teensy 100 x 80mm pcb adapter panel](https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/100x80mm-pcb/20hp-std-80-x-100-pcb.svg?sanitize=true "Teensy 100 x 80mm pcb adapter panel")
       
 </td></tr></table>
 
