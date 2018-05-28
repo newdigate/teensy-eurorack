@@ -1,5 +1,5 @@
 # teensy eurorack bits
-A set of eurorack compatible panels for electronics components
+A set of eurorack compatible panels for electronics component for interfacing with arduino / teensy micro controller boards.
 
 arduino and teensy micro-controller boards
 
