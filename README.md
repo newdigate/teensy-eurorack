@@ -51,6 +51,11 @@ midi
 
 
 ## templates
-I found these euro rack templates here, saved tons of work...
+I found these euro rack templates very useful: https://github.com/yorkmodular/eurorack-blanks
 
-https://github.com/yorkmodular/eurorack-blanks
+# hardware
+* teensy 3.6 board
+  * https://www.pjrc.com/store/teensy36.html
+* blackaddr guitar audio pro shield
+  * http://blackaddr.com/products/
+* 1.44 Inch Mini SPI TFT LCD Module Display PCB Adapter ST7735 For Arduino
