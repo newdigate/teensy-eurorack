@@ -54,10 +54,32 @@ midi
 I found these euro rack templates very useful: https://github.com/yorkmodular/eurorack-blanks
 
 # hardware
-* teensy 3.6 board
-  * https://www.pjrc.com/store/teensy36.html
-  
+
+<table>
+<tr>
+<td>
+teensy 3.6 board
+</td>
+</tr>
+      
+<tr>
+<td>
+
 ![teensy 3.6 board](https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/teensy3.6/teensy3.6.svg?sanitize=true "teensy 3.6 board")
+
+</td>
+</tr>   
+
+<tr>
+<td>
+
+https://www.pjrc.com/store/teensy36.html
+
+</td>
+</tr>      
+      
+</table>
+
 
 * blackaddr guitar audio pro shield
   * http://blackaddr.com/products/
