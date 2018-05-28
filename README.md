@@ -1,7 +1,6 @@
 # teensy eurorack bits
-A set of eurorack panels for interfacing electronics components with arduino / teensy micro-controllers.
+A set of eurorack panels for interfacing electronics components with arduino & teensy micro-controllers.
 
-arduino and teensy micro-controller boards
 
 <table>
 <tr>
