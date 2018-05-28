@@ -56,7 +56,11 @@ I found these euro rack templates very useful: https://github.com/yorkmodular/eu
 # hardware
 * teensy 3.6 board
   * https://www.pjrc.com/store/teensy36.html
+  
+![teensy 3.6 board](https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/teensy3.6/teensy3.6.svg?sanitize=true "teensy 3.6 board")
+
 * blackaddr guitar audio pro shield
   * http://blackaddr.com/products/
 * 1.44 Inch Mini SPI TFT LCD Module Display PCB Adapter ST7735 For Arduino
-  * ![128x128 16bit color oled display](https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/tft/st7735/1.44-inch/st7735.svg?sanitize=true "128x128 16bit color oled display")
+
+![128x128 16bit color oled display](https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/tft/st7735/1.44-inch/st7735.svg?sanitize=true "128x128 16bit color oled display")
