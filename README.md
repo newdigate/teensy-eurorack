@@ -31,6 +31,10 @@ midi
       
 100 x 80mm pcb
 </td>
+<td>
+      
+1.4" TFT display
+</td>
 </tr>
 
 <tr><td>
@@ -60,6 +64,10 @@ midi
 </td><td>
       
 ![Teensy 100 x 80mm pcb adapter panel](https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/100x80mm-pcb/20hp-std-80-x-100-pcb.svg?sanitize=true "Teensy 100 x 80mm pcb adapter panel")
+      
+</td><td>
+      
+![1.44" inch tft adapter panel](https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/ST7735-128x128-plus-3x-rotary-encoders/12hp-1.44-ST7735-128x128-3xRotaryEncoders.svg?sanitize=true "1.44 tft adapter panel")
       
 </td></tr></table>
 
