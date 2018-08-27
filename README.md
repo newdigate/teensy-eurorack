@@ -16,3 +16,5 @@ Ideally, I'd like to create a low-cost gereric, programmable do-it-yourself modu
 ![ubuntu v1.01](https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/panels/Ubuntu/20hp-Ubuntu-instruments-number-one.svg?sanitize=true "ubuntu panel v1.01")
 
 ![ubuntu](https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/images/IMG_0633.png "ubuntu panel v1.01 photo")
+
+![ubuntu breakout schematic v1.01](https://raw.githubusercontent.com/newdigate/teensy-eurorack/hardware/eagle/ubuntu/images/Teensy36-ubuntu-breakout.schematic.png "ubuntu breakout schematic v1.01 ")
