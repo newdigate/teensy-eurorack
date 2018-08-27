@@ -1,6 +1,8 @@
 # teensy eurorack panels
 A set of eurorack panels for interfacing electronics components with arduino & teensy micro-controllers.
 
+These panels can be editing with *front panel designer* from [schaeffer-ag](http://www.schaeffer-ag.de/en/?gclid=CjwKCAjwwo7cBRBwEiwAMEoXPFV4fpJwvyvBip12mp_U6h2d5823qmEFYOU77nxH6iZmHfyRocOOcxoC7hMQAvD_BwE)
+
 ## ubuntu panel
  * Version 1.01
    * A generic panel based on eurorack specification, integrating standard components which I use regularly.
