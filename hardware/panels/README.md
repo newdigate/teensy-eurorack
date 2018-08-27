@@ -87,36 +87,4 @@ midi
       
 </td></tr></table>
 
-# hardware
 
-<table>
-<tr>
-<td>
-teensy 3.6 board
-</td>
-</tr>
-      
-<tr>
-<td>
-
-![teensy 3.6 board](https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/panels/teensy3.6/teensy3.6.svg?sanitize=true "teensy 3.6 board")
-
-</td>
-</tr>   
-
-<tr>
-<td>
-
-https://www.pjrc.com/store/teensy36.html
-
-</td>
-</tr>      
-      
-</table>
-
-
-* blackaddr guitar audio pro shield
-  * http://blackaddr.com/products/
-* 1.44 Inch Mini SPI TFT LCD Module Display PCB Adapter ST7735 For Arduino
-
-![128x128 16bit color oled display](https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/panels/tft/st7735/1.44-inch/st7735.svg?sanitize=true "128x128 16bit color oled display")
