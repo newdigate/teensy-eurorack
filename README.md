@@ -12,12 +12,11 @@ Ideally, I'd like to create a low-cost gereric, programmable do-it-yourself modu
 ### hardware
  * [teensy 3.6 board](https://www.pjrc.com/store/teensy36.html "teensy 3.6 board")
    * ![teensy 3.6 board](https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/panels/teensy3.6/teensy3.6.svg?sanitize=true "teensy 3.6 board")
- * blackaddr guitar audio pro shield
-   * http://blackaddr.com/products/
- * custom breakout board circuit and pcb [here](/hardware/eagle "custom breakout board circuit and pcb") - optional
- * 1.44 Inch Mini SPI TFT LCD Module Display PCB Adapter ST7735 - optional
+ * [blackaddr guitar audio pro shield](http://blackaddr.com/products/)
+ * custom breakout board circuit and pcb [here](/hardware/eagle "custom breakout board circuit and pcb") 
+ * 1.44 Inch Mini SPI TFT LCD Module Display PCB Adapter ST7735 
    * ![128x128 16bit color oled display](https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/panels/tft/st7735/1.44-inch/st7735.svg?sanitize=true "128x128 16bit color oled display")
- * panels [here](/hardware/panels "eurorack panels") optional
+ * panels [here](/hardware/panels "eurorack panels")
  
  ### images
 <img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/images/IMG_0633.png" width="450px"/>
