@@ -3,7 +3,6 @@ A set of eurorack panels for interfacing electronics components with arduino & t
 
 ## ubuntu panel
  * Version 1.01
-   * ![ubuntu v1.01](https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/Ubuntu/20hp-Ubuntu-instruments-number-one.svg?sanitize=true "ubuntu panel v1.01")
    * A generic panel based on eurorack specification
    * Components:
      * BlackAddr Teensy Guitar Audio Pro shield (Audio in/thru/out)
@@ -13,6 +12,8 @@ A set of eurorack panels for interfacing electronics components with arduino & t
      * Midi in/out breakout
      * USB device and USB Host connection breakouts
      * 4 rotary encoder / switch components
+
+![ubuntu v1.01](https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/Ubuntu/20hp-Ubuntu-instruments-number-one.svg?sanitize=true "ubuntu panel v1.01")
 
 ## lagacy panels
 <table>
