@@ -1,6 +1,6 @@
 # Teensy eurorack experiments
 
-An evolution of electronic audio experiments involving circuits, pcbs &amp; panels for teensy 3.6 micro-controllers. 
+An evolution of electronic audio experiments involving firmware, circuits, pcbs &amp; panels for teensy 3.6 micro-controllers. 
 
 **Strictly speaking, its not eurorack, yet!** Eventually, I will interface with CV and trigger/gate. And currently the audio jacks are 1/4" stereo TRS jacks! 
 
