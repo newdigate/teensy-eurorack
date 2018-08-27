@@ -1,6 +1,6 @@
 # Teensy eurorack experiments
 
-An evolution of analog/digital audio experiments involving firmware, circuits, pcbs &amp; panels for teensy 3.6 micro-controllers. 
+This repository is an evolution of analog/digital audio experiments involving firmware, circuits, pcbs &amp; panels for teensy 3.6 micro-controllers. 
 
 **Strictly speaking, its not eurorack, yet!** 
 
