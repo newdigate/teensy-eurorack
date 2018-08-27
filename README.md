@@ -2,7 +2,7 @@
 
 An evolution of electronic audio experiments involving circuits, pcbs &amp; panels for teensy 3.6 micro-controllers. 
 
-Strictly speaking, its not eurorack, yet. I am working on CV and trigger/gate interfacing. And the audio jacks are 1/4" stereo TRS jacks! 
+**Strictly speaking, its not eurorack, yet!** Eventually, I will interface with CV and trigger/gate. And currently the audio jacks are 1/4" stereo TRS jacks! 
 
 Ideally, I'd like to create a low-cost gereric, programmable do-it-yourself modular audio component. 
 
