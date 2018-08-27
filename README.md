@@ -1,6 +1,9 @@
-# teensy eurorack bits
+# teensy eurorack panels
 A set of eurorack panels for interfacing electronics components with arduino & teensy micro-controllers.
 
+# ubuntu panel
+ * Version 1.01
+   * ![ubuntu v1.01](https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/Ubuntu/20hp-Ubuntu-instruments-number-one.svg?sanitize=true "ubuntu panel v1.01")
 
 <table>
 <tr>
@@ -70,10 +73,6 @@ midi
 ![1.44" inch tft adapter panel](https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/ST7735-128x128-plus-3x-rotary-encoders/12hp-1.44-ST7735-128x128-3xRotaryEncoders.svg?sanitize=true "1.44 tft adapter panel")
       
 </td></tr></table>
-
-
-## templates
-I found these euro rack templates very useful: https://github.com/yorkmodular/eurorack-blanks
 
 # hardware
 
