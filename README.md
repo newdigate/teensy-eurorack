@@ -20,8 +20,8 @@ Ideally, I'd like to create a low-cost gereric, programmable do-it-yourself modu
  * panels [here](/hardware/panels "eurorack panels")
  
  ### images
-<img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/images/IMG_0633.png" height="250px"/>
+<img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/images/IMG_0633.png" width="450px"/>
 
-<img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/eagle/ubuntu/images/Teensy36-ubuntu-breakout.schematic.png" height="250px"/>
+<img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/eagle/ubuntu/images/Teensy36-ubuntu-breakout.schematic.png" width="450px"/>
 
-<img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/panels/Ubuntu/20hp-Ubuntu-instruments-number-one.svg?sanitize=true" height="250px"/>
+<img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/panels/Ubuntu/20hp-Ubuntu-instruments-number-one.svg?sanitize=true" width="450px"/>
