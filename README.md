@@ -1,4 +1,4 @@
-# teensy-eurorack
+# Teensy eurorack experiments
 
 An evolution of electronic audio experiments involving circuits, pcbs &amp; panels for teensy 3.6 micro-controllers. 
 
