@@ -3,7 +3,7 @@ A set of eurorack panels for interfacing electronics components with arduino & t
 
 ## ubuntu panel
  * Version 1.01
-   * A generic panel based on eurorack specification
+   * A generic panel based on eurorack specification, integrating standard components which I use regularly.
    * Components:
      * BlackAddr Teensy Guitar Audio Pro shield (Audio in/thru/out)
      * Teensy 3.6 dev board, with sd card socket
