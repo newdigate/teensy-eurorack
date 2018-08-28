@@ -1,4 +1,4 @@
-# ubuntu custom breakout board
+# ubuntu breakout board
 * pcb, top & bottom
 
 <img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/ubuntu/images/teensy36-ubuntu-breakout-top.png" width="300px"/>
