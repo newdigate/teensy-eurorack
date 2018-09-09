@@ -27,4 +27,4 @@ Ideally, I'd like to create a low-cost gereric, programmable do-it-yourself modu
 
 <img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/ubuntu/eagle/ubuntu/images/Teensy36-ubuntu-breakout.schematic.png" width="450px"/>
 
-<img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/ubuntu/panels/20hp-Ubuntu-instruments-number-one.svg?sanitize=true" width="300px"/>
+<img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/ubuntu/panels/Ubuntu/20hp-Ubuntu-instruments-number-one.svg?sanitize=true" width="300px"/>
