@@ -1,12 +1,12 @@
 # Teensy eurorack experiments
 
 This repository is a work-in-progress evolution of analog/digital audio experiments for teensy 3.6 micro-controllers involving 
-* firmware 
+* firmware/applications
 * circuits
-* pcbs 
-* panels 
+* printed circuit board designs 
+* eurorack panel designs
 
-**Strictly speaking, its not eurorack, yet!** 
+**Strictly speaking, its not eurorack, yet!** Currently this project only uses the euro-rack form factor and power supply connector.
 
 Currently this project does not interface with CV and trigger/gate. And the audio jacks are 1/4" stereo TRS jacks! But hopefully soon I would like to drive these devices with CV voltages and gates logic...
 
