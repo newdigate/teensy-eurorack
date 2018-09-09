@@ -8,7 +8,7 @@ This repository is an evolution of analog/digital audio experiments for teensy 3
 
 **Strictly speaking, its not eurorack, yet!** 
 
-Eventually, I will interface with CV and trigger/gate. And currently the audio jacks are 1/4" stereo TRS jacks! 
+Currently this project does not interface with CV and trigger/gate. And the audio jacks are 1/4" stereo TRS jacks! But hopefully soon I would like to drive these devices with CV voltages and gates logic...
 
 Ideally, I'd like to create a low-cost gereric, programmable do-it-yourself modular audio component. 
 
