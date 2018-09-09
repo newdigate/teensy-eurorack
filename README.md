@@ -1,7 +1,7 @@
 # Teensy eurorack experiments
 
-This repository is an evolution of analog/digital audio experiments for teensy 3.6 micro-controllers involving 
-* firmware
+This repository is a work-in-progress evolution of analog/digital audio experiments for teensy 3.6 micro-controllers involving 
+* firmware 
 * circuits
 * pcbs 
 * panels 
