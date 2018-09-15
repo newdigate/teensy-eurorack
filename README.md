@@ -12,7 +12,7 @@ Currently this project does not interface with CV and trigger/gate. And the audi
 
 Ideally, I'd like to create a low-cost gereric, programmable do-it-yourself modular audio component. 
 
-## Ubuntu instrument, 
+## Ubuntu instrument 
 ### revision 1.01
 This is my first attempt to create a generic microcontroller with an audio card using eurorack form factor. I am using tip-tip audio rails as a chassis and as power source.
 #### eurorack panel
