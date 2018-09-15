@@ -18,7 +18,11 @@ This is my first attempt to create a generic microcontroller with an audio card 
 #### eurorack panel
 <img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/ubuntu/images/20hp-Ubuntu-instruments-number-one.PNG" width="200px"/>
 
-#### hardware requirements
+### revision 2.00
+<img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/ubuntu-v2.0/panels/images/20hp-Ubuntu-instruments-number-two-2.png" width="200px"/>
+
+
+### hardware requirements
  * [1 x teensy 3.6 board](https://www.pjrc.com/store/teensy36.html "teensy 3.6 board")
    * ![teensy 3.6 board](https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/ubuntu/panels/teensy3.6/teensy3.6.svg?sanitize=true "teensy 3.6 board")
  * [1 x blackaddr guitar audio pro shield](http://blackaddr.com/products/)
