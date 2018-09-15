@@ -12,10 +12,13 @@ Currently this project does not interface with CV and trigger/gate. And the audi
 
 Ideally, I'd like to create a low-cost gereric, programmable do-it-yourself modular audio component. 
 
-## Ubuntu instrument, revision 1.01
+## Ubuntu instrument, 
+### revision 1.01
 This is my first attempt to create a generic microcontroller with an audio card using eurorack form factor. I am using tip-tip audio rails as a chassis and as power source.
+#### eurorack panel
+<img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/ubuntu/images/20hp-Ubuntu-instruments-number-one.PNG" width="350px"/>
 
-### hardware requirements
+#### hardware requirements
  * [1 x teensy 3.6 board](https://www.pjrc.com/store/teensy36.html "teensy 3.6 board")
    * ![teensy 3.6 board](https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/ubuntu/panels/teensy3.6/teensy3.6.svg?sanitize=true "teensy 3.6 board")
  * [1 x blackaddr guitar audio pro shield](http://blackaddr.com/products/)
