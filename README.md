@@ -13,13 +13,37 @@ Currently this project does not interface with CV and trigger/gate. And the audi
 Ideally, I'd like to create a low-cost gereric, programmable do-it-yourself modular audio component. 
 
 ## Ubuntu instrument 
+
+<table> 
+  <tr>
+    <td>
+      <a href="https://github.com/newdigate/teensy-eurorack/tree/master/hardware/ubuntu">
+      panel v1
+      </a>
+    </td>
+    
+<td>
+    <a href="https://github.com/newdigate/teensy-eurorack/tree/master/hardware/ubuntu-v2.0">
+      panel v2
+  </a>
+    </td>   
+  </tr>
+
+<tr>
+<td>
+<img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/ubuntu/images/20hp-Ubuntu-instruments-number-one.PNG" width="150px"/>
+    </td>
+    
+<td>
+<img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/ubuntu-v2.0/panels/images/20hp-Ubuntu-instruments-number-two-2.png" width="150px"/>
+    </td>   
+  </tr>
+</table>
+
 ### revision 1.01
 This is my first attempt to create a generic microcontroller with an audio card using eurorack form factor. I am using tip-tip audio rails as a chassis and as power source.
-#### eurorack panel
-<img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/ubuntu/images/20hp-Ubuntu-instruments-number-one.PNG" width="200px"/>
 
 ### revision 2.00
-<img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/ubuntu-v2.0/panels/images/20hp-Ubuntu-instruments-number-two-2.png" width="200px"/>
 
 
 ### hardware requirements
