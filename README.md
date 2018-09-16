@@ -32,6 +32,7 @@ This is an attempt to create a generic/universal eurorack module with these comp
 
 </td>
 <td>
+  teensy 3.6
 </td>   
 </tr> 
   
@@ -43,6 +44,7 @@ This is an attempt to create a generic/universal eurorack module with these comp
 
 </td>
 <td>
+  ST7735 display
 </td>   
 </tr> 
     
