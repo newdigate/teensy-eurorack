@@ -12,7 +12,7 @@ This repo contains
 Ideally, I'd like to create a low-cost gereric, programmable do-it-yourself modular audio component. 
 
 ## Ubuntu instrument 
-This is an attempt to create a generic/universal eurorack module with these components
+[This](hardware/ubuntu) is an attempt to create a generic/universal eurorack module with these components:
  * [teensy 3.6 board](https://www.pjrc.com/store/teensy36.html "teensy 3.6 board")
  * Teensy guitar audio pro soundcard by [blackaddr](http://www.blackaddr.com)
    * audio input/thru/output (low impedence input, swichable gain)
