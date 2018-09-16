@@ -12,6 +12,15 @@ This repo contains
 Ideally, I'd like to create a low-cost gereric, programmable do-it-yourself modular audio component. 
 
 ## Ubuntu instrument 
+This is an attempt to create a generic/universal eurorack module with these peripherals
+ * Teensy guitar audio pro soundcard by [blackaddr](http://www.blackaddr.com)
+   * audio input/thru/output (low impedence input, swichable gain)
+   * midi in/out
+ * 1.44" 128x128 16bit color display (ST7735 chipset)
+ * USB host and USB device 
+ * 4 x rotary encoder/switch combos
+ * custom break-out pcb
+
 <table> 
   <tr>
     <td>
