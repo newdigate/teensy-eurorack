@@ -47,11 +47,7 @@ This is an attempt to create a generic/universal eurorack module with these peri
   </tr>
 </table>
 
-### revision 1.01
-This is my first attempt to create a generic microcontroller with an audio card using eurorack form factor. I am using tip-tip audio rails as a chassis and as power source.
-
-### revision 2.00
-
+I am using tip-tip audio rails as a chassis and as power source.
 
 ### bill of materials
  * [1 x teensy 3.6 board](https://www.pjrc.com/store/teensy36.html "teensy 3.6 board")
