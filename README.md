@@ -1,19 +1,17 @@
 # Teensy eurorack experiments
 
-This repository is a work-in-progress evolution of analog/digital audio experiments for teensy 3.6 micro-controllers involving 
-* firmware/applications
-* circuits
-* printed circuit board designs 
-* eurorack panel designs
+This is a work-in-progress repository of analog/digital audio experiments for teensy 3.6 micro-controllers, generally mounted on eurorack rails; 
 
-**Strictly speaking, its not eurorack, yet!** Currently this project only uses the euro-rack form factor and power supply connector.
+This repo contains 
+* source code for firmware/applications
+* circuits and printed circuit board designs created using Autodesk Eagle CAD.
+* eurorack panel designs created using [FrontPanel designer](http://www.schaeffer-ag.de/en/downloads/front_panel_designer/?no_cache=1 "Front panel designer download")
 
-Currently this project does not interface with CV and trigger/gate. And the audio jacks are 1/4" stereo TRS jacks! But hopefully soon I would like to drive these devices with CV voltages and gates logic...
+**Strictly speaking, its not eurorack, yet!** Currently, only using the euro-rack form factor and power supply connector. And the audio jacks are 1/4" stereo TRS jacks! None of these projects currently interface with CV and trigger/gate, although I hope to soon.
 
 Ideally, I'd like to create a low-cost gereric, programmable do-it-yourself modular audio component. 
 
 ## Ubuntu instrument 
-
 <table> 
   <tr>
     <td>
@@ -46,7 +44,7 @@ This is my first attempt to create a generic microcontroller with an audio card 
 ### revision 2.00
 
 
-### hardware requirements
+### bill of materials
  * [1 x teensy 3.6 board](https://www.pjrc.com/store/teensy36.html "teensy 3.6 board")
    * ![teensy 3.6 board](https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/ubuntu/panels/teensy3.6/teensy3.6.svg?sanitize=true "teensy 3.6 board")
  * [1 x blackaddr guitar audio pro shield](http://blackaddr.com/products/)
