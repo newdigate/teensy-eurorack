@@ -21,7 +21,7 @@ This instrument (version 2.0 [here](hardware/ubuntu-v2.0)) is an attempt to crea
  * USB host and USB device 
  * 4 x rotary encoder/switch combos
  * custom break-out pcb [details here](/hardware/ubuntu/eagle/ubuntu "custom breakout board circuit and pcb") 
- * euro-rack compatible front panel [details here](/hardware/ubuntu/panels/Ubuntu-v2.0 "eurorack panels")
+ * euro-rack compatible front panel [details here](https://github.com/newdigate/teensy-eurorack/tree/master/hardware/ubuntu-v2.0 "eurorack panels")
 
 <table> 
   
