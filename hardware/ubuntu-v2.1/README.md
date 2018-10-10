@@ -5,3 +5,4 @@
  
 ![ubuntu2.1](https://github.com/newdigate/teensy-eurorack/raw/master/hardware/ubuntu-v2.1/images/IMG_0013.JPG)
 ![ubuntu2.1](https://github.com/newdigate/teensy-eurorack/raw/master/hardware/ubuntu-v2.1/images/IMG_0014.JPG)
+![ubuntu2.1](https://github.com/newdigate/teensy-eurorack/raw/master/hardware/ubuntu-v2.1/circuits/teensy36-test-harness-7.png)
