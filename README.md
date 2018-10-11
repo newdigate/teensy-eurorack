@@ -79,7 +79,8 @@ This instrument (version 2.0 [here](hardware/ubuntu-v2.0)) is an attempt to crea
 <img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/ubuntu-v2.0/panels/images/20hp-Ubuntu-instruments-number-two-2.png" width="150px"/>
     </td>   
     <td>
-  <img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/ubuntu-v2.1/images/IMG_0013.JPG" width="150px"/>
+
+  <img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/ubuntu-v2.1/images/Ubuntu%20assembly%20v120.3.png" width="150px"/>
 
   </td>
     
@@ -88,10 +89,3 @@ This instrument (version 2.0 [here](hardware/ubuntu-v2.0)) is an attempt to crea
 </table>
 
 I am using tip-tip audio rails as a chassis and as power source.
-
- ### images
-<img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/ubuntu/images/IMG_0633.png" width="350px"/>
-
-<img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/ubuntu/eagle/ubuntu/images/Teensy36-ubuntu-breakout.schematic.png" width="350px"/>
-
-<img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/ubuntu/panels/Ubuntu/20hp-Ubuntu-instruments-number-one.svg?sanitize=true" width="350px"/>
