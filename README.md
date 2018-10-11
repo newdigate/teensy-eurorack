@@ -60,7 +60,14 @@ This instrument (version 2.0 [here](hardware/ubuntu-v2.0)) is an attempt to crea
     <a href="https://github.com/newdigate/teensy-eurorack/tree/master/hardware/ubuntu-v2.0">
       panel v2
   </a>
-    </td>   
+    </td>  
+    
+<td>
+    <a href="https://github.com/newdigate/teensy-eurorack/tree/master/hardware/ubuntu-v2.1">
+      panel v2.1
+  </a>
+    </td>  
+    
   </tr>
 
 <tr>
@@ -71,6 +78,12 @@ This instrument (version 2.0 [here](hardware/ubuntu-v2.0)) is an attempt to crea
 <td>
 <img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/ubuntu-v2.0/panels/images/20hp-Ubuntu-instruments-number-two-2.png" width="150px"/>
     </td>   
+    <td>
+  <img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/ubuntu-v2.1/images/IMG_0013.JPG" width="150px"/>
+
+  </td>
+    
+    
   </tr>
 </table>
 
