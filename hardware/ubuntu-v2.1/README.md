@@ -1,4 +1,5 @@
 # ubuntu instrument v2.1
+## [circuits](circuits)
 ## bom
  * teensy 3.6 board
  * blackaddr teensy guitaar audio pro shield
