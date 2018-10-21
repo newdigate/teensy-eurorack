@@ -2,7 +2,7 @@
 * mainboard 
 ![TriggersCV_Circuitry](TriggersCV_Circuitry.png)
 * jacks and midi - front panel pcb
-![TriggersAndCVs_connectors](TriggersAndCVs_connectors.png)	
+![TriggerAndCVs_connectors](TriggerAndCVs_connectors.png)	
 * rotarty encoders - front panel pcb 
 ![rotary_breakout](rotary_breakout.png)
 * sd card extender - front panel pcb)
