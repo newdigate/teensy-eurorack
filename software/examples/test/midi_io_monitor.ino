@@ -29,7 +29,7 @@ static const unsigned ledPin = 13;      // LED pin on Arduino Uno
 void setup()
 {
     Serial.begin(115200);
-    Serial.write("hello...");
+  //Serial.write("hello...");
   //setup pins with pullups
   pinMode(BUTTON1,INPUT_PULLUP);
   pinMode(BUTTON3,INPUT_PULLUP);
@@ -41,17 +41,12 @@ void setup()
   tft.setTextWrap(true);
   tft.fillScreen(ST7735_BLACK);
   tft.setTextColor(ST7735_BLUE);   
-  tft.println("Teensy midi test...2");
-  
-   // so it is called upon reception of a NoteOn.
-    MIDI.setHandleNoteOn(handleNoteOn);  // Put only the name of the function
-
-    // Do the same for NoteOffs
-    MIDI.setHandleNoteOff(handleNoteOff);
-    
-    MIDI.begin(MIDI_CHANNEL_OMNI);                      // Launch MIDI and listen to channel 4
-
-
+  tft.println("midi test...");
+  tft.setTextColor(ST7735_WHITE);   
+   
+  MIDI.setHandleNoteOn(handleNoteOn);  
+  MIDI.setHandleNoteOff(handleNoteOff);
+  MIDI.begin(MIDI_CHANNEL_OMNI);                      
 }
 
 uint8_t cursor_y = 0;
@@ -59,7 +54,7 @@ uint8_t cursor_y = 0;
 void loop()
 {
   MIDI.read();
-  if (cursor_y > 8) {
+  if (cursor_y > 15) {
     tft.fillScreen(ST7735_BLACK);
     cursor_y = 0;
     tft.setCursor(0,0);
@@ -68,21 +63,12 @@ void loop()
 
 void handleNoteOn(byte channel, byte pitch, byte velocity)
 {
-    // Do whatever you want when a note is pressed.
-
-    // Try to keep your callbacks short (no delays ect)
-    // otherwise it would slow down the loop() and have a bad impact
-    // on real-time performance.
-    //Serial.print(".");
-    tft.printf("on: %d %d %d\n", channel, pitch, velocity);
+    tft.printf("+ %02x %02x %02x\n", channel, pitch, velocity);
     cursor_y++;
 }
 
 void handleNoteOff(byte channel, byte pitch, byte velocity)
 {
-    //Serial.print("-");
-    // Do something when the note is released.
-    // Note that NoteOn messages with 0 velocity are interpreted as NoteOffs.
-    tft.printf("off: %d %d %d\n", channel, pitch, velocity);
+    tft.printf("- %02x %02x %02x\n", channel, pitch, velocity);
     cursor_y++;
 }
