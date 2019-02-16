@@ -1,5 +1,6 @@
-# Teensy eurorack experiments
+<img src='https://github.com/newdigate/teensy-eurorack/raw/master/hardware/images/Ubuntu%20assembly%20v120.3.png' width='250px'/>
 
+# Teensy eurorack experiments
 This is a work-in-progress repository of analog/digital audio experiments for teensy 3.6 micro-controllers, generally mounted on eurorack rails; 
 
 This repo contains 
