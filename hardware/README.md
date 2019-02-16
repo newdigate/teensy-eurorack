@@ -1,12 +1,30 @@
 # hardware 
 ## [circuits](circuits)
- * these circuits are not complete. 
+### 4 pcb boards
+ * adapter board
+   * connects between teensy 3.6 board and sound card (Teensy guitar audio pro by blackaddr)
+   * converts to a 40 pin flat-flexible-cable (0.5 mm) for connectivity to circuitry pcb
+ * circuitry board
+   * analog
+     * converts adc/dac input/output voltage levels
+       * teensy uses 1.2v reference
+     * voltage protection on input 
+   * digital
+     * voltage conversion 
+     * voltage protection in digital trigger inputs
+ * rotary encoder breakout board
+ * 2 x cv in/out, 2 x trigger in/out, 1 x midi in/out
+ 
+ ### todo
+ * these circuits are not complete... 
    * analog in/out 
       * need to adjust adv and dac voltages
-        * https://github.com/mattb/teensy-cv
+        * [mattb - teensy cv](https://github.com/mattb/teensy-cv)
+        * [cutlasses - GlitchDelayV2](https://raw.githubusercontent.com/cutlasses/GlitchDelayV2/master/build/v2/Bottom%20Schematic.png)
       * potentiometer input is noisy, try to add bypass caps
    * there is an air-wire on the adapter pcb which causes an issue for one of the rotaty encoders
    * need to add bypass caps to stabilize noise
+   
 ## bom
  * teensy 3.6 board
  * blackaddr teensy guitaar audio pro shield
