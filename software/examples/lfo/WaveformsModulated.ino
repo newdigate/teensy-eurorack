@@ -21,17 +21,16 @@
 #include <SPI.h>
 #include <SD.h>
 #include <SerialFlash.h>
-#include <Bounce.h>
-#include <Encoder.h>
-#include "BAGuitar.h"
-using namespace BAGuitar;
 
+#include <Encoder.h>
+#include "BALibrary.h"
+using namespace BALibrary;
 #include <Audio.h>
 #include <Wire.h>
 #include <SPI.h>
 #include <SD.h>
 #include <SerialFlash.h>
-
+//#include <Bounce.h>
 #define TFT_SCLK 14  // SCLK can also use pin 14
 #define TFT_MOSI 7  // MOSI can also use pin 7
 #define TFT_CS   6  // CS & DC can use pins 2, 6, 9, 10, 15, 20, 21, 22, 23
@@ -49,30 +48,54 @@ using namespace BAGuitar;
 ST7735_t3 tft = ST7735_t3(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
 
 // GUItool: begin automatically generated code
-AudioSynthWaveformModulated sine1;          //xy=307,132
-AudioInputI2S            i2s2;           //xy=432,240
-AudioSynthWaveformModulated waveformMod1;   //xy=528,104
-AudioRecordQueue         queue1;         //xy=704,357
-AudioMixer4              mixer1;         //xy=760,162
-AudioOutputI2S           i2s1;           //xy=917,171
+AudioSynthWaveformModulated sine1;          //xy=55,181
+AudioInputI2S            i2s2;           //xy=180,289
+AudioSynthWaveformModulated waveformMod1;   //xy=276,153
+AudioSynthWaveformDc     dc2;            //xy=411,381
+AudioSynthWaveformDc     dc1;            //xy=436,301
+AudioRecordQueue         queue1;         //xy=444,73
+AudioMixer4              mixer1;         //xy=508,211
+AudioMixer4              mixer3;         //xy=555,406
+AudioMixer4              mixer2;         //xy=584,309
+AudioOutputI2S           i2s1;           //xy=665,220
+AudioOutputAnalogStereo  dacs1;          //xy=742,362
 AudioConnection          patchCord1(sine1, 0, waveformMod1, 0);
-AudioConnection          patchCord2(i2s2, 0, mixer1, 2);
-AudioConnection          patchCord3(i2s2, 1, mixer1, 3);
-AudioConnection          patchCord4(waveformMod1, queue1);
-AudioConnection          patchCord5(waveformMod1, 0, mixer1, 0);
-AudioConnection          patchCord6(mixer1, 0, i2s1, 0);
-AudioConnection          patchCord7(mixer1, 0, i2s1, 1);
+AudioConnection          patchCord2(sine1, 0, mixer3, 0);
+AudioConnection          patchCord3(i2s2, 0, mixer1, 2);
+AudioConnection          patchCord4(i2s2, 1, mixer1, 3);
+AudioConnection          patchCord5(waveformMod1, queue1);
+AudioConnection          patchCord6(waveformMod1, 0, mixer1, 0);
+AudioConnection          patchCord7(waveformMod1, 0, mixer2, 0);
+AudioConnection          patchCord8(dc2, 0, mixer3, 1);
+AudioConnection          patchCord9(dc1, 0, mixer2, 1);
+AudioConnection          patchCord10(mixer1, 0, i2s1, 0);
+AudioConnection          patchCord11(mixer1, 0, i2s1, 1);
+AudioConnection          patchCord12(mixer3, 0, dacs1, 1);
+AudioConnection          patchCord13(mixer2, 0, dacs1, 0);
 // GUItool: end automatically generated code
 
 BAAudioControlWM8731      codecControl;
 
-Bounce button0 = Bounce(4, 15);
-Bounce button1 = Bounce(24, 15);
-Bounce button2 = Bounce(27, 15);
 
-Encoder knobLeft(2, 3);
-Encoder knobCenter(10, 16);
-Encoder knobRight(25, 26);
+
+#define ENC1A 26
+#define ENC1B 27
+#define ENC2A 29 
+#define ENC2B 30 
+#define ENC3A 36  
+#define ENC3B 37  
+
+#define BUTTON1 25  //NEXT
+#define BUTTON2 28  //Play Pause
+#define BUTTON3 32  //PREV 
+#define BUTTON4 38  //PREV 
+Bounce button0 = Bounce(BUTTON1, 15);
+Bounce button1 = Bounce(BUTTON2, 15);
+Bounce button2 = Bounce(BUTTON3, 15);
+
+Encoder knobLeft(ENC1A, ENC1B);
+Encoder knobCenter(ENC2A, ENC2B);
+Encoder knobRight(ENC3A, ENC3B);
 
 int current_waveform=0;
 int current_mod_waveform=0;
@@ -88,12 +111,14 @@ float offset_waveformMod1frequency = 261.63;
 extern const int16_t myWaveform[256];  // defined in myWaveform.ino
 
 void setup() {
+  analogReference(0);
   Serial.begin(9600);
-  pinMode(4, INPUT_PULLUP);
-  pinMode(24, INPUT_PULLUP);
-  pinMode(27, INPUT_PULLUP);
+  pinMode(BUTTON1,INPUT_PULLUP);
+  pinMode(BUTTON3,INPUT_PULLUP);
+  pinMode(BUTTON2,INPUT_PULLUP); 
 
-  delay(300);
+  
+  //delay(300);
   Serial.println("Waveform Modulation Test");
   
   // Audio connections require memory to work.  For more
@@ -127,7 +152,7 @@ void setup() {
 
   tft.initR(INITR_GREENTAB);
   tft.fillScreen(ST7735_BLACK);
-  tft.setRotation(3);
+  tft.setRotation(1);
   tft.setTextColor(ST7735_BLUE);
   tft.setTextSize(4);
   tft.println("LFO");
@@ -160,6 +185,10 @@ void setup() {
         tft.println("Sine");  
         
   queue1.begin();
+  mixer2.gain(0, 0.5);
+  mixer3.gain(0, 0.5); //0.25
+  dc1.amplitude(0);
+  dc2.amplitude(0); // 0.3
 }
 int16_t buffer[128];
 int16_t lastbuffer[128];
@@ -502,4 +531,3 @@ void loop() {
     sine1.begin(current_mod_waveform);
   }
 }
-
