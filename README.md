@@ -7,8 +7,6 @@ This repo contains
 * circuits and printed circuit board designs created using Autodesk Eagle CAD.
 * eurorack panel designs created using [FrontPanel designer](http://www.schaeffer-ag.de/en/downloads/front_panel_designer/?no_cache=1 "Front panel designer download")
 
-**Strictly speaking, its not eurorack, yet!** Currently, only using the euro-rack form factor and power supply connector. And the audio jacks are 1/4" stereo TRS jacks! None of these projects currently interface with CV and trigger/gate, although I hope to soon.
-
 Ideally, I'd like to create a low-cost gereric, programmable do-it-yourself modular audio component. 
 
 ## Ubuntu instrument 
@@ -47,43 +45,18 @@ This instrument (version 2.0 [here](hardware/ubuntu-v2.0)) is an attempt to crea
   ST7735 display
 </td>   
 </tr> 
-    
-  
-  <tr>
-    <td>
-      <a href="https://github.com/newdigate/teensy-eurorack/tree/master/hardware/ubuntu">
-      panel v1
-      </a>
-    </td>
-    
-<td>
-    <a href="https://github.com/newdigate/teensy-eurorack/tree/master/hardware/ubuntu-v2.0">
-      panel v2
-  </a>
-    </td>  
-    
-<td>
-    <a href="https://github.com/newdigate/teensy-eurorack/tree/master/hardware/ubuntu-v2.1">
-      panel v2.1
-  </a>
-    </td>  
-    
-  </tr>
 
 <tr>
-<td>
-<img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/ubuntu/images/20hp-Ubuntu-instruments-number-one.PNG" width="150px"/>
-    </td>
-    
-<td>
-<img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/ubuntu-v2.0/panels/images/20hp-Ubuntu-instruments-number-two-2.png" width="150px"/>
-    </td>   
     <td>
 
-  <img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/ubuntu-v2.1/images/Ubuntu%20assembly%20v120.3.png" width="150px"/>
+  <img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/images/Ubuntu%20assembly%20v120.3.png" width="150px"/>
 
   </td>
-    
+    <td>
+    <a href="https://github.com/newdigate/teensy-eurorack/tree/master/hardware">
+      panel v2
+      </a>
+    </td>
     
   </tr>
 </table>
