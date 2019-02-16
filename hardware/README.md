@@ -13,7 +13,13 @@
      * voltage conversion 
      * voltage protection in digital trigger inputs
  * rotary encoder breakout board
- * 2 x cv in/out, 2 x trigger in/out, 1 x midi in/out
+ * jack and midi interface breakout (8 thonkk jack connectors and 2 female DIN midi connectors)
+   * 2 x cv in
+   * 2 x cv out
+   * 2 x trigger in
+   * 2 x trigger out
+   * 1 x midi in
+   * 1 x midi /out
  
  ### todo
  * these circuits are not complete... 
