@@ -1,4 +1,4 @@
-# ubuntu instrument v2.1
+# hardware 
 ## [circuits](circuits)
  * these circuits are not complete. 
    * analog in/out 
