@@ -26,7 +26,7 @@ This instrument (version 2.0 [here](hardware/ubuntu-v2.0)) is an attempt to crea
 <tr>
 <td>
   
- ![teensy 3.6 board](https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/ubuntu/panels/teensy3.6/teensy3.6.svg?sanitize=true "teensy 3.6 board") 
+ ![teensy 3.6 board](https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/images/teensy3.6.svg?sanitize=true "teensy 3.6 board") 
 
 </td>
 <td>
@@ -38,7 +38,7 @@ This instrument (version 2.0 [here](hardware/ubuntu-v2.0)) is an attempt to crea
 <tr>
 <td>
   
-![128x128 16bit color oled display](https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/ubuntu/panels/tft/st7735/1.44-inch/st7735.svg?sanitize=true "128x128 16bit color oled display")
+![128x128 16bit color oled display](https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/images/st7735.svg?sanitize=true "128x128 16bit color oled display")
 
 </td>
 <td>
