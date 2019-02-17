@@ -62,4 +62,4 @@ This instrument (hardware docs [here](hardware)) is an attempt to create a gener
   </tr>
 </table>
 
-I am using tip-tip audio rails as a chassis and as power source.
+![teensy eurorack](hardware/images/teensy-eurorack.jpg)
