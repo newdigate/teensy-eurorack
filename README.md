@@ -1,4 +1,4 @@
-<img src='https://github.com/newdigate/teensy-eurorack/raw/kryonos/hardware/images/kryonos.png' width='250px'/>
+<img src='https://github.com/newdigate/teensy-eurorack/raw/kryonos/hardware/images/kryonos%20v6.png' width='500px'/><img src='https://github.com/newdigate/teensy-eurorack/raw/kryonos/hardware/images/kryonos%20v6-2.png' width='500px'/>
 
 # Teensy eurorack experiments
 * Please be cautious - this is a work in progress. Lots of this stuff works. but also im sure theres going to be stuff that doesnt work, or could do with improvement. Please feel free to chirp in - Im an enthusiast and I'd always prefer to know if theres a better way of doing things... 
