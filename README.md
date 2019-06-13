@@ -6,9 +6,17 @@
 ## Kryonos instrument 
 This instrument (hardware docs [here](hardware)) is an attempt to create a generic/universal eurorack module with these components:
  * [teensy 3.6 board](https://www.pjrc.com/store/teensy36.html "teensy 3.6 board")
- * cs42448 codec
+ * cs42448 audio codec
+   * 3 stereo inputs / 4 stereo outputs
+   * 24 bits/sample
  * ad7606 adc
+   * 8 control voltage inputs
+   * configurable voltage range (0 to 5V, 0 to +10V, -10 to +10V)
+   * 16 bits/sample
  * ad5754 dac
+   * 4 control voltage outputs
+   * configurable voltage range (0 to 5V, 0 to +10V, -10 to +10V)
+   * 16 bits/sample
  * 1.44" 128x128 16bit color display (ST7735 chipset)
  * USB host and USB device 
  * 2 x rotary encoder/switch combos
