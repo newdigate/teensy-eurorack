@@ -1,4 +1,4 @@
-<img src='https://github.com/newdigate/teensy-eurorack/raw/master/hardware/images/Ubuntu%20assembly%20v120.3.png' width='250px'/>
+<img src='https://github.com/newdigate/teensy-eurorack/raw/legacy/hardware/images/Ubuntu%20assembly%20v120.3.png' width='250px'/>
 
 # Teensy eurorack experiments
 This is a work-in-progress repository of analog/digital audio experiments for teensy 3.6 micro-controllers, generally mounted on eurorack rails; 
@@ -20,14 +20,14 @@ This instrument (hardware docs [here](hardware)) is an attempt to create a gener
  * USB host and USB device 
  * 4 x rotary encoder/switch combos
  * custom break-out pcb [details here](/hardware/ubuntu/eagle/ubuntu "custom breakout board circuit and pcb") 
- * euro-rack compatible front panel [details here](https://github.com/newdigate/teensy-eurorack/tree/master/hardware/panels "eurorack panels")
+ * euro-rack compatible front panel [details here](https://github.com/newdigate/teensy-eurorack/tree/legacy/hardware/panels "eurorack panels")
 
 <table> 
   
 <tr>
 <td>
   
- ![teensy 3.6 board](https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/images/teensy3.6.svg?sanitize=true "teensy 3.6 board") 
+ ![teensy 3.6 board](https://raw.githubusercontent.com/newdigate/teensy-eurorack/legacy/hardware/images/teensy3.6.svg?sanitize=true "teensy 3.6 board") 
 
 </td>
 <td>
@@ -39,7 +39,7 @@ This instrument (hardware docs [here](hardware)) is an attempt to create a gener
 <tr>
 <td>
   
-![128x128 16bit color oled display](https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/images/st7735.svg?sanitize=true "128x128 16bit color oled display")
+![128x128 16bit color oled display](https://raw.githubusercontent.com/newdigate/teensy-eurorack/legacy/hardware/images/st7735.svg?sanitize=true "128x128 16bit color oled display")
 
 </td>
 <td>
@@ -50,11 +50,11 @@ This instrument (hardware docs [here](hardware)) is an attempt to create a gener
 <tr>
     <td>
 
-  <img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/master/hardware/images/Ubuntu%20assembly%20v120.3.png" width="150px"/>
+  <img src="https://raw.githubusercontent.com/newdigate/teensy-eurorack/legacy/hardware/images/Ubuntu%20assembly%20v120.3.png" width="150px"/>
 
   </td>
     <td>
-    <a href="https://github.com/newdigate/teensy-eurorack/tree/master/hardware">
+    <a href="https://github.com/newdigate/teensy-eurorack/tree/legacy/hardware">
       panel v2
       </a>
     </td>
