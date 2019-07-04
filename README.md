@@ -1,4 +1,7 @@
-# Teensy eurorack experiments
+# modular digital audio experiments 
+* interface a teensy 3.6, a multi-channel audio codec, high-resolution control voltage in/out and a small tft display
+* mount in eurorack chassis
+
 ## objectives
 * create a generic digital audio micro-controller
   * [teensy 3.6 board](https://www.pjrc.com/store/teensy36.html "teensy 3.6 board")
