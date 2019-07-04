@@ -45,3 +45,5 @@ This instrument (hardware docs [here](hardware)) is an attempt to create a gener
 
 ## videos 
 [![youtube: Eurorack digital audio modules powered by teensy micro-controller](https://img.youtube.com/vi/6zt6OF7UOTc/0.jpg)](https://www.youtube.com/watch?v=6zt6OF7UOTc)
+
+<img src='/hardware/images/kryonos%20v6.png' width='200px'/><img src='/hardware/images/kryonos%20v6-2.png' width='200px'/>
