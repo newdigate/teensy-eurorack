@@ -10,6 +10,8 @@
   * mount in 20HP eurorack panel
 * program using arduino/teensyduino (plus teensy audio library)
 
+<img src='hardware/images/kryonos.png' width='250px'/>
+
 ## disclaimer
 * This is a work in progress -- please be cautious.
 * Speak-up - Im an enthusiast and I'd always prefer to know if theres a better way of doing things... 
