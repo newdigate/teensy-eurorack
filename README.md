@@ -1,4 +1,11 @@
 # Teensy eurorack experiments
+## objectives
+* create a generic digital audio micro-controller
+  * [teensy 3.6 board](https://www.pjrc.com/store/teensy36.html "teensy 3.6 board")
+  * sound card with multiple stereo inputs and outputs 
+  * -10V to 10V 16 bit/sample control voltage inputs and outputs
+  * mount in 20HP eurorack panel
+* program using arduino/teensyduino (plus teensy audio library)
 
 ## disclaimer
 * This is a work in progress -- please be cautious.
