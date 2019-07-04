@@ -1,9 +1,9 @@
-<img src='https://github.com/newdigate/teensy-eurorack/raw/kryonos/hardware/images/kryonos%20v6.png' width='200px'/><img src='https://github.com/newdigate/teensy-eurorack/raw/kryonos/hardware/images/kryonos%20v6-2.png' width='200px'/>
-
 # Teensy eurorack experiments
-* Please be cautious - this is a work in progress. Lots of this stuff works. but also im sure theres going to be stuff that doesnt work, or could do with improvement. Please feel free to chirp in - Im an enthusiast and I'd always prefer to know if theres a better way of doing things... 
 
-[![youtube: Eurorack digital audio modules powered by teensy micro-controller](https://img.youtube.com/vi/6zt6OF7UOTc/0.jpg)](https://www.youtube.com/watch?v=6zt6OF7UOTc)
+## disclaimer
+* This is a work in progress -- please be cautious.
+* Speak-up - Im an enthusiast and I'd always prefer to know if theres a better way of doing things... 
+
 ## Kryonos instrument 
 This instrument (hardware docs [here](hardware)) is an attempt to create a generic/universal eurorack module with these components:
  * [teensy 3.6 board](https://www.pjrc.com/store/teensy36.html "teensy 3.6 board")
@@ -23,3 +23,13 @@ This instrument (hardware docs [here](hardware)) is an attempt to create a gener
  * 2 x rotary encoder/switch combos
  * euro-rack compatible front panel
  * micro-sd breakout
+
+## social media
+* facebook: 
+  * [Moolet](https://www.facebook.com/Moolet-249737938397431/)
+* youtube:
+  * [Nic N](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) 
+  * [DIY Audio Electronics Maker](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g)
+
+## videos 
+[![youtube: Eurorack digital audio modules powered by teensy micro-controller](https://img.youtube.com/vi/6zt6OF7UOTc/0.jpg)](https://www.youtube.com/watch?v=6zt6OF7UOTc)
