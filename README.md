@@ -1,4 +1,5 @@
 # modular digital audio experiments 
+[![Join the chat at https://gitter.im/newdigate/teensy-eurorack](https://badges.gitter.im/newdigate/teensy-eurorack.svg)](https://gitter.im/newdigate/teensy-eurorack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 * interface a teensy 3.6, a multi-channel audio codec, high-resolution control voltage in/out and a small tft display
 * mount in eurorack chassis
 
