@@ -17,6 +17,18 @@
 * This is a work in progress -- please be cautious.
 * Speak-up - Im an enthusiast and I'd always prefer to know if theres a better way of doing things... 
 
+## todo 
+- [ ] Breakout board for rotary encoders and pots
+- [ ] Adapt mainboard with fpc connector from new breakout board
+- [ ] Change 8-pin FFC connector for microSD adapter to 10-pin and include teensy sd adapter schematic/board/build
+- [ ] Document 
+  - [ ] order & build process
+  - [ ] software process
+- [ ] Firmware
+  - [ ] Sliced audio loops
+  - [ ] Midi looping
+
+
 ## Kryonos instrument 
 This instrument (hardware docs [here](hardware)) is an attempt to create a generic/universal eurorack module with these components:
  * [teensy 3.6 board](https://www.pjrc.com/store/teensy36.html "teensy 3.6 board")
