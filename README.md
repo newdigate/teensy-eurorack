@@ -17,6 +17,11 @@
 * This is a work in progress -- please be cautious.
 * Speak-up - Im an enthusiast and I'd always prefer to know if theres a better way of doing things... 
 
+## support
+What you can do if you like to see progress with this project
+* star this repository
+* subscribe [Nic N on youtube](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) 
+
 ## todo 
 - [ ] Breakout board for rotary encoders and pots
 - [ ] Adapt mainboard with fpc connector from new breakout board
