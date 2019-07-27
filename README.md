@@ -30,7 +30,7 @@ What you can do if you like to see progress with this project
 - [ ] Testing
   - [x] ~~CS42448 audio codec ~~
   - [x] ~~control voltage input~~
-  - [x] ~~control voltage output
+  - [x] ~~control voltage output~~
   - [ ] usb host/device
   - [ ] midi in/out
   - [ ] sd card adapter
