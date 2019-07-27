@@ -20,7 +20,7 @@
 ## support
 What you can do if you like to see progress with this project
 * star this repository
-* subscribe [Nic N on youtube](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) 
+* subscribe [Nic N on youtube](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) & [DIY Audio Electronics Maker](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g)
 
 ## todo 
 - [ ] Breakout board for rotary encoders and pots
