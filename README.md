@@ -27,6 +27,13 @@ What you can do if you like to see progress with this project
 - [ ] Breakout board for rotary encoders and pots
 - [ ] Adapt mainboard with fpc connector from new breakout board
 - [x] ~~Include schematics and board for uSD adapter~~
+- [ ] Testing
+  - [x] ~~CS42448 audio codec ~~
+  - [x] ~~control voltage input~~
+  - [x] ~~control voltage output
+  - [ ] usb host/device
+  - [ ] midi in/out
+  - [ ] sd card adapter
 - [ ] Document 
   - [ ] order & build process
   - [ ] software process
