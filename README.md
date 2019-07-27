@@ -20,7 +20,7 @@
 ## todo 
 - [ ] Breakout board for rotary encoders and pots
 - [ ] Adapt mainboard with fpc connector from new breakout board
-- [ ] Change 8-pin FFC connector for microSD adapter to 10-pin and include teensy sd adapter schematic/board/build
+- [x] ~~Include schematics and board for uSD adapter~~
 - [ ] Document 
   - [ ] order & build process
   - [ ] software process
