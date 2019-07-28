@@ -28,7 +28,7 @@ What you can do if you like to see progress with this project
 - [ ] Adapt mainboard with fpc connector from new breakout board
 - [x] ~~Include schematics and board for uSD adapter~~
 - [ ] Isolate analog grounds
-- [ ] Verical alignment of FPC connectors between top breakout and mainboard
+- [ ] Vertical alignment of FPC connectors between top breakout and mainboard
 - [ ] Testing
   - [x] ~~CS42448 audio codec~~
   - [x] ~~control voltage input~~
