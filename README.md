@@ -1,11 +1,12 @@
-# modular digital audio experiments 
+# digital eurorack audio module prototyping development kit
 [![Join the chat at https://gitter.im/newdigate/teensy-eurorack](https://badges.gitter.im/newdigate/teensy-eurorack.svg)](https://gitter.im/newdigate/teensy-eurorack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-## digital eurorack audio module prototyping development kit
-* design and create an extension board (shield) for the [teensy 3.6](https://www.pjrc.com/store/teensy36.html "teensy 3.6 board") micro-controller board
+hardware and software for a [teensy 3.6](https://www.pjrc.com/store/teensy36.html "teensy 3.6 board") eurorack shield 
+* interfacing these components
   * CS42448 multi-channel audio codec (sound card)
   * -10V to 10V 16 bit/sample control voltage inputs and outputs
   * mount in 20HP eurorack panel
+  * ST7735 128x128 tft color display
   * Breakout for uSD card, USB host/device, midi in/out
 * program using arduino/teensyduino (plus teensy audio library)
 
