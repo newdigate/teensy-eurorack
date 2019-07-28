@@ -5,9 +5,9 @@
 * interfacing these components
   * CS42448 multi-channel audio codec ( 6-in / 8-out sound card)
   * -10V to 10V 16 bit/sample control voltage inputs and outputs
-  * mount in 20HP eurorack panel
   * ST7735 128x128 tft color display
   * Breakout for uSD card, USB host/device, midi in/out
+* 20HP aluminium panel mounted for eurorack chassis
 * program using arduino/teensyduino (plus teensy audio library)
 
 <img src='hardware/images/kryonos%20v7.png' width='250px'/>
