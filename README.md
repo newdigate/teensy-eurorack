@@ -4,7 +4,7 @@
 [hardware](hardware) and [software](software) for a [teensy 3.6](https://www.pjrc.com/store/teensy36.html "teensy 3.6 board") eurorack shield 
 * interfacing these components
   * **audio:** CS42448 multi-channel audio codec ( 6-in / 8-out sound card)
-  * **analog ins/outs:** -10V to 10V 16 bit/sample control voltage inputs and outputs
+  * **analog ins/outs:** -10V to 10V 16bit/sample control voltage inputs and outputs
   * **display:** ST7735 128x128 16bit-color tft display
   * **breakouts:** - for uSD card, USB host/device, midi in/out
 * 20HP aluminium panel mounted for eurorack case
