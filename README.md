@@ -24,9 +24,11 @@ What you can do if you like to see progress with this project
 * clone this repo, make improvements, commit & send pull-requests
 
 ## todo 
-- [ ] Breakout board for rotary encoders and pots
+- [x] ~~Breakout board for rotary encoders and pots~~
 - [ ] Adapt mainboard with fpc connector from new breakout board
 - [x] ~~Include schematics and board for uSD adapter~~
+- [ ] Isolate analog grounds
+- [ ] Verical alignment of FPC connectors between top breakout and mainboard
 - [ ] Testing
   - [x] ~~CS42448 audio codec~~
   - [x] ~~control voltage input~~
