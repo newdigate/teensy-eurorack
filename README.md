@@ -1,10 +1,9 @@
-# digital eurorack audio module 
-# prototyping development kit
+# digital eurorack audio-module prototyping dev-kit
 [![Join the chat at https://gitter.im/newdigate/teensy-eurorack](https://badges.gitter.im/newdigate/teensy-eurorack.svg)](https://gitter.im/newdigate/teensy-eurorack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 hardware and software for a [teensy 3.6](https://www.pjrc.com/store/teensy36.html "teensy 3.6 board") eurorack shield 
 * interfacing these components
-  * CS42448 multi-channel audio codec (sound card)
+  * CS42448 multi-channel audio codec (6 in/8 out sound card)
   * -10V to 10V 16 bit/sample control voltage inputs and outputs
   * mount in 20HP eurorack panel
   * ST7735 128x128 tft color display
