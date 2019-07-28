@@ -5,4 +5,6 @@
 | [bottom breakout](boards/bottombreakout)  | **2-layer:** 4 x pots, 3 x rotary encoders with switches |
 | [uSD extension breakout](boards/teensy-uSD-adapter) | **2-layer**: uSD extension adapter board |
   
-some [images here](IMAGES.md)
+![mainboard](images/kryonos%20v7.png)
+  
+some more images [here](IMAGES.md)
