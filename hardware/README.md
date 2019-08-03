@@ -1,4 +1,4 @@
-[printed circuit boards](boards)
+* autodesk eagle cad .sch and .brd files - [printed circuit boards](boards) 
 
 ![mainboard](images/kryonos%20v11.png)
 
