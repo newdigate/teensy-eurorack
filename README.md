@@ -4,17 +4,13 @@
 open source [hardware](hardware) and [software](software) for a [teensy 3.6](https://www.pjrc.com/store/teensy36.html "teensy 3.6 board") eurorack shield 
 * interfacing these components
   * **audio:** multi-channel audio codec ( 6-in / 8-out 24-bit sound card - [CS42448](https://statics.cirrus.com/pubs/proDatasheet/CS42448_F5.pdf) )
-  * **analog ins/outs:** -10V to 10V 16bit/sample control voltage inputs and outputs ( ad7606, ad5754)
+  * **analog ins/outs:** -10V to 10V 16bit/sample control voltage 4 x inputs and 4 x outputs ( [ad7606](https://www.analog.com/media/en/technical-documentation/data-sheets/ad7606_7606-6_7606-4.pdf), [ad5754](https://www.analog.com/media/en/technical-documentation/data-sheets/AD5724_5734_5754.pdf) )
   * **display:** ST7735 128x128 16bit-color tft display
-  * **breakouts:** - for uSD card, USB host/device, midi in/out
+  * **breakouts:** - for uSD card, USB host/device, midi in/out, 2 x teensy analog in/out (0 to 3v3 w/protection)
 * 20HP aluminium panel mounted for eurorack case
-* program using arduino/teensyduino (plus teensy audio library)
+* write arduino compatible c/c++ firmware & program using arduino/teensyduino (plus teensy audio library)
 
 <img src='hardware/images/kryonos%20v11.png' width='800px'/>
-
-## disclaimer
-* This is a work in progress -- please be cautious.
-* Speak-up - Im an enthusiast and I'd always prefer to know if theres a better way of doing things... 
 
 ## support
 What you can do if you like to see progress with this project
@@ -41,27 +37,6 @@ What you can do if you like to see progress with this project
 - [ ] Firmware
   - [ ] Sliced audio loops
   - [ ] Midi looping
-
-
-## Kryonos instrument 
-This instrument (hardware docs [here](hardware)) is an attempt to create a generic/universal eurorack module with these components:
- * [teensy 3.6 board](https://www.pjrc.com/store/teensy36.html "teensy 3.6 board")
- * cs42448 audio codec ( [datasheet](https://statics.cirrus.com/pubs/proDatasheet/CS42448_F5.pdf) )
-   * 3 stereo inputs / 4 stereo outputs
-   * 24 bits/sample
- * ad7606 adc
-   * 8 control voltage inputs
-   * configurable voltage range (0 to 5V, 0 to +10V, -10 to +10V)
-   * 16 bits/sample
- * ad5754 dac
-   * 4 control voltage outputs
-   * configurable voltage range (0 to 5V, 0 to +10V, -10 to +10V)
-   * 16 bits/sample
- * 1.44" 128x128 16bit color display (ST7735 chipset)
- * USB host and USB device 
- * 2 x rotary encoder/switch combos
- * euro-rack compatible front panel
- * micro-sd breakout
 
 ## social media
 * facebook: 
