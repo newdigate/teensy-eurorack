@@ -1,3 +1,5 @@
+![mainboard](images/kryonos%20v11.png)
+
 | | **board** | **description** |
 |---|-------|---------|
 |  ![mainboard](boards/mainboard/images/mainboard.png)  | [main](boards/mainboard) | **4-layer:** mainboard |
