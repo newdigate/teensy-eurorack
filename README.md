@@ -1,7 +1,9 @@
 # digital eurorack audio-module prototyping dev-kit
 [![Join the chat at https://gitter.im/newdigate/teensy-eurorack](https://badges.gitter.im/newdigate/teensy-eurorack.svg)](https://gitter.im/newdigate/teensy-eurorack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-open source [hardware](hardware) and [software](software) for a [teensy 3.6](https://www.pjrc.com/store/teensy36.html "teensy 3.6 board") eurorack shield 
+An open source [hardware](hardware) and [software](software) for a [teensy 3.6](https://www.pjrc.com/store/teensy36.html "teensy 3.6 board") eurorack shield
+
+*originally started as a discussion on quad audio channel outputs and a pcb design integrating teensy and cs42448 from Paul Stoffregen on [pjrc forum](https://forum.pjrc.com/threads/41371-Quad-channel-output-on-Teensy-3-6?p=138828&viewfull=1#post138828)*
 * interfacing
   * **audio:** multi-channel audio codec ( 6-in / 8-out 24-bit sound card - [CS42448](https://statics.cirrus.com/pubs/proDatasheet/CS42448_F5.pdf) )
   * **analog ins/outs:** -10V to 10V 16bit/sample control voltage 4 x inputs and 4 x outputs ( [ad7606](https://www.analog.com/media/en/technical-documentation/data-sheets/ad7606_7606-6_7606-4.pdf), [ad5754](https://www.analog.com/media/en/technical-documentation/data-sheets/AD5724_5734_5754.pdf) )
