@@ -46,7 +46,7 @@ What you can do if you like to see progress with this project
 ## Kryonos instrument 
 This instrument (hardware docs [here](hardware)) is an attempt to create a generic/universal eurorack module with these components:
  * [teensy 3.6 board](https://www.pjrc.com/store/teensy36.html "teensy 3.6 board")
- * cs42448 audio codec
+ * cs42448 audio codec ( [datasheet](https://statics.cirrus.com/pubs/proDatasheet/CS42448_F5.pdf) )
    * 3 stereo inputs / 4 stereo outputs
    * 24 bits/sample
  * ad7606 adc
