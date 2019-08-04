@@ -25,10 +25,12 @@ What you can do if you like to see progress with this project
 
 ## todo 
 - [x] ~~Breakout board for rotary encoders and pots~~
+- [ ] change all 0603 resistors and caps with 0805
 - [ ] Adapt mainboard with fpc connector from new breakout board
 - [x] ~~Include schematics and board for uSD adapter~~
 - [ ] Isolate analog grounds
 - [ ] Vertical alignment of FPC connectors between top breakout and mainboard
+- [ ] Finalize circuits / boards
 - [ ] Testing
   - [x] ~~CS42448 audio codec~~
   - [x] ~~control voltage input~~
