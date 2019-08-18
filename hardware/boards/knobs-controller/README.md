@@ -5,6 +5,8 @@ An independent rotary encoder and potentiometer breakout board based on Arduino 
 * 3 x RGB Illuminated rotary encoder w/ switch
 * Communicates with mainboard via serial.
 
+In this experiment I want to reduce the number of pins used on my teensy micro-controller which are used by my rotaries and pots, by introducing an intermediate microcontroller (ARM cortex M0 / SAMD21G).  I started with the schematic of aduino mkr zero and removed components which I don't need. 
+
 ## Images
 
 ![top view](images/Knob_controller_top_view.png)
