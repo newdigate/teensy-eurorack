@@ -1,5 +1,8 @@
 # Knobs Controller
 
+An independent rotary encoder and potentiometer breakout board based on Arduino MKR Zero, SAMD21G18A-MU. 
+Communicates with mainboard via serial.
+
 ## Images
 
 ![top view](images/Knob_controller_top_view.png)
