@@ -5,9 +5,9 @@ An independent rotary encoder and potentiometer breakout board based on Arduino 
 * 3 x RGB Illuminated rotary encoder w/ switch
 * Communicates with mainboard via serial.
 
-In this experiment, instead of using 3 pins per rotary encoder/switch and 1 pin per potentiometer, I want to reduce the number of pins used by my main micro-controller down to just a pair of serial rx and tx pins, by introducing an intermediate micro-controller (ARM cortex M0 / SAMD21G) and writing some firmware to relay input info via and receive commands via serial, I can reduce the number of connections to just 4: +5V, ,TX,RX;  
+In this experiment, instead of using 3 pins per rotary encoder/switch and 1 pin per potentiometer, I want to reduce the number of pins used by my main micro-controller down to just a pair of serial rx and tx pins, by introducing an intermediate micro-controller (ARM cortex M0 / SAMD21G) and writing some firmware to relay input and receive commands via serial TX/RX, I can reduce the number of signals down to 4: +5V, GND ,TX,RX;  
 
-I started with the schematic of aduino mkr zero and removed components which I don't need. 
+I started with the schematic of aduino mkr zero (available from arduino as an eagle .sch and .brd) and removed components from the circuit which I don't need. I needed to keep the SWD (Serial wire debug) pins on the micro-controller available, so I can upload a bootloader- as the usb connection won't be available until the bootloader is programmed via the 6-pin SWD header.
 
 ## Images
 
