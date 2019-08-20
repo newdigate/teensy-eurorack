@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="9.4.2">
+<drawing>
+<settings>
+<setting alwaysvectorfont="yes"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
+<layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
+<layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
+<layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
+<layer number="6" name="Route6" color="25" fill="1" visible="no" active="no"/>
+<layer number="7" name="Route7" color="26" fill="1" visible="no" active="no"/>
+<layer number="8" name="Route8" color="27" fill="1" visible="no" active="no"/>
+<layer number="9" name="Route9" color="28" fill="1" visible="no" active="no"/>
+<layer number="10" name="Route10" color="29" fill="1" visible="no" active="no"/>
+<layer number="11" name="Route11" color="30" fill="1" visible="no" active="no"/>
+<layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
+<layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
+<layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="no" active="no"/>
+<layer number="95" name="Names" color="7" fill="1" visible="no" active="no"/>
+<layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
+<layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
+</layers>
+<board>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyODk4NDQ1" projecturn="a.cGVyc29uYWw6dWUyODk4NDQ1IzIwMTYwOTAzNDE3NTM3MzE" f3durn="urn:adsk.wipprod:dm.lineage:v0pMTcs-SomNP4G1O92K-w" pcbguid="fbf3e6a2-d24e-4dbc-98a8-8d05443f1773" lastpulledtime="" lastsyncedchangeguid="411473a8-2015-bf3d-8850-9dbbca942ea6"/>
+<plain>
+<wire x1="15.24" y1="36.195" x2="15.24" y2="54.28" width="0" layer="20"/>
+<wire x1="15.24" y1="54.28" x2="0" y2="54.28" width="0" layer="20"/>
+<wire x1="0" y1="54.28" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="90.148296875" y2="0" width="0" layer="20"/>
+<wire x1="90.148296875" y1="0" x2="90.1687875" y2="43.179228125" width="0" layer="20"/>
+<wire x1="90.1687875" y1="43.179228125" x2="72.39" y2="43.179996875" width="0" layer="20"/>
+<wire x1="72.39" y1="43.179996875" x2="72.39" y2="36.195" width="0" layer="20"/>
+<wire x1="72.39" y1="36.195" x2="15.24" y2="36.195" width="0" layer="20"/>
+</plain>
+<libraries>
+<library name="interface" urn="urn:adsk.eagle:library:5637722">
+<description>Generated from &lt;b&gt;interface.sch&lt;/b&gt;&lt;p&gt;
+by exp-lbrs.ulp</description>
+<packages>
+<package name="SWITCH-ALPS_ALPS_EC12E_SW" urn="urn:adsk.eagle:footprint:5637723/1" library_version="2">
+<description>ALPS rotary encoder&lt;br&gt;
+EC12E series with push-on switch</description>
+<circle x="0" y="0" radius="3" width="0.127" layer="21"/>
+<wire x1="-6.2" y1="-6.6" x2="6.2" y2="-6.6" width="0.127" layer="21"/>
+<wire x1="6.2" y1="-6.6" x2="6.2" y2="6.6" width="0.127" layer="21"/>
+<wire x1="6.2" y1="6.6" x2="-6.2" y2="6.6" width="0.127" layer="21"/>
+<wire x1="-6.2" y1="6.6" x2="-6.2" y2="-6.6" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="1.5" x2="2.6" y2="1.5" width="0.127" layer="21"/>
+<pad name="A" x="-2.5" y="-7.5" drill="1" shape="square"/>
+<pad name="B" x="2.5" y="-7.5" drill="1" shape="square"/>
+<pad name="C" x="0" y="-7.5" drill="1" shape="square"/>
+<pad name="D" x="-2.5" y="7" drill="1" shape="square"/>
+<pad name="E" x="2.5" y="7" drill="1" shape="square"/>
+<pad name="GND1" x="-6.1" y="0" drill="2.2" shape="square"/>
+<pad name="GND2" x="6.1" y="0" drill="2.2" shape="square"/>
+<text x="-2.5" y="8.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="3.5" y="-9" size="1.27" layer="27" rot="R180">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="SWITCH-ALPS_ALPS_EC12E_SW" urn="urn:adsk.eagle:package:5637727/3" type="model" library_version="2">
+<description>ALPS rotary encoder&lt;br&gt;
+EC12E series with push-on switch</description>
+<packageinstances>
+<packageinstance name="SWITCH-ALPS_ALPS_EC12E_SW"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
+<library name="Panasonic - EVU-F2MFL3D14" urn="urn:adsk.eagle:library:5363488">
+<description>Upverter Parts Library
+
+Created by Upverter.com</description>
+<packages>
+<package name="PANASONIC_EVU-F2MFL3D14_0" urn="urn:adsk.eagle:footprint:5363489/1" library_version="2">
+<description>Square Rotary Potentiometers with Insulated Shaft</description>
+<wire x1="-4.85" y1="-6.25" x2="-4.85" y2="6.25" width="0.15" layer="51"/>
+<wire x1="-4.85" y1="6.25" x2="4.85" y2="6.25" width="0.15" layer="51"/>
+<wire x1="4.85" y1="6.25" x2="4.85" y2="-6.25" width="0.15" layer="51"/>
+<wire x1="4.85" y1="-6.25" x2="-4.85" y2="-6.25" width="0.15" layer="51"/>
+<wire x1="4.85" y1="6.25" x2="-4.85" y2="6.25" width="0.15" layer="21"/>
+<wire x1="-4.85" y1="6.25" x2="-4.85" y2="2.85" width="0.15" layer="21"/>
+<wire x1="4.85" y1="6.25" x2="4.85" y2="2.85" width="0.15" layer="21"/>
+<wire x1="-4.85" y1="-6.25" x2="-4.85" y2="-2.35" width="0.15" layer="21"/>
+<wire x1="4.85" y1="-6.25" x2="4.85" y2="-2.35" width="0.15" layer="21"/>
+<wire x1="-4.85" y1="-6.25" x2="-3.75" y2="-6.25" width="0.15" layer="21"/>
+<wire x1="4.85" y1="-6.25" x2="3.75" y2="-6.25" width="0.15" layer="21"/>
+<text x="-6.175" y="7.225" size="1" layer="25">&gt;NAME</text>
+<circle x="-2.375" y="-8.625" radius="0.25" width="0" layer="21"/>
+<pad name="4" x="-4.5" y="0.25" drill="2.286" diameter="3.048" rot="R90"/>
+<pad name="5" x="4.5" y="0.25" drill="2.286" diameter="3.048" rot="R90"/>
+<pad name="1" x="-2.5" y="-6.75" drill="1.1" diameter="1.7" shape="square"/>
+<pad name="2" x="0" y="-6.75" drill="1.1" diameter="1.7"/>
+<pad name="3" x="2.5" y="-6.75" drill="1.1" diameter="1.7"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="PANASONIC_EVU-F2MFL3D14_0" urn="urn:adsk.eagle:package:5363493/2" type="model" library_version="2">
+<description>Square Rotary Potentiometers with Insulated Shaft</description>
+<packageinstances>
+<packageinstance name="PANASONIC_EVU-F2MFL3D14_0"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
+<library name="Molex - 52892-1633" urn="urn:adsk.eagle:library:6095958">
+<description>Upverter Parts Library
+
+Created by Upverter.com</description>
+<packages>
+<package name="MOLEX_52892-1633_0" urn="urn:adsk.eagle:footprint:6095960/2" library_version="3">
+<description>MOLX-52892-1633</description>
+<wire x1="4.5" y1="1.075" x2="4.5" y2="1.125" width="0.1" layer="51"/>
+<wire x1="-4.5" y1="1.075" x2="-4.5" y2="1.125" width="0.1" layer="51"/>
+<wire x1="-6.3" y1="1.125" x2="-4.5" y2="1.125" width="0.1" layer="51"/>
+<wire x1="4.5" y1="1.125" x2="6.3" y2="1.125" width="0.1" layer="51"/>
+<wire x1="-4.5" y1="1.075" x2="4.5" y2="1.075" width="0.1" layer="51"/>
+<wire x1="3.785" y1="-3.775" x2="3.785" y2="-3.275" width="0.1" layer="51"/>
+<wire x1="-3.785" y1="-3.775" x2="-3.785" y2="-3.275" width="0.1" layer="51"/>
+<wire x1="3.785" y1="-3.275" x2="6.3" y2="-3.275" width="0.1" layer="51"/>
+<wire x1="-6.3" y1="-3.275" x2="-3.785" y2="-3.275" width="0.1" layer="51"/>
+<wire x1="-6.3" y1="-3.275" x2="-6.3" y2="1.125" width="0.1" layer="51"/>
+<wire x1="-3.785" y1="-3.775" x2="3.785" y2="-3.775" width="0.1" layer="51"/>
+<wire x1="6.3" y1="-3.275" x2="6.3" y2="1.125" width="0.1" layer="51"/>
+<wire x1="-6.3" y1="-3.275" x2="6.3" y2="-3.275" width="0.15" layer="21"/>
+<wire x1="6.3" y1="-0.075" x2="6.3" y2="1.125" width="0.15" layer="21"/>
+<wire x1="4.3" y1="1.125" x2="6.3" y2="1.125" width="0.15" layer="21"/>
+<wire x1="6.3" y1="-3.275" x2="6.3" y2="-3.075" width="0.15" layer="21"/>
+<wire x1="-6.3" y1="1.125" x2="-4.3" y2="1.125" width="0.15" layer="21"/>
+<wire x1="-6.3" y1="-0.075" x2="-6.3" y2="1.125" width="0.15" layer="21"/>
+<wire x1="-6.3" y1="-3.275" x2="-6.3" y2="-3.075" width="0.15" layer="21"/>
+<text x="-8.3" y="2.95" size="1" layer="25">&gt;NAME</text>
+<circle x="-3.75" y="2.825" radius="0.125" width="0.25" layer="21"/>
+<rectangle x1="-5.6" y1="-3.575" x2="-4.35" y2="-0.475" layer="4"/>
+<rectangle x1="4.35" y1="-3.575" x2="5.6" y2="-0.475" layer="4"/>
+<smd name="16" x="3.75" y="1.575" dx="0.3" dy="1.4" layer="1"/>
+<smd name="15" x="3.25" y="1.575" dx="0.3" dy="1.4" layer="1"/>
+<smd name="14" x="2.75" y="1.575" dx="0.3" dy="1.4" layer="1"/>
+<smd name="13" x="2.25" y="1.575" dx="0.3" dy="1.4" layer="1"/>
+<smd name="12" x="1.75" y="1.575" dx="0.3" dy="1.4" layer="1"/>
+<smd name="11" x="1.25" y="1.575" dx="0.3" dy="1.4" layer="1"/>
+<smd name="1" x="-3.75" y="1.575" dx="0.3" dy="1.4" layer="1"/>
+<smd name="2" x="-3.25" y="1.575" dx="0.3" dy="1.4" layer="1"/>
+<smd name="3" x="-2.75" y="1.575" dx="0.3" dy="1.4" layer="1"/>
+<smd name="4" x="-2.25" y="1.575" dx="0.3" dy="1.4" layer="1"/>
+<smd name="5" x="-1.75" y="1.575" dx="0.3" dy="1.4" layer="1"/>
+<smd name="6" x="-1.25" y="1.575" dx="0.3" dy="1.4" layer="1"/>
+<smd name="7" x="-0.75" y="1.575" dx="0.3" dy="1.4" layer="1"/>
+<smd name="8" x="-0.25" y="1.575" dx="0.3" dy="1.4" layer="1"/>
+<smd name="9" x="0.25" y="1.575" dx="0.3" dy="1.4" layer="1"/>
+<smd name="10" x="0.75" y="1.575" dx="0.3" dy="1.4" layer="1"/>
+<smd name="MP1" x="-6.4" y="-1.575" dx="1.6" dy="2.2" layer="1"/>
+<smd name="MP2" x="6.4" y="-1.575" dx="1.6" dy="2.2" layer="1"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="MOLEX_52892-1633_0" urn="urn:adsk.eagle:package:6095962/3" type="model" library_version="3">
+<description>MOLX-52892-1633</description>
+<packageinstances>
+<packageinstance name="MOLEX_52892-1633_0"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
+</libraries>
+<attributes>
+</attributes>
+<variantdefs>
+</variantdefs>
+<classes>
+<class number="0" name="default" width="0" drill="0">
+</class>
+</classes>
+<designrules name="eC_2Layer_PClass6_BaseCopperO18_eCDefault">
+<description language="de">
+
+
+&lt;p&gt;
+&lt;b&gt;Eurocircuits-EAGLE design rules&lt;/b&gt;&lt;br&gt;
+&lt;br&gt;
+Setup for &lt;b&gt;2-layer PatternClass6 BaseCopperO18 eCDefault&lt;/b&gt;
+&lt;p&gt;
+ The option &lt;b&gt;Sizes-Minimum Drill&lt;/b&gt; is set to 0.35mm. This minimum drill endsize can be set lower if needed. Values below 0.25mm will result in a higher DrillClassification. For details see the Eurocircuits Classification overview.
+&lt;p&gt;
+&lt;u&gt;Extra Notes:&lt;/u&gt;&lt;br&gt;
+- The option &lt;b&gt;Distance-Copper/Dimension&lt;/b&gt; is set to 0.25mm, the default for boards with a routed boardoutline. If you require Vcut on your board this parameter should be set to 0.45mm.&lt;br&gt;
+- The option &lt;b&gt;Supply-Generate thermals for vias&lt;/b&gt; is on by default but may be changed if required.&lt;br&gt;
+- The option &lt;b&gt;Mask-Stop&lt;/b&gt; is set to 0mm oversize which is the preffered value.&lt;br&gt;
+- The option &lt;b&gt;Mask-Cream&lt;/b&gt; is set to 0mm oversize by default, but may be changed if required&lt;br&gt;
+- The option &lt;b&gt;Mask-Limit&lt;/b&gt; is set to 0.45mm, resulting in covered or tented via holes for vias of 0.45mm and smaller. The option may be changed if required.&lt;br&gt;
+- The options &lt;b&gt;Shapes&lt;/b&gt; and &lt;b&gt;Misc&lt;/b&gt; are not relevant. Values for &lt;b&gt;Shapes-Smds-Roundness&lt;/b&gt; are not critical and can be set as you require.
+&lt;p&gt;
+&lt;p&gt;
+You can set higher minimum values if you wish, setting lower minimum values is &lt;u&gt;not advisable&lt;/u&gt;.&lt;br&gt;
+If you need lower minimum values, please use a different Eurocircuits-EAGLE design rule file. For details see the Eurocircuits-EAGLE dru overview table.
+&lt;p&gt;
+Your Eurocircuits Team
+</description>
+<description language="en">
+
+
+&lt;p&gt;
+&lt;b&gt;Eurocircuits-EAGLE design rules&lt;/b&gt;&lt;br&gt;
+&lt;br&gt;
+Setup for &lt;b&gt;2-layer PatternClass6 BaseCopperO18 eCDefault&lt;/b&gt;
+&lt;p&gt;
+ The option &lt;b&gt;Sizes-Minimum Drill&lt;/b&gt; is set to 0.35mm. This minimum drill endsize can be set lower if needed. Values below 0.25mm will result in a higher DrillClassification. For details see the Eurocircuits Classification overview.
+&lt;p&gt;
+&lt;u&gt;Extra Notes:&lt;/u&gt;&lt;br&gt;
+- The option &lt;b&gt;Distance-Copper/Dimension&lt;/b&gt; is set to 0.25mm, the default for boards with a routed boardoutline. If you require Vcut on your board this parameter should be set to 0.45mm.&lt;br&gt;
+- The option &lt;b&gt;Supply-Generate thermals for vias&lt;/b&gt; is on by default but may be changed if required.&lt;br&gt;
+- The option &lt;b&gt;Mask-Stop&lt;/b&gt; is set to 0mm oversize which is the preffered value.&lt;br&gt;
+- The option &lt;b&gt;Mask-Cream&lt;/b&gt; is set to 0mm oversize by default, but may be changed if required&lt;br&gt;
+- The option &lt;b&gt;Mask-Limit&lt;/b&gt; is set to 0.45mm, resulting in covered or tented via holes for vias of 0.45mm and smaller. The option may be changed if required.&lt;br&gt;
+- The options &lt;b&gt;Shapes&lt;/b&gt; and &lt;b&gt;Misc&lt;/b&gt; are not relevant. Values for &lt;b&gt;Shapes-Smds-Roundness&lt;/b&gt; are not critical and can be set as you require.
+&lt;p&gt;
+&lt;p&gt;
+You can set higher minimum values if you wish, setting lower minimum values is &lt;u&gt;not advisable&lt;/u&gt;.&lt;br&gt;
+If you need lower minimum values, please use a different Eurocircuits-EAGLE design rule file. For details see the Eurocircuits-EAGLE dru overview table.
+&lt;p&gt;
+Your Eurocircuits Team
+</description>
+<param name="layerSetup" value="(1*16)"/>
+<param name="mtCopper" value="0.018mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.018mm"/>
+<param name="mtIsolate" value="1.55mm 0.71mm 0.36mm 0.2mm 0.2mm 0.2mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mdWireWire" value="0.15mm"/>
+<param name="mdWirePad" value="0.15mm"/>
+<param name="mdWireVia" value="0.15mm"/>
+<param name="mdPadPad" value="0.15mm"/>
+<param name="mdPadVia" value="0.15mm"/>
+<param name="mdViaVia" value="0.15mm"/>
+<param name="mdSmdPad" value="0mil"/>
+<param name="mdSmdVia" value="0mil"/>
+<param name="mdSmdSmd" value="0mil"/>
+<param name="mdViaViaSameLayer" value="0.2mm"/>
+<param name="mnLayersViaInSmd" value="2"/>
+<param name="mdCopperDimension" value="0.25mm"/>
+<param name="mdDrill" value="0.35mm"/>
+<param name="mdSmdStop" value="0mil"/>
+<param name="msWidth" value="0.15mm"/>
+<param name="msDrill" value="0.35mm"/>
+<param name="msMicroVia" value="25mm"/>
+<param name="msBlindViaRatio" value="0.5"/>
+<param name="rvPadTop" value="0.25"/>
+<param name="rvPadInner" value="0.25"/>
+<param name="rvPadBottom" value="0.25"/>
+<param name="rvViaOuter" value="0.25"/>
+<param name="rvViaInner" value="0.25"/>
+<param name="rvMicroViaOuter" value="0"/>
+<param name="rvMicroViaInner" value="0"/>
+<param name="rlMinPadTop" value="0.175mm"/>
+<param name="rlMaxPadTop" value="2.5mm"/>
+<param name="rlMinPadInner" value="0.175mm"/>
+<param name="rlMaxPadInner" value="2.5mm"/>
+<param name="rlMinPadBottom" value="0.175mm"/>
+<param name="rlMaxPadBottom" value="2.5mm"/>
+<param name="rlMinViaOuter" value="0.125mm"/>
+<param name="rlMaxViaOuter" value="2.5mm"/>
+<param name="rlMinViaInner" value="0.125mm"/>
+<param name="rlMaxViaInner" value="2.5mm"/>
+<param name="rlMinMicroViaOuter" value="2.5mm"/>
+<param name="rlMaxMicroViaOuter" value="25mm"/>
+<param name="rlMinMicroViaInner" value="2.5mm"/>
+<param name="rlMaxMicroViaInner" value="25mm"/>
+<param name="psTop" value="-1"/>
+<param name="psBottom" value="-1"/>
+<param name="psFirst" value="-1"/>
+<param name="psElongationLong" value="100"/>
+<param name="psElongationOffset" value="100"/>
+<param name="mvStopFrame" value="0"/>
+<param name="mvCreamFrame" value="0"/>
+<param name="mlMinStopFrame" value="0mil"/>
+<param name="mlMaxStopFrame" value="0mil"/>
+<param name="mlMinCreamFrame" value="0mil"/>
+<param name="mlMaxCreamFrame" value="0mil"/>
+<param name="mlViaStopLimit" value="0.45mm"/>
+<param name="srRoundness" value="0"/>
+<param name="srMinRoundness" value="0mil"/>
+<param name="srMaxRoundness" value="0mil"/>
+<param name="slThermalIsolate" value="0.2mm"/>
+<param name="slThermalsForVias" value="1"/>
+<param name="dpMaxLengthDifference" value="10mm"/>
+<param name="dpGapFactor" value="2.5"/>
+<param name="checkAngle" value="0"/>
+<param name="checkFont" value="1"/>
+<param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
+<param name="useDiameter" value="13"/>
+<param name="maxErrors" value="50"/>
+</designrules>
+<autorouter>
+<pass name="Default">
+<param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
+<param name="tpViaShape" value="round"/>
+<param name="PrefDir.1" value="a"/>
+<param name="PrefDir.2" value="0"/>
+<param name="PrefDir.3" value="0"/>
+<param name="PrefDir.4" value="0"/>
+<param name="PrefDir.5" value="0"/>
+<param name="PrefDir.6" value="0"/>
+<param name="PrefDir.7" value="0"/>
+<param name="PrefDir.8" value="0"/>
+<param name="PrefDir.9" value="0"/>
+<param name="PrefDir.10" value="0"/>
+<param name="PrefDir.11" value="0"/>
+<param name="PrefDir.12" value="0"/>
+<param name="PrefDir.13" value="0"/>
+<param name="PrefDir.14" value="0"/>
+<param name="PrefDir.15" value="0"/>
+<param name="PrefDir.16" value="a"/>
+<param name="cfVia" value="8"/>
+<param name="cfNonPref" value="5"/>
+<param name="cfChangeDir" value="2"/>
+<param name="cfOrthStep" value="2"/>
+<param name="cfDiagStep" value="3"/>
+<param name="cfExtdStep" value="0"/>
+<param name="cfBonusStep" value="1"/>
+<param name="cfMalusStep" value="1"/>
+<param name="cfPadImpact" value="4"/>
+<param name="cfSmdImpact" value="4"/>
+<param name="cfBusImpact" value="0"/>
+<param name="cfHugging" value="3"/>
+<param name="cfAvoid" value="4"/>
+<param name="cfPolygon" value="10"/>
+<param name="cfBase.1" value="0"/>
+<param name="cfBase.2" value="1"/>
+<param name="cfBase.3" value="1"/>
+<param name="cfBase.4" value="1"/>
+<param name="cfBase.5" value="1"/>
+<param name="cfBase.6" value="1"/>
+<param name="cfBase.7" value="1"/>
+<param name="cfBase.8" value="1"/>
+<param name="cfBase.9" value="1"/>
+<param name="cfBase.10" value="1"/>
+<param name="cfBase.11" value="1"/>
+<param name="cfBase.12" value="1"/>
+<param name="cfBase.13" value="1"/>
+<param name="cfBase.14" value="1"/>
+<param name="cfBase.15" value="1"/>
+<param name="cfBase.16" value="0"/>
+<param name="mnVias" value="20"/>
+<param name="mnSegments" value="9999"/>
+<param name="mnExtdSteps" value="9999"/>
+<param name="mnRipupLevel" value="10"/>
+<param name="mnRipupSteps" value="100"/>
+<param name="mnRipupTotal" value="100"/>
+</pass>
+<pass name="Follow-me" refer="Default" active="yes">
+</pass>
+<pass name="Busses" refer="Default" active="yes">
+<param name="cfNonPref" value="4"/>
+<param name="cfBusImpact" value="4"/>
+<param name="cfHugging" value="0"/>
+<param name="mnVias" value="0"/>
+</pass>
+<pass name="Route" refer="Default" active="yes">
+</pass>
+<pass name="Optimize1" refer="Default" active="yes">
+<param name="cfVia" value="99"/>
+<param name="cfExtdStep" value="10"/>
+<param name="cfHugging" value="1"/>
+<param name="mnExtdSteps" value="1"/>
+<param name="mnRipupLevel" value="0"/>
+</pass>
+<pass name="Optimize2" refer="Optimize1" active="yes">
+<param name="cfNonPref" value="0"/>
+<param name="cfChangeDir" value="6"/>
+<param name="cfExtdStep" value="0"/>
+<param name="cfBonusStep" value="2"/>
+<param name="cfMalusStep" value="2"/>
+<param name="cfPadImpact" value="2"/>
+<param name="cfSmdImpact" value="2"/>
+<param name="cfHugging" value="0"/>
+</pass>
+<pass name="Optimize3" refer="Optimize2" active="yes">
+<param name="cfChangeDir" value="8"/>
+<param name="cfPadImpact" value="0"/>
+<param name="cfSmdImpact" value="0"/>
+</pass>
+<pass name="Optimize4" refer="Optimize3" active="yes">
+<param name="cfChangeDir" value="25"/>
+</pass>
+</autorouter>
+<elements>
+<element name="SW1" library="interface" library_urn="urn:adsk.eagle:library:5637722" package="SWITCH-ALPS_ALPS_EC12E_SW" package3d_urn="urn:adsk.eagle:package:5637727/3" value="SWITCH-ALPS_EC12E_SW" x="25.4" y="27.94" smashed="yes">
+<attribute name="MF" value="" x="46.99" y="16.51" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="EC12E2424407" x="46.99" y="16.51" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="22.9" y="36.44" size="1.27" layer="25"/>
+<attribute name="OC_FARNELL" value="1520813" x="46.99" y="16.51" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="74M1068" x="46.99" y="16.51" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="28.9" y="18.94" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="SW2" library="interface" library_urn="urn:adsk.eagle:library:5637722" package="SWITCH-ALPS_ALPS_EC12E_SW" package3d_urn="urn:adsk.eagle:package:5637727/3" value="SWITCH-ALPS_EC12E_SW" x="81.28" y="34.29" smashed="yes">
+<attribute name="MF" value="" x="102.87" y="1.27" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="EC12E2424407" x="102.87" y="1.27" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="78.78" y="42.79" size="1.27" layer="25"/>
+<attribute name="OC_FARNELL" value="1520813" x="102.87" y="1.27" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="74M1068" x="102.87" y="1.27" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="84.78" y="25.29" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="VR1" library="Panasonic - EVU-F2MFL3D14" library_urn="urn:adsk.eagle:library:5363488" package="PANASONIC_EVU-F2MFL3D14_0" package3d_urn="urn:adsk.eagle:package:5363493/2" value="PANASONIC_EVU-F2MFL3D14PANASONIC_EVU-F2MFL3D14_0_0" x="7.62" y="46.99" smashed="yes">
+<attribute name="CENTROID_NOT_SPECIFIED" value="Yes" x="55.88" y="15.24" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="https://upverter.com/datasheet/0e6f35378f82932eabea89c93832ce37004881c1.pdf" x="55.88" y="15.24" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_DESCRIPTION" value="RES POT 10K OHM 1/20W LOGARITHMIC" x="55.88" y="15.24" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="P3H8103-ND" x="55.88" y="15.24" size="1.778" layer="27" display="off"/>
+<attribute name="LEAD_FREE" value="yes" x="55.88" y="15.24" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Panasonic" x="55.88" y="15.24" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="667-EVU-F2MFL3D14" x="55.88" y="15.24" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="EVU-F2MFL3D14" x="55.88" y="15.24" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="1.445" y="54.215" size="1" layer="25"/>
+<attribute name="PACKAGE" value="PTH_POT_12MM5_9MM7" x="55.88" y="15.24" size="1.778" layer="27" display="off"/>
+<attribute name="POWER" value="50mW" x="55.88" y="15.24" size="1.778" layer="27" display="off"/>
+<attribute name="PREFIX" value="VR" x="55.88" y="15.24" size="1.778" layer="27" display="off"/>
+<attribute name="RESISTANCE" value="10kΩ" x="55.88" y="15.24" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS" value="yes" x="55.88" y="15.24" size="1.778" layer="27" display="off"/>
+</element>
+<element name="VR2" library="Panasonic - EVU-F2MFL3D14" library_urn="urn:adsk.eagle:library:5363488" package="PANASONIC_EVU-F2MFL3D14_0" package3d_urn="urn:adsk.eagle:package:5363493/2" value="PANASONIC_EVU-F2MFL3D14PANASONIC_EVU-F2MFL3D14_0_0" x="7.62" y="8.255" smashed="yes">
+<attribute name="CENTROID_NOT_SPECIFIED" value="Yes" x="26.67" y="-45.085" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="https://upverter.com/datasheet/0e6f35378f82932eabea89c93832ce37004881c1.pdf" x="26.67" y="-45.085" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_DESCRIPTION" value="RES POT 10K OHM 1/20W LOGARITHMIC" x="26.67" y="-45.085" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="P3H8103-ND" x="26.67" y="-45.085" size="1.778" layer="27" display="off"/>
+<attribute name="LEAD_FREE" value="yes" x="26.67" y="-45.085" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Panasonic" x="26.67" y="-45.085" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="667-EVU-F2MFL3D14" x="26.67" y="-45.085" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="EVU-F2MFL3D14" x="26.67" y="-45.085" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="1.445" y="15.48" size="1" layer="25"/>
+<attribute name="PACKAGE" value="PTH_POT_12MM5_9MM7" x="26.67" y="-45.085" size="1.778" layer="27" display="off"/>
+<attribute name="POWER" value="50mW" x="26.67" y="-45.085" size="1.778" layer="27" display="off"/>
+<attribute name="PREFIX" value="VR" x="26.67" y="-45.085" size="1.778" layer="27" display="off"/>
+<attribute name="RESISTANCE" value="10kΩ" x="26.67" y="-45.085" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS" value="yes" x="26.67" y="-45.085" size="1.778" layer="27" display="off"/>
+</element>
+<element name="VR3" library="Panasonic - EVU-F2MFL3D14" library_urn="urn:adsk.eagle:library:5363488" package="PANASONIC_EVU-F2MFL3D14_0" package3d_urn="urn:adsk.eagle:package:5363493/2" value="PANASONIC_EVU-F2MFL3D14PANASONIC_EVU-F2MFL3D14_0_0" x="81.28" y="8.255" smashed="yes">
+<attribute name="CENTROID_NOT_SPECIFIED" value="Yes" x="114.3" y="-45.085" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="https://upverter.com/datasheet/0e6f35378f82932eabea89c93832ce37004881c1.pdf" x="114.3" y="-45.085" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_DESCRIPTION" value="RES POT 10K OHM 1/20W LOGARITHMIC" x="114.3" y="-45.085" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="P3H8103-ND" x="114.3" y="-45.085" size="1.778" layer="27" display="off"/>
+<attribute name="LEAD_FREE" value="yes" x="114.3" y="-45.085" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Panasonic" x="114.3" y="-45.085" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="667-EVU-F2MFL3D14" x="114.3" y="-45.085" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="EVU-F2MFL3D14" x="114.3" y="-45.085" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="75.105" y="15.48" size="1" layer="25"/>
+<attribute name="PACKAGE" value="PTH_POT_12MM5_9MM7" x="114.3" y="-45.085" size="1.778" layer="27" display="off"/>
+<attribute name="POWER" value="50mW" x="114.3" y="-45.085" size="1.778" layer="27" display="off"/>
+<attribute name="PREFIX" value="VR" x="114.3" y="-45.085" size="1.778" layer="27" display="off"/>
+<attribute name="RESISTANCE" value="10kΩ" x="114.3" y="-45.085" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS" value="yes" x="114.3" y="-45.085" size="1.778" layer="27" display="off"/>
+</element>
+<element name="J1" library="Molex - 52892-1633" library_urn="urn:adsk.eagle:library:6095958" package="MOLEX_52892-1633_0" package3d_urn="urn:adsk.eagle:package:6095962/3" value="MOLEX_52892-1633MOLEX_52892-1633_0_0" x="43.18" y="30.48" smashed="yes" rot="MR180">
+<attribute name="CIIVA_IDS" value="12958044" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="CIRCUITS_LOADED" value="16" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="COMPONENT_LINK_1_DESCRIPTION" value="Manufacturer URL" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="COMPONENT_LINK_1_URL" value="http://www.molex.com/molex/index.jsp" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="COMPONENT_LINK_3_DESCRIPTION" value="Package Specification" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="COMPONENT_LINK_3_URL" value="http://www.molex.com/pdm_docs/sd/528921633_sd.pdf" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="CONTACT_POSITION" value="Bottom" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="CURRENT_MAX_PER_CONTACT" value="0.5A" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DATASHEET" value="http://www.molex.com/webdocs/datasheets/pdf/en-us/0528921633_FFC_FPC_CONNECTORS.pdf" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DURABILITY_MATING_CYCLES_MAX" value="20" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="ENTRY_ANGLE" value="90degrees Angle" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_0" value="Manufacturer Recommended" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="IMPORTED" value="yes" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="IMPORTED_FROM" value="vault" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="IMPORT_TS" value="1521865775" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MATED_HEIGHT" value="2.00mm" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MATERIAL___METAL" value="Phosphor Bronze" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MATERIAL___PLATING_MATING" value="Silver, Tin-Bismuth" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MATERIAL___PLATING_TERMINATION" value="Silver, Tin-Bismuth" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MF" value="Molex" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MOUNTING_TECHNOLOGY" value="Surface Mount" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MPN" value="52892-1633" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="34.88" y="27.53" size="1" layer="26" rot="MR180"/>
+<attribute name="NUMBER_OF_ROWS" value="1" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="ORIENTATION" value="Right Angle" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="PACKAGE" value="52892-1633" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="PACKAGE_DESCRIPTION" value="16-Lead FPC Connector, Pitch 0.5 mm" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="PACKAGE_VERSION" value="Rev. A, 05/2013" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="PACKING" value="Tape and Reel" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="PCB_LOCATOR" value="No" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="PCB_RETENTION" value="Yes" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="PITCH___MATING_INTERFACE" value="0.50mm" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="PITCH___TERMINATION_INTERFACE" value="0.50mm" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="POLARIZED_TO_PCB" value="No" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="PREFIX" value="J" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="RELEASE_DATE" value="1411372667" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="ROHS" value="Yes" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="STACKABLE" value="No" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VAULT_GUID" value="C24F345D-8B09-4EB3-B126-737F836EC0CC" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VAULT_REVISION" value="B04BDDE3-DCC0-4E22-88B5-2BA07A3C3672" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VOLTAGE_MAX" value="50V" x="43.18" y="30.48" size="1.778" layer="28" rot="MR180" display="off"/>
+</element>
+<element name="VR4" library="Panasonic - EVU-F2MFL3D14" library_urn="urn:adsk.eagle:library:5363488" package="PANASONIC_EVU-F2MFL3D14_0" package3d_urn="urn:adsk.eagle:package:5363493/2" value="PANASONIC_EVU-F2MFL3D14PANASONIC_EVU-F2MFL3D14_0_0" x="44.45" y="8.255" smashed="yes">
+<attribute name="CENTROID_NOT_SPECIFIED" value="Yes" x="44.45" y="8.255" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="https://upverter.com/datasheet/0e6f35378f82932eabea89c93832ce37004881c1.pdf" x="44.45" y="8.255" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_DESCRIPTION" value="RES POT 10K OHM 1/20W LOGARITHMIC" x="44.45" y="8.255" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="P3H8103-ND" x="44.45" y="8.255" size="1.778" layer="27" display="off"/>
+<attribute name="LEAD_FREE" value="yes" x="44.45" y="8.255" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Panasonic" x="44.45" y="8.255" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="667-EVU-F2MFL3D14" x="44.45" y="8.255" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="EVU-F2MFL3D14" x="44.45" y="8.255" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="38.275" y="15.48" size="1" layer="25"/>
+<attribute name="PACKAGE" value="PTH_POT_12MM5_9MM7" x="44.45" y="8.255" size="1.778" layer="27" display="off"/>
+<attribute name="POWER" value="50mW" x="44.45" y="8.255" size="1.778" layer="27" display="off"/>
+<attribute name="PREFIX" value="VR" x="44.45" y="8.255" size="1.778" layer="27" display="off"/>
+<attribute name="RESISTANCE" value="10kΩ" x="44.45" y="8.255" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS" value="yes" x="44.45" y="8.255" size="1.778" layer="27" display="off"/>
+</element>
+<element name="SW3" library="interface" library_urn="urn:adsk.eagle:library:5637722" package="SWITCH-ALPS_ALPS_EC12E_SW" package3d_urn="urn:adsk.eagle:package:5637727/3" value="SWITCH-ALPS_EC12E_SW" x="60.96" y="27.94" smashed="yes">
+<attribute name="MF" value="" x="60.96" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="EC12E2424407" x="60.96" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="58.46" y="36.44" size="1.27" layer="25"/>
+<attribute name="OC_FARNELL" value="1520813" x="60.96" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="74M1068" x="60.96" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="64.46" y="18.94" size="1.27" layer="27" rot="R180"/>
+</element>
+</elements>
+<signals>
+<signal name="GND">
+<contactref element="VR1" pad="3"/>
+<contactref element="VR2" pad="3"/>
+<contactref element="VR3" pad="3"/>
+<contactref element="SW2" pad="C"/>
+<contactref element="SW1" pad="C"/>
+<contactref element="SW1" pad="D"/>
+<contactref element="SW2" pad="D"/>
+<contactref element="J1" pad="16"/>
+<contactref element="VR4" pad="3"/>
+<contactref element="SW3" pad="C"/>
+<contactref element="SW3" pad="D"/>
+<wire x1="81.28" y1="26.79" x2="78.78" y2="41.29" width="0" layer="19" extent="1-1"/>
+<wire x1="46.93" y1="28.905" x2="81.28" y2="26.79" width="0" layer="19" extent="16-16"/>
+<wire x1="46.95" y1="1.505" x2="46.93" y2="28.905" width="0" layer="19" extent="16-16"/>
+<wire x1="25.4" y1="20.44" x2="46.93" y2="28.905" width="0" layer="19" extent="16-16"/>
+<wire x1="22.9" y1="34.94" x2="25.4" y2="20.44" width="0" layer="19" extent="1-1"/>
+<wire x1="10.12" y1="40.24" x2="22.9" y2="34.94" width="0" layer="19" extent="1-1"/>
+<wire x1="10.12" y1="1.505" x2="25.4" y2="20.44" width="0" layer="19" extent="1-1"/>
+<wire x1="60.96" y1="20.44" x2="10.12" y2="1.505" width="0" layer="19" extent="1-1"/>
+<wire x1="58.46" y1="34.94" x2="60.96" y2="20.44" width="0" layer="19" extent="1-1"/>
+<wire x1="83.78" y1="1.505" x2="81.28" y2="26.79" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="VCC">
+<contactref element="VR1" pad="1"/>
+<contactref element="VR2" pad="1"/>
+<contactref element="VR3" pad="1"/>
+<contactref element="J1" pad="1"/>
+<contactref element="VR4" pad="1"/>
+<wire x1="39.43" y1="28.905" x2="78.78" y2="1.505" width="0" layer="19" extent="16-16"/>
+<wire x1="5.12" y1="1.505" x2="39.43" y2="28.905" width="0" layer="19" extent="16-16"/>
+<wire x1="41.95" y1="1.505" x2="5.12" y2="1.505" width="0" layer="19" extent="1-1"/>
+<wire x1="5.12" y1="40.24" x2="39.43" y2="28.905" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$1">
+<contactref element="VR1" pad="2"/>
+<contactref element="J1" pad="2"/>
+<wire x1="39.93" y1="28.905" x2="7.62" y2="40.24" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$2">
+<contactref element="VR2" pad="2"/>
+<contactref element="J1" pad="3"/>
+<wire x1="40.43" y1="28.905" x2="7.62" y2="1.505" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$3">
+<contactref element="VR3" pad="2"/>
+<contactref element="J1" pad="4"/>
+<wire x1="40.93" y1="28.905" x2="81.28" y2="1.505" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$4">
+<contactref element="SW2" pad="A"/>
+<contactref element="J1" pad="6"/>
+<wire x1="41.93" y1="28.905" x2="78.78" y2="26.79" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$5">
+<contactref element="SW2" pad="B"/>
+<contactref element="J1" pad="7"/>
+<wire x1="42.43" y1="28.905" x2="83.78" y2="26.79" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$7">
+<contactref element="SW1" pad="B"/>
+<contactref element="J1" pad="9"/>
+<wire x1="43.43" y1="28.905" x2="27.9" y2="20.44" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$8">
+<contactref element="SW2" pad="E"/>
+<contactref element="J1" pad="10"/>
+<wire x1="43.93" y1="28.905" x2="83.78" y2="41.29" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$9">
+<contactref element="SW1" pad="E"/>
+<contactref element="J1" pad="11"/>
+<wire x1="44.43" y1="28.905" x2="27.9" y2="34.94" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$6">
+<contactref element="SW1" pad="A"/>
+<contactref element="J1" pad="8"/>
+<wire x1="42.93" y1="28.905" x2="22.9" y2="20.44" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$10">
+<contactref element="VR4" pad="2"/>
+<contactref element="J1" pad="5"/>
+<wire x1="44.45" y1="1.505" x2="41.43" y2="28.905" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$11">
+<contactref element="SW3" pad="A"/>
+<contactref element="J1" pad="12"/>
+<wire x1="58.46" y1="20.44" x2="44.93" y2="28.905" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$12">
+<contactref element="SW3" pad="B"/>
+<contactref element="J1" pad="13"/>
+<wire x1="63.46" y1="20.44" x2="45.43" y2="28.905" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$13">
+<contactref element="SW3" pad="E"/>
+<contactref element="J1" pad="14"/>
+<wire x1="63.46" y1="34.94" x2="45.93" y2="28.905" width="0" layer="19" extent="16-16"/>
+</signal>
+</signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
+</board>
+</drawing>
+<compatibility>
+<note version="8.2" severity="warning">
+Since Version 8.2, EAGLE supports online libraries. The ids
+of those online libraries will not be understood (or retained)
+with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
+</note>
+</compatibility>
+</eagle>
