@@ -29,7 +29,7 @@ Number of signal required between main-board and knobs controller is reduced to:
 ## How did this happen?
 I want to upgrade the mainboard to using a teensy 4.0 and I don't want to rely on using the pins on the underside of the teensy. 
 
-I started with the schematic of [aduino mkr zero](https://create.arduino.cc/projecthub/products/arduino-mkr-zero) (available from arduino -- [MKRZero-reference.zip](https://content.arduino.cc/assets/MKRZero-reference.zip) as eagle .sch and .brd) and removed components from the circuit which I don't need. I needed to keep the SWD (Serial wire debug) pins on the micro-controller available, so I can upload a bootloader- as the usb connection won't be available until the bootloader is programmed via the 6-pin SWD header.
+I started with the schematic of [arduino mkr zero](https://create.arduino.cc/projecthub/products/arduino-mkr-zero) (available from arduino -- [MKRZero-reference.zip](https://content.arduino.cc/assets/MKRZero-reference.zip) as eagle .sch and .brd) and removed components from the circuit which I don't need. I needed to keep the SWD (Serial wire debug) pins on the micro-controller available, so I can upload a bootloader- as the usb connection won't be available until the bootloader is programmed via the 6-pin SWD header.
 
 ## Images
 
