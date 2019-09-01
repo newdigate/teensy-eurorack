@@ -1,5 +1,10 @@
 # Knobs Controller
 
+```
+status: pcb design not verified 
+   01 Sept 2019: pcb delivery failure, pcbs re-ordered
+```
+
 ## build
 * build details for knob controller can be found here - [BUILD.md](BUILD.md) 
 * BOM can be found here [Bill-of-materials.md](Bill-of-materials.md)
