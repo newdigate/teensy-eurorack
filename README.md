@@ -23,17 +23,26 @@
 * Autodesk Fusion 360 used for mechanical layout
 
 ## support
-What you can do if you like to see progress with this project
+This project is a work-in-progress! 
+
+What you can do if you like to see progress with this project?
 * star this repository
 * subscribe [Nic N on youtube](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) & [DIY Audio Electronics Maker](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g)
 * clone this repo, make improvements, commit & send pull-requests
 
 ## todo 
-- [x] ~~Breakout board for rotary encoders and pots~~
-- [ ] change all 0603 resistors and caps with 0805
+- [ ] Teensy 4.0 changes
+  - [ ] move control-voltage adc and dacs off main-board and on to top-breakout board
+  - [ ] reduce main board to double layer board, instead of 4-layer board
+  - [ ] increase horizontal size from 20HP to 24HP  
+- [ ] Breakout board for rotary encoders and pots
+  - [x] ~~Order~~
+  - [ ] Assemble
+  - [ ] Certify
+- [ ] ~~change all 0603 resistors and caps with 0805~~
 - [ ] Adapt mainboard with fpc connector from new breakout board
 - [x] ~~Include schematics and board for uSD adapter~~
-- [ ] Isolate analog grounds
+- [x] ~~Isolate analog grounds~~
 - [ ] Vertical alignment of FPC connectors between top breakout and mainboard
 - [ ] Finalize circuits / boards
 - [ ] Testing
