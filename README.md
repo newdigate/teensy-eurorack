@@ -4,6 +4,7 @@
 * [support](#support)
 * [todo](#todo)
 * [social media](#social-media)
+* [videos](#videos)
 
 **open source [hardware](hardware) and [software](software) for a ~~[teensy 3.6](https://www.pjrc.com/store/teensy36.html "teensy 3.6 board")~~ eurorack shield** (working on updating to [teensy 4](https://www.pjrc.com/teensy-4-0/) )
 
