@@ -42,6 +42,7 @@ What you can do if you like to see progress with this project?
 * clone this repo, make improvements, commit & send pull-requests
 
 ## todo 
+- [ ] Migrate circuits and pcbs to kicad
 - [ ] Teensy 4.0 changes
   - [ ] move control-voltage adc and dacs off main-board and on to top-breakout board
   - [ ] reduce main board to double layer board, instead of 4-layer board
