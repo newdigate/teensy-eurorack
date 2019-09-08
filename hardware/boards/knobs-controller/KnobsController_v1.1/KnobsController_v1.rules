@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 546)
+    (start_pass_no 865)
     (layer_rule Top
       (active on)
       (preferred_direction horizontal)
@@ -31,6 +31,15 @@
     (clear 125.0 (type smd_to_turn_gap))
     (clear 31.4 (type smd_smd))
   )
+  (padstack "Via[0-1]_450:300_um"
+    (shape
+      (circle Top 450.0 0.0 0.0)
+    )
+    (shape
+      (circle Bottom 450.0 0.0 0.0)
+    )
+    (attach off)
+  )
   (padstack "Via[0-1]_800:400_um"
     (shape
       (circle Top 800.0 0.0 0.0)
@@ -41,16 +50,22 @@
     (attach off)
   )
   (via 
+    "Via[0-1]_450:300_um" "Via[0-1]_450:300_um" default
+  )
+  (via 
     "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_450:300_um-kicad_default" "Via[0-1]_450:300_um" "kicad_default"
   )
   (via 
     "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
   )
   (via_rule
-    default "Via[0-1]_800:400_um"
+    default "Via[0-1]_450:300_um"
   )
   (via_rule
-    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+    "kicad_default" "Via[0-1]_450:300_um-kicad_default"
   )
   (class default
     (clearance_class default)
@@ -75,7 +90,7 @@
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
-      (width 250.0)
+      (width 125.0)
     )
     (circuit 
       (use_layer Top Bottom)
