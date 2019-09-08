@@ -27,7 +27,12 @@ A set of circuits and pc-board designs integrating all the components you need f
 ## software 
 * All schematics and circuit boards designed using Autodesk Eagle cad
 * Autodesk Fusion 360 used for mechanical layout
-
+* My free license to autodesk fusion 360 has expired
+* I am planning to migrate away from proprietry software and subscription licenses
+  * circuits and pc-boards to [Kicad](http://kicad-pcb.org/) 
+  * physical design to [FreeCAD](https://github.com/FreeCAD/FreeCAD)
+  * CAM using [opencamlib](https://github.com/aewallin/opencamlib)
+ 
 ## support
 This project is a work-in-progress! 
 
