@@ -1,7 +1,9 @@
 # Knobs Controller
 
 ```
-status: pcb design not verified 
+status:
+   migration to kicad in progress
+   pcb design not verified 
    01 Sept 2019: pcb delivery failure, pcbs re-ordered
 ```
 
