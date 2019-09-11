@@ -22,36 +22,32 @@ Wire Wire Line
 	6100 3900 7600 3900
 Connection ~ 6100 3900
 Connection ~ 7600 3900
-Text Label 6300 3900 0    70   ~ 0
-AVSS
 Wire Wire Line
 	3400 4200 4000 4200
-Text Label 4000 4200 0    70   ~ 0
-AVSS
 Wire Wire Line
-	5600 3200 6100 3200
+	5600 3200 6000 3200
 Wire Wire Line
-	6100 3200 7400 3200
+	6000 3200 7300 3200
 Wire Wire Line
-	7400 3200 7900 3200
-Connection ~ 6100 3200
-Connection ~ 7400 3200
-Text GLabel 6300 3200 2    70   BiDi ~ 0
+	7300 3200 7900 3200
+Connection ~ 6000 3200
+Connection ~ 7300 3200
+Text GLabel 7900 3200 2    70   BiDi ~ 0
 AVDD
 Wire Wire Line
 	3400 3800 4000 3800
 Wire Wire Line
 	4000 3800 4400 3800
-Text GLabel 4000 3800 2    70   BiDi ~ 0
+Text GLabel 4400 3800 2    70   BiDi ~ 0
 AVDD
 Connection ~ 4000 3800
 Wire Wire Line
 	4900 5300 4100 5300
-Text GLabel 4100 5300 2    70   BiDi ~ 0
+Text GLabel 4100 5300 0    70   BiDi ~ 0
 AVDD
 Wire Wire Line
 	5600 2400 6100 2400
-Text GLabel 5800 2400 2    70   BiDi ~ 0
+Text GLabel 6100 2400 2    70   BiDi ~ 0
 3V3
 Wire Wire Line
 	5600 2700 5800 2700
@@ -61,13 +57,13 @@ Connection ~ 5800 2700
 Text GLabel 5600 2700 0    10   BiDi ~ 0
 GND
 Wire Wire Line
-	5600 3500 6100 3500
+	5600 3500 6000 3500
 Wire Wire Line
-	6100 3500 7400 3500
+	6000 3500 7300 3500
 Wire Wire Line
-	7400 3500 7900 3500
-Connection ~ 6100 3500
-Connection ~ 7400 3500
+	7300 3500 7900 3500
+Connection ~ 6000 3500
+Connection ~ 7300 3500
 Text GLabel 5600 3500 0    10   BiDi ~ 0
 GND
 Wire Wire Line
@@ -141,12 +137,12 @@ $EndComp
 $Comp
 L Mainboard-eagle-import:C-EUC0805K C5
 U 1 1 D8AA1394
-P 6100 3300
-F 0 "C5" H 6000 3445 59  0000 L BNN
-F 1 "0.1u" H 5970 2985 59  0000 L BNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6100 3300 50  0001 C CNN
-F 3 "" H 6100 3300 50  0001 C CNN
-	1    6100 3300
+P 6000 3300
+F 0 "C5" H 5900 3445 59  0000 L BNN
+F 1 "0.1u" H 5870 2985 59  0000 L BNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6000 3300 50  0001 C CNN
+F 3 "" H 6000 3300 50  0001 C CNN
+	1    6000 3300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -174,12 +170,12 @@ $EndComp
 $Comp
 L Mainboard-eagle-import:CAP_CERAMIC0805-NOOUTLINE C7
 U 1 1 091C1F9C
-P 7400 3400
-F 0 "C7" V 7309 3449 50  0000 C CNN
-F 1 "10uF" V 7490 3449 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7400 3400 50  0001 C CNN
-F 3 "" H 7400 3400 50  0001 C CNN
-	1    7400 3400
+P 7300 3400
+F 0 "C7" V 7209 3449 50  0000 C CNN
+F 1 "10uF" V 7390 3449 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7300 3400 50  0001 C CNN
+F 3 "" H 7300 3400 50  0001 C CNN
+	1    7300 3400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -229,12 +225,12 @@ $EndComp
 $Comp
 L Mainboard-eagle-import:GND #GND04
 U 1 1 6DBAC010
-P 6100 3600
-F 0 "#GND04" H 6100 3600 50  0001 C CNN
-F 1 "GND" H 6000 3500 59  0000 L BNN
-F 2 "" H 6100 3600 50  0001 C CNN
-F 3 "" H 6100 3600 50  0001 C CNN
-	1    6100 3600
+P 6000 3600
+F 0 "#GND04" H 6000 3600 50  0001 C CNN
+F 1 "GND" H 5900 3500 59  0000 L BNN
+F 2 "" H 6000 3600 50  0001 C CNN
+F 3 "" H 6000 3600 50  0001 C CNN
+	1    6000 3600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -292,4 +288,11 @@ F 3 "" H 6300 5400 50  0001 C CNN
 	1    6300 5400
 	1    0    0    -1  
 $EndComp
+Text GLabel 4400 4200 2    70   Input ~ 0
+AVSS
+Connection ~ 4000 4200
+Wire Wire Line
+	4000 4200 4400 4200
+Text GLabel 8100 3900 2    70   Input ~ 0
+AVSS
 $EndSCHEMATC

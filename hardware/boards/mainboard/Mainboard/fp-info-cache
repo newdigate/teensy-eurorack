@@ -1,4 +1,4 @@
-139556958736926
+166227517464835
 Air_Coils_SML_NEOSID
 Neosid_Air-Coil_SML_1turn_HDM0131A
 
@@ -27005,6 +27005,128 @@ Blank
 0
 0
 0
+Mainboard
+1X02
+<b>PIN HEADER</b>
+
+0
+2
+2
+Mainboard
+1X04
+<b>PIN HEADER</b>
+
+0
+4
+4
+Mainboard
+8-SMD
+
+
+0
+8
+8
+Mainboard
+0805-NO
+
+
+0
+2
+2
+Mainboard
+ACJS-MV5
+
+
+0
+5
+5
+Mainboard
+AVX-A
+
+
+0
+2
+2
+Mainboard
+C0805
+<b>CAPACITOR</b><p>
+
+0
+2
+2
+Mainboard
+C0805K
+<b>Ceramic Chip Capacitor KEMET 0805 reflow solder</b><p>
+Metric Code Size 2012
+
+0
+2
+2
+Mainboard
+C1206
+
+
+0
+2
+2
+Mainboard
+EURO_POWER_HEADER
+Eurorack Modular Synth 5 x 2 power header
+
+0
+10
+10
+Mainboard
+LQFP64L
+<b>LQFP 64L</b><p>
+pitch 0.5mm, body 10 mm x 10 mm
+
+0
+64
+64
+Mainboard
+MOLEX_52892-3033_0
+MOLX-52892-3033
+
+0
+32
+32
+Mainboard
+MURATA_BLM21PG221SN1D_1
+MURA-FB-2
+
+0
+2
+2
+Mainboard
+R0805
+
+
+0
+2
+2
+Mainboard
+SMA-DIODE
+<B>Diode</B><p>
+Basic SMA packaged diode. Good for reverse polarization protection. Common part #: MBRA140
+
+0
+2
+2
+Mainboard
+SOT223
+<b>Small Outline Transistor</b>
+
+0
+4
+4
+Mainboard
+TEENSY_4.0_WITH_SMD_HEADER_PINS
+
+
+0
+43
+43
 Measurement_Points
 Measurement_Point_Round-SMD-Pad_Big
 

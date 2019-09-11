@@ -176,7 +176,7 @@ Wire Wire Line
 Wire Wire Line
 	6000 2100 6000 1900
 Connection ~ 5900 1900
-Text GLabel 5200 1900 2    70   BiDi ~ 0
+Text GLabel 5200 1900 0    70   BiDi ~ 0
 3V3
 Connection ~ 6200 1900
 Connection ~ 6000 1900
@@ -201,7 +201,7 @@ Wire Wire Line
 Wire Wire Line
 	4150 150  4750 150 
 Connection ~ 4150 150 
-Text GLabel 3550 150  2    70   BiDi ~ 0
+Text GLabel 3550 150  0    70   BiDi ~ 0
 3V3
 Wire Wire Line
 	1150 2500 4900 2500
@@ -287,15 +287,11 @@ Text Label 10200 1850 0    70   ~ 0
 AGND
 Wire Wire Line
 	12200 3200 12650 3200
-Text Label 12425 3200 0    70   ~ 0
+Text Label 11600 2400 0    70   ~ 0
 AGND
-Wire Wire Line
-	10800 3800 11350 3800
-Text Label 11350 3800 0    70   ~ 0
+Text Label 11450 3750 0    70   ~ 0
 AGND
-Wire Wire Line
-	10800 4800 11350 4800
-Text Label 11075 4800 0    70   ~ 0
+Text Label 11350 4750 0    70   ~ 0
 AGND
 Wire Wire Line
 	6700 7300 6600 7300
@@ -334,12 +330,8 @@ Connection ~ 10000 7500
 Text Label 7400 7500 0    70   ~ 0
 AGND
 Connection ~ 7350 7500
-Wire Wire Line
-	2050 2350 1450 2350
 Text Label 1450 2350 0    70   ~ 0
 AGND
-Wire Wire Line
-	2500 4050 1950 4050
 Text Label 1950 4050 0    70   ~ 0
 AGND
 Wire Wire Line
@@ -774,8 +766,6 @@ Wire Wire Line
 	700  1250 700  2100
 Text Label 700  2100 0    70   ~ 0
 AGND
-Wire Wire Line
-	300  1250 700  2100
 $Sheet
 S 1750 1750 1100 700 
 U 5D7E3898
@@ -892,4 +882,6 @@ Wire Wire Line
 Wire Wire Line
 	12200 4750 12200 3750
 Connection ~ 12200 3750
+Wire Wire Line
+	1950 4050 2550 4050
 $EndSCHEMATC
