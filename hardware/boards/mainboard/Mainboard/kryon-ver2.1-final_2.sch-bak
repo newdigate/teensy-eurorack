@@ -1,0 +1,295 @@
+EESchema Schematic File Version 4
+LIBS:Mainboard-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 13
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5600 3900 6100 3900
+Wire Wire Line
+	7600 3900 8100 3900
+Wire Wire Line
+	6100 3900 7600 3900
+Connection ~ 6100 3900
+Connection ~ 7600 3900
+Text Label 6300 3900 0    70   ~ 0
+AVSS
+Wire Wire Line
+	3400 4200 4000 4200
+Text Label 4000 4200 0    70   ~ 0
+AVSS
+Wire Wire Line
+	5600 3200 6100 3200
+Wire Wire Line
+	6100 3200 7400 3200
+Wire Wire Line
+	7400 3200 7900 3200
+Connection ~ 6100 3200
+Connection ~ 7400 3200
+Text GLabel 6300 3200 2    70   BiDi ~ 0
+AVDD
+Wire Wire Line
+	3400 3800 4000 3800
+Wire Wire Line
+	4000 3800 4400 3800
+Text GLabel 4000 3800 2    70   BiDi ~ 0
+AVDD
+Connection ~ 4000 3800
+Wire Wire Line
+	4900 5300 4100 5300
+Text GLabel 4100 5300 2    70   BiDi ~ 0
+AVDD
+Wire Wire Line
+	5600 2400 6100 2400
+Text GLabel 5800 2400 2    70   BiDi ~ 0
+3V3
+Wire Wire Line
+	5600 2700 5800 2700
+Wire Wire Line
+	5800 2700 6100 2700
+Connection ~ 5800 2700
+Text GLabel 5600 2700 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	5600 3500 6100 3500
+Wire Wire Line
+	6100 3500 7400 3500
+Wire Wire Line
+	7400 3500 7900 3500
+Connection ~ 6100 3500
+Connection ~ 7400 3500
+Text GLabel 5600 3500 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	5600 4200 6100 4200
+Wire Wire Line
+	7600 4200 8100 4200
+Wire Wire Line
+	6100 4200 7600 4200
+Connection ~ 6100 4200
+Connection ~ 7600 4200
+Text GLabel 5600 4200 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	4000 4000 3400 4000
+Wire Wire Line
+	3400 4100 4000 4100
+Wire Wire Line
+	3400 3900 4000 3900
+Wire Wire Line
+	4000 4100 4000 4000
+Wire Wire Line
+	4000 4000 4000 3900
+Connection ~ 4000 4100
+Connection ~ 4000 3900
+Text GLabel 4000 4000 2    70   BiDi ~ 0
+GND
+Connection ~ 4000 4000
+Wire Wire Line
+	5700 5300 6200 5300
+Wire Wire Line
+	5900 5400 5900 5800
+Wire Wire Line
+	5900 5800 6400 5800
+Wire Wire Line
+	5900 5400 6200 5400
+Text GLabel 6400 5800 2    70   BiDi ~ 0
+VIN
+$Comp
+L Mainboard-eagle-import:C-EUC0805K C1
+U 1 1 1D572C6C
+P 5600 2500
+F 0 "C1" H 5500 2645 59  0000 L BNN
+F 1 "0.1u" H 5470 2185 59  0000 L BNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5600 2500 50  0000 C CNN
+F 3 "" H 5600 2500 50  0001 C CNN
+	1    5600 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mainboard-eagle-import:C-EUC0805K C4
+U 1 1 5C72CEA9
+P 6100 2500
+F 0 "C4" H 6000 2645 59  0000 L BNN
+F 1 "0.1u" H 5970 2185 59  0000 L BNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6100 2500 50  0001 C CNN
+F 3 "" H 6100 2500 50  0001 C CNN
+	1    6100 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mainboard-eagle-import:C-EUC0805K C2
+U 1 1 742C1862
+P 5600 3300
+F 0 "C2" H 5500 3445 59  0000 L BNN
+F 1 "0.1u" H 5470 2985 59  0000 L BNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5600 3300 50  0001 C CNN
+F 3 "" H 5600 3300 50  0001 C CNN
+	1    5600 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mainboard-eagle-import:C-EUC0805K C5
+U 1 1 D8AA1394
+P 6100 3300
+F 0 "C5" H 6000 3445 59  0000 L BNN
+F 1 "0.1u" H 5970 2985 59  0000 L BNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6100 3300 50  0001 C CNN
+F 3 "" H 6100 3300 50  0001 C CNN
+	1    6100 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mainboard-eagle-import:C-EUC0805K C3
+U 1 1 48630D30
+P 5600 4000
+F 0 "C3" H 5500 4145 59  0000 L BNN
+F 1 "0.1u" H 5470 3685 59  0000 L BNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5600 4000 50  0001 C CNN
+F 3 "" H 5600 4000 50  0001 C CNN
+	1    5600 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mainboard-eagle-import:C-EUC0805K C6
+U 1 1 F64D69C8
+P 6100 4000
+F 0 "C6" H 6000 4145 59  0000 L BNN
+F 1 "0.1u" H 5970 3685 59  0000 L BNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6100 4000 50  0001 C CNN
+F 3 "" H 6100 4000 50  0001 C CNN
+	1    6100 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mainboard-eagle-import:CAP_CERAMIC0805-NOOUTLINE C7
+U 1 1 091C1F9C
+P 7400 3400
+F 0 "C7" V 7309 3449 50  0000 C CNN
+F 1 "10uF" V 7490 3449 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7400 3400 50  0001 C CNN
+F 3 "" H 7400 3400 50  0001 C CNN
+	1    7400 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mainboard-eagle-import:CAP_CERAMIC0805-NOOUTLINE C9
+U 1 1 1C473A1E
+P 7900 3400
+F 0 "C9" V 7809 3449 50  0000 C CNN
+F 1 "10uF" V 7990 3449 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7900 3400 50  0001 C CNN
+F 3 "" H 7900 3400 50  0001 C CNN
+	1    7900 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mainboard-eagle-import:CAP_CERAMIC0805-NOOUTLINE C8
+U 1 1 B9D101F7
+P 7600 4100
+F 0 "C8" V 7509 4149 50  0000 C CNN
+F 1 "10uF" V 7690 4149 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7600 4100 50  0001 C CNN
+F 3 "" H 7600 4100 50  0001 C CNN
+	1    7600 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mainboard-eagle-import:CAP_CERAMIC0805-NOOUTLINE C10
+U 1 1 406E39E7
+P 8100 4100
+F 0 "C10" V 8009 4149 50  0000 C CNN
+F 1 "10uF" V 8190 4149 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8100 4100 50  0001 C CNN
+F 3 "" H 8100 4100 50  0001 C CNN
+	1    8100 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mainboard-eagle-import:GND #GND03
+U 1 1 C92C8F3B
+P 5800 2800
+F 0 "#GND03" H 5800 2800 50  0001 C CNN
+F 1 "GND" H 5700 2700 59  0000 L BNN
+F 2 "" H 5800 2800 50  0001 C CNN
+F 3 "" H 5800 2800 50  0001 C CNN
+	1    5800 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mainboard-eagle-import:GND #GND04
+U 1 1 6DBAC010
+P 6100 3600
+F 0 "#GND04" H 6100 3600 50  0001 C CNN
+F 1 "GND" H 6000 3500 59  0000 L BNN
+F 2 "" H 6100 3600 50  0001 C CNN
+F 3 "" H 6100 3600 50  0001 C CNN
+	1    6100 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mainboard-eagle-import:GND #GND05
+U 1 1 D5805D3F
+P 6100 4300
+F 0 "#GND05" H 6100 4300 50  0001 C CNN
+F 1 "GND" H 6000 4200 59  0000 L BNN
+F 2 "" H 6100 4300 50  0001 C CNN
+F 3 "" H 6100 4300 50  0001 C CNN
+	1    6100 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mainboard-eagle-import:EURO_POWER_HEADERREGULAR SV1
+U 1 1 6F54BB83
+P 3700 4000
+F 0 "SV1" H 3550 4330 59  0000 L BNN
+F 1 "EURO_POWER_HEADERREGULAR" H 3550 3600 59  0000 L BNN
+F 2 "Mainboard:EURO_POWER_HEADER" H 3700 4000 50  0001 C CNN
+F 3 "" H 3700 4000 50  0001 C CNN
+	1    3700 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mainboard-eagle-import:LM340?-MP IC1
+U 1 1 70C115B1
+P 5300 5300
+F 0 "IC1" H 5000 5525 59  0000 L BNN
+F 1 "LM340?-MP" H 5000 5425 59  0000 L BNN
+F 2 "TO_SOT_Packages_SMD:SOT-223" H 5300 5300 50  0001 C CNN
+F 3 "" H 5300 5300 50  0001 C CNN
+	1    5300 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mainboard-eagle-import:GND #GND02
+U 1 1 B6C57476
+P 5300 5700
+F 0 "#GND02" H 5300 5700 50  0001 C CNN
+F 1 "GND" H 5200 5600 59  0000 L BNN
+F 2 "" H 5300 5700 50  0001 C CNN
+F 3 "" H 5300 5700 50  0001 C CNN
+	1    5300 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mainboard-eagle-import:PINHD-1X2 JP1
+U 1 1 A75A2B47
+P 6300 5400
+F 0 "JP1" H 6050 5625 59  0000 L BNN
+F 1 "PINHD-1X2" H 6050 5100 59  0000 L BNN
+F 2 "Mainboard:1X02" H 6300 5400 50  0001 C CNN
+F 3 "" H 6300 5400 50  0001 C CNN
+	1    6300 5400
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

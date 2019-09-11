@@ -1,0 +1,295 @@
+EESchema Schematic File Version 4
+LIBS:Mainboard-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 13
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	2700 5100 3100 5100
+Text GLabel 3100 5100 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	4700 3000 5100 3000
+Text GLabel 4900 3000 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	5700 2800 6200 2800
+Text GLabel 6000 2800 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	7800 3700 7400 3700
+Text GLabel 7400 3700 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	7800 4400 7400 4400
+Text GLabel 7400 4400 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	7800 5000 7400 5000
+Text GLabel 7400 5000 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	2700 2600 4100 2600
+Text GLabel 4100 2600 2    70   BiDi ~ 0
+TFT_CS
+Wire Wire Line
+	2700 2500 4100 2500
+Text GLabel 4100 2500 2    70   BiDi ~ 0
+TFT_DC
+Wire Wire Line
+	2700 2300 4100 2300
+Text GLabel 4100 2300 2    70   BiDi ~ 0
+SPI0_SCK
+Wire Wire Line
+	2700 2400 4100 2400
+Text GLabel 4100 2400 2    70   BiDi ~ 0
+SPI0_MOSI
+Wire Wire Line
+	2700 2200 4100 2200
+Text GLabel 4100 2200 2    70   BiDi ~ 0
+VIN
+Text GLabel 3100 2200 2    70   BiDi ~ 0
+VIN
+Wire Wire Line
+	2700 4300 3000 4300
+Text Label 3000 4300 0    70   ~ 0
+DA_V1
+Wire Wire Line
+	2700 5000 3000 5000
+Text Label 3000 5000 0    70   ~ 0
+TAGND
+Wire Wire Line
+	2300 6700 3100 6700
+Text Label 2600 6700 0    70   ~ 0
+TAGND
+Wire Wire Line
+	7800 3500 8300 3500
+Text GLabel 8300 3500 2    70   BiDi ~ 0
+AVDD
+Wire Wire Line
+	7800 4200 8300 4200
+Text GLabel 8300 4200 2    70   BiDi ~ 0
+AVDD
+Wire Wire Line
+	7800 4800 8300 4800
+Text GLabel 8300 4800 2    70   BiDi ~ 0
+AVDD
+Wire Wire Line
+	7800 2900 8300 2900
+Text GLabel 8300 2900 2    70   BiDi ~ 0
+AVDD
+Wire Wire Line
+	7800 4900 9100 4900
+Text Label 9100 4900 0    70   ~ 0
+AD_V8
+Wire Wire Line
+	7800 4300 9100 4300
+Text Label 9100 4300 0    70   ~ 0
+AD_V7
+Wire Wire Line
+	7800 3600 9100 3600
+Text Label 9100 3600 0    70   ~ 0
+AD_V6
+Wire Wire Line
+	7800 3000 9200 3000
+Text Label 9200 3000 0    70   ~ 0
+AD_V5
+Wire Wire Line
+	2800 4900 3000 4900
+Text Label 3000 4900 0    70   ~ 0
+T_ANALOG_LEFT
+Wire Wire Line
+	3100 6500 3100 5900
+Text Label 3100 6200 0    70   ~ 0
+T_ANALOG_LEFT
+Wire Wire Line
+	2700 4800 3100 4800
+Text Label 3100 4800 0    70   ~ 0
+T_ANALOG_RIGHT
+Wire Wire Line
+	2700 4700 3000 4700
+Text Label 3000 4700 0    70   ~ 0
+AD_V1
+Wire Wire Line
+	2700 4600 3100 4600
+Text Label 3100 4600 0    70   ~ 0
+AD_V2
+Wire Wire Line
+	2700 4500 3000 4500
+Text Label 3000 4500 0    70   ~ 0
+AD_V3
+Wire Wire Line
+	2700 4400 3100 4400
+Text Label 3100 4400 0    70   ~ 0
+AD_V4
+Wire Wire Line
+	2700 4200 3100 4200
+Text Label 3100 4200 0    70   ~ 0
+DA_V2
+Wire Wire Line
+	2700 4100 3000 4100
+Text Label 3000 4100 0    70   ~ 0
+DA_V3
+Wire Wire Line
+	2700 4000 3100 4000
+Text Label 3100 4000 0    70   ~ 0
+DA_V4
+Wire Wire Line
+	2700 3900 3000 3900
+Text Label 3000 3900 0    70   ~ 0
+DA_V5
+Wire Wire Line
+	2700 3800 3100 3800
+Text Label 3100 3800 0    70   ~ 0
+DA_V6
+Wire Wire Line
+	3800 3000 2700 3000
+Wire Wire Line
+	3800 3000 3800 2900
+Wire Wire Line
+	3800 2900 5300 2900
+Wire Wire Line
+	5300 2900 5300 3100
+Wire Wire Line
+	5300 3100 5700 3100
+Text Label 3800 3000 0    70   ~ 0
+USB_B_VCC
+Wire Wire Line
+	2700 2900 3700 2900
+Wire Wire Line
+	3700 2900 3700 2700
+Wire Wire Line
+	3700 2700 5400 2700
+Wire Wire Line
+	5400 2700 5400 3000
+Wire Wire Line
+	5400 3000 5700 3000
+Text Label 3100 2900 0    70   ~ 0
+USB_B_D-
+Wire Wire Line
+	2700 2800 5500 2800
+Wire Wire Line
+	5500 2800 5500 2900
+Wire Wire Line
+	5500 2900 5700 2900
+Text Label 4100 2800 0    70   ~ 0
+USB_B_D+
+Wire Wire Line
+	4700 3300 2700 3300
+Text Label 3000 3300 0    70   ~ 0
+USB_A_VCC
+Wire Wire Line
+	4700 3100 2700 3100
+Text Label 3000 3100 0    70   ~ 0
+USB_A_D+
+Wire Wire Line
+	2700 3700 3000 3700
+Text GLabel 3000 3700 2    70   BiDi ~ 0
+MIDI_IN_PIN5
+Wire Wire Line
+	2700 3600 3100 3600
+Text GLabel 3100 3600 2    70   BiDi ~ 0
+MIDI_IN_PIN4
+Wire Wire Line
+	2700 3500 3000 3500
+Text GLabel 3000 3500 2    70   BiDi ~ 0
+MIDI_OUT_PIN5
+Wire Wire Line
+	2700 3400 3100 3400
+Text GLabel 3100 3400 2    70   BiDi ~ 0
+MIDI_OUT_PIN4
+Wire Wire Line
+	4700 3200 2700 3200
+Text Label 3100 3200 0    70   ~ 0
+USB_A_D-
+Wire Wire Line
+	2300 5600 3100 5600
+Wire Wire Line
+	3100 5600 3100 5700
+Text GLabel 2600 5600 2    70   BiDi ~ 0
+3V3
+Wire Wire Line
+	2700 2700 2900 2700
+Wire Wire Line
+	2900 2700 2900 1450
+Wire Wire Line
+	2900 1450 3200 1450
+Text Label 3200 1450 0    70   ~ 0
+AD_AGND
+$Comp
+L Mainboard-eagle-import:MOLEX_52892-3033MOLEX_52892-3033_0_0 J1
+U 1 1 F1780596
+P 2100 5200
+F 0 "J1" H 2100 5100 85  0000 L TNN
+F 1 "MOLEX_52892-3033MOLEX_52892-3033_0_0" H 2100 5200 50  0001 C CNN
+F 2 "Mainboard:MOLEX_52892-3033_0" H 2100 5200 50  0001 C CNN
+F 3 "" H 2100 5200 50  0001 C CNN
+	1    2100 5200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mainboard-eagle-import:PINHD-1X4 JUSB_B1
+U 1 1 60AD87F5
+P 5600 2900
+F 0 "JUSB_B1" H 5350 3225 59  0000 L BNN
+F 1 "PINHD-1X4" H 5350 2600 59  0000 L BNN
+F 2 "Mainboard:1X04" H 5600 2900 50  0001 C CNN
+F 3 "" H 5600 2900 50  0001 C CNN
+	1    5600 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mainboard-eagle-import:PINHD-1X4 JUSB_A1
+U 1 1 A4FDA5DD
+P 4600 3100
+F 0 "JUSB_A1" H 4350 3425 59  0000 L BNN
+F 1 "PINHD-1X4" H 4350 2800 59  0000 L BNN
+F 2 "Mainboard:1X04" H 4600 3100 50  0001 C CNN
+F 3 "" H 4600 3100 50  0001 C CNN
+	1    4600 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mainboard-eagle-import:DIODESMA D1
+U 1 1 74A9BC2C
+P 3100 5800
+F 0 "D1" H 3200 5819 59  0000 L BNN
+F 1 "DIODESMA" H 3200 5709 59  0000 L BNN
+F 2 "Mainboard:SMA-DIODE" H 3100 5800 50  0001 C CNN
+F 3 "" H 3100 5800 50  0001 C CNN
+	1    3100 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mainboard-eagle-import:DIODESMA D2
+U 1 1 9E0BEA3A
+P 3100 6600
+F 0 "D2" H 3200 6619 59  0000 L BNN
+F 1 "DIODESMA" H 3200 6509 59  0000 L BNN
+F 2 "Mainboard:SMA-DIODE" H 3100 6600 50  0001 C CNN
+F 3 "" H 3100 6600 50  0001 C CNN
+	1    3100 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mainboard-eagle-import:MOLEX_52892-3033MOLEX_52892-3033_0_0 J2
+U 1 1 92202B0B
+P 6250 5300
+F 0 "J2" H 6250 5200 85  0000 L TNN
+F 1 "MOLEX_52892-3033MOLEX_52892-3033_0_0" H 6250 5300 50  0001 C CNN
+F 2 "Mainboard:MOLEX_52892-3033_0" H 6250 5300 50  0001 C CNN
+F 3 "" H 6250 5300 50  0001 C CNN
+	1    6250 5300
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC
