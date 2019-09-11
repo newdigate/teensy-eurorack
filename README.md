@@ -1,4 +1,4 @@
-# digital eurorack audio-module prototyping dev-kit [![Join the chat at https://gitter.im/newdigate/teensy-eurorack](https://badges.gitter.im/newdigate/teensy-eurorack.svg)](https://gitter.im/newdigate/teensy-eurorack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# eurorack digital audio-module prototyping dev-kit [![Join the chat at https://gitter.im/newdigate/teensy-eurorack](https://badges.gitter.im/newdigate/teensy-eurorack.svg)](https://gitter.im/newdigate/teensy-eurorack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 *(work in progress)* open source **[hardware](hardware) and [software](software) for a ~~[teensy 3.6](https://www.pjrc.com/store/teensy36.html "teensy 3.6 board")~~ eurorack shield** (working on updating to [teensy 4](https://www.pjrc.com/teensy-4-0/) )
 
