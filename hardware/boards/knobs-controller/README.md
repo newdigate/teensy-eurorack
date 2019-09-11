@@ -26,7 +26,10 @@ Introducing an intermediate micro-controller (ARM cortex M0 / SAMD21G)
 
 some firmware will run on the M0 microcontroller to relay input (knob value changes) back to the mainboard and receive commands (eg. to light up RGB rotaries ) via serial TX / RX, 
 
-Number of signal required between main-board and knobs controller is reduced to: +5V, GND, TX, RX;  
+Number of signal required between main-board and knobs controller is reduced to: +5V, GND, TX, RX; 
+
+## todo 
+- [ ] change mcu to ATSAMD21G18A-AU (jlc pcb assembly friendly)
 
 ## How did this happen?
 I want to upgrade the mainboard to using a teensy 4.0 and I don't want to rely on using the pins on the underside of the teensy. 
