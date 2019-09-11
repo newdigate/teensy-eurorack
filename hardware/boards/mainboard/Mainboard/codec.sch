@@ -67,8 +67,6 @@ Wire Wire Line
 Connection ~ 4900 5500
 Connection ~ 4900 5400
 Connection ~ 4700 5400
-Text GLabel 4900 5400 0    10   BiDi ~ 0
-GND
 Wire Wire Line
 	6100 7300 6200 7300
 Wire Wire Line
