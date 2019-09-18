@@ -8,3 +8,6 @@
   * see [Bill of materials](Bill-of-materials.md)
 3. Solder SMD and through mount parts
 4. Program arduino bootloader using SWD 
+
+
+https://learn.adafruit.com/programming-an-m0-using-an-arduino
