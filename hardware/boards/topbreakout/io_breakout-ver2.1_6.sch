@@ -1,0 +1,299 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	4500 4000 3800 4000
+Text GLabel 3800 4000 0    70   BiDi ~ 0
+DA_SYNC
+Wire Wire Line
+	4500 3800 3800 3800
+Text GLabel 3800 3800 0    70   BiDi ~ 0
+SPI0_MOSI
+Wire Wire Line
+	4500 3700 3800 3700
+Text GLabel 3800 3700 0    70   BiDi ~ 0
+SPI0_SCK
+Wire Wire Line
+	4500 4900 3800 4900
+Text Label 3800 4900 2    70   ~ 0
+AVDD
+Wire Wire Line
+	5900 4900 6600 4900
+Text Label 6600 4900 0    70   ~ 0
+AVSS
+Wire Wire Line
+	5900 5500 6300 5500
+Wire Wire Line
+	5900 5500 5900 5400
+Wire Wire Line
+	5900 5300 5900 5400
+Wire Wire Line
+	5900 5300 5900 5200
+Wire Wire Line
+	5900 5200 5900 5100
+Wire Wire Line
+	6300 5500 6300 6000
+Text GLabel 6300 5500 2    70   BiDi ~ 0
+GND
+Connection ~ 5900 5400
+Connection ~ 5900 5300
+Connection ~ 5900 5200
+Text GLabel 5900 5400 2    70   BiDi ~ 0
+GND
+Connection ~ 5900 5500
+Wire Wire Line
+	2600 4200 4500 4200
+Wire Wire Line
+	2600 4200 2600 5000
+Wire Wire Line
+	8300 2500 7800 2500
+Wire Wire Line
+	7800 2500 6800 2500
+Wire Wire Line
+	6800 2500 6800 2400
+Wire Wire Line
+	6800 2400 5800 2400
+Connection ~ 7800 2500
+Connection ~ 5800 2400
+Text GLabel 8300 2500 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	2600 2500 3000 2500
+Wire Wire Line
+	3000 2500 3100 2500
+Wire Wire Line
+	3000 2700 3000 2500
+Connection ~ 3000 2500
+Text GLabel 2600 2500 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	4500 5500 3700 5500
+Text GLabel 3700 5500 0    70   BiDi ~ 0
+3V3
+Wire Wire Line
+	1600 4000 2200 4000
+Wire Wire Line
+	2200 4000 2300 4000
+Wire Wire Line
+	2300 4400 4500 4400
+Wire Wire Line
+	2300 4000 2300 4400
+Wire Wire Line
+	4500 4300 2200 4300
+Wire Wire Line
+	2200 4300 2200 4000
+Text GLabel 1600 4000 2    70   BiDi ~ 0
+3V3
+Connection ~ 2200 4000
+Wire Wire Line
+	5900 3700 9500 3700
+Text GLabel 9500 3700 2    70   BiDi ~ 0
+DA_V1
+Wire Wire Line
+	7200 3900 9000 3900
+Wire Wire Line
+	5900 3800 7200 3800
+Wire Wire Line
+	7200 3800 7200 3900
+Text GLabel 9000 3900 2    70   BiDi ~ 0
+DA_V2
+Wire Wire Line
+	7100 4100 7200 4100
+Wire Wire Line
+	5900 3900 7100 3900
+Wire Wire Line
+	7100 3900 7100 4100
+Text GLabel 7150 4100 2    70   BiDi ~ 0
+DA_V3
+Wire Wire Line
+	7000 4300 7600 4300
+Wire Wire Line
+	5900 4000 7000 4000
+Wire Wire Line
+	7000 4000 7000 4300
+Text GLabel 7600 4300 2    70   BiDi ~ 0
+DA_V4
+Wire Wire Line
+	4800 2200 3100 2200
+Wire Wire Line
+	3100 2200 2600 2200
+Text GLabel 2600 2200 0    70   BiDi ~ 0
+VIN
+Connection ~ 3100 2200
+Wire Wire Line
+	5800 2200 6200 2200
+Wire Wire Line
+	6200 2200 7800 2200
+Wire Wire Line
+	8300 2200 7800 2200
+Wire Wire Line
+	6200 4200 6200 2200
+Wire Wire Line
+	5900 4200 6100 4200
+Wire Wire Line
+	6200 4200 6100 4200
+Text Label 6700 2200 0    70   ~ 0
+VREF
+Connection ~ 7800 2200
+Connection ~ 6200 2200
+Connection ~ 6100 4200
+Wire Wire Line
+	4500 3900 3000 3900
+Text GLabel 3000 3900 0    70   BiDi ~ 0
+SPI0_MISO
+$Comp
+L TopBreakout-eagle-import:ANALOG_DEVICES_AD5754BREZANALOG_DEVICES_AD5754BREZ_0_2 U3
+U 1 1 5C95457F
+P 4700 3400
+AR Path="/5C95457F" Ref="U3"  Part="1" 
+AR Path="/5D7F4465/5C95457F" Ref="U3"  Part="1" 
+F 0 "U3" H 4700 3300 85  0000 L TNN
+F 1 "ANALOG_DEVICES_AD5754BREZANALOG_DEVICES_AD5754BREZ_0_2" H 4700 3400 50  0001 C CNN
+F 2 "topbreakout:ANALOG_DEVICES_AD5754BREZ_2" H 4700 3400 50  0001 C CNN
+F 3 "" H 4700 3400 50  0001 C CNN
+	1    4700 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L TopBreakout-eagle-import:TEST-POINT3X5 TP3
+U 1 1 BC758AA8
+P 6100 4200
+AR Path="/BC758AA8" Ref="TP3"  Part="1" 
+AR Path="/5D7F4465/BC758AA8" Ref="TP3"  Part="1" 
+F 0 "TP3" H 6000 4300 70  0001 L BNN
+F 1 "TEST-POINT3X5" V 6000 4200 70  0000 R TNN
+F 2 "topbreakout:PAD.03X.05" H 6100 4200 50  0001 C CNN
+F 3 "" H 6100 4200 50  0001 C CNN
+	1    6100 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TopBreakout-eagle-import:GND #GND2
+U 1 1 C92C8F3B
+P 6300 6100
+AR Path="/C92C8F3B" Ref="#GND2"  Part="1" 
+AR Path="/5D7F4465/C92C8F3B" Ref="#GND02"  Part="1" 
+F 0 "#GND02" H 6300 6100 50  0001 C CNN
+F 1 "GND" H 6200 6000 59  0000 L BNN
+F 2 "" H 6300 6100 50  0001 C CNN
+F 3 "" H 6300 6100 50  0001 C CNN
+	1    6300 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L TopBreakout-eagle-import:GND #GND4
+U 1 1 6AE2E73F
+P 2600 5100
+AR Path="/6AE2E73F" Ref="#GND4"  Part="1" 
+AR Path="/5D7F4465/6AE2E73F" Ref="#GND04"  Part="1" 
+F 0 "#GND04" H 2600 5100 50  0001 C CNN
+F 1 "GND" H 2500 5000 59  0000 L BNN
+F 2 "" H 2600 5100 50  0001 C CNN
+F 3 "" H 2600 5100 50  0001 C CNN
+	1    2600 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L TopBreakout-eagle-import:MICROCHIP_MCP1700T-2502E-TTMICROCHIP_MCP1700T-2502E-TT_0_0 U5
+U 1 1 E98390DC
+P 5000 1900
+AR Path="/E98390DC" Ref="U5"  Part="1" 
+AR Path="/5D7F4465/E98390DC" Ref="U5"  Part="1" 
+F 0 "U5" H 5000 1800 85  0000 L TNN
+F 1 "MICROCHIP_MCP1700T-2502E-TTMICROCHIP_MCP1700T-2502E-TT_0_0" H 5000 1900 50  0001 C CNN
+F 2 "topbreakout:MICROCHIP_MCP1700T-2502E-TT_0" H 5000 1900 50  0001 C CNN
+F 3 "" H 5000 1900 50  0001 C CNN
+	1    5000 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L TopBreakout-eagle-import:GND #GND5
+U 1 1 6CC61BFB
+P 5800 2500
+AR Path="/6CC61BFB" Ref="#GND5"  Part="1" 
+AR Path="/5D7F4465/6CC61BFB" Ref="#GND05"  Part="1" 
+F 0 "#GND05" H 5800 2500 50  0001 C CNN
+F 1 "GND" H 5700 2400 59  0000 L BNN
+F 2 "" H 5800 2500 50  0001 C CNN
+F 3 "" H 5800 2500 50  0001 C CNN
+	1    5800 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L TopBreakout-eagle-import:C-EUC1206 C6
+U 1 1 FDFA29AC
+P 7800 2300
+AR Path="/FDFA29AC" Ref="C6"  Part="1" 
+AR Path="/5D7F4465/FDFA29AC" Ref="C6"  Part="1" 
+F 0 "C6" V 7709 2349 59  0000 C CNN
+F 1 "0.1uF" V 7890 2349 59  0000 C CNN
+F 2 "topbreakout:C1206" H 7800 2300 50  0001 C CNN
+F 3 "" H 7800 2300 50  0001 C CNN
+	1    7800 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L TopBreakout-eagle-import:C-EUC1206 C9
+U 1 1 5BE03534
+P 8300 2300
+AR Path="/5BE03534" Ref="C9"  Part="1" 
+AR Path="/5D7F4465/5BE03534" Ref="C9"  Part="1" 
+F 0 "C9" V 8209 2349 59  0000 C CNN
+F 1 "0.1uF" V 8390 2349 59  0000 C CNN
+F 2 "topbreakout:C1206" H 8300 2300 50  0001 C CNN
+F 3 "" H 8300 2300 50  0001 C CNN
+	1    8300 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L TopBreakout-eagle-import:C-EUC1206 C10
+U 1 1 E5C7F153
+P 2600 2300
+AR Path="/E5C7F153" Ref="C10"  Part="1" 
+AR Path="/5D7F4465/E5C7F153" Ref="C10"  Part="1" 
+F 0 "C10" V 2509 2349 59  0000 C CNN
+F 1 "0.1uF" V 2690 2349 59  0000 C CNN
+F 2 "topbreakout:C1206" H 2600 2300 50  0001 C CNN
+F 3 "" H 2600 2300 50  0001 C CNN
+	1    2600 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L TopBreakout-eagle-import:C-EUC1206 C11
+U 1 1 608006B0
+P 3100 2300
+AR Path="/608006B0" Ref="C11"  Part="1" 
+AR Path="/5D7F4465/608006B0" Ref="C11"  Part="1" 
+F 0 "C11" V 3009 2349 59  0000 C CNN
+F 1 "0.1uF" V 3190 2349 59  0000 C CNN
+F 2 "topbreakout:C1206" H 3100 2300 50  0001 C CNN
+F 3 "" H 3100 2300 50  0001 C CNN
+	1    3100 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L TopBreakout-eagle-import:GND #GND6
+U 1 1 6DBAC010
+P 3000 2800
+AR Path="/6DBAC010" Ref="#GND6"  Part="1" 
+AR Path="/5D7F4465/6DBAC010" Ref="#GND06"  Part="1" 
+F 0 "#GND06" H 3000 2800 50  0001 C CNN
+F 1 "GND" H 2900 2700 59  0000 L BNN
+F 2 "" H 3000 2800 50  0001 C CNN
+F 3 "" H 3000 2800 50  0001 C CNN
+	1    3000 2800
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,323 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 14469 9224
+encoding utf-8
+Sheet 4 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	11600 6300 6000 6300
+Wire Wire Line
+	6000 6300 6000 3900
+Wire Wire Line
+	6000 3900 1400 3900
+Text Label 10700 6300 0    70   ~ 0
+USB_B_VCC
+Text Label 2600 3900 0    70   ~ 0
+USB_B_VCC
+Text Label 1800 3900 0    70   ~ 0
+USB_B_VCC
+Wire Wire Line
+	11600 6200 6100 6200
+Wire Wire Line
+	6100 6200 6100 3800
+Wire Wire Line
+	6100 3800 1400 3800
+Text Label 10700 6200 0    70   ~ 0
+USB_B_D-
+Text Label 1800 3800 0    70   ~ 0
+USB_B_D-
+Wire Wire Line
+	11600 6100 6200 6100
+Wire Wire Line
+	6200 6100 6200 3700
+Wire Wire Line
+	6200 3700 1400 3700
+Text Label 10900 6100 0    70   ~ 0
+USB_B_D+
+Text Label 1800 3700 0    70   ~ 0
+USB_B_D+
+Wire Wire Line
+	10500 5600 10200 4900
+Text GLabel 10500 5600 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	11600 6000 12700 6000
+Text GLabel 12700 6000 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	1400 6000 1800 6000
+Text GLabel 1800 6000 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	10500 5900 10500 6000
+Wire Wire Line
+	10500 6000 5200 6000
+Wire Wire Line
+	5200 6000 5200 4200
+Wire Wire Line
+	5200 4200 1400 4200
+Text Label 9600 6000 0    70   ~ 0
+USB_A_VCC
+Text Label 1800 4200 0    70   ~ 0
+USB_A_VCC
+Wire Wire Line
+	10500 5700 10300 5700
+Wire Wire Line
+	10300 5700 10300 5800
+Wire Wire Line
+	10300 5800 5400 5800
+Wire Wire Line
+	5400 5800 5400 4000
+Wire Wire Line
+	5400 4000 1400 4000
+Text Label 9600 5800 0    70   ~ 0
+USB_A_D+
+Text Label 1800 4000 0    70   ~ 0
+USB_A_D+
+Wire Wire Line
+	1400 3500 7700 3500
+Text GLabel 7700 3500 2    70   BiDi ~ 0
+TFT_CS
+Text GLabel 1800 3500 2    70   BiDi ~ 0
+TFT_CS
+Wire Wire Line
+	1400 3400 7600 3400
+Text GLabel 7550 3400 2    70   BiDi ~ 0
+TFT_DC
+Text GLabel 1800 3400 2    70   BiDi ~ 0
+TFT_DC
+Wire Wire Line
+	1400 3200 7400 3200
+Text GLabel 7400 3200 2    70   BiDi ~ 0
+SPI0_SCK
+Text GLabel 1800 3200 2    70   BiDi ~ 0
+SPI0_SCK
+Wire Wire Line
+	1400 3300 7500 3300
+Text GLabel 7450 3300 2    70   BiDi ~ 0
+SPI0_MOSI
+Text GLabel 1800 3300 2    70   BiDi ~ 0
+SPI0_MOSI
+Wire Wire Line
+	1400 3100 2800 3100
+Text GLabel 2800 3100 2    70   BiDi ~ 0
+VIN
+Text GLabel 1800 3100 2    70   BiDi ~ 0
+VIN
+Wire Wire Line
+	1400 4600 7200 4600
+Wire Wire Line
+	7200 4600 7200 7400
+Wire Wire Line
+	8600 8000 8600 7400
+Wire Wire Line
+	7200 7400 8600 7400
+Text Label 1800 4600 0    70   ~ 0
+MIDI_IN_PIN5
+Wire Wire Line
+	1400 4500 7300 4500
+Wire Wire Line
+	7300 4500 7300 7300
+Wire Wire Line
+	9600 8000 9600 7300
+Wire Wire Line
+	7300 7300 9600 7300
+Text Label 1800 4500 0    70   ~ 0
+MIDI_IN_PIN4
+Wire Wire Line
+	1400 4400 7400 4400
+Wire Wire Line
+	7400 4400 7400 7200
+Wire Wire Line
+	10500 8100 10500 7200
+Wire Wire Line
+	7400 7200 10500 7200
+Text Label 1800 4400 0    70   ~ 0
+MIDI_OUT_PIN5
+Wire Wire Line
+	1400 4300 7500 4300
+Wire Wire Line
+	7500 4300 7500 7100
+Wire Wire Line
+	11500 8100 11500 7100
+Wire Wire Line
+	7500 7100 11500 7100
+Text Label 1800 4300 0    70   ~ 0
+MIDI_OUT_PIN4
+Wire Wire Line
+	1400 4100 5300 4100
+Wire Wire Line
+	5300 4100 5300 5900
+Wire Wire Line
+	10500 5800 10400 5800
+Wire Wire Line
+	10400 5800 10400 5900
+Wire Wire Line
+	5300 5900 10400 5900
+Text Label 9600 5900 0    70   ~ 0
+USB_A_D-
+Text Label 1800 4100 0    70   ~ 0
+USB_A_D-
+Wire Wire Line
+	1700 1200 2700 1200
+Text Label 1800 1200 0    70   ~ 0
+SD_DAT1
+Wire Wire Line
+	1700 1300 2700 1300
+Text Label 1800 1300 0    70   ~ 0
+SD_DATAOUT
+Wire Wire Line
+	1700 1400 2700 1400
+Text Label 1800 1400 0    70   ~ 0
+SD_GND
+Wire Wire Line
+	2700 1500 1700 1500
+Text Label 1800 1500 0    70   ~ 0
+SD_CLK
+Wire Wire Line
+	1700 1700 2700 1700
+Text Label 1800 1700 0    70   ~ 0
+SD_DATAIN
+Wire Wire Line
+	2700 1600 1700 1600
+Text Label 1800 1600 0    70   ~ 0
+SD_VCC
+Wire Wire Line
+	1700 1800 2700 1800
+Text Label 1800 1800 0    70   ~ 0
+SD_CS
+Wire Wire Line
+	1700 1900 2700 1900
+Text Label 1800 1900 0    70   ~ 0
+SD_DAT2
+Wire Wire Line
+	1400 5900 2300 5900
+Text GLabel 2000 5900 2    70   BiDi ~ 0
+AD_CS
+Wire Wire Line
+	1400 5800 2300 5800
+Text GLabel 1800 5800 2    70   BiDi ~ 0
+AD_RESET
+Wire Wire Line
+	1400 5700 2300 5700
+Text GLabel 1800 5700 2    70   BiDi ~ 0
+AD_CONVST
+Wire Wire Line
+	1400 5600 2300 5600
+Text GLabel 1800 5600 2    70   BiDi ~ 0
+AD_BUSY
+Wire Wire Line
+	1400 5500 2300 5500
+Text GLabel 1800 5500 2    70   BiDi ~ 0
+SPI0_MISO
+Wire Wire Line
+	1400 5400 2300 5400
+Text GLabel 1800 5400 2    70   BiDi ~ 0
+DA_SYNC
+Wire Wire Line
+	1400 5300 2300 5300
+Wire Wire Line
+	1400 3600 2200 3600
+Text GLabel 1800 3600 2    70   BiDi ~ 0
+3V3
+$Comp
+L TopBreakout-eagle-import:WURTH_ELECTRONICS_61400413321WURTH_ELECTRONICS_61400413321_0_0 J1
+U 1 1 92202B0B
+P 12200 6100
+AR Path="/92202B0B" Ref="J1"  Part="1" 
+AR Path="/5D7F42FA/92202B0B" Ref="J1"  Part="1" 
+F 0 "J1" H 12300 6000 85  0000 L TNN
+F 1 "WURTH_ELECTRONICS_61400413321WURTH_ELECTRONICS_61400413321_0_0" H 12200 6100 50  0001 C CNN
+F 2 "topbreakout:WURTH_ELECTRONICS_61400413321_0" H 12200 6100 50  0001 C CNN
+F 3 "" H 12200 6100 50  0001 C CNN
+	1    12200 6100
+	-1   0    0    1   
+$EndComp
+$Comp
+L TopBreakout-eagle-import:USB-A-S-X-X-VT J3
+U 1 1 83A3164B
+P 10500 5900
+AR Path="/83A3164B" Ref="J3"  Part="1" 
+AR Path="/5D7F42FA/83A3164B" Ref="J3"  Part="1" 
+F 0 "J3" H 10700 6031 42  0000 L BNN
+F 1 "USB-A-S-X-X-VT" H 10700 5120 42  0000 L BNN
+F 2 "topbreakout:USB-A-S-X-X-VT" H 10500 5900 50  0001 C CNN
+F 3 "" H 10500 5900 50  0001 C CNN
+	1    10500 5900
+	1    0    0    1   
+$EndComp
+$Comp
+L TopBreakout-eagle-import:OG-MIDI_MAB5SHCUI-SD-50BV MIDI_IN
+U 1 1 1C421DBC
+P 9100 7900
+AR Path="/1C421DBC" Ref="MIDI_IN"  Part="1" 
+AR Path="/5D7F42FA/1C421DBC" Ref="MIDI_IN1"  Part="1" 
+F 0 "MIDI_IN1" H 8700 8325 59  0000 L BNN
+F 1 "OG-MIDI_MAB5SHCUI-SD-50BV" H 9100 8325 59  0000 L BNN
+F 2 "topbreakout:OG-MIDI_SD-50BV" H 9100 7900 50  0001 C CNN
+F 3 "" H 9100 7900 50  0001 C CNN
+	1    9100 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L TopBreakout-eagle-import:OG-MIDI_MAB5SHCUI-SD-50BV MIDI_OUT
+U 1 1 74EA5AF5
+P 11000 8000
+AR Path="/74EA5AF5" Ref="MIDI_OUT"  Part="1" 
+AR Path="/5D7F42FA/74EA5AF5" Ref="MIDI_OUT1"  Part="1" 
+F 0 "MIDI_OUT1" H 10600 8425 59  0000 L BNN
+F 1 "OG-MIDI_MAB5SHCUI-SD-50BV" H 11000 8425 59  0000 L BNN
+F 2 "topbreakout:OG-MIDI_SD-50BV" H 11000 8000 50  0001 C CNN
+F 3 "" H 11000 8000 50  0001 C CNN
+	1    11000 8000
+	1    0    0    -1  
+$EndComp
+$Comp
+L TopBreakout-eagle-import:MOLEX_52892-3033MOLEX_52892-3033_0_0 J2
+U 1 1 F1780596
+P 800 6100
+AR Path="/F1780596" Ref="J2"  Part="1" 
+AR Path="/5D7F42FA/F1780596" Ref="J2"  Part="1" 
+F 0 "J2" H 800 6000 85  0000 L TNN
+F 1 "MOLEX_52892-3033MOLEX_52892-3033_0_0" H 800 6100 50  0001 C CNN
+F 2 "topbreakout:MOLEX_52892-3033_0" H 800 6100 50  0001 C CNN
+F 3 "" H 800 6100 50  0001 C CNN
+	1    800  6100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TopBreakout-eagle-import:YAMAICHI_SD_CARD U$1
+U 1 1 4D826FCC
+P 1400 1400
+AR Path="/4D826FCC" Ref="U$1"  Part="1" 
+AR Path="/5D7F42FA/4D826FCC" Ref="U$1"  Part="1" 
+F 0 "U$1" H 1300 2020 59  0000 L BNN
+F 1 "YAMAICHI_SD_CARD" H 1300 700 59  0000 L BNN
+F 2 "topbreakout:YAMAICHI_MICROSD_VERTICAL" H 1400 1400 50  0001 C CNN
+F 3 "" H 1400 1400 50  0001 C CNN
+	1    1400 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L TopBreakout-eagle-import:1734592-8 U$2
+U 1 1 6197D135
+P 2200 1800
+AR Path="/6197D135" Ref="U$2"  Part="1" 
+AR Path="/5D7F42FA/6197D135" Ref="U$2"  Part="1" 
+F 0 "U$2" H 2200 1800 50  0001 C CNN
+F 1 "1734592-8" H 2200 1800 50  0001 C CNN
+F 2 "topbreakout:TE_1-1734592-8" H 2200 1800 50  0001 C CNN
+F 3 "" H 2200 1800 50  0001 C CNN
+	1    2200 1800
+	-1   0    0    -1  
+$EndComp
+$EndSCHEMATC

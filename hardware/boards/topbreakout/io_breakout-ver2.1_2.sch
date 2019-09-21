@@ -1,0 +1,188 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	2600 3200 9200 3200
+Wire Wire Line
+	2600 3200 2600 3100
+Wire Wire Line
+	2600 3100 1300 3100
+Text GLabel 3500 3200 2    70   BiDi ~ 0
+AD_V2
+Wire Wire Line
+	2500 3400 8700 3400
+Wire Wire Line
+	2500 3400 2500 3200
+Wire Wire Line
+	2500 3200 1300 3200
+Text GLabel 3500 3400 2    70   BiDi ~ 0
+AD_V3
+Wire Wire Line
+	2400 3600 8200 3600
+Wire Wire Line
+	2400 3600 2400 3300
+Text GLabel 3500 3600 2    70   BiDi ~ 0
+AD_V4
+Wire Wire Line
+	8200 3700 8200 3800
+Wire Wire Line
+	8200 3800 8200 4000
+Connection ~ 8200 3800
+Text GLabel 8200 3900 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	8700 3500 8700 3600
+Wire Wire Line
+	8700 3600 8700 3700
+Connection ~ 8700 3600
+Text GLabel 8700 3700 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	9200 3300 9200 3400
+Wire Wire Line
+	9200 3400 9200 3500
+Connection ~ 9200 3400
+Text GLabel 9200 3500 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	9800 3100 9800 3200
+Wire Wire Line
+	9800 3200 9800 3400
+Connection ~ 9800 3200
+Text GLabel 9800 3400 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	1300 3000 9800 3000
+Text GLabel 3500 3000 2    70   BiDi ~ 0
+AD_V1
+Wire Wire Line
+	7100 4100 7100 4200
+Wire Wire Line
+	7100 4200 7100 4300
+Connection ~ 7100 4200
+Text GLabel 7100 4300 2    70   BiDi ~ 0
+TAGND
+Wire Wire Line
+	7600 3900 7600 4000
+Wire Wire Line
+	7600 4000 7600 4100
+Connection ~ 7600 4000
+Text GLabel 7600 4100 2    70   BiDi ~ 0
+TAGND
+$Comp
+L TopBreakout-eagle-import:THONKICONNNEW JAD1
+U 1 1 4CF81522
+P 10000 3100
+AR Path="/4CF81522" Ref="JAD1"  Part="1" 
+AR Path="/5D7F4281/4CF81522" Ref="JAD1"  Part="1" 
+F 0 "JAD1" H 9900 3260 59  0000 L BNN
+F 1 "THONKICONNNEW" H 10000 3100 50  0001 C CNN
+F 2 "topbreakout:WQP-PJ301M-12_JACK" H 10000 3100 50  0001 C CNN
+F 3 "" H 10000 3100 50  0001 C CNN
+	1    10000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L TopBreakout-eagle-import:THONKICONNNEW JAD2
+U 1 1 EEF6290D
+P 9400 3300
+AR Path="/EEF6290D" Ref="JAD2"  Part="1" 
+AR Path="/5D7F4281/EEF6290D" Ref="JAD2"  Part="1" 
+F 0 "JAD2" H 9300 3460 59  0000 L BNN
+F 1 "THONKICONNNEW" H 9400 3300 50  0001 C CNN
+F 2 "topbreakout:WQP-PJ301M-12_JACK" H 9400 3300 50  0001 C CNN
+F 3 "" H 9400 3300 50  0001 C CNN
+	1    9400 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L TopBreakout-eagle-import:THONKICONNNEW JAD3
+U 1 1 38B49BA0
+P 8900 3500
+AR Path="/38B49BA0" Ref="JAD3"  Part="1" 
+AR Path="/5D7F4281/38B49BA0" Ref="JAD3"  Part="1" 
+F 0 "JAD3" H 8800 3660 59  0000 L BNN
+F 1 "THONKICONNNEW" H 8900 3500 50  0001 C CNN
+F 2 "topbreakout:WQP-PJ301M-12_JACK" H 8900 3500 50  0001 C CNN
+F 3 "" H 8900 3500 50  0001 C CNN
+	1    8900 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L TopBreakout-eagle-import:THONKICONNNEW JAD4
+U 1 1 0E8D2B61
+P 8400 3700
+AR Path="/0E8D2B61" Ref="JAD4"  Part="1" 
+AR Path="/5D7F4281/0E8D2B61" Ref="JAD4"  Part="1" 
+F 0 "JAD4" H 8300 3860 59  0000 L BNN
+F 1 "THONKICONNNEW" H 8400 3700 50  0001 C CNN
+F 2 "topbreakout:WQP-PJ301M-12_JACK" H 8400 3700 50  0001 C CNN
+F 3 "" H 8400 3700 50  0001 C CNN
+	1    8400 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L TopBreakout-eagle-import:THONKICONNNEW JAD5
+U 1 1 555B4C4E
+P 7800 3900
+AR Path="/555B4C4E" Ref="JAD5"  Part="1" 
+AR Path="/5D7F4281/555B4C4E" Ref="JAD5"  Part="1" 
+F 0 "JAD5" H 7700 4060 59  0000 L BNN
+F 1 "THONKICONNNEW" H 7800 3900 50  0001 C CNN
+F 2 "topbreakout:WQP-PJ301M-12_JACK" H 7800 3900 50  0001 C CNN
+F 3 "" H 7800 3900 50  0001 C CNN
+	1    7800 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L TopBreakout-eagle-import:THONKICONNNEW JAD6
+U 1 1 893B2485
+P 7300 4100
+AR Path="/893B2485" Ref="JAD6"  Part="1" 
+AR Path="/5D7F4281/893B2485" Ref="JAD6"  Part="1" 
+F 0 "JAD6" H 7200 4260 59  0000 L BNN
+F 1 "THONKICONNNEW" H 7300 4100 50  0001 C CNN
+F 2 "topbreakout:WQP-PJ301M-12_JACK" H 7300 4100 50  0001 C CNN
+F 3 "" H 7300 4100 50  0001 C CNN
+	1    7300 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L TopBreakout-eagle-import:THONKICONNNEW JAD7
+U 1 1 4CC294C2
+P 7300 4700
+AR Path="/4CC294C2" Ref="JAD7"  Part="1" 
+AR Path="/5D7F4281/4CC294C2" Ref="JAD7"  Part="1" 
+F 0 "JAD7" H 7200 4860 59  0000 L BNN
+F 1 "THONKICONNNEW" H 7300 4700 50  0001 C CNN
+F 2 "topbreakout:WQP-PJ301M-12_JACK" H 7300 4700 50  0001 C CNN
+F 3 "" H 7300 4700 50  0001 C CNN
+	1    7300 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L TopBreakout-eagle-import:THONKICONNNEW JAD8
+U 1 1 AF2FA07E
+P 7300 5200
+AR Path="/AF2FA07E" Ref="JAD8"  Part="1" 
+AR Path="/5D7F4281/AF2FA07E" Ref="JAD8"  Part="1" 
+F 0 "JAD8" H 7200 5360 59  0000 L BNN
+F 1 "THONKICONNNEW" H 7300 5200 50  0001 C CNN
+F 2 "topbreakout:WQP-PJ301M-12_JACK" H 7300 5200 50  0001 C CNN
+F 3 "" H 7300 5200 50  0001 C CNN
+	1    7300 5200
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

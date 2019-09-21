@@ -1,0 +1,83 @@
+
+(rules PCB TopBreakout
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 3991)
+    (layer_rule Top
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule Bottom
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 125.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 31.4 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle Top 800.0 0.0 0.0)
+    )
+    (shape
+      (circle Bottom 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer Top Bottom)
+    )
+  )
+  (class "kicad_default"
+    GND "DA_V1" "DA_V2" "DA_V3" "DA_V4" "AD_V2" "AD_V3" "AD_V4"
+    "DA_V6" "AD_V1" "USB_B_VCC" "USB_B_D-" "USB_B_D+" TAGND "DA_V5" "USB_A_VCC"
+    "USB_A_D+" "TFT_CS" "TFT_DC" "SPI0_SCK" "SPI0_MOSI" VIN "MIDI_IN_PIN5" "MIDI_IN_PIN4"
+    "MIDI_OUT_PIN5" "MIDI_OUT_PIN4" "USB_A_D-" "SD_DAT1" "SD_DATAOUT" "SD_GND" "SD_CLK" "SD_DATAIN"
+    "SD_VCC" "SD_CS" "SD_DAT2" 3V3 "AD_BUSY" "AD_RESET" "AD_CONVST" "AD_CS"
+    "SPI0_MISO" "AD_OS0" "AD_BYTE_SELECT" "AD_STBY" "AD_RANGE" "AD_V5" "AD_V6" "AD_V7"
+    "AD_V8" "AD_REGCAP2" "AD_REGCAP1" "AD_REFSEL" "AD_REFINOUT" "AD_REFCAP_A" AVIN "AD_AGND"
+    AGND "DA_SYNC" AVDD AVSS VREF N$6
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer Top Bottom)
+    )
+  )
+)

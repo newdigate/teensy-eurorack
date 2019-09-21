@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name topbreakout)(type KiCad)(uri ${KIPRJMOD}/topbreakout.pretty)(options "")(descr ""))
+)
