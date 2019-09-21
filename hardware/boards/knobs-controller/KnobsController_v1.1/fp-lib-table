@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name OpenSourceHardwareLogo)(type KiCad)(uri ${KIPRJMOD}/OpenSourceHardwareLogo.pretty)(options "")(descr ""))
-)
