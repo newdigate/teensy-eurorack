@@ -1,7 +1,8 @@
 # eurorack digital audio-module prototyping dev-kit [![Join the chat at https://gitter.im/newdigate/teensy-eurorack](https://badges.gitter.im/newdigate/teensy-eurorack.svg)](https://gitter.im/newdigate/teensy-eurorack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-*(work in progress)* open source **[hardware](hardware) and [software](software) for a ~~[teensy 3.6](https://www.pjrc.com/store/teensy36.html "teensy 3.6 board")~~ eurorack shield** (working on updating to [teensy 4](https://www.pjrc.com/teensy-4-0/) )
+*(work in progress)* open source **[hardware](hardware) and [software](software) for a ~~[teensy 3.6](https://www.pjrc.com/store/teensy36.html "teensy 3.6 board")~~ eurorack shield** 
 
+(working on updating to [teensy 4](https://www.pjrc.com/teensy-4-0/) )
 
 * [what is it](#what-is-it)
 * [software](#software)
@@ -24,10 +25,9 @@ A set of circuits and pc-board designs integrating all the components you need f
 
 <img src='hardware/images/kryonos%20v11.png' width='800px'/>
 
-## software 
-* All schematics and circuit boards designed using Autodesk Eagle cad
-* Autodesk Fusion 360 used for mechanical layout
-* My free license to autodesk fusion 360 has expired
+## Lesson 1: do not rely on anything you don't neccessarily need. Like Autodesk products for instance. 
+* All schematics and circuit boards designed using Autodesk Eagle cad, in process of migrating from nasty to Kicad.
+* Autodesk Fusion 360 used for mechanical layout. in process of migrating away from nasty to Freecad.
 * I am planning to migrate away from proprietry software and subscription licenses
   * circuits and pc-boards to [Kicad](http://kicad-pcb.org/) 
   * physical design to [FreeCAD](https://github.com/FreeCAD/FreeCAD)
