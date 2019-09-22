@@ -363,7 +363,7 @@ Text GLabel 3000 7400 0    10   BiDi ~ 0
 +3V3
 Wire Wire Line
 	3400 3400 4400 3400
-Text Label 3900 3400 0    70   ~ 0
+Text Label 3600 3400 0    70   ~ 0
 PA18_USB_ID
 Wire Wire Line
 	1600 3400 3200 3400
@@ -380,7 +380,7 @@ Wire Wire Line
 Wire Wire Line
 	2700 3100 2700 3300
 Connection ~ 2700 3300
-Text Label 3550 3300 0    70   ~ 0
+Text Label 3600 3300 0    70   ~ 0
 USB_P
 Wire Wire Line
 	1600 3200 2600 3200
@@ -391,7 +391,7 @@ Wire Wire Line
 Wire Wire Line
 	2600 2900 2600 3200
 Connection ~ 2600 3200
-Text Label 3500 3200 0    70   ~ 0
+Text Label 3600 3200 0    70   ~ 0
 USB_N
 Wire Wire Line
 	1600 3100 2000 3100
@@ -663,19 +663,6 @@ F 3 "" H 1400 3300 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L knobs-eagle-import:MK1_ZERO_BLM18PG471SN1D L2
-U 1 1 9F8286A9
-P 3400 2300
-AR Path="/9F8286A9" Ref="L2"  Part="1" 
-AR Path="/5D86641C/9F8286A9" Ref="L2"  Part="1" 
-F 0 "L2" H 3400 2460 59  0000 C BNN
-F 1 "MK1_ZERO_BLM18PG471SN1D" H 3400 2370 59  0000 C BNN
-F 2 "knobs:MK1_ZERO_0603-1608X90N" H 3400 2300 50  0001 C CNN
-F 3 "" H 3400 2300 50  0001 C CNN
-	1    3400 2300
-	1    0    0    -1  
-$EndComp
-$Comp
 L knobs-eagle-import:MK1_ZERO_PRTR5V0U2X,215 D1
 U 1 1 DA5D11AB
 P 2200 3800
@@ -713,19 +700,6 @@ F 2 "knobs:MK1_ZERO_QUARZO-ABS07" H 3600 5800 50  0001 C CNN
 F 3 "" H 3600 5800 50  0001 C CNN
 	1    3600 5800
 	0    -1   -1   0   
-$EndComp
-$Comp
-L knobs-eagle-import:MK1_ZERO_VUSB #U$2
-U 1 1 6197D135
-P 4100 2100
-AR Path="/6197D135" Ref="#U$2"  Part="1" 
-AR Path="/5D86641C/6197D135" Ref="#U$02"  Part="1" 
-F 0 "#U$02" H 4100 2100 50  0001 C CNN
-F 1 "MK1_ZERO_VUSB" H 4100 2120 59  0000 C BNN
-F 2 "" H 4100 2100 50  0001 C CNN
-F 3 "" H 4100 2100 50  0001 C CNN
-	1    4100 2100
-	1    0    0    -1  
 $EndComp
 $Comp
 L knobs-eagle-import:SUPPLY1_GND #GND9
@@ -852,7 +826,7 @@ P 2500 2300
 AR Path="/5B319BB3" Ref="F2"  Part="1" 
 AR Path="/5D86641C/5B319BB3" Ref="F2"  Part="1" 
 F 0 "F2" V 2579 2300 59  0000 C TNN
-F 1 "MK1_ZERO_MF-FSMF050X-2" V 2425 2300 59  0000 C BNN
+F 1 "MF-FSMF050X-2" V 2425 2300 59  0000 C BNN
 F 2 "knobs:MK1_ZERO_0603-F1608X100N" H 2500 2300 50  0001 C CNN
 F 3 "" H 2500 2300 50  0001 C CNN
 	1    2500 2300
@@ -1450,4 +1424,30 @@ Wire Bus Line
 	8900 7750 8900 9600
 Wire Bus Line
 	7800 7200 7800 9600
+$Comp
+L knobs-eagle-import:MK1_ZERO_BLM18PG471SN1D L2
+U 1 1 9F8286A9
+P 3400 2300
+AR Path="/9F8286A9" Ref="L2"  Part="1" 
+AR Path="/5D86641C/9F8286A9" Ref="L2"  Part="1" 
+F 0 "L2" H 3400 2460 59  0000 C BNN
+F 1 "BLM18PG471SN1D" H 3400 2370 59  0000 C BNN
+F 2 "knobs:MK1_ZERO_0603-1608X90N" H 3400 2300 50  0001 C CNN
+F 3 "" H 3400 2300 50  0001 C CNN
+	1    3400 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L knobs-eagle-import:+3V3 #+3V?
+U 1 1 5D890552
+P 4100 2100
+AR Path="/5D890552" Ref="#+3V?"  Part="1" 
+AR Path="/5D86641C/5D890552" Ref="#+3V?"  Part="1" 
+F 0 "#+3V?" H 4100 2100 50  0001 C CNN
+F 1 "+3V3" H 4100 2120 59  0000 C BNN
+F 2 "" H 4100 2100 50  0001 C CNN
+F 3 "" H 4100 2100 50  0001 C CNN
+	1    4100 2100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

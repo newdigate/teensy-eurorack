@@ -232,21 +232,6 @@ X C C 0 -200 100 U 0 0 1 0 P
 ENDDRAW
 ENDDEF
 #
-# knobs-eagle-import_MK1_ZERO_+3V3
-#
-DEF knobs-eagle-import_MK1_ZERO_+3V3 #+3V3 0 40 Y Y 1 L P
-F0 "#+3V3" 0 0 50 H I C CNN
-F1 "knobs-eagle-import_MK1_ZERO_+3V3" 0 20 59 H V C BNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 1 0 0 -35 -50 35 -50 N
-P 2 1 0 0 0 5 -35 -50 N
-P 2 1 0 0 35 -50 0 5 N
-X +3V3 1 0 -100 100 U 0 0 1 0 W
-ENDDRAW
-ENDDEF
-#
 # knobs-eagle-import_MK1_ZERO_+5V
 #
 DEF knobs-eagle-import_MK1_ZERO_+5V #P+ 0 40 Y Y 1 L P
@@ -389,19 +374,6 @@ X 2 2 200 0 0 L 0 0 1 0 P
 ENDDRAW
 ENDDEF
 #
-# knobs-eagle-import_MK1_ZERO_GND
-#
-DEF knobs-eagle-import_MK1_ZERO_GND #GND 0 40 Y Y 1 L P
-F0 "#GND" 0 0 50 H I C CNN
-F1 "knobs-eagle-import_MK1_ZERO_GND" -100 -100 59 H V L BNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 1 0 0 -75 0 75 0 N
-X GND 1 0 100 100 D 0 0 1 0 W
-ENDDRAW
-ENDDEF
-#
 # knobs-eagle-import_MK1_ZERO_MF-FSMF050X-2
 #
 DEF knobs-eagle-import_MK1_ZERO_MF-FSMF050X-2 F 0 40 Y Y 1 L N
@@ -502,21 +474,6 @@ P 2 1 0 0 -35 -50 35 -50 N
 P 2 1 0 0 0 5 -35 -50 N
 P 2 1 0 0 35 -50 0 5 N
 X VIN 1 0 -100 100 U 0 0 1 0 W
-ENDDRAW
-ENDDEF
-#
-# knobs-eagle-import_MK1_ZERO_VUSB
-#
-DEF knobs-eagle-import_MK1_ZERO_VUSB ~ 0 40 Y Y 1 L P
-F0 "" 0 0 50 H I C CNN
-F1 "knobs-eagle-import_MK1_ZERO_VUSB" 0 20 59 H V C BNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 1 0 0 -35 -50 35 -50 N
-P 2 1 0 0 0 5 -35 -50 N
-P 2 1 0 0 35 -50 0 5 N
-X VUSB 1 0 -100 100 U 0 0 1 0 W
 ENDDRAW
 ENDDEF
 #
