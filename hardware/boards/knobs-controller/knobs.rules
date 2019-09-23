@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 2286)
+    (start_pass_no 2835)
     (layer_rule Top
       (active on)
       (preferred_direction horizontal)
@@ -31,26 +31,50 @@
     (clear 125.0 (type smd_to_turn_gap))
     (clear 31.4 (type smd_smd))
   )
-  (padstack "Via[0-1]_800:400_um"
+  (padstack "Via[0-1]_450:200_um"
     (shape
-      (circle Top 800.0 0.0 0.0)
+      (circle Top 450.0 0.0 0.0)
     )
     (shape
-      (circle Bottom 800.0 0.0 0.0)
+      (circle Bottom 450.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_600:400_um"
+    (shape
+      (circle Top 600.0 0.0 0.0)
+    )
+    (shape
+      (circle Bottom 600.0 0.0 0.0)
     )
     (attach off)
   )
   (via 
-    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+    "Via[0-1]_450:200_um" "Via[0-1]_450:200_um" default
   )
   (via 
-    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+    "Via[0-1]_600:400_um" "Via[0-1]_600:400_um" default
+  )
+  (via 
+    "Via[0-1]_450:200_um-kicad_default" "Via[0-1]_450:200_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_600:400_um-kicad_default" "Via[0-1]_600:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_450:200_um-PWR" "Via[0-1]_450:200_um" PWR
+  )
+  (via 
+    "Via[0-1]_600:400_um-PWR" "Via[0-1]_600:400_um" PWR
   )
   (via_rule
-    default "Via[0-1]_800:400_um"
+    default "Via[0-1]_450:200_um"
   )
   (via_rule
-    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+    "kicad_default" "Via[0-1]_450:200_um-kicad_default"
+  )
+  (via_rule
+    PWR "Via[0-1]_600:400_um-PWR"
   )
   (class default
     (clearance_class default)
@@ -63,18 +87,28 @@
     )
   )
   (class "kicad_default"
-    GND +3V3 VUSB "/knobs_1/PA08_S0_I2C_SDA" "/knobs_1/PA09_S0_I2C_SCL" "/knobs_1/PA17_S1_SCK" "Net-(C4-Pad1)" "Net-(C6-Pad1)"
-    "/knobs_1/RESETN" "/knobs_1/PA01_XOUT32" "/knobs_1/PA00_XIN32" "/knobs_1/PA19_S1_MISO" "/knobs_1/PA07_AIN7" "/knobs_1/PA06_AIN6" "Net-(C27-Pad1)" "Net-(C32-Pad1)"
-    "Net-(D1-Pad4)" "/knobs_1/USB_N" "/knobs_1/USB_P" "Net-(D2-PadA)" "/knobs_1/USB_ID" "/knobs_1/PA18_USB_ID" "/knobs_1/PB23_S5_RX" "/knobs_1/PB22_S5_TX"
-    "Net-(J8-Pad3)" "/knobs_1/PA30_SWCLK" "/knobs_1/PA31_SWDIO" "Net-(R1-Pad1)" "Net-(R4-Pad2)" "/knobs_1/enc1/SWITCH" "/knobs_1/PA20_TCC0-W6" "Net-(R8-Pad1)"
+    "/knobs_1/PA08_S0_I2C_SDA" "/knobs_1/PA09_S0_I2C_SCL" "/knobs_1/PA17_S1_SCK" "Net-(C4-Pad1)" "Net-(C6-Pad1)" "/knobs_1/RESETN" "/knobs_1/PA01_XOUT32" "/knobs_1/PA00_XIN32"
+    "/knobs_1/PA19_S1_MISO" "/knobs_1/PA07_AIN7" "/knobs_1/PA06_AIN6" "Net-(C27-Pad1)" "Net-(C32-Pad1)" "Net-(D1-Pad4)" "/knobs_1/USB_N" "/knobs_1/USB_P"
+    "Net-(D2-PadA)" "Net-(J8-Pad3)" "/knobs_1/PA30_SWCLK" "/knobs_1/PA31_SWDIO" "Net-(R1-Pad1)" "Net-(R4-Pad2)" "/knobs_1/PA20_TCC0-W6" "Net-(R8-Pad1)"
     "/knobs_1/PA21_TCC0-W7" "Net-(R9-Pad1)" "/knobs_1/PA16_S1_MOSI" "Net-(R10-Pad1)" "Net-(R11-Pad1)" "Net-(R13-Pad1)" "Net-(R14-Pad2)" "/knobs_1/PB08_LED"
-    "/knobs_1/enc2/SWITCH" "/knobs_1/PA11_TCC0-W3" "Net-(R21-Pad1)" "/knobs_1/PB10_TCC0-W4" "Net-(R22-Pad1)" "/knobs_1/PB11_TCC0-W5" "Net-(R23-Pad1)" "Net-(R24-Pad1)"
-    "Net-(R26-Pad2)" "/knobs_1/enc3/SWITCH" "/knobs_1/PA22_TC4-W0" "Net-(R29-Pad1)" "/knobs_1/PA23_TC4-W1" "Net-(R30-Pad1)" "/knobs_1/PA10_TCC0-W2" "Net-(R31-Pad1)"
-    "/knobs_1/PB03_AIN11" "/knobs_1/PB02_AIN10" "/knobs_1/PA05_AIN5" "/knobs_1/PA04_AIN4"
+    "/knobs_1/PA11_TCC0-W3" "Net-(R21-Pad1)" "/knobs_1/PB10_TCC0-W4" "Net-(R22-Pad1)" "/knobs_1/PB11_TCC0-W5" "Net-(R23-Pad1)" "Net-(R24-Pad1)" "Net-(R26-Pad2)"
+    "/knobs_1/PA22_TC4-W0" "Net-(R29-Pad1)" "/knobs_1/PA23_TC4-W1" "Net-(R30-Pad1)" "/knobs_1/PA10_TCC0-W2" "Net-(R31-Pad1)" "/knobs_1/PB03_AIN11" "/knobs_1/PB02_AIN10"
+    "/knobs_1/PA05_AIN5" "/knobs_1/PA04_AIN4" "/knobs_1/PA14_S2_NSS" "/knobs_1/PA12_S2_MOSI" "/knobs_1/PA13_S2_SCK" VIN +3V3
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
       (width 250.0)
+    )
+    (circuit 
+      (use_layer Top Bottom)
+    )
+  )
+  (class PWR
+    GND
+    (clearance_class PWR)
+    (via_rule PWR)
+    (rule
+      (width 300.0)
     )
     (circuit 
       (use_layer Top Bottom)
