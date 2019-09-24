@@ -28,12 +28,8 @@ Text GLabel 3800 3700 0    70   BiDi ~ 0
 SPI0_SCK
 Wire Wire Line
 	4500 4900 3800 4900
-Text Label 3800 4900 2    70   ~ 0
-AVDD
 Wire Wire Line
 	5900 4900 6600 4900
-Text Label 6600 4900 0    70   ~ 0
-AVSS
 Wire Wire Line
 	5900 5500 6300 5500
 Wire Wire Line
@@ -95,7 +91,7 @@ Wire Wire Line
 	4500 4300 2200 4300
 Wire Wire Line
 	2200 4300 2200 4000
-Text GLabel 1600 4000 2    70   BiDi ~ 0
+Text GLabel 1600 4000 0    70   BiDi ~ 0
 3V3
 Connection ~ 2200 4000
 Wire Wire Line
@@ -297,4 +293,8 @@ F 3 "" H 3000 2800 50  0001 C CNN
 	1    3000 2800
 	1    0    0    -1  
 $EndComp
+Text GLabel 3800 4900 0    70   Input ~ 0
+AVDD
+Text GLabel 6600 4900 2    70   Input ~ 0
+AVSS
 $EndSCHEMATC

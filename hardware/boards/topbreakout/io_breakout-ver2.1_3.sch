@@ -287,4 +287,21 @@ Wire Wire Line
 	5100 5700 6100 5700
 Wire Wire Line
 	5000 5800 6100 5800
+Wire Wire Line
+	1400 5200 1400 5100
+Wire Wire Line
+	1400 4900 1400 4800
+Wire Wire Line
+	1400 4800 1800 4800
+Connection ~ 1400 4800
+Wire Wire Line
+	1400 5100 1800 5100
+Connection ~ 1400 5100
+NoConn ~ 1400 5300
+NoConn ~ 1400 5000
+NoConn ~ 1400 4700
+Text GLabel 1800 4800 2    61   Input ~ 0
+AVDD
+Text GLabel 1800 5100 2    61   Input ~ 0
+AVSS
 $EndSCHEMATC

@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 3991)
+    (start_pass_no 3955)
     (layer_rule Top
       (active on)
       (preferred_direction horizontal)
@@ -40,17 +40,20 @@
     )
     (attach off)
   )
-  (via 
-    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  (padstack "Via[0-1]_400:250_um_default"
+    (shape
+      (circle Top 500.0 0.0 0.0)
+    )
+    (shape
+      (circle Bottom 500.0 0.0 0.0)
+    )
+    (absolute on)
   )
   (via 
-    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+    "Via[0-1]_800:400_um" "Via[0-1]_400:250_um_default" default
   )
-  (via_rule
-    default "Via[0-1]_800:400_um"
-  )
-  (via_rule
-    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_400:250_um_default" "kicad_default"
   )
   (class default
     (clearance_class default)
@@ -64,13 +67,12 @@
   )
   (class "kicad_default"
     GND "DA_V1" "DA_V2" "DA_V3" "DA_V4" "AD_V2" "AD_V3" "AD_V4"
-    "DA_V6" "AD_V1" "USB_B_VCC" "USB_B_D-" "USB_B_D+" TAGND "DA_V5" "USB_A_VCC"
-    "USB_A_D+" "TFT_CS" "TFT_DC" "SPI0_SCK" "SPI0_MOSI" VIN "MIDI_IN_PIN5" "MIDI_IN_PIN4"
-    "MIDI_OUT_PIN5" "MIDI_OUT_PIN4" "USB_A_D-" "SD_DAT1" "SD_DATAOUT" "SD_GND" "SD_CLK" "SD_DATAIN"
-    "SD_VCC" "SD_CS" "SD_DAT2" 3V3 "AD_BUSY" "AD_RESET" "AD_CONVST" "AD_CS"
-    "SPI0_MISO" "AD_OS0" "AD_BYTE_SELECT" "AD_STBY" "AD_RANGE" "AD_V5" "AD_V6" "AD_V7"
-    "AD_V8" "AD_REGCAP2" "AD_REGCAP1" "AD_REFSEL" "AD_REFINOUT" "AD_REFCAP_A" AVIN "AD_AGND"
-    AGND "DA_SYNC" AVDD AVSS VREF N$6
+    "AD_V1" TAGND "TFT_CS" "TFT_DC" "SPI0_SCK" "SPI0_MOSI" VIN 3V3
+    "AD_BUSY" "AD_RESET" "AD_CONVST" "AD_CS" "SPI0_MISO" "DA_SYNC" AVDD AVSS
+    "/io_breakout-ver2.1_5/AVIN" "/io_breakout-ver2.1_5/AGND" "/io_breakout-ver2.1_5/AD_REGCAP2" "/io_breakout-ver2.1_6/VREF" "/io_breakout-ver2.1_5/AD_REGCAP1" "/io_breakout-ver2.1_5/AD_REFCAP_A" "/io_breakout-ver2.1_3/USB_B_D+" "/io_breakout-ver2.1_3/USB_B_D-"
+    "/io_breakout-ver2.1_3/USB_B_VCC" "/io_breakout-ver2.1_3/MIDI_IN_PIN5" "/io_breakout-ver2.1_3/MIDI_IN_PIN4" "/io_breakout-ver2.1_3/MIDI_OUT_PIN5" "/io_breakout-ver2.1_3/MIDI_OUT_PIN4" "/io_breakout-ver2.1_3/USB_A_VCC" "/io_breakout-ver2.1_3/USB_A_D-" "/io_breakout-ver2.1_3/USB_A_D+"
+    "/io_breakout-ver2.1_5/AD_BYTE_SELECT" "/io_breakout-ver2.1_5/AD_REFSEL" "/io_breakout-ver2.1_5/AD_RANGE" "/io_breakout-ver2.1_5/AD_STBY" "/io_breakout-ver2.1_5/AD_OS0" "/io_breakout-ver2.1_5/AD_AGND" "/io_breakout-ver2.1_3/SD_DAT1" "/io_breakout-ver2.1_3/SD_DATAOUT"
+    "/io_breakout-ver2.1_3/SD_GND" "/io_breakout-ver2.1_3/SD_CLK" "/io_breakout-ver2.1_3/SD_VCC" "/io_breakout-ver2.1_3/SD_DATAIN" "/io_breakout-ver2.1_3/SD_CS" "/io_breakout-ver2.1_3/SD_DAT2"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
