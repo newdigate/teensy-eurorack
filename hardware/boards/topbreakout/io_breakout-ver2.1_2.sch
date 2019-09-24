@@ -20,7 +20,7 @@ Wire Wire Line
 	2600 3200 2600 3100
 Wire Wire Line
 	2600 3100 1300 3100
-Text GLabel 3500 3200 2    70   BiDi ~ 0
+Text GLabel 1300 3100 0    70   BiDi ~ 0
 AD_V2
 Wire Wire Line
 	2500 3400 8700 3400
@@ -28,21 +28,16 @@ Wire Wire Line
 	2500 3400 2500 3200
 Wire Wire Line
 	2500 3200 1300 3200
-Text GLabel 3500 3400 2    70   BiDi ~ 0
+Text GLabel 1300 3200 0    70   BiDi ~ 0
 AD_V3
 Wire Wire Line
 	2400 3600 8200 3600
 Wire Wire Line
 	2400 3600 2400 3300
-Text GLabel 3500 3600 2    70   BiDi ~ 0
+Text GLabel 2400 3300 0    70   BiDi ~ 0
 AD_V4
 Wire Wire Line
 	8200 3700 8200 3800
-Wire Wire Line
-	8200 3800 8200 4000
-Connection ~ 8200 3800
-Text GLabel 8200 3900 2    70   BiDi ~ 0
-GND
 Wire Wire Line
 	8700 3500 8700 3600
 Wire Wire Line
@@ -66,27 +61,17 @@ Text GLabel 9800 3400 2    70   BiDi ~ 0
 GND
 Wire Wire Line
 	1300 3000 9800 3000
-Text GLabel 3500 3000 2    70   BiDi ~ 0
+Text GLabel 1300 3000 0    70   BiDi ~ 0
 AD_V1
 Wire Wire Line
 	7100 4100 7100 4200
 Wire Wire Line
-	7100 4200 7100 4300
-Connection ~ 7100 4200
-Text GLabel 7100 4300 2    70   BiDi ~ 0
-TAGND
-Wire Wire Line
 	7600 3900 7600 4000
-Wire Wire Line
-	7600 4000 7600 4100
-Connection ~ 7600 4000
-Text GLabel 7600 4100 2    70   BiDi ~ 0
-TAGND
 $Comp
-L TopBreakout-eagle-import:THONKICONNNEW JAD1
+L TopBreakout-eagle-import:THONKICONNNEW JAD?
 U 1 1 4CF81522
 P 10000 3100
-AR Path="/4CF81522" Ref="JAD1"  Part="1" 
+AR Path="/4CF81522" Ref="JAD?"  Part="1" 
 AR Path="/5D7F4281/4CF81522" Ref="JAD1"  Part="1" 
 F 0 "JAD1" H 9900 3260 59  0000 L BNN
 F 1 "THONKICONNNEW" H 10000 3100 50  0001 C CNN
@@ -96,10 +81,10 @@ F 3 "" H 10000 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TopBreakout-eagle-import:THONKICONNNEW JAD2
+L TopBreakout-eagle-import:THONKICONNNEW JAD?
 U 1 1 EEF6290D
 P 9400 3300
-AR Path="/EEF6290D" Ref="JAD2"  Part="1" 
+AR Path="/EEF6290D" Ref="JAD?"  Part="1" 
 AR Path="/5D7F4281/EEF6290D" Ref="JAD2"  Part="1" 
 F 0 "JAD2" H 9300 3460 59  0000 L BNN
 F 1 "THONKICONNNEW" H 9400 3300 50  0001 C CNN
@@ -109,10 +94,10 @@ F 3 "" H 9400 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TopBreakout-eagle-import:THONKICONNNEW JAD3
+L TopBreakout-eagle-import:THONKICONNNEW JAD?
 U 1 1 38B49BA0
 P 8900 3500
-AR Path="/38B49BA0" Ref="JAD3"  Part="1" 
+AR Path="/38B49BA0" Ref="JAD?"  Part="1" 
 AR Path="/5D7F4281/38B49BA0" Ref="JAD3"  Part="1" 
 F 0 "JAD3" H 8800 3660 59  0000 L BNN
 F 1 "THONKICONNNEW" H 8900 3500 50  0001 C CNN
@@ -122,10 +107,10 @@ F 3 "" H 8900 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TopBreakout-eagle-import:THONKICONNNEW JAD4
+L TopBreakout-eagle-import:THONKICONNNEW JAD?
 U 1 1 0E8D2B61
 P 8400 3700
-AR Path="/0E8D2B61" Ref="JAD4"  Part="1" 
+AR Path="/0E8D2B61" Ref="JAD?"  Part="1" 
 AR Path="/5D7F4281/0E8D2B61" Ref="JAD4"  Part="1" 
 F 0 "JAD4" H 8300 3860 59  0000 L BNN
 F 1 "THONKICONNNEW" H 8400 3700 50  0001 C CNN
@@ -135,10 +120,10 @@ F 3 "" H 8400 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TopBreakout-eagle-import:THONKICONNNEW JAD5
+L TopBreakout-eagle-import:THONKICONNNEW JAD?
 U 1 1 555B4C4E
 P 7800 3900
-AR Path="/555B4C4E" Ref="JAD5"  Part="1" 
+AR Path="/555B4C4E" Ref="JAD?"  Part="1" 
 AR Path="/5D7F4281/555B4C4E" Ref="JAD5"  Part="1" 
 F 0 "JAD5" H 7700 4060 59  0000 L BNN
 F 1 "THONKICONNNEW" H 7800 3900 50  0001 C CNN
@@ -148,10 +133,10 @@ F 3 "" H 7800 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TopBreakout-eagle-import:THONKICONNNEW JAD6
+L TopBreakout-eagle-import:THONKICONNNEW JAD?
 U 1 1 893B2485
 P 7300 4100
-AR Path="/893B2485" Ref="JAD6"  Part="1" 
+AR Path="/893B2485" Ref="JAD?"  Part="1" 
 AR Path="/5D7F4281/893B2485" Ref="JAD6"  Part="1" 
 F 0 "JAD6" H 7200 4260 59  0000 L BNN
 F 1 "THONKICONNNEW" H 7300 4100 50  0001 C CNN
@@ -161,10 +146,10 @@ F 3 "" H 7300 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TopBreakout-eagle-import:THONKICONNNEW JAD7
+L TopBreakout-eagle-import:THONKICONNNEW JAD?
 U 1 1 4CC294C2
 P 7300 4700
-AR Path="/4CC294C2" Ref="JAD7"  Part="1" 
+AR Path="/4CC294C2" Ref="JAD?"  Part="1" 
 AR Path="/5D7F4281/4CC294C2" Ref="JAD7"  Part="1" 
 F 0 "JAD7" H 7200 4860 59  0000 L BNN
 F 1 "THONKICONNNEW" H 7300 4700 50  0001 C CNN
@@ -174,10 +159,10 @@ F 3 "" H 7300 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TopBreakout-eagle-import:THONKICONNNEW JAD8
+L TopBreakout-eagle-import:THONKICONNNEW JAD?
 U 1 1 AF2FA07E
 P 7300 5200
-AR Path="/AF2FA07E" Ref="JAD8"  Part="1" 
+AR Path="/AF2FA07E" Ref="JAD?"  Part="1" 
 AR Path="/5D7F4281/AF2FA07E" Ref="JAD8"  Part="1" 
 F 0 "JAD8" H 7200 5360 59  0000 L BNN
 F 1 "THONKICONNNEW" H 7300 5200 50  0001 C CNN
@@ -186,4 +171,29 @@ F 3 "" H 7300 5200 50  0001 C CNN
 	1    7300 5200
 	1    0    0    -1  
 $EndComp
+Text GLabel 8200 3900 2    70   BiDi ~ 0
+GND
+Connection ~ 8200 3800
+Wire Wire Line
+	8200 3800 8200 3900
+Wire Wire Line
+	7100 4000 6150 4000
+Wire Wire Line
+	6150 4000 6150 4050
+Wire Wire Line
+	7600 3800 6200 3800
+Wire Wire Line
+	6200 3800 6200 3850
+Wire Wire Line
+	7100 4600 6100 4600
+Wire Wire Line
+	7100 5100 6100 5100
+Text GLabel 6200 3850 0    59   Input ~ 0
+AD_V5
+Text GLabel 6150 4050 0    59   Input ~ 0
+AD_V6
+Text GLabel 6100 4600 0    59   Input ~ 0
+AD_V7
+Text GLabel 6100 5100 0    59   Input ~ 0
+AD_V8
 $EndSCHEMATC

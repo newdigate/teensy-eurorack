@@ -17,37 +17,37 @@ $EndDescr
 $Sheet
 S 1000 1000 500  150 
 U 5D7F4208
-F0 "io_breakout-ver2.1_1" 50
+F0 "D/A jack connectors" 50
 F1 "io_breakout-ver2.1_1.sch" 50
 $EndSheet
 $Sheet
 S 3000 1000 500  150 
 U 5D7F4281
-F0 "io_breakout-ver2.1_2" 50
+F0 "A D Connectors" 50
 F1 "io_breakout-ver2.1_2.sch" 50
 $EndSheet
 $Sheet
 S 5000 1000 500  150 
 U 5D7F42FA
-F0 "io_breakout-ver2.1_3" 50
+F0 "FPC connector" 50
 F1 "io_breakout-ver2.1_3.sch" 50
 $EndSheet
 $Sheet
 S 7000 1000 500  150 
 U 5D7F4364
-F0 "io_breakout-ver2.1_4" 50
+F0 "TFT Connector" 50
 F1 "io_breakout-ver2.1_4.sch" 50
 $EndSheet
 $Sheet
 S 9000 1000 500  150 
 U 5D7F4383
-F0 "io_breakout-ver2.1_5" 50
+F0 "AD7606" 50
 F1 "io_breakout-ver2.1_5.sch" 50
 $EndSheet
 $Sheet
 S 1000 3000 500  150 
 U 5D7F4465
-F0 "io_breakout-ver2.1_6" 50
+F0 "AD5754 DAC" 50
 F1 "io_breakout-ver2.1_6.sch" 50
 $EndSheet
 $EndSCHEMATC

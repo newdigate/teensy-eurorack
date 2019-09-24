@@ -304,4 +304,15 @@ Text GLabel 1800 4800 2    61   Input ~ 0
 AVDD
 Text GLabel 1800 5100 2    61   Input ~ 0
 AVSS
+$Comp
+L Connector_Generic:Conn_01x40 J5
+U 1 1 5D8E7BFB
+P 550 4100
+F 0 "J5" H 468 1875 50  0000 C CNN
+F 1 "Conn_01x40" H 468 1966 50  0000 C CNN
+F 2 "Connectors_TE-Connectivity:TE_2-84953-7_1x27_P1.0mm_Horizontal" H 550 4100 50  0001 C CNN
+F 3 "~" H 550 4100 50  0001 C CNN
+	1    550  4100
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

@@ -88,20 +88,12 @@ Text GLabel 7300 2600 2    70   BiDi ~ 0
 AD_V4
 Wire Wire Line
 	6700 2800 8500 2800
-Text Label 7300 2800 0    70   ~ 0
-AD_V5
 Wire Wire Line
 	6700 3000 8500 3000
-Text Label 7300 3000 0    70   ~ 0
-AD_V6
 Wire Wire Line
 	6700 3200 8500 3200
-Text Label 7300 3200 0    70   ~ 0
-AD_V7
 Wire Wire Line
 	6700 3400 8500 3400
-Text Label 7400 3400 0    70   ~ 0
-AD_V8
 Wire Wire Line
 	6700 4000 9000 4000
 Text Label 7300 4000 0    70   ~ 0
@@ -197,23 +189,23 @@ Wire Wire Line
 	4900 2600 4500 2600
 Wire Wire Line
 	4500 2500 4500 2600
-Text GLabel 4500 2000 2    70   BiDi ~ 0
+Text GLabel 4500 2000 0    70   BiDi ~ 0
 GND
-Text GLabel 4500 2100 2    70   BiDi ~ 0
+Text GLabel 4500 2100 0    70   BiDi ~ 0
 GND
-Text GLabel 4500 2200 2    70   BiDi ~ 0
+Text GLabel 4500 2200 0    70   BiDi ~ 0
 GND
 Connection ~ 4500 2100
-Text GLabel 4500 2300 2    70   BiDi ~ 0
+Text GLabel 4500 2300 0    70   BiDi ~ 0
 GND
 Connection ~ 4500 2200
-Text GLabel 4500 2400 2    70   BiDi ~ 0
+Text GLabel 4500 2400 0    70   BiDi ~ 0
 GND
 Connection ~ 4500 2300
-Text GLabel 4500 2500 2    70   BiDi ~ 0
+Text GLabel 4500 2500 0    70   BiDi ~ 0
 GND
 Connection ~ 4500 2400
-Text GLabel 4500 2600 2    70   BiDi ~ 0
+Text GLabel 4500 2600 0    70   BiDi ~ 0
 GND
 Connection ~ 4500 2500
 Wire Wire Line
@@ -246,23 +238,23 @@ Wire Wire Line
 	4900 2800 4500 2800
 Wire Wire Line
 	4500 2800 4500 2900
-Text GLabel 4500 2900 2    70   BiDi ~ 0
+Text GLabel 4500 2900 0    70   BiDi ~ 0
 GND
-Text GLabel 4500 3000 2    70   BiDi ~ 0
+Text GLabel 4500 3000 0    70   BiDi ~ 0
 GND
-Text GLabel 4500 3100 2    70   BiDi ~ 0
+Text GLabel 4500 3100 0    70   BiDi ~ 0
 GND
 Connection ~ 4500 3000
-Text GLabel 4500 3200 2    70   BiDi ~ 0
+Text GLabel 4500 3200 0    70   BiDi ~ 0
 GND
 Connection ~ 4500 3100
-Text GLabel 4500 3300 2    70   BiDi ~ 0
+Text GLabel 4500 3300 0    70   BiDi ~ 0
 GND
 Connection ~ 4500 3200
-Text GLabel 4500 3400 2    70   BiDi ~ 0
+Text GLabel 4500 3400 0    70   BiDi ~ 0
 GND
 Connection ~ 4500 3300
-Text GLabel 4500 3500 2    70   BiDi ~ 0
+Text GLabel 4500 3500 0    70   BiDi ~ 0
 GND
 Connection ~ 4500 3400
 Connection ~ 4500 2900
@@ -489,7 +481,7 @@ AR Path="/1EB90639" Ref="R4"  Part="1"
 AR Path="/5D7F4383/1EB90639" Ref="R4"  Part="1" 
 F 0 "R4" H 3000 4059 59  0000 L BNN
 F 1 "4.7k" H 3000 3870 59  0000 L BNN
-F 2 "topbreakout:R0805" H 3150 4000 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805" H 3150 4000 50  0001 C CNN
 F 3 "" H 3150 4000 50  0001 C CNN
 	1    3150 4000
 	0    1    1    0   
@@ -502,7 +494,7 @@ AR Path="/45891A83" Ref="R7"  Part="1"
 AR Path="/5D7F4383/45891A83" Ref="R7"  Part="1" 
 F 0 "R7" H 7400 4659 59  0000 L BNN
 F 1 "4.7k" H 7400 4470 59  0000 L BNN
-F 2 "topbreakout:R0805" H 7550 4600 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805" H 7550 4600 50  0001 C CNN
 F 3 "" H 7550 4600 50  0001 C CNN
 	1    7550 4600
 	1    0    0    -1  
@@ -528,7 +520,7 @@ AR Path="/1D3171AC" Ref="R8"  Part="1"
 AR Path="/5D7F4383/1D3171AC" Ref="R8"  Part="1" 
 F 0 "R8" H 2500 3659 59  0000 L BNN
 F 1 "4.7k" H 2500 3470 59  0000 L BNN
-F 2 "topbreakout:R0805" H 2650 3600 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805" H 2650 3600 50  0001 C CNN
 F 3 "" H 2650 3600 50  0001 C CNN
 	1    2650 3600
 	0    1    1    0   
@@ -541,7 +533,7 @@ AR Path="/821C3B0B" Ref="R9"  Part="1"
 AR Path="/5D7F4383/821C3B0B" Ref="R9"  Part="1" 
 F 0 "R9" H 3350 3959 59  0000 L BNN
 F 1 "4.7k" H 3350 3770 59  0000 L BNN
-F 2 "topbreakout:R0805" H 3500 3900 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805" H 3500 3900 50  0001 C CNN
 F 3 "" H 3500 3900 50  0001 C CNN
 	1    3500 3900
 	0    -1   -1   0   
@@ -554,7 +546,7 @@ AR Path="/BECE7CAD" Ref="R10"  Part="1"
 AR Path="/5D7F4383/BECE7CAD" Ref="R10"  Part="1" 
 F 0 "R10" H 3850 3559 59  0000 L BNN
 F 1 "4.7k" H 3850 3370 59  0000 L BNN
-F 2 "topbreakout:R0805" H 4000 3500 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805" H 4000 3500 50  0001 C CNN
 F 3 "" H 4000 3500 50  0001 C CNN
 	1    4000 3500
 	0    1    1    0   
@@ -567,7 +559,7 @@ AR Path="/B0A6640E" Ref="R11"  Part="1"
 AR Path="/5D7F4383/B0A6640E" Ref="R11"  Part="1" 
 F 0 "R11" H 6950 6000 42  0000 L BNN
 F 1 "0" H 6950 5850 42  0000 L BNN
-F 2 "topbreakout:R0805" H 7100 5950 50  0001 C CNN
+F 2 "Oddities:NetTie-I_Connected_SMD" H 7100 5950 50  0001 C CNN
 F 3 "" H 7100 5950 50  0001 C CNN
 	1    7100 5950
 	0    -1   -1   0   
@@ -578,4 +570,12 @@ Wire Wire Line
 	4000 3700 4900 3700
 Wire Wire Line
 	2150 5400 4900 5400
+Text GLabel 7300 2800 0    70   Input ~ 0
+AD_V5
+Text GLabel 7300 3000 0    70   Input ~ 0
+AD_V6
+Text GLabel 7300 3200 0    70   Input ~ 0
+AD_V7
+Text GLabel 7400 3400 0    70   Input ~ 0
+AD_V8
 $EndSCHEMATC
