@@ -185,19 +185,6 @@ F 3 "" H 6100 5900 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L TopBreakout-eagle-import:MOLEX_52892-3033MOLEX_52892-3033_0_0 J2
-U 1 1 F1780596
-P 800 6100
-AR Path="/F1780596" Ref="J2"  Part="1" 
-AR Path="/5D7F42FA/F1780596" Ref="J2"  Part="1" 
-F 0 "J2" H 800 6000 85  0000 L TNN
-F 1 "MOLEX_52892-3033MOLEX_52892-3033_0_0" H 800 6100 50  0001 C CNN
-F 2 "topbreakout:MOLEX_52892-3033_0" H 800 6100 50  0001 C CNN
-F 3 "" H 800 6100 50  0001 C CNN
-	1    800  6100
-	0    -1   -1   0   
-$EndComp
-$Comp
 L TopBreakout-eagle-import:YAMAICHI_SD_CARD U$1
 U 1 1 4D826FCC
 P 1400 1400
@@ -229,25 +216,51 @@ Wire Wire Line
 	5100 5700 6100 5700
 Wire Wire Line
 	5000 5800 6100 5800
-Wire Wire Line
-	1400 5200 1400 5100
-Wire Wire Line
-	1400 4900 1400 4800
-Wire Wire Line
-	1400 4800 1800 4800
-Connection ~ 1400 4800
-Wire Wire Line
-	1400 5100 1800 5100
-Connection ~ 1400 5100
-NoConn ~ 1400 5300
-NoConn ~ 1400 5000
-NoConn ~ 1400 4700
-Text GLabel 1800 4800 2    61   Input ~ 0
-AVDD
 Text GLabel 1800 5100 2    61   Input ~ 0
+AVDD
+Text GLabel 1800 5200 2    61   Input ~ 0
 AVSS
 Text GLabel 1400 4300 2    59   Input ~ 0
 MIDI_RX
 Text GLabel 1400 4400 2    59   Input ~ 0
 MIDI_TX
+$Comp
+L TopBreakout-eagle-import:MOLEX_52892-3033MOLEX_52892-3033_0_0 J2
+U 1 1 F1780596
+P 800 6100
+AR Path="/F1780596" Ref="J2"  Part="1" 
+AR Path="/5D7F42FA/F1780596" Ref="J2"  Part="1" 
+F 0 "J2" H 800 6000 85  0000 L TNN
+F 1 "MOLEX_52892-3033MOLEX_52892-3033_0_0" H 800 6100 50  0001 C CNN
+F 2 "topbreakout:MOLEX_52892-3033_0" H 800 6100 50  0001 C CNN
+F 3 "" H 800 6100 50  0001 C CNN
+	1    800  6100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1400 5300 1400 5200
+Connection ~ 1400 5200
+Wire Wire Line
+	1400 5200 1800 5200
+Wire Wire Line
+	1800 5100 1400 5100
+Wire Wire Line
+	1400 5000 1400 5100
+Connection ~ 1400 5100
+Wire Wire Line
+	1400 4900 1600 4900
+Wire Wire Line
+	1400 4800 1600 4800
+Wire Wire Line
+	1400 4700 1600 4700
+Wire Wire Line
+	1400 4600 1600 4600
+Text GLabel 1600 4600 2    59   Input ~ 0
+GATE_1
+Text GLabel 1600 4700 2    59   Input ~ 0
+GATE_2
+Text GLabel 1600 4800 2    59   Input ~ 0
+GATE_3
+Text GLabel 1600 4900 2    59   Input ~ 0
+GATE_4
 $EndSCHEMATC
