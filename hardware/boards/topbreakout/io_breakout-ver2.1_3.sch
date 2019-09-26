@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr User 14469 9224
 encoding utf-8
-Sheet 4 7
+Sheet 4 8
 Title ""
 Date ""
 Rev ""
@@ -92,20 +92,12 @@ Text GLabel 2800 3100 2    70   BiDi ~ 0
 VIN
 Wire Wire Line
 	1400 4600 3400 4600
-Text Label 1800 4600 0    70   ~ 0
-MIDI_IN_PIN5
-Text Label 1800 4500 0    70   ~ 0
-MIDI_IN_PIN4
-Text Label 1800 4400 0    70   ~ 0
-MIDI_OUT_PIN5
 Wire Wire Line
 	1400 4300 6450 4300
 Wire Wire Line
 	6450 4300 6450 3750
 Wire Wire Line
 	6450 3750 7800 3750
-Text Label 1800 4300 0    70   ~ 0
-MIDI_OUT_PIN4
 Wire Wire Line
 	1400 4100 5000 4100
 Wire Wire Line
@@ -304,15 +296,12 @@ Text GLabel 1800 4800 2    61   Input ~ 0
 AVDD
 Text GLabel 1800 5100 2    61   Input ~ 0
 AVSS
-$Comp
-L Connector_Generic:Conn_01x40 J5
-U 1 1 5D8E7BFB
-P 550 4100
-F 0 "J5" H 468 1875 50  0000 C CNN
-F 1 "Conn_01x40" H 468 1966 50  0000 C CNN
-F 2 "Connectors_TE-Connectivity:TE_2-84953-7_1x27_P1.0mm_Horizontal" H 550 4100 50  0001 C CNN
-F 3 "~" H 550 4100 50  0001 C CNN
-	1    550  4100
-	-1   0    0    1   
-$EndComp
+Text GLabel 7800 4400 2    70   Input ~ 0
+MIDI_OUT_PIN4
+Text GLabel 6500 4400 0    70   Input ~ 0
+MIDI_OUT_PIN5
+Text GLabel 4800 5250 2    70   Input ~ 0
+MIDI_IN_PIN4
+Text GLabel 3400 5250 0    70   Input ~ 0
+MIDI_IN_PIN5
 $EndSCHEMATC

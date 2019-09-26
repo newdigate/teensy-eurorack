@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title ""
 Date ""
 Rev ""
@@ -49,5 +49,11 @@ S 1000 3000 500  150
 U 5D7F4465
 F0 "AD5754 DAC" 50
 F1 "io_breakout-ver2.1_6.sch" 50
+$EndSheet
+$Sheet
+S 3300 3050 650  150 
+U 5D8CF794
+F0 "midi" 50
+F1 "MIDI.sch" 50
 $EndSheet
 $EndSCHEMATC
