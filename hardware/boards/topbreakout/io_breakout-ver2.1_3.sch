@@ -91,14 +91,6 @@ Wire Wire Line
 Text GLabel 2800 3100 2    70   BiDi ~ 0
 VIN
 Wire Wire Line
-	1400 4600 3400 4600
-Wire Wire Line
-	1400 4300 6450 4300
-Wire Wire Line
-	6450 4300 6450 3750
-Wire Wire Line
-	6450 3750 7800 3750
-Wire Wire Line
 	1400 4100 5000 4100
 Wire Wire Line
 	5000 4100 5000 5800
@@ -193,19 +185,6 @@ F 3 "" H 6100 5900 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L TopBreakout-eagle-import:OG-MIDI_MAB5SHCUI-SD-50BV MIDI_OUT
-U 1 1 74EA5AF5
-P 7100 4300
-AR Path="/74EA5AF5" Ref="MIDI_OUT"  Part="1" 
-AR Path="/5D7F42FA/74EA5AF5" Ref="MIDI_OUT1"  Part="1" 
-F 0 "MIDI_OUT1" H 6700 4725 59  0000 L BNN
-F 1 "OG-MIDI_MAB5SHCUI-SD-50BV" H 7100 4725 59  0000 L BNN
-F 2 "topbreakout:OG-MIDI_SD-50BV" H 7100 4300 50  0001 C CNN
-F 3 "" H 7100 4300 50  0001 C CNN
-	1    7100 4300
-	1    0    0    -1  
-$EndComp
-$Comp
 L TopBreakout-eagle-import:MOLEX_52892-3033MOLEX_52892-3033_0_0 J2
 U 1 1 F1780596
 P 800 6100
@@ -245,36 +224,7 @@ F 3 "" H 2200 1800 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3400 4600 3400 5250
-Wire Wire Line
 	6100 5900 4900 5900
-$Comp
-L TopBreakout-eagle-import:OG-MIDI_MAB5SHCUI-SD-50BV MIDI_IN
-U 1 1 1C421DBC
-P 4100 5150
-AR Path="/1C421DBC" Ref="MIDI_IN"  Part="1" 
-AR Path="/5D7F42FA/1C421DBC" Ref="MIDI_IN1"  Part="1" 
-F 0 "MIDI_IN1" H 3700 5575 59  0000 L BNN
-F 1 "OG-MIDI_MAB5SHCUI-SD-50BV" H 4100 5575 59  0000 L BNN
-F 2 "topbreakout:OG-MIDI_SD-50BV" H 4100 5150 50  0001 C CNN
-F 3 "" H 4100 5150 50  0001 C CNN
-	1    4100 5150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3400 5250 3600 5250
-Wire Wire Line
-	1400 4500 4800 4500
-Wire Wire Line
-	4600 5250 4800 5250
-Wire Wire Line
-	4800 5250 4800 4500
-Wire Wire Line
-	7600 4400 7800 4400
-Wire Wire Line
-	7800 4400 7800 3750
-Wire Wire Line
-	1400 4400 6600 4400
 Wire Wire Line
 	5100 5700 6100 5700
 Wire Wire Line
@@ -296,12 +246,8 @@ Text GLabel 1800 4800 2    61   Input ~ 0
 AVDD
 Text GLabel 1800 5100 2    61   Input ~ 0
 AVSS
-Text GLabel 7800 4400 2    70   Input ~ 0
-MIDI_OUT_PIN4
-Text GLabel 6500 4400 0    70   Input ~ 0
-MIDI_OUT_PIN5
-Text GLabel 4800 5250 2    70   Input ~ 0
-MIDI_IN_PIN4
-Text GLabel 3400 5250 0    70   Input ~ 0
-MIDI_IN_PIN5
+Text GLabel 1400 4300 2    59   Input ~ 0
+MIDI_RX
+Text GLabel 1400 4400 2    59   Input ~ 0
+MIDI_TX
 $EndSCHEMATC
