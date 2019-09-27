@@ -72,19 +72,19 @@ Text GLabel 4500 2700 0    70   BiDi ~ 0
 SPI0_MISO
 Wire Wire Line
 	6700 2000 8500 2000
-Text GLabel 7300 2000 2    70   BiDi ~ 0
+Text GLabel 8500 2000 2    70   BiDi ~ 0
 AD_V1
 Wire Wire Line
 	6700 2200 8500 2200
-Text GLabel 7300 2200 2    70   BiDi ~ 0
+Text GLabel 8500 2200 2    70   BiDi ~ 0
 AD_V2
 Wire Wire Line
 	6700 2400 8500 2400
-Text GLabel 7300 2400 2    70   BiDi ~ 0
+Text GLabel 8500 2400 2    70   BiDi ~ 0
 AD_V3
 Wire Wire Line
 	6700 2600 8500 2600
-Text GLabel 7300 2600 2    70   BiDi ~ 0
+Text GLabel 8500 2600 2    70   BiDi ~ 0
 AD_V4
 Wire Wire Line
 	6700 2800 8500 2800
@@ -138,8 +138,8 @@ Text GLabel 3500 3300 2    70   BiDi ~ 0
 Connection ~ 3500 3300
 Connection ~ 3150 3300
 Wire Wire Line
-	7750 4600 8100 4600
-Text GLabel 7750 4600 2    70   BiDi ~ 0
+	7750 4600 7850 4600
+Text GLabel 7850 4600 2    70   BiDi ~ 0
 3V3
 Text GLabel 4600 5400 2    70   BiDi ~ 0
 3V3
@@ -363,12 +363,12 @@ Wire Wire Line
 Wire Wire Line
 	9000 4400 9550 4400
 Connection ~ 9000 4400
-Text Label 9550 4400 0    70   ~ 0
-AGND
+Text Label 9550 4400 0    59   ~ 0
+AD_AGND
 Wire Wire Line
 	8350 4600 8350 4800
-Text Label 8350 4800 0    70   ~ 0
-AGND
+Text Label 8350 4800 0    59   ~ 0
+AD_AGND
 $Comp
 L TopBreakout-eagle-import:ANALOG_DEVICES_AD7606BSTZANALOG_DEVICES_AD7606BSTZ_0_2 U1
 U 1 1 70C280EF
@@ -570,12 +570,12 @@ Wire Wire Line
 	4000 3700 4900 3700
 Wire Wire Line
 	2150 5400 4900 5400
-Text GLabel 7300 2800 0    70   Input ~ 0
+Text GLabel 8500 2800 2    70   Input ~ 0
 AD_V5
-Text GLabel 7300 3000 0    70   Input ~ 0
+Text GLabel 8500 3000 2    70   Input ~ 0
 AD_V6
-Text GLabel 7300 3200 0    70   Input ~ 0
+Text GLabel 8500 3200 2    70   Input ~ 0
 AD_V7
-Text GLabel 7400 3400 0    70   Input ~ 0
+Text GLabel 8500 3400 2    70   Input ~ 0
 AD_V8
 $EndSCHEMATC

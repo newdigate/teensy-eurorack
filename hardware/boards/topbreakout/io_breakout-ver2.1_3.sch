@@ -14,89 +14,37 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	6500 3550 5800 3550
-Wire Wire Line
-	5800 3550 5800 3900
-Wire Wire Line
-	5800 3900 1400 3900
-Text Label 5800 3550 0    70   ~ 0
+Text Label 1800 3300 0    70   ~ 0
 USB_B_VCC
-Text Label 2600 3900 0    70   ~ 0
-USB_B_VCC
-Text Label 1800 3900 0    70   ~ 0
-USB_B_VCC
-Wire Wire Line
-	6500 3450 5700 3450
-Wire Wire Line
-	5700 3450 5700 3800
-Wire Wire Line
-	5700 3800 1400 3800
-Text Label 5700 3450 0    70   ~ 0
+Text Label 1700 3200 0    70   ~ 0
 USB_B_D-
-Text Label 1800 3800 0    70   ~ 0
-USB_B_D-
-Wire Wire Line
-	6500 3350 5600 3350
-Wire Wire Line
-	5600 3350 5600 3700
-Wire Wire Line
-	5600 3700 1400 3700
-Text Label 5600 3350 0    70   ~ 0
+Text Label 1600 3100 0    70   ~ 0
 USB_B_D+
-Text Label 1800 3700 0    70   ~ 0
-USB_B_D+
-Text GLabel 6100 5600 0    70   BiDi ~ 0
+Text GLabel 4600 3000 0    70   BiDi ~ 0
 GND
-Text GLabel 6500 3250 0    70   BiDi ~ 0
+Text GLabel 2150 2800 0    70   BiDi ~ 0
 GND
 Wire Wire Line
 	1400 6000 1800 6000
-Text GLabel 1800 6000 2    70   BiDi ~ 0
+Text GLabel 1400 4100 2    70   BiDi ~ 0
 GND
-Wire Wire Line
-	4900 5900 4900 4200
-Wire Wire Line
-	4900 4200 1400 4200
-Text Label 4900 5900 0    70   ~ 0
+Text Label 3550 3600 0    70   ~ 0
 USB_A_VCC
-Text Label 1800 4200 0    70   ~ 0
-USB_A_VCC
-Wire Wire Line
-	5100 5700 5100 4000
-Wire Wire Line
-	5100 4000 1400 4000
-Text Label 5100 5700 0    70   ~ 0
+Text Label 3750 3400 0    70   ~ 0
 USB_A_D+
-Text Label 1800 4000 0    70   ~ 0
-USB_A_D+
-Wire Wire Line
-	1400 3500 4750 3500
-Text GLabel 4750 3500 2    70   BiDi ~ 0
+Text GLabel 2350 5300 2    70   BiDi ~ 0
 TFT_CS
-Wire Wire Line
-	1400 3400 4300 3400
-Text GLabel 4300 3400 2    70   BiDi ~ 0
+Text GLabel 1800 5200 2    70   BiDi ~ 0
 TFT_DC
-Wire Wire Line
-	1400 3200 3100 3200
-Text GLabel 3100 3200 2    70   BiDi ~ 0
+Text GLabel 1650 5400 2    70   BiDi ~ 0
 SPI0_SCK
-Wire Wire Line
-	1400 3300 3700 3300
-Text GLabel 3700 3300 2    70   BiDi ~ 0
+Text GLabel 4450 4000 2    70   BiDi ~ 0
 SPI0_MOSI
 Wire Wire Line
-	1400 3100 2800 3100
-Text GLabel 2800 3100 2    70   BiDi ~ 0
+	2150 3800 3550 3800
+Text GLabel 1750 4200 2    70   BiDi ~ 0
 VIN
-Wire Wire Line
-	1400 4100 5000 4100
-Wire Wire Line
-	5000 4100 5000 5800
-Text Label 5000 5800 0    70   ~ 0
-USB_A_D-
-Text Label 1800 4100 0    70   ~ 0
+Text Label 3650 3500 0    70   ~ 0
 USB_A_D-
 Wire Wire Line
 	1700 1200 2700 1200
@@ -152,36 +100,34 @@ Text GLabel 2200 5500 2    70   BiDi ~ 0
 SPI0_MISO
 Wire Wire Line
 	1400 5400 1650 5400
-Text GLabel 1650 5400 2    70   BiDi ~ 0
+Text GLabel 5050 4100 2    70   BiDi ~ 0
 DA_SYNC
-Wire Wire Line
-	1400 3600 2800 3600
-Text GLabel 2800 3600 2    70   BiDi ~ 0
+Text GLabel 1600 4500 2    70   BiDi ~ 0
 3V3
 $Comp
 L TopBreakout-eagle-import:WURTH_ELECTRONICS_61400413321WURTH_ELECTRONICS_61400413321_0_0 J1
 U 1 1 92202B0B
-P 7100 3350
+P 3100 3100
 AR Path="/92202B0B" Ref="J1"  Part="1" 
 AR Path="/5D7F42FA/92202B0B" Ref="J1"  Part="1" 
-F 0 "J1" H 7200 3250 85  0000 L TNN
-F 1 "WURTH_ELECTRONICS_61400413321WURTH_ELECTRONICS_61400413321_0_0" H 7100 3350 50  0001 C CNN
-F 2 "topbreakout:WURTH_ELECTRONICS_61400413321_0" H 7100 3350 50  0001 C CNN
-F 3 "" H 7100 3350 50  0001 C CNN
-	1    7100 3350
+F 0 "J1" H 3200 3000 85  0000 L TNN
+F 1 "WURTH_ELECTRONICS_61400413321WURTH_ELECTRONICS_61400413321_0_0" H 3100 3100 50  0001 C CNN
+F 2 "topbreakout:WURTH_ELECTRONICS_61400413321_0" H 3100 3100 50  0001 C CNN
+F 3 "" H 3100 3100 50  0001 C CNN
+	1    3100 3100
 	-1   0    0    1   
 $EndComp
 $Comp
 L TopBreakout-eagle-import:USB-A-S-X-X-VT J3
 U 1 1 83A3164B
-P 6100 5900
+P 4750 3600
 AR Path="/83A3164B" Ref="J3"  Part="1" 
 AR Path="/5D7F42FA/83A3164B" Ref="J3"  Part="1" 
-F 0 "J3" H 6300 6031 42  0000 L BNN
-F 1 "USB-A-S-X-X-VT" H 6300 5120 42  0000 L BNN
-F 2 "topbreakout:USB-A-S-X-X-VT" H 6100 5900 50  0001 C CNN
-F 3 "" H 6100 5900 50  0001 C CNN
-	1    6100 5900
+F 0 "J3" H 4950 3731 42  0000 L BNN
+F 1 "USB-A-S-X-X-VT" H 4950 2820 42  0000 L BNN
+F 2 "topbreakout:USB-A-S-X-X-VT" H 4750 3600 50  0001 C CNN
+F 3 "" H 4750 3600 50  0001 C CNN
+	1    4750 3600
 	1    0    0    1   
 $EndComp
 $Comp
@@ -210,19 +156,13 @@ F 3 "" H 2200 1800 50  0001 C CNN
 	1    2200 1800
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	6100 5900 4900 5900
-Wire Wire Line
-	5100 5700 6100 5700
-Wire Wire Line
-	5000 5800 6100 5800
-Text GLabel 1800 5100 2    61   Input ~ 0
+Text GLabel 2350 5000 2    61   Input ~ 0
 AVDD
-Text GLabel 1800 5200 2    61   Input ~ 0
+Text GLabel 2350 5100 2    61   Input ~ 0
 AVSS
-Text GLabel 1400 4300 2    59   Input ~ 0
+Text GLabel 3550 3800 2    59   Input ~ 0
 MIDI_RX
-Text GLabel 1400 4400 2    59   Input ~ 0
+Text GLabel 3850 3900 2    59   Input ~ 0
 MIDI_TX
 $Comp
 L TopBreakout-eagle-import:MOLEX_52892-3033MOLEX_52892-3033_0_0 J2
@@ -238,15 +178,7 @@ F 3 "" H 800 6100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1400 5300 1400 5200
-Connection ~ 1400 5200
-Wire Wire Line
 	1400 5200 1800 5200
-Wire Wire Line
-	1800 5100 1400 5100
-Wire Wire Line
-	1400 5000 1400 5100
-Connection ~ 1400 5100
 Wire Wire Line
 	1400 4900 1600 4900
 Wire Wire Line
@@ -263,4 +195,92 @@ Text GLabel 1600 4800 2    59   Input ~ 0
 GATE_3
 Text GLabel 1600 4900 2    59   Input ~ 0
 GATE_4
+Wire Wire Line
+	2350 5300 1400 5300
+Wire Wire Line
+	4600 3000 4600 3300
+Wire Wire Line
+	4600 3300 4750 3300
+Wire Wire Line
+	2500 3000 2300 3000
+Wire Wire Line
+	2300 3000 2300 2800
+Wire Wire Line
+	2300 2800 2150 2800
+Wire Wire Line
+	1400 5000 2350 5000
+Wire Wire Line
+	1400 5100 2350 5100
+Text GLabel 1800 6000 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	1400 4500 1600 4500
+Wire Wire Line
+	1600 4400 1400 4400
+Wire Wire Line
+	1400 3300 2500 3300
+Wire Wire Line
+	1400 3200 2500 3200
+Wire Wire Line
+	1400 3100 2500 3100
+Wire Wire Line
+	3250 3400 3250 3500
+Wire Wire Line
+	3250 3500 2650 3500
+Wire Wire Line
+	2650 3500 2650 3400
+Wire Wire Line
+	2650 3400 1400 3400
+Wire Wire Line
+	3350 3500 3350 3600
+Wire Wire Line
+	3350 3600 2550 3600
+Wire Wire Line
+	2550 3600 2550 3500
+Wire Wire Line
+	2550 3500 1400 3500
+Wire Wire Line
+	3450 3600 3450 3700
+Wire Wire Line
+	3450 3700 2450 3700
+Wire Wire Line
+	2450 3700 2450 3600
+Wire Wire Line
+	2450 3600 1400 3600
+Wire Wire Line
+	3450 3600 4750 3600
+Wire Wire Line
+	3350 3500 4750 3500
+Wire Wire Line
+	3250 3400 4750 3400
+Wire Wire Line
+	2150 3800 2150 3700
+Wire Wire Line
+	2150 3700 1400 3700
+Wire Wire Line
+	2050 3900 2050 3800
+Wire Wire Line
+	2050 3800 1400 3800
+Wire Wire Line
+	2050 3900 3850 3900
+Wire Wire Line
+	1950 4000 1950 3900
+Wire Wire Line
+	1950 3900 1400 3900
+Wire Wire Line
+	1950 4000 4450 4000
+Wire Wire Line
+	1850 4100 1850 4000
+Wire Wire Line
+	1850 4000 1400 4000
+Wire Wire Line
+	1850 4100 5050 4100
+Wire Wire Line
+	1400 4200 1750 4200
+Wire Wire Line
+	1400 4300 2000 4300
+Text GLabel 2000 4300 2    70   BiDi ~ 0
+VIN
+Text GLabel 1600 4400 2    70   BiDi ~ 0
+3V3
 $EndSCHEMATC

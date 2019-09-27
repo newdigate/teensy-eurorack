@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 819)
+    (start_pass_no 8338)
     (layer_rule Top
       (active on)
       (preferred_direction horizontal)
@@ -39,17 +39,32 @@
     )
     (attach off)
   )
+  (padstack "Via[0-1]_400:250_um"
+    (shape
+      (circle Top 500.0 0.0 0.0)
+    )
+    (shape
+      (circle Bottom 500.0 0.0 0.0)
+    )
+    (absolute on)
+  )
   (via 
     "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
   )
   (via 
     "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
   )
-  (via_rule
-    default "Via[0-1]_800:400_um"
+  (via 
+    "Via[0-1]_400:250_um" "Via[0-1]_400:250_um" default
+  )
+  (via 
+    "Via[0-1]_400:250_um-kicad_default" "Via[0-1]_400:250_um" "kicad_default"
   )
   (via_rule
-    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+    default "Via[0-1]_400:250_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_400:250_um-kicad_default"
   )
   (class default
     (clearance_class default)
@@ -65,12 +80,11 @@
     GND "DA_V1" "DA_V2" "DA_V3" "DA_V4" "AD_V2" "AD_V3" "AD_V4"
     "AD_V1" "TFT_CS" "TFT_DC" "SPI0_SCK" "SPI0_MOSI" VIN 3V3 "AD_BUSY"
     "AD_RESET" "AD_CONVST" "AD_CS" "SPI0_MISO" "DA_SYNC" AVDD AVSS /AD7606/AVIN
-    /AD7606/AGND "/AD7606/AD_REGCAP2" "/AD5754 DAC/VREF" "/AD7606/AD_REGCAP1" "/AD7606/AD_REFCAP_A" "/FPC connector/USB_B_D+" "/FPC connector/USB_B_D-" "/FPC connector/USB_B_VCC"
-    "/FPC connector/USB_A_VCC" "/FPC connector/USB_A_D-" "/FPC connector/USB_A_D+" "/AD7606/AD_BYTE_SELECT" "/AD7606/AD_REFSEL" "/AD7606/AD_RANGE" "/AD7606/AD_STBY" "/AD7606/AD_OS0"
-    "/AD7606/AD_AGND" "/FPC connector/SD_DAT1" "/FPC connector/SD_DATAOUT" "/FPC connector/SD_GND" "/FPC connector/SD_CLK" "/FPC connector/SD_VCC" "/FPC connector/SD_DATAIN" "/FPC connector/SD_CS"
-    "/FPC connector/SD_DAT2" "AD_V5" "AD_V6" "AD_V7" "AD_V8" "GATE_1" "GATE_2" "GATE_3"
-    "GATE_4" "MIDI_OUT_PIN5" "MIDI_IN_PIN5" "MIDI_OUT_PIN4" "MIDI_TX" "MIDI_RX" "MIDI_IN_PIN4" "Net-(D1-Pad1)"
-    +3V3
+    "/AD7606/AD_REGCAP2" "/AD5754 DAC/VREF" "/AD7606/AD_REGCAP1" "/AD7606/AD_REFCAP_A" "/FPC connector/USB_B_D+" "/FPC connector/USB_B_D-" "/FPC connector/USB_B_VCC" "/FPC connector/USB_A_VCC"
+    "/FPC connector/USB_A_D-" "/FPC connector/USB_A_D+" "/AD7606/AD_BYTE_SELECT" "/AD7606/AD_REFSEL" "/AD7606/AD_RANGE" "/AD7606/AD_STBY" "/AD7606/AD_OS0" "/AD7606/AD_AGND"
+    "/FPC connector/SD_DAT1" "/FPC connector/SD_DATAOUT" "/FPC connector/SD_GND" "/FPC connector/SD_CLK" "/FPC connector/SD_VCC" "/FPC connector/SD_DATAIN" "/FPC connector/SD_CS" "/FPC connector/SD_DAT2"
+    "AD_V5" "AD_V6" "AD_V7" "AD_V8" "GATE_1" "GATE_2" "GATE_3" "GATE_4"
+    "MIDI_OUT_PIN5" "MIDI_IN_PIN5" "MIDI_OUT_PIN4" "MIDI_TX" "MIDI_RX" "MIDI_IN_PIN4" "Net-(D1-Pad1)" +3V3
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
