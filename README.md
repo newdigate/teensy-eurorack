@@ -28,7 +28,7 @@ A set of circuits and pc-board designs integrating all the components you need f
 
 ## Lesson 1: do not rely on anything you don't neccessarily need. Like Autodesk products for instance. 
 * All schematics and circuit boards are for Kicad.
-  * circuits and pc-boards to [Kicad](http://kicad-pcb.org/) 
+  * [Kicad](http://kicad-pcb.org/) 
 * Freecad for mechanical design.
   * [FreeCAD](https://github.com/FreeCAD/FreeCAD)
 * opencamlib for gcode to cut panels
