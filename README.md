@@ -27,12 +27,12 @@ A set of circuits and pc-board designs integrating all the components you need f
 <img src='hardware/images/kryonos%20v11.png' width='800px'/>
 
 ## Lesson 1: do not rely on anything you don't neccessarily need. Like Autodesk products for instance. 
-* All schematics and circuit boards designed using Autodesk Eagle cad, in process of migrating from nasty to Kicad.
-* Autodesk Fusion 360 used for mechanical layout. in process of migrating away from nasty to Freecad.
-* I am planning to migrate away from proprietry software and subscription licenses
+* All schematics and circuit boards are for Kicad.
   * circuits and pc-boards to [Kicad](http://kicad-pcb.org/) 
-  * physical design to [FreeCAD](https://github.com/FreeCAD/FreeCAD)
-  * CAM using [opencamlib](https://github.com/aewallin/opencamlib)
+* Freecad for mechanical design.
+  * [FreeCAD](https://github.com/FreeCAD/FreeCAD)
+* opencamlib for gcode to cut panels
+  * [opencamlib](https://github.com/aewallin/opencamlib)
  
 ## support
 This project is a work-in-progress! 
