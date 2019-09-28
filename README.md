@@ -26,7 +26,7 @@ A set of circuits and pc-board designs integrating all the components you need f
 
 <img src='hardware/images/kryonos%20v11.png' width='800px'/>
 
-## Lesson 1: do not rely on anything you don't neccessarily need. Like Autodesk products for instance. 
+## Open source software stack
 * All schematics and circuit boards are for Kicad.
   * [Kicad](http://kicad-pcb.org/) 
 * Freecad for mechanical design.
