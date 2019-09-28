@@ -6,7 +6,7 @@
 
 ## contents
 * [what is it](#what-is-it)
-* [software](#software)
+* [software](#open-source-software-stack)
 * [support](#support)
 * [todo](#todo)
 * [social media](#social-media)
