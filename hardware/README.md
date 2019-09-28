@@ -1,3 +1,5 @@
+![boards](boards/images/assembly.svg)
+
 # schematics and printed circuit boards
 * schematics and pcb-layouts for each board [here](boards)
   * autodesk eagle cad .sch and .brd files 
