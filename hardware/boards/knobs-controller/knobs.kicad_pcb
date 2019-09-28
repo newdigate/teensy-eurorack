@@ -268,6 +268,11 @@
       (net 51 /knobs_1/PA04_AIN4))
     (pad 1 thru_hole rect (at -2.5 7 270) (size 1.65 1.65) (drill 1.1) (layers *.Cu *.Mask)
       (net 1 GND))
+    (model /Users/johnsmith/Development/newdigate/teensy-eurorack/hardware/boards/3d/Panasonic_EVU-F2MFL3D14.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module knobs:MUSICTHINGMODULAR_9MM_SNAP-IN_POT (layer Top) (tedit 0) (tstamp 5D864E2A)
@@ -315,6 +320,11 @@
       (net 50 /knobs_1/PA05_AIN5))
     (pad 1 thru_hole rect (at -2.5 7 270) (size 1.65 1.65) (drill 1.1) (layers *.Cu *.Mask)
       (net 1 GND))
+    (model /Users/johnsmith/Development/newdigate/teensy-eurorack/hardware/boards/3d/Panasonic_EVU-F2MFL3D14.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module knobs:MUSICTHINGMODULAR_9MM_SNAP-IN_POT (layer Top) (tedit 0) (tstamp 5D864DE4)
@@ -362,6 +372,11 @@
       (net 48 /knobs_1/PB03_AIN11))
     (pad 1 thru_hole rect (at -2.5 7 270) (size 1.65 1.65) (drill 1.1) (layers *.Cu *.Mask)
       (net 1 GND))
+    (model /Users/johnsmith/Development/newdigate/teensy-eurorack/hardware/boards/3d/Panasonic_EVU-F2MFL3D14.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module knobs:MUSICTHINGMODULAR_9MM_SNAP-IN_POT (layer Top) (tedit 0) (tstamp 5D864DC1)
@@ -409,6 +424,11 @@
       (net 49 /knobs_1/PB02_AIN10))
     (pad 1 thru_hole rect (at -2.5 7 270) (size 1.65 1.65) (drill 1.1) (layers *.Cu *.Mask)
       (net 1 GND))
+    (model /Users/johnsmith/Development/newdigate/teensy-eurorack/hardware/boards/3d/Panasonic_EVU-F2MFL3D14.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module knobs:MK1_ZERO_QUARZO-ABS07 (layer Bottom) (tedit 0) (tstamp 5D876669)
@@ -1034,6 +1054,11 @@
       (net 1 GND))
     (pad A thru_hole circle (at -2.5 7.5) (size 1.8 1.8) (drill 1.1) (layers *.Cu *.Mask)
       (net 40 "Net-(R24-Pad1)"))
+    (model "/Users/johnsmith/Development/newdigate/teensy-eurorack/hardware/boards/3d/Bourns PEL12T4225S-S1024.step"
+      (offset (xyz 7 0 7))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 90 0))
+    )
   )
 
   (module knobs:ENCODER_LED_3_KIT (layer Top) (tedit 0) (tstamp 5D867408)
@@ -1206,6 +1231,11 @@
       (net 1 GND))
     (pad A thru_hole circle (at -2.5 7.5) (size 1.8 1.8) (drill 1.1) (layers *.Cu *.Mask)
       (net 30 "Net-(R11-Pad1)"))
+    (model "/Users/johnsmith/Development/newdigate/teensy-eurorack/hardware/boards/3d/Bourns PEL12T4225S-S1024.step"
+      (offset (xyz 7 0 7))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 90 0))
+    )
   )
 
   (module knobs:ENCODER_LED_3_KIT (layer Top) (tedit 0) (tstamp 5D866C62)
@@ -1378,6 +1408,11 @@
       (net 1 GND))
     (pad A thru_hole circle (at -2.5 7.5) (size 1.8 1.8) (drill 1.1) (layers *.Cu *.Mask)
       (net 22 "Net-(R1-Pad1)"))
+    (model "/Users/johnsmith/Development/newdigate/teensy-eurorack/hardware/boards/3d/Bourns PEL12T4225S-S1024.step"
+      (offset (xyz 7 0 7))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 90 0))
+    )
   )
 
   (module knobs:R0805 (layer Top) (tedit 0) (tstamp 5D866C2D)
