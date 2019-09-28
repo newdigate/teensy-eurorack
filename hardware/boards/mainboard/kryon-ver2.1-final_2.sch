@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 13
+Sheet 3 12
 Title ""
 Date ""
 Rev ""
@@ -48,14 +48,12 @@ AVDD
 Wire Wire Line
 	5600 2400 6100 2400
 Text GLabel 6100 2400 2    70   BiDi ~ 0
-3V3
++3V3
 Wire Wire Line
 	5600 2700 5800 2700
 Wire Wire Line
 	5800 2700 6100 2700
 Connection ~ 5800 2700
-Text GLabel 5600 2700 0    10   BiDi ~ 0
-GND
 Wire Wire Line
 	5600 3500 6000 3500
 Wire Wire Line

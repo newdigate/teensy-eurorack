@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name Mainboard)(type KiCad)(uri ${KIPRJMOD}/Mainboard.pretty)(options "")(descr ""))
+  (lib (name knobs)(type KiCad)(uri /Users/johnsmith/Development/newdigate/teensy-eurorack/hardware/boards/knobs-controller/knobs.pretty)(options "")(descr ""))
 )

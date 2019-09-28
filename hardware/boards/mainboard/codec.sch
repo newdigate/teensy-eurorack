@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr User 13529 9224
 encoding utf-8
-Sheet 5 13
+Sheet 5 12
 Title ""
 Date ""
 Rev ""
@@ -52,8 +52,6 @@ Wire Wire Line
 	4600 6700 4600 6500
 Wire Wire Line
 	4600 6500 4900 6500
-Text GLabel 4600 6700 0    10   BiDi ~ 0
-GND
 Wire Wire Line
 	4900 5400 4900 5500
 Wire Wire Line
@@ -73,17 +71,11 @@ Wire Wire Line
 	6200 7300 6300 7300
 Wire Wire Line
 	6300 7300 6300 8350
-Wire Wire Line
-	6300 8350 6650 8350
 Connection ~ 6100 7300
 Connection ~ 6200 7300
 Connection ~ 6300 7300
-Text GLabel 6100 7300 0    10   BiDi ~ 0
-GND
 Wire Wire Line
 	4150 650  4150 450 
-Text GLabel 4150 650  0    10   BiDi ~ 0
-GND
 Wire Wire Line
 	7100 2100 7100 2200
 Wire Wire Line
@@ -191,16 +183,11 @@ Wire Wire Line
 Wire Wire Line
 	4300 7000 4900 7000
 Connection ~ 4100 7000
-Text GLabel 4200 7000 2    70   BiDi ~ 0
-3V3
 Connection ~ 4300 7000
 Wire Wire Line
 	3550 150  4150 150 
-Wire Wire Line
-	4150 150  4750 150 
-Connection ~ 4150 150 
 Text GLabel 3550 150  0    70   BiDi ~ 0
-3V3
++3V3
 Wire Wire Line
 	1150 2500 4900 2500
 Wire Wire Line
@@ -212,9 +199,7 @@ Wire Wire Line
 Wire Wire Line
 	4900 2700 4800 2700
 Wire Wire Line
-	3050 2000 4600 2000
-Wire Wire Line
-	4600 2000 4600 3300
+	4600 2150 4600 3300
 Wire Wire Line
 	4600 3300 4900 3300
 Wire Wire Line
@@ -279,9 +264,7 @@ AVIN
 Connection ~ 6700 1800
 Wire Wire Line
 	4650 3900 4900 3900
-Wire Wire Line
-	9750 1850 10200 1850
-Text Label 10200 1850 0    70   ~ 0
+Text Label 12200 1100 0    70   ~ 0
 AGND
 Wire Wire Line
 	12200 3200 12650 3200
@@ -317,8 +300,6 @@ Wire Wire Line
 	10700 7500 10700 7350
 Wire Wire Line
 	7350 8350 7350 7500
-Wire Wire Line
-	6950 8350 7350 8350
 Connection ~ 6700 7300
 Connection ~ 9100 7500
 Connection ~ 8200 7500
@@ -385,19 +366,6 @@ F 1 "GND" H 4700 5490 59  0000 C TNN
 F 2 "" H 4700 5500 50  0001 C CNN
 F 3 "" H 4700 5500 50  0001 C CNN
 	1    4700 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mainboard-eagle-import:3.3V #SUPPLY?
-U 1 1 9BB82FD5
-P 3200 6900
-AR Path="/9BB82FD5" Ref="#SUPPLY?"  Part="1" 
-AR Path="/5D773153/9BB82FD5" Ref="#SUPPLY01"  Part="1" 
-F 0 "#SUPPLY01" H 3200 6900 50  0001 C CNN
-F 1 "3.3V" H 3200 7010 59  0000 C BNN
-F 2 "" H 3200 6900 50  0001 C CNN
-F 3 "" H 3200 6900 50  0001 C CNN
-	1    3200 6900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -524,8 +492,8 @@ P 4100 6750
 AR Path="/1D06DB6F" Ref="R?"  Part="1" 
 AR Path="/5D773153/1D06DB6F" Ref="R2"  Part="1" 
 F 0 "R2" H 3950 6800 59  0000 L BNN
-F 1 "2K" H 3950 6620 59  0001 L BNN
-F 2 "Mainboard:R0805" H 4100 6750 50  0001 C CNN
+F 1 "2K" H 3950 6620 59  0000 L BNN
+F 2 "Resistors_SMD:R_0805" H 4100 6750 50  0001 C CNN
 F 3 "" H 4100 6750 50  0001 C CNN
 	1    4100 6750
 	0    -1   -1   0   
@@ -537,8 +505,8 @@ P 4300 6600
 AR Path="/21D49CC9" Ref="R?"  Part="1" 
 AR Path="/5D773153/21D49CC9" Ref="R3"  Part="1" 
 F 0 "R3" H 4150 6650 59  0000 L BNN
-F 1 "2K" H 4150 6470 59  0001 L BNN
-F 2 "Mainboard:R0805" H 4300 6600 50  0001 C CNN
+F 1 "2K" H 4150 6470 59  0000 L BNN
+F 2 "Resistors_SMD:R_0805" H 4300 6600 50  0001 C CNN
 F 3 "" H 4300 6600 50  0001 C CNN
 	1    4300 6600
 	0    -1   -1   0   
@@ -557,66 +525,14 @@ F 3 "" H 4150 350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Mainboard-eagle-import:TANTALUM-SMD-4.7UF-16V(AVX-A) C?
-U 1 1 193FF8E5
-P 1150 2650
-AR Path="/193FF8E5" Ref="C?"  Part="1" 
-AR Path="/5D773153/193FF8E5" Ref="C11"  Part="1" 
-F 0 "C11" H 900 2800 42  0000 L BNN
-F 1 "4.7uf" H 1200 2800 42  0000 L BNN
-F 2 "Mainboard:AVX-A" H 1150 2650 50  0001 C CNN
-F 3 "" H 1150 2650 50  0001 C CNN
-	1    1150 2650
-	0    1    1    0   
-$EndComp
-$Comp
-L Mainboard-eagle-import:TANTALUM-SMD-4.7UF-16V(AVX-A) C?
-U 1 1 0925562E
-P 1500 2950
-AR Path="/0925562E" Ref="C?"  Part="1" 
-AR Path="/5D773153/0925562E" Ref="C12"  Part="1" 
-F 0 "C12" H 1250 3100 42  0000 L BNN
-F 1 "4.7uf" H 1550 3100 42  0000 L BNN
-F 2 "Mainboard:AVX-A" H 1500 2950 50  0001 C CNN
-F 3 "" H 1500 2950 50  0001 C CNN
-	1    1500 2950
-	0    1    1    0   
-$EndComp
-$Comp
-L Mainboard-eagle-import:TANTALUM-SMD-4.7UF-16V(AVX-A) C?
-U 1 1 EF1AB486
-P 2250 3550
-AR Path="/EF1AB486" Ref="C?"  Part="1" 
-AR Path="/5D773153/EF1AB486" Ref="C14"  Part="1" 
-F 0 "C14" H 2000 3700 42  0000 L BNN
-F 1 "4.7uf" H 2300 3700 42  0000 L BNN
-F 2 "Mainboard:AVX-A" H 2250 3550 50  0001 C CNN
-F 3 "" H 2250 3550 50  0001 C CNN
-	1    2250 3550
-	0    1    1    0   
-$EndComp
-$Comp
-L Mainboard-eagle-import:TANTALUM-SMD-4.7UF-16V(AVX-A) C?
-U 1 1 711B141C
-P 1900 3250
-AR Path="/711B141C" Ref="C?"  Part="1" 
-AR Path="/5D773153/711B141C" Ref="C13"  Part="1" 
-F 0 "C13" H 1650 3400 42  0000 L BNN
-F 1 "4.7uf" H 1950 3400 42  0000 L BNN
-F 2 "Mainboard:AVX-A" H 1900 3250 50  0001 C CNN
-F 3 "" H 1900 3250 50  0001 C CNN
-	1    1900 3250
-	0    1    1    0   
-$EndComp
-$Comp
 L Mainboard-eagle-import:R-US_R0805 R?
 U 1 1 00F92E51
 P 2100 7850
 AR Path="/00F92E51" Ref="R?"  Part="1" 
 AR Path="/5D773153/00F92E51" Ref="R1"  Part="1" 
 F 0 "R1" H 1950 7900 59  0000 L BNN
-F 1 "2K" H 1950 7720 59  0001 L BNN
-F 2 "Mainboard:R0805" H 2100 7850 50  0001 C CNN
+F 1 "2K" H 1950 7720 59  0000 L BNN
+F 2 "Resistors_SMD:R_0805" H 2100 7850 50  0001 C CNN
 F 3 "" H 2100 7850 50  0001 C CNN
 	1    2100 7850
 	0    1    -1   0   
@@ -713,14 +629,14 @@ F 3 "" H 8150 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-eagle-import:ZERO-OHM-LINK R?
+L Device:Net-Tie_2 R?
 U 1 1 64BB04EC
 P 6800 8350
 AR Path="/64BB04EC" Ref="R?"  Part="1" 
 AR Path="/5D773153/64BB04EC" Ref="R4"  Part="1" 
 F 0 "R4" H 6650 8400 42  0000 L BNN
 F 1 "0" H 6650 8250 42  0000 L BNN
-F 2 "Mainboard:R0805" H 6800 8350 50  0001 C CNN
+F 2 "Oddities:NetTie-I_Connected_SMD" H 6800 8350 50  0001 C CNN
 F 3 "" H 6800 8350 50  0001 C CNN
 	1    6800 8350
 	1    0    0    -1  
@@ -737,14 +653,6 @@ Wire Wire Line
 	9000 1750 9000 1200
 Wire Wire Line
 	9000 1200 9650 1200
-Wire Wire Line
-	11250 1100 11500 1100
-Wire Wire Line
-	11500 1100 11500 1700
-Wire Wire Line
-	11500 1700 9750 1700
-Wire Wire Line
-	9750 1700 9750 1850
 $Sheet
 S 1000 1000 1100 700 
 U 5D79EBF1
@@ -754,8 +662,6 @@ F2 "LEFT_OUT" O R 2100 1150 50
 F3 "RIGHT_OUT" O R 2100 1400 50 
 F4 "AGND" O L 1000 1250 50 
 $EndSheet
-Wire Wire Line
-	4900 1150 4900 2400
 Wire Wire Line
 	2100 1150 4900 1150
 Wire Wire Line
@@ -784,10 +690,6 @@ F4 "AGND" O L 2550 4050 50
 $EndSheet
 Wire Wire Line
 	2850 1900 4700 1900
-Wire Wire Line
-	3050 2000 3050 2150
-Wire Wire Line
-	3050 2150 2850 2150
 Wire Wire Line
 	4650 3900 4650 4200
 Wire Wire Line
@@ -882,4 +784,76 @@ Wire Wire Line
 Connection ~ 12200 3750
 Wire Wire Line
 	1950 4050 2550 4050
+Wire Wire Line
+	2850 2150 4600 2150
+Wire Wire Line
+	11250 1100 12200 1100
+Wire Wire Line
+	4900 2400 4900 1150
+Wire Wire Line
+	6300 8350 6700 8350
+Wire Wire Line
+	6900 8350 7350 8350
+$Comp
+L Device:CP C11
+U 1 1 5D92D0F0
+P 1150 2650
+F 0 "C11" H 1268 2696 50  0000 L CNN
+F 1 "4.7uF" H 1268 2605 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Reflow" H 1188 2500 50  0001 C CNN
+F 3 "~" H 1150 2650 50  0001 C CNN
+	1    1150 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C12
+U 1 1 5D92DE00
+P 1500 2950
+F 0 "C12" H 1618 2996 50  0000 L CNN
+F 1 "4.7uF" H 1618 2905 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Reflow" H 1538 2800 50  0001 C CNN
+F 3 "~" H 1500 2950 50  0001 C CNN
+	1    1500 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C13
+U 1 1 5D92E6E2
+P 1900 3250
+F 0 "C13" H 2018 3296 50  0000 L CNN
+F 1 "4.7uF" H 2018 3205 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Reflow" H 1938 3100 50  0001 C CNN
+F 3 "~" H 1900 3250 50  0001 C CNN
+	1    1900 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C14
+U 1 1 5D92F56D
+P 2250 3550
+F 0 "C14" H 2368 3596 50  0000 L CNN
+F 1 "4.7uF" H 2368 3505 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Reflow" H 2288 3400 50  0001 C CNN
+F 3 "~" H 2250 3550 50  0001 C CNN
+	1    2250 3550
+	1    0    0    -1  
+$EndComp
+Text GLabel 3200 6900 0    70   BiDi ~ 0
++3V3
+NoConn ~ 4900 4900
+NoConn ~ 4900 4800
+NoConn ~ 4900 4600
+NoConn ~ 4900 4500
+NoConn ~ 4900 4000
+NoConn ~ 4900 3700
+NoConn ~ 4900 6800
+NoConn ~ 7900 2500
+NoConn ~ 7900 2800
+NoConn ~ 7900 3100
+NoConn ~ 7900 3400
+NoConn ~ 7900 3700
+NoConn ~ 7900 4000
+NoConn ~ 7900 4300
+NoConn ~ 7900 4600
+NoConn ~ 7900 6200
 $EndSCHEMATC

@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 13
+Sheet 4 12
 Title ""
 Date ""
 Rev ""
@@ -18,162 +18,30 @@ Wire Wire Line
 	2050 5050 2450 5050
 Text GLabel 2450 5050 2    70   BiDi ~ 0
 GND
-Wire Wire Line
-	4050 2950 4450 2950
-Text GLabel 4250 2950 2    70   BiDi ~ 0
+Text GLabel 800  2350 2    70   BiDi ~ 0
 GND
 Wire Wire Line
-	5050 2750 5550 2750
-Text GLabel 5350 2750 2    70   BiDi ~ 0
-GND
-Wire Wire Line
-	7150 3650 6750 3650
-Text GLabel 6750 3650 2    70   BiDi ~ 0
-GND
-Wire Wire Line
-	7150 4350 6750 4350
-Text GLabel 6750 4350 2    70   BiDi ~ 0
-GND
-Wire Wire Line
-	7150 4950 6750 4950
-Text GLabel 6750 4950 2    70   BiDi ~ 0
-GND
-Wire Wire Line
-	2050 2550 3450 2550
-Text GLabel 3450 2550 2    70   BiDi ~ 0
-TFT_CS
-Wire Wire Line
-	2050 2450 3450 2450
-Text GLabel 3450 2450 2    70   BiDi ~ 0
-TFT_DC
-Wire Wire Line
-	2050 2250 3450 2250
-Text GLabel 3450 2250 2    70   BiDi ~ 0
-SPI0_SCK
-Wire Wire Line
-	2050 2350 3450 2350
-Text GLabel 3450 2350 2    70   BiDi ~ 0
-SPI0_MOSI
-Wire Wire Line
-	2050 2150 3450 2150
-Text GLabel 3450 2150 2    70   BiDi ~ 0
-VIN
-Text GLabel 2450 2150 2    70   BiDi ~ 0
-VIN
-Wire Wire Line
-	1650 6650 2450 6650
-Text Label 1950 6650 0    70   ~ 0
-TAGND
-Wire Wire Line
-	7150 3450 7650 3450
-Text GLabel 7650 3450 2    70   BiDi ~ 0
-AVDD
-Wire Wire Line
-	7150 4150 7650 4150
-Text GLabel 7650 4150 2    70   BiDi ~ 0
-AVDD
-Wire Wire Line
-	7150 4750 7650 4750
-Text GLabel 7650 4750 2    70   BiDi ~ 0
-AVDD
-Wire Wire Line
-	7150 2850 7650 2850
-Text GLabel 7650 2850 2    70   BiDi ~ 0
-AVDD
-Wire Wire Line
-	7150 4850 8450 4850
-Text Label 8450 4850 0    70   ~ 0
-AD_V8
-Wire Wire Line
-	7150 4250 8450 4250
-Text Label 8450 4250 0    70   ~ 0
-AD_V7
-Wire Wire Line
-	7150 3550 8450 3550
-Text Label 8450 3550 0    70   ~ 0
-AD_V6
-Wire Wire Line
-	7150 2950 8550 2950
-Text Label 8550 2950 0    70   ~ 0
-AD_V5
-Wire Wire Line
-	2450 6450 2450 5850
-Text Label 2450 6150 0    70   ~ 0
-T_ANALOG_LEFT
-Wire Wire Line
-	3150 2950 2050 2950
-Wire Wire Line
-	3150 2950 3150 2850
-Wire Wire Line
-	3150 2850 4650 2850
-Wire Wire Line
-	4650 2850 4650 3050
-Wire Wire Line
-	4650 3050 5050 3050
-Text Label 3150 2950 0    70   ~ 0
+	5050 2050 5350 2050
+Text Label 3150 2350 0    70   ~ 0
 USB_B_VCC
-Wire Wire Line
-	2050 2850 3050 2850
-Wire Wire Line
-	3050 2850 3050 2650
-Wire Wire Line
-	3050 2650 4750 2650
-Wire Wire Line
-	4750 2650 4750 2950
-Wire Wire Line
-	4750 2950 5050 2950
-Text Label 2450 2850 0    70   ~ 0
+Text Label 2450 2250 0    70   ~ 0
 USB_B_D-
-Wire Wire Line
-	2050 2750 4850 2750
-Wire Wire Line
-	4850 2750 4850 2850
-Wire Wire Line
-	4850 2850 5050 2850
-Text Label 3450 2750 0    70   ~ 0
+Text Label 3450 2150 0    70   ~ 0
 USB_B_D+
-Wire Wire Line
-	4050 3250 2050 3250
-Text Label 2350 3250 0    70   ~ 0
+Text Label 1050 2650 0    70   ~ 0
 USB_A_VCC
-Wire Wire Line
-	4050 3050 2050 3050
-Text Label 2350 3050 0    70   ~ 0
+Text Label 1150 2450 0    70   ~ 0
 USB_A_D+
 Wire Wire Line
 	2050 3650 2350 3650
-Text GLabel 2350 3650 2    70   BiDi ~ 0
-MIDI_IN_PIN5
 Wire Wire Line
 	2050 3550 2450 3550
-Text GLabel 2450 3550 2    70   BiDi ~ 0
-MIDI_IN_PIN4
 Wire Wire Line
 	2050 3450 2350 3450
-Text GLabel 2350 3450 2    70   BiDi ~ 0
-MIDI_OUT_PIN5
 Wire Wire Line
 	2050 3350 2450 3350
-Text GLabel 2450 3350 2    70   BiDi ~ 0
-MIDI_OUT_PIN4
-Wire Wire Line
-	4050 3150 2050 3150
-Text Label 2450 3150 0    70   ~ 0
+Text Label 1150 2550 0    70   ~ 0
 USB_A_D-
-Wire Wire Line
-	1650 5550 2450 5550
-Wire Wire Line
-	2450 5550 2450 5650
-Text GLabel 1950 5550 2    70   BiDi ~ 0
-3V3
-Wire Wire Line
-	2050 2650 2250 2650
-Wire Wire Line
-	2250 2650 2250 1400
-Wire Wire Line
-	2250 1400 2550 1400
-Text Label 2550 1400 0    70   ~ 0
-AD_AGND
 $Comp
 L Mainboard-eagle-import:MOLEX_52892-3033MOLEX_52892-3033_0_0 J1
 U 1 1 F1780596
@@ -188,56 +56,119 @@ $EndComp
 $Comp
 L Mainboard-eagle-import:PINHD-1X4 JUSB_B1
 U 1 1 60AD87F5
-P 4950 2850
-F 0 "JUSB_B1" H 4700 3175 59  0000 L BNN
-F 1 "PINHD-1X4" H 4700 2550 59  0000 L BNN
-F 2 "Mainboard:1X04" H 4950 2850 50  0001 C CNN
-F 3 "" H 4950 2850 50  0001 C CNN
-	1    4950 2850
+P 4950 2150
+F 0 "JUSB_B1" H 4700 2475 59  0000 L BNN
+F 1 "PINHD-1X4" H 4700 1850 59  0000 L BNN
+F 2 "Mainboard:1X04" H 4950 2150 50  0001 C CNN
+F 3 "" H 4950 2150 50  0001 C CNN
+	1    4950 2150
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	2050 4950 2850 4950
+Wire Wire Line
+	2050 4850 2250 4850
+Wire Wire Line
+	2050 4750 2850 4750
+Wire Wire Line
+	2050 4650 2250 4650
+Wire Wire Line
+	2050 4550 2850 4550
+Wire Wire Line
+	2050 4450 2250 4450
+Wire Wire Line
+	2050 4250 2200 4250
+Wire Wire Line
+	2050 4350 2950 4350
+Text GLabel 2850 4950 2    50   BiDi ~ 0
+AD_CS
+Text GLabel 2250 4850 2    50   BiDi ~ 0
+AD_RESET
+Text GLabel 2850 4750 2    50   BiDi ~ 0
+AD_CONVST
+Text GLabel 2250 4650 2    50   BiDi ~ 0
+AD_BUSY
+Text GLabel 2850 4550 2    50   BiDi ~ 0
+SPI0_MISO
+Text GLabel 2250 4450 2    50   BiDi ~ 0
+SPI0_SCK
+Text GLabel 2950 4350 2    50   BiDi ~ 0
+TFT_CS
+Text GLabel 2200 4250 2    50   BiDi ~ 0
+TFT_DC
+Text GLabel 2050 4150 2    50   BiDi ~ 0
+AVSS
+Text GLabel 2050 4050 2    50   BiDi ~ 0
+AVDD
+Text GLabel 2050 3950 2    50   BiDi ~ 0
+GATE_4
+Text GLabel 2050 3850 2    50   BiDi ~ 0
+GATE_3
+Text GLabel 2050 3750 2    50   BiDi ~ 0
+GATE_2
+Text GLabel 2350 3650 2    50   BiDi ~ 0
+GATE_1
+Text GLabel 2450 3550 2    50   BiDi ~ 0
+3V3
+Text GLabel 2350 3450 2    50   BiDi ~ 0
++3V3
+Text GLabel 2450 3350 2    50   BiDi ~ 0
+VIN
+Wire Wire Line
+	500  2350 800  2350
+Wire Wire Line
+	500  2450 2050 2450
+Wire Wire Line
+	500  2550 2050 2550
+Wire Wire Line
+	500  2650 2050 2650
 $Comp
 L Mainboard-eagle-import:PINHD-1X4 JUSB_A1
 U 1 1 A4FDA5DD
-P 3950 3050
-F 0 "JUSB_A1" H 3700 3375 59  0000 L BNN
-F 1 "PINHD-1X4" H 3700 2750 59  0000 L BNN
-F 2 "Mainboard:1X04" H 3950 3050 50  0001 C CNN
-F 3 "" H 3950 3050 50  0001 C CNN
-	1    3950 3050
+P 400 2450
+F 0 "JUSB_A1" H 150 2775 59  0000 L BNN
+F 1 "PINHD-1X4" H 150 2150 59  0000 L BNN
+F 2 "Mainboard:1X04" H 400 2450 50  0001 C CNN
+F 3 "" H 400 2450 50  0001 C CNN
+	1    400  2450
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	2050 2150 5050 2150
+Wire Wire Line
+	2050 2250 5050 2250
+Wire Wire Line
+	2050 2350 5050 2350
+Text GLabel 2050 2750 2    50   BiDi ~ 0
+MIDI_RX
+Text GLabel 2050 2850 2    50   BiDi ~ 0
+MIDI_TX
+Text GLabel 2050 2950 2    50   BiDi ~ 0
+SPI0_MOSI
+Text GLabel 2050 3050 2    50   BiDi ~ 0
+DA_SYNC
 $Comp
-L Device:D D1
-U 1 1 74A9BC2C
-P 3000 5800
-F 0 "D1" H 3100 5819 59  0000 L BNN
-F 1 "DIODESMA" H 3100 5709 59  0000 L BNN
-F 2 "Diodes_SMD:D_SMA_Handsoldering" H 3000 5800 50  0001 C CNN
-F 3 "" H 3000 5800 50  0001 C CNN
-	1    3000 5800
-	0    -1   -1   0   
+L power:GND #PWR0101
+U 1 1 5D91AC47
+P 2150 3150
+F 0 "#PWR0101" H 2150 2900 50  0001 C CNN
+F 1 "GND" H 2155 2977 50  0000 C CNN
+F 2 "" H 2150 3150 50  0001 C CNN
+F 3 "" H 2150 3150 50  0001 C CNN
+	1    2150 3150
+	1    0    0    -1  
 $EndComp
-$Comp
-L Mainboard-eagle-import:DIODESMA D2
-U 1 1 9E0BEA3A
-P 3100 6550
-F 0 "D2" H 3200 6569 59  0000 L BNN
-F 1 "DIODESMA" H 3200 6459 59  0000 L BNN
-F 2 "Diodes_SMD:D_SMA_Handsoldering" H 3100 6550 50  0001 C CNN
-F 3 "" H 3100 6550 50  0001 C CNN
-	1    3100 6550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Mainboard-eagle-import:MOLEX_52892-3033MOLEX_52892-3033_0_0 J2
-U 1 1 92202B0B
-P 5600 5250
-F 0 "J2" H 5600 5150 85  0000 L TNN
-F 1 "MOLEX_52892-3033MOLEX_52892-3033_0_0" H 5600 5250 50  0001 C CNN
-F 2 "Mainboard:MOLEX_52892-3033_0" H 5600 5250 50  0001 C CNN
-F 3 "" H 5600 5250 50  0001 C CNN
-	1    5600 5250
-	0    -1   -1   0   
-$EndComp
+Wire Wire Line
+	2150 3150 2050 3150
+Wire Wire Line
+	2050 3250 2050 3350
+Connection ~ 2050 3350
+Wire Wire Line
+	2050 3550 2050 3450
+Connection ~ 2050 3550
+Connection ~ 2050 3450
+NoConn ~ 2050 1950
+NoConn ~ 2050 1850
+Text GLabel 5350 2050 2    70   BiDi ~ 0
+GND
 $EndSCHEMATC
