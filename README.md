@@ -13,7 +13,7 @@
 * [videos](#videos)
 
 ## what is it 
-A set of circuits and pc-board designs integrating all the components you need for prototyping a digital audio module for eurorack
+A set of circuit and pc-board designs for kicad, integrating all the components you need for prototyping a digital audio module for eurorack
 
 *audio codec circuit originally started as a discussion on quad audio channel outputs and a pcb design integrating teensy and cs42448 from Paul Stoffregen on [pjrc forum](https://forum.pjrc.com/threads/41371-Quad-channel-output-on-Teensy-3-6?p=138828&viewfull=1#post138828)*
 * cortex m7 microcontroller (teensy 4.0) interfacing the follow components
