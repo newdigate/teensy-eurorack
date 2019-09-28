@@ -1,3 +1,6 @@
+![assembly](images/assembly.svg)
+
+![assembly](images/assembly_front.png)
 
 | | **board** | **description** |
 |---|-------|---------|
