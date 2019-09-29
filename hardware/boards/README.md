@@ -4,6 +4,8 @@
 * **2-layer:** 
 * teensy4
 * cs42448 audio codec 
+* 3 x 6.35mm stereo TRS jack inputs
+* 4 x 6.35mm stereo TRS jack outputs
 * connectors for top and bottom breakout boards
 
 <img src='mainboard/images/mainboard-top.png' width='300px'/> <img src='mainboard/images/mainboard-bottom.png' width='300px'/> 
