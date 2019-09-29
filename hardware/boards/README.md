@@ -2,8 +2,7 @@
 
 ## mainboard
 * [main](mainboard) | **2-layer:** mainboard - contains a teensy4, a cs42448 audio codec and connectors for top and bottom 
-![mainboard](mainboard/images/mainboard-top.png
-![mainboard](mainboard/images/mainboard-bottom.png) 
+<img src='mainboard/images/mainboard-top.png' width='300px'/> <img src='mainboard/images/mainboard-bottom.png' width='300px'/> 
 
 ## breakout boards 
 ### top breakout
