@@ -1,7 +1,6 @@
 # boards
 
-## mainboard
-* [mainboard files](mainboard) 
+## [mainboard](mainboard) 
 * **2-layer:** 
 * teensy4
 * cs42448 audio codec 
@@ -10,8 +9,7 @@
 <img src='mainboard/images/mainboard-top.png' width='300px'/> <img src='mainboard/images/mainboard-bottom.png' width='300px'/> 
 
 ## breakout boards 
-### top breakout
-* [top breakout](topbreakout) 
+### [top breakout](topbreakout) 
 * **2-layer:** 
 * 3.5mm jack analog inputs/outputs
 * midi in/out, 
@@ -20,16 +18,14 @@
 
 <img src='topbreakout/images/TopBreakout-front.png' width='300px'/> <img src='topbreakout/images/TopBreakout-back.png' width='300px'/>
 
-### knobs breakout
-* [knobs-controller](knobs-controller) 
+### [knobs-controller](knobs-controller) 
 * **2-layer:** 
 * 4 x pots
 * 3 x RGB rotary encoders with switches 
 
 <img src='knobs-controller/images/KnobsController_v1.1.png' width='300px'/>
 
-### uSD extension breakout
-* uSD extension breakout](teensy-uSD-adapter) 
+### [uSD extension breakout](teensy-uSD-adapter) 
 * **2-layer**
 
 <img src='teensy-uSD-adapter/images/uSD_extender_male_sm.png' width='300px'/>
