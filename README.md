@@ -50,25 +50,17 @@ What you can do if you like to see progress with this project?
 * clone this repo, make improvements, commit & send pull-requests
 
 ## todo 
-- [ ] Migrate circuits and pcbs to kicad
-- [ ] Teensy 4.0 changes
-  - [ ] move control-voltage adc and dacs off main-board and on to top-breakout board
-  - [ ] reduce main board to double layer board, instead of 4-layer board
-  - [ ] increase horizontal size from 20HP to 24HP  
 - [ ] Breakout board for rotary encoders and pots
   - [x] ~~Order~~
-  - [ ] Assemble
+  - [x] ~~Assemble~~
+  - [ ] Software
   - [ ] Certify
-- [ ] ~~change all 0603 resistors and caps with 0805~~
-- [ ] Adapt mainboard with fpc connector from new breakout board
-- [x] ~~Include schematics and board for uSD adapter~~
-- [x] ~~Isolate analog grounds~~
-- [ ] Vertical alignment of FPC connectors between top breakout and mainboard
+- [ ] Horizontal alignment of FPC connectors between top breakout and mainboard
 - [ ] Finalize circuits / boards
 - [ ] Testing
-  - [x] ~~CS42448 audio codec~~
-  - [x] ~~control voltage input~~
-  - [x] ~~control voltage output~~
+  - [ ] CS42448 audio codec
+  - [ ] control voltage input
+  - [ ] control voltage output
   - [ ] usb host/device
   - [ ] midi in/out
   - [ ] sd card extension & adapter
