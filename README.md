@@ -10,6 +10,13 @@
 * [support](#support)
 * [todo](#todo)
 * [social media](#social-media)
+* [boards](#boards)
+  * [mainboard](#mainboard)
+  * [breakout boards](#breakout-boards)
+    * [top breakout](#top-breakout)
+    * [knobs-controller](#knobs-controller)
+    * [uSD extension breakout](#usd-extension-breakout)
+* [assembly technical drawings](#assembly-technical-drawings)
 * [videos](#videos)
 
 ## what is it 
@@ -79,7 +86,42 @@ What you can do if you like to see progress with this project?
   * [Nic N](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) 
   * [DIY Audio Electronics Maker](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g)
 
+# boards
+
+## [mainboard](hardware/boards/mainboard) 
+* **2-layer:** 
+* teensy4
+* cs42448 audio codec 
+* 3 x 6.35mm stereo TRS jack inputs
+* 4 x 6.35mm stereo TRS jack outputs
+* connectors for top and bottom breakout boards
+
+<img src='hardware/boards/mainboard/images/mainboard-top.png' width='300px'/> <img src='hardware/boards/mainboard/images/mainboard-bottom.png' width='300px'/> 
+
+## breakout boards 
+### [top breakout](hardware/boards/topbreakout) 
+* **2-layer:** 
+* 3.5mm jack analog inputs/outputs
+* midi in/out, 
+* usb device/host,
+* microSD female connector
+
+<img src='hardware/boards/topbreakout/images/TopBreakout-front.png' width='300px'/> <img src='hardware/boards/topbreakout/images/TopBreakout-back.png' width='300px'/>
+
+### [knobs-controller](hardware/boards/knobs-controller) 
+* **2-layer:** 
+* 4 x pots
+* 3 x RGB rotary encoders with switches 
+
+<img src='hardware/boards/knobs-controller/images/KnobsController_v1.1.png' width='300px'/>
+
+### [uSD extension breakout](hardware/boards/teensy-uSD-adapter) 
+* **2-layer**
+
+<img src='hardware/boards/teensy-uSD-adapter/images/uSD_extender_male_sm.png' width='300px'/>
+
+# assembly technical drawings 
+<img src='hardware/boards/images/assembly.svg' width='600px'/>
+
 ## videos 
 [![youtube: Eurorack digital audio modules powered by teensy micro-controller](https://img.youtube.com/vi/6zt6OF7UOTc/0.jpg)](https://www.youtube.com/watch?v=6zt6OF7UOTc)
-
-<img src='/hardware/images/kryonos%20v6.png' width='200px'/><img src='/hardware/images/kryonos%20v6-2.png' width='200px'/>
