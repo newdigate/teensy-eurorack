@@ -10,7 +10,7 @@
 * [support](#support)
 * [todo](#todo)
 * [social media](#social-media)
-* [boards](#boards)
+* [printed circuit boards](#printed-circuit-boards)
   * [mainboard](#mainboard)
   * [breakout boards](#breakout-boards)
     * [top breakout](#top-breakout)
@@ -86,7 +86,7 @@ What you can do if you like to see progress with this project?
   * [Nic N](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) 
   * [DIY Audio Electronics Maker](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g)
 
-# boards
+# printed circuit boards
 
 ## [mainboard](hardware/boards/mainboard) 
 * **2-layer:** 
