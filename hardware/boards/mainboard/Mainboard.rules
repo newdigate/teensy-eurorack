@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 819)
+    (start_pass_no 9076)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -30,9 +30,19 @@
     (clear 152.6)
     (clear 76.2 (type smd_to_turn_gap))
     (clear 203.4 (type default_PWR))
+    (clear 38.2 (type smd_smd))
     (clear 203.4 (type smd_PWR))
     (clear 203.4 (type "kicad_default"_PWR))
     (clear 203.4 (type PWR_PWR))
+  )
+  (padstack "Via[0-1]_400:250_um"
+    (shape
+      (circle F.Cu 400.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 400.0 0.0 0.0)
+    )
+    (attach off)
   )
   (padstack "Via[0-1]_800:400_um"
     (shape
@@ -42,6 +52,15 @@
       (circle B.Cu 800.0 0.0 0.0)
     )
     (attach off)
+  )
+  (padstack 11111
+    (shape
+      (circle F.Cu 500.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 500.0 0.0 0.0)
+    )
+    (absolute on)
   )
   (padstack "Via[0-1]_400:250_um2"
     (shape
@@ -53,19 +72,19 @@
     (absolute on)
   )
   (via 
-    "Via[0-1]_400:250_um" "Via[0-1]_400:250_um2" default
+    "Via[0-1]_400:250_um" 11111 default
   )
   (via 
-    "Via[0-1]_800:400_um" "Via[0-1]_400:250_um2" default
+    "Via[0-1]_800:400_um" 11111 default
   )
   (via 
-    "Via[0-1]_400:250_um-kicad_default" "Via[0-1]_400:250_um2" "kicad_default"
+    "Via[0-1]_400:250_um-kicad_default" 11111 "kicad_default"
   )
   (via 
-    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_400:250_um2" "kicad_default"
+    "Via[0-1]_800:400_um-kicad_default" 11111 "kicad_default"
   )
   (via 
-    "Via[0-1]_400:250_um-PWR" "Via[0-1]_800:400_um" PWR
+    "Via[0-1]_400:250_um-PWR" "Via[0-1]_400:250_um" PWR
   )
   (via 
     "Via[0-1]_800:400_um-PWR" "Via[0-1]_800:400_um" PWR
