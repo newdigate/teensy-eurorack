@@ -1,5 +1,4 @@
-EESchema Schematic File Version 4
-LIBS:Mainboard-cache
+EESchema Schematic File Version 5
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -13,6 +12,11 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
 $EndDescr
 Text Label 7900 4450 0    70   ~ 0
 V_IN
@@ -208,4 +212,5 @@ Text HLabel 8650 4050 2    70   Input ~ 0
 RIGHT_OUT
 Text HLabel 8300 4500 3    70   Input ~ 0
 AGND
+Connection ~ 6200 4200
 $EndSCHEMATC

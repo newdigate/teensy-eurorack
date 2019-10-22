@@ -1,5 +1,4 @@
-EESchema Schematic File Version 4
-LIBS:Mainboard-cache
+EESchema Schematic File Version 5
 EELAYER 30 0
 EELAYER END
 $Descr User 13529 9224
@@ -13,6 +12,11 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
 $EndDescr
 Wire Wire Line
 	4900 6100 4000 6100
