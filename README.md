@@ -50,6 +50,8 @@ What you can do if you like to see progress with this project?
 * clone this repo, make improvements, commit & send pull-requests
 
 ## todo 
+- [ ] General
+  - [ ] refactor folders so that footprints, symbols and 3d models (should be shared common amoung project, not board-specific)
 - [ ] Breakout board for rotary encoders and pots
   - [x] ~~Order~~
   - [x] ~~Assemble~~
@@ -57,7 +59,7 @@ What you can do if you like to see progress with this project?
   - [ ] Certify
 - [ ] topbreakout board 
   - [ ] replace 0.5mm-pitch FPC connector with 1mm-pitch FPC connector (to be compatible with teensy4 fpc connector for sd-breakout --see [HFW8R-1STE1LF](https://github.com/newdigate/kicad-footprint-HFW8R-1STE1LF))
-  - [ ] correct footprint of AD5754 - size of 'paddle' pad underneath IC should be increased to match the size of the pad on the IC.
+  - [ ] correct footprint of AD5754 - size of 'paddle' pad underneath IC on footprint should be increased to match the size of the pad on the IC.
 - [ ] panel
   - [ ] measurements 
   - [ ] design 
