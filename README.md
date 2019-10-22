@@ -53,6 +53,9 @@ What you can do if you like to see progress with this project?
   - [x] ~~Assemble~~
   - [ ] Software
   - [ ] Certify
+- [ ] mainboard
+  - [ ] add panel silkscreen to footprint of 6.5mm jack
+  - [ ] add milled cutout to allow fpc cable connecting teensy microsd through mainboard to topbreakout. 
 - [ ] topbreakout board 
   - [ ] replace 0.5mm-pitch FPC connector with 1mm-pitch FPC connector (to be compatible with teensy4 fpc connector for sd-breakout --see [HFW8R-1STE1LF](https://github.com/newdigate/kicad-footprint-HFW8R-1STE1LF))
   - [ ] correct footprint of AD5754 - size of 'paddle' pad underneath IC on footprint should be increased to match the size of the pad on the IC.
