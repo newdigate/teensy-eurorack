@@ -34,12 +34,8 @@ A set of circuit and pc-board designs for kicad, integrating all the components 
 <img src='hardware/images/kryonos%20v11.png' width='800px'/>
 
 ## Open source software stack
-* All schematics and circuit boards are for Kicad.
-  * [Kicad](http://kicad-pcb.org/) 
-* Freecad for mechanical design.
-  * [FreeCAD](https://github.com/FreeCAD/FreeCAD)
-* opencamlib for gcode to cut panels
-  * [opencamlib](https://github.com/aewallin/opencamlib)
+* All schematics and circuit boards are for created using [Kicad](http://kicad-pcb.org/) 
+* All mechanical designs are created using [FreeCAD](https://github.com/FreeCAD/FreeCAD)
  
 ## support
 This project is a work-in-progress! 
