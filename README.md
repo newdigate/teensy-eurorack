@@ -55,7 +55,12 @@ What you can do if you like to see progress with this project?
   - [x] ~~Assemble~~
   - [ ] Software
   - [ ] Certify
-- [ ] Eurorack panel design
+- [ ] topbreakout board 
+  - [ ] replace 0.5mm-pitch FPC connector with 1mm-pitch FPC connector (to be compatible with teensy4 fpc connector for sd-breakout)
+  - [ ] correct footprint of AD5754 - size of 'paddle' pad underneath IC should be increased to match the size of the pad on the IC.
+- [ ] panel
+  - [ ] measurements 
+  - [ ] design 
 - [ ] Finalize circuits / boards
 - [ ] Testing
   - [ ] CS42448 audio codec
