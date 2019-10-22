@@ -55,7 +55,7 @@ What you can do if you like to see progress with this project?
   - [x] ~~Assemble~~
   - [ ] Software
   - [ ] Certify
-- [ ] Horizontal alignment of FPC connectors between top breakout and mainboard
+- [ ] Eurorack panel design
 - [ ] Finalize circuits / boards
 - [ ] Testing
   - [ ] CS42448 audio codec
