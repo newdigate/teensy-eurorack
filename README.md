@@ -41,7 +41,7 @@ A set of circuit and pc-board designs for kicad, integrating all the components 
 This project is a work-in-progress! 
 
 What you can do if you like to see progress with this project?
-* star this repository
+* star this repository (means you need a github account - go for it!!)
 * subscribe [Nic N on youtube](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) & [DIY Audio Electronics Maker](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g)
 * clone this repo, make improvements, commit & send pull-requests
 
