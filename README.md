@@ -110,12 +110,7 @@ What you can do if you like to see progress with this project?
 * 4 x pots
 * 3 x RGB rotary encoders with switches 
 
-<img src='hardware/boards/knobs-controller/images/KnobsController_v1.1.png' width='300px'/>
-
-### [uSD extension breakout](hardware/boards/teensy-uSD-adapter) 
-* **2-layer**
-
-<img src='hardware/boards/teensy-uSD-adapter/images/uSD_extender_male_sm.png' width='300px'/>
+<img src='hardware/boards/knobs-controller/images/Knob_controller_top_view.png' width='250px'/> <img src='hardware/boards/knobs-controller/images/Knob_controller_bottom_view.png' width='250px'/>
 
 # assembly technical drawings 
 <img src='hardware/boards/images/assembly.svg' width='600px'/>
