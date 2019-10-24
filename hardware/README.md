@@ -1,8 +1,9 @@
-![boards](boards/images/assembly.svg)
-
-# schematics and printed circuit boards
+# schematics, printed circuit boards, and panels
 * schematic and pcboard files for each board [here](boards)
+* panel designs [here](panel)
 * some (older) circuit [images](CIRCUITS.md)
 * & some more (older) images [here](IMAGES.md)
 
 ![mainboard](images/kryonos%20v11.png)
+
+![boards](boards/images/assembly.svg)
