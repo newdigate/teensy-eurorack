@@ -1,2 +1,2 @@
 
-![panel](kryon-panel-20hp-no-chamfer.png)
+![panel](panel-dimentions.svg)
