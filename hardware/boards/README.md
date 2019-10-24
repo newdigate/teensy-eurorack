@@ -25,7 +25,8 @@
 * 4 x pots
 * 3 x RGB rotary encoders with switches 
 
-<img src='knobs-controller/images/KnobsController_v1.1.png' width='300px'/>
+<img src='knobs-controller/images/Knob_controller_top_view.png' width='300px'/>
+<img src='knobs-controller/images/Knob_controller_bottom_view.png' width='300px'/>
 
 ### [uSD extension breakout](teensy-uSD-adapter) 
 * **2-layer**
