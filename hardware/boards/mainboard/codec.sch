@@ -640,7 +640,7 @@ AR Path="/64BB04EC" Ref="R?"  Part="1"
 AR Path="/5D773153/64BB04EC" Ref="R4"  Part="1" 
 F 0 "R4" H 6650 8400 42  0000 L BNN
 F 1 "0" H 6650 8250 42  0000 L BNN
-F 2 "Oddities:NetTie-I_Connected_SMD" H 6800 8350 50  0001 C CNN
+F 2 "Mainboard:NetTie-I_Connected_SMD_small" H 6800 8350 50  0001 C CNN
 F 3 "" H 6800 8350 50  0001 C CNN
 	1    6800 8350
 	1    0    0    -1  
