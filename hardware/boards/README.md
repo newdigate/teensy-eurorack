@@ -28,10 +28,5 @@
 <img src='knobs-controller/images/Knob_controller_top_view.png' width='300px'/>
 <img src='knobs-controller/images/Knob_controller_bottom_view.png' width='300px'/>
 
-### [uSD extension breakout](teensy-uSD-adapter) 
-* **2-layer**
-
-<img src='teensy-uSD-adapter/images/uSD_extender_male_sm.png' width='300px'/>
-
 # assembly technical drawings 
 <img src='images/assembly.svg' width='600px'/>
