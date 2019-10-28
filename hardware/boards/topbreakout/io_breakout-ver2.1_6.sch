@@ -1,5 +1,4 @@
-EESchema Schematic File Version 4
-LIBS:TopBreakout-cache
+EESchema Schematic File Version 5
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -13,6 +12,11 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
 $EndDescr
 Wire Wire Line
 	4500 4000 3800 4000
@@ -78,7 +82,7 @@ GND
 Wire Wire Line
 	4500 5500 3700 5500
 Text GLabel 3700 5500 0    70   BiDi ~ 0
-3V3
++3V3
 Wire Wire Line
 	1600 4000 2200 4000
 Wire Wire Line
@@ -92,7 +96,7 @@ Wire Wire Line
 Wire Wire Line
 	2200 4300 2200 4000
 Text GLabel 1600 4000 0    70   BiDi ~ 0
-3V3
++3V3
 Connection ~ 2200 4000
 Wire Wire Line
 	5900 3700 9500 3700
@@ -236,7 +240,7 @@ AR Path="/FDFA29AC" Ref="C6"  Part="1"
 AR Path="/5D7F4465/FDFA29AC" Ref="C6"  Part="1" 
 F 0 "C6" V 7709 2349 59  0000 C CNN
 F 1 "0.1uF" V 7890 2349 59  0000 C CNN
-F 2 "topbreakout:C1206" H 7800 2300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7800 2300 50  0001 C CNN
 F 3 "" H 7800 2300 50  0001 C CNN
 	1    7800 2300
 	1    0    0    -1  
@@ -249,7 +253,7 @@ AR Path="/5BE03534" Ref="C9"  Part="1"
 AR Path="/5D7F4465/5BE03534" Ref="C9"  Part="1" 
 F 0 "C9" V 8209 2349 59  0000 C CNN
 F 1 "0.1uF" V 8390 2349 59  0000 C CNN
-F 2 "topbreakout:C1206" H 8300 2300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8300 2300 50  0001 C CNN
 F 3 "" H 8300 2300 50  0001 C CNN
 	1    8300 2300
 	1    0    0    -1  

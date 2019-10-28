@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name "topbreakout")(type "KiCad")(uri "${KIPRJMOD}/topbreakout.pretty")(options "")(descr ""))
   (lib (name "Mainboard")(type "KiCad")(uri "${KIPRJMOD}/../mainboard/Mainboard.pretty")(options "")(descr ""))
+  (lib (name "common")(type "KiCad")(uri "${KIPRJMOD}/../footprints/common.pretty")(options "")(descr ""))
 )

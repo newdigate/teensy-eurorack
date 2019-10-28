@@ -1,5 +1,4 @@
-EESchema Schematic File Version 4
-LIBS:TopBreakout-cache
+EESchema Schematic File Version 5
 EELAYER 30 0
 EELAYER END
 $Descr User 12358 8268
@@ -13,6 +12,11 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
 $EndDescr
 Text Label 4400 3700 0    70   ~ 0
 AD_OS0
@@ -134,19 +138,15 @@ Wire Wire Line
 Wire Wire Line
 	2650 3300 3150 3300
 Text GLabel 3500 3300 2    70   BiDi ~ 0
-3V3
++3V3
 Connection ~ 3500 3300
 Connection ~ 3150 3300
 Wire Wire Line
 	7750 4600 7850 4600
 Text GLabel 7850 4600 2    70   BiDi ~ 0
-3V3
-Text GLabel 4600 5400 2    70   BiDi ~ 0
-3V3
-Text GLabel 4600 5400 2    70   BiDi ~ 0
-3V3
++3V3
 Text GLabel 2200 5400 0    70   BiDi ~ 0
-3V3
++3V3
 Wire Wire Line
 	3200 5800 3200 6100
 Wire Wire Line
@@ -160,8 +160,6 @@ Wire Wire Line
 Wire Wire Line
 	4000 6000 4000 6100
 Connection ~ 3600 6100
-Text GLabel 3200 5800 2    70   BiDi ~ 0
-GND
 Connection ~ 4000 6100
 Wire Wire Line
 	4900 2000 4500 2000
@@ -270,8 +268,6 @@ Text GLabel 4500 3800 2    70   BiDi ~ 0
 GND
 Wire Wire Line
 	7100 6100 7100 6350
-Text GLabel 7100 6350 2    70   BiDi ~ 0
-GND
 Wire Wire Line
 	3200 5500 4900 5500
 Wire Wire Line
@@ -455,7 +451,7 @@ AR Path="/B9947190" Ref="C5"  Part="1"
 AR Path="/5D7F4383/B9947190" Ref="C5"  Part="1" 
 F 0 "C5" H 9060 4315 70  0000 L BNN
 F 1 "1.0uF" H 9060 4115 70  0000 L BNN
-F 2 "topbreakout:1206" H 9000 4200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9000 4200 50  0001 C CNN
 F 3 "" H 9000 4200 50  0001 C CNN
 	1    9000 4200
 	1    0    0    -1  
@@ -468,7 +464,7 @@ AR Path="/ABE2F8F8" Ref="C7"  Part="1"
 AR Path="/5D7F4383/ABE2F8F8" Ref="C7"  Part="1" 
 F 0 "C7" H 8660 4415 70  0000 L BNN
 F 1 "1.0uF" H 8660 4215 70  0000 L BNN
-F 2 "topbreakout:1206" H 8600 4300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8600 4300 50  0001 C CNN
 F 3 "" H 8600 4300 50  0001 C CNN
 	1    8600 4300
 	1    0    0    -1  
@@ -507,7 +503,7 @@ AR Path="/A98EBA84" Ref="C8"  Part="1"
 AR Path="/5D7F4383/A98EBA84" Ref="C8"  Part="1" 
 F 0 "C8" H 8410 4615 70  0000 L BNN
 F 1 "10uF" H 8360 4415 70  0000 L BNN
-F 2 "topbreakout:1206" H 8350 4500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8350 4500 50  0001 C CNN
 F 3 "" H 8350 4500 50  0001 C CNN
 	1    8350 4500
 	1    0    0    -1  
@@ -559,7 +555,7 @@ AR Path="/B0A6640E" Ref="R11"  Part="1"
 AR Path="/5D7F4383/B0A6640E" Ref="R11"  Part="1" 
 F 0 "R11" H 6950 6000 42  0000 L BNN
 F 1 "0" H 6950 5850 42  0000 L BNN
-F 2 "Oddities:NetTie-I_Connected_SMD" H 7100 5950 50  0001 C CNN
+F 2 "Mainboard:NetTie-I_Connected_SMD_small" H 7100 5950 50  0001 C CNN
 F 3 "" H 7100 5950 50  0001 C CNN
 	1    7100 5950
 	0    -1   -1   0   
@@ -578,4 +574,26 @@ Text GLabel 8500 3200 2    70   Input ~ 0
 AD_V7
 Text GLabel 8500 3400 2    70   Input ~ 0
 AD_V8
+$Comp
+L power:GND #PWR0107
+U 1 1 5DB92978
+P 3600 6100
+F 0 "#PWR0107" H 3600 5850 50  0001 C CNN
+F 1 "GND" H 3605 5927 50  0000 C CNN
+F 2 "" H 3600 6100 50  0001 C CNN
+F 3 "" H 3600 6100 50  0001 C CNN
+	1    3600 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5DB98F82
+P 7100 6350
+F 0 "#PWR0108" H 7100 6100 50  0001 C CNN
+F 1 "GND" H 7105 6177 50  0000 C CNN
+F 2 "" H 7100 6350 50  0001 C CNN
+F 3 "" H 7100 6350 50  0001 C CNN
+	1    7100 6350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

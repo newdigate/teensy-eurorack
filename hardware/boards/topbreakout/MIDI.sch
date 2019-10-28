@@ -1,5 +1,4 @@
-EESchema Schematic File Version 4
-LIBS:TopBreakout-cache
+EESchema Schematic File Version 5
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -13,6 +12,11 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
 $EndDescr
 Wire Wire Line
 	7000 3700 7200 3700
@@ -80,6 +84,8 @@ $Comp
 L Mainboard-eagle-import:R-US_R0805 R2
 U 1 1 35ADC47D
 P 5700 3300
+AR Path="/35ADC47D" Ref="R2"  Part="1" 
+AR Path="/5D8CF794/35ADC47D" Ref="R2"  Part="1" 
 F 0 "R2" H 5550 3359 59  0000 L BNN
 F 1 "220" H 5550 3170 59  0000 L BNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" H 5700 3300 50  0001 C CNN
@@ -91,6 +97,8 @@ $Comp
 L Mainboard-eagle-import:GND #GND0101
 U 1 1 BFE1AC94
 P 7200 4000
+AR Path="/BFE1AC94" Ref="#GND0101"  Part="1" 
+AR Path="/5D8CF794/BFE1AC94" Ref="#GND0101"  Part="1" 
 F 0 "#GND0101" H 7200 4000 50  0001 C CNN
 F 1 "GND" H 7100 3900 59  0000 L BNN
 F 2 "" H 7200 4000 50  0001 C CNN
@@ -102,6 +110,8 @@ $Comp
 L Mainboard-eagle-import:R-US_R0805 R5
 U 1 1 E7324063
 P 7300 3200
+AR Path="/E7324063" Ref="R5"  Part="1" 
+AR Path="/5D8CF794/E7324063" Ref="R5"  Part="1" 
 F 0 "R5" H 7150 3259 59  0000 L BNN
 F 1 "220" H 7150 3070 59  0000 L BNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" H 7300 3200 50  0001 C CNN
@@ -113,6 +123,8 @@ $Comp
 L Mainboard-eagle-import:R-US_R0805 R1
 U 1 1 0D065E34
 P 5500 4900
+AR Path="/0D065E34" Ref="R1"  Part="1" 
+AR Path="/5D8CF794/0D065E34" Ref="R1"  Part="1" 
 F 0 "R1" H 5350 4959 59  0000 L BNN
 F 1 "220" H 5350 4770 59  0000 L BNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" H 5500 4900 50  0001 C CNN
@@ -124,6 +136,8 @@ $Comp
 L Mainboard-eagle-import:R-US_R0805 R3
 U 1 1 87680542
 P 5800 5500
+AR Path="/87680542" Ref="R3"  Part="1" 
+AR Path="/5D8CF794/87680542" Ref="R3"  Part="1" 
 F 0 "R3" H 5650 5559 59  0000 L BNN
 F 1 "220" H 5650 5370 59  0000 L BNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" H 5800 5500 50  0001 C CNN
@@ -135,6 +149,8 @@ $Comp
 L Mainboard-eagle-import:OPTO_DARL_6N138S U$3
 U 1 1 5D8CFC49
 P 6500 3400
+AR Path="/5D8CFC49" Ref="U$3"  Part="1" 
+AR Path="/5D8CF794/5D8CFC49" Ref="U$3"  Part="1" 
 F 0 "U$3" H 6500 3400 50  0001 C CNN
 F 1 "OPTO_DARL_6N138S" H 6360 2880 59  0000 L BNN
 F 2 "Mainboard:8-SMD" H 6500 3400 50  0001 C CNN

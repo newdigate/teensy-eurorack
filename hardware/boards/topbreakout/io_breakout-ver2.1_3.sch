@@ -1,5 +1,4 @@
-EESchema Schematic File Version 4
-LIBS:TopBreakout-cache
+EESchema Schematic File Version 5
 EELAYER 30 0
 EELAYER END
 $Descr User 14469 9224
@@ -13,6 +12,11 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
 $EndDescr
 Text Label 1800 3300 0    70   ~ 0
 USB_B_VCC
@@ -103,7 +107,7 @@ Wire Wire Line
 Text GLabel 5050 4100 2    70   BiDi ~ 0
 DA_SYNC
 Text GLabel 1600 4500 2    70   BiDi ~ 0
-3V3
++3V3
 $Comp
 L TopBreakout-eagle-import:WURTH_ELECTRONICS_61400413321WURTH_ELECTRONICS_61400413321_0_0 J1
 U 1 1 92202B0B
@@ -151,7 +155,7 @@ AR Path="/6197D135" Ref="U$2"  Part="1"
 AR Path="/5D7F42FA/6197D135" Ref="U$2"  Part="1" 
 F 0 "U$2" H 2200 1800 50  0001 C CNN
 F 1 "1734592-8" H 2200 1800 50  0001 C CNN
-F 2 "topbreakout:TE_1-1734592-8" H 2200 1800 50  0001 C CNN
+F 2 "common:HFW8R-1STE1LF" H 2200 1800 50  0001 C CNN
 F 3 "" H 2200 1800 50  0001 C CNN
 	1    2200 1800
 	-1   0    0    -1  
@@ -282,5 +286,5 @@ Wire Wire Line
 Text GLabel 2000 4300 2    70   BiDi ~ 0
 VIN
 Text GLabel 1600 4400 2    70   BiDi ~ 0
-3V3
++3V3
 $EndSCHEMATC
