@@ -521,7 +521,7 @@
     )
   )
 
-  (module "common:HFW8R-1STE1LF" (layer "Bottom") (tedit 5DADDFB4) (tstamp 5D7CAB05)
+  (module "common:HFW8R-1STE1LF" (layer "Bottom") (tedit 5DB73C15) (tstamp 5D7CAB05)
     (at 176.53 136.144 180)
     (path "/5D7F42FA/6197D135")
     (fp_text reference "U$2" (at 4 0.5) (layer "B.SilkS")
@@ -530,10 +530,10 @@
     (fp_text value "1734592-8" (at -2.5 2) (layer "B.Fab")
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_line (start 1.5 -0.5) (end -8.5 -0.5) (layer "B.Fab") (width 0.12))
-    (fp_line (start -8.5 -0.5) (end -8.5 -5.5) (layer "B.Fab") (width 0.12))
-    (fp_line (start -8.5 -5.5) (end 1.5 -5.5) (layer "B.Fab") (width 0.12))
     (fp_line (start 1.5 -5.5) (end 1.5 -0.5) (layer "B.Fab") (width 0.12))
+    (fp_line (start -8.5 -5.5) (end 1.5 -5.5) (layer "B.Fab") (width 0.12))
+    (fp_line (start -8.5 -0.5) (end -8.5 -5.5) (layer "B.Fab") (width 0.12))
+    (fp_line (start 1.5 -0.5) (end -8.5 -0.5) (layer "B.Fab") (width 0.12))
     (pad "10" smd rect (at 1 -2 180) (size 0.7 4.2) (layers "Bottom" "B.Paste" "B.Mask"))
     (pad "9" smd rect (at -8 -2 180) (size 0.7 4.2) (layers "Bottom" "B.Paste" "B.Mask"))
     (pad "8" smd rect (at -7 0 180) (size 0.6 2) (layers "Bottom" "B.Paste" "B.Mask")
@@ -552,7 +552,7 @@
       (net 41 "/FPC connector/SD_DATAOUT"))
     (pad "1" smd rect (at 0 0 180) (size 0.6 2) (layers "Bottom" "B.Paste" "B.Mask")
       (net 40 "/FPC connector/SD_DAT1"))
-    (model "${KIPRJMOD}/3d/HFW8R-1STE1LF.stp"
+    (model "${KIPRJMOD}/../3d/HFW8R-1STE1LF.stp"
       (offset (xyz 7.5 -0.5 1.91))
       (scale (xyz 1 1 1))
       (rotate (xyz 90 0 0))
