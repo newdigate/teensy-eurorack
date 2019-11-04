@@ -113,7 +113,7 @@ What you can do if you like to see progress with this project?
 <img src='hardware/boards/knobs-controller/images/Knob_controller_top_view.png' width='250px'/> <img src='hardware/boards/knobs-controller/images/Knob_controller_bottom_view.png' width='250px'/>
 
 # assembly technical drawings 
-<img src='hardware/boards/images/assembly.svg' width='600px'/>
+<img src='hardware/technical-drawing.svg' width='600px'/>
 
 ## videos 
 [![youtube: Eurorack digital audio modules powered by teensy micro-controller](https://img.youtube.com/vi/6zt6OF7UOTc/0.jpg)](https://www.youtube.com/watch?v=6zt6OF7UOTc)
