@@ -29,4 +29,4 @@
 <img src='knobs-controller/images/Knob_controller_bottom_view.png' width='300px'/>
 
 # assembly technical drawings 
-<img src='../hardware/technical-drawing.svg' width='600px'/>
+<img src='../technical-drawing.svg' width='600px'/>
