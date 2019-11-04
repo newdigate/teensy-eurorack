@@ -4,6 +4,4 @@
 * some (older) circuit [images](CIRCUITS.md)
 * & some more (older) images [here](IMAGES.md)
 
-![mainboard](images/kryonos%20v11.png)
-
-![boards](boards/images/assembly.svg)
+![boards](technical-drawing.svg)
