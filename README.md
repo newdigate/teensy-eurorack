@@ -8,7 +8,6 @@
 * [what is it](#what-is-it)
 * [software](#open-source-software-stack)
 * [support](#support)
-* [todo](#todo)
 * [social media](#social-media)
 * [printed circuit boards](#printed-circuit-boards)
   * [mainboard](#mainboard)
@@ -18,6 +17,7 @@
     * [uSD extension breakout](#usd-extension-breakout)
 * [assembly technical drawings](#assembly-technical-drawings)
 * [videos](#videos)
+* [todo](#todo)
 
 ## what is it 
 A set of circuit and pc-board designs for kicad, integrating all the components you need for prototyping a digital audio module for eurorack
@@ -42,32 +42,6 @@ What you can do if you like to see progress with this project?
 * star this repository (means you need a github account - go for it!!)
 * subscribe [Nic N on youtube](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) & [DIY Audio Electronics Maker](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g)
 * clone this repo, make improvements, commit & send pull-requests
-
-## todo 
-- [ ] General
-  - [ ] refactor folders so that footprints, symbols and 3d models (should be shared common amoung project, not board-specific)
-- [ ] Breakout board for rotary encoders and pots
-  - [x] ~~Order~~
-  - [x] ~~Assemble~~
-  - [ ] Software
-  - [ ] Certify
-- [x] ~~panel~~
-  - [x] ~~measurements ~~
-  - [x] ~~design ~~
-- [ ] Finalize circuits / boards
-- [ ] Testing
-  - [ ] CS42448 audio codec
-  - [ ] control voltage input
-  - [ ] control voltage output
-  - [ ] usb host/device
-  - [ ] midi in/out
-  - [ ] sd card extension & adapter
-- [ ] Document 
-  - [ ] order & build process
-  - [ ] software process
-- [ ] Firmware
-  - [ ] Sliced audio loops
-  - [ ] Midi looping
 
 ## social media
 * facebook: 
@@ -110,3 +84,29 @@ What you can do if you like to see progress with this project?
 
 ## videos 
 [![youtube: Eurorack digital audio modules powered by teensy micro-controller](https://img.youtube.com/vi/6zt6OF7UOTc/0.jpg)](https://www.youtube.com/watch?v=6zt6OF7UOTc)
+
+## todo 
+- [ ] General
+  - [ ] refactor folders so that footprints, symbols and 3d models (should be shared common amoung project, not board-specific)
+- [ ] Breakout board for rotary encoders and pots
+  - [x] ~~Order~~
+  - [x] ~~Assemble~~
+  - [ ] Software
+  - [ ] Certify
+- [x] ~~panel~~
+  - [x] ~~measurements ~~
+  - [x] ~~design ~~
+- [ ] Finalize circuits / boards
+- [ ] Testing
+  - [ ] CS42448 audio codec
+  - [ ] control voltage input
+  - [ ] control voltage output
+  - [ ] usb host/device
+  - [ ] midi in/out
+  - [ ] sd card extension & adapter
+- [ ] Document 
+  - [ ] order & build process
+  - [ ] software process
+- [ ] Firmware
+  - [ ] Sliced audio loops
+  - [ ] Midi looping
