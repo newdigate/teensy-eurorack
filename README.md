@@ -76,7 +76,9 @@ What you can do if you like to see progress with this project?
 * **2-layer:** 
 * 4 x pots
 * 3 x RGB rotary encoders with switches 
-
+* SAMD21 32bit 48Mhz micro-controller
+* Based on Arduino MKR Zero board (can be programmed through standard arduino ide)
+* Communicates with mainboard via standard serial uart RX and TX lines.
 <img src='hardware/boards/knobs-controller/images/Knob_controller_top_view.png' width='250px'/> <img src='hardware/boards/knobs-controller/images/Knob_controller_bottom_view.png' width='250px'/>
 
 # assembly technical drawings 
@@ -94,8 +96,8 @@ What you can do if you like to see progress with this project?
   - [ ] Software
   - [ ] Certify
 - [x] ~~panel~~
-  - [x] ~~measurements ~~
-  - [x] ~~design ~~
+  - [x] ~~measurements~~
+  - [x] ~~design~~
 - [ ] Finalize circuits / boards
 - [ ] Testing
   - [ ] CS42448 audio codec
