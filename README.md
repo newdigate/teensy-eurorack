@@ -79,6 +79,7 @@ What you can do if you like to see progress with this project?
 * SAMD21 32bit 48Mhz micro-controller
 * Based on Arduino MKR Zero board (can be programmed through standard arduino ide)
 * Communicates with mainboard via standard serial uart RX and TX lines.
+
 <img src='hardware/boards/knobs-controller/images/Knob_controller_top_view.png' width='250px'/> <img src='hardware/boards/knobs-controller/images/Knob_controller_bottom_view.png' width='250px'/>
 
 # assembly technical drawings 
