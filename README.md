@@ -31,8 +31,6 @@ A set of circuit and pc-board designs for kicad, integrating all the components 
 * 20HP aluminium panel mounted for eurorack case
 * write arduino compatible c/c++ firmware & program using arduino/teensyduino ([plus teensy audio library](https://www.pjrc.com/teensy/gui/))
 
-<img src='hardware/images/kryonos%20v11.png' width='800px'/>
-
 ## Open source software stack
 * All schematics and circuit boards are created using [Kicad](http://kicad-pcb.org/) 
 * All mechanical designs are created using [FreeCAD](https://github.com/FreeCAD/FreeCAD)
@@ -53,14 +51,9 @@ What you can do if you like to see progress with this project?
   - [x] ~~Assemble~~
   - [ ] Software
   - [ ] Certify
-- [ ] mainboard
-  - [ ] add milled cutout to allow fpc cable connecting teensy microsd through mainboard to topbreakout. 
-- [ ] topbreakout board 
-  - [ ] replace 0.5mm-pitch FPC connector with 1mm-pitch FPC connector (to be compatible with teensy4 fpc connector for sd-breakout --see [HFW8R-1STE1LF](https://github.com/newdigate/kicad-footprint-HFW8R-1STE1LF))
-  - [ ] correct footprint of AD5754 - size of 'paddle' pad underneath IC on footprint should be increased to match the size of the pad on the IC.
-- [ ] panel
-  - [ ] measurements 
-  - [ ] design 
+- [x] ~~panel~~
+  - [x] ~~measurements ~~
+  - [x] ~~design ~~
 - [ ] Finalize circuits / boards
 - [ ] Testing
   - [ ] CS42448 audio codec
