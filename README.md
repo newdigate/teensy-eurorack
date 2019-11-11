@@ -2,8 +2,6 @@
 <img src='hardware/images/x-front.png' height='150px'/>  <img src='hardware/images/x-backside.png' height='150px'/> <img src='hardware/images/x-side.png' height='150px'/> <img src='hardware/images/x-frontside.png' height='150px'/>  <img src='hardware/images/x-back.png' height='150px'/> 
 * *(work in progress)* open source **[hardware](hardware) and [software](software) for a [teensy 4](https://www.pjrc.com/store/teensy40.html "teensy 4 board") eurorack shield** 
 
-* (working on updating to [teensy 4](https://www.pjrc.com/teensy-4-0/) )
-
 ## contents
 * [what is it](#what-is-it)
 * [software](#open-source-software-stack)
