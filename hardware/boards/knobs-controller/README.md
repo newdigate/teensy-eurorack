@@ -1,5 +1,7 @@
 # Knobs Controller
 
+![knobs controller technical-drawing](technical-drawing.svg)
+
 ```
 status:
    migration to kicad in progress
