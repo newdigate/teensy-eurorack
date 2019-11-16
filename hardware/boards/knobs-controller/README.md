@@ -1,7 +1,5 @@
 # Knobs Controller
 
-![knobs controller technical-drawing](technical-drawing.svg)
-
 ```
 status:
    migration to kicad in progress
@@ -43,3 +41,5 @@ I started with the schematic of [arduino mkr zero](https://create.arduino.cc/pro
 ![top view](images/Knob_controller_top_view.png)
 
 ![bottom view](images/Knob_controller_bottom_view.png)
+
+![knobs controller technical-drawing](technical-drawing.svg)
