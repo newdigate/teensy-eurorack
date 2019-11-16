@@ -43,3 +43,5 @@ I started with the schematic of [arduino mkr zero](https://create.arduino.cc/pro
 ![bottom view](images/Knob_controller_bottom_view.png)
 
 ![knobs controller technical-drawing](technical-drawing.svg)
+
+![knobs board silkscreen and routing layer](knobs-brd.svg)
