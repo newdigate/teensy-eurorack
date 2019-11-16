@@ -1,6 +1,6 @@
 # eurorack digital audio-module dev-kit [![Join the chat at https://gitter.im/newdigate/teensy-eurorack](https://badges.gitter.im/newdigate/teensy-eurorack.svg)](https://gitter.im/newdigate/teensy-eurorack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-* *(work in progress)* open source **[hardware](hardware) and [software](software) for a [teensy 4](https://www.pjrc.com/store/teensy40.html "teensy 4 board") eurorack shield** 
+* *(work in progress)* open source **[hardware](hardware) and [software](software) for a [teensy 4.0](https://www.pjrc.com/store/teensy40.html "teensy 4.0 board") eurorack shield** 
 
 <img src='hardware/images/x-front.png' height='150px'/>  <img src='hardware/images/x-backside.png' height='150px'/> <img src='hardware/images/x-side.png' height='150px'/> <img src='hardware/images/x-frontside.png' height='150px'/>  <img src='hardware/images/x-back.png' height='150px'/> 
 
@@ -20,10 +20,10 @@
 * [todo](#todo)
 
 ## what is it 
-A set of circuit and pc-board designs for kicad, integrating all the components you need for prototyping a digital audio module for eurorack
+This device is a programmable digital audio processor in a eurorack form-factor. The repository contains source code for a set of circuit- and pcb designs for kicad.
 
-*audio codec circuit originally started as a discussion on quad audio channel outputs and a pcb design integrating teensy and cs42448 from Paul Stoffregen on [pjrc forum](https://forum.pjrc.com/threads/41371-Quad-channel-output-on-Teensy-3-6?p=138828&viewfull=1#post138828)*
-* cortex m7 microcontroller (teensy 4.0) interfacing the follow components
+*the audio codec circuit originally started as a discussion on quad audio channel outputs and a pcb design integrating teensy and cs42448 from Paul Stoffregen on [pjrc forum](https://forum.pjrc.com/threads/41371-Quad-channel-output-on-Teensy-3-6?p=138828&viewfull=1#post138828)*
+* 600 Mhz ARM cortex m7 microcontroller ( [teensy 4.0](https://www.pjrc.com/store/teensy40.html "teensy 4.0 board") ) interfacing the follow components
   * **audio:** multi-channel audio codec ( 6-in / 8-out 24-bit sound card - [CS42448](https://statics.cirrus.com/pubs/proDatasheet/CS42448_F5.pdf) )
   * **analog ins/outs:** -10V to 10V 16bit/sample control voltage 8 x inputs and 4 x outputs ( [ad7606](https://www.analog.com/media/en/technical-documentation/data-sheets/ad7606_7606-6_7606-4.pdf), [ad5754](https://www.analog.com/media/en/technical-documentation/data-sheets/AD5724_5734_5754.pdf) )
   * **display:** ST7735 128x128 16bit-color tft display
