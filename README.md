@@ -106,7 +106,8 @@ What you can do if you like to see progress with this project?
   - [ ] control voltage output
   - [ ] usb host/device
   - [ ] midi in/out
-  - [ ] sd card extension & adapter
+  - [x] ~~st7735 display~~
+  - [x] ~~sd card extension & adapter~~
 - [ ] Document 
   - [ ] order & build process
   - [ ] software process
