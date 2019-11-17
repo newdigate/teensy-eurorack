@@ -2,7 +2,7 @@
 
 * open source **[hardware](hardware) and [software](software) for a [teensy 4.0](https://www.pjrc.com/store/teensy40.html "teensy 4.0 board") eurorack shield** 
 
-<img src='hardware/images/x-front.png' height='150px'/>  <img src='hardware/images/x-backside.png' height='150px'/> <img src='hardware/images/x-side.png' height='150px'/> <img src='hardware/images/x-frontside.png' height='150px'/>  <img src='hardware/images/x-back.png' height='150px'/> 
+<img src='hardware/images/x-front.png' height='150px'/>  <img src='hardware/images/x-frontside.png' height='150px'/> <img src='hardware/images/x-side.png' height='150px'/> <img src='hardware/images/x-backside.png' height='150px'/>  <img src='hardware/images/x-back.png' height='150px'/> 
 
 ## contents
 * [what is it](#what-is-it)
