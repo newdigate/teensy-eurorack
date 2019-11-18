@@ -14,7 +14,6 @@
   * [breakout boards](#breakout-boards)
     * [top breakout](#top-breakout)
     * [knobs-controller](#knobs-controller)
-    * [uSD extension breakout](#usd-extension-breakout)
 * [assembly technical drawings](#assembly-technical-drawings)
 * [videos](#videos)
 * [todo](#todo)
