@@ -14,6 +14,7 @@
   * [breakout boards](#breakout-boards)
     * [top breakout](#top-breakout)
     * [knobs-controller](#knobs-controller)
+* [panel design](#panel-design)  
 * [assembly technical drawings](#assembly-technical-drawings)
 * [videos](#videos)
 * [todo](#todo)
@@ -80,6 +81,9 @@ What you can do if you like to see progress with this project?
 * Communicates with mainboard via standard serial uart RX and TX lines.
 
 <img src='hardware/boards/knobs-controller/images/Knob_controller_top_view.png' width='250px'/> <img src='hardware/boards/knobs-controller/images/Knob_controller_bottom_view.png' width='250px'/>
+
+# panel design
+<img src='hardware/panel/images/panel-front.png' width='600px'/>
 
 # assembly technical drawings 
 <img src='hardware/technical-drawing.svg' width='600px'/>
