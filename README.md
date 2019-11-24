@@ -22,12 +22,12 @@
 ## what is it
 Together, these circuit boards provide a set of peripherals for a teensy 4.0 micro-controller board - allowing it to interface with standard eurorack modular equipment.
 
-* **microcontroller:** 600 Mhz ARM cortex m7 ( [teensy 4.0](https://www.pjrc.com/store/teensy40.html "teensy 4.0 board") ) interfacing the follow components
+* **microcontroller:** 600 Mhz ARM cortex m7 ( [teensy 4.0 board](https://www.pjrc.com/store/teensy40.html "teensy 4.0 board") )
 * **audio:** multi-channel audio codec ( 6-in / 8-out 24-bit sound card - [CS42448](https://statics.cirrus.com/pubs/proDatasheet/CS42448_F5.pdf) )
   * *the audio codec circuit originally started as a discussion on quad audio channel outputs and a pcb design integrating teensy and cs42448 from Paul Stoffregen on [pjrc forum](https://forum.pjrc.com/threads/41371-Quad-channel-output-on-Teensy-3-6?p=138828&viewfull=1#post138828)*
 * **analog ins/outs:** -10V to 10V 16bit/sample control voltage 8 x inputs and 4 x outputs ( [ad7606](https://www.analog.com/media/en/technical-documentation/data-sheets/ad7606_7606-6_7606-4.pdf), [ad5754](https://www.analog.com/media/en/technical-documentation/data-sheets/AD5724_5734_5754.pdf) )
 * **display:** ST7735 128x128 16bit-color tft display
-* **breakouts:** - for uSD card, USB host/device, midi in/out, 2 x teensy analog in/out (0 to 3v3 w/protection)
+* **breakouts:** microSD card socket, USB host/device, midi in/out, knobs, control voltage input and output sockets
 * **panel:** 24HP aluminium panel mounted for eurorack case
 * **programability**: write arduino compatible c/c++ firmware & program using arduino/teensyduino ([plus teensy audio library](https://www.pjrc.com/teensy/gui/))
 
