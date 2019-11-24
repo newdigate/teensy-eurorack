@@ -3,6 +3,8 @@
  * [top breakout](#top-breakout)
  * [knobs controller](#knobs-controller)
  
+All circuit boards are standard double layer boards with 6 mil clearance. I have been using jlcpcb to fabricate my circuit boards.  
+
 ## [mainboard](mainboard) 
 * **2-layer:** 
 * teensy4
@@ -26,8 +28,7 @@
 ### [knobs-controller](knobs-controller) 
 * **2-layer:** 
 * 4 x pots
-* 3 x RGB rotary encoders with switches 
-
+* 3 x RGB rotary encoders with switches
 <img src='knobs-controller/images/Knob_controller_top_view.png' width='300px'/>
 <img src='knobs-controller/images/Knob_controller_bottom_view.png' width='300px'/>
 
