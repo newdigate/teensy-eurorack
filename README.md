@@ -19,8 +19,8 @@
 * [videos](#videos)
 * [todo](#todo)
 
-## what is it 
-This device is a programmable digital audio processor in a eurorack form-factor. The repository contains source code for a set of circuit- and pcb designs for kicad.
+## what is it
+Together, these circuit boards provide a set of peripherals for a teensy 4.0 micro-controller board, allowing it to interface with standard eurorack modular equipment.
 
 *the audio codec circuit originally started as a discussion on quad audio channel outputs and a pcb design integrating teensy and cs42448 from Paul Stoffregen on [pjrc forum](https://forum.pjrc.com/threads/41371-Quad-channel-output-on-Teensy-3-6?p=138828&viewfull=1#post138828)*
 * 600 Mhz ARM cortex m7 microcontroller ( [teensy 4.0](https://www.pjrc.com/store/teensy40.html "teensy 4.0 board") ) interfacing the follow components
