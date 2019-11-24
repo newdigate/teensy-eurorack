@@ -1,10 +1,8 @@
-![ad5754brez](images/schematic/ad5754brez.png)
-![ad7606bstz](images/schematic/ad7606bstz.png)
-![breakout-headers](images/schematic/breakou-headers.png)
-![cs42448](images/schematic/cs42448.png)
-![midi](images/schematic/midi.png)
-![power](images/schematic/power.png)
-![stereo-in](images/schematic/stereo-in.png)
-![stereo-out](images/schematic/stereo-out.png)
-![teensy-analog-in](images/schematic/teensy-analog-in.png)
-![teensy](images/schematic/teensy.png)
+# Mainboard
+![teensy circuit](boards/mainboard/images/circuit_sheet_teensy.png)
+![codec circuit](boards/mainboard/images/circuit_sheet_codec.png)
+![power circuit](boards/mainboard/images/circuit_sheet_power.png)
+![midi circuit](boards/mainboard/images/circuit_sheet_midi.png)
+![audio in circuit](boards/mainboard/images/circuit_sheet_audio_in.png)
+![audio out circuit](boards/mainboard/images/circuit_sheet_audio_out.png)
+
