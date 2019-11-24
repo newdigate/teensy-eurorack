@@ -1,5 +1,8 @@
 # boards
-
+ * [mainboard](#mainboard)
+ * [top breakout](#top-breakout)
+ * [knobs controller](#knobs-controller)
+ 
 ## [mainboard](mainboard) 
 * **2-layer:** 
 * teensy4
