@@ -26,7 +26,20 @@
 ![audio out circuit](boards/mainboard/images/circuit_sheet_audio_out.png)
 
 ## Top-breakout board
-[todo]
+### dac
+![dac-connectors](boards/topbreakout/images/topbreakout-dac-connectors.png)
+### adc
+![adc-connectors](boards/topbreakout/images/topbreakout-adc-connectors.png)
+### fpc
+![fpc-connectors](boards/topbreakout/images/topbreakout-fpc-connectors.png)
+### tft
+![tft-connector](boards/topbreakout/images/topbreakout-tft-connector.png)
+### ad7606
+![ad7606](boards/topbreakout/images/topbreakout-ad7606.png)
+### ad5754 
+![ad5754](boards/topbreakout/images/topbreakout-ad5754.png)
+### midi
+![midi](boards/topbreakout/images/topbreakout-midi.png)
 
 ## Knobs-controller board
 [todo]
