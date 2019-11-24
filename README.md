@@ -32,7 +32,7 @@ Together, these circuit boards provide a set of peripherals for a teensy 4.0 mic
 * write arduino compatible c/c++ firmware & program using arduino/teensyduino ([plus teensy audio library](https://www.pjrc.com/teensy/gui/))
 
 ## Open source software stack
-* All schematics and circuit boards are created using [Kicad](http://kicad-pcb.org/) 
+* All [schematics](hardware/CIRCUITS.md) and boards are created using [Kicad](http://kicad-pcb.org/) 
 * All mechanical designs are created using [FreeCAD](https://github.com/FreeCAD/FreeCAD)
  
 ## support
