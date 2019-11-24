@@ -1,3 +1,7 @@
+* [main-board](#mainboard)
+* [top-breakout board](#top-breakout-board)
+* [knobs-controller board](#knobs-controller-board)
+
 # Mainboard
 * Teensy micro-controller connections
 ![teensy circuit](boards/mainboard/images/circuit_sheet_teensy.png)
@@ -12,3 +16,5 @@
 * audio out
 ![audio out circuit](boards/mainboard/images/circuit_sheet_audio_out.png)
 
+# Top-breakout board
+# Knobs-controller board
