@@ -1,14 +1,18 @@
 /***************************************************
-  This is an example sketch for the Adafruit 1.8" SPI display.
+  This is a library for several Adafruit displays based on ST77* drivers.
 
-This library works with the Adafruit 1.8" TFT Breakout w/SD card
-  ----> http://www.adafruit.com/products/358
-The 1.8" TFT shield
-  ----> https://www.adafruit.com/product/802
-The 1.44" TFT breakout
-  ----> https://www.adafruit.com/product/2088
-as well as Adafruit raw 1.8" TFT display
-  ----> http://www.adafruit.com/products/618
+  Works with the Adafruit 1.8" TFT Breakout w/SD card
+    ----> http://www.adafruit.com/products/358
+  The 1.8" TFT shield
+    ----> https://www.adafruit.com/product/802
+  The 1.44" TFT breakout
+    ----> https://www.adafruit.com/product/2088
+  The 1.54" TFT breakout
+    ----> https://www.adafruit.com/product/3787
+  The 2.0" TFT breakout
+    ----> https://www.adafruit.com/product/4311
+  as well as Adafruit raw 1.8" TFT display
+    ----> http://www.adafruit.com/products/618
 
   Check out the links above for our tutorials and wiring diagrams
   These displays use SPI to communicate, 4 or 5 pins are required to
@@ -21,47 +25,80 @@ as well as Adafruit raw 1.8" TFT display
   MIT license, all text above must be included in any redistribution
  ****************************************************/
 
-// This Teensy3 native optimized version requires specific pins
-//
-#define TFT_SCLK 14  // SCLK can also use pin 14
-#define TFT_MOSI 7  // MOSI can also use pin 7
+// This Teensy3 and 4 native optimized and extended version
+// requires specific pins. 
+// If you use the short version of the constructor and the DC
+// pin is hardware CS pin, then it will be slower.
+
+#define TFT_SCLK 13  // SCLK can also use pin 14
+#define TFT_MOSI 11  // MOSI can also use pin 7
 #define TFT_CS   6  // CS & DC can use pins 2, 6, 9, 10, 15, 20, 21, 22, 23
 #define TFT_DC    2  //  but certain pairs must NOT be used: 2+10, 6+9, 20+23, 21+22
-#define TFT_RST   255  // RST can use any pin
+#define TFT_RST   0 // RST can use any pin
 #define SD_CS     4  // CS for SD card, can use any pin
+
+// Note the above pins are for the SPI object.  For those Teensy boards which have
+// more than one SPI object, such as T3.5, T3.6, T4 which have at SPI1 and SPI2
+// LC with SPI1, look at the cards that come with the teensy or the web page
+// https://www.pjrc.com/teensy/pinout.html to select the appropriate IO pins.
 
 #include <Adafruit_GFX.h>    // Core graphics library
 #include <ST7735_t3.h> // Hardware-specific library
+#include <ST7789_t3.h> // Hardware-specific library
 #include <SPI.h>
 
 // Option 1: use any pins but a little slower
+// Note: code will detect if specified pins are the hardware SPI pins
+//       and will use hardware SPI if appropriate
+// For 1.44" and 1.8" TFT with ST7735 use
 ST7735_t3 tft = ST7735_t3(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
+
+// For 1.54" or other TFT with ST7789, This has worked with some ST7789
+// displays without CS pins, for those you can pass in -1 or 0xff for CS
+// More notes by the tft.init call
+//ST7789_t3 tft = ST7789_t3(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
 
 // Option 2: must use the hardware SPI pins
 // (for UNO thats sclk = 13 and sid = 11) and pin 10 must be
 // an output. This is much faster - also required if you want
 // to use the microSD card (see the image drawing example)
-//ST7735_t3 tft = ST7735_t3(TFT_CS, TFT_DC, TFT_RST);
+// For 1.44" and 1.8" TFT with ST7735 use
+//ST7735_t3 tft = ST7735_t3(cs, dc, rst);
+
+// For 1.54" TFT with ST7789
+//ST7789_t3 tft = ST7789_t3(TFT_CS,  TFT_DC, TFT_RST);
+
 float p = 3.1415926;
 
 
 void setup(void) {
-   
-  SPI.setSCK  (14);
-  SPI.setMOSI (7 );
-  SPI.setMISO (12);
-  
-  SPI.begin();
- 
-  //pinMode(SD_CS, INPUT_PULLUP);  // don't touch the SD card
+  pinMode(SD_CS, INPUT_PULLUP);  // don't touch the SD card
   Serial.begin(9600);
   Serial.print("hello!");
 
-  // Use this initializer if you're using a 1.8" TFT
+  // Use this initializer if you're using a 1.8" TFT 128x160 displays
   //tft.initR(INITR_BLACKTAB);
-  // Use this initializer (uncomment) if you're using a 1.44" TFT
+
+  // Or use this initializer (uncomment) if you're using a 1.44" TFT (128x128)
   tft.initR(INITR_144GREENTAB);
-  tft.setRotation(1);
+
+  // Or use this initializer (uncomment) if you're using a .96" TFT(160x80)
+  //tft.initR(INITR_MINI160x80);
+
+  // Or use this initializer (uncomment) for Some 1.44" displays use different memory offsets
+  // Try it if yours is not working properly
+  // May need to tweek the offsets
+  //tft.setRowColStart(32,0);
+
+  // Or use this initializer (uncomment) if you're using a 1.54" 240x240 TFT
+  //tft.init(240, 240);   // initialize a ST7789 chip, 240x240 pixels
+
+  // OR use this initializer (uncomment) if using a 2.0" 320x240 TFT:
+  //tft.init(240, 320);           // Init ST7789 320x240
+
+  // OR use this initializer (uncomment) if using a 240x240 clone 
+  // that does not have a CS pin2.0" 320x240 TFT:
+  //tft.init(240, 240, SPI_MODE2);           // Init ST7789 240x240 no CS
 
   Serial.println("init");
 
@@ -71,7 +108,9 @@ void setup(void) {
 
   Serial.println(time, DEC);
   delay(500);
+}
 
+void loop() {
   // large block of text
   tft.fillScreen(ST7735_BLACK);
   testdrawtext("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur adipiscing ante sed nibh tincidunt feugiat. Maecenas enim massa, fringilla sed malesuada et, malesuada sit amet turpis. Sed porttitor neque ut ante pretium vitae malesuada nunc bibendum. Nullam aliquet ultrices massa eu hendrerit. Ut sed nisi lorem. In vestibulum purus a tortor imperdiet posuere. ", ST7735_WHITE);
@@ -115,9 +154,7 @@ void setup(void) {
 
   Serial.println("done");
   delay(1000);
-}
 
-void loop() {
   tft.invertDisplay(true);
   delay(500);
   tft.invertDisplay(false);
