@@ -89,6 +89,9 @@ What you can do if you like to see progress with this project?
 <img src='hardware/technical-drawing.svg' width='500px'/>
 
 ## videos 
+
+[![youtube: assembly timelapse](https://img.youtube.com/vi/s-514rDjirY/0.jpg)](https://www.youtube.com/watch?v=s-514rDjirY)
+
 [![youtube: Eurorack digital audio modules powered by teensy micro-controller](https://img.youtube.com/vi/6zt6OF7UOTc/0.jpg)](https://www.youtube.com/watch?v=6zt6OF7UOTc)
 
 ## todo 
