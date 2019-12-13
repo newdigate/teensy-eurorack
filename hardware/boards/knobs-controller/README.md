@@ -2,9 +2,9 @@
 
 ```
 status:
-   migration to kicad in progress
-   pcb design not verified 
    01 Sept 2019: pcb delivery failure, pcbs re-ordered
+   13 Dec 2019: 
+     * v1.6: issue with tx/rx connection to mainboard fixed
 ```
 
 ## build
@@ -29,7 +29,9 @@ some firmware will run on the M0 microcontroller to relay input (knob value chan
 Number of signal required between main-board and knobs controller is reduced to: +5V, GND, TX, RX; 
 ## revisions
 * v1.5: board size reduced slightly on the right hand side to allow assembly to fit in to a 6U high rack mount unit.
-* v1.6: fixed tx/rx connection
+* v1.6: 
+  * fixed tx/rx connection
+  * moved connector to mainboard out of the way
 
 ## todo 
 - [ ] change mcu to ATSAMD21G18A-AU (jlc pcb assembly friendly)
