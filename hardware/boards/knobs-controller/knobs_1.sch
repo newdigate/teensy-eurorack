@@ -1,5 +1,4 @@
-EESchema Schematic File Version 4
-LIBS:knobs-cache
+EESchema Schematic File Version 5
 EELAYER 30 0
 EELAYER END
 $Descr User 16566 11390
@@ -13,6 +12,11 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
 $EndDescr
 Wire Bus Line
 	8900 9600 8800 9700
@@ -243,10 +247,6 @@ Wire Wire Line
 Text Label 6400 9400 0    70   ~ 0
 PB23_S5_RX
 Wire Wire Line
-	14700 7000 15200 7000
-Text Label 14650 7000 0    70   ~ 0
-PB23_S5_RX
-Wire Wire Line
 	11700 8100 13700 8100
 Text Label 12700 8100 0    70   ~ 0
 RESET#
@@ -261,10 +261,6 @@ PB22_S5_TX
 Wire Wire Line
 	7700 9300 6400 9300
 Text Label 6400 9300 0    70   ~ 0
-PB22_S5_TX
-Wire Wire Line
-	14700 6800 15100 6800
-Text Label 14650 6800 0    70   ~ 0
 PB22_S5_TX
 Wire Wire Line
 	11700 8400 13700 8400
@@ -1372,6 +1368,12 @@ F 3 "" H 3400 2300 50  0001 C CNN
 $EndComp
 Text GLabel 4100 2300 2    59   Input ~ 0
 VIN
+Wire Wire Line
+	14700 7200 15700 7200
+Text GLabel 15700 7200 2    59   Input ~ 0
+VIN
+Wire Wire Line
+	14700 6800 15100 6800
 $Comp
 L knobs-eagle-import:JST---S4B-PH-SM4-TB(LF)(SN)_JST_S4B-PH-SM4-TB_LF_SNJST_S4B-PH-SM4-TB_LF_SN_0_0 J4
 U 1 1 5FA14143
@@ -1386,13 +1388,15 @@ F 3 "" H 13900 6200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14700 7200 15700 7200
+	14700 7000 15100 7000
+Text Label 15100 7000 0    50   ~ 0
+PB22_S5_TX
+Text Label 15100 6800 0    50   ~ 0
+PB23_S5_RX
 Wire Bus Line
 	13800 8200 13800 9600
 Wire Bus Line
 	8900 7750 8900 9600
 Wire Bus Line
 	7800 7200 7800 9600
-Text GLabel 15700 7200 2    59   Input ~ 0
-VIN
 $EndSCHEMATC
