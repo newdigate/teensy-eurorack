@@ -98,7 +98,7 @@ Wire Wire Line
 Wire Wire Line
 	5900 5400 5900 5800
 Wire Wire Line
-	5900 5800 6400 5800
+	5900 5800 6250 5800
 Wire Wire Line
 	5900 5400 6200 5400
 Text GLabel 6400 5800 2    70   BiDi ~ 0
@@ -252,7 +252,7 @@ U 1 1 6F54BB83
 P 3700 4000
 F 0 "SV1" H 3550 4330 59  0000 L BNN
 F 1 "EURO_POWER_HEADERREGULAR" H 3550 3600 59  0000 L BNN
-F 2 "Mainboard:EURO_POWER_HEADER" H 3700 4000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 3700 4000 50  0001 C CNN
 F 3 "" H 3700 4000 50  0001 C CNN
 	1    3700 4000
 	1    0    0    -1  
@@ -297,4 +297,130 @@ Wire Wire Line
 	4000 4200 4400 4200
 Text GLabel 8100 3900 2    70   Input ~ 0
 AVSS
+Wire Wire Line
+	3400 3600 4000 3600
+Wire Wire Line
+	3400 3500 4000 3500
+$Comp
+L Connector:Conn_01x02_Male JM2
+U 1 1 5DF8E104
+P 3750 2700
+F 0 "JM2" H 3800 2500 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 4050 2400 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3750 2700 50  0001 C CNN
+F 3 "~" H 3750 2700 50  0001 C CNN
+	1    3750 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male JM1
+U 1 1 5DF8F180
+P 3650 2800
+F 0 "JM1" H 3800 2900 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 4300 3000 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3650 2800 50  0001 C CNN
+F 3 "~" H 3650 2800 50  0001 C CNN
+	1    3650 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male JS1
+U 1 1 5DF9340C
+P 3600 2150
+F 0 "JS1" H 3750 2250 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 4250 1900 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3600 2150 50  0001 C CNN
+F 3 "~" H 3600 2150 50  0001 C CNN
+	1    3600 2150
+	-1   0    0    1   
+$EndComp
+Text Label 4000 3600 0    50   ~ 0
+MASTER_TX
+Text Label 4000 3500 0    50   ~ 0
+MASTER_RX
+Text Label 4350 2700 0    50   ~ 0
+MASTER_TX
+Text Label 3450 2700 2    50   ~ 0
+MASTER_RX
+Text Label 4350 2050 0    50   ~ 0
+MASTER_TX
+Text Label 3400 2050 2    50   ~ 0
+MASTER_RX
+Text GLabel 4350 2150 2    50   Input ~ 0
+BUS_TEENSY_RX
+$Comp
+L Connector:Conn_01x02_Male JS2
+U 1 1 5DF97449
+P 3750 2050
+F 0 "JS2" H 3800 1850 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 4100 2200 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3750 2050 50  0001 C CNN
+F 3 "~" H 3750 2050 50  0001 C CNN
+	1    3750 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2150 3950 2150
+Text GLabel 3400 2150 0    50   Input ~ 0
+BUS_TEENSY_TX
+Wire Wire Line
+	3950 2050 4350 2050
+Wire Notes Line
+	2950 1850 5050 1850
+Wire Notes Line
+	5050 1850 5050 2450
+Wire Notes Line
+	5050 2450 2950 2450
+Wire Notes Line
+	2950 1850 2950 2450
+Text Notes 2950 1850 0    50   ~ 0
+Slave
+Text GLabel 3450 2800 0    50   Input ~ 0
+BUS_TEENSY_RX
+Text GLabel 4350 2800 2    50   Input ~ 0
+BUS_TEENSY_TX
+Wire Wire Line
+	3950 2700 4350 2700
+Wire Wire Line
+	4350 2800 3950 2800
+Wire Notes Line
+	5050 2600 5050 3100
+Wire Notes Line
+	5050 3100 3000 3100
+Wire Notes Line
+	3000 3100 3000 2600
+Wire Notes Line
+	3000 2600 5050 2600
+Text Notes 3000 2600 0    50   ~ 0
+Master
+$Comp
+L Mainboard-eagle-import:PINHD-1X2 JP2
+U 1 1 5DFECC19
+P 7050 5400
+F 0 "JP2" H 6800 5625 59  0000 L BNN
+F 1 "PINHD-1X2" H 6800 5100 59  0000 L BNN
+F 2 "Mainboard:1X02" H 7050 5400 50  0001 C CNN
+F 3 "" H 7050 5400 50  0001 C CNN
+	1    7050 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 5400 6950 5600
+Wire Wire Line
+	6950 5600 6250 5600
+Wire Wire Line
+	6250 5600 6250 5800
+Connection ~ 6250 5800
+Wire Wire Line
+	6250 5800 6400 5800
+Wire Wire Line
+	3400 3700 4000 3700
+Text Label 4000 3700 0    50   ~ 0
+PWR_5V
+Wire Wire Line
+	6950 5300 6600 5300
+Wire Wire Line
+	6600 5300 6600 5250
+Text Label 6600 5250 0    50   ~ 0
+PWR_5V
 $EndSCHEMATC

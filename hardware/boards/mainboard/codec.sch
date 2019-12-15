@@ -432,7 +432,7 @@ AR Path="/A8D7B53E" Ref="C?"  Part="1"
 AR Path="/5D773153/A8D7B53E" Ref="C22"  Part="1" 
 F 0 "C22" H 8550 7250 42  0000 L BNN
 F 1 "100uf" H 8550 7100 42  0000 L BNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8700 7200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 8700 7200 50  0001 C CNN
 F 3 "" H 8700 7200 50  0001 C CNN
 	1    8700 7200
 	0    -1   -1   0   

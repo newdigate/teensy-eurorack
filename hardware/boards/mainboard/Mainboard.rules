@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 6954)
+    (start_pass_no 5601)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -29,6 +29,7 @@
     (width 152.4)
     (clear 152.6)
     (clear 76.2 (type smd_to_turn_gap))
+    (clear 38.2 (type smd_smd))
   )
   (padstack "Via[0-1]_400:250_um"
     (shape
@@ -36,15 +37,6 @@
     )
     (shape
       (circle B.Cu 400.0 0.0 0.0)
-    )
-    (attach off)
-  )
-  (padstack "Via[0-1]_800:400_um"
-    (shape
-      (circle F.Cu 800.0 0.0 0.0)
-    )
-    (shape
-      (circle B.Cu 800.0 0.0 0.0)
     )
     (attach off)
   )
@@ -57,41 +49,32 @@
     )
     (attach off)
   )
-  (padstack "Via[0-1]_600:300"
+  (padstack "Via[0-1]_400:250_um_2"
     (shape
-      (circle F.Cu 600.0 0.0 0.0)
+      (circle F.Cu 500.0 0.0 0.0)
     )
     (shape
-      (circle B.Cu 600.0 0.0 0.0)
+      (circle B.Cu 500.0 0.0 0.0)
     )
     (absolute on)
   )
   (via 
-    "Via[0-1]_600:300_um" "Via[0-1]_600:300_um" default
+    "Via[0-1]_400:250_um" "Via[0-1]_400:250_um_2" default
   )
   (via 
-    "Via[0-1]_600:300_um-kicad_default" "Via[0-1]_600:300_um" "kicad_default"
+    "Via[0-1]_600:300_um" "Via[0-1]_400:250_um_2" default
   )
   (via 
-    "Via[0-1]_600:300_um-PWR" "Via[0-1]_600:300_um" PWR
+    "Via[0-1]_400:250_um-kicad_default" "Via[0-1]_400:250_um_2" "kicad_default"
   )
   (via 
-    "Via[0-1]_400:250_um" "Via[0-1]_400:250_um" default
+    "Via[0-1]_600:300_um-kicad_default" "Via[0-1]_400:250_um_2" "kicad_default"
   )
   (via 
-    "Via[0-1]_800:400_um" "Via[0-1]_400:250_um" default
+    "Via[0-1]_400:250_um-PWR" "Via[0-1]_400:250_um_2" PWR
   )
   (via 
-    "Via[0-1]_400:250_um-kicad_default" "Via[0-1]_400:250_um" "kicad_default"
-  )
-  (via 
-    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_400:250_um" "kicad_default"
-  )
-  (via 
-    "Via[0-1]_400:250_um-PWR" "Via[0-1]_600:300" PWR
-  )
-  (via 
-    "Via[0-1]_800:400_um-PWR" "Via[0-1]_600:300" PWR
+    "Via[0-1]_600:300_um-PWR" "Via[0-1]_400:250_um_2" PWR
   )
   (via_rule
     default "Via[0-1]_400:250_um"
@@ -100,7 +83,7 @@
     "kicad_default" "Via[0-1]_400:250_um-kicad_default"
   )
   (via_rule
-    PWR "Via[0-1]_800:400_um-PWR"
+    PWR "Via[0-1]_600:300_um-PWR"
   )
   (class default
     (clearance_class default)
@@ -113,16 +96,17 @@
     )
   )
   (class "kicad_default"
-    "Net-(C21-Pad1)" "Net-(C23-Pad1)" "Net-(C25-Pad1)" "/codec/Audio-in/LEFT_OUT" "Net-(C27-Pad2)" "/codec/Audio-in/RIGHT_OUT" "Net-(C29-Pad2)" "/codec/sheet5D7E3893/LEFT_OUT"
-    "Net-(C31-Pad2)" "/codec/sheet5D7E3893/RIGHT_OUT" "Net-(C33-Pad2)" "/codec/sheet5D7EAAD2/LEFT_OUT" "Net-(C35-Pad2)" "/codec/sheet5D7EAAD2/RIGHT_OUT" "Net-(C37-Pad2)" "/codec/Audio-out/RIGHT"
-    "Net-(C39-Pad2)" "Net-(C40-Pad1)" "/codec/Audio-out/LEFT" "Net-(C41-Pad1)" "Net-(C42-Pad1)" /codec/sheet5D7A5ED6/RIGHT "Net-(C43-Pad2)" "Net-(C44-Pad1)"
-    /codec/sheet5D7A5ED6/LEFT "Net-(C45-Pad1)" "Net-(C46-Pad1)" /codec/sheet5D8B3355/RIGHT "Net-(C47-Pad2)" "Net-(C48-Pad1)" /codec/sheet5D8B3355/LEFT "Net-(C49-Pad1)"
-    "Net-(C50-Pad1)" /codec/sheet5D8BB035/RIGHT "Net-(C51-Pad2)" "Net-(C52-Pad1)" /codec/sheet5D8BB035/LEFT "Net-(C53-Pad1)" "Net-(C54-Pad1)" "Net-(IC1-Pad3)"
-    "TFT_DC" "TFT_CS" "SPI0_SCK" "SPI0_MISO" "AD_BUSY" "AD_CONVST" "AD_RESET" "AD_CS"
-    "DA_SYNC" "SPI0_MOSI" "MIDI_TX" "MIDI_RX" "/daughter board connectors/USB_A_D-" "/daughter board connectors/USB_A_D+" "/daughter board connectors/USB_B_D-" "/daughter board connectors/USB_B_D+"
-    "Net-(R1-Pad2)" SCL SDA "Net-(R5-Pad2)" "Net-(R7-Pad2)" "Net-(R10-Pad1)" "Net-(R11-Pad2)" "Net-(R13-Pad2)"
-    "Net-(R15-Pad2)" LRCLK BCLK "DAC_DATA" "ADC_DATA" MCLK "Net-(C11-Pad1)" "Net-(C12-Pad1)"
-    "Net-(C13-Pad1)" "Net-(C14-Pad1)" "GATE_4" "GATE_3" "GATE_2" "GATE_1" "KC_TEENSY_RX" "KC_TEENSY_TX"
+    "Net-(C21-Pad1)" "Net-(C23-Pad1)" "Net-(C25-Pad1)" "Net-(C27-Pad2)" "Net-(C29-Pad2)" "Net-(C31-Pad2)" "Net-(C33-Pad2)" "Net-(C35-Pad2)"
+    "Net-(C37-Pad2)" "Net-(C39-Pad2)" "Net-(C40-Pad1)" "Net-(C41-Pad1)" "Net-(C42-Pad1)" "Net-(C43-Pad2)" "Net-(C44-Pad1)" "Net-(C45-Pad1)"
+    "Net-(C46-Pad1)" "Net-(C47-Pad2)" "Net-(C48-Pad1)" "Net-(C49-Pad1)" "Net-(C50-Pad1)" "Net-(C51-Pad2)" "Net-(C52-Pad1)" "Net-(C53-Pad1)"
+    "Net-(C54-Pad1)" "Net-(IC1-Pad3)" "TFT_DC" "TFT_CS" "SPI0_SCK" "SPI0_MISO" "AD_BUSY" "AD_CONVST"
+    "AD_RESET" "AD_CS" "DA_SYNC" "SPI0_MOSI" "MIDI_TX" "MIDI_RX" "/daughter board connectors/USB_A_D-" "/daughter board connectors/USB_A_D+"
+    "/daughter board connectors/USB_B_D-" "/daughter board connectors/USB_B_D+" "Net-(R1-Pad2)" SCL SDA "Net-(R5-Pad2)" "Net-(R7-Pad2)" "Net-(R10-Pad1)"
+    "Net-(R11-Pad2)" "Net-(R13-Pad2)" "Net-(R15-Pad2)" LRCLK BCLK "DAC_DATA" "ADC_DATA" MCLK
+    "Net-(C11-Pad1)" "Net-(C12-Pad1)" "Net-(C13-Pad1)" "Net-(C14-Pad1)" "GATE_4" "GATE_3" "GATE_2" "GATE_1"
+    "KC_TEENSY_RX" "KC_TEENSY_TX" "/codec/LEFT_OUT" "/codec/RIGHT_OUT_1" "/codec/LEFT_OUT_2" "/codec/RIGHT_OUT" "/codec/LEFT_OUT_1" "/codec/RIGHT_OUT_2"
+    "/codec/RIGHT_3" "/codec/LEFT_2" "/codec/RIGHT_2" /codec/LEFT /codec/RIGHT "/codec/LEFT_1" "/codec/RIGHT_1" "/codec/LEFT_3"
+    "/Power and bypass caps/MASTER_RX" "/Power and bypass caps/MASTER_TX" "/Power and bypass caps/PWR_5V" "BUS_TEENSY_RX" "BUS_TEENSY_TX"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
@@ -133,7 +117,7 @@
     )
   )
   (class PWR
-    GND /codec/AGND AVDD AVSS /codec/AVIN VIN "/daughter board connectors/USB_A_VCC" "/daughter board connectors/USB_B_VCC"
+    /codec/AGND GND AVDD AVSS /codec/AVIN VIN "/daughter board connectors/USB_A_VCC" "/daughter board connectors/USB_B_VCC"
     +3V3
     (clearance_class PWR)
     (via_rule PWR)

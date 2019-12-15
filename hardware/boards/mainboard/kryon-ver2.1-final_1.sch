@@ -116,29 +116,18 @@ SPI0_MISO
 Text GLabel 5850 4500 0    70   Output ~ 0
 DA_SYNC
 $Comp
-L Mainboard-eagle-import:TEENSY_4.0 U$1
+L Mainboard-eagle-import:TEENSY_4.0_WITH_SMD_HEADER_PINS U$1
 U 1 1 2AECCF64
 P 8700 4000
 F 0 "U$1" H 8480 5350 50  0000 L BNB
 F 1 "TEENSY_4.0_WITH_SMD_HEADER_PINS" H 8590 2500 50  0000 L BNB
-F 2 "teensy:TEENSY_4.0" H 8700 4000 50  0000 C CNN
+F 2 "Mainboard:TEENSY_4.0_WITH_SMD_HEADER_PINS" H 8700 4000 50  0000 C CNN
 F 3 "" H 8700 4000 50  0001 C CNN
 	1    8700 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	9600 3100 9700 3100
-$Comp
-L Device:R R33
-U 1 1 5D90FA7F
-P 7150 1700
-F 0 "R33" H 7220 1746 50  0000 L CNN
-F 1 "4.7k" H 7220 1655 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805" V 7080 1700 50  0001 C CNN
-F 3 "~" H 7150 1700 50  0001 C CNN
-	1    7150 1700
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+3V3 #PWR0103
 U 1 1 5D910D81
@@ -152,11 +141,11 @@ F 3 "" H 7150 1250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7150 2000 7150 1850
-Text GLabel 7800 3300 0    50   Input ~ 0
+Text GLabel 8200 2000 0    50   Input ~ 0
 GATE_1
-Text GLabel 7800 3800 0    50   Input ~ 0
+Text GLabel 8200 2100 0    50   Input ~ 0
 GATE_2
-Text GLabel 7800 4600 0    50   Input ~ 0
+Text GLabel 8200 2200 0    50   Input ~ 0
 GATE_3
 Wire Wire Line
 	7150 1550 7150 1250
@@ -249,50 +238,6 @@ F 3 "https://www.vishay.com/docs/85751/1n4148ws.pdf" H 1150 2400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+3V3 #PWR01
-U 1 1 5D9A4421
-P 1150 950
-F 0 "#PWR01" H 1150 800 50  0001 C CNN
-F 1 "+3V3" H 1165 1123 50  0000 C CNN
-F 2 "" H 1150 950 50  0001 C CNN
-F 3 "" H 1150 950 50  0001 C CNN
-	1    1150 950 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR03
-U 1 1 5D9A4CAB
-P 2650 950
-F 0 "#PWR03" H 2650 800 50  0001 C CNN
-F 1 "+3V3" H 2665 1123 50  0000 C CNN
-F 2 "" H 2650 950 50  0001 C CNN
-F 3 "" H 2650 950 50  0001 C CNN
-	1    2650 950 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR02
-U 1 1 5D9A56BC
-P 1150 1950
-F 0 "#PWR02" H 1150 1800 50  0001 C CNN
-F 1 "+3V3" H 1165 2123 50  0000 C CNN
-F 2 "" H 1150 1950 50  0001 C CNN
-F 3 "" H 1150 1950 50  0001 C CNN
-	1    1150 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR04
-U 1 1 5D9A5E04
-P 2650 2000
-F 0 "#PWR04" H 2650 1850 50  0001 C CNN
-F 1 "+3V3" H 2665 2173 50  0000 C CNN
-F 2 "" H 2650 2000 50  0001 C CNN
-F 3 "" H 2650 2000 50  0001 C CNN
-	1    2650 2000
-	1    0    0    -1  
-$EndComp
-$Comp
 L Mainboard-eagle-import:GND #GND012
 U 1 1 5D9A8BBD
 P 1150 1650
@@ -362,10 +307,68 @@ Wire Wire Line
 	6850 5200 7800 5200
 Text GLabel 6850 5200 0    70   Output ~ 0
 MCLK
-Text GLabel 7150 5100 0    50   Input ~ 0
+Text GLabel 8800 2300 2    50   Input ~ 0
 GATE_4
 Wire Wire Line
-	7150 5100 7800 5100
-Wire Wire Line
 	7500 5000 7800 5000
+$Comp
+L Device:R R33
+U 1 1 5D90FA7F
+P 7150 1700
+F 0 "R33" H 7220 1746 50  0000 L CNN
+F 1 "4.7k" H 7220 1655 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 7080 1700 50  0001 C CNN
+F 3 "~" H 7150 1700 50  0001 C CNN
+	1    7150 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mainboard-eagle-import:PCA9536 U2
+U 1 1 5DF732B1
+P 8500 2150
+F 0 "U2" H 8500 2525 50  0000 C CNN
+F 1 "PCA9536" H 8500 2434 50  0000 C CNN
+F 2 "Package_SO:TSSOP-8_3x3mm_P0.65mm" H 8500 2150 50  0001 C CNN
+F 3 "" H 8500 2150 50  0001 C CNN
+	1    8500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mainboard-eagle-import:GND #GND0101
+U 1 1 5DF7872C
+P 8200 2400
+F 0 "#GND0101" H 8200 2400 50  0001 C CNN
+F 1 "GND" H 8200 2390 59  0000 C TNN
+F 2 "" H 8200 2400 50  0001 C CNN
+F 3 "" H 8200 2400 50  0001 C CNN
+	1    8200 2400
+	1    0    0    -1  
+$EndComp
+Text Label 8800 2200 0    50   ~ 0
+SCL
+Text Label 8800 2100 0    50   ~ 0
+SDA
+Text Label 8800 2000 0    50   ~ 0
+VIN
+Wire Wire Line
+	7800 3300 7150 3300
+Wire Wire Line
+	7150 3300 7150 2000
+Connection ~ 7150 2000
+Text Label 1150 950  0    50   ~ 0
+VIN
+Text Label 2650 950  0    50   ~ 0
+VIN
+Text Label 2650 2000 0    50   ~ 0
+VIN
+Text Label 1150 1950 0    50   ~ 0
+VIN
+Wire Wire Line
+	9600 4100 10000 4100
+Wire Wire Line
+	9600 4200 10000 4200
+Text GLabel 10000 4100 2    50   Input ~ 0
+BUS_TEENSY_RX
+Text GLabel 10000 4200 2    50   Input ~ 0
+BUS_TEENSY_TX
 $EndSCHEMATC
