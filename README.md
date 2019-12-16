@@ -89,6 +89,8 @@ What you can do if you like to see progress with this project?
 <img src='hardware/technical-drawing.svg' width='500px'/>
 
 ## videos 
+https://www.youtube.com/watch?v=
+[![youtube: assembly teensy eurorack shield](https://img.youtube.com/vi/Jx2KgpoT3WY/0.jpg)](https://www.youtube.com/watch?v=Jx2KgpoT3WY)
 
 [![youtube: assembly timelapse](https://img.youtube.com/vi/s-514rDjirY/0.jpg)](https://www.youtube.com/watch?v=s-514rDjirY)
 
@@ -108,6 +110,8 @@ What you can do if you like to see progress with this project?
 - [ ] Finalize circuits / boards
 - [ ] Testing
   - [ ] CS42448 audio codec
+    - [ ] Audio input
+    - [x] ~~Audio output~~
   - [ ] control voltage input
   - [ ] control voltage output
   - [ ] usb host/device
