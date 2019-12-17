@@ -31,11 +31,15 @@
 #define AD5754R_LOAD                0x50 // Updates the DAC registers and, consequently, the DAC outputs.
 
 #define DA_SYNC 16
+#define TFT_CS 6
 
 void setup() {
   // put your setup code here, to run once:
   pinMode(DA_SYNC, OUTPUT);
-  digitalWrite(DA_SYNC, LOW); 
+  digitalWrite(DA_SYNC, HIGH); 
+
+  pinMode(TFT_CS, OUTPUT);
+  digitalWrite(TFT_CS, HIGH); 
 
   Serial.begin(9600);
   while (!Serial) {
