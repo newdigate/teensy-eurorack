@@ -30,40 +30,23 @@
 #define AD5754R_CLEAR               0x40 // Sets the DAC registers to the clear code and updates the outputs.
 #define AD5754R_LOAD                0x50 // Updates the DAC registers and, consequently, the DAC outputs.
 
-#define LED 13
-
-#define DA_SYNC 15
-#define DA_LDAC 35
-#define DA_CLR 36
-#define DA_2SCOMP 37
+#define DA_SYNC 16
 
 void setup() {
+  // put your setup code here, to run once:
   pinMode(DA_SYNC, OUTPUT);
-  digitalWrite(DA_SYNC, LOW);  
-    
-  pinMode(LED, OUTPUT);
-  digitalWrite(LED, HIGH);  
-
-  pinMode(DA_LDAC, OUTPUT);
-  digitalWrite(DA_LDAC, LOW); 
-  
-  pinMode(DA_CLR, OUTPUT);
-  digitalWrite(DA_CLR, HIGH); 
-  
-  pinMode(DA_2SCOMP, OUTPUT);  
-  digitalWrite(DA_2SCOMP, HIGH); 
+  digitalWrite(DA_SYNC, LOW); 
 
   Serial.begin(9600);
-  //while (!Serial) {
-  //  delay(100);
-  //}
+  while (!Serial) {
+    delay(100);
+  }
 
   Serial.println("connected...");
    
-  SPI.setSCK  (14);
-  SPI.setMOSI (7 );
+  SPI.setSCK  (13);
+  SPI.setMOSI (11);
   SPI.setMISO (12);
-  
   SPI.begin();
 
   delay(10);
