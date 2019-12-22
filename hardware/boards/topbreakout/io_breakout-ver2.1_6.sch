@@ -23,8 +23,8 @@ Wire Wire Line
 Text GLabel 3800 4000 0    70   BiDi ~ 0
 DA_SYNC
 Wire Wire Line
-	4500 3800 3800 3800
-Text GLabel 3800 3800 0    70   BiDi ~ 0
+	4500 3800 3000 3800
+Text GLabel 3000 3800 0    70   BiDi ~ 0
 SPI0_MOSI
 Wire Wire Line
 	4500 3700 3800 3700
@@ -119,10 +119,6 @@ VREF
 Connection ~ 7800 2200
 Connection ~ 6200 2200
 Connection ~ 6100 4200
-Wire Wire Line
-	4500 3900 3000 3900
-Text GLabel 3000 3900 0    70   BiDi ~ 0
-SPI0_MISO
 $Comp
 L TopBreakout-eagle-import:ANALOG_DEVICES_AD5754BREZANALOG_DEVICES_AD5754BREZ_0_2 U3
 U 1 1 5C95457F
@@ -304,4 +300,18 @@ Wire Wire Line
 	2300 4300 2300 4400
 Wire Wire Line
 	1600 4000 2300 4000
+NoConn ~ 4500 3900
+$Comp
+L TopBreakout-eagle-import:TEST-POINT3X5 TP?
+U 1 1 5E139C99
+P 3000 3800
+AR Path="/5E139C99" Ref="TP?"  Part="1" 
+AR Path="/5D7F4465/5E139C99" Ref="TP?"  Part="1" 
+F 0 "TP?" H 2900 3900 70  0001 L BNN
+F 1 "TEST-POINT3X5" V 2900 3800 70  0001 R TNN
+F 2 "topbreakout:PAD.03X.05" H 3000 3800 50  0001 C CNN
+F 3 "" H 3000 3800 50  0001 C CNN
+	1    3000 3800
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
