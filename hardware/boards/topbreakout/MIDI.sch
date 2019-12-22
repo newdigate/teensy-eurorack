@@ -237,4 +237,10 @@ Text GLabel 2950 3700 2    70   Input ~ 0
 MIDI_IN_PIN4
 Text GLabel 1550 3700 0    70   Input ~ 0
 MIDI_IN_PIN5
+NoConn ~ 1650 3600
+NoConn ~ 2850 3600
+NoConn ~ 2850 3800
+NoConn ~ 1250 5400
+NoConn ~ 2450 5400
+NoConn ~ 2450 5600
 $EndSCHEMATC

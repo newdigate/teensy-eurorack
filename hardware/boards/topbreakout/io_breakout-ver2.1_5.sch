@@ -44,35 +44,21 @@ Wire Wire Line
 	3100 5000 3100 4900
 Text GLabel 3100 5000 0    70   BiDi ~ 0
 AD_CONVST
-Text GLabel 4200 4900 2    70   BiDi ~ 0
-AD_CONVST
 Wire Wire Line
 	4900 4700 3700 4700
 Text GLabel 3700 4700 0    70   BiDi ~ 0
 AD_RESET
 Wire Wire Line
-	4900 4300 1300 4300
-Text GLabel 4400 4300 2    70   BiDi ~ 0
-SPI0_SCK
-Text GLabel 1300 4300 0    70   BiDi ~ 0
-SPI0_SCK
+	4900 4300 3950 4300
 Wire Wire Line
 	4900 4400 2300 4400
-Text GLabel 4000 4400 2    70   BiDi ~ 0
-AD_CS
-Text GLabel 4000 4400 2    70   BiDi ~ 0
-AD_CS
-Text GLabel 4000 4400 2    70   BiDi ~ 0
-AD_CS
 Text GLabel 2300 4400 0    70   BiDi ~ 0
 AD_CS
 Wire Wire Line
 	4900 5100 4300 5100
 Text GLabel 4300 5100 0    70   BiDi ~ 0
 AD_BUSY
-Wire Wire Line
-	4900 2700 4500 2700
-Text GLabel 4500 2700 0    70   BiDi ~ 0
+Text GLabel 2950 2700 0    70   BiDi ~ 0
 SPI0_MISO
 Wire Wire Line
 	6700 2000 8500 2000
@@ -137,15 +123,13 @@ Wire Wire Line
 	2650 3400 2650 3300
 Wire Wire Line
 	2650 3300 3150 3300
-Text GLabel 3500 3300 2    70   BiDi ~ 0
+Text GLabel 3500 3300 1    70   BiDi ~ 0
 +3V3
 Connection ~ 3500 3300
 Connection ~ 3150 3300
 Wire Wire Line
 	7750 4600 7850 4600
 Text GLabel 7850 4600 2    70   BiDi ~ 0
-+3V3
-Text GLabel 2200 5400 0    70   BiDi ~ 0
 +3V3
 Wire Wire Line
 	3200 5800 3200 6100
@@ -262,9 +246,7 @@ Wire Wire Line
 	4050 3900 4050 3800
 Wire Wire Line
 	4900 3800 4050 3800
-Text GLabel 4400 3900 2    70   BiDi ~ 0
-GND
-Text GLabel 4500 3800 2    70   BiDi ~ 0
+Text GLabel 4050 3800 0    70   BiDi ~ 0
 GND
 Wire Wire Line
 	7100 6100 7100 6350
@@ -319,8 +301,6 @@ Wire Wire Line
 	6700 3500 8000 3500
 Wire Wire Line
 	8000 3300 8000 3500
-Text Label 8000 2100 0    70   ~ 0
-AD_AGND
 Connection ~ 8000 2300
 Connection ~ 8000 2500
 Connection ~ 8000 2700
@@ -437,7 +417,7 @@ P 1400 5500
 AR Path="/5459D6DE" Ref="TP1"  Part="1" 
 AR Path="/5D7F4383/5459D6DE" Ref="TP1"  Part="1" 
 F 0 "TP1" H 1300 5600 70  0001 L BNN
-F 1 "TEST-POINT3X5" V 1300 5500 70  0000 R TNN
+F 1 "TEST-POINT3X5" V 1300 5500 70  0001 R TNN
 F 2 "topbreakout:PAD.03X.05" H 1400 5500 50  0001 C CNN
 F 3 "" H 1400 5500 50  0001 C CNN
 	1    1400 5500
@@ -564,8 +544,6 @@ Text Notes 7900 5300 0    59   ~ 0
 REF_SELECT: Internal/External Reference Selection Input. \nIf this pin is set to logic high, the internal reference is selected and enabled. \nIf this pin is set to logic low, the internal reference is disabled \nand an external reference voltage must be applied to the REFIN/REFOUT pin.
 Wire Wire Line
 	4000 3700 4900 3700
-Wire Wire Line
-	2150 5400 4900 5400
 Text GLabel 8500 2800 2    70   Input ~ 0
 AD_V5
 Text GLabel 8500 3000 2    70   Input ~ 0
@@ -595,5 +573,111 @@ F 2 "" H 7100 6350 50  0001 C CNN
 F 3 "" H 7100 6350 50  0001 C CNN
 	1    7100 6350
 	1    0    0    -1  
+$EndComp
+Text GLabel 8000 2100 2    70   Input ~ 0
+AD_AGND
+Text GLabel 3950 4300 0    70   BiDi ~ 0
+SPI0_SCK
+$Comp
+L TopBreakout-eagle-import:TEST-POINT3X5 TP?
+U 1 1 5E007168
+P 7300 4800
+AR Path="/5E007168" Ref="TP?"  Part="1" 
+AR Path="/5D7F4383/5E007168" Ref="TP9"  Part="1" 
+F 0 "TP9" H 7200 4900 70  0001 L BNN
+F 1 "TEST-POINT3X5" V 7200 4800 70  0001 R TNN
+F 2 "topbreakout:PAD.03X.05" H 7300 4800 50  0001 C CNN
+F 3 "" H 7300 4800 50  0001 C CNN
+	1    7300 4800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4900 5200
+$Comp
+L TopBreakout-eagle-import:TEST-POINT3X5 TP?
+U 1 1 5E012602
+P 2950 2700
+AR Path="/5E012602" Ref="TP?"  Part="1" 
+AR Path="/5D7F4383/5E012602" Ref="TP5"  Part="1" 
+F 0 "TP5" H 2850 2800 70  0001 L BNN
+F 1 "TEST-POINT3X5" V 2850 2700 70  0001 R TNN
+F 2 "topbreakout:PAD.03X.05" H 2950 2700 50  0001 C CNN
+F 3 "" H 2950 2700 50  0001 C CNN
+	1    2950 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2950 2700 4900 2700
+$Comp
+L TopBreakout-eagle-import:TEST-POINT3X5 TP?
+U 1 1 5E01E21D
+P 2300 4400
+AR Path="/5E01E21D" Ref="TP?"  Part="1" 
+AR Path="/5D7F4383/5E01E21D" Ref="TP2"  Part="1" 
+F 0 "TP2" H 2200 4500 70  0001 L BNN
+F 1 "TEST-POINT3X5" V 2200 4400 70  0001 R TNN
+F 2 "topbreakout:PAD.03X.05" H 2300 4400 50  0001 C CNN
+F 3 "" H 2300 4400 50  0001 C CNN
+	1    2300 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TopBreakout-eagle-import:TEST-POINT3X5 TP?
+U 1 1 5E020685
+P 3700 4700
+AR Path="/5E020685" Ref="TP?"  Part="1" 
+AR Path="/5D7F4383/5E020685" Ref="TP7"  Part="1" 
+F 0 "TP7" H 3600 4800 70  0001 L BNN
+F 1 "TEST-POINT3X5" V 3600 4700 70  0001 R TNN
+F 2 "topbreakout:PAD.03X.05" H 3700 4700 50  0001 C CNN
+F 3 "" H 3700 4700 50  0001 C CNN
+	1    3700 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TopBreakout-eagle-import:TEST-POINT3X5 TP?
+U 1 1 5E0225F0
+P 3100 5000
+AR Path="/5E0225F0" Ref="TP?"  Part="1" 
+AR Path="/5D7F4383/5E0225F0" Ref="TP6"  Part="1" 
+F 0 "TP6" H 3000 5100 70  0001 L BNN
+F 1 "TEST-POINT3X5" V 3000 5000 70  0001 R TNN
+F 2 "topbreakout:PAD.03X.05" H 3100 5000 50  0001 C CNN
+F 3 "" H 3100 5000 50  0001 C CNN
+	1    3100 5000
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3100 5000
+Text GLabel 2200 5400 0    70   BiDi ~ 0
++3V3
+Wire Wire Line
+	2200 5400 2300 5400
+$Comp
+L TopBreakout-eagle-import:TEST-POINT3X5 TP?
+U 1 1 5E0290F9
+P 2300 5400
+AR Path="/5E0290F9" Ref="TP?"  Part="1" 
+AR Path="/5D7F4383/5E0290F9" Ref="TP4"  Part="1" 
+F 0 "TP4" H 2200 5500 70  0001 L BNN
+F 1 "TEST-POINT3X5" V 2200 5400 70  0001 R TNN
+F 2 "topbreakout:PAD.03X.05" H 2300 5400 50  0001 C CNN
+F 3 "" H 2300 5400 50  0001 C CNN
+	1    2300 5400
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2300 5400
+Wire Wire Line
+	2300 5400 4900 5400
+$Comp
+L TopBreakout-eagle-import:TEST-POINT3X5 TP?
+U 1 1 5E02DC53
+P 3950 4300
+AR Path="/5E02DC53" Ref="TP?"  Part="1" 
+AR Path="/5D7F4383/5E02DC53" Ref="TP8"  Part="1" 
+F 0 "TP8" H 3850 4400 70  0001 L BNN
+F 1 "TEST-POINT3X5" V 3850 4300 70  0001 R TNN
+F 2 "topbreakout:PAD.03X.05" H 3950 4300 50  0001 C CNN
+F 3 "" H 3950 4300 50  0001 C CNN
+	1    3950 4300
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC

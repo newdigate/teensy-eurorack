@@ -122,19 +122,6 @@ F 3 "" H 3100 3100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L TopBreakout-eagle-import:USB-A-S-X-X-VT J3
-U 1 1 83A3164B
-P 4750 3600
-AR Path="/83A3164B" Ref="J3"  Part="1" 
-AR Path="/5D7F42FA/83A3164B" Ref="J3"  Part="1" 
-F 0 "J3" H 4950 3731 42  0000 L BNN
-F 1 "USB-A-S-X-X-VT" H 4950 2820 42  0000 L BNN
-F 2 "topbreakout:USB-A-S-X-X-VT" H 4750 3600 50  0001 C CNN
-F 3 "" H 4750 3600 50  0001 C CNN
-	1    4750 3600
-	1    0    0    1   
-$EndComp
-$Comp
 L TopBreakout-eagle-import:YAMAICHI_SD_CARD U$1
 U 1 1 4D826FCC
 P 1400 1400
@@ -213,8 +200,6 @@ Wire Wire Line
 	2300 2800 2150 2800
 Wire Wire Line
 	1400 5000 2350 5000
-Wire Wire Line
-	1400 5100 2350 5100
 Text GLabel 1800 6000 2    70   BiDi ~ 0
 GND
 Wire Wire Line
@@ -287,4 +272,29 @@ Text GLabel 2000 4300 2    70   BiDi ~ 0
 VIN
 Text GLabel 1600 4400 2    70   BiDi ~ 0
 +3V3
+$Comp
+L TopBreakout-eagle-import:USB-A-S-X-X-VT J3
+U 1 1 83A3164B
+P 4750 3600
+AR Path="/83A3164B" Ref="J3"  Part="1" 
+AR Path="/5D7F42FA/83A3164B" Ref="J3"  Part="1" 
+F 0 "J3" H 4950 3731 42  0000 L BNN
+F 1 "USB-A-S-X-X-VT" H 4950 2820 42  0000 L BNN
+F 2 "topbreakout:USB-A-S-X-X-VT" H 4750 3600 50  0001 C CNN
+F 3 "" H 4750 3600 50  0001 C CNN
+	1    4750 3600
+	1    0    0    1   
+$EndComp
+NoConn ~ 1700 900 
+NoConn ~ 1700 1000
+NoConn ~ 2700 2000
+NoConn ~ 2700 2100
+NoConn ~ 2500 2800
+NoConn ~ 2500 2900
+NoConn ~ 1400 2900
+NoConn ~ 1400 2800
+NoConn ~ 4750 3100
+NoConn ~ 4750 3000
+Wire Wire Line
+	1400 5100 2350 5100
 $EndSCHEMATC
