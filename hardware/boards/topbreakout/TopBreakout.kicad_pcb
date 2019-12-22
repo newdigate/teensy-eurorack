@@ -109,7 +109,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "gerbers/")
+      (outputdirectory "gerbers-v1.6/")
     )
   )
 
