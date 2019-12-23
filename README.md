@@ -36,7 +36,7 @@ Together, these circuit boards provide a set of peripherals for a teensy 4.0 mic
 * All mechanical designs are created using [FreeCAD](https://github.com/FreeCAD/FreeCAD)
  
 ## support
-This project is a work-in-progress! Here is a journal of my progress, [journal.md](JOURNAL.md) 
+This project is a work-in-progress! Here is a journal of my progress, [journal.md](hardware/boards/JOURNAL.md) 
 
 What you can do if you like to see progress with this project?
 * star this repository (means you need a github account - go for it!!)
