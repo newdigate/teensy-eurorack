@@ -2,8 +2,6 @@
 
 * open source **[hardware](hardware) and [software](software) for a [teensy 4.0](https://www.pjrc.com/store/teensy40.html "teensy 4.0 board") eurorack shield** 
 
-<img src='hardware/images/x-front.png' height='150px'/>  <img src='hardware/images/x-frontside.png' height='150px'/> <img src='hardware/images/x-side.png' height='150px'/> <img src='hardware/images/x-backside.png' height='150px'/>  <img src='hardware/images/x-back.png' height='150px'/> 
-
 ## contents
 * [what is it](#what-is-it)
 * [software](#open-source-software-stack)
@@ -20,6 +18,7 @@
 * [todo](#todo)
 
 ## what is it
+<img src='hardware/images/x-front.png' height='150px'/>  <img src='hardware/images/x-frontside.png' height='150px'/> <img src='hardware/images/x-side.png' height='150px'/> <img src='hardware/images/x-backside.png' height='150px'/>  <img src='hardware/images/x-back.png' height='150px'/> 
 Together, these circuit boards provide a set of peripherals for a teensy 4.0 micro-controller board - allowing it to interface with standard eurorack modular equipment.
 
 * **microcontroller:** 600 Mhz ARM cortex m7 ( [teensy 4.0 board](https://www.pjrc.com/store/teensy40.html "teensy 4.0 board") )
