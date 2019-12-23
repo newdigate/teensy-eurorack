@@ -112,7 +112,8 @@ What you can do if you like to see progress with this project?
     - [ ] Audio input
     - [x] ~~Audio output~~
   - [ ] control voltage input
-  - [ ] control voltage output
+  - [x] ~~control voltage output~~
+  - [ ] gpio
   - [ ] usb host/device
   - [ ] midi in/out
   - [x] ~~st7735 display~~
