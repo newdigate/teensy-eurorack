@@ -42,4 +42,11 @@
 ![midi](boards/topbreakout/images/topbreakout-midi.png)
 
 ## Knobs-controller board
-[todo]
+### credits
+* this board is based on [Arduino MKR Zero](https://store.arduino.cc/arduino-mkr-zero-i2s-bus-sd-for-sound-music-digital-audio-data) design by Arturo Guadalupi (v5.0)
+### knobs microcontroller
+![knobs main](boards/knobs-controller/images/schematic_kc_main.png)
+### power
+![knobs power](boards/knobs-controller/images/schematic_kc_power.png)
+### encoder
+![knobs rgb encoder](boards/knobs-controller/images/schematic_kc_rgb_encoder.png)
