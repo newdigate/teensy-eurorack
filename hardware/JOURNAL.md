@@ -1,7 +1,6 @@
 # Journal
 
 ## 2 december 2019
-
 mainboard v1.5 and knobs v1.5 pcb arrived from jlcpcb. 
 
 while assembling mainboard v1.5. my heat gun died before i could start baking. 
@@ -12,12 +11,10 @@ i have solder pasted and placed all components on the top side and i’m ready a
 new heat gun station arrived today. i will start backing tomorrow. 
 
 ## Tuesday 3 November 2019
-
 assembled my main board today. there are a few solder bridges in the cs42448 chip - needs a little work. 
 quite happy with my new hot air gun. although there were initial teething problems. i was switching the solder iron on without realising it was the soldering iron switch not the heat gun switch. 
 
 ## Monday 16 November 2019
-
 after assemblying and some refluxing. mainboard sound card audio out was tested successfully.
 
 knobs controller 
@@ -39,7 +36,7 @@ top breakout board
 top breakout test rig. 
 i’d like to build a breakout to test top breakout. using the mainboard is very clumsy and i don’t have access to the signals i need to inspect. 
 
-tuesday 17 december 
+## tuesday 17 december 2019
 created test rig for top breakout board and a jig to help solder the pins on the underside of the teensy. ordered from jlcpcb. 
 
 ## 22 december 2019
