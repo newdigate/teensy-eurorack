@@ -1,7 +1,7 @@
 # schematics, printed circuit boards, and panels
 * schematic and circuit board files for each board [here](boards)
 * panel designs [here](panel)
-* schematic [circuit images](#circuits-images)
+* schematic [images](#circuits-images)
   * [main-board](#mainboard)
   * [top-breakout board](#top-breakout-board)
   * [knobs-controller board](#knobs-controller-board)
