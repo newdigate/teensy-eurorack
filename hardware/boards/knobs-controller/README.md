@@ -6,6 +6,8 @@ status:
    13 Dec 2019: 
      * v1.6: issue with tx/rx connection to mainboard fixed
 ```
+## credits
+* this board is based on [Arduino MKR Zero](https://store.arduino.cc/arduino-mkr-zero-i2s-bus-sd-for-sound-music-digital-audio-data) design by Arturo Guadalupi (v5.0)
 
 ## build
 * build details for knob controller can be found here - [BUILD.md](BUILD.md) 
