@@ -29,21 +29,22 @@ AudioControlCS42448      cs42448_1;      //xy=614,540
 // GUItool: end automatically generated code
 
 
-#define TFT_SCLK 14  // SCLK can also use pin 14
-#define TFT_MOSI 7  // MOSI can also use pin 7
+
+#define TFT_SCLK 13  // SCLK can also use pin 14
+#define TFT_MOSI 11  // MOSI can also use pin 7
 #define TFT_CS   6  // CS & DC can use pins 2, 6, 9, 10, 15, 20, 21, 22, 23
 #define TFT_DC    2  //  but certain pairs must NOT be used: 2+10, 6+9, 20+23, 21+22
-#define TFT_RST   255  // RST can use any pin
+#define TFT_RST   0 // RST can use any pin
 
 #include <Adafruit_GFX.h>    // Core graphics library
-//#include <ST7735_t3.h> // Hardware-specific library
-#include <Adafruit_ST7735.h> // Hardware-specific library
+#include <ST7735_t3.h> // Hardware-specific library
+//#include <Adafruit_ST7735.h> // Hardware-specific library
 
 
 // Option 1: use any pins but a little slower
-//ST7735 tft = ST7735(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
+ST7735_t3 tft = ST7735_t3(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
 // Option 1: use any pins but a little slower
-Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
+//Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
 
 //Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_RST);
 // give it a name:
@@ -54,9 +55,9 @@ void setup() {
   //pinMode(led, INPUT);  
   AudioMemory(64);
   Wire.begin();  
-  SPI.setSCK  (14);
-  SPI.setMOSI (7 );
-  SPI.setMISO (12);
+  //SPI.setSCK  (14);
+  //SPI.setMOSI (7 );
+  //SPI.setMISO (12);
   
   SPI.begin();
  delay(100);
@@ -93,15 +94,13 @@ int16_t lastbuffer[128];
 
 void updateScope() {
 
-
-
   oscilliscope_x = oscilliscope_x + 1;
   if (oscilliscope_x > 127) {
     return;
   }
 
-  tft.drawLine(oscilliscope_x, 64 + (lastbuffer[oscilliscope_x-1] >> 5), oscilliscope_x + 1, 64 + (lastbuffer[oscilliscope_x] >> 5), ST7735_BLACK);
-  tft.drawLine(oscilliscope_x, 64 + (buffer[oscilliscope_x-1] >> 5), oscilliscope_x + 1, 64 + (buffer[oscilliscope_x] >> 5), ST7735_GREEN);
+  tft.drawLine(oscilliscope_x, 64 + (lastbuffer[oscilliscope_x-1] >> 8), oscilliscope_x + 1, 64 + (lastbuffer[oscilliscope_x] >> 8), ST7735_BLACK);
+  tft.drawLine(oscilliscope_x, 64 + (buffer[oscilliscope_x-1] >> 8), oscilliscope_x + 1, 64 + (buffer[oscilliscope_x] >> 8), ST7735_GREEN);
 
   
 }
