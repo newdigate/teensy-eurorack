@@ -1,4 +1,4 @@
-EESchema Schematic File Version 5
+EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -12,11 +12,6 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
-Comment5 ""
-Comment6 ""
-Comment7 ""
-Comment8 ""
-Comment9 ""
 $EndDescr
 Wire Wire Line
 	5600 3900 6100 3900
