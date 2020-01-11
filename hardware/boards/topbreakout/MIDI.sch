@@ -1,9 +1,9 @@
-EESchema Schematic File Version 5
+EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 8
+Sheet 13 13
 Title ""
 Date ""
 Rev ""
@@ -12,11 +12,6 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
-Comment5 ""
-Comment6 ""
-Comment7 ""
-Comment8 ""
-Comment9 ""
 $EndDescr
 Wire Wire Line
 	7000 3700 7200 3700
@@ -81,12 +76,12 @@ Wire Wire Line
 Text GLabel 4800 3300 0    70   BiDi ~ 0
 MIDI_IN_PIN5
 $Comp
-L Mainboard-eagle-import:R-US_R0805 R2
+L Mainboard-eagle-import:R-US_R0805 R?
 U 1 1 35ADC47D
 P 5700 3300
-AR Path="/35ADC47D" Ref="R2"  Part="1" 
-AR Path="/5D8CF794/35ADC47D" Ref="R2"  Part="1" 
-F 0 "R2" H 5550 3359 59  0000 L BNN
+AR Path="/35ADC47D" Ref="R?"  Part="1" 
+AR Path="/5D8CF794/35ADC47D" Ref="R39"  Part="1" 
+F 0 "R39" H 5550 3359 59  0000 L BNN
 F 1 "220" H 5550 3170 59  0000 L BNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" H 5700 3300 50  0001 C CNN
 F 3 "" H 5700 3300 50  0001 C CNN
@@ -94,12 +89,12 @@ F 3 "" H 5700 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-eagle-import:GND #GND0101
+L Mainboard-eagle-import:GND #GND?
 U 1 1 BFE1AC94
 P 7200 4000
-AR Path="/BFE1AC94" Ref="#GND0101"  Part="1" 
-AR Path="/5D8CF794/BFE1AC94" Ref="#GND0101"  Part="1" 
-F 0 "#GND0101" H 7200 4000 50  0001 C CNN
+AR Path="/BFE1AC94" Ref="#GND?"  Part="1" 
+AR Path="/5D8CF794/BFE1AC94" Ref="#GND033"  Part="1" 
+F 0 "#GND033" H 7200 4000 50  0001 C CNN
 F 1 "GND" H 7100 3900 59  0000 L BNN
 F 2 "" H 7200 4000 50  0001 C CNN
 F 3 "" H 7200 4000 50  0001 C CNN
@@ -107,12 +102,12 @@ F 3 "" H 7200 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-eagle-import:R-US_R0805 R5
+L Mainboard-eagle-import:R-US_R0805 R?
 U 1 1 E7324063
 P 7300 3200
-AR Path="/E7324063" Ref="R5"  Part="1" 
-AR Path="/5D8CF794/E7324063" Ref="R5"  Part="1" 
-F 0 "R5" H 7150 3259 59  0000 L BNN
+AR Path="/E7324063" Ref="R?"  Part="1" 
+AR Path="/5D8CF794/E7324063" Ref="R41"  Part="1" 
+F 0 "R41" H 7150 3259 59  0000 L BNN
 F 1 "220" H 7150 3070 59  0000 L BNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" H 7300 3200 50  0001 C CNN
 F 3 "" H 7300 3200 50  0001 C CNN
@@ -120,12 +115,12 @@ F 3 "" H 7300 3200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Mainboard-eagle-import:R-US_R0805 R1
+L Mainboard-eagle-import:R-US_R0805 R?
 U 1 1 0D065E34
 P 5500 4900
-AR Path="/0D065E34" Ref="R1"  Part="1" 
-AR Path="/5D8CF794/0D065E34" Ref="R1"  Part="1" 
-F 0 "R1" H 5350 4959 59  0000 L BNN
+AR Path="/0D065E34" Ref="R?"  Part="1" 
+AR Path="/5D8CF794/0D065E34" Ref="R38"  Part="1" 
+F 0 "R38" H 5350 4959 59  0000 L BNN
 F 1 "220" H 5350 4770 59  0000 L BNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" H 5500 4900 50  0001 C CNN
 F 3 "" H 5500 4900 50  0001 C CNN
@@ -133,12 +128,12 @@ F 3 "" H 5500 4900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Mainboard-eagle-import:R-US_R0805 R3
+L Mainboard-eagle-import:R-US_R0805 R?
 U 1 1 87680542
 P 5800 5500
-AR Path="/87680542" Ref="R3"  Part="1" 
-AR Path="/5D8CF794/87680542" Ref="R3"  Part="1" 
-F 0 "R3" H 5650 5559 59  0000 L BNN
+AR Path="/87680542" Ref="R?"  Part="1" 
+AR Path="/5D8CF794/87680542" Ref="R40"  Part="1" 
+F 0 "R40" H 5650 5559 59  0000 L BNN
 F 1 "220" H 5650 5370 59  0000 L BNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" H 5800 5500 50  0001 C CNN
 F 3 "" H 5800 5500 50  0001 C CNN
@@ -146,12 +141,12 @@ F 3 "" H 5800 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-eagle-import:OPTO_DARL_6N138S U$3
+L Mainboard-eagle-import:OPTO_DARL_6N138S U$?
 U 1 1 5D8CFC49
 P 6500 3400
-AR Path="/5D8CFC49" Ref="U$3"  Part="1" 
-AR Path="/5D8CF794/5D8CFC49" Ref="U$3"  Part="1" 
-F 0 "U$3" H 6500 3400 50  0001 C CNN
+AR Path="/5D8CFC49" Ref="U$?"  Part="1" 
+AR Path="/5D8CF794/5D8CFC49" Ref="U$4"  Part="1" 
+F 0 "U$4" H 6500 3400 50  0001 C CNN
 F 1 "OPTO_DARL_6N138S" H 6360 2880 59  0000 L BNN
 F 2 "Mainboard:8-SMD" H 6500 3400 50  0001 C CNN
 F 3 "" H 6500 3400 50  0001 C CNN
@@ -163,10 +158,10 @@ PIN4
 Text Notes 5200 5300 0    59   ~ 0
 PIN5
 $Comp
-L power:+3V3 #PWR0105
+L power:+3V3 #PWR028
 U 1 1 5D8DBD16
 P 7100 2800
-F 0 "#PWR0105" H 7100 2650 50  0001 C CNN
+F 0 "#PWR028" H 7100 2650 50  0001 C CNN
 F 1 "+3V3" H 7115 2973 50  0000 C CNN
 F 2 "" H 7100 2800 50  0001 C CNN
 F 3 "" H 7100 2800 50  0001 C CNN
@@ -174,10 +169,10 @@ F 3 "" H 7100 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR0106
+L power:+3V3 #PWR027
 U 1 1 5D8DCA7C
 P 5500 4700
-F 0 "#PWR0106" H 5500 4550 50  0001 C CNN
+F 0 "#PWR027" H 5500 4550 50  0001 C CNN
 F 1 "+3V3" H 5515 4873 50  0000 C CNN
 F 2 "" H 5500 4700 50  0001 C CNN
 F 3 "" H 5500 4700 50  0001 C CNN
@@ -185,10 +180,10 @@ F 3 "" H 5500 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D D1
+L Device:D D3
 U 1 1 5D8DED8D
 P 6000 3500
-F 0 "D1" V 5954 3579 50  0000 L CNN
+F 0 "D3" V 5954 3579 50  0000 L CNN
 F 1 "D" V 6045 3579 50  0000 L CNN
 F 2 "Diodes_SMD:D_0805" H 6000 3500 50  0001 C CNN
 F 3 "~" H 6000 3500 50  0001 C CNN

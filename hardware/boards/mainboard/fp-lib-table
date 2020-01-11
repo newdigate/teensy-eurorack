@@ -1,4 +1,5 @@
 (fp_lib_table
-  (lib (name "Mainboard")(type "KiCad")(uri "${KIPRJMOD}/Mainboard.pretty")(options "")(descr ""))
-  (lib (name "knobs")(type "KiCad")(uri "${KIPRJMOD}/../knobs-controller/knobs.pretty")(options "")(descr ""))
+  (lib (name Mainboard)(type KiCad)(uri ${KIPRJMOD}/Mainboard.pretty)(options "")(descr ""))
+  (lib (name knobs)(type KiCad)(uri ${KIPRJMOD}/../knobs-controller/knobs.pretty)(options "")(descr ""))
+  (lib (name topbreakout)(type KiCad)(uri /Users/nicholasnewdigate/Development/github/newdigate/v1.7/hardware/boards/topbreakout/topbreakout.pretty)(options "")(descr ""))
 )

@@ -9,9 +9,7 @@ open source **[hardware](hardware) and [software](software) for a [teensy 4.0](h
 * [social media](#social-media)
 * [printed circuit boards](#printed-circuit-boards)
   * [mainboard](#mainboard)
-  * [breakout boards](#breakout-boards)
-    * [top breakout](#top-breakout)
-    * [knobs-controller](#knobs-controller)
+  * [breakout board](#breakout-board)
 * [panel design](#panel-design)  
 * [assembly technical drawings](#assembly-technical-drawings)
 * [videos](#videos)
@@ -67,22 +65,18 @@ What you can do if you like to see progress with this project?
 
 <img src='hardware/boards/mainboard/images/mainboard-top.png' width='300px'/> <img src='hardware/boards/mainboard/images/mainboard-bottom.png' width='300px'/> 
 
-## breakout boards 
-### [top breakout](hardware/boards/topbreakout) 
+## breakout board
 * **2-layer:** 
-* 3.5mm jack analog inputs/outputs
-* midi in/out, 
-* usb device/host,
+* 8 x 3.5mm jack analog control voltage inputs
+* 4 x 3.5mm jack analog control voltage outputs
+* 4 x 3.5mm jack for 5 voltage general purpose inputs or outputs 
+* midi in/out
+* usb device/host
 * microSD female connector
-
-<img src='hardware/boards/topbreakout/images/TopBreakout-front.png' width='300px'/> <img src='hardware/boards/topbreakout/images/TopBreakout-back.png' width='300px'/>
-
-### [knobs-controller](hardware/boards/knobs-controller) 
-* **2-layer:** 
 * 4 x pots
 * 3 x RGB rotary encoders with switches 
-* SAMD21 32bit 48Mhz micro-controller
-* Based on Arduino MKR Zero board (can be programmed through standard arduino ide)
+* SAMD21 32bit 48Mhz micro-controller for pots and rotaries
+  * Based on Arduino MKR Zero board (can be programmed through standard arduino ide)
 * Communicates with mainboard via standard serial uart RX and TX lines.
 
 <img src='hardware/boards/knobs-controller/images/Knob_controller_top_view.png' width='250px'/> <img src='hardware/boards/knobs-controller/images/Knob_controller_bottom_view.png' width='250px'/>

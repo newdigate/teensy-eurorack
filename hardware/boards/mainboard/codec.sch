@@ -1,4 +1,4 @@
-EESchema Schematic File Version 5
+EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
 $Descr User 13529 9224
@@ -12,11 +12,6 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
-Comment5 ""
-Comment6 ""
-Comment7 ""
-Comment8 ""
-Comment9 ""
 $EndDescr
 Wire Wire Line
 	4900 6100 4000 6100
@@ -102,8 +97,6 @@ Connection ~ 8150 2200
 Connection ~ 7900 2200
 Connection ~ 7650 2200
 Connection ~ 7400 2200
-Text GLabel 7100 2100 0    10   BiDi ~ 0
-GND
 Wire Wire Line
 	4900 6300 4100 6300
 Wire Wire Line
@@ -574,7 +567,7 @@ P 7400 1950
 AR Path="/1203FA24" Ref="C?"  Part="1" 
 AR Path="/5D773153/1203FA24" Ref="C17"  Part="1" 
 F 0 "C17" H 7250 2000 42  0000 L BNN
-F 1 "100nf" H 7250 1850 42  0000 L BNN
+F 1 "0.1uf" H 7250 1850 42  0000 L BNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7400 1950 50  0001 C CNN
 F 3 "" H 7400 1950 50  0001 C CNN
 	1    7400 1950
@@ -587,7 +580,7 @@ P 7650 1950
 AR Path="/14EE9965" Ref="C?"  Part="1" 
 AR Path="/5D773153/14EE9965" Ref="C18"  Part="1" 
 F 0 "C18" H 7500 2000 42  0000 L BNN
-F 1 "100nf" H 7500 1850 42  0000 L BNN
+F 1 "0.1uf" H 7500 1850 42  0000 L BNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7650 1950 50  0001 C CNN
 F 3 "" H 7650 1950 50  0001 C CNN
 	1    7650 1950

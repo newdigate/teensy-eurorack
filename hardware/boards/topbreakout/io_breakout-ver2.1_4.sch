@@ -1,9 +1,9 @@
-EESchema Schematic File Version 5
+EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 8
+Sheet 10 13
 Title ""
 Date ""
 Rev ""
@@ -12,11 +12,6 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
-Comment5 ""
-Comment6 ""
-Comment7 ""
-Comment8 ""
-Comment9 ""
 $EndDescr
 Wire Wire Line
 	5300 3600 6200 3600
@@ -47,12 +42,12 @@ Wire Wire Line
 Text GLabel 4700 3900 0    70   BiDi ~ 0
 VIN
 $Comp
-L TopBreakout-eagle-import:GND #GND9
-U 1 1 158B4DC7
+L TopBreakout-eagle-import:GND #GND?
+U 1 1 5E09D776
 P 5300 3700
-AR Path="/158B4DC7" Ref="#GND9"  Part="1" 
-AR Path="/5D7F4364/158B4DC7" Ref="#GND09"  Part="1" 
-F 0 "#GND09" H 5300 3700 50  0001 C CNN
+AR Path="/5E09D776" Ref="#GND?"  Part="1" 
+AR Path="/5D7F4364/5E09D776" Ref="#GND028"  Part="1" 
+F 0 "#GND028" H 5300 3700 50  0001 C CNN
 F 1 "GND" H 5200 3600 59  0000 L BNN
 F 2 "" H 5300 3700 50  0001 C CNN
 F 3 "" H 5300 3700 50  0001 C CNN
@@ -60,12 +55,12 @@ F 3 "" H 5300 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TopBreakout-eagle-import:ST7735_1.4 J4
+L TopBreakout-eagle-import:ST7735_1.4 J?
 U 1 1 5FA14143
 P 7000 4100
-AR Path="/5FA14143" Ref="J4"  Part="1" 
-AR Path="/5D7F4364/5FA14143" Ref="J4"  Part="1" 
-F 0 "J4" H 6800 4620 70  0000 L BNN
+AR Path="/5FA14143" Ref="J?"  Part="1" 
+AR Path="/5D7F4364/5FA14143" Ref="J59"  Part="1" 
+F 0 "J59" H 6800 4620 70  0000 L BNN
 F 1 "ST7735_1.4" H 7000 4100 50  0001 C CNN
 F 2 "topbreakout:ST7735" H 7000 4100 50  0001 C CNN
 F 3 "" H 7000 4100 50  0001 C CNN

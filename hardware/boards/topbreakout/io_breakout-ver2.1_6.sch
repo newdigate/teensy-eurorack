@@ -1,9 +1,9 @@
-EESchema Schematic File Version 5
+EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 8
+Sheet 12 13
 Title ""
 Date ""
 Rev ""
@@ -12,11 +12,6 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
-Comment5 ""
-Comment6 ""
-Comment7 ""
-Comment8 ""
-Comment9 ""
 $EndDescr
 Wire Wire Line
 	4500 4000 3800 4000
@@ -120,12 +115,12 @@ Connection ~ 7800 2200
 Connection ~ 6200 2200
 Connection ~ 6100 4200
 $Comp
-L TopBreakout-eagle-import:ANALOG_DEVICES_AD5754BREZANALOG_DEVICES_AD5754BREZ_0_2 U3
-U 1 1 5C95457F
+L TopBreakout-eagle-import:ANALOG_DEVICES_AD5754BREZANALOG_DEVICES_AD5754BREZ_0_2 U?
+U 1 1 5E09D778
 P 4700 3400
-AR Path="/5C95457F" Ref="U3"  Part="1" 
-AR Path="/5D7F4465/5C95457F" Ref="U3"  Part="1" 
-F 0 "U3" H 4700 3300 85  0000 L TNN
+AR Path="/5E09D778" Ref="U?"  Part="1" 
+AR Path="/5D7F4465/5E09D778" Ref="U4"  Part="1" 
+F 0 "U4" H 4700 3300 85  0000 L TNN
 F 1 "ANALOG_DEVICES_AD5754BREZANALOG_DEVICES_AD5754BREZ_0_2" H 4700 3400 50  0001 C CNN
 F 2 "topbreakout:ANALOG_DEVICES_AD5754BREZ_2" H 4700 3400 50  0001 C CNN
 F 3 "" H 4700 3400 50  0001 C CNN
@@ -133,10 +128,10 @@ F 3 "" H 4700 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TopBreakout-eagle-import:TEST-POINT3X5 TP3
+L TopBreakout-eagle-import:TEST-POINT3X5 TP?
 U 1 1 BC758AA8
 P 6100 4200
-AR Path="/BC758AA8" Ref="TP3"  Part="1" 
+AR Path="/BC758AA8" Ref="TP?"  Part="1" 
 AR Path="/5D7F4465/BC758AA8" Ref="TP3"  Part="1" 
 F 0 "TP3" H 6000 4300 70  0001 L BNN
 F 1 "TEST-POINT3X5" V 6000 4200 70  0001 R TNN
@@ -146,12 +141,12 @@ F 3 "" H 6100 4200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L TopBreakout-eagle-import:GND #GND2
+L TopBreakout-eagle-import:GND #GND?
 U 1 1 C92C8F3B
 P 6300 6100
-AR Path="/C92C8F3B" Ref="#GND2"  Part="1" 
-AR Path="/5D7F4465/C92C8F3B" Ref="#GND02"  Part="1" 
-F 0 "#GND02" H 6300 6100 50  0001 C CNN
+AR Path="/C92C8F3B" Ref="#GND?"  Part="1" 
+AR Path="/5D7F4465/C92C8F3B" Ref="#GND032"  Part="1" 
+F 0 "#GND032" H 6300 6100 50  0001 C CNN
 F 1 "GND" H 6200 6000 59  0000 L BNN
 F 2 "" H 6300 6100 50  0001 C CNN
 F 3 "" H 6300 6100 50  0001 C CNN
@@ -159,12 +154,12 @@ F 3 "" H 6300 6100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TopBreakout-eagle-import:GND #GND4
+L TopBreakout-eagle-import:GND #GND?
 U 1 1 6AE2E73F
 P 2600 5100
-AR Path="/6AE2E73F" Ref="#GND4"  Part="1" 
-AR Path="/5D7F4465/6AE2E73F" Ref="#GND04"  Part="1" 
-F 0 "#GND04" H 2600 5100 50  0001 C CNN
+AR Path="/6AE2E73F" Ref="#GND?"  Part="1" 
+AR Path="/5D7F4465/6AE2E73F" Ref="#GND029"  Part="1" 
+F 0 "#GND029" H 2600 5100 50  0001 C CNN
 F 1 "GND" H 2500 5000 59  0000 L BNN
 F 2 "" H 2600 5100 50  0001 C CNN
 F 3 "" H 2600 5100 50  0001 C CNN
@@ -172,10 +167,10 @@ F 3 "" H 2600 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TopBreakout-eagle-import:MICROCHIP_MCP1700T-2502E-TTMICROCHIP_MCP1700T-2502E-TT_0_0 U5
+L TopBreakout-eagle-import:MICROCHIP_MCP1700T-2502E-TTMICROCHIP_MCP1700T-2502E-TT_0_0 U?
 U 1 1 E98390DC
 P 5000 1900
-AR Path="/E98390DC" Ref="U5"  Part="1" 
+AR Path="/E98390DC" Ref="U?"  Part="1" 
 AR Path="/5D7F4465/E98390DC" Ref="U5"  Part="1" 
 F 0 "U5" H 5000 1800 85  0000 L TNN
 F 1 "MICROCHIP_MCP1700T-2502E-TTMICROCHIP_MCP1700T-2502E-TT_0_0" H 5000 1900 50  0001 C CNN
@@ -185,12 +180,12 @@ F 3 "" H 5000 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TopBreakout-eagle-import:GND #GND5
+L TopBreakout-eagle-import:GND #GND?
 U 1 1 6CC61BFB
 P 5800 2500
-AR Path="/6CC61BFB" Ref="#GND5"  Part="1" 
-AR Path="/5D7F4465/6CC61BFB" Ref="#GND05"  Part="1" 
-F 0 "#GND05" H 5800 2500 50  0001 C CNN
+AR Path="/6CC61BFB" Ref="#GND?"  Part="1" 
+AR Path="/5D7F4465/6CC61BFB" Ref="#GND031"  Part="1" 
+F 0 "#GND031" H 5800 2500 50  0001 C CNN
 F 1 "GND" H 5700 2400 59  0000 L BNN
 F 2 "" H 5800 2500 50  0001 C CNN
 F 3 "" H 5800 2500 50  0001 C CNN
@@ -198,12 +193,12 @@ F 3 "" H 5800 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TopBreakout-eagle-import:C-EUC1206 C6
+L TopBreakout-eagle-import:C-EUC1206 C?
 U 1 1 FDFA29AC
 P 7800 2300
-AR Path="/FDFA29AC" Ref="C6"  Part="1" 
-AR Path="/5D7F4465/FDFA29AC" Ref="C6"  Part="1" 
-F 0 "C6" V 7650 2250 59  0000 C CNN
+AR Path="/FDFA29AC" Ref="C?"  Part="1" 
+AR Path="/5D7F4465/FDFA29AC" Ref="C30"  Part="1" 
+F 0 "C30" V 7650 2250 59  0000 C CNN
 F 1 "0.1uF" V 7950 2250 59  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 7800 2300 50  0001 C CNN
 F 3 "" H 7800 2300 50  0001 C CNN
@@ -211,12 +206,12 @@ F 3 "" H 7800 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TopBreakout-eagle-import:C-EUC1206 C9
+L TopBreakout-eagle-import:C-EUC1206 C?
 U 1 1 5BE03534
 P 8300 2300
-AR Path="/5BE03534" Ref="C9"  Part="1" 
-AR Path="/5D7F4465/5BE03534" Ref="C9"  Part="1" 
-F 0 "C9" V 8150 2250 59  0000 C CNN
+AR Path="/5BE03534" Ref="C?"  Part="1" 
+AR Path="/5D7F4465/5BE03534" Ref="C31"  Part="1" 
+F 0 "C31" V 8150 2250 59  0000 C CNN
 F 1 "0.1uF" V 8450 2250 59  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 8300 2300 50  0001 C CNN
 F 3 "" H 8300 2300 50  0001 C CNN
@@ -224,12 +219,12 @@ F 3 "" H 8300 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TopBreakout-eagle-import:C-EUC1206 C10
+L TopBreakout-eagle-import:C-EUC1206 C?
 U 1 1 E5C7F153
 P 2600 2300
-AR Path="/E5C7F153" Ref="C10"  Part="1" 
-AR Path="/5D7F4465/E5C7F153" Ref="C10"  Part="1" 
-F 0 "C10" V 2400 2250 59  0000 C CNN
+AR Path="/E5C7F153" Ref="C?"  Part="1" 
+AR Path="/5D7F4465/E5C7F153" Ref="C28"  Part="1" 
+F 0 "C28" V 2400 2250 59  0000 C CNN
 F 1 "0.1uF" V 2750 2250 59  0000 C CNN
 F 2 "Capacitors_SMD:C_0805" H 2600 2300 50  0001 C CNN
 F 3 "" H 2600 2300 50  0001 C CNN
@@ -237,12 +232,12 @@ F 3 "" H 2600 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TopBreakout-eagle-import:C-EUC1206 C11
+L TopBreakout-eagle-import:C-EUC1206 C?
 U 1 1 608006B0
 P 3100 2300
-AR Path="/608006B0" Ref="C11"  Part="1" 
-AR Path="/5D7F4465/608006B0" Ref="C11"  Part="1" 
-F 0 "C11" V 2950 2250 59  0000 C CNN
+AR Path="/608006B0" Ref="C?"  Part="1" 
+AR Path="/5D7F4465/608006B0" Ref="C29"  Part="1" 
+F 0 "C29" V 2950 2250 59  0000 C CNN
 F 1 "0.1uF" V 3250 2250 59  0000 C CNN
 F 2 "Capacitors_SMD:C_0805" H 3100 2300 50  0001 C CNN
 F 3 "" H 3100 2300 50  0001 C CNN
@@ -250,12 +245,12 @@ F 3 "" H 3100 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TopBreakout-eagle-import:GND #GND6
+L TopBreakout-eagle-import:GND #GND?
 U 1 1 6DBAC010
 P 3000 2800
-AR Path="/6DBAC010" Ref="#GND6"  Part="1" 
-AR Path="/5D7F4465/6DBAC010" Ref="#GND06"  Part="1" 
-F 0 "#GND06" H 3000 2800 50  0001 C CNN
+AR Path="/6DBAC010" Ref="#GND?"  Part="1" 
+AR Path="/5D7F4465/6DBAC010" Ref="#GND030"  Part="1" 
+F 0 "#GND030" H 3000 2800 50  0001 C CNN
 F 1 "GND" H 2900 2700 59  0000 L BNN
 F 2 "" H 3000 2800 50  0001 C CNN
 F 3 "" H 3000 2800 50  0001 C CNN
@@ -274,19 +269,6 @@ NoConn ~ 5900 5000
 Connection ~ 2600 2200
 Wire Wire Line
 	2600 2200 2150 2200
-$Comp
-L TopBreakout-eagle-import:TEST-POINT3X5 TP?
-U 1 1 5E0D7D26
-P 3800 4000
-AR Path="/5E0D7D26" Ref="TP?"  Part="1" 
-AR Path="/5D7F4465/5E0D7D26" Ref="TP10"  Part="1" 
-F 0 "TP10" H 3700 4100 70  0001 L BNN
-F 1 "TEST-POINT3X5" V 3700 4000 70  0001 R TNN
-F 2 "topbreakout:PAD.03X.05" H 3800 4000 50  0001 C CNN
-F 3 "" H 3800 4000 50  0001 C CNN
-	1    3800 4000
-	0    1    1    0   
-$EndComp
 Text GLabel 7050 3800 2    70   BiDi ~ 0
 DA_V2
 Wire Wire Line
@@ -306,8 +288,8 @@ L TopBreakout-eagle-import:TEST-POINT3X5 TP?
 U 1 1 5E139C99
 P 3000 3800
 AR Path="/5E139C99" Ref="TP?"  Part="1" 
-AR Path="/5D7F4465/5E139C99" Ref="TP11"  Part="1" 
-F 0 "TP11" H 2900 3900 70  0001 L BNN
+AR Path="/5D7F4465/5E139C99" Ref="TP2"  Part="1" 
+F 0 "TP2" H 2900 3900 70  0001 L BNN
 F 1 "TEST-POINT3X5" V 2900 3800 70  0001 R TNN
 F 2 "topbreakout:PAD.03X.05" H 3000 3800 50  0001 C CNN
 F 3 "" H 3000 3800 50  0001 C CNN
