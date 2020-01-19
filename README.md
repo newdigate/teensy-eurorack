@@ -128,7 +128,7 @@ What you can do if you like to see progress with this project?
   - [x] ~~design~~
 - [ ] Finalize circuits / boards
 - [ ] Testing
-  - [ ] CS42448 audio codec
+  - [x] ~~CS42448 audio codec~~
     - [x] ~~Audio input~~
     - [x] ~~Audio output~~
   - [ ] control voltage input
