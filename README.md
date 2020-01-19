@@ -40,6 +40,7 @@ Together, these circuit boards provide a set of peripherals for a teensy 4.0 mic
 ```status: pcboards and stencils ordered from jlcpcb.```
 * circuit corrections
   * adc: corrected AVSS net, should have been VSS
+  * removed unused through-hole pads from underside of teensy board.
 * physical
   * merged knobs-controller and top-breakout pc-boards into single board
   * tft display rotated 90 degrees
