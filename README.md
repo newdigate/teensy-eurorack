@@ -36,19 +36,21 @@ Together, these circuit boards provide a set of peripherals for a teensy 4.0 mic
 * **programability**: write arduino compatible c/c++ firmware & program using arduino/teensyduino ([plus teensy audio library](https://www.pjrc.com/teensy/gui/))
 
 ## versions
-* v1.7 (current)
-  * circuit corrections
-    * adc: corrected AVSS net, should have been VSS
-  * physical
-    * merged knobs-controller and top-breakout pc-boards into single board
-    * tft display rotated 90 degrees
-    * sd-connector socket rotated 90 degrees
-    * replaced fine-pitch FPC/FFC connectors with standard 0.1' pin-headers and sockets, allowing boards to connect physically    
-* v1.6:
-  * circuit corrections
-    * corrected: knobs-controller: tx/rx nets were not connected to socket  
-    * enhancement: adc: AD_RESET net connected to micro-controller
-    * enhancement: introduced PCA9536 i2c GPIO integrated-circuit to free-up some pins on the micro-controller
+### v1.7 (current)
+```status: pcboards and stencils ordered from jlcpcb.```
+* circuit corrections
+  * adc: corrected AVSS net, should have been VSS
+* physical
+  * merged knobs-controller and top-breakout pc-boards into single board
+  * tft display rotated 90 degrees
+  * sd-connector socket rotated 90 degrees
+  * replaced fine-pitch FPC/FFC connectors with standard 0.1' pin-headers and sockets, allowing boards to connect physically    
+
+### v1.6:
+* circuit corrections
+  * **corrected:** knobs-controller: tx/rx nets were not connected to socket  
+  * **enhancement:** adc: AD_RESET net connected to micro-controller
+  * **enhancement:** introduced PCA9536 i2c GPIO integrated-circuit to free-up some pins on the micro-controller
     
 ## Open source software stack
 * All [schematics](hardware/CIRCUITS.md) and boards are created using [Kicad](http://kicad-pcb.org/) 
