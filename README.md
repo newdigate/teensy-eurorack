@@ -6,8 +6,8 @@ These circuit boards provide the peripherals necessary for a teensy 4.0 micro-co
 
 ## contents
 * [specifications](#specifications)
-* [software](#open-source-software-stack)
 * [versions](#versions)
+* [software-stack](#open-source-software-stack)
 * [support](#support)
 * [social media](#social-media)
 * [printed circuit boards](#printed-circuit-boards)
@@ -65,7 +65,7 @@ This project is a work-in-progress! Here is a journal of my progress, [journal.m
 What you can do if you like to see progress with this project?
 * star this repository (means you need a github account - go for it!!)
 * subscribe [Nic N on youtube](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) & [DIY Audio Electronics Maker](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g)
-* clone this repo, make improvements, commit & send pull-requests
+* download kicad and freecad, clone this repo, make improvements, commit & send pull-requests, and raise issues...
 
 ## social media
 * facebook: 
