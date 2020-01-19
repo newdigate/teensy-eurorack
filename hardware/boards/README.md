@@ -2,7 +2,9 @@
  * [mainboard](#mainboard)
  * [knobs controller](#knobs-controller)
  
-All circuit boards are standard double layer boards with 6 mil clearance. I have been using jlcpcb to fabricate my circuit boards.  
+All circuit boards are standard double layer boards with minimum 6 mil clearance and 6 mil traces. 
+
+I have been using jlcpcb to fabricate my circuit boards.  
 
 ## [mainboard](mainboard) 
 * **2-layer:**
