@@ -2,8 +2,10 @@
 
 open source **[hardware](hardware) and [software](software) for a [teensy 4.0](https://www.pjrc.com/store/teensy40.html "teensy 4.0 board") eurorack shield** 
 
+These circuit boards provide the peripherals necessary for a teensy 4.0 micro-controller board to interface with standard eurorack modular equipment.
+
 ## contents
-* [what is it](#what-is-it)
+* [specifications](#specifications)
 * [software](#open-source-software-stack)
 * [versions](#versions)
 * [support](#support)
@@ -16,9 +18,7 @@ open source **[hardware](hardware) and [software](software) for a [teensy 4.0](h
 * [videos](#videos)
 * [todo](#todo)
 
-## what is it
-These circuit boards provide the peripherals necessary for a teensy 4.0 micro-controller board to interface with standard eurorack modular equipment.
-
+## specifications
 * **microcontroller:** 600 Mhz ARM cortex m7 ( [teensy 4.0 board](https://www.pjrc.com/store/teensy40.html "teensy 4.0 board") )
 * **audio:** multi-channel audio codec ( 6-in / 8-out 24-bit sound card - [CS42448](https://statics.cirrus.com/pubs/proDatasheet/CS42448_F5.pdf) )
   * *the audio codec circuit originally started as a discussion on quad audio channel outputs and a pcb design integrating teensy and cs42448 from Paul Stoffregen on [pjrc forum](https://forum.pjrc.com/threads/41371-Quad-channel-output-on-Teensy-3-6?p=138828&viewfull=1#post138828)*
@@ -48,6 +48,8 @@ These circuit boards provide the peripherals necessary for a teensy 4.0 micro-co
 ### v1.6:
 * circuit corrections
   * **corrected:** knobs-controller: tx/rx nets were not connected to socket  
+  * **enhancement:** extra uart exposed allowing serial communications on the unused power bus connector
+    * added 2 jumper-switches to configure master/slave - rx/tx cross-over 
   * **enhancement:** adc: AD_RESET net connected to micro-controller
   * **enhancement:** introduced PCA9536 i2c GPIO integrated-circuit to free-up some pins on the micro-controller
     
