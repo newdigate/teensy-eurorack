@@ -2,7 +2,7 @@
 
 **open source [hardware](hardware) and [software](software) for a [teensy 4.0](https://www.pjrc.com/store/teensy40.html "teensy 4.0 board") eurorack shield** 
 
-These circuit boards provide the peripherals necessary for a teensy 4.0 micro-controller board to interface with standard eurorack modular equipment.
+These circuit boards provide the peripherals necessary to interface a [teensy 4.0](https://www.pjrc.com/store/teensy40.html "teensy 4.0 board") with stereo line audio and eurorack modular equipment.
 
 ## contents
 * [specifications](#specifications)
