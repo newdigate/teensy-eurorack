@@ -34,6 +34,15 @@ Together, these circuit boards provide a set of peripherals for a teensy 4.0 mic
 * **panel:** 24HP aluminium panel mounted for eurorack case
 * **programability**: write arduino compatible c/c++ firmware & program using arduino/teensyduino ([plus teensy audio library](https://www.pjrc.com/teensy/gui/))
 
+## versions
+* v1.7
+  * corrections
+    * adc: corrected AVSS net, should have been VSS
+  * improvements to simplify assembling
+    * merged knobs-controller and top-breakout pc-boards into single board
+    * removed pesky fine-pitch FPC/FFC connectors, 
+    * replaced with standard 0.1' headers and socket, allowing boards to connect physically 
+    
 ## Open source software stack
 * All [schematics](hardware/CIRCUITS.md) and boards are created using [Kicad](http://kicad-pcb.org/) 
 * All mechanical designs are created using [FreeCAD](https://github.com/FreeCAD/FreeCAD)
