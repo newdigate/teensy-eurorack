@@ -1,10 +1,13 @@
 # eurorack digital audio-module dev-kit [![Join the chat at https://gitter.im/newdigate/teensy-eurorack](https://badges.gitter.im/newdigate/teensy-eurorack.svg)](https://gitter.im/newdigate/teensy-eurorack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-open source **[hardware](hardware) and [software](software) for a [teensy 4.0](https://www.pjrc.com/store/teensy40.html "teensy 4.0 board") eurorack shield** 
+**open source [hardware](hardware) and [software](software) for a [teensy 4.0](https://www.pjrc.com/store/teensy40.html "teensy 4.0 board") eurorack shield** 
+
+These circuit boards provide the peripherals necessary for a teensy 4.0 micro-controller board to interface with standard eurorack modular equipment.
 
 ## contents
-* [what is it](#what-is-it)
-* [software](#open-source-software-stack)
+* [specifications](#specifications)
+* [versions](#versions)
+* [software-stack](#open-source-software-stack)
 * [support](#support)
 * [social media](#social-media)
 * [printed circuit boards](#printed-circuit-boards)
@@ -15,11 +18,7 @@ open source **[hardware](hardware) and [software](software) for a [teensy 4.0](h
 * [videos](#videos)
 * [todo](#todo)
 
-## what is it
-<img src='hardware/images/x-front.png' height='150px'/>  <img src='hardware/images/x-frontside.png' height='150px'/> <img src='hardware/images/x-side.png' height='150px'/> <img src='hardware/images/x-backside.png' height='150px'/>  <img src='hardware/images/x-back.png' height='150px'/>
-
-Together, these circuit boards provide a set of peripherals for a teensy 4.0 micro-controller board - allowing it to interface with standard eurorack modular equipment.
-
+## specifications
 * **microcontroller:** 600 Mhz ARM cortex m7 ( [teensy 4.0 board](https://www.pjrc.com/store/teensy40.html "teensy 4.0 board") )
 * **audio:** multi-channel audio codec ( 6-in / 8-out 24-bit sound card - [CS42448](https://statics.cirrus.com/pubs/proDatasheet/CS42448_F5.pdf) )
   * *the audio codec circuit originally started as a discussion on quad audio channel outputs and a pcb design integrating teensy and cs42448 from Paul Stoffregen on [pjrc forum](https://forum.pjrc.com/threads/41371-Quad-channel-output-on-Teensy-3-6?p=138828&viewfull=1#post138828)*
@@ -30,10 +29,32 @@ Together, these circuit boards provide a set of peripherals for a teensy 4.0 mic
   * USB host/device, 
   * midi in/out, 
   * knobs (4 x pots, 3 x RGB encoders w/switch)
-* **gpio:** 4 x configurable 5v logic inputs/outputs. 
+* **gpio:** 4 x configurable 5v logic inputs/outputs. [PCA9536](https://www.ti.com/lit/ds/symlink/pca9536.pdf)
 * **panel:** 24HP aluminium panel mounted for eurorack case
 * **programability**: write arduino compatible c/c++ firmware & program using arduino/teensyduino ([plus teensy audio library](https://www.pjrc.com/teensy/gui/))
 
+## versions
+### v1.7 (current)
+```status: pcboards and stencils ordered from jlcpcb.```
+* circuit corrections
+  * adc: corrected AVSS net, should have been VSS
+  * removed unused through-hole pads from underside of teensy board.
+* physical
+  * merged knobs-controller and top-breakout pc-boards into single board
+  * tft display rotated 90 degrees
+  * sd-connector socket rotated 90 degrees
+  * replaced fine-pitch FPC/FFC connectors with standard 0.1' pin-headers and sockets, allowing boards to connect physically    
+
+### v1.6:
+* circuit corrections
+  * **corrected:** knobs-controller: tx/rx nets were not connected to socket  
+  * **enhancement:** extra uart exposed 
+    * allows serial communications via the unused pins in the eurorack power-connector
+    * 2 jumper-switches added to switch between master/slave - (rx/tx cross-over configuration)
+    * connects to RX7, TX7 (pins 28, 29) on the under-side of the teensy 4.0 board 
+  * **enhancement:** adc: AD_RESET net connected to micro-controller
+  * **enhancement:** introduced PCA9536 i2c GPIO integrated-circuit to free-up some pins on the micro-controller
+    
 ## Open source software stack
 * All [schematics](hardware/CIRCUITS.md) and boards are created using [Kicad](http://kicad-pcb.org/) 
 * All mechanical designs are created using [FreeCAD](https://github.com/FreeCAD/FreeCAD)
@@ -44,7 +65,7 @@ This project is a work-in-progress! Here is a journal of my progress, [journal.m
 What you can do if you like to see progress with this project?
 * star this repository (means you need a github account - go for it!!)
 * subscribe [Nic N on youtube](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) & [DIY Audio Electronics Maker](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g)
-* clone this repo, make improvements, commit & send pull-requests
+* download kicad and freecad, clone this repo, make improvements, commit & send pull-requests, and raise issues...
 
 ## social media
 * facebook: 
@@ -107,8 +128,8 @@ What you can do if you like to see progress with this project?
   - [x] ~~design~~
 - [ ] Finalize circuits / boards
 - [ ] Testing
-  - [ ] CS42448 audio codec
-    - [ ] Audio input
+  - [x] ~~CS42448 audio codec~~
+    - [x] ~~Audio input~~
     - [x] ~~Audio output~~
   - [ ] control voltage input
   - [x] ~~control voltage output~~
