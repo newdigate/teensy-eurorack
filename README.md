@@ -5,6 +5,7 @@ open source **[hardware](hardware) and [software](software) for a [teensy 4.0](h
 ## contents
 * [what is it](#what-is-it)
 * [software](#open-source-software-stack)
+* [versions](#versions)
 * [support](#support)
 * [social media](#social-media)
 * [printed circuit boards](#printed-circuit-boards)
@@ -35,13 +36,19 @@ Together, these circuit boards provide a set of peripherals for a teensy 4.0 mic
 * **programability**: write arduino compatible c/c++ firmware & program using arduino/teensyduino ([plus teensy audio library](https://www.pjrc.com/teensy/gui/))
 
 ## versions
-* v1.7
-  * corrections
+* v1.7 (current)
+  * circuit corrections
     * adc: corrected AVSS net, should have been VSS
-  * improvements to simplify assembling
+  * physical
     * merged knobs-controller and top-breakout pc-boards into single board
-    * removed pesky fine-pitch FPC/FFC connectors, 
-    * replaced with standard 0.1' headers and socket, allowing boards to connect physically 
+    * tft display rotated 90 degrees
+    * sd-connector socket rotated 90 degrees
+    * replaced fine-pitch FPC/FFC connectors with standard 0.1' pin-headers and sockets, allowing boards to connect physically    
+* v1.6:
+ * circuit corrections
+   * corrected: knobs-controller: tx/rx nets were not connected to socket  
+   * enhancement: adc: AD_RESET net connected to micro-controller
+   * enhancement: introduced GPIO ic to free-up some pins on the micro-controller
     
 ## Open source software stack
 * All [schematics](hardware/CIRCUITS.md) and boards are created using [Kicad](http://kicad-pcb.org/) 
