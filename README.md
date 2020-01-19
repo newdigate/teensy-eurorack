@@ -48,8 +48,10 @@ These circuit boards provide the peripherals necessary for a teensy 4.0 micro-co
 ### v1.6:
 * circuit corrections
   * **corrected:** knobs-controller: tx/rx nets were not connected to socket  
-  * **enhancement:** extra uart exposed allowing serial communications on the unused power bus connector
-    * added 2 jumper-switches to configure master/slave - rx/tx cross-over 
+  * **enhancement:** extra uart exposed 
+    * allows serial communications via the unused pins in the eurorack power-connector
+    * 2 jumper-switches added to switch between master/slave - (rx/tx cross-over configuration)
+    * connects to RX7, TX7 (pins 28, 29) on the under-side of the teensy 4.0 board 
   * **enhancement:** adc: AD_RESET net connected to micro-controller
   * **enhancement:** introduced PCA9536 i2c GPIO integrated-circuit to free-up some pins on the micro-controller
     
