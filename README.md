@@ -4,7 +4,6 @@
 
 These circuit boards provide the peripherals necessary to interface a [teensy 4.0](https://www.pjrc.com/store/teensy40.html "teensy 4.0 board") with stereo line audio and eurorack modular equipment.
 
-## contents
 * [specifications](#specifications)
 * [versions](#versions)
 * [software-stack](#open-source-software-stack)
