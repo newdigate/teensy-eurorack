@@ -37,7 +37,12 @@ These circuit boards provide the peripherals necessary to interface a [teensy 4.
 
 ## versions
 ### v1.7 (current)
-```status: pcboards and stencils ordered from jlcpcb.```
+```
+status:
+ * 10/01/2020: placed pcb and stencil order with jlcpcb
+ * 12/01/2020: order dispatched
+ * 24/01/2020: pcboards and stencils arrived.
+ ``` 
 * circuit corrections
   * adc: corrected AVSS net, should have been VSS
   * removed unused through-hole pads from underside of teensy board.
