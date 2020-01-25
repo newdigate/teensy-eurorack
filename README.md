@@ -39,10 +39,16 @@ These circuit boards provide the peripherals necessary to interface a [teensy 4.
 ### v1.7 (current)
 ```
 status:
- * 10/01/2020: placed pcb and stencil order with jlcpcb
+ * 10/01/2020: placed pcb and stencil order with jlcpcb 
+   * total is ￡36.05
+     * Shipping Charge: ￡13.05
+     * Merchandise: ￡23.00 
+       * 2 x aluminium stencils: £10.66
+       * 2 x 5pcs x pcboard: £12.34
  * 12/01/2020: order dispatched
  * 24/01/2020: pcboards and stencils arrived.
  ``` 
+#### v1.7 changes 
 * circuit corrections
   * adc: corrected AVSS net, should have been VSS
   * removed unused through-hole pads from underside of teensy board.
