@@ -17,6 +17,8 @@ These circuit boards provide the peripherals necessary to interface a [teensy 4.
 * [videos](#videos)
 * [todo](#todo)
 
+<img src='hardware/images/kryonos.png' width='500px'/>
+
 ## specifications
 * **microcontrollers:** 
   * 600 Mhz ARM cortex m7 ( [teensy 4.0 board](https://www.pjrc.com/store/teensy40.html "teensy 4.0 board") )
