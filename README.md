@@ -2,9 +2,8 @@
 
 **open source [hardware](hardware) and [software](software) for a [teensy 4.0](https://www.pjrc.com/store/teensy40.html "teensy 4.0 board") eurorack shield** 
 
-These circuit boards provide the peripherals necessary for a teensy 4.0 micro-controller board to interface with standard eurorack modular equipment.
+These circuit boards provide the peripherals necessary to interface a [teensy 4.0](https://www.pjrc.com/store/teensy40.html "teensy 4.0 board") with stereo line audio and eurorack modular equipment.
 
-## contents
 * [specifications](#specifications)
 * [versions](#versions)
 * [software-stack](#open-source-software-stack)
@@ -19,7 +18,9 @@ These circuit boards provide the peripherals necessary for a teensy 4.0 micro-co
 * [todo](#todo)
 
 ## specifications
-* **microcontroller:** 600 Mhz ARM cortex m7 ( [teensy 4.0 board](https://www.pjrc.com/store/teensy40.html "teensy 4.0 board") )
+* **microcontrollers:** 
+  * 600 Mhz ARM cortex m7 ( [teensy 4.0 board](https://www.pjrc.com/store/teensy40.html "teensy 4.0 board") )
+  * SAMD21 32bit 48Mhz micro-controller (based on [arduino mkr1000](https://www.arduino.cc/en/Guide/MKR1000))
 * **audio:** multi-channel audio codec ( 6-in / 8-out 24-bit sound card - [CS42448](https://statics.cirrus.com/pubs/proDatasheet/CS42448_F5.pdf) )
   * *the audio codec circuit originally started as a discussion on quad audio channel outputs and a pcb design integrating teensy and cs42448 from Paul Stoffregen on [pjrc forum](https://forum.pjrc.com/threads/41371-Quad-channel-output-on-Teensy-3-6?p=138828&viewfull=1#post138828)*
 * **analog control voltage ins/outs:** -10V to 10V 16bit/sample, 8 x inputs and 4 x outputs ( [ad7606](https://www.analog.com/media/en/technical-documentation/data-sheets/ad7606_7606-6_7606-4.pdf), [ad5754](https://www.analog.com/media/en/technical-documentation/data-sheets/AD5724_5734_5754.pdf) )
@@ -35,7 +36,18 @@ These circuit boards provide the peripherals necessary for a teensy 4.0 micro-co
 
 ## versions
 ### v1.7 (current)
-```status: pcboards and stencils ordered from jlcpcb.```
+```
+status:
+ * 10/01/2020: placed pcb and stencil order with jlcpcb 
+   * total is ￡36.05
+     * Shipping Charge: ￡13.05
+     * Merchandise: ￡23.00 
+       * 2 x aluminium stencils: £10.66
+       * 2 x 5pcs x pcboard: £12.34
+ * 12/01/2020: order dispatched
+ * 24/01/2020: pcboards and stencils arrived.
+ ``` 
+#### v1.7 changes 
 * circuit corrections
   * adc: corrected AVSS net, should have been VSS
   * removed unused through-hole pads from underside of teensy board.
