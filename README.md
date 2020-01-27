@@ -5,8 +5,7 @@
 These circuit boards provide the peripherals necessary to interface a [teensy 4.0](https://www.pjrc.com/store/teensy40.html "teensy 4.0 board") with stereo line audio and eurorack modular equipment.
 
 * [specifications](#specifications)
-* [versions](#versions)
-* [software-stack](#open-source-software-stack)
+* [open source software-stack](#open-source-software-stack)
 * [support](#support)
 * [social media](#social-media)
 * [printed circuit boards](#printed-circuit-boards)
@@ -15,6 +14,7 @@ These circuit boards provide the peripherals necessary to interface a [teensy 4.
 * [panel design](#panel-design)  
 * [assembly technical drawings](#assembly-technical-drawings)
 * [videos](#videos)
+* [versions](#versions)
 * [todo](#todo)
 
 <img src='hardware/images/kryonos.png' width='500px'/>
@@ -36,52 +36,11 @@ These circuit boards provide the peripherals necessary to interface a [teensy 4.
 * **panel:** 24HP aluminium panel mounted for eurorack case
 * **programability**: write arduino compatible c/c++ firmware & program using arduino/teensyduino ([plus teensy audio library](https://www.pjrc.com/teensy/gui/))
 
-## versions
-### v1.7b
-```
-status:
- * 26/01/2020: placed pcb order with jlcpcb 
- ```
- * breakout board:
-   * fixed: net 3v3 collides with net VIN 
-     * LDO footprint imported from eagle is causing DRC check to succeed even though the two traces collide
-     
-### v1.7 (current)
-```
-status:
- * 10/01/2020: placed pcb and stencil order with jlcpcb 
-   * total is ￡36.05
-     * Shipping Charge: ￡13.05
-     * Merchandise: ￡23.00 
-       * 2 x aluminium stencils: £10.66
-       * 2 x 5pcs x pcboard: £12.34
- * 12/01/2020: order dispatched
- * 24/01/2020: pcboards and stencils arrived.
- ``` 
-#### v1.7 changes 
-* circuit corrections
-  * adc: corrected AVSS net, should have been VSS
-  * removed unused through-hole pads from underside of teensy board.
-* physical
-  * merged knobs-controller and top-breakout pc-boards into single board
-  * tft display rotated 90 degrees
-  * sd-connector socket rotated 90 degrees
-  * replaced fine-pitch FPC/FFC connectors with standard 0.1' pin-headers and sockets, allowing boards to connect physically    
-
-### v1.6:
-* circuit corrections
-  * **corrected:** knobs-controller: tx/rx nets were not connected to socket  
-  * **enhancement:** extra uart exposed 
-    * allows serial communications via the unused pins in the eurorack power-connector
-    * 2 jumper-switches added to switch between master/slave - (rx/tx cross-over configuration)
-    * connects to RX7, TX7 (pins 28, 29) on the under-side of the teensy 4.0 board 
-  * **enhancement:** adc: AD_RESET net connected to micro-controller
-  * **enhancement:** introduced PCA9536 i2c GPIO integrated-circuit to free-up some pins on the micro-controller
-    
 ## Open source software stack
 * All [schematics](hardware/CIRCUITS.md) and boards are created using [Kicad](http://kicad-pcb.org/) 
 * All mechanical designs are created using [FreeCAD](https://github.com/FreeCAD/FreeCAD)
- 
+* Some images have been rendered using [Blender 2.81](https://www.blender.org/)
+
 ## support
 This project is a work-in-progress! Here is a journal of my progress, [journal.md](hardware/JOURNAL.md) 
 
@@ -138,6 +97,49 @@ What you can do if you like to see progress with this project?
 
 [![youtube: Eurorack digital audio modules powered by teensy micro-controller](https://img.youtube.com/vi/6zt6OF7UOTc/0.jpg)](https://www.youtube.com/watch?v=6zt6OF7UOTc)
 
+
+## versions
+### v1.7b
+```
+status:
+ * 26/01/2020: placed pcb order with jlcpcb 
+ ```
+ * breakout board:
+   * fixed: net 3v3 collides with net VIN 
+     * LDO footprint imported from eagle is causing DRC check to succeed even though the two traces collide
+     
+### v1.7 (current)
+```
+status:
+ * 10/01/2020: placed pcb and stencil order with jlcpcb 
+   * total is ￡36.05
+     * Shipping Charge: ￡13.05
+     * Merchandise: ￡23.00 
+       * 2 x aluminium stencils: £10.66
+       * 2 x 5pcs x pcboard: £12.34
+ * 12/01/2020: order dispatched
+ * 24/01/2020: pcboards and stencils arrived.
+ ``` 
+#### v1.7 changes 
+* circuit corrections
+  * adc: corrected AVSS net, should have been VSS
+  * removed unused through-hole pads from underside of teensy board.
+* physical
+  * merged knobs-controller and top-breakout pc-boards into single board
+  * tft display rotated 90 degrees
+  * sd-connector socket rotated 90 degrees
+  * replaced fine-pitch FPC/FFC connectors with standard 0.1' pin-headers and sockets, allowing boards to connect physically    
+
+### v1.6:
+* circuit corrections
+  * **corrected:** knobs-controller: tx/rx nets were not connected to socket  
+  * **enhancement:** extra uart exposed 
+    * allows serial communications via the unused pins in the eurorack power-connector
+    * 2 jumper-switches added to switch between master/slave - (rx/tx cross-over configuration)
+    * connects to RX7, TX7 (pins 28, 29) on the under-side of the teensy 4.0 board 
+  * **enhancement:** adc: AD_RESET net connected to micro-controller
+  * **enhancement:** introduced PCA9536 i2c GPIO integrated-circuit to free-up some pins on the micro-controller
+    
 ## todo 
 - [ ] General
   - [ ] refactor folders so that footprints, symbols and 3d models (should be shared common amoung project, not board-specific)
