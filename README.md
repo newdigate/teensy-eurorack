@@ -37,6 +37,15 @@ These circuit boards provide the peripherals necessary to interface a [teensy 4.
 * **programability**: write arduino compatible c/c++ firmware & program using arduino/teensyduino ([plus teensy audio library](https://www.pjrc.com/teensy/gui/))
 
 ## versions
+### v1.7b
+```
+status:
+ * 26/01/2020: placed pcb order with jlcpcb 
+ ```
+ * breakout board:
+   * fixed: net 3v3 collides with net VIN 
+     * LDO footprint imported from eagle is causing DRC check to succeed even though the two traces collide
+     
 ### v1.7 (current)
 ```
 status:
