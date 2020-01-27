@@ -5,8 +5,7 @@
 These circuit boards provide the peripherals necessary to interface a [teensy 4.0](https://www.pjrc.com/store/teensy40.html "teensy 4.0 board") with stereo line audio and eurorack modular equipment.
 
 * [specifications](#specifications)
-* [versions](#versions)
-* [software-stack](#open-source-software-stack)
+* [open source software-stack](#open-source-software-stack)
 * [support](#support)
 * [social media](#social-media)
 * [printed circuit boards](#printed-circuit-boards)
@@ -15,6 +14,7 @@ These circuit boards provide the peripherals necessary to interface a [teensy 4.
 * [panel design](#panel-design)  
 * [assembly technical drawings](#assembly-technical-drawings)
 * [videos](#videos)
+* [versions](#versions)
 * [todo](#todo)
 
 <img src='hardware/images/kryonos.png' width='500px'/>
@@ -34,9 +34,94 @@ These circuit boards provide the peripherals necessary to interface a [teensy 4.
   * knobs (4 x pots, 3 x RGB encoders w/switch)
 * **gpio:** 4 x configurable 5v logic inputs/outputs. [PCA9536](https://www.ti.com/lit/ds/symlink/pca9536.pdf)
 * **panel:** 24HP aluminium panel mounted for eurorack case
-* **programability**: write arduino compatible c/c++ firmware & program using arduino/teensyduino ([plus teensy audio library](https://www.pjrc.com/teensy/gui/))
+* **programability**: 
+  * write arduino compatible c/c++ firmware & program using arduino/teensyduino
+  * arm gnu toolchain [downloads](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)
+  * teensy [audio library](https://www.pjrc.com/teensy/gui/)
+
+## Open source software stack
+* All [schematics](hardware/CIRCUITS.md) and boards are created using [Kicad](http://kicad-pcb.org/) 
+* All mechanical designs are created using [FreeCAD](https://github.com/FreeCAD/FreeCAD)
+* Some images have been rendered using [Blender 2.81](https://www.blender.org/)
+
+## support
+This project is a work-in-progress! Here is a journal of my progress, [journal.md](hardware/JOURNAL.md) 
+
+What you can do if you like to see progress with this project?
+* star this repository (means you need a github account - go for it!!)
+* subscribe [Nic N on youtube](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) & [DIY Audio Electronics Maker](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g)
+* download kicad and freecad, clone this repo, make improvements, commit & send pull-requests, and raise issues...
+
+## social media
+* facebook: 
+  * [Moolet](https://www.facebook.com/Moolet-249737938397431/)
+* youtube:
+  * [Nic N](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) 
+  * [DIY Audio Electronics Maker](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g)
+
+# printed circuit boards
+
+## [mainboard](hardware/boards/mainboard) 
+* standard double layer printed circuit board
+  * thinkness: 1.6mm  
+  * minimum trace: 6 mil
+  * minimum clearance: 6 mil
+  * dimension: 118mm*102mm
+* socket to connect teensy 4.0 board
+* cs42448 audio codec 
+* 3 x stereo 6.35mm TRS jack inputs
+* 4 x stereo 6.35mm TRS jack outputs
+* pin sockets to connect breakout board
+* PCA9536 gpio
+
+<img src='hardware/boards/mainboard/images/mainboard-top.png' width='300px'/> <img src='hardware/boards/mainboard/images/mainboard-bottom.png' width='300px'/> 
+
+## breakout board
+* standard double layer printed circuit board
+  * thinkness: 1.6mm  
+  * minimum trace: 6 mil
+  * minimum clearance: 6 mil
+  * dimension: 110mm*111mm
+* 8 x 3.5mm jack socket for analog control voltage inputs
+* 4 x 3.5mm jack socket for analog control voltage outputs
+* 4 x 3.5mm jack socket for 5v GPIO (general purpose inputs or outputs)
+* midi in/out DIN sockets
+* usb device/host
+  * USB-B: USB device mode
+  * USB-A: USB host mode
+* micro-SD card socket
+* 4 x linear pots
+* 3 x RGB rotary encoders with switches 
+* SAMD21 32bit 48Mhz micro-controller for pots and rotaries
+  * Based on Arduino MKR Zero board (can be programmed through standard arduino ide)
+* Communicates with mainboard via standard serial uart RX and TX lines.
+
+<img src='hardware/boards/knobs-controller/images/Knob_controller_top_view.png' width='250px'/> <img src='hardware/boards/knobs-controller/images/Knob_controller_bottom_view.png' width='250px'/>
+
+# [panel design](hardware/panel)
+<img src='hardware/panel/images/panel-front.png' width='300px'/>
+
+# assembly technical drawings 
+<img src='hardware/technical-drawing.svg' width='500px'/>
+
+## videos 
+[![youtube: assembly teensy eurorack shield](https://img.youtube.com/vi/Jx2KgpoT3WY/0.jpg)](https://www.youtube.com/watch?v=Jx2KgpoT3WY)
+
+[![youtube: assembly timelapse](https://img.youtube.com/vi/s-514rDjirY/0.jpg)](https://www.youtube.com/watch?v=s-514rDjirY)
+
+[![youtube: Eurorack digital audio modules powered by teensy micro-controller](https://img.youtube.com/vi/6zt6OF7UOTc/0.jpg)](https://www.youtube.com/watch?v=6zt6OF7UOTc)
+
 
 ## versions
+### v1.7b
+```
+status:
+ * 26/01/2020: placed pcb order with jlcpcb 
+ ```
+ * breakout board:
+   * fixed: net 3v3 collides with net VIN 
+     * LDO footprint imported from eagle is causing DRC check to succeed even though the two traces collide
+     
 ### v1.7 (current)
 ```
 status:
@@ -69,79 +154,20 @@ status:
   * **enhancement:** adc: AD_RESET net connected to micro-controller
   * **enhancement:** introduced PCA9536 i2c GPIO integrated-circuit to free-up some pins on the micro-controller
     
-## Open source software stack
-* All [schematics](hardware/CIRCUITS.md) and boards are created using [Kicad](http://kicad-pcb.org/) 
-* All mechanical designs are created using [FreeCAD](https://github.com/FreeCAD/FreeCAD)
- 
-## support
-This project is a work-in-progress! Here is a journal of my progress, [journal.md](hardware/JOURNAL.md) 
-
-What you can do if you like to see progress with this project?
-* star this repository (means you need a github account - go for it!!)
-* subscribe [Nic N on youtube](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) & [DIY Audio Electronics Maker](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g)
-* download kicad and freecad, clone this repo, make improvements, commit & send pull-requests, and raise issues...
-
-## social media
-* facebook: 
-  * [Moolet](https://www.facebook.com/Moolet-249737938397431/)
-* youtube:
-  * [Nic N](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) 
-  * [DIY Audio Electronics Maker](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g)
-
-# printed circuit boards
-
-## [mainboard](hardware/boards/mainboard) 
-* **2-layer:** 
-* teensy4
-* cs42448 audio codec 
-* 3 x 6.35mm stereo TRS jack inputs
-* 4 x 6.35mm stereo TRS jack outputs
-* connectors for top and bottom breakout boards
-
-<img src='hardware/boards/mainboard/images/mainboard-top.png' width='300px'/> <img src='hardware/boards/mainboard/images/mainboard-bottom.png' width='300px'/> 
-
-## breakout board
-* **2-layer:** 
-* 8 x 3.5mm jack analog control voltage inputs
-* 4 x 3.5mm jack analog control voltage outputs
-* 4 x 3.5mm jack for 5 voltage general purpose inputs or outputs 
-* midi in/out
-* usb device/host
-* microSD female connector
-* 4 x pots
-* 3 x RGB rotary encoders with switches 
-* SAMD21 32bit 48Mhz micro-controller for pots and rotaries
-  * Based on Arduino MKR Zero board (can be programmed through standard arduino ide)
-* Communicates with mainboard via standard serial uart RX and TX lines.
-
-<img src='hardware/boards/knobs-controller/images/Knob_controller_top_view.png' width='250px'/> <img src='hardware/boards/knobs-controller/images/Knob_controller_bottom_view.png' width='250px'/>
-
-# [panel design](hardware/panel)
-<img src='hardware/panel/images/panel-front.png' width='300px'/>
-
-# assembly technical drawings 
-<img src='hardware/technical-drawing.svg' width='500px'/>
-
-## videos 
-[![youtube: assembly teensy eurorack shield](https://img.youtube.com/vi/Jx2KgpoT3WY/0.jpg)](https://www.youtube.com/watch?v=Jx2KgpoT3WY)
-
-[![youtube: assembly timelapse](https://img.youtube.com/vi/s-514rDjirY/0.jpg)](https://www.youtube.com/watch?v=s-514rDjirY)
-
-[![youtube: Eurorack digital audio modules powered by teensy micro-controller](https://img.youtube.com/vi/6zt6OF7UOTc/0.jpg)](https://www.youtube.com/watch?v=6zt6OF7UOTc)
-
 ## todo 
 - [ ] General
-  - [ ] refactor folders so that footprints, symbols and 3d models (should be shared common amoung project, not board-specific)
+  - [ ] cleanup / refactor footprints, replace footprints and symbols imported from eagle with kicad equivalents
 - [ ] Breakout board for rotary encoders and pots
   - [x] ~~Order~~
   - [x] ~~Assemble~~
-  - [ ] Software
-  - [ ] Certify
+  - [ ] software
+  - [ ] document
+  - [ ] certify
 - [x] ~~panel~~
   - [x] ~~measurements~~
   - [x] ~~design~~
-- [ ] Finalize circuits / boards
-- [ ] Testing
+- [ ] finalize circuits / boards
+- [ ] testing
   - [x] ~~CS42448 audio codec~~
     - [x] ~~Audio input~~
     - [x] ~~Audio output~~
