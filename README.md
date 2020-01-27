@@ -156,17 +156,18 @@ status:
     
 ## todo 
 - [ ] General
-  - [ ] refactor folders so that footprints, symbols and 3d models (should be shared common amoung project, not board-specific)
+  - [ ] cleanup / refactor footprints, replace footprints and symbols imported from eagle with kicad equivalents
 - [ ] Breakout board for rotary encoders and pots
   - [x] ~~Order~~
   - [x] ~~Assemble~~
-  - [ ] Software
-  - [ ] Certify
+  - [ ] software
+  - [ ] document
+  - [ ] certify
 - [x] ~~panel~~
   - [x] ~~measurements~~
   - [x] ~~design~~
-- [ ] Finalize circuits / boards
-- [ ] Testing
+- [ ] finalize circuits / boards
+- [ ] testing
   - [x] ~~CS42448 audio codec~~
     - [x] ~~Audio input~~
     - [x] ~~Audio output~~
