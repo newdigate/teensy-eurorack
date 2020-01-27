@@ -34,7 +34,10 @@ These circuit boards provide the peripherals necessary to interface a [teensy 4.
   * knobs (4 x pots, 3 x RGB encoders w/switch)
 * **gpio:** 4 x configurable 5v logic inputs/outputs. [PCA9536](https://www.ti.com/lit/ds/symlink/pca9536.pdf)
 * **panel:** 24HP aluminium panel mounted for eurorack case
-* **programability**: write arduino compatible c/c++ firmware & program using arduino/teensyduino ([plus teensy audio library](https://www.pjrc.com/teensy/gui/))
+* **programability**: 
+  * write arduino compatible c/c++ firmware & program using arduino/teensyduino
+  * arm gnu toolchain [downloads](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)
+  * teensy [audio library](https://www.pjrc.com/teensy/gui/)
 
 ## Open source software stack
 * All [schematics](hardware/CIRCUITS.md) and boards are created using [Kicad](http://kicad-pcb.org/) 
@@ -59,24 +62,35 @@ What you can do if you like to see progress with this project?
 # printed circuit boards
 
 ## [mainboard](hardware/boards/mainboard) 
-* **2-layer:** 
-* teensy4
+* standard double layer printed circuit board
+  * thinkness: 1.6mm  
+  * minimum trace: 6 mil
+  * minimum clearance: 6 mil
+  * dimension: 118mm*102mm
+* socket to connect teensy 4.0 board
 * cs42448 audio codec 
-* 3 x 6.35mm stereo TRS jack inputs
-* 4 x 6.35mm stereo TRS jack outputs
-* connectors for top and bottom breakout boards
+* 3 x stereo 6.35mm TRS jack inputs
+* 4 x stereo 6.35mm TRS jack outputs
+* pin sockets to connect breakout board
+* PCA9536 gpio
 
 <img src='hardware/boards/mainboard/images/mainboard-top.png' width='300px'/> <img src='hardware/boards/mainboard/images/mainboard-bottom.png' width='300px'/> 
 
 ## breakout board
-* **2-layer:** 
-* 8 x 3.5mm jack analog control voltage inputs
-* 4 x 3.5mm jack analog control voltage outputs
-* 4 x 3.5mm jack for 5 voltage general purpose inputs or outputs 
-* midi in/out
+* standard double layer printed circuit board
+  * thinkness: 1.6mm  
+  * minimum trace: 6 mil
+  * minimum clearance: 6 mil
+  * dimension: 110mm*111mm
+* 8 x 3.5mm jack socket for analog control voltage inputs
+* 4 x 3.5mm jack socket for analog control voltage outputs
+* 4 x 3.5mm jack socket for 5v GPIO (general purpose inputs or outputs)
+* midi in/out DIN sockets
 * usb device/host
-* microSD female connector
-* 4 x pots
+  * USB-B: USB device mode
+  * USB-A: USB host mode
+* micro-SD card socket
+* 4 x linear pots
 * 3 x RGB rotary encoders with switches 
 * SAMD21 32bit 48Mhz micro-controller for pots and rotaries
   * Based on Arduino MKR Zero board (can be programmed through standard arduino ide)
