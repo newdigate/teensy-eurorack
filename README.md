@@ -117,6 +117,10 @@ What you can do if you like to see progress with this project?
 ```
 status:
  * 26/01/2020: placed pcb order with jlcpcb 
+ * 22/02/2020:
+   * boards assembled, sanity checks pass, form factor is good - no known issues so far 
+   * adc AD7606 tested briefly, looks better
+   * usb-device type-b socket tested successfully, serial-over-usb and programming connection seem good
  ```
  * breakout board:
    * fixed: net 3v3 collides with net VIN 
@@ -171,10 +175,11 @@ status:
   - [x] ~~CS42448 audio codec~~
     - [x] ~~Audio input~~
     - [x] ~~Audio output~~
-  - [ ] control voltage input
+  - [x] ~~control voltage input~~
   - [x] ~~control voltage output~~
   - [ ] gpio
-  - [ ] usb host/device
+  - [ ] usb host
+  - [x] ~~usb device~~
   - [ ] midi in/out
   - [x] ~~st7735 display~~
   - [x] ~~sd card extension & adapter~~
