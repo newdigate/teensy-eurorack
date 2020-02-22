@@ -113,7 +113,7 @@ What you can do if you like to see progress with this project?
 
 
 ## versions
-### v1.7b
+### v1.7b (current)
 ```
 status:
  * 26/01/2020: placed pcb order with jlcpcb 
@@ -126,7 +126,7 @@ status:
    * fixed: net 3v3 collides with net VIN 
      * LDO footprint imported from eagle is causing DRC check to succeed even though the two traces collide
      
-### v1.7 (current)
+### v1.7 
 ```
 status:
  * 10/01/2020: placed pcb and stencil order with jlcpcb 
