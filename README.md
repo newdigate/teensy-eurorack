@@ -121,6 +121,10 @@ status:
    * boards assembled, sanity checks pass, form factor is good - no known issues so far 
    * adc AD7606 tested briefly, looks better
    * usb-device type-b socket tested successfully, serial-over-usb and programming connection seem good
+ * 23/02/2020:
+   * issue with midi in/out circuits 
+     * pin 4 and pin 5 on the midi din connectors appear to be switched on both rx and tx midi sockets
+     * tx may need logic level shifter or buffer.
  ```
  * breakout board:
    * fixed: net 3v3 collides with net VIN 
