@@ -52,7 +52,7 @@ Wire Wire Line
 	6000 3700 4800 3700
 Connection ~ 6000 3700
 Text GLabel 4800 3700 0    70   BiDi ~ 0
-MIDI_IN_PIN4
+MIDI_IN_PIN5
 Wire Wire Line
 	6000 5500 6500 5500
 Text GLabel 6500 5500 2    70   BiDi ~ 0
@@ -71,15 +71,15 @@ Wire Wire Line
 Wire Wire Line
 	5500 5300 4500 5300
 Text GLabel 4500 5300 0    70   BiDi ~ 0
-MIDI_OUT_PIN5
+MIDI_OUT_PIN4
 Wire Wire Line
 	5600 5500 4500 5500
 Text GLabel 4500 5500 0    70   BiDi ~ 0
-MIDI_OUT_PIN4
+MIDI_OUT_PIN5
 Wire Wire Line
 	5500 3300 4800 3300
 Text GLabel 4800 3300 0    70   BiDi ~ 0
-MIDI_IN_PIN5
+MIDI_IN_PIN4
 $Comp
 L Mainboard-eagle-import:R-US_R0805 R?
 U 1 1 35ADC47D
