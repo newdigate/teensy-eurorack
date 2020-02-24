@@ -1,5 +1,5 @@
 (sym_lib_table
-  (lib (name knobs-eagle-import)(type Legacy)(uri ${KIPRJMOD}/knobs-eagle-import.lib)(options "")(descr ""))
-  (lib (name TopBreakout-eagle-import)(type Legacy)(uri /Users/nicholasnewdigate/Development/github/newdigate/v1.7/hardware/boards/topbreakout/TopBreakout-eagle-import.lib)(options "")(descr ""))
-  (lib (name Mainboard-eagle-import)(type Legacy)(uri /Users/nicholasnewdigate/Development/github/newdigate/v1.7/hardware/boards/mainboard/Mainboard-eagle-import.lib)(options "")(descr ""))
+  (lib (name "knobs-eagle-import")(type "Legacy")(uri "${KIPRJMOD}/../knobs-eagle-import.lib")(options "")(descr ""))
+  (lib (name "TopBreakout-eagle-import")(type "Legacy")(uri "${KIPRJMOD}/../TopBreakout-eagle-import.lib")(options "")(descr ""))
+  (lib (name "Mainboard-eagle-import")(type "Legacy")(uri "${KIPRJMOD}/../Mainboard-eagle-import.lib")(options "")(descr ""))
 )
