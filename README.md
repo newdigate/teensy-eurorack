@@ -105,6 +105,11 @@ What you can do if you like to see progress with this project?
 <img src='hardware/technical-drawing.svg' width='500px'/>
 
 ## videos 
+[![youtube: 0v to 10v control voltage input, output and display using teensy 4.0](https://img.youtube.com/vi/5d5x8F7HRko/0.jpg)](https://www.youtube.com/watch?v=5d5x8F7HRko)
+
+
+[![DIY assembly build - teensy 4.0 eurorack audio module](https://img.youtube.com/vi/oZzPgpTrEhc/0.jpg)](https://www.youtube.com/watch?v=oZzPgpTrEhc)
+
 [![youtube: assembly teensy eurorack shield](https://img.youtube.com/vi/Jx2KgpoT3WY/0.jpg)](https://www.youtube.com/watch?v=Jx2KgpoT3WY)
 
 [![youtube: assembly timelapse](https://img.youtube.com/vi/s-514rDjirY/0.jpg)](https://www.youtube.com/watch?v=s-514rDjirY)
