@@ -118,7 +118,17 @@ What you can do if you like to see progress with this project?
 
 
 ## versions
-### v1.7b (current)
+### v1.8 (current)
+```
+status:
+ * 25/02/2020: placed pcb order with jlcpcb
+ * 28/02/2020: order dispatched
+```
+ * breakout board:
+   * fixed: midi DIN connectors pin 4 and pin 5 switched
+ * mainboard remains same at version 1.7
+ 
+### v1.7b
 ```
 status:
  * 26/01/2020: placed pcb order with jlcpcb 
@@ -129,7 +139,7 @@ status:
  * 23/02/2020:
    * issue with midi in/out circuits 
      * pin 4 and pin 5 on the midi din connectors appear to be switched on both rx and tx midi sockets
-     * tx may need logic level shifter or buffer.
+     * tx may need logic level shifter or buffer.   
  ```
  * breakout board:
    * fixed: net 3v3 collides with net VIN 
