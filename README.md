@@ -116,6 +116,8 @@ What you can do if you like to see progress with this project?
 
 [![youtube: Eurorack digital audio modules powered by teensy micro-controller](https://img.youtube.com/vi/6zt6OF7UOTc/0.jpg)](https://www.youtube.com/watch?v=6zt6OF7UOTc)
 
+* side-channel stereo audio separation with teensy 4.0:
+[![side-channel stereo audio separation with teensy 4.0](https://img.youtube.com/vi/N0IBevm4hTQ/0.jpg)](https://www.youtube.com/watch?v=N0IBevm4hTQ)
 
 ## versions
 ### v1.8 (current)
