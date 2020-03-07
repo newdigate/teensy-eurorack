@@ -105,18 +105,33 @@ What you can do if you like to see progress with this project?
 <img src='hardware/technical-drawing.svg' width='500px'/>
 
 ## videos 
+
+* Teensy 4.0 eurorack shield design intro
+
+[![youtube: Teensy 4.0 eurorack shield design intro](https://img.youtube.com/vi/aNUSEszbnYU/0.jpg)](https://www.youtube.com/watch?v=aNUSEszbnYU)
+
+* 0v to 10v control voltage input, output and display using teensy 4.0
+
 [![youtube: 0v to 10v control voltage input, output and display using teensy 4.0](https://img.youtube.com/vi/5d5x8F7HRko/0.jpg)](https://www.youtube.com/watch?v=5d5x8F7HRko)
 
+* DIY assembly build - teensy 4.0 eurorack audio module
 
 [![DIY assembly build - teensy 4.0 eurorack audio module](https://img.youtube.com/vi/oZzPgpTrEhc/0.jpg)](https://www.youtube.com/watch?v=oZzPgpTrEhc)
 
+* assembling teensy eurorack shield
+
 [![youtube: assembly teensy eurorack shield](https://img.youtube.com/vi/Jx2KgpoT3WY/0.jpg)](https://www.youtube.com/watch?v=Jx2KgpoT3WY)
+
+* assembly timelapse
 
 [![youtube: assembly timelapse](https://img.youtube.com/vi/s-514rDjirY/0.jpg)](https://www.youtube.com/watch?v=s-514rDjirY)
 
+* Eurorack digital audio modules powered by teensy micro-controller
+
 [![youtube: Eurorack digital audio modules powered by teensy micro-controller](https://img.youtube.com/vi/6zt6OF7UOTc/0.jpg)](https://www.youtube.com/watch?v=6zt6OF7UOTc)
 
-* side-channel stereo audio separation with teensy 4.0:
+* side-channel stereo audio separation with teensy 4.0
+
 [![side-channel stereo audio separation with teensy 4.0](https://img.youtube.com/vi/N0IBevm4hTQ/0.jpg)](https://www.youtube.com/watch?v=N0IBevm4hTQ)
 
 ## versions
