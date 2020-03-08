@@ -216,7 +216,7 @@ status:
   - [x] ~~gpio (input & output)~~ 
   - [x] ~~usb host~~
   - [x] ~~usb device~~
-  - [ ] midi in/out
+  - [x] ~~midi in/out~~
   - [x] ~~st7735 display~~
   - [x] ~~sd card extension & adapter~~
 - [ ] Document 
