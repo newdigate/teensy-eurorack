@@ -49,7 +49,8 @@ This project is a work-in-progress! The functionality has been tested and are wo
 
 There are some improvements I'd like to make later
 * improve noise to signal ratio on pots on breakout board.
-* use 3.5mm jack sockets as well as standard midi din connectors for midi in and out. 
+* add 4x jack sockets for analog output of knobs on breakout board. 
+* use 3.5mm jack sockets (as well as standard midi din connectors) for midi in and out. 
 * let me know if you're think there something else that can be improved, added, removed. 
 
 There is a journal of my progress, [journal.md](hardware/JOURNAL.md) 
