@@ -214,7 +214,7 @@ status:
   - [x] ~~control voltage input~~
   - [x] ~~control voltage output~~
   - [x] ~~gpio (input & output)~~ 
-  - [ ] usb host
+  - [x] ~~usb host~~
   - [x] ~~usb device~~
   - [ ] midi in/out
   - [x] ~~st7735 display~~
