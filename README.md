@@ -213,7 +213,7 @@ status:
     - [x] ~~Audio output~~
   - [x] ~~control voltage input~~
   - [x] ~~control voltage output~~
-  - [ ] gpio
+  - [x] ~~gpio (input & output)~~ 
   - [ ] usb host
   - [x] ~~usb device~~
   - [ ] midi in/out
