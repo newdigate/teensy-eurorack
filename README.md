@@ -140,6 +140,8 @@ What you can do if you like to see progress with this project?
 status:
  * 25/02/2020: placed pcb order with jlcpcb
  * 28/02/2020: order dispatched
+ * 02/03/2020: pcbs arrived, but parts are still waiting to be delivered. 
+ * 08/03/2020: mainboard v1.7 + breakout board v1.8 - all features tested successfully.
 ```
  * breakout board:
    * fixed: midi DIN connectors pin 4 and pin 5 switched
@@ -207,7 +209,7 @@ status:
   - [x] ~~measurements~~
   - [x] ~~design~~
 - [ ] finalize circuits / boards
-- [ ] testing
+- [x] ~~testing~~
   - [x] ~~CS42448 audio codec~~
     - [x] ~~Audio input~~
     - [x] ~~Audio output~~
