@@ -45,11 +45,18 @@ These circuit boards provide the peripherals necessary to interface a [teensy 4.
 * Some images have been rendered using [Blender 2.81](https://www.blender.org/)
 
 ## support
-This project is a work-in-progress! Here is a journal of my progress, [journal.md](hardware/JOURNAL.md) 
+This project is a work-in-progress! The functionality has been tested and are working at a basic level. 
+
+There are some improvements I'd like to make later
+* improve noise to signal ratio on pots on breakout board.
+* use 3.5mm jack sockets as well as standard midi din connectors for midi in and out. 
+* let me know if you're think there something else that can be improved, added, removed. 
+
+There is a journal of my progress, [journal.md](hardware/JOURNAL.md) 
 
 What you can do if you like to see progress with this project?
 * star this repository (means you need a github account - go for it!!)
-* subscribe [Nic N on youtube](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) & [DIY Audio Electronics Maker](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g)
+* subscribe [Nic N on youtube](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) 
 * download kicad and freecad, clone this repo, make improvements, commit & send pull-requests, and raise issues...
 
 ## social media
@@ -57,7 +64,6 @@ What you can do if you like to see progress with this project?
   * [Moolet](https://www.facebook.com/Moolet-249737938397431/)
 * youtube:
   * [Nic N](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) 
-  * [DIY Audio Electronics Maker](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g)
 
 # printed circuit boards
 
