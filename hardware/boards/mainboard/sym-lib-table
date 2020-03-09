@@ -1,7 +1,7 @@
 (sym_lib_table
-  (lib (name Mainboard-eagle-import)(type Legacy)(uri ${KIPRJMOD}/Mainboard-eagle-import.lib)(options "")(descr ""))
-  (lib (name Audio-out-eagle-import)(type Legacy)(uri ${KIPRJMOD}/Audio-out-eagle-import.lib)(options "")(descr ""))
-  (lib (name Audio-in-eagle-import)(type Legacy)(uri ${KIPRJMOD}/Audio-in-eagle-import.lib)(options "")(descr ""))
-  (lib (name knobs-eagle-import)(type Legacy)(uri ${KIPRJMOD}/../knobs-controller/knobs-eagle-import.lib)(options "")(descr ""))
-  (lib (name TopBreakout-eagle-import)(type Legacy)(uri /Users/nicholasnewdigate/Development/github/newdigate/v1.7/hardware/boards/topbreakout/TopBreakout-eagle-import.lib)(options "")(descr ""))
+  (lib (name "Mainboard-eagle-import")(type "Legacy")(uri "/home/nic/Development/teensy-eurorack-1.8/hardware/boards/Mainboard-eagle-import.lib")(options "")(descr ""))
+  (lib (name "TopBreakout-eagle-import")(type "Legacy")(uri "/home/nic/Development/teensy-eurorack-1.8/hardware/boards/TopBreakout-eagle-import.lib")(options "")(descr ""))
+  (lib (name "Audio-out-eagle-import")(type "Legacy")(uri "/home/nic/Development/teensy-eurorack-1.8/hardware/boards/Audio-out-eagle-import.lib")(options "")(descr ""))
+  (lib (name "Audio-in-eagle-import")(type "Legacy")(uri "/home/nic/Development/teensy-eurorack-1.8/hardware/boards/Audio-in-eagle-import.lib")(options "")(descr ""))
+  (lib (name "knobs-eagle-import")(type "Legacy")(uri "/home/nic/Development/teensy-eurorack-1.8/hardware/boards/knobs-eagle-import.lib")(options "")(descr ""))
 )
