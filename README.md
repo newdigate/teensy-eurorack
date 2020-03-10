@@ -82,7 +82,7 @@ What you can do if you like to see progress with this project?
 * pin sockets to connect breakout board
 * PCA9536 gpio
 
-<img src='hardware/boards/mainboard/images/mainboard-top.png' width='300px'/> <img src='hardware/boards/mainboard/images/mainboard-bottom.png' width='300px'/> 
+<img src='hardware/images/boards/mainboard-top.png' width='300px'/> <img src='hardware/images/boards/mainboard-bottom.png' width='300px'/> 
 
 ## breakout board
 * standard double layer printed circuit board
@@ -104,7 +104,7 @@ What you can do if you like to see progress with this project?
   * Based on Arduino MKR Zero board (can be programmed through standard arduino ide)
 * Communicates with mainboard via standard serial uart RX and TX lines.
 
-<img src='hardware/boards/knobs-controller/images/Knob_controller_top_view.png' width='250px'/> <img src='hardware/boards/knobs-controller/images/Knob_controller_bottom_view.png' width='250px'/>
+<img src='hardware/images/boards/breakout-top.png' width='250px'/> <img src='hardware/images/boards/breakout-bottom.png' width='250px'/>
 
 # [panel design](hardware/panel)
 <img src='hardware/panel/images/panel-front.png' width='300px'/>
