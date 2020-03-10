@@ -11,7 +11,7 @@
 # circuits images
 ## mainboard
 ### Teensy micro-controller connections
-![teensy circuit](boards/mainboard/images/circuit_sheet_teensy.png)
+![teensy circuit](images/schematic/mainboard-teensy.png)
 ### cs42448 audio codec
 ![codec circuit](boards/mainboard/images/circuit_sheet_codec.png)
 ### power
