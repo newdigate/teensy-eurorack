@@ -24,8 +24,8 @@
 ![microcontroller](images/schematic/breakout-breakout-microcontroller.png)
 ![ad7606](images/schematic/breakout-ad7606.png)
 ![ad5754](images/schematic/breakout-ad5754.png)
-![midi](images/schematic/breakout-breakout-midi.png)
-![tft](images/schematic/breakout-breakout-tft.png)
-![sd-connectors](images/schematic/breakout-breakout-sd-connectors.png)
+![midi](images/schematic/breakout-midi.png)
+![tft](images/schematic/breakout-tft.png)
+![sd-connectors](images/schematic/breakout-sd-connectors.png)
 
 ![boards](technical-drawing.svg)
