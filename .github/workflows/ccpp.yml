@@ -25,7 +25,7 @@ jobs:
       uses: actions/checkout@v2
     - name: Hello world action step
       id: hello
-      uses: newdigate/kicad-github-action@v0.3.23
+      uses: newdigate/kicad-github-action@v0.3.24
       with:
         kicad-project-path: "hardward/boards/mainboard"
         kicad-schematic-filename: "Mainboard.sch"
