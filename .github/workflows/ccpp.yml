@@ -27,7 +27,7 @@ jobs:
       id: hello
       uses: newdigate/kicad-github-action@v0.2
       with:
-        who-to-greet: "${{github.workspace}}"
+        who-to-greet: "Mona the octocat"
         kicad-project-path: "/hardward/boards/mainboard"
     # Use the output from the `hello` step
     - name: Get the output time
