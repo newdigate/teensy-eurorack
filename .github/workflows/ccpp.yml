@@ -6,12 +6,14 @@ on:
     - '**.kicad_pcb'
     - '**.sch'
     - 'README.md'
+    - '.github/workflows'
   pull_request:
     branches: [ master ]
     paths:
     - '**.kicad_pcb'
     - '**.sch'
     - 'README.md'
+    - '.github/workflows'
 
 jobs:
   
