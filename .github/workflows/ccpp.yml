@@ -33,3 +33,8 @@ jobs:
     # Use the output from the `hello` step
     - name: Get the output time
       run: echo "The time was ${{ steps.hello.outputs.time }}"
+    - name: upload artifacts
+      uses: actions/upload-artifact@v1
+      with:
+        name: teensy-eurorack
+        path: output
