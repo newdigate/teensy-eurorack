@@ -235,4 +235,3 @@ status:
 - [ ] Firmware
   - [ ] Sliced audio loops
   - [ ] Midi looping
- 
