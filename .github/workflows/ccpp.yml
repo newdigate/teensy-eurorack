@@ -27,7 +27,7 @@ jobs:
       id: hello
       uses: newdigate/kicad-github-action@v0.1
       with:
-        who-to-greet: "${{GITHUB_WORKSPACE}}"
+        who-to-greet: "${{github.workspace}}"
     # Use the output from the `hello` step
     - name: Get the output time
       run: echo "The time was ${{ steps.hello.outputs.time }}"
