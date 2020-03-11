@@ -5,11 +5,13 @@ on:
     paths:
     - '**.kicad_pcb'
     - '**.sch'
+    - 'README.md'
   pull_request:
     branches: [ master ]
     paths:
     - '**.kicad_pcb'
     - '**.sch'
+    - 'README.md'
 
 jobs:
   build:
