@@ -235,5 +235,4 @@ status:
 - [ ] Firmware
   - [ ] Sliced audio loops
   - [ ] Midi looping
-  
-[test cicd commit]
+ 
