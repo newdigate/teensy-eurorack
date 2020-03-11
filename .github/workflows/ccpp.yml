@@ -1,0 +1,22 @@
+name: kicad pcb ops CI
+
+on:
+  push:
+    paths:
+    - '**.kicad_pcb'
+    - '**.sch'
+  pull_request:
+    branches: [ master ]
+    paths:
+    - '**.kicad_pcb'
+    - '**.sch'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    - name: echo test
+      run: echo hello world
