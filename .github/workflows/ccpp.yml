@@ -19,13 +19,13 @@ jobs:
   
   hello_world_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Let me introduce you to my little friend
     steps:
     - name: checkout
       uses: actions/checkout@v2
     - name: Hello world action step
       id: hello
-      uses: newdigate/kicad-github-action@v0.3.20
+      uses: newdigate/kicad-github-action@v0.3.21
       with:
         kicad-project-path: "hardward/boards/mainboard"
         kicad-schematic-filename: "Mainboard.sch"
