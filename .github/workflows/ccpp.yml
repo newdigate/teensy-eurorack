@@ -23,7 +23,7 @@ jobs:
     steps:
     - name: checkout
       uses: actions/checkout@v2
-    - name: Hello world action step
+    - name: Hello world action step 1
       id: hello
       uses: newdigate/kicad-github-action@v0.3.31
       with:
