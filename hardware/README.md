@@ -10,12 +10,12 @@
 
 # circuits images
 ## mainboard
-### Teensy micro-controller connections
 ![teensy circuit](images/schematic/mainboard-teensy.png)
 ![codec circuit](images/schematic/mainboard-codec.png)
 ![power circuit](images/schematic/mainboard-power.png)
 ![breakout pinheaders](images/schematic/mainboard-breakout-pinheaders.png)
 ![audio out circuit](images/schematic/mainboard-audio-out.png)
+![audio in circuit](images/schematic/mainboard-audio-in.png)
 
 ## breakout board
 ![cv-out-gpio](images/schematic/breakout-cv-out-gpio.png)
