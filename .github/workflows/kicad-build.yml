@@ -27,7 +27,7 @@ jobs:
       id: hello
       uses: newdigate/kicad-github-action@v0.3.36
       with:
-        kicad-project-path: "hardward/boards/mainboard"
+        kicad-project-path: "hardware/boards/mainboard"
         kicad-schematic-filename: "Mainboard.sch"
         kicad-board-filename: "Mainboard.kicad_pcb"
     # Use the output from the `hello` step
