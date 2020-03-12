@@ -20,8 +20,8 @@
 ## breakout board
 ![cv-out-gpio](images/schematic/breakout-cv-out-gpio.png)
 ![da-connectors](images/schematic/breakout-da-connectors.png)
-![encoder](images/schematic/breakout-breakout-encoder.png)
-![microcontroller](images/schematic/breakout-breakout-microcontroller.png)
+![encoder](images/schematic/breakout-encoder.png)
+![microcontroller](images/schematic/breakout-microcontroller.png)
 ![ad7606](images/schematic/breakout-ad7606.png)
 ![ad5754](images/schematic/breakout-ad5754.png)
 ![midi](images/schematic/breakout-midi.png)
