@@ -235,3 +235,6 @@ status:
 - [ ] Firmware
   - [ ] Sliced audio loops
   - [ ] Midi looping
+
+# build
+* testing automated build and packaging 
