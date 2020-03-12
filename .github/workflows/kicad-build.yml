@@ -23,7 +23,7 @@ jobs:
     steps:
     - name: checkout
       uses: actions/checkout@v2
-    - name: Hello world action step
+    - name: package schematic and pcbs
       id: hello
       uses: newdigate/kicad-github-action@v0.3.37
       with:
