@@ -3,29 +3,23 @@ name: kicad pcb ops CI
 on:
   push:
     paths:
-    - '**.kicad_pcb'
-    - '**.sch'
-    - 'README.md'
-    - '.github/workflows/**'
-  pull_request:
-    branches: [ master ]
-    paths:
-    - '**.kicad_pcb'
-    - '**.sch'
-    - 'README.md'
+    - 'hardware/boards/mainboard/Mainboard.kicad_pcb'
+    - 'hardware/boards/mainboard/**.sch'
+    - 'hardware/boards/knobs-controller/knobs.kicad_pcb'
+    - 'hardware/boards/knobs-controller/**.sch'
     - '.github/workflows/**'
 
 jobs:
   
-  hello_world_job:
+  mainboard:
     runs-on: ubuntu-latest
-    name: build
+    name: build-mainboard-artifact
     steps:
     - name: checkout
       uses: actions/checkout@v2
     - name: package schematic and pcbs
       id: hello
-      uses: newdigate/kicad-github-action@v0.3.37
+      uses: newdigate/kicad-github-action@v0.4.1
       with:
         kicad-project-path: "hardware/boards/mainboard"
         kicad-schematic-filename: "Mainboard.sch"
@@ -36,5 +30,27 @@ jobs:
     - name: upload artifacts
       uses: actions/upload-artifact@v1
       with:
-        name: teensy-eurorack
+        name: mainboard-artifact
+        path: output
+
+  breakout:
+    runs-on: ubuntu-latest
+    name: build-breakout-artifact
+    steps:
+    - name: checkout
+      uses: actions/checkout@v2
+    - name: package schematic and pcbs
+      id: hello
+      uses: newdigate/kicad-github-action@v0.4.1
+      with:
+        kicad-project-path: "hardware/boards/knobs-controller"
+        kicad-schematic-filename: "knobs.sch"
+        kicad-board-filename: "knobs.kicad_pcb"
+    # Use the output from the `hello` step
+    - name: Get the output time
+      run: echo "The time was ${{ steps.hello.outputs.time }}"
+    - name: upload artifacts
+      uses: actions/upload-artifact@v1
+      with:
+        name: breakout-artifact
         path: output
