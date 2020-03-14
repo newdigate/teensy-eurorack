@@ -390,8 +390,6 @@ Wire Wire Line
 Wire Wire Line
 	3700 2300 4100 2300
 Connection ~ 3700 2300
-Text GLabel 3600 2300 0    10   BiDi ~ 0
-VUSB
 Wire Wire Line
 	3600 5700 3600 5600
 Wire Wire Line
@@ -700,14 +698,14 @@ F 3 "" H 3100 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L knobs-eagle-import:RESISTOR-NICK_C-EUC1206 C?
+L knobs-eagle-import:RESISTOR-NICK_C-EUC0805 C?
 U 1 1 7A89AA92
 P 3700 2500
 AR Path="/7A89AA92" Ref="C?"  Part="1" 
 AR Path="/5D86641C/7A89AA92" Ref="C6"  Part="1" 
 F 0 "C6" H 3820 2515 59  0000 L BNN
 F 1 "1nF" H 3820 2485 59  0000 L TNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 3700 2500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3700 2500 50  0001 C CNN
 F 3 "" H 3700 2500 50  0001 C CNN
 	1    3700 2500
 	1    0    0    -1  
@@ -980,7 +978,7 @@ P 3000 7800
 AR Path="/23ED3AB9" Ref="R?"  Part="1" 
 AR Path="/5D86641C/23ED3AB9" Ref="R4"  Part="1" 
 F 0 "R4" H 2890 7810 59  0000 R BNN
-F 1 "1K" H 3110 7810 59  0000 L BNN
+F 1 "1k" H 3110 7810 59  0000 L BNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 3000 7800 50  0001 C CNN
 F 3 "" H 3000 7800 50  0001 C CNN
 	1    3000 7800
@@ -993,7 +991,7 @@ P 3100 7800
 AR Path="/767DCB21" Ref="R?"  Part="1" 
 AR Path="/5D86641C/767DCB21" Ref="R5"  Part="1" 
 F 0 "R5" H 2990 7810 59  0000 R BNN
-F 1 "10K" H 3210 7810 59  0000 L BNN
+F 1 "10k" H 3210 7810 59  0000 L BNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 3100 7800 50  0001 C CNN
 F 3 "" H 3100 7800 50  0001 C CNN
 	1    3100 7800
@@ -1712,6 +1710,10 @@ Wire Wire Line
 	14700 9400 14700 9300
 Connection ~ 14700 9400
 Connection ~ 14700 9300
+NoConn ~ 6400 5000
+NoConn ~ 4400 3400
+NoConn ~ 2700 8400
+NoConn ~ 1600 3400
 Wire Bus Line
 	13800 8200 13800 9600
 Wire Bus Line

@@ -222,8 +222,6 @@ NoConn ~ 2700 2000
 NoConn ~ 2700 2100
 NoConn ~ 2500 2800
 NoConn ~ 2500 2900
-NoConn ~ 1400 2900
-NoConn ~ 1400 2800
 NoConn ~ 4750 3100
 NoConn ~ 4750 3000
 $Comp

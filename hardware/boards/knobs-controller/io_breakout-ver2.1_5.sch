@@ -341,7 +341,7 @@ F 3 "" H 5100 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TopBreakout-eagle-import:C-EUC0805K C?
+L knobs-eagle-import:C-EUC0805 C?
 U 1 1 1D572C6C
 P 3200 5600
 AR Path="/1D572C6C" Ref="C?"  Part="1" 
@@ -354,7 +354,7 @@ F 3 "" H 3200 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TopBreakout-eagle-import:C-EUC0805K C?
+L knobs-eagle-import:C-EUC0805 C?
 U 1 1 5C72CEA9
 P 3600 5700
 AR Path="/5C72CEA9" Ref="C?"  Part="1" 
@@ -367,7 +367,7 @@ F 3 "" H 3600 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TopBreakout-eagle-import:C-EUC0805K C?
+L knobs-eagle-import:C-EUC0805 C?
 U 1 1 742C1862
 P 4000 5800
 AR Path="/742C1862" Ref="C?"  Part="1" 
@@ -380,7 +380,7 @@ F 3 "" H 4000 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TopBreakout-eagle-import:C-EUC0805K C?
+L knobs-eagle-import:C-EUC0805 C?
 U 1 1 D8AA1394
 P 4400 5900
 AR Path="/D8AA1394" Ref="C?"  Part="1" 
@@ -406,29 +406,29 @@ F 3 "" H 1400 5500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L TopBreakout-eagle-import:1.0UF-1206-50V-10% C?
+L knobs-eagle-import:C-EUC0805 C?
 U 1 1 B9947190
-P 9000 4200
+P 9000 4100
 AR Path="/B9947190" Ref="C?"  Part="1" 
 AR Path="/5D7F4383/B9947190" Ref="C27"  Part="1" 
-F 0 "C27" H 9060 4315 70  0000 L BNN
-F 1 "1.0uF" H 9060 4115 70  0000 L BNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 9000 4200 50  0001 C CNN
-F 3 "" H 9000 4200 50  0001 C CNN
-	1    9000 4200
+F 0 "C27" H 9060 4215 70  0000 L BNN
+F 1 "1uF" H 9060 4015 70  0000 L BNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9000 4100 50  0001 C CNN
+F 3 "" H 9000 4100 50  0001 C CNN
+	1    9000 4100
 	1    0    0    -1  
 $EndComp
 $Comp
-L TopBreakout-eagle-import:1.0UF-1206-50V-10% C?
+L knobs-eagle-import:C-EUC0805 C?
 U 1 1 ABE2F8F8
-P 8600 4300
+P 8600 4200
 AR Path="/ABE2F8F8" Ref="C?"  Part="1" 
 AR Path="/5D7F4383/ABE2F8F8" Ref="C26"  Part="1" 
-F 0 "C26" H 8660 4415 70  0000 L BNN
-F 1 "1.0uF" H 8660 4215 70  0000 L BNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 8600 4300 50  0001 C CNN
-F 3 "" H 8600 4300 50  0001 C CNN
-	1    8600 4300
+F 0 "C26" H 8660 4315 70  0000 L BNN
+F 1 "1uF" H 8660 4115 70  0000 L BNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8600 4200 50  0001 C CNN
+F 3 "" H 8600 4200 50  0001 C CNN
+	1    8600 4200
 	1    0    0    -1  
 $EndComp
 $Comp

@@ -88,7 +88,7 @@ F 3 "" H 3400 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L knobs-eagle-import:RESISTOR-NICK_C-EUC0805 C?
+L knobs-eagle-import:C-EUC0805 C?
 U 1 1 FC039302
 P 2600 4100
 AR Path="/FC039302" Ref="C?"  Part="1" 
@@ -101,7 +101,7 @@ F 3 "" H 2600 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L knobs-eagle-import:RESISTOR-NICK_C-EUC0805 C?
+L knobs-eagle-import:C-EUC0805 C?
 U 1 1 0E4FA8E4
 P 4200 5000
 AR Path="/0E4FA8E4" Ref="C?"  Part="1" 
@@ -114,7 +114,7 @@ F 3 "" H 4200 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L knobs-eagle-import:RESISTOR-NICK_C-EUC0805 C?
+L knobs-eagle-import:C-EUC0805 C?
 U 1 1 7F00266C
 P 2600 5000
 AR Path="/7F00266C" Ref="C?"  Part="1" 
@@ -127,7 +127,7 @@ F 3 "" H 2600 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L knobs-eagle-import:RESISTOR-NICK_C-EUC0805 C?
+L knobs-eagle-import:C-EUC0805 C?
 U 1 1 87859B6F
 P 2600 5900
 AR Path="/87859B6F" Ref="C?"  Part="1" 
@@ -140,7 +140,7 @@ F 3 "" H 2600 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L knobs-eagle-import:RESISTOR-NICK_C-EUC0805 C?
+L knobs-eagle-import:C-EUC0805 C?
 U 1 1 1E55062F
 P 4200 4100
 AR Path="/1E55062F" Ref="C?"  Part="1" 
@@ -153,7 +153,7 @@ F 3 "" H 4200 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L knobs-eagle-import:RESISTOR-NICK_C-EUC0805 C?
+L knobs-eagle-import:C-EUC0805 C?
 U 1 1 26DD9C79
 P 4800 5000
 AR Path="/26DD9C79" Ref="C?"  Part="1" 
@@ -179,7 +179,7 @@ F 3 "" H 4800 4500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L knobs-eagle-import:RESISTOR-NICK_C-EUC0805 C?
+L knobs-eagle-import:C-EUC0805 C?
 U 1 1 049ED488
 P 6400 1300
 AR Path="/049ED488" Ref="C?"  Part="1" 
@@ -206,7 +206,7 @@ F 3 "" H 7200 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L knobs-eagle-import:RESISTOR-NICK_C-EUC0805 C?
+L knobs-eagle-import:C-EUC0805 C?
 U 1 1 214B8673
 P 7900 1300
 AR Path="/214B8673" Ref="C?"  Part="1" 
