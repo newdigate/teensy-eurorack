@@ -423,17 +423,17 @@ F 3 "" H 10000 7300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-eagle-import:CERAMIC-4.7UF-25V-10%-X5R(0805) C?
+L Mainboard-eagle-import:C-EUC0805K C?
 U 1 1 72938C0A
-P 10700 7200
+P 10700 7150
 AR Path="/72938C0A" Ref="C?"  Part="1" 
 AR Path="/5D773153/72938C0A" Ref="C26"  Part="1" 
-F 0 "C26" H 10550 7250 42  0000 L BNN
-F 1 "4.7uf" H 10550 7100 42  0000 L BNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10700 7200 50  0001 C CNN
-F 3 "" H 10700 7200 50  0001 C CNN
-	1    10700 7200
-	0    -1   -1   0   
+F 0 "C26" H 10550 7200 42  0000 L BNN
+F 1 "4.7uF" H 10550 6850 42  0000 L BNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10700 7150 50  0001 C CNN
+F 3 "" H 10700 7150 50  0001 C CNN
+	1    10700 7150
+	1    0    0    -1  
 $EndComp
 $Comp
 L Mainboard-eagle-import:CERAMIC-22UF-6.3V-20%-X5R(0805) C?
