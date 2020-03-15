@@ -112,7 +112,7 @@ What you can do if you like to see progress with this project?
 <img src='hardware/panel/images/panel-front.png' width='300px'/>
 
 # assembly technical drawings 
-<img src='hardware/technical-drawing.svg' width='500px'/>
+<img src='hardware/images/technical-drawing.svg' width='500px'/>
 
 ## videos 
 
