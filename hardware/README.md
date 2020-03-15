@@ -28,4 +28,4 @@
 ![tft](images/schematic/breakout-tft.png)
 ![sd-connectors](images/schematic/breakout-sd-connectors.png)
 
-![boards](technical-drawing.svg)
+![technical drawing](images/technical-drawing.svg)
