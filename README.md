@@ -256,3 +256,5 @@ status:
 
 # build
 * testing automated build and packaging 
+* [github.com/pwuertz/kicad_picknplace_assistant](https://github.com/pwuertz/kicad_picknplace_assistant)
+* [github.com/productize/kicad-automation-scripts](https://github.com/productize/kicad-automation-scripts)
