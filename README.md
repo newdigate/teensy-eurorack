@@ -146,13 +146,21 @@ What you can do if you like to see progress with this project?
 
 ## versions
 ### v1.8.1 (current)
+cleanup, minor improvements, and reduce number of distinct components
  * breakout board:
    * changed C6 (1nF) from 1206 to 0805 to match C2 - reduces number of unique components by 1
  * mainboard
    * cleanup of footprints to reduce number of distinct parts
    * removed pull-up resistor on AD_RESET signal
    * increased size of power traces to 350 mil
- 
+```
+status:
+  15/03/2020:
+    * placed order with JLCPCB.com, total ￡63.33
+      * 20 x mainboard @ v1.8.1 + top stencil (￡15.53 + ￡5.38 )
+      * 20 x breakout @ v1.8.1 + top & bottom stencil (￡15.69 + ￡10.76)
+      * shipping: ￡15.97
+```
 ### v1.8 
 ```
 status:
