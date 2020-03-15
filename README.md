@@ -1,4 +1,5 @@
-# eurorack digital audio-module dev-kit [![Join the chat at https://gitter.im/newdigate/teensy-eurorack](https://badges.gitter.im/newdigate/teensy-eurorack.svg)](https://gitter.im/newdigate/teensy-eurorack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# teensy 4.0 eurorack shield 
+[![Join the chat at https://gitter.im/newdigate/teensy-eurorack](https://badges.gitter.im/newdigate/teensy-eurorack.svg)](https://gitter.im/newdigate/teensy-eurorack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![kicad pcb ops CI](https://github.com/newdigate/teensy-eurorack/workflows/kicad%20pcb%20ops%20CI/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions?query=workflow%3A%22kicad+pcb+ops+CI%22)
 
 **open source [hardware](hardware) and [software](software) for a [teensy 4.0](https://www.pjrc.com/store/teensy40.html "teensy 4.0 board") eurorack shield** 
@@ -144,7 +145,15 @@ What you can do if you like to see progress with this project?
 [![side-channel stereo audio separation with teensy 4.0](https://img.youtube.com/vi/N0IBevm4hTQ/0.jpg)](https://www.youtube.com/watch?v=N0IBevm4hTQ)
 
 ## versions
-### v1.8 (current)
+### v1.8.1 (current)
+ * breakout board:
+   * changed C6 (1nF) from 1206 to 0805 to match C2 - reduces number of unique components by 1
+ * mainboard
+   * cleanup of footprints to reduce number of distinct parts
+   * removed pull-up resistor on AD_RESET signal
+   * increased size of power traces to 350 mil
+ 
+### v1.8 
 ```
 status:
  * 25/02/2020: placed pcb order with jlcpcb
