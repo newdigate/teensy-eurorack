@@ -41,6 +41,9 @@ These circuit boards provide the peripherals necessary to interface a [teensy 4.
   * arm gnu toolchain [downloads](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)
   * teensy [audio library](https://www.pjrc.com/teensy/gui/)
 
+## MIT open source license
+* MIT license unless otherwise specified on a per file basis.
+
 ## Open source software stack
 * All [schematics](hardware/CIRCUITS.md) and boards are created using [Kicad](http://kicad-pcb.org/) 
 * All mechanical designs are created using [FreeCAD](https://github.com/FreeCAD/FreeCAD)
