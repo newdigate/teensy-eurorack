@@ -128,27 +128,12 @@ F 3 "" H 8700 4000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9600 3100 9700 3100
-$Comp
-L power:+3V3 #PWR0103
-U 1 1 5D910D81
-P 7150 1250
-F 0 "#PWR0103" H 7150 1100 50  0001 C CNN
-F 1 "+3V3" H 7165 1423 50  0000 C CNN
-F 2 "" H 7150 1250 50  0001 C CNN
-F 3 "" H 7150 1250 50  0001 C CNN
-	1    7150 1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7150 2000 7150 1850
 Text GLabel 8200 2000 0    50   Input ~ 0
 GATE_1
 Text GLabel 8200 2100 0    50   Input ~ 0
 GATE_2
 Text GLabel 8200 2200 0    50   Input ~ 0
 GATE_3
-Wire Wire Line
-	7150 1550 7150 1250
 $Comp
 L Diode:1N4148WS D7
 U 1 1 5D99C789
@@ -312,17 +297,6 @@ GATE_4
 Wire Wire Line
 	7500 5000 7800 5000
 $Comp
-L Device:R R33
-U 1 1 5D90FA7F
-P 7150 1700
-F 0 "R33" H 7220 1746 50  0000 L CNN
-F 1 "4.7k" H 7220 1655 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805" V 7080 1700 50  0001 C CNN
-F 3 "~" H 7150 1700 50  0001 C CNN
-	1    7150 1700
-	1    0    0    -1  
-$EndComp
-$Comp
 L Mainboard-eagle-import:PCA9536 U2
 U 1 1 5DF732B1
 P 8500 2150
@@ -354,7 +328,6 @@ Wire Wire Line
 	7800 3300 7150 3300
 Wire Wire Line
 	7150 3300 7150 2000
-Connection ~ 7150 2000
 Text Label 1150 950  0    50   ~ 0
 VIN
 Text Label 2650 950  0    50   ~ 0

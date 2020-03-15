@@ -390,8 +390,8 @@ P 8200 7300
 AR Path="/9A5B21E3" Ref="C?"  Part="1" 
 AR Path="/5D773153/9A5B21E3" Ref="C21"  Part="1" 
 F 0 "C21" H 8100 7445 59  0000 L BNN
-F 1 "0.1u" H 8070 6985 59  0000 L BNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8200 7300 50  0001 C CNN
+F 1 "0.1uF" H 8070 6985 59  0000 L BNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8200 7300 50  0001 C CNN
 F 3 "" H 8200 7300 50  0001 C CNN
 	1    8200 7300
 	1    0    0    -1  
@@ -403,8 +403,8 @@ P 9100 7300
 AR Path="/03454344" Ref="C?"  Part="1" 
 AR Path="/5D773153/03454344" Ref="C23"  Part="1" 
 F 0 "C23" H 9000 7445 59  0000 L BNN
-F 1 "0.1u" H 8970 6985 59  0000 L BNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9100 7300 50  0001 C CNN
+F 1 "0.1uF" H 8970 6985 59  0000 L BNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9100 7300 50  0001 C CNN
 F 3 "" H 9100 7300 50  0001 C CNN
 	1    9100 7300
 	1    0    0    -1  
@@ -416,37 +416,24 @@ P 10000 7300
 AR Path="/2711B78B" Ref="C?"  Part="1" 
 AR Path="/5D773153/2711B78B" Ref="C25"  Part="1" 
 F 0 "C25" H 9900 7445 59  0000 L BNN
-F 1 "0.1u" H 9870 6985 59  0000 L BNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10000 7300 50  0001 C CNN
+F 1 "0.1uF" H 9870 6985 59  0000 L BNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10000 7300 50  0001 C CNN
 F 3 "" H 10000 7300 50  0001 C CNN
 	1    10000 7300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-eagle-import:CERAMIC-100UF-6.3V-20%-X5R(1206) C?
-U 1 1 A8D7B53E
-P 8700 7200
-AR Path="/A8D7B53E" Ref="C?"  Part="1" 
-AR Path="/5D773153/A8D7B53E" Ref="C22"  Part="1" 
-F 0 "C22" H 8550 7250 42  0000 L BNN
-F 1 "100uf" H 8550 7100 42  0000 L BNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 8700 7200 50  0001 C CNN
-F 3 "" H 8700 7200 50  0001 C CNN
-	1    8700 7200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Mainboard-eagle-import:CERAMIC-4.7UF-25V-10%-X5R(0805) C?
+L Mainboard-eagle-import:C-EUC0805K C?
 U 1 1 72938C0A
-P 10700 7200
+P 10700 7150
 AR Path="/72938C0A" Ref="C?"  Part="1" 
 AR Path="/5D773153/72938C0A" Ref="C26"  Part="1" 
-F 0 "C26" H 10550 7250 42  0000 L BNN
-F 1 "4.7uf" H 10550 7100 42  0000 L BNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10700 7200 50  0001 C CNN
-F 3 "" H 10700 7200 50  0001 C CNN
-	1    10700 7200
-	0    -1   -1   0   
+F 0 "C26" H 10550 7200 42  0000 L BNN
+F 1 "4.7uF" H 10550 6850 42  0000 L BNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10700 7150 50  0001 C CNN
+F 3 "" H 10700 7150 50  0001 C CNN
+	1    10700 7150
+	1    0    0    -1  
 $EndComp
 $Comp
 L Mainboard-eagle-import:CERAMIC-22UF-6.3V-20%-X5R(0805) C?
@@ -456,7 +443,7 @@ AR Path="/77B0D6DF" Ref="C?"  Part="1"
 AR Path="/5D773153/77B0D6DF" Ref="C24"  Part="1" 
 F 0 "C24" H 9450 7250 42  0000 L BNN
 F 1 "22uf" H 9450 7100 42  0000 L BNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9600 7200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9600 7200 50  0001 C CNN
 F 3 "" H 9600 7200 50  0001 C CNN
 	1    9600 7200
 	0    -1   -1   0   
@@ -521,7 +508,7 @@ AR Path="/4A7820F5" Ref="C?"  Part="1"
 AR Path="/5D773153/4A7820F5" Ref="C15"  Part="1" 
 F 0 "C15" H 4210 365 59  0000 L BNN
 F 1 "0.1uF" H 4210 165 59  0000 L BNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4150 350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4150 350 50  0001 C CNN
 F 3 "" H 4150 350 50  0001 C CNN
 	1    4150 350 
 	-1   0    0    1   
@@ -553,43 +540,43 @@ F 3 "" H 2100 8150 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Mainboard-eagle-import:CERAMIC-10UF-25V-10%-X5R(0805) C?
+L Mainboard-eagle-import:C-EUC0805K C?
 U 1 1 E5AF4E0B
-P 7100 1950
+P 7100 1900
 AR Path="/E5AF4E0B" Ref="C?"  Part="1" 
 AR Path="/5D773153/E5AF4E0B" Ref="C16"  Part="1" 
-F 0 "C16" H 6950 2000 42  0000 L BNN
-F 1 "10uf" H 6950 1850 42  0000 L BNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7100 1950 50  0001 C CNN
-F 3 "" H 7100 1950 50  0001 C CNN
-	1    7100 1950
-	0    -1   -1   0   
+F 0 "C16" H 6950 1950 42  0000 L BNN
+F 1 "10uF" H 6950 1800 42  0000 L BNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7100 1900 50  0001 C CNN
+F 3 "" H 7100 1900 50  0001 C CNN
+	1    7100 1900
+	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-eagle-import:CERAMIC-100NF-50V-10%-X7R(0805) C?
+L Mainboard-eagle-import:C-EUC0805K C?
 U 1 1 1203FA24
-P 7400 1950
+P 7400 1900
 AR Path="/1203FA24" Ref="C?"  Part="1" 
 AR Path="/5D773153/1203FA24" Ref="C17"  Part="1" 
-F 0 "C17" H 7250 2000 42  0000 L BNN
-F 1 "0.1uf" H 7250 1850 42  0000 L BNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7400 1950 50  0001 C CNN
-F 3 "" H 7400 1950 50  0001 C CNN
-	1    7400 1950
-	0    -1   -1   0   
+F 0 "C17" H 7300 1900 42  0000 L BNN
+F 1 "0.1uF" H 7250 1750 42  0000 L BNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7400 1900 50  0001 C CNN
+F 3 "" H 7400 1900 50  0001 C CNN
+	1    7400 1900
+	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-eagle-import:CERAMIC-100NF-50V-10%-X7R(0805) C?
+L Mainboard-eagle-import:C-EUC0805K C?
 U 1 1 14EE9965
-P 7650 1950
+P 7650 1900
 AR Path="/14EE9965" Ref="C?"  Part="1" 
 AR Path="/5D773153/14EE9965" Ref="C18"  Part="1" 
-F 0 "C18" H 7500 2000 42  0000 L BNN
-F 1 "0.1uf" H 7500 1850 42  0000 L BNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7650 1950 50  0001 C CNN
-F 3 "" H 7650 1950 50  0001 C CNN
-	1    7650 1950
-	0    -1   -1   0   
+F 0 "C18" H 7650 1900 42  0000 L BNN
+F 1 "0.1uF" H 7600 1750 42  0000 L BNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7650 1900 50  0001 C CNN
+F 3 "" H 7650 1900 50  0001 C CNN
+	1    7650 1900
+	1    0    0    -1  
 $EndComp
 $Comp
 L Mainboard-eagle-import:CERAMIC-10NF-50V-5%-X7R(0805) C?
@@ -599,7 +586,7 @@ AR Path="/3422B401" Ref="C?"  Part="1"
 AR Path="/5D773153/3422B401" Ref="C19"  Part="1" 
 F 0 "C19" H 7750 2000 42  0000 L BNN
 F 1 "10nf" H 7750 1850 42  0000 L BNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7900 1950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7900 1950 50  0001 C CNN
 F 3 "" H 7900 1950 50  0001 C CNN
 	1    7900 1950
 	0    -1   -1   0   
@@ -612,7 +599,7 @@ AR Path="/61CA0218" Ref="C?"  Part="1"
 AR Path="/5D773153/61CA0218" Ref="C20"  Part="1" 
 F 0 "C20" H 8000 2000 42  0000 L BNN
 F 1 "10nf" H 8000 1850 42  0000 L BNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8150 1950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8150 1950 50  0001 C CNN
 F 3 "" H 8150 1950 50  0001 C CNN
 	1    8150 1950
 	0    -1   -1   0   
@@ -858,4 +845,17 @@ NoConn ~ 7900 4000
 NoConn ~ 7900 4300
 NoConn ~ 7900 4600
 NoConn ~ 7900 6200
+$Comp
+L Mainboard-eagle-import:C-EUC0805K C?
+U 1 1 A8D7B53E
+P 8700 7150
+AR Path="/A8D7B53E" Ref="C?"  Part="1" 
+AR Path="/5D773153/A8D7B53E" Ref="C22"  Part="1" 
+F 0 "C22" H 8550 7200 42  0000 L BNN
+F 1 "100uF" H 8750 7200 42  0000 L BNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 8700 7150 50  0001 C CNN
+F 3 "" H 8700 7150 50  0001 C CNN
+	1    8700 7150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

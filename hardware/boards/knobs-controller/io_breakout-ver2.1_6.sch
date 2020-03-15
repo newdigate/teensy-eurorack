@@ -198,7 +198,7 @@ F 3 "" H 5800 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TopBreakout-eagle-import:C-EUC1206 C?
+L knobs-eagle-import:C-EUC0805 C?
 U 1 1 FDFA29AC
 P 7800 2300
 AR Path="/FDFA29AC" Ref="C?"  Part="1" 
@@ -211,7 +211,7 @@ F 3 "" H 7800 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TopBreakout-eagle-import:C-EUC1206 C?
+L knobs-eagle-import:C-EUC0805 C?
 U 1 1 5BE03534
 P 8300 2300
 AR Path="/5BE03534" Ref="C?"  Part="1" 
@@ -224,27 +224,27 @@ F 3 "" H 8300 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TopBreakout-eagle-import:C-EUC1206 C?
+L knobs-eagle-import:C-EUC0805 C?
 U 1 1 E5C7F153
 P 2600 2300
 AR Path="/E5C7F153" Ref="C?"  Part="1" 
 AR Path="/5D7F4465/E5C7F153" Ref="C28"  Part="1" 
 F 0 "C28" V 2400 2250 59  0000 C CNN
 F 1 "0.1uF" V 2750 2250 59  0000 C CNN
-F 2 "Capacitors_SMD:C_0805" H 2600 2300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2600 2300 50  0001 C CNN
 F 3 "" H 2600 2300 50  0001 C CNN
 	1    2600 2300
 	1    0    0    -1  
 $EndComp
 $Comp
-L TopBreakout-eagle-import:C-EUC1206 C?
+L knobs-eagle-import:C-EUC0805 C?
 U 1 1 608006B0
 P 3100 2300
 AR Path="/608006B0" Ref="C?"  Part="1" 
 AR Path="/5D7F4465/608006B0" Ref="C29"  Part="1" 
 F 0 "C29" V 2950 2250 59  0000 C CNN
 F 1 "0.1uF" V 3250 2250 59  0000 C CNN
-F 2 "Capacitors_SMD:C_0805" H 3100 2300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3100 2300 50  0001 C CNN
 F 3 "" H 3100 2300 50  0001 C CNN
 	1    3100 2300
 	1    0    0    -1  
