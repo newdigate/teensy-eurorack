@@ -41,6 +41,9 @@ These circuit boards provide the peripherals necessary to interface a [teensy 4.
   * arm gnu toolchain [downloads](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)
   * teensy [audio library](https://www.pjrc.com/teensy/gui/)
 
+## MIT open source license
+* MIT license unless otherwise specified on a per file basis.
+
 ## Open source software stack
 * All [schematics](hardware/CIRCUITS.md) and boards are created using [Kicad](http://kicad-pcb.org/) 
 * All mechanical designs are created using [FreeCAD](https://github.com/FreeCAD/FreeCAD)
@@ -112,7 +115,7 @@ What you can do if you like to see progress with this project?
 <img src='hardware/panel/images/panel-front.png' width='300px'/>
 
 # assembly technical drawings 
-<img src='hardware/technical-drawing.svg' width='500px'/>
+<img src='hardware/images/technical-drawing.svg' width='500px'/>
 
 ## videos 
 
@@ -256,3 +259,5 @@ status:
 
 # build
 * testing automated build and packaging 
+* [github.com/pwuertz/kicad_picknplace_assistant](https://github.com/pwuertz/kicad_picknplace_assistant)
+* [github.com/productize/kicad-automation-scripts](https://github.com/productize/kicad-automation-scripts)
