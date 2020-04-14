@@ -64,20 +64,32 @@ int x = 0;
 uint16_t oldpos[8] = {0,0,0,0,0,0,0,0};
 int16_t colors[8] = {ST7735_GREEN,ST7735_RED,ST7735_BLUE,ST7735_CYAN,ST7735_MAGENTA,ST7735_YELLOW,0x00AA,ST7735_WHITE};
 
+int resetCount = 0;
+int16_t cvlastbuffer[8][128];
+int16_t cvbuffer[8][128];
 
-ScopeView scopeView1 = ScopeView(TFT, [&] (){ return queue1.readBuffer(); }, colors[0], (int16_t)ST7735_BLACK);
-ScopeView scopeView2 = ScopeView(TFT, [&] (){ return queue2.readBuffer(); }, colors[1], (int16_t)ST7735_BLACK);
-ScopeView scopeView3 = ScopeView(TFT, [&] (){ return queue3.readBuffer(); }, colors[2], (int16_t)ST7735_BLACK);
-ScopeView scopeView4 = ScopeView(TFT, [&] (){ return queue4.readBuffer(); }, colors[3], (int16_t)ST7735_BLACK);
-ScopeView scopeView5 = ScopeView(TFT, [&] (){ return queue5.readBuffer(); }, colors[4], (int16_t)ST7735_BLACK);
-ScopeView scopeView6 = ScopeView(TFT, [&] (){ return queue6.readBuffer(); }, colors[5], (int16_t)ST7735_BLACK);
+ScopeView scopeView1 = ScopeView(TFT, [&] (){ return queue1.readBuffer(); }, colors[0], (int16_t)ST7735_BLACK, 64);
+ScopeView scopeView2 = ScopeView(TFT, [&] (){ return queue2.readBuffer(); }, colors[1], (int16_t)ST7735_BLACK, 64);
+ScopeView scopeView3 = ScopeView(TFT, [&] (){ return queue3.readBuffer(); }, colors[2], (int16_t)ST7735_BLACK, 64);
+ScopeView scopeView4 = ScopeView(TFT, [&] (){ return queue4.readBuffer(); }, colors[3], (int16_t)ST7735_BLACK, 64);
+ScopeView scopeView5 = ScopeView(TFT, [&] (){ return queue5.readBuffer(); }, colors[4], (int16_t)ST7735_BLACK, 64);
+ScopeView scopeView6 = ScopeView(TFT, [&] (){ return queue6.readBuffer(); }, colors[5], (int16_t)ST7735_BLACK, 64);
+
+ScopeView scopeViewCV1 = ScopeView(TFT, [&] (){ return cvlastbuffer[0]; }, colors[1], (int16_t)ST7735_BLACK, 0);
+ScopeView scopeViewCV2 = ScopeView(TFT, [&] (){ return cvlastbuffer[1]; }, colors[2], (int16_t)ST7735_BLACK, 0);
+ScopeView scopeViewCV3 = ScopeView(TFT, [&] (){ return cvlastbuffer[2]; }, colors[3], (int16_t)ST7735_BLACK, 0);
+ScopeView scopeViewCV4 = ScopeView(TFT, [&] (){ return cvlastbuffer[3]; }, colors[4], (int16_t)ST7735_BLACK, 0);
+ScopeView scopeViewCV5 = ScopeView(TFT, [&] (){ return cvlastbuffer[4]; }, colors[5], (int16_t)ST7735_BLACK, 0);
+ScopeView scopeViewCV6 = ScopeView(TFT, [&] (){ return cvlastbuffer[5]; }, colors[6], (int16_t)ST7735_BLACK, 0);
+ScopeView scopeViewCV7 = ScopeView(TFT, [&] (){ return cvlastbuffer[6]; }, colors[7], (int16_t)ST7735_BLACK, 0);
+ScopeView scopeViewCV8 = ScopeView(TFT, [&] (){ return cvlastbuffer[7]; }, colors[8], (int16_t)ST7735_BLACK, 0);
 
 uint16_t control_voltage1 = 0x0000;
 
 const ScopeView* scopes[] = {&scopeView1, &scopeView2, &scopeView3, &scopeView4, &scopeView5, &scopeView6};
+const ScopeView* cvscopes[] = {&scopeViewCV1, &scopeViewCV2, &scopeViewCV3, &scopeViewCV4, &scopeViewCV5, &scopeViewCV6, &scopeViewCV7, &scopeViewCV8};
 
-int resetCount = 0;
-int8_t cvlastbuffer[8][128];
+
 AudioRecordQueue* queues[6] = {&queue1, &queue2, &queue3, &queue4, &queue5, &queue6};
 
 void setup() {  
@@ -162,7 +174,7 @@ void loop() {
     scopes[i]->drawScope(); 
   }
 
-  control_voltage1+=2;
+  control_voltage1+=1;
   AD5754R_LoadDac(AD5754R_DAC_ALL, control_voltage1);
   
   int i;
@@ -188,28 +200,25 @@ void loop() {
   bytesToRead = TOTAL_RAW_BYTES;
 
   parseRawBytes();
-
-  //TFT.initR(INITR_144GREENTAB);
-
-  for(i=0; i<8; i++) {
-    //
-    if (parsed[i] > 0xffe0)
-      parsed[i] = 0;
-    uint8_t value = parsed[i] >> 8;
-
-    TFT.drawLine(x, oldpos[i], x+1, value, colors[i]);
-    
-    cvlastbuffer[i][x] = value;
-    oldpos[i] = value;
-  }
-
   x++;
-  if (x > 126) {
-    x = 0; 
-  }
-  
-  //Serial.print("\r\n");
-  //delay(100);
+  if (x < 126) {
+    for(i=0; i<8; i++) {
+      if (parsed[i] > 0xffe0)
+        parsed[i] = 0;
+      uint16_t value = parsed[i];    
+      cvbuffer[i][x] = value;
+    } 
+  } else {
+    for (int i=0; i<8; i++) {
+      memcpy(cvlastbuffer[i], cvbuffer[i], 256); 
+      cvscopes[i]->takeBuffer();     
+    }
+    x = 0;   
+  }   
+
+  for (int i=0; i<8; i++) { 
+    cvscopes[i]->drawScope();  
+  } 
 }
 
 void parseRawBytes() {
