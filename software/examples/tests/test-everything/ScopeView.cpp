@@ -1,19 +1,51 @@
-#include "ScopeView.h"
+//
+// Created by Nicholas Newdigate on 13/04/2020.
+//
 
-void ScopeView::drawScope() {
-    oscilliscope_x = oscilliscope_x + 1;
-    if (oscilliscope_x > 127) {
-        return;
-    }
+#ifndef ARDUINO_MIDI_WRITER_SCOPEVIEW_H
+#define ARDUINO_MIDI_WRITER_SCOPEVIEW_H
 
-    _tft->drawLine(oscilliscope_x, _yOffset + (lastbuffer[oscilliscope_x-1] >> 8), oscilliscope_x + 1, _yOffset + (lastbuffer[oscilliscope_x] >> 8),  _backgroundColor);
-    _tft->drawLine(oscilliscope_x, _yOffset + (buffer[oscilliscope_x-1] >> 8),     oscilliscope_x + 1, _yOffset + (buffer[oscilliscope_x] >> 8),      _color);
-}
+#include "Arduino.h"
+#include <ST7735_t3.h> // Hardware-specific library
 
-void ScopeView::takeBuffer() {
-    if (_getBufferFn != nullptr) {
-      memcpy(lastbuffer, buffer, 256);
-      memcpy(buffer, _getBufferFn(), 256);
-      oscilliscope_x = 0;
-    }
-}
+
+#undef swap
+#include <functional>
+using namespace std;
+#undef swap
+#define swap(a, b) { typeof(a) t = a; a = b; b = t; }
+
+class ScopeView {
+public:
+    inline ScopeView(
+            ST7735_t3 &tft,
+            function<int16_t*()> getBufferFn,
+            int16_t color,
+            int16_t backgroundColor,
+            int8_t yOffset) :
+            _tft(&tft),
+            _getBufferFn(getBufferFn),
+            _backgroundColor(backgroundColor),
+            _color(color),
+            _yOffset(yOffset){
+    };
+
+    void drawScope();
+    void takeBuffer();
+    uint16_t oscilliscope_x = 0;
+    
+private:
+    ST7735_t3 *_tft;
+
+    int16_t buffer[128];
+    int16_t lastbuffer[128];
+    int16_t _backgroundColor;
+    int16_t _color;
+    int8_t _yOffset;
+
+    function<int16_t*()> _getBufferFn;
+};
+
+
+
+#endif //ARDUINO_MIDI_WRITER_SCOPEVIEW_H
