@@ -1,9 +1,9 @@
 #include <Audio.h>
 #include <Wire.h>
 #include <SPI.h>
-#include <Adafruit_GFX.h>    // Core graphics library
 #include <ST7735_t3.h> // Hardware-specific library
 #include "AD5754.h"
+#include "ScopeView.h"
 
 // GUItool: begin automatically generated code
 AudioInputTDM            tdm1;           //xy=193,432
@@ -65,10 +65,23 @@ uint16_t oldpos[8] = {0,0,0,0,0,0,0,0};
 int16_t colors[8] = {ST7735_GREEN,ST7735_RED,ST7735_BLUE,ST7735_CYAN,ST7735_MAGENTA,ST7735_YELLOW,0x00AA,ST7735_WHITE};
 
 
+ScopeView scopeView1 = ScopeView(TFT, [&] (){ return queue1.readBuffer(); }, colors[0], (int16_t)ST7735_BLACK);
+ScopeView scopeView2 = ScopeView(TFT, [&] (){ return queue2.readBuffer(); }, colors[1], (int16_t)ST7735_BLACK);
+ScopeView scopeView3 = ScopeView(TFT, [&] (){ return queue3.readBuffer(); }, colors[2], (int16_t)ST7735_BLACK);
+ScopeView scopeView4 = ScopeView(TFT, [&] (){ return queue4.readBuffer(); }, colors[3], (int16_t)ST7735_BLACK);
+ScopeView scopeView5 = ScopeView(TFT, [&] (){ return queue5.readBuffer(); }, colors[4], (int16_t)ST7735_BLACK);
+ScopeView scopeView6 = ScopeView(TFT, [&] (){ return queue6.readBuffer(); }, colors[5], (int16_t)ST7735_BLACK);
 
 uint16_t control_voltage1 = 0x0000;
 
+const ScopeView* scopes[] = {&scopeView1, &scopeView2, &scopeView3, &scopeView4, &scopeView5, &scopeView6};
+
+int resetCount = 0;
+int8_t cvlastbuffer[8][128];
+AudioRecordQueue* queues[6] = {&queue1, &queue2, &queue3, &queue4, &queue5, &queue6};
+
 void setup() {  
+  
   AudioMemory(100);
   SPI.begin();
   pinMode(DA_SYNC, OUTPUT);
@@ -120,37 +133,18 @@ void setup() {
   sine1.amplitude(0.25f);
   sine1.frequency(440);
   
-  sine2.amplitude(0.5);
+  sine2.amplitude(0.25);
   sine2.frequency(88);  
 }
 
-int resetCount = 0;
 
-
-
-uint16_t oscilliscope_x[6] = {0,0,0,0,0,0};
-int16_t buffer[6][128];
-int16_t lastbuffer[6][128];
-
-void updateScope(uint16_t i) {
-
-  oscilliscope_x[i] = oscilliscope_x[i] + 1;
-  if (oscilliscope_x[i] > 127) {
-    return;
-  }
-
-  TFT.drawLine(oscilliscope_x[i], 64 + (lastbuffer[i][oscilliscope_x[i]-1] >> 8), oscilliscope_x[i] + 1, 64 + (lastbuffer[i][oscilliscope_x[i]] >> 8), ST7735_BLACK);
-  TFT.drawLine(oscilliscope_x[i], 64 + (buffer[i][oscilliscope_x[i]-1] >> 8), oscilliscope_x[i] + 1, 64 + (buffer[i][oscilliscope_x[i]] >> 8), colors[i]);  
-}
-
-AudioRecordQueue* queues[6] = {&queue1, &queue2, &queue3, &queue4, &queue5, &queue6};
 
 void loop() {  
 
   for (int i=0; i<6; i++) {
     AudioRecordQueue *currentQueue = queues[i];
     if ( currentQueue->available() ) {    
-      if (oscilliscope_x[i] < 128) {
+      if (scopes[i]->oscilliscope_x < 128) {
         // completely discard record buffers until x location >= 100
         while (currentQueue->available()) {
           currentQueue->readBuffer();     
@@ -161,13 +155,11 @@ void loop() {
           currentQueue->readBuffer();     
           currentQueue->freeBuffer();   
         }
-        memcpy(lastbuffer[i], buffer[i], 256);
-        memcpy(buffer[i], currentQueue->readBuffer(), 256);
-        oscilliscope_x[i] = 0;
+        scopes[i]->takeBuffer();
         currentQueue->freeBuffer();
       }
     }
-    updateScope(i); 
+    scopes[i]->drawScope(); 
   }
 
   control_voltage1+=2;
@@ -204,17 +196,16 @@ void loop() {
     if (parsed[i] > 0xffe0)
       parsed[i] = 0;
     uint8_t value = parsed[i] >> 8;
-    //Serial.print((float)parsed[i] * SCALE_FACTOR * 2, 5);
+
     TFT.drawLine(x, oldpos[i], x+1, value, colors[i]);
-    //Serial.printf("%d",  parsed[i] * 10 / );
-    //Serial.print(",");
+    
+    cvlastbuffer[i][x] = value;
     oldpos[i] = value;
   }
 
   x++;
   if (x > 126) {
-    x = 0;
-    TFT.fillScreen(ST7735_BLACK);
+    x = 0; 
   }
   
   //Serial.print("\r\n");
