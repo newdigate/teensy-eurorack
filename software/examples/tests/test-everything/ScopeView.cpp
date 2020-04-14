@@ -6,8 +6,8 @@ void ScopeView::drawScope() {
         return;
     }
 
-    _tft->drawLine(oscilliscope_x, 64 + (lastbuffer[oscilliscope_x-1] >> 8), oscilliscope_x + 1, 64 + (lastbuffer[oscilliscope_x] >> 8), _backgroundColor);
-    _tft->drawLine(oscilliscope_x, 64 + (buffer[oscilliscope_x-1] >> 8), oscilliscope_x + 1, 64 + (buffer[oscilliscope_x] >> 8), _color);
+    _tft->drawLine(oscilliscope_x, _yOffset + (lastbuffer[oscilliscope_x-1] >> 8), oscilliscope_x + 1, _yOffset + (lastbuffer[oscilliscope_x] >> 8),  _backgroundColor);
+    _tft->drawLine(oscilliscope_x, _yOffset + (buffer[oscilliscope_x-1] >> 8),     oscilliscope_x + 1, _yOffset + (buffer[oscilliscope_x] >> 8),      _color);
 }
 
 void ScopeView::takeBuffer() {
