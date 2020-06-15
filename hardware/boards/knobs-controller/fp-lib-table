@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name "footprints")(type "KiCad")(uri "/home/nic/Development/teensy-eurorack-1.8/hardware/boards/footprints.pretty")(options "")(descr ""))
-)
