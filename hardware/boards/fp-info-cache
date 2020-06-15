@@ -1,4 +1,4 @@
-18439358346333991
+18448912544169036
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -80815,352 +80815,41 @@ varistor SIOV
 2
 2
 footprints
-ACJS-MV5
-
-
-0
-5
-5
-footprints
-HFW8R-1STE1LF
-
-
-0
-10
-10
-footprints
-Teensy41
-
-
-0
-67
-67
-footprints
-TinyFPGA_BX
-
-
-0
-28
-28
-footprints
-WQP-PJ301M-12_JACK
-
-
-0
-3
-3
-footprints2
-1X02
-<b>PIN HEADER</b>
-
-0
-2
-2
-footprints2
-1X04
-<b>PIN HEADER</b>
-
-0
-4
-4
-footprints2
-2X3_SMT
-4UCON 15881<br>
-Male .1" spaced SMT<br>
-Keying posts into board
-
-0
-6
-6
-footprints2
-8-SMD
+6N138S
 
 
 0
 8
 8
-footprints2
-0805-NO
-
-
-0
-2
-2
-footprints2
-1206
-<p><b>Generic 3216 (1206) package</b></p>
-<p>0.2mm courtyard excess rounded to nearest 0.05mm.</p>
-
-0
-2
-2
-footprints2
-ACJS-MV5
-
-
-0
-5
-5
-footprints2
-ANALOG_DEVICES_AD5754BREZ_2
-ADI-AD5754-RE-24
-
-0
-25
-25
-footprints2
-ANALOG_DEVICES_AD7606BSTZ_2
-ADI-AD7606-ST-64-2
-
-0
-64
-64
-footprints2
-AVX-A
-
-
-0
-2
-2
-footprints2
-Breakoutboard
-
-
-0
-54
-54
-footprints2
-C&K_PTS820_NOPEGS
-
-
-0
-6
-6
-footprints2
-C0805
-<b>CAPACITOR</b><p>
-
-0
-2
-2
-footprints2
-C0805K
-<b>Ceramic Chip Capacitor KEMET 0805 reflow solder</b><p>
-Metric Code Size 2012
-
-0
-2
-2
-footprints2
-C1206
-<b>CAPACITOR</b>
-
-0
-2
-2
-footprints2
-ENCODER_LED_3_KIT
-<h3>Illuminated Rotary Encoder w/ RGB LED and select switch</h3>
-<p>Encoders rotate similarly to potentiometers, but they’re different from potentiometers in that an encoder has full rotation without limits. They output gray code so that you can tell how much and in which direction the encoder has been turned.</p>
-<p>This encoder includes an RGB LED and a push-down select switch.</p>
-<p><b>Warning:</b> This is the KIT version of this package. This package has a smaller diameter top stop mask, which doesn't cover the diameter of the pad. This means only the bottom side of the pads' copper will be exposed. You'll only be able to solder to the bottom side.</p>
-<p><a href="http://cdn.sparkfun.com/datasheets/Components/Switches/EC12PLRGBSDVBF-D-25K-24-24C-6108-6H.pdf">Dimensional Drawing</a></p>
-
-0
-10
-10
-footprints2
-EURO_POWER_HEADER
-Eurorack Modular Synth 5 x 2 power header
-
-0
-10
-10
-footprints2
-HFW8R-1STE1LF
-
-
-0
-10
-10
-footprints2
-JST---S4B-PH-SM4-TB(LF)(SN)_JST_S4B-PH-SM4-TB_LF_SN_0
-4 Positions Header Connector 0.079" (2.00mm) Surface Mount, Right Angle Tin
-
-0
-6
-6
-footprints2
-LED_RADIAL_3MM
-Radial (LED); 2.54 mm C X 4.10 mm Dia X 5.50 mm H body<p><i>PCB Libraries Packages</i>
-
-0
-2
-2
-footprints2
-LQFP64L
-<b>LQFP 64L</b><p>
-pitch 0.5mm, body 10 mm x 10 mm
-
-0
-64
-64
-footprints2
-MICROCHIP_MCP1700T-2502E-TT_0
-PM-LINEREG-MCP1700-IL3
-
-0
-3
-3
-footprints2
-MK1_ZERO_0603-1608X90N
-
-
-0
-2
-2
-footprints2
-MK1_ZERO_0603-F1608X100N
-
-
-0
-2
-2
-footprints2
-MK1_ZERO_QFN50P700X700X90-49XN-EPSQ515
-
-
-0
-49
-49
-footprints2
-MK1_ZERO_QUARZO-ABS07
-
-
-0
-2
-2
-footprints2
-MK1_ZERO_SODFL1008X40N-882D
-
-
-0
-2
-2
-footprints2
-MK1_ZERO_SOT150P400X160-3N
-
-
-0
-3
-3
-footprints2
-MK1_ZERO_SOT190P230X110-4N
-
-
-0
-4
-4
-footprints2
-MK1_ZERO_USBMICRO-ZX62-AB-5PA
-
-
-0
-11
-11
-footprints2
-MOLEX_52892-3033_0
-MOLX-52892-3033
-
-0
-32
-32
-footprints2
-MURATA_BLM21PG221SN1D_1
-MURA-FB-2
-
-0
-2
-2
-footprints2
-MUSICTHINGMODULAR_9MM_SNAP-IN_POT
+footprints
+9MM_SNAP-IN_POT
 9mm vertical snap-in pot, Alpha / Panasonic style
 
 0
 5
 5
-footprints2
-NetTie-I_Connected_SMD_small
-Just a "Net tie" as an more or less elegant way to connect two different nets without disturbing ERC and DRC.
-Just a "Net tie" as an more or less elegant way to connect two different nets without disturbing ERC and DRC.
+footprints
+ACJS-MV5
+
+
 0
-2
-2
-footprints2
+5
+5
+footprints
+HFW8R-1STE1LF
+
+
+0
+10
+10
+footprints
 OG-MIDI_SD-50BV
 
 
 0
 6
 6
-footprints2
-PAD.03X.05
-<h3>Electrically Conductive Pad 0.05" Circle</h3>
-Used as a test point connection for pogo pins or other debugging tools. 
-<p>Specifications:
-<li>Area: 0.05" x 0.05"</li>
-</ul></p>
-<p>Example device(s):
-<ul><li>TEST_POINT</li>
-</ul></p>
-
-0
-1
-1
-footprints2
-R0805
-
-
-0
-2
-2
-footprints2
-RESISTOR-NICK_C0805
-<b>CAPACITOR</b><p>
-
-0
-2
-2
-footprints2
-RESISTOR-NICK_C1206
-<b>CAPACITOR</b>
-
-0
-2
-2
-footprints2
-RESISTOR-NICK_R0805
-<b>RESISTOR</b><p>
-
-0
-2
-2
-footprints2
-SMA-DIODE
-<B>Diode</B><p>
-Basic SMA packaged diode. Good for reverse polarization protection. Common part #: MBRA140
-
-0
-2
-2
-footprints2
-SOT223
-<b>Small Outline Transistor</b>
-
-0
-4
-4
-footprints2
+footprints
 ST7735
 <h3>Plated Through Hole -8 Pin</h3>
 <p>Specifications:
@@ -81174,56 +80863,416 @@ ST7735
 0
 8
 8
-footprints2
-TEENSY_4.0
+footprints
+Teensy41
 
 
 0
-28
-28
-footprints2
-TEENSY_4.0_WITH_SMD_HEADER_PINS
-
-
-0
-43
-43
-footprints2
-TEENSY_4.0_WITH_SMD_HEADER_PINS_2
-
-
-0
-30
-30
-footprints2
-TE_1-1734592-8
-10 Position FPC Connector Contacts, Bottom 0.020" (0.50mm) Surface Mount, Right Angle
-
-0
-10
-10
-footprints2
+67
+67
+footprints
 USB-A-S-X-X-VT
 USB A, SINGLE, VERTICAL THROUGH HOLE.
 
 0
 6
 6
-footprints2
+footprints
 WQP-PJ301M-12_JACK
 
 
 0
 3
 3
-footprints2
+footprints
 WURTH_ELECTRONICS_61400413321_0
 CONN USB 4POS FEMALE STR TYPE B
 
 0
 6
 6
-footprints2
+footprints
+YAMAICHI_MICROSD_VERTICAL
+Vertical Micro SD card slot
+
+0
+10
+10
+footprints-2
+1X02
+<b>PIN HEADER</b>
+
+0
+2
+2
+footprints-2
+1X04
+<b>PIN HEADER</b>
+
+0
+4
+4
+footprints-2
+2X3_SMT
+4UCON 15881<br>
+Male .1" spaced SMT<br>
+Keying posts into board
+
+0
+6
+6
+footprints-2
+8-SMD
+
+
+0
+8
+8
+footprints-2
+0805-NO
+
+
+0
+2
+2
+footprints-2
+1206
+<p><b>Generic 3216 (1206) package</b></p>
+<p>0.2mm courtyard excess rounded to nearest 0.05mm.</p>
+
+0
+2
+2
+footprints-2
+ACJS-MV5
+
+
+0
+5
+5
+footprints-2
+ANALOG_DEVICES_AD5754BREZ_2
+ADI-AD5754-RE-24
+
+0
+25
+25
+footprints-2
+ANALOG_DEVICES_AD7606BSTZ_2
+ADI-AD7606-ST-64-2
+
+0
+64
+64
+footprints-2
+AVX-A
+
+
+0
+2
+2
+footprints-2
+Breakoutboard
+
+
+0
+54
+54
+footprints-2
+C&K_PTS820_NOPEGS
+
+
+0
+6
+6
+footprints-2
+C0805
+<b>CAPACITOR</b><p>
+
+0
+2
+2
+footprints-2
+C0805K
+<b>Ceramic Chip Capacitor KEMET 0805 reflow solder</b><p>
+Metric Code Size 2012
+
+0
+2
+2
+footprints-2
+C1206
+<b>CAPACITOR</b>
+
+0
+2
+2
+footprints-2
+ENCODER_LED_3_KIT
+<h3>Illuminated Rotary Encoder w/ RGB LED and select switch</h3>
+<p>Encoders rotate similarly to potentiometers, but they’re different from potentiometers in that an encoder has full rotation without limits. They output gray code so that you can tell how much and in which direction the encoder has been turned.</p>
+<p>This encoder includes an RGB LED and a push-down select switch.</p>
+<p><b>Warning:</b> This is the KIT version of this package. This package has a smaller diameter top stop mask, which doesn't cover the diameter of the pad. This means only the bottom side of the pads' copper will be exposed. You'll only be able to solder to the bottom side.</p>
+<p><a href="http://cdn.sparkfun.com/datasheets/Components/Switches/EC12PLRGBSDVBF-D-25K-24-24C-6108-6H.pdf">Dimensional Drawing</a></p>
+
+0
+10
+10
+footprints-2
+EURO_POWER_HEADER
+Eurorack Modular Synth 5 x 2 power header
+
+0
+10
+10
+footprints-2
+HFW8R-1STE1LF
+
+
+0
+10
+10
+footprints-2
+JST---S4B-PH-SM4-TB(LF)(SN)_JST_S4B-PH-SM4-TB_LF_SN_0
+4 Positions Header Connector 0.079" (2.00mm) Surface Mount, Right Angle Tin
+
+0
+6
+6
+footprints-2
+LED_RADIAL_3MM
+Radial (LED); 2.54 mm C X 4.10 mm Dia X 5.50 mm H body<p><i>PCB Libraries Packages</i>
+
+0
+2
+2
+footprints-2
+LQFP64L
+<b>LQFP 64L</b><p>
+pitch 0.5mm, body 10 mm x 10 mm
+
+0
+64
+64
+footprints-2
+MICROCHIP_MCP1700T-2502E-TT_0
+PM-LINEREG-MCP1700-IL3
+
+0
+3
+3
+footprints-2
+MK1_ZERO_0603-1608X90N
+
+
+0
+2
+2
+footprints-2
+MK1_ZERO_0603-F1608X100N
+
+
+0
+2
+2
+footprints-2
+MK1_ZERO_QFN50P700X700X90-49XN-EPSQ515
+
+
+0
+49
+49
+footprints-2
+MK1_ZERO_QUARZO-ABS07
+
+
+0
+2
+2
+footprints-2
+MK1_ZERO_SODFL1008X40N-882D
+
+
+0
+2
+2
+footprints-2
+MK1_ZERO_SOT150P400X160-3N
+
+
+0
+3
+3
+footprints-2
+MK1_ZERO_SOT190P230X110-4N
+
+
+0
+4
+4
+footprints-2
+MK1_ZERO_USBMICRO-ZX62-AB-5PA
+
+
+0
+11
+11
+footprints-2
+MOLEX_52892-3033_0
+MOLX-52892-3033
+
+0
+32
+32
+footprints-2
+MURATA_BLM21PG221SN1D_1
+MURA-FB-2
+
+0
+2
+2
+footprints-2
+MUSICTHINGMODULAR_9MM_SNAP-IN_POT
+9mm vertical snap-in pot, Alpha / Panasonic style
+
+0
+5
+5
+footprints-2
+NetTie-I_Connected_SMD_small
+Just a "Net tie" as an more or less elegant way to connect two different nets without disturbing ERC and DRC.
+Just a "Net tie" as an more or less elegant way to connect two different nets without disturbing ERC and DRC.
+0
+2
+2
+footprints-2
+OG-MIDI_SD-50BV
+
+
+0
+6
+6
+footprints-2
+PAD.03X.05
+<h3>Electrically Conductive Pad 0.05" Circle</h3>
+Used as a test point connection for pogo pins or other debugging tools. 
+<p>Specifications:
+<li>Area: 0.05" x 0.05"</li>
+</ul></p>
+<p>Example device(s):
+<ul><li>TEST_POINT</li>
+</ul></p>
+
+0
+1
+1
+footprints-2
+R0805
+
+
+0
+2
+2
+footprints-2
+RESISTOR-NICK_C0805
+<b>CAPACITOR</b><p>
+
+0
+2
+2
+footprints-2
+RESISTOR-NICK_C1206
+<b>CAPACITOR</b>
+
+0
+2
+2
+footprints-2
+RESISTOR-NICK_R0805
+<b>RESISTOR</b><p>
+
+0
+2
+2
+footprints-2
+SMA-DIODE
+<B>Diode</B><p>
+Basic SMA packaged diode. Good for reverse polarization protection. Common part #: MBRA140
+
+0
+2
+2
+footprints-2
+SOT223
+<b>Small Outline Transistor</b>
+
+0
+4
+4
+footprints-2
+ST7735
+<h3>Plated Through Hole -8 Pin</h3>
+<p>Specifications:
+<ul><li>Pin count:8</li>
+<li>Pin pitch:0.1"</li>
+</ul></p>
+<p>Example device(s):
+<ul><li>CONN_08</li>
+</ul></p>
+
+0
+8
+8
+footprints-2
+TEENSY_4.0
+
+
+0
+28
+28
+footprints-2
+TEENSY_4.0_WITH_SMD_HEADER_PINS
+
+
+0
+43
+43
+footprints-2
+TEENSY_4.0_WITH_SMD_HEADER_PINS_2
+
+
+0
+30
+30
+footprints-2
+TE_1-1734592-8
+10 Position FPC Connector Contacts, Bottom 0.020" (0.50mm) Surface Mount, Right Angle
+
+0
+10
+10
+footprints-2
+USB-A-S-X-X-VT
+USB A, SINGLE, VERTICAL THROUGH HOLE.
+
+0
+6
+6
+footprints-2
+WQP-PJ301M-12_JACK
+
+
+0
+3
+3
+footprints-2
+WURTH_ELECTRONICS_61400413321_0
+CONN USB 4POS FEMALE STR TYPE B
+
+0
+6
+6
+footprints-2
 YAMAICHI_MICROSD_VERTICAL
 Vertical Micro SD card slot
 

@@ -2775,21 +2775,21 @@ DAC_SYNC
 Text Label 11150 2950 0    49   ~ 0
 DAC_SDOUT
 $Comp
-L Connector_Generic:Conn_02x08_Odd_Even J?
+L Connector_Generic:Conn_02x08_Odd_Even J28
 U 1 1 5EE93454
 P 1350 8850
-F 0 "J?" H 1400 9367 50  0000 C CNN
+F 0 "J28" H 1400 9367 50  0000 C CNN
 F 1 "Conn_02x08_Odd_Even" H 1400 9276 50  0000 C CNN
-F 2 "" H 1350 8850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 1350 8850 50  0001 C CNN
 F 3 "~" H 1350 8850 50  0001 C CNN
 	1    1350 8850
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:-12V #PWR?
+L power:-12V #PWR0101
 U 1 1 5EE9CB27
 P 1800 8550
-F 0 "#PWR?" H 1800 8650 50  0001 C CNN
+F 0 "#PWR0101" H 1800 8650 50  0001 C CNN
 F 1 "-12V" H 1815 8723 50  0000 C CNN
 F 2 "" H 1800 8550 50  0001 C CNN
 F 3 "" H 1800 8550 50  0001 C CNN
@@ -2797,10 +2797,10 @@ F 3 "" H 1800 8550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:-12V #PWR?
+L power:-12V #PWR0122
 U 1 1 5EE9E974
 P 900 8550
-F 0 "#PWR?" H 900 8650 50  0001 C CNN
+F 0 "#PWR0122" H 900 8650 50  0001 C CNN
 F 1 "-12V" H 915 8723 50  0000 C CNN
 F 2 "" H 900 8550 50  0001 C CNN
 F 3 "" H 900 8550 50  0001 C CNN
@@ -2822,10 +2822,10 @@ Wire Wire Line
 	1650 8750 1650 8650
 Connection ~ 1650 8750
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR0123
 U 1 1 5EED4414
 P 900 8950
-F 0 "#PWR?" H 900 8800 50  0001 C CNN
+F 0 "#PWR0123" H 900 8800 50  0001 C CNN
 F 1 "+12V" H 915 9123 50  0000 C CNN
 F 2 "" H 900 8950 50  0001 C CNN
 F 3 "" H 900 8950 50  0001 C CNN
@@ -2833,10 +2833,10 @@ F 3 "" H 900 8950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR0124
 U 1 1 5EED521B
 P 1800 8950
-F 0 "#PWR?" H 1800 8800 50  0001 C CNN
+F 0 "#PWR0124" H 1800 8800 50  0001 C CNN
 F 1 "+12V" H 1815 9123 50  0000 C CNN
 F 2 "" H 1800 8950 50  0001 C CNN
 F 3 "" H 1800 8950 50  0001 C CNN
@@ -2850,21 +2850,21 @@ Wire Wire Line
 Wire Wire Line
 	1150 9050 1650 9050
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J27
 U 1 1 5EEEAE16
 P 700 9250
-F 0 "J?" V 572 9062 50  0000 R CNN
+F 0 "J27" V 572 9062 50  0000 R CNN
 F 1 "Conn_01x02" V 663 9062 50  0000 R CNN
-F 2 "" H 700 9250 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 700 9250 50  0001 C CNN
 F 3 "~" H 700 9250 50  0001 C CNN
 	1    700  9250
 	0    -1   1    0   
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0125
 U 1 1 5EEF2D0F
 P 700 9050
-F 0 "#PWR?" H 700 8900 50  0001 C CNN
+F 0 "#PWR0125" H 700 8900 50  0001 C CNN
 F 1 "+5V" H 715 9223 50  0000 C CNN
 F 2 "" H 700 9050 50  0001 C CNN
 F 3 "" H 700 9050 50  0001 C CNN
@@ -2971,10 +2971,10 @@ Wire Notes Line
 Wire Notes Line
 	18600 16100 18650 16100
 $Comp
-L Device:Rotary_Encoder_Switch SW?
+L Device:Rotary_Encoder_Switch SW1
 U 1 1 5F03F2CF
 P 6850 8400
-F 0 "SW?" H 6850 8767 50  0000 C CNN
+F 0 "SW1" H 6850 8767 50  0000 C CNN
 F 1 "Rotary_Encoder_Switch" H 6850 8676 50  0000 C CNN
 F 2 "" H 6700 8560 50  0001 C CNN
 F 3 "~" H 6850 8660 50  0001 C CNN
@@ -2982,10 +2982,10 @@ F 3 "~" H 6850 8660 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Rotary_Encoder_Switch SW?
+L Device:Rotary_Encoder_Switch SW2
 U 1 1 5F041FB0
 P 6850 9050
-F 0 "SW?" H 6850 9417 50  0000 C CNN
+F 0 "SW2" H 6850 9417 50  0000 C CNN
 F 1 "Rotary_Encoder_Switch" H 6850 9326 50  0000 C CNN
 F 2 "" H 6700 9210 50  0001 C CNN
 F 3 "~" H 6850 9310 50  0001 C CNN
@@ -2993,10 +2993,10 @@ F 3 "~" H 6850 9310 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Rotary_Encoder_Switch SW?
+L Device:Rotary_Encoder_Switch SW3
 U 1 1 5F044C02
 P 6850 9700
-F 0 "SW?" H 6850 10067 50  0000 C CNN
+F 0 "SW3" H 6850 10067 50  0000 C CNN
 F 1 "Rotary_Encoder_Switch" H 6850 9976 50  0000 C CNN
 F 2 "" H 6700 9860 50  0001 C CNN
 F 3 "~" H 6850 9960 50  0001 C CNN
@@ -3006,45 +3006,45 @@ $EndComp
 Wire Notes Line
 	6400 7750 6400 10000
 $Comp
-L Device:R_POT RV?
+L Device:R_POT RV3
 U 1 1 5F06BA2B
 P 6000 8350
-F 0 "RV?" H 5931 8396 50  0000 R CNN
+F 0 "RV3" H 5931 8396 50  0000 R CNN
 F 1 "R_POT" H 5931 8305 50  0000 R CNN
-F 2 "" H 6000 8350 50  0001 C CNN
+F 2 "footprints:9MM_SNAP-IN_POT" H 6000 8350 50  0001 C CNN
 F 3 "~" H 6000 8350 50  0001 C CNN
 	1    6000 8350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_POT RV?
+L Device:R_POT RV4
 U 1 1 5F06C67E
 P 6000 9200
-F 0 "RV?" H 5931 9246 50  0000 R CNN
+F 0 "RV4" H 5931 9246 50  0000 R CNN
 F 1 "R_POT" H 5931 9155 50  0000 R CNN
-F 2 "" H 6000 9200 50  0001 C CNN
+F 2 "footprints:9MM_SNAP-IN_POT" H 6000 9200 50  0001 C CNN
 F 3 "~" H 6000 9200 50  0001 C CNN
 	1    6000 9200
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_POT RV?
+L Device:R_POT RV2
 U 1 1 5F06CD44
 P 5350 9200
-F 0 "RV?" H 5281 9246 50  0000 R CNN
+F 0 "RV2" H 5281 9246 50  0000 R CNN
 F 1 "R_POT" H 5281 9155 50  0000 R CNN
-F 2 "" H 5350 9200 50  0001 C CNN
+F 2 "footprints:9MM_SNAP-IN_POT" H 5350 9200 50  0001 C CNN
 F 3 "~" H 5350 9200 50  0001 C CNN
 	1    5350 9200
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_POT RV?
+L Device:R_POT RV1
 U 1 1 5F06D518
 P 5350 8350
-F 0 "RV?" H 5281 8396 50  0000 R CNN
+F 0 "RV1" H 5281 8396 50  0000 R CNN
 F 1 "R_POT" H 5281 8305 50  0000 R CNN
-F 2 "" H 5350 8350 50  0001 C CNN
+F 2 "footprints:9MM_SNAP-IN_POT" H 5350 8350 50  0001 C CNN
 F 3 "~" H 5350 8350 50  0001 C CNN
 	1    5350 8350
 	1    0    0    -1  
@@ -3052,10 +3052,10 @@ $EndComp
 Wire Notes Line
 	4950 7750 4950 10000
 $Comp
-L Connector:DIN-5 J?
+L Connector:DIN-5 J29
 U 1 1 5F082697
 P 3300 8400
-F 0 "J?" H 3300 8033 50  0000 C CNN
+F 0 "J29" H 3300 8033 50  0000 C CNN
 F 1 "DIN-5" H 3300 8124 50  0000 C CNN
 F 2 "" H 3300 8400 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 3300 8400 50  0001 C CNN
@@ -3063,10 +3063,10 @@ F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 3300 8400 50  0001
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:DIN-5 J?
+L Connector:DIN-5 J30
 U 1 1 5F0833EE
 P 3300 9350
-F 0 "J?" H 3300 8983 50  0000 C CNN
+F 0 "J30" H 3300 8983 50  0000 C CNN
 F 1 "DIN-5" H 3300 9074 50  0000 C CNN
 F 2 "" H 3300 9350 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 3300 9350 50  0001 C CNN
@@ -3074,14 +3074,62 @@ F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 3300 9350 50  0001
 	-1   0    0    1   
 $EndComp
 $Comp
-L Isolator:6N138 U?
+L Isolator:6N138 U7
 U 1 1 5F0A4598
 P 4150 8400
-F 0 "U?" H 4150 8867 50  0000 C CNN
+F 0 "U7" H 4150 8867 50  0000 C CNN
 F 1 "6N138" H 4150 8776 50  0000 C CNN
-F 2 "" H 4440 8100 50  0001 C CNN
+F 2 "footprints:6N138S" H 4440 8100 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub/Collateral/HCPL2731-D.pdf" H 4440 8100 50  0001 C CNN
 	1    4150 8400
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x20 J31
+U 1 1 5F0E9788
+P 13100 3750
+F 0 "J31" H 13018 2525 50  0000 C CNN
+F 1 "Conn_01x20" H 13018 2616 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x20_P2.54mm_Vertical" H 13100 3750 50  0001 C CNN
+F 3 "~" H 13100 3750 50  0001 C CNN
+	1    13100 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x20 J33
+U 1 1 5F0F1E7B
+P 14450 3750
+F 0 "J33" H 14368 2525 50  0000 C CNN
+F 1 "Conn_01x20" H 14368 2616 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical" H 14450 3750 50  0001 C CNN
+F 3 "~" H 14450 3750 50  0001 C CNN
+	1    14450 3750
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	13300 2750 14250 2750
+$Comp
+L Connector_Generic:Conn_01x20 J32
+U 1 1 5F1200B8
+P 13100 6200
+F 0 "J32" H 13018 4975 50  0000 C CNN
+F 1 "Conn_01x20" H 13018 5066 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x20_P2.54mm_Vertical" H 13100 6200 50  0001 C CNN
+F 3 "~" H 13100 6200 50  0001 C CNN
+	1    13100 6200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x20 J34
+U 1 1 5F122D19
+P 14450 6200
+F 0 "J34" H 14368 4975 50  0000 C CNN
+F 1 "Conn_01x20" H 14368 5066 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical" H 14450 6200 50  0001 C CNN
+F 3 "~" H 14450 6200 50  0001 C CNN
+	1    14450 6200
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	13300 5200 14250 5200
 $EndSCHEMATC
