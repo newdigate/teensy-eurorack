@@ -862,17 +862,6 @@ F 3 "" H 15550 11000 50  0001 C CNN
 	1    15550 11000
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_02x08_Odd_Even J3
-U 1 1 5EEB9163
-P 15450 1400
-F 0 "J3" H 15500 1917 50  0000 C CNN
-F 1 "Conn_02x08_Odd_Even" H 15500 1826 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x08_P2.00mm_Vertical" H 15450 1400 50  0001 C CNN
-F 3 "~" H 15450 1400 50  0001 C CNN
-	1    15450 1400
-	1    0    0    -1  
-$EndComp
 Text Label 17050 11350 0    50   ~ 0
 VIN1
 Text Label 17050 11550 0    50   ~ 0
@@ -904,38 +893,6 @@ VGND6
 Text Label 17050 12650 0    50   ~ 0
 VGND7
 Text Label 17050 12850 0    50   ~ 0
-VGND8
-Text Label 15250 1100 2    50   ~ 0
-VIN1
-Text Label 15250 1200 2    50   ~ 0
-VIN2
-Text Label 15250 1300 2    50   ~ 0
-VIN3
-Text Label 15250 1400 2    50   ~ 0
-VIN4
-Text Label 15250 1500 2    50   ~ 0
-VIN5
-Text Label 15250 1600 2    50   ~ 0
-VIN6
-Text Label 15250 1700 2    50   ~ 0
-VIN7
-Text Label 15250 1800 2    50   ~ 0
-VIN8
-Text Label 15750 1100 0    50   ~ 0
-VGND1
-Text Label 15750 1200 0    50   ~ 0
-VGND2
-Text Label 15750 1300 0    50   ~ 0
-VGND3
-Text Label 15750 1400 0    50   ~ 0
-VGND4
-Text Label 15750 1500 0    50   ~ 0
-VGND5
-Text Label 15750 1600 0    50   ~ 0
-VGND6
-Text Label 15750 1700 0    50   ~ 0
-VGND7
-Text Label 15750 1800 0    50   ~ 0
 VGND8
 $Comp
 L power:GND #PWR0100
@@ -1703,17 +1660,6 @@ F 3 "" H 3750 1650 50  0001 C CNN
 	1    3750 1650
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_02x08_Odd_Even J2
-U 1 1 5F07602D
-P 14400 1400
-F 0 "J2" H 14450 1917 50  0000 C CNN
-F 1 "Conn_02x08_Odd_Even" H 14450 1826 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x08_P2.00mm_Vertical" H 14400 1400 50  0001 C CNN
-F 3 "~" H 14400 1400 50  0001 C CNN
-	1    14400 1400
-	1    0    0    -1  
-$EndComp
 Text Label 11600 10400 0    50   ~ 0
 VOUT1
 Text Label 11600 10500 0    50   ~ 0
@@ -1734,54 +1680,6 @@ Text Label 11600 10900 0    50   ~ 0
 DAC_REF2V5
 Text Label 11600 13450 0    50   ~ 0
 DAC_REF2V5
-Text Label 14200 1100 2    50   ~ 0
-VOUT1
-Text Label 14200 1200 2    50   ~ 0
-VOUT2
-Text Label 14200 1300 2    50   ~ 0
-VOUT3
-Text Label 14200 1400 2    50   ~ 0
-VOUT4
-Text Label 14200 1500 2    50   ~ 0
-VOUT5
-Text Label 14200 1600 2    50   ~ 0
-VOUT6
-Text Label 14200 1700 2    50   ~ 0
-VOUT7
-Text Label 14200 1800 2    50   ~ 0
-VOUT8
-$Comp
-L power:GND #PWR096
-U 1 1 5F088F79
-P 14700 1800
-F 0 "#PWR096" H 14700 1550 50  0001 C CNN
-F 1 "GND" H 14705 1627 50  0001 C CNN
-F 2 "" H 14700 1800 50  0001 C CNN
-F 3 "" H 14700 1800 50  0001 C CNN
-	1    14700 1800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14700 1800 14700 1700
-Connection ~ 14700 1800
-Wire Wire Line
-	14700 1700 14700 1600
-Connection ~ 14700 1700
-Wire Wire Line
-	14700 1500 14700 1600
-Connection ~ 14700 1600
-Wire Wire Line
-	14700 1500 14700 1400
-Connection ~ 14700 1500
-Wire Wire Line
-	14700 1400 14700 1300
-Connection ~ 14700 1400
-Wire Wire Line
-	14700 1300 14700 1200
-Connection ~ 14700 1300
-Wire Wire Line
-	14700 1200 14700 1100
-Connection ~ 14700 1200
 $Sheet
 S 6200 2000 750  400 
 U 5F0BA363
