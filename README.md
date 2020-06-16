@@ -1,4 +1,4 @@
-# teensy 4.0 eurorack shield 
+# teensy 4.1 eurorack shield 
 [![Join the chat at https://gitter.im/newdigate/teensy-eurorack](https://badges.gitter.im/newdigate/teensy-eurorack.svg)](https://gitter.im/newdigate/teensy-eurorack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![kicad pcb ops CI](https://github.com/newdigate/teensy-eurorack/workflows/kicad%20pcb%20ops%20CI/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions?query=workflow%3A%22kicad+pcb+ops+CI%22)
 
@@ -24,18 +24,18 @@ These circuit boards provide the peripherals necessary to interface a [teensy 4.
 
 ## specifications
 * **microcontrollers:** 
-  * 600 Mhz ARM cortex m7 ( [teensy 4.0 board](https://www.pjrc.com/store/teensy40.html "teensy 4.0 board") )
-  * SAMD21 32bit 48Mhz micro-controller (based on [arduino mkr1000](https://www.arduino.cc/en/Guide/MKR1000))
+  * 600 Mhz ARM cortex m7 ( [teensy 4.1 board](https://www.pjrc.com/store/teensy41.html "teensy 4.1 board") )
+  * ~~SAMD21 32bit 48Mhz micro-controller (based on [arduino mkr1000](https://www.arduino.cc/en/Guide/MKR1000))~~
 * **audio:** multi-channel audio codec ( 6-in / 8-out 24-bit sound card - [CS42448](https://statics.cirrus.com/pubs/proDatasheet/CS42448_F5.pdf) )
   * *the audio codec circuit originally started as a discussion on quad audio channel outputs and a pcb design integrating teensy and cs42448 from Paul Stoffregen on [pjrc forum](https://forum.pjrc.com/threads/41371-Quad-channel-output-on-Teensy-3-6?p=138828&viewfull=1#post138828)*
-* **analog control voltage ins/outs:** -10V to 10V 16bit/sample, 8 x inputs and 4 x outputs ( [ad7606](https://www.analog.com/media/en/technical-documentation/data-sheets/ad7606_7606-6_7606-4.pdf), [ad5754](https://www.analog.com/media/en/technical-documentation/data-sheets/AD5724_5734_5754.pdf) )
+* **analog control voltage ins/outs:** -10V to 10V 16bit/sample, 8 x inputs and 8 x outputs ( [ad7606](https://www.analog.com/media/en/technical-documentation/data-sheets/ad7606_7606-6_7606-4.pdf), 2x [ad5754](https://www.analog.com/media/en/technical-documentation/data-sheets/AD5724_5734_5754.pdf) )
 * **display:** ST7735 128x128 16bit-color tft display
 * **breakouts:** 
   * microSD card socket, 
   * USB host/device, 
   * midi in/out, 
-  * knobs (4 x pots, 3 x RGB encoders w/switch)
-* **gpio:** 4 x configurable 5v logic inputs/outputs. [PCA9536](https://www.ti.com/lit/ds/symlink/pca9536.pdf)
+  * knobs (4 x pots, 3 x ~~RGB~~ encoders w/switch)
+~~* **gpio:** 4 x configurable 5v logic inputs/outputs. [PCA9536](https://www.ti.com/lit/ds/symlink/pca9536.pdf)~~
 * **panel:** 24HP aluminium panel mounted for eurorack case
 * **programability**: 
   * write arduino compatible c/c++ firmware & program using arduino/teensyduino
