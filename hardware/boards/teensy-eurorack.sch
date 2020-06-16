@@ -2135,7 +2135,7 @@ U 1 1 5F7A6B6D
 P 13700 1400
 F 0 "J1" H 13650 1900 50  0000 L CNN
 F 1 "Conn_01x08" H 13400 1800 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 13700 1400 50  0001 C CNN
+F 2 "footprints:ST7735" H 13700 1400 50  0001 C CNN
 F 3 "~" H 13700 1400 50  0001 C CNN
 	1    13700 1400
 	1    0    0    -1  
@@ -2315,10 +2315,10 @@ ST3375 TFT
 Wire Notes Line
 	7300 7750 450  7750
 $Comp
-L Connector:AudioJack2_SwitchT J11
+L Connector:AudioJack2_SwitchT JIN1
 U 1 1 5F9E4DCE
 P 1150 14400
-F 0 "J11" H 1182 14725 50  0000 C CNN
+F 0 "JIN1" H 1182 14725 50  0000 C CNN
 F 1 "AudioJack2_SwitchT" H 1182 14634 50  0000 C CNN
 F 2 "footprints:WQP-PJ301M-12_JACK" H 1150 14400 50  0001 C CNN
 F 3 "~" H 1150 14400 50  0001 C CNN
@@ -2326,10 +2326,10 @@ F 3 "~" H 1150 14400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:AudioJack2_SwitchT J13
+L Connector:AudioJack2_SwitchT JIN2
 U 1 1 5F9E6243
 P 1900 14400
-F 0 "J13" H 1932 14725 50  0000 C CNN
+F 0 "JIN2" H 1932 14725 50  0000 C CNN
 F 1 "AudioJack2_SwitchT" H 1932 14634 50  0000 C CNN
 F 2 "footprints:WQP-PJ301M-12_JACK" H 1900 14400 50  0001 C CNN
 F 3 "~" H 1900 14400 50  0001 C CNN
@@ -2337,10 +2337,10 @@ F 3 "~" H 1900 14400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:AudioJack2_SwitchT J15
+L Connector:AudioJack2_SwitchT JIN3
 U 1 1 5F9E717F
 P 2650 14400
-F 0 "J15" H 2682 14725 50  0000 C CNN
+F 0 "JIN3" H 2682 14725 50  0000 C CNN
 F 1 "AudioJack2_SwitchT" H 2682 14634 50  0000 C CNN
 F 2 "footprints:WQP-PJ301M-12_JACK" H 2650 14400 50  0001 C CNN
 F 3 "~" H 2650 14400 50  0001 C CNN
@@ -2348,10 +2348,10 @@ F 3 "~" H 2650 14400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:AudioJack2_SwitchT J17
+L Connector:AudioJack2_SwitchT JIN4
 U 1 1 5F9E7A07
 P 3400 14400
-F 0 "J17" H 3432 14725 50  0000 C CNN
+F 0 "JIN4" H 3432 14725 50  0000 C CNN
 F 1 "AudioJack2_SwitchT" H 3432 14634 50  0000 C CNN
 F 2 "footprints:WQP-PJ301M-12_JACK" H 3400 14400 50  0001 C CNN
 F 3 "~" H 3400 14400 50  0001 C CNN
@@ -2359,10 +2359,10 @@ F 3 "~" H 3400 14400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:AudioJack2_SwitchT J21
+L Connector:AudioJack2_SwitchT JIN6
 U 1 1 5F9E920D
 P 5000 14400
-F 0 "J21" H 5032 14725 50  0000 C CNN
+F 0 "JIN6" H 5032 14725 50  0000 C CNN
 F 1 "AudioJack2_SwitchT" H 5032 14634 50  0000 C CNN
 F 2 "footprints:WQP-PJ301M-12_JACK" H 5000 14400 50  0001 C CNN
 F 3 "~" H 5000 14400 50  0001 C CNN
@@ -2370,10 +2370,10 @@ F 3 "~" H 5000 14400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:AudioJack2_SwitchT J23
+L Connector:AudioJack2_SwitchT JIN7
 U 1 1 5F9E9D8C
 P 5800 14400
-F 0 "J23" H 5832 14725 50  0000 C CNN
+F 0 "JIN7" H 5832 14725 50  0000 C CNN
 F 1 "AudioJack2_SwitchT" H 5832 14634 50  0000 C CNN
 F 2 "footprints:WQP-PJ301M-12_JACK" H 5800 14400 50  0001 C CNN
 F 3 "~" H 5800 14400 50  0001 C CNN
@@ -2381,10 +2381,10 @@ F 3 "~" H 5800 14400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:AudioJack2_SwitchT J25
+L Connector:AudioJack2_SwitchT JIN8
 U 1 1 5F9EA698
 P 6600 14400
-F 0 "J25" H 6632 14725 50  0000 C CNN
+F 0 "JIN8" H 6632 14725 50  0000 C CNN
 F 1 "AudioJack2_SwitchT" H 6632 14634 50  0000 C CNN
 F 2 "footprints:WQP-PJ301M-12_JACK" H 6600 14400 50  0001 C CNN
 F 3 "~" H 6600 14400 50  0001 C CNN
@@ -2392,10 +2392,10 @@ F 3 "~" H 6600 14400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:AudioJack2_SwitchT J12
+L Connector:AudioJack2_SwitchT JOUT1
 U 1 1 5F9F799A
 P 1150 15350
-F 0 "J12" H 1182 15675 50  0000 C CNN
+F 0 "JOUT1" H 1182 15675 50  0000 C CNN
 F 1 "AudioJack2_SwitchT" H 1182 15584 50  0000 C CNN
 F 2 "footprints:WQP-PJ301M-12_JACK" H 1150 15350 50  0001 C CNN
 F 3 "~" H 1150 15350 50  0001 C CNN
@@ -2403,10 +2403,10 @@ F 3 "~" H 1150 15350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:AudioJack2_SwitchT J14
+L Connector:AudioJack2_SwitchT JOUT2
 U 1 1 5F9F79A0
 P 1900 15350
-F 0 "J14" H 1932 15675 50  0000 C CNN
+F 0 "JOUT2" H 1932 15675 50  0000 C CNN
 F 1 "AudioJack2_SwitchT" H 1932 15584 50  0000 C CNN
 F 2 "footprints:WQP-PJ301M-12_JACK" H 1900 15350 50  0001 C CNN
 F 3 "~" H 1900 15350 50  0001 C CNN
@@ -2414,10 +2414,10 @@ F 3 "~" H 1900 15350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:AudioJack2_SwitchT J16
+L Connector:AudioJack2_SwitchT JOUT3
 U 1 1 5F9F79A6
 P 2650 15350
-F 0 "J16" H 2682 15675 50  0000 C CNN
+F 0 "JOUT3" H 2682 15675 50  0000 C CNN
 F 1 "AudioJack2_SwitchT" H 2682 15584 50  0000 C CNN
 F 2 "footprints:WQP-PJ301M-12_JACK" H 2650 15350 50  0001 C CNN
 F 3 "~" H 2650 15350 50  0001 C CNN
@@ -2425,10 +2425,10 @@ F 3 "~" H 2650 15350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:AudioJack2_SwitchT J18
+L Connector:AudioJack2_SwitchT JOUT4
 U 1 1 5F9F79AC
 P 3400 15350
-F 0 "J18" H 3432 15675 50  0000 C CNN
+F 0 "JOUT4" H 3432 15675 50  0000 C CNN
 F 1 "AudioJack2_SwitchT" H 3432 15584 50  0000 C CNN
 F 2 "footprints:WQP-PJ301M-12_JACK" H 3400 15350 50  0001 C CNN
 F 3 "~" H 3400 15350 50  0001 C CNN
@@ -2436,10 +2436,10 @@ F 3 "~" H 3400 15350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:AudioJack2_SwitchT J20
+L Connector:AudioJack2_SwitchT JOUT5
 U 1 1 5F9F79B2
 P 4200 15350
-F 0 "J20" H 4232 15675 50  0000 C CNN
+F 0 "JOUT5" H 4232 15675 50  0000 C CNN
 F 1 "AudioJack2_SwitchT" H 4232 15584 50  0000 C CNN
 F 2 "footprints:WQP-PJ301M-12_JACK" H 4200 15350 50  0001 C CNN
 F 3 "~" H 4200 15350 50  0001 C CNN
@@ -2447,10 +2447,10 @@ F 3 "~" H 4200 15350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:AudioJack2_SwitchT J22
+L Connector:AudioJack2_SwitchT JOUT6
 U 1 1 5F9F79B8
 P 5000 15350
-F 0 "J22" H 5032 15675 50  0000 C CNN
+F 0 "JOUT6" H 5032 15675 50  0000 C CNN
 F 1 "AudioJack2_SwitchT" H 5032 15584 50  0000 C CNN
 F 2 "footprints:WQP-PJ301M-12_JACK" H 5000 15350 50  0001 C CNN
 F 3 "~" H 5000 15350 50  0001 C CNN
@@ -2458,10 +2458,10 @@ F 3 "~" H 5000 15350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:AudioJack2_SwitchT J24
+L Connector:AudioJack2_SwitchT JOUT7
 U 1 1 5F9F79BE
 P 5800 15350
-F 0 "J24" H 5832 15675 50  0000 C CNN
+F 0 "JOUT7" H 5832 15675 50  0000 C CNN
 F 1 "AudioJack2_SwitchT" H 5832 15584 50  0000 C CNN
 F 2 "footprints:WQP-PJ301M-12_JACK" H 5800 15350 50  0001 C CNN
 F 3 "~" H 5800 15350 50  0001 C CNN
@@ -2469,10 +2469,10 @@ F 3 "~" H 5800 15350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:AudioJack2_SwitchT J26
+L Connector:AudioJack2_SwitchT JOUT8
 U 1 1 5F9F79C4
 P 6600 15350
-F 0 "J26" H 6632 15675 50  0000 C CNN
+F 0 "JOUT8" H 6632 15675 50  0000 C CNN
 F 1 "AudioJack2_SwitchT" H 6632 15584 50  0000 C CNN
 F 2 "footprints:WQP-PJ301M-12_JACK" H 6600 15350 50  0001 C CNN
 F 3 "~" H 6600 15350 50  0001 C CNN
@@ -2488,10 +2488,10 @@ VIN3
 Text Label 3600 14400 0    49   ~ 0
 VIN4
 $Comp
-L Connector:AudioJack2_SwitchT J19
+L Connector:AudioJack2_SwitchT JIN5
 U 1 1 5F9E8103
 P 4200 14400
-F 0 "J19" H 4232 14725 50  0000 C CNN
+F 0 "JIN5" H 4232 14725 50  0000 C CNN
 F 1 "AudioJack2_SwitchT" H 4232 14634 50  0000 C CNN
 F 2 "footprints:WQP-PJ301M-12_JACK" H 4200 14400 50  0001 C CNN
 F 3 "~" H 4200 14400 50  0001 C CNN
@@ -2976,7 +2976,7 @@ U 1 1 5F03F2CF
 P 6850 8400
 F 0 "SW1" H 6850 8767 50  0000 C CNN
 F 1 "Rotary_Encoder_Switch" H 6850 8676 50  0000 C CNN
-F 2 "" H 6700 8560 50  0001 C CNN
+F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC12E-Switch_Vertical_H20mm_CircularMountingHoles" H 6700 8560 50  0001 C CNN
 F 3 "~" H 6850 8660 50  0001 C CNN
 	1    6850 8400
 	1    0    0    -1  
@@ -2987,7 +2987,7 @@ U 1 1 5F041FB0
 P 6850 9050
 F 0 "SW2" H 6850 9417 50  0000 C CNN
 F 1 "Rotary_Encoder_Switch" H 6850 9326 50  0000 C CNN
-F 2 "" H 6700 9210 50  0001 C CNN
+F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC12E-Switch_Vertical_H20mm_CircularMountingHoles" H 6700 9210 50  0001 C CNN
 F 3 "~" H 6850 9310 50  0001 C CNN
 	1    6850 9050
 	1    0    0    -1  
@@ -2998,7 +2998,7 @@ U 1 1 5F044C02
 P 6850 9700
 F 0 "SW3" H 6850 10067 50  0000 C CNN
 F 1 "Rotary_Encoder_Switch" H 6850 9976 50  0000 C CNN
-F 2 "" H 6700 9860 50  0001 C CNN
+F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC12E-Switch_Vertical_H20mm_CircularMountingHoles" H 6700 9860 50  0001 C CNN
 F 3 "~" H 6850 9960 50  0001 C CNN
 	1    6850 9700
 	1    0    0    -1  
@@ -3052,23 +3052,23 @@ $EndComp
 Wire Notes Line
 	4950 7750 4950 10000
 $Comp
-L Connector:DIN-5 J29
+L Connector:DIN-5 MIDI_IN1
 U 1 1 5F082697
 P 3300 8400
-F 0 "J29" H 3300 8033 50  0000 C CNN
+F 0 "MIDI_IN1" H 3300 8033 50  0000 C CNN
 F 1 "DIN-5" H 3300 8124 50  0000 C CNN
-F 2 "" H 3300 8400 50  0001 C CNN
+F 2 "footprints:OG-MIDI_SD-50BV" H 3300 8400 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 3300 8400 50  0001 C CNN
 	1    3300 8400
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:DIN-5 J30
+L Connector:DIN-5 MIDI_OUT1
 U 1 1 5F0833EE
 P 3300 9350
-F 0 "J30" H 3300 8983 50  0000 C CNN
+F 0 "MIDI_OUT1" H 3300 8983 50  0000 C CNN
 F 1 "DIN-5" H 3300 9074 50  0000 C CNN
-F 2 "" H 3300 9350 50  0001 C CNN
+F 2 "footprints:OG-MIDI_SD-50BV" H 3300 9350 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 3300 9350 50  0001 C CNN
 	1    3300 9350
 	-1   0    0    1   
@@ -3085,10 +3085,10 @@ F 3 "http://www.onsemi.com/pub/Collateral/HCPL2731-D.pdf" H 4440 8100 50  0001 C
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x20 J31
+L Connector_Generic:Conn_01x20 JM1
 U 1 1 5F0E9788
 P 13100 3750
-F 0 "J31" H 13018 2525 50  0000 C CNN
+F 0 "JM1" H 13018 2525 50  0000 C CNN
 F 1 "Conn_01x20" H 13018 2616 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x20_P2.54mm_Vertical" H 13100 3750 50  0001 C CNN
 F 3 "~" H 13100 3750 50  0001 C CNN
@@ -3096,10 +3096,10 @@ F 3 "~" H 13100 3750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x20 J33
+L Connector_Generic:Conn_01x20 JB1
 U 1 1 5F0F1E7B
 P 14450 3750
-F 0 "J33" H 14368 2525 50  0000 C CNN
+F 0 "JB1" H 14368 2525 50  0000 C CNN
 F 1 "Conn_01x20" H 14368 2616 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical" H 14450 3750 50  0001 C CNN
 F 3 "~" H 14450 3750 50  0001 C CNN
@@ -3109,10 +3109,10 @@ $EndComp
 Wire Wire Line
 	13300 2750 14250 2750
 $Comp
-L Connector_Generic:Conn_01x20 J32
+L Connector_Generic:Conn_01x20 JM2
 U 1 1 5F1200B8
 P 13100 6200
-F 0 "J32" H 13018 4975 50  0000 C CNN
+F 0 "JM2" H 13018 4975 50  0000 C CNN
 F 1 "Conn_01x20" H 13018 5066 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x20_P2.54mm_Vertical" H 13100 6200 50  0001 C CNN
 F 3 "~" H 13100 6200 50  0001 C CNN
@@ -3120,10 +3120,10 @@ F 3 "~" H 13100 6200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x20 J34
+L Connector_Generic:Conn_01x20 JB2
 U 1 1 5F122D19
 P 14450 6200
-F 0 "J34" H 14368 4975 50  0000 C CNN
+F 0 "JB2" H 14368 4975 50  0000 C CNN
 F 1 "Conn_01x20" H 14368 5066 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical" H 14450 6200 50  0001 C CNN
 F 3 "~" H 14450 6200 50  0001 C CNN
