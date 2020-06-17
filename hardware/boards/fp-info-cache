@@ -1,4 +1,4 @@
-18448913969443036
+18450506348169036
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -80870,6 +80870,13 @@ Teensy41
 0
 67
 67
+footprints
+Teensy41_tht
+
+
+0
+48
+48
 footprints
 USB-A-S-X-X-VT
 USB A, SINGLE, VERTICAL THROUGH HOLE.
