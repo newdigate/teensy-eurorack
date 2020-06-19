@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 8
+Sheet 7 8
 Title ""
 Date ""
 Rev ""
@@ -87,18 +87,9 @@ F 3 "~" H 4300 5400 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	4500 5400 5200 5400
-Wire Wire Line
 	4500 5300 4850 5300
 Wire Wire Line
-	4850 5300 4850 5200
-Wire Wire Line
 	4850 5100 4500 5100
-Wire Wire Line
-	4500 5200 4850 5200
-Connection ~ 4850 5200
-Wire Wire Line
-	4850 5200 4850 5100
 Text HLabel 6650 5500 2    50   Input ~ 0
 LEFT
 Text HLabel 6700 4650 2    50   Input ~ 0
@@ -109,9 +100,6 @@ Text Label 4850 5100 0    50   ~ 0
 AGND
 Text Label 6150 5800 0    50   ~ 0
 AGND
-Wire Wire Line
-	4500 5500 5550 5500
-Connection ~ 5550 5500
 $Comp
 L Device:C C?
 U 1 1 5F64573C
@@ -212,8 +200,6 @@ F 3 "~" H 6050 4650 50  0001 C CNN
 $EndComp
 Connection ~ 6200 4650
 Wire Wire Line
-	5200 5400 5200 4650
-Wire Wire Line
 	5200 4650 5600 4650
 Connection ~ 5600 4650
 Wire Wire Line
@@ -241,4 +227,19 @@ Connection ~ 6150 5900
 Connection ~ 7250 5050
 Wire Wire Line
 	7250 5050 7500 5050
+Text Label 4500 5500 0    50   ~ 0
+AGND
+Text Label 4850 5300 0    50   ~ 0
+AGND
+Wire Wire Line
+	5550 5500 5200 5500
+Connection ~ 5550 5500
+Wire Wire Line
+	5200 5200 5200 4650
+Wire Wire Line
+	4500 5200 5200 5200
+Wire Wire Line
+	5200 5400 5200 5500
+Wire Wire Line
+	4500 5400 5200 5400
 $EndSCHEMATC
