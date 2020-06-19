@@ -2623,7 +2623,7 @@ Wire Wire Line
 Wire Wire Line
 	6800 15250 7150 15250
 Wire Wire Line
-	4850 6950 5300 6950
+	4850 6950 4950 6950
 Wire Wire Line
 	3150 5050 3150 5250
 Wire Wire Line
@@ -3842,4 +3842,7 @@ Text Label 8950 3450 2    49   ~ 0
 E3A
 Text Label 8950 3550 2    49   ~ 0
 E3B
+Connection ~ 4950 6950
+Wire Wire Line
+	4950 6950 5300 6950
 $EndSCHEMATC
