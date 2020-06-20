@@ -2045,7 +2045,7 @@ L Regulator_Linear:MCP1700-2502E_SOT23 U5
 U 1 1 5F7FA114
 P 13650 5950
 F 0 "U5" H 13500 5600 50  0000 L CNN
-F 1 "MCP1700-2502E_SOT23" H 12650 5700 50  0000 L CNN
+F 1 "MCP1700-2502E" H 12650 5700 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 13650 6175 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf" H 13650 5950 50  0001 C CNN
 	1    13650 5950
@@ -3584,13 +3584,13 @@ Wire Wire Line
 	14850 7250 14350 7250
 Wire Wire Line
 	14350 7350 14850 7350
-Text Label 14350 7050 0    49   ~ 0
-GND
 Text Label 14350 7150 0    49   ~ 0
+GND
+Text Label 14350 7550 0    49   ~ 0
 P1
-Text Label 14350 7250 0    49   ~ 0
+Text Label 14350 7650 0    49   ~ 0
 P2
-Text Label 14350 7350 0    49   ~ 0
+Text Label 14350 7050 0    49   ~ 0
 P3
 $Comp
 L Connector_Generic:Conn_01x08 JM3
@@ -3642,7 +3642,7 @@ Wire Wire Line
 	12150 8050 13100 8050
 Wire Wire Line
 	13100 7950 12150 7950
-Text Label 14350 7450 0    49   ~ 0
+Text Label 14500 9550 0    49   ~ 0
 P4
 Wire Wire Line
 	14500 9250 15000 9250
@@ -3734,23 +3734,23 @@ Wire Wire Line
 	14500 9550 15000 9550
 Wire Wire Line
 	14500 9650 15000 9650
-Text Label 14350 7550 0    49   ~ 0
-ES1
-Text Label 14350 7650 0    49   ~ 0
-ES2
-Text Label 14500 8950 0    49   ~ 0
-ES3
-Text Label 14500 9050 0    49   ~ 0
-E1A
-Text Label 14500 9150 0    49   ~ 0
-E1B
-Text Label 14500 9250 0    49   ~ 0
-E2A
-Text Label 14500 9350 0    49   ~ 0
-E2B
 Text Label 14500 9450 0    49   ~ 0
+ES1
+Text Label 14500 9150 0    49   ~ 0
+ES2
+Text Label 14350 7250 0    49   ~ 0
+ES3
+Text Label 14500 9250 0    49   ~ 0
+E1A
+Text Label 14500 9350 0    49   ~ 0
+E1B
+Text Label 14500 8950 0    49   ~ 0
+E2A
+Text Label 14500 9050 0    49   ~ 0
+E2B
+Text Label 14350 7350 0    49   ~ 0
 E3A
-Text Label 14500 9550 0    49   ~ 0
+Text Label 14350 7450 0    49   ~ 0
 E3B
 $Comp
 L power:+3V3 #PWR093
