@@ -74,10 +74,6 @@ What you can do if you like to see progress with this project?
   * [Nic N](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) 
 
 # printed circuit boards
-
-<img src='hardware/images/mainboard-top.png' width='300px'/> 
-<img src='hardware/images/mainboard-bottom.png' width='300px'/> 
-
 ## [mainboard](hardware/boards/mainboard) 
 * standard double layer printed circuit board
   * thinkness: 1.6mm  
@@ -89,7 +85,9 @@ What you can do if you like to see progress with this project?
 * 3 x stereo 6.35mm TRS jack inputs
 * 4 x stereo 6.35mm TRS jack outputs
 * pin sockets to connect breakout board
-* PCA9536 gpio
+* ~~PCA9536 gpio~~
+<img src='hardware/images/mainboard-top.png' width='300px'/> 
+<img src='hardware/images/mainboard-bottom.png' width='300px'/> 
 
 ## breakout board
 * standard double layer printed circuit board
