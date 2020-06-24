@@ -75,7 +75,8 @@ What you can do if you like to see progress with this project?
 
 # printed circuit boards
 
-<img src='hardware/images/front.png' width='300px'/> <img src='hardware/images/back.png' width='300px'/> 
+<img src='hardware/images/mainboard-top.png' width='300px'/> 
+<img src='hardware/images/mainboard-bottom.png' width='300px'/> 
 
 ## [mainboard](hardware/boards/mainboard) 
 * standard double layer printed circuit board
@@ -106,9 +107,12 @@ What you can do if you like to see progress with this project?
 * micro-SD card socket
 * 4 x linear pots
 * 3 x ~~RGB~~ rotary encoders with switches 
-* SAMD21 32bit 48Mhz micro-controller for pots and rotaries
-  * Based on Arduino MKR Zero board (can be programmed through standard arduino ide)
+* ~~SAMD21 32bit 48Mhz micro-controller for pots and rotaries~~
+  * ~~Based on Arduino MKR Zero board (can be programmed through standard arduino ide)~~
 * Communicates with mainboard via standard serial uart RX and TX lines.
+
+<img src='hardware/images/breakoutboard-top.png' width='300px'/> 
+<img src='hardware/images/breakoutboard-bottom.png' width='300px'/> 
 
 # [panel design](hardware/panel)
 <img src='hardware/panel/images/panel-front.png' width='300px'/>
