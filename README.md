@@ -1,10 +1,10 @@
-# teensy 4.0 eurorack shield 
+# teensy 4.1 eurorack shield 
 [![Join the chat at https://gitter.im/newdigate/teensy-eurorack](https://badges.gitter.im/newdigate/teensy-eurorack.svg)](https://gitter.im/newdigate/teensy-eurorack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![kicad pcb ops CI](https://github.com/newdigate/teensy-eurorack/workflows/kicad%20pcb%20ops%20CI/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions?query=workflow%3A%22kicad+pcb+ops+CI%22)
 
-**open source [hardware](hardware) and [software](software) for a [teensy 4.0](https://www.pjrc.com/store/teensy40.html "teensy 4.0 board") eurorack shield** 
+**open source [hardware](hardware) and [software](software) for a [teensy 4.1](https://www.pjrc.com/store/teensy40.html "teensy 4.1 board") eurorack shield** 
 
-These circuit boards provide the peripherals necessary to interface a [teensy 4.0](https://www.pjrc.com/store/teensy40.html "teensy 4.0 board") with stereo line audio and eurorack modular equipment.
+These circuit boards provide the peripherals necessary to interface a [teensy 4.1](https://www.pjrc.com/store/teensy40.html "teensy 4.1 board") with stereo line audio and eurorack modular equipment.
 
 * [specifications](#specifications)
 * [open source software-stack](#open-source-software-stack)
@@ -20,21 +20,22 @@ These circuit boards provide the peripherals necessary to interface a [teensy 4.
 * [todo](#todo)
 
 <img src='hardware/images/kryonos.png' width='500px'/>
+<img src='hardware/images/schematic/Teensy-eurorack-4.1.png' width='800px'/>
 
 ## specifications
 * **microcontrollers:** 
-  * 600 Mhz ARM cortex m7 ( [teensy 4.0 board](https://www.pjrc.com/store/teensy40.html "teensy 4.0 board") )
-  * SAMD21 32bit 48Mhz micro-controller (based on [arduino mkr1000](https://www.arduino.cc/en/Guide/MKR1000))
+  * 600 Mhz ARM cortex m7 ( [teensy 4.1 board](https://www.pjrc.com/store/teensy41.html "teensy 4.1 board") )
+  * ~~SAMD21 32bit 48Mhz micro-controller (based on [arduino mkr1000](https://www.arduino.cc/en/Guide/MKR1000))~~
 * **audio:** multi-channel audio codec ( 6-in / 8-out 24-bit sound card - [CS42448](https://statics.cirrus.com/pubs/proDatasheet/CS42448_F5.pdf) )
   * *the audio codec circuit originally started as a discussion on quad audio channel outputs and a pcb design integrating teensy and cs42448 from Paul Stoffregen on [pjrc forum](https://forum.pjrc.com/threads/41371-Quad-channel-output-on-Teensy-3-6?p=138828&viewfull=1#post138828)*
-* **analog control voltage ins/outs:** -10V to 10V 16bit/sample, 8 x inputs and 4 x outputs ( [ad7606](https://www.analog.com/media/en/technical-documentation/data-sheets/ad7606_7606-6_7606-4.pdf), [ad5754](https://www.analog.com/media/en/technical-documentation/data-sheets/AD5724_5734_5754.pdf) )
+* **analog control voltage ins/outs:** -10V to 10V 16bit/sample, 8 x inputs and 8 x outputs ( [ad7606](https://www.analog.com/media/en/technical-documentation/data-sheets/ad7606_7606-6_7606-4.pdf), 2x [ad5754](https://www.analog.com/media/en/technical-documentation/data-sheets/AD5724_5734_5754.pdf) )
 * **display:** ST7735 128x128 16bit-color tft display
 * **breakouts:** 
   * microSD card socket, 
   * USB host/device, 
   * midi in/out, 
-  * knobs (4 x pots, 3 x RGB encoders w/switch)
-* **gpio:** 4 x configurable 5v logic inputs/outputs. [PCA9536](https://www.ti.com/lit/ds/symlink/pca9536.pdf)
+  * knobs (4 x pots, 3 x ~~RGB~~ encoders w/switch)
+~~* **gpio:** 4 x configurable 5v logic inputs/outputs. [PCA9536](https://www.ti.com/lit/ds/symlink/pca9536.pdf)~~
 * **panel:** 24HP aluminium panel mounted for eurorack case
 * **programability**: 
   * write arduino compatible c/c++ firmware & program using arduino/teensyduino
@@ -73,7 +74,6 @@ What you can do if you like to see progress with this project?
   * [Nic N](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) 
 
 # printed circuit boards
-
 ## [mainboard](hardware/boards/mainboard) 
 * standard double layer printed circuit board
   * thinkness: 1.6mm  
@@ -85,9 +85,9 @@ What you can do if you like to see progress with this project?
 * 3 x stereo 6.35mm TRS jack inputs
 * 4 x stereo 6.35mm TRS jack outputs
 * pin sockets to connect breakout board
-* PCA9536 gpio
-
-<img src='hardware/images/boards/mainboard-top.png' width='300px'/> <img src='hardware/images/boards/mainboard-bottom.png' width='300px'/> 
+* ~~PCA9536 gpio~~
+<img src='hardware/images/mainboard-top.png' width='300px'/> 
+<img src='hardware/images/mainboard-bottom.png' width='300px'/> 
 
 ## breakout board
 * standard double layer printed circuit board
@@ -104,12 +104,13 @@ What you can do if you like to see progress with this project?
   * USB-A: USB host mode
 * micro-SD card socket
 * 4 x linear pots
-* 3 x RGB rotary encoders with switches 
-* SAMD21 32bit 48Mhz micro-controller for pots and rotaries
-  * Based on Arduino MKR Zero board (can be programmed through standard arduino ide)
+* 3 x ~~RGB~~ rotary encoders with switches 
+* ~~SAMD21 32bit 48Mhz micro-controller for pots and rotaries~~
+  * ~~Based on Arduino MKR Zero board (can be programmed through standard arduino ide)~~
 * Communicates with mainboard via standard serial uart RX and TX lines.
 
-<img src='hardware/images/boards/breakout-top.png' width='250px'/> <img src='hardware/images/boards/breakout-bottom.png' width='250px'/>
+<img src='hardware/images/breakoutboard-top.png' width='300px'/> 
+<img src='hardware/images/breakoutboard-bottom.png' width='300px'/> 
 
 # [panel design](hardware/panel)
 <img src='hardware/panel/images/panel-front.png' width='300px'/>
