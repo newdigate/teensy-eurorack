@@ -26,7 +26,6 @@ These circuit boards provide the peripherals necessary to interface a [teensy 4.
 ## specifications
 * **microcontrollers:** 
   * 600 Mhz ARM cortex m7 ( [teensy 4.1 board](https://www.pjrc.com/store/teensy41.html "teensy 4.1 board") )
-  * ~~SAMD21 32bit 48Mhz micro-controller (based on [arduino mkr1000](https://www.arduino.cc/en/Guide/MKR1000))~~
 * **audio:** multi-channel audio codec ( 6-in / 8-out 24-bit sound card - [CS42448](https://statics.cirrus.com/pubs/proDatasheet/CS42448_F5.pdf) )
   * *the audio codec circuit originally started as a discussion on quad audio channel outputs and a pcb design integrating teensy and cs42448 from Paul Stoffregen on [pjrc forum](https://forum.pjrc.com/threads/41371-Quad-channel-output-on-Teensy-3-6?p=138828&viewfull=1#post138828)*
 * **analog control voltage ins/outs:** -10V to 10V 16bit/sample, 8 x inputs and 8 x outputs ( [ad7606](https://www.analog.com/media/en/technical-documentation/data-sheets/ad7606_7606-6_7606-4.pdf), 2x [ad5754](https://www.analog.com/media/en/technical-documentation/data-sheets/AD5724_5734_5754.pdf) )
@@ -36,7 +35,6 @@ These circuit boards provide the peripherals necessary to interface a [teensy 4.
   * USB host/device, 
   * midi in/out, 
   * knobs (4 x pots, 3 x ~~RGB~~ encoders w/switch)
-~~* **gpio:** 4 x configurable 5v logic inputs/outputs. [PCA9536](https://www.ti.com/lit/ds/symlink/pca9536.pdf)~~
 * **panel:** 24HP aluminium panel mounted for eurorack case
 * **programability**: 
   * write arduino compatible c/c++ firmware & program using arduino/teensyduino
@@ -86,7 +84,6 @@ What you can do if you like to see progress with this project?
 * 3 x stereo 6.35mm TRS jack inputs
 * 4 x stereo 6.35mm TRS jack outputs
 * pin sockets to connect breakout board
-* ~~PCA9536 gpio~~
 <img src='hardware/images/mainboard-top.png' width='300px'/> 
 <img src='hardware/images/mainboard-bottom.png' width='300px'/> 
 
@@ -150,7 +147,17 @@ What you can do if you like to see progress with this project?
 [![side-channel stereo audio separation with teensy 4.0](https://img.youtube.com/vi/N0IBevm4hTQ/0.jpg)](https://www.youtube.com/watch?v=N0IBevm4hTQ)
 
 ## versions
-### v1.8.1 (current)
+### v1.9 (current)
+updated to teesy 4.1 and improvements to make easier to build
+* updated from teensy 4.0 to teensy 4.1
+* schematic, footprint and pcb clean-up 
+  * replaced footprints imported from eagle with native kicad footprints
+* removed atmel samd21 and gpio ICs
+* replaced gpio with AD5754 (extra 4 DAC channels)
+* replaced RGB encoders with regular encoders
+* replaced analog-GND-to-digital-GND footprint with a 0805 zero ohm resistor footprint. (DRC checks can pass now...)
+
+### v1.8.1 
 cleanup, minor improvements, and reduce number of distinct components
  * breakout board:
    * changed C6 (1nF) from 1206 to 0805 to match C2 - reduces number of unique components by 1
