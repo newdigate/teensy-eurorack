@@ -3,10 +3,15 @@ name: kicad pcb ops CI
 on:
   push:
     paths:
-    - 'hardware/boards/mainboard/Mainboard.kicad_pcb'
-    - 'hardware/boards/mainboard/**.sch'
-    - 'hardware/boards/knobs-controller/knobs.kicad_pcb'
-    - 'hardware/boards/knobs-controller/**.sch'
+    - 'hardware/boards/**.kicad_pcb'
+    - 'hardware/boards/**.sch'
+    - 'hardware/boards/**.lib'
+    - 'hardware/boards/**.dcm'
+    - 'hardware/boards/**.pro'
+    - 'hardware/boards/**.pretty'
+    - 'hardware/boards/fp-lib-table'
+    - 'hardware/boards/sym-lib-table'
+    - 'hardware/boards/fp-info-cache'
     - '.github/workflows/**'
 
 jobs:
@@ -21,9 +26,9 @@ jobs:
       id: hello
       uses: newdigate/kicad-github-action@v0.4.2
       with:
-        kicad-project-path: "hardware/boards/mainboard"
-        kicad-schematic-filename: "Mainboard.sch"
-        kicad-board-filename: "Mainboard.kicad_pcb"
+        kicad-project-path: "hardware/boards"
+        kicad-schematic-filename: "teensy-eurorack.sch"
+        kicad-board-filename: "teensy-eurorack.kicad_pcb"
     # Use the output from the `hello` step
     - name: Get the output time
       run: echo "The time was ${{ steps.hello.outputs.time }}"
@@ -43,9 +48,9 @@ jobs:
       id: hello
       uses: newdigate/kicad-github-action@v0.4.2
       with:
-        kicad-project-path: "hardware/boards/knobs-controller"
-        kicad-schematic-filename: "knobs.sch"
-        kicad-board-filename: "knobs.kicad_pcb"
+        kicad-project-path: "hardware/boards"
+        kicad-schematic-filename: "teensy-eurorack-breakout.sch"
+        kicad-board-filename: "teensy-eurorack-breakout.kicad_pcb"
     # Use the output from the `hello` step
     - name: Get the output time
       run: echo "The time was ${{ steps.hello.outputs.time }}"
