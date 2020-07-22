@@ -34,7 +34,7 @@ These circuit boards provide the peripherals necessary to interface a [teensy 4.
   * microSD card socket, 
   * USB host/device, 
   * midi in/out, 
-  * knobs (4 x pots, 3 x ~~RGB~~ encoders w/switch)
+  * knobs (4 x pots, 3 x encoders w/switch)
 * **panel:** 24HP aluminium panel mounted for eurorack case
 * **programability**: 
   * write arduino compatible c/c++ firmware & program using arduino/teensyduino
@@ -102,10 +102,7 @@ What you can do if you like to see progress with this project?
   * USB-A: USB host mode
 * micro-SD card socket
 * 4 x linear pots
-* 3 x ~~RGB~~ rotary encoders with switches 
-* ~~SAMD21 32bit 48Mhz micro-controller for pots and rotaries~~
-  * ~~Based on Arduino MKR Zero board (can be programmed through standard arduino ide)~~
-* Communicates with mainboard via standard serial uart RX and TX lines.
+* 3 x rotary encoders with switches 
 
 <img src='hardware/images/breakoutboard-top.png' width='300px'/> 
 <img src='hardware/images/breakoutboard-bottom.png' width='300px'/> 
@@ -156,6 +153,7 @@ updated to teesy 4.1 and improvements to make easier to build
 * replaced gpio with AD5754 (extra 4 DAC channels)
 * replaced RGB encoders with regular encoders
 * replaced analog-GND-to-digital-GND footprint with a 0805 zero ohm resistor footprint. (DRC checks can pass now...)
+* (temporarily) removed serial TX/RX to unused eurorack power pins
 
 ### v1.8.1 
 cleanup, minor improvements, and reduce number of distinct components
