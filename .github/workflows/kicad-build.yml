@@ -39,10 +39,10 @@ jobs:
         path: output
     - name: Check the output for success or error
       run: |
-        echo "Build result: {{ steps.hello.outputs.message }}"
+        echo "Build result: ${{ steps.hello.outputs.message }}"
         if [[ ${{ steps.hello.outputs.success }} != 1 ]]; then
           echo "Build failed: ERC or DRC had errors"
-          exit -1
+          exit 1
         fi
 
   breakout:
@@ -68,8 +68,8 @@ jobs:
         path: output
     - name: Check the output for success or error
       run: |
-        echo "Build result: {{ steps.hello.outputs.message }}"
+        echo "Build result: ${{ steps.hello.outputs.message }}"
         if [[ ${{ steps.hello.outputs.success }} != 1 ]]; then
           echo "Build failed: ERC or DRC had errors"
-          exit -1
+          exit 1
         fi
