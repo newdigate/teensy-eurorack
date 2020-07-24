@@ -40,7 +40,7 @@ jobs:
     - name: junit test
       uses: ashley-taylor/junit-report-annotations-action@master
       with:
-        path: output/schematic
+        path: output/schematic/junit.xml
         access-token: ${{ secrets.GITHUB_TOKEN }}
       if: always()
     - name: Check the output for success or error
@@ -72,6 +72,12 @@ jobs:
       with:
         name: breakout-artifact
         path: output
+    - name: junit test
+      uses: ashley-taylor/junit-report-annotations-action@master
+      with:
+        path: output/schematic/junit.xml
+        access-token: ${{ secrets.GITHUB_TOKEN }}
+      if: always()
     - name: Check the output for success or error
       run: |
         echo "Build result: ${{ steps.hello.outputs.message }}"
@@ -79,9 +85,4 @@ jobs:
           echo "Build failed: ERC or DRC had errors"
           exit 1
         fi
-    - name: junit test
-      uses: ashley-taylor/junit-report-annotations-action@master
-      with:
-        path: output/schematic
-        access-token: ${{ secrets.GITHUB_TOKEN }}
-      if: always()
+
