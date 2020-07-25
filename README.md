@@ -153,7 +153,8 @@ What you can do if you like to see progress with this project?
 ## versions
 ### v1.9.1
 * connected DAC_SCK output (pin 19) to pin 31
-  * this will allow us to assert cable select toggle on minor spi data cycle, so we can use DMA transfers to AD5754 and integrate with teensy audio library.
+  * allow cable select to be asserted on minor spi data cycle after every 24 or 48 spi clock cycles, using interrupt on pin 31.
+    * hopefully this will allow DMA spi transfers to AD5754 and which will make integration with teensy audio library much easier
 
 ### v1.9 
 updated to teesy 4.1 and improvements to make easier to build
