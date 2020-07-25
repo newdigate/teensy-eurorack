@@ -735,7 +735,7 @@ Text Label 7000 2300 0    50   ~ 0
 AGND
 Text Label 7000 2900 0    50   ~ 0
 AGND
-Text Label 6950 3400 0    50   ~ 0
+Text Label 7000 3500 0    50   ~ 0
 AGND
 Text Notes 7250 400  2    98   ~ 0
 TEENSY 4.1
@@ -1276,7 +1276,6 @@ NoConn ~ 10150 2850
 NoConn ~ 10150 2750
 NoConn ~ 10150 2650
 NoConn ~ 7950 3350
-NoConn ~ 7950 3250
 NoConn ~ 7950 2450
 Connection ~ 3050 4650
 Wire Wire Line
@@ -1582,5 +1581,10 @@ Wire Notes Line
 	7250 500  7250 6500
 Wire Notes Line
 	7250 3500 11200 3500
-Connection ~ 4750 1250
+Wire Wire Line
+	7950 3250 7700 3250
+Wire Wire Line
+	7700 3250 7700 2850
+Wire Wire Line
+	7700 2850 7950 2850
 $EndSCHEMATC
