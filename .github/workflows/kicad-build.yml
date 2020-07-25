@@ -37,11 +37,6 @@ jobs:
       with:
         name: mainboard-artifact
         path: output
-    - uses: IgnusG/jest-report-action@master
-      if: always() # Or use "continue-on-error: true" in previous test step
-      with:
-        junit-file: output/schematic/junit.xml
-        access-token: ${{ secrets.GITHUB_TOKEN }}
     - name: Check the output for success or error
       run: |
         echo "Build result: ${{ steps.hello.outputs.message }}"
@@ -71,11 +66,6 @@ jobs:
       with:
         name: breakout-artifact
         path: output
-    - uses: IgnusG/jest-report-action@master
-      if: always() # Or use "continue-on-error: true" in previous test step
-      with:
-        junit-file: output/schematic/junit.xml
-        access-token: ${{ secrets.GITHUB_TOKEN }}
     - name: Check the output for success or error
       run: |
         echo "Build result: ${{ steps.hello.outputs.message }}"
