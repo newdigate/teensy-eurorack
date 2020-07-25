@@ -1,5 +1,6 @@
 # teensy eurorack audio shield 
-[![Teensy 4.1](https://img.shields.io/badge/project-4.1-brightgreen.svg?label=Teensy&colorA=555555&colorB=ff8aff&logo=)](https://www.pjrc.com/store/teensy41.html)
+![Version 1.9](https://img.shields.io/badge/project-1.9-brightgreen.svg?label=verion&colorA=555555&colorB=ff4a88)
+[![Teensy 4.1](https://img.shields.io/badge/project-4.1-brightgreen.svg?label=teensy&colorA=555555&colorB=ff8aff&logo=)](https://www.pjrc.com/store/teensy41.html)
 [![Join the chat at https://gitter.im/newdigate/teensy-eurorack](https://badges.gitter.im/newdigate/teensy-eurorack.svg)](https://gitter.im/newdigate/teensy-eurorack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![kicad pcb ops CI](https://github.com/newdigate/teensy-eurorack/workflows/kicad%20pcb%20ops%20CI/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions?query=workflow%3A%22kicad+pcb+ops+CI%22)
 [![built with kicad](https://img.shields.io/badge/project-v5.1.6-brightgreen.svg?label=kicad&colorA=555555&colorB=8a8fff&logo=
