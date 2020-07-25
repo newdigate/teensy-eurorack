@@ -148,8 +148,14 @@ What you can do if you like to see progress with this project?
 
 [![side-channel stereo audio separation with teensy 4.0](https://img.youtube.com/vi/N0IBevm4hTQ/0.jpg)](https://www.youtube.com/watch?v=N0IBevm4hTQ)
 
+
+
 ## versions
-### v1.9 (current)
+### v1.9.1
+* connected DAC_SCK output (pin 19) to pin 31
+  * this will allow us to assert cable select toggle on minor spi data cycle, so we can use DMA transfers to AD5754 and integrate with teensy audio library.
+
+### v1.9 
 updated to teesy 4.1 and improvements to make easier to build
 * updated from teensy 4.0 to teensy 4.1
 * schematic, footprint and pcb clean-up 
@@ -159,7 +165,11 @@ updated to teesy 4.1 and improvements to make easier to build
 * replaced RGB encoders with regular encoders
 * replaced analog-GND-to-digital-GND footprint with a 0805 zero ohm resistor footprint. (DRC checks can pass now...)
 * (temporarily) removed serial TX/RX to unused eurorack power pins
-
+```
+status:
+  25/07/2020:
+    * received pcbs, stencil and components
+```
 ### v1.8.1 
 cleanup, minor improvements, and reduce number of distinct components
  * breakout board:
@@ -168,75 +178,7 @@ cleanup, minor improvements, and reduce number of distinct components
    * cleanup of footprints to reduce number of distinct parts
    * removed pull-up resistor on AD_RESET signal
    * increased size of power traces to 350 mil
-```
-status:
-  15/03/2020:
-    * placed order with JLCPCB.com, total ￡63.33
-      * 20 x mainboard @ v1.8.1 + top stencil (￡15.53 + ￡5.38 )
-      * 20 x breakout @ v1.8.1 + top & bottom stencil (￡15.69 + ￡10.76)
-      * shipping: ￡15.97
-```
-### v1.8 
-```
-status:
- * 25/02/2020: placed pcb order with jlcpcb
- * 28/02/2020: order dispatched
- * 02/03/2020: pcbs arrived, but parts are still waiting to be delivered. 
- * 08/03/2020: mainboard v1.7 + breakout board v1.8 - all features tested successfully.
-```
- * breakout board:
-   * fixed: midi DIN connectors pin 4 and pin 5 switched
- * mainboard remains same at version 1.7
- 
-### v1.7b
-```
-status:
- * 26/01/2020: placed pcb order with jlcpcb 
- * 22/02/2020:
-   * boards assembled, sanity checks pass, form factor is good - no known issues so far 
-   * adc AD7606 tested briefly, looks better
-   * usb-device type-b socket tested successfully, serial-over-usb and programming connection seem good
- * 23/02/2020:
-   * issue with midi in/out circuits 
-     * pin 4 and pin 5 on the midi din connectors appear to be switched on both rx and tx midi sockets
-     * tx may need logic level shifter or buffer.   
- ```
- * breakout board:
-   * fixed: net 3v3 collides with net VIN 
-     * LDO footprint imported from eagle is causing DRC check to succeed even though the two traces collide
-     
-### v1.7 
-```
-status:
- * 10/01/2020: placed pcb and stencil order with jlcpcb 
-   * total is ￡36.05
-     * Shipping Charge: ￡13.05
-     * Merchandise: ￡23.00 
-       * 2 x aluminium stencils: £10.66
-       * 2 x 5pcs x pcboard: £12.34
- * 12/01/2020: order dispatched
- * 24/01/2020: pcboards and stencils arrived.
- ``` 
-#### v1.7 changes 
-* circuit corrections
-  * adc: corrected AVSS net, should have been VSS
-  * removed unused through-hole pads from underside of teensy board.
-* physical
-  * merged knobs-controller and top-breakout pc-boards into single board
-  * tft display rotated 90 degrees
-  * sd-connector socket rotated 90 degrees
-  * replaced fine-pitch FPC/FFC connectors with standard 0.1' pin-headers and sockets, allowing boards to connect physically    
-
-### v1.6:
-* circuit corrections
-  * **corrected:** knobs-controller: tx/rx nets were not connected to socket  
-  * **enhancement:** extra uart exposed 
-    * allows serial communications via the unused pins in the eurorack power-connector
-    * 2 jumper-switches added to switch between master/slave - (rx/tx cross-over configuration)
-    * connects to RX7, TX7 (pins 28, 29) on the under-side of the teensy 4.0 board 
-  * **enhancement:** adc: AD_RESET net connected to micro-controller
-  * **enhancement:** introduced PCA9536 i2c GPIO integrated-circuit to free-up some pins on the micro-controller
-    
+  
 ## todo 
 - [ ] General
   - [ ] cleanup / refactor footprints, replace footprints and symbols imported from eagle with kicad equivalents
