@@ -735,9 +735,9 @@ Text Label 7000 2300 0    50   ~ 0
 AGND
 Text Label 7000 2900 0    50   ~ 0
 AGND
-Text Label 6950 3400 0    50   ~ 0
+Text Label 7000 3500 0    50   ~ 0
 AGND
-Text Notes 7250 400  2    98   ~ 0
+Text Notes 8200 750  2    98   ~ 0
 TEENSY 4.1
 Wire Wire Line
 	6550 5200 6550 4750
@@ -1582,5 +1582,4 @@ Wire Notes Line
 	7250 500  7250 6500
 Wire Notes Line
 	7250 3500 11200 3500
-Connection ~ 4750 1250
 $EndSCHEMATC
