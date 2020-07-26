@@ -24,9 +24,9 @@ F 3 "" H 8650 3600 50  0001 C CNN
 	1    9050 3200
 	1    0    0    -1  
 $EndComp
-Text Label 7550 1850 0    50   ~ 0
-TDM_IN
 Text Label 7550 1950 0    50   ~ 0
+TDM_IN
+Text Label 7550 1850 0    50   ~ 0
 TDM_OUT
 $Comp
 L teensy-eurorack:CS42448 U1
