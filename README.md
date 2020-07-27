@@ -113,7 +113,7 @@ What you can do if you like to see progress with this project?
 <img src='hardware/images/breakoutboard-bottom.png' width='300px'/> 
 
 # [panel design](hardware/panel)
-<img src='hardware/panel/images/panel-front.png' width='300px'/>
+<img src='hardware/panel/images/panel-front.svg' width='300px'/>
 
 # assembly technical drawings 
 <img src='hardware/images/technical-drawing.svg' width='500px'/>
