@@ -216,3 +216,7 @@ cleanup, minor improvements, and reduce number of distinct components
 * testing automated build and packaging 
 * [github.com/pwuertz/kicad_picknplace_assistant](https://github.com/pwuertz/kicad_picknplace_assistant)
 * [github.com/productize/kicad-automation-scripts](https://github.com/productize/kicad-automation-scripts)
+* [InteractiveHtmlBom](https://github.com/openscopeproject/InteractiveHtmlBom) by [openscopeproject](https://github.com/openscopeproject)
+
+# credits 
+* https://github.com/dgouramanis/usdextendercable
