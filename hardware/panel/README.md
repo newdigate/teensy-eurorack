@@ -1,1 +1,1 @@
-<img src="images/panel-front.png" width="400px"/>
+<img src="images/panel-front.svg" width="400px"/>
