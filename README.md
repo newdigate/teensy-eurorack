@@ -25,8 +25,8 @@ These circuit boards provide the peripherals necessary to interface a [teensy 4.
 * [todo](#todo)
 
 <img src='hardware/images/kryonos.png' width='500px'/>
-<img src='docs/teensy-eurorack.svg' width='800px'/>
-<img src='docs/teensy-eurorack-breakout.svg' width='800px'/>
+<img src='hardware/docs/teensy-eurorack.svg' width='800px'/>
+<img src='hardware/docs/teensy-eurorack-breakout.svg' width='800px'/>
 
 ## specifications
 * **microcontrollers:** 
