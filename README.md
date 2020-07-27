@@ -220,3 +220,5 @@ cleanup, minor improvements, and reduce number of distinct components
 
 # credits 
 * https://github.com/dgouramanis/usdextendercable
+## 3d models
+* potentiometer: https://grabcad.com/library/potentiometer-30
