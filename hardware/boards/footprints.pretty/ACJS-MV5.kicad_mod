@@ -1,16 +1,16 @@
-(module ACJS-MV5 (layer F.Cu) (tedit 5EE87B00)
+(module ACJS-MV5 (layer F.Cu) (tedit 5F1ECA6C)
   (fp_text reference IN3:U$3 (at 0 -8.89) (layer F.SilkS) hide
     (effects (font (size 1.27 1.27) (thickness 0.15)))
   )
   (fp_text value ACJS-MV-5 (at 0 8.89) (layer F.SilkS) hide
     (effects (font (size 1.27 1.27) (thickness 0.15)))
   )
-  (fp_circle (center 0 0) (end 4.75 0) (layer F.SilkS) (width 0.12))
-  (fp_line (start 8 -6.702606) (end 8 4.065) (layer F.SilkS) (width 0.127))
-  (fp_line (start 8 4.065) (end 4.065 8) (layer F.SilkS) (width 0.127))
-  (fp_line (start 4.065 8) (end -6.702606 8) (layer F.SilkS) (width 0.127))
-  (fp_line (start -8 6.702606) (end -8 -6.702606) (layer F.SilkS) (width 0.127))
   (fp_line (start -6.702606 -8) (end 6.702606 -8) (layer F.SilkS) (width 0.127))
+  (fp_line (start -8 6.702606) (end -8 -6.702606) (layer F.SilkS) (width 0.127))
+  (fp_line (start 4.065 8) (end -6.702606 8) (layer F.SilkS) (width 0.127))
+  (fp_line (start 8 4.065) (end 4.065 8) (layer F.SilkS) (width 0.127))
+  (fp_line (start 8 -6.702606) (end 8 4.065) (layer F.SilkS) (width 0.127))
+  (fp_circle (center 0 0) (end 4.75 0) (layer F.SilkS) (width 0.12))
   (fp_arc (start -6.702606 6.702606) (end -6.702606 8) (angle 90) (layer F.SilkS) (width 0.127))
   (fp_arc (start -6.702606 -6.702606) (end -8 -6.702606) (angle 90) (layer F.SilkS) (width 0.127))
   (fp_arc (start 6.702606 -6.702606) (end 6.702606 -8) (angle 90) (layer F.SilkS) (width 0.127))
@@ -19,7 +19,7 @@
   (pad T thru_hole circle (at -6.38 0.56) (size 2.1 2.1) (drill 1.4) (layers *.Cu *.Mask))
   (pad R thru_hole circle (at 0.56 -6.38) (size 2.1 2.1) (drill 1.4) (layers *.Cu *.Mask))
   (pad RN thru_hole circle (at 6.38 -2.4) (size 2.1 2.1) (drill 1.4) (layers *.Cu *.Mask))
-  (model ${KIPRJMOD}/../3d/ACJS-MV35-5.step
+  (model ${KIPRJMOD}/3d/ACJS-MV35-5.step
     (offset (xyz 8 -3 23.68))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 180 0))

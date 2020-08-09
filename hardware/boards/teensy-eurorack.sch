@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 8
-Title "Teensy-eurorack V1.9"
+Title "Teensy-eurorack V1.9.1b"
 Date ""
-Rev "v1.9"
+Rev "v1.9.1b"
 Comp "Moolet"
 Comment1 ""
 Comment2 ""
@@ -24,9 +24,9 @@ F 3 "" H 8650 3600 50  0001 C CNN
 	1    9050 3200
 	1    0    0    -1  
 $EndComp
-Text Label 7550 1850 0    50   ~ 0
-TDM_IN
 Text Label 7550 1950 0    50   ~ 0
+TDM_IN
+Text Label 7550 1850 0    50   ~ 0
 TDM_OUT
 $Comp
 L teensy-eurorack:CS42448 U1
@@ -43,8 +43,6 @@ Text Label 10150 1350 0    50   ~ 0
 MCLK
 Text Label 10150 1550 0    50   ~ 0
 BCLK
-Text Label 10150 1650 0    50   ~ 0
-LRCLK
 Wire Wire Line
 	7550 1850 7950 1850
 Wire Wire Line
@@ -279,8 +277,6 @@ Text Label 3050 4850 2    50   ~ 0
 TDM_OUT
 Text Label 3050 4950 2    50   ~ 0
 BCLK
-Text Label 3050 5050 2    50   ~ 0
-LRCLK
 $Comp
 L power:GND #PWR09
 U 1 1 5EDCA7C8
@@ -294,8 +290,6 @@ F 3 "" H 2750 4550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2750 4550 3050 4550
-Text Label 3050 4350 2    50   ~ 0
-LRCLK
 Text Label 3050 4250 2    50   ~ 0
 BCLK
 Text Label 3050 4150 2    50   ~ 0
@@ -737,7 +731,7 @@ Text Label 7000 2900 0    50   ~ 0
 AGND
 Text Label 7000 3500 0    50   ~ 0
 AGND
-Text Notes 8200 750  2    98   ~ 0
+Text Notes 7250 400  2    98   ~ 0
 TEENSY 4.1
 Wire Wire Line
 	6550 5200 6550 4750
@@ -1276,7 +1270,6 @@ NoConn ~ 10150 2850
 NoConn ~ 10150 2750
 NoConn ~ 10150 2650
 NoConn ~ 7950 3350
-NoConn ~ 7950 3250
 NoConn ~ 7950 2450
 Connection ~ 3050 4650
 Wire Wire Line
@@ -1582,4 +1575,16 @@ Wire Notes Line
 	7250 500  7250 6500
 Wire Notes Line
 	7250 3500 11200 3500
+Wire Wire Line
+	7950 3250 7700 3250
+Wire Wire Line
+	7700 3250 7700 2850
+Wire Wire Line
+	7700 2850 7950 2850
+Text Label 10150 1650 0    49   ~ 0
+LRCLK
+Text Label 3050 5050 2    49   ~ 0
+LRCLK
+Text Label 3050 4350 2    49   ~ 0
+LRCLK
 $EndSCHEMATC
