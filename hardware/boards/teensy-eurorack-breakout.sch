@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Teensy-eurorack V1.9.1"
+Title "Teensy-eurorack V1.9"
 Date ""
-Rev "v1.9.1"
+Rev "v1.9"
 Comp "Moolet"
 Comment1 ""
 Comment2 ""

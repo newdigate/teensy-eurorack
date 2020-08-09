@@ -1443,7 +1443,7 @@ stroke:#840000; stroke-width:120; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;">
 <text x="103540" y="76320"
 textLength="5030" font-size="780" lengthAdjust="spacingAndGlyphs"
-text-anchor="start" opacity="0">Rev: v1.9.1</text>
+text-anchor="start" opacity="0">Rev: v1.9</text>
 <path d="M104090 76290
 L103890 76010
 " />
@@ -1725,7 +1725,7 @@ stroke:#840000; stroke-width:160; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;">
 <text x="70080" y="74920"
 textLength="18010" font-size="1050" lengthAdjust="spacingAndGlyphs"
-text-anchor="start" opacity="0">Title: Teensy-eurorack V1.9.1</text>
+text-anchor="start" opacity="0">Title: Teensy-eurorack V1.9</text>
 <path d="M70360 74090
 L70810 74090
 " />
