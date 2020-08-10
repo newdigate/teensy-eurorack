@@ -174,14 +174,6 @@ status:
   25/07/2020:
     * received pcbs, stencil and components
 ```
-### v1.8.1 
-cleanup, minor improvements, and reduce number of distinct components
- * breakout board:
-   * changed C6 (1nF) from 1206 to 0805 to match C2 - reduces number of unique components by 1
- * mainboard
-   * cleanup of footprints to reduce number of distinct parts
-   * removed pull-up resistor on AD_RESET signal
-   * increased size of power traces to 350 mil
   
 ## todo 
 - [ ] General
