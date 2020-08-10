@@ -9,6 +9,7 @@
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 **open source [hardware](hardware) and [software](software) for a [teensy 4.1](https://www.pjrc.com/store/teensy40.html "teensy 4.1 board") eurorack shield** 
+
 extend a [teensy 4.1](https://www.pjrc.com/store/teensy40.html "teensy 4.1 board") with peripherals to interface with stereo line audio and eurorack modular equipment. 
 
 For stable, tested version please see [![Version 1.8.1](https://img.shields.io/badge/project-1.8.1-brightgreen.svg?label=verion&colorA=555555&colorB=ff4a88)](https://github.com/newdigate/teensy-eurorack/tree/1.8.1)
