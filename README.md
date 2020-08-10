@@ -90,8 +90,8 @@ What you can do if you like to see progress with this project?
 * 3 x stereo 6.35mm TRS jack inputs
 * 4 x stereo 6.35mm TRS jack outputs
 * pin sockets to connect breakout board
-<img src='hardware/images/mainboard-top.png' width='300px'/> 
-<img src='hardware/images/mainboard-bottom.png' width='300px'/> 
+
+<img src='hardware/images/mainboard-top.png' width='300px'/> <img src='hardware/images/mainboard-bottom.png' width='300px'/> 
 
 ## breakout board
 * standard double layer printed circuit board
@@ -110,8 +110,7 @@ What you can do if you like to see progress with this project?
 * 4 x linear pots
 * 3 x rotary encoders with switches 
 
-<img src='hardware/images/breakoutboard-top.png' width='300px'/> 
-<img src='hardware/images/breakoutboard-bottom.png' width='300px'/> 
+<img src='hardware/images/breakoutboard-top.png' width='300px'/> <img src='hardware/images/breakoutboard-bottom.png' width='300px'/> 
 
 # [panel design](hardware/panel)
 <img src='hardware/panel/images/panel-front.svg' width='300px'/>
@@ -152,6 +151,9 @@ What you can do if you like to see progress with this project?
 
 
 ## versions
+### v1.9.1b
+* mainboard: correction: reconnected LRCLK to codec.
+
 ### v1.9.1
 * connected DAC_SCK output (pin 19) to pin 31
   * allow cable select to be asserted on minor spi data cycle after every 24 or 48 spi clock cycles, using interrupt on pin 31.
@@ -185,25 +187,26 @@ cleanup, minor improvements, and reduce number of distinct components
 - [ ] General
   - [ ] cleanup / refactor footprints, replace footprints and symbols imported from eagle with kicad equivalents
 - [ ] Breakout board for rotary encoders and pots
-  - [x] ~~Order~~
-  - [x] ~~Assemble~~
-  - [ ] software
+  - [x] ~~order~~
+  - [ ] assemble
+  - [ ] verify
+  - [ ] firmware
   - [ ] document
   - [ ] certify
 - [x] ~~panel~~
   - [x] ~~measurements~~
   - [x] ~~design~~
 - [ ] finalize circuits / boards
-- [x] ~~testing~~
-  - [x] ~~CS42448 audio codec~~
-    - [x] ~~Audio input~~
-    - [x] ~~Audio output~~
-  - [x] ~~control voltage input~~
-  - [x] ~~control voltage output~~
-  - [x] ~~gpio (input & output)~~ 
-  - [x] ~~usb host~~
-  - [x] ~~usb device~~
-  - [x] ~~midi in/out~~
+- [ ]  testing
+  - [ ] CS42448 audio codec
+    - [ ] Audio input
+    - [ ] Audio output
+  - [ ] control voltage input
+  - [ ] control voltage output
+  - [ ] gpio (input & output) 
+  - [ ] usb host
+  - [ ] usb device
+  - [ ] midi in/out
   - [x] ~~st7735 display~~
   - [x] ~~sd card extension & adapter~~
 - [ ] Document 
