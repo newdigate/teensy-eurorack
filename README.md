@@ -14,6 +14,10 @@ extend a [teensy 4.1](https://www.pjrc.com/store/teensy40.html "teensy 4.1 board
 
 For stable, tested version please see [![Version 1.8.1](https://img.shields.io/badge/project-1.8.1-brightgreen.svg?label=version&colorA=555555&colorB=ff4a88)](https://github.com/newdigate/teensy-eurorack/tree/1.8.1)
 
+<img src='hardware/images/kryonos.png' width='500px'/>
+<img src='hardware/docs/teensy-eurorack.svg' width='800px'/>
+<img src='hardware/docs/teensy-eurorack-breakout.svg' width='800px'/>
+
 * [specifications](#specifications)
 * [open source software-stack](#open-source-software-stack)
 * [support](#support)
@@ -26,10 +30,6 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
 * [videos](#videos)
 * [versions](#versions)
 * [todo](#todo)
-
-<img src='hardware/images/kryonos.png' width='500px'/>
-<img src='hardware/docs/teensy-eurorack.svg' width='800px'/>
-<img src='hardware/docs/teensy-eurorack-breakout.svg' width='800px'/>
 
 ## specifications
 * **microcontrollers:** 
