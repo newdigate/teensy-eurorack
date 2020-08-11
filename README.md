@@ -1,5 +1,5 @@
 # teensy eurorack audio shield 
-![Version 1.9.1b](https://img.shields.io/badge/project-1.9.1b-brightgreen.svg?label=verion&colorA=555555&colorB=ff4a88)
+![Version 1.9.1b](https://img.shields.io/badge/project-1.9.1b-brightgreen.svg?label=version&colorA=555555&colorB=ff4a88)
 [![Teensy 4.1](https://img.shields.io/badge/project-4.1-brightgreen.svg?label=teensy&colorA=555555&colorB=ff8aff&logo=)](https://www.pjrc.com/store/teensy41.html)
 ![in development](https://img.shields.io/badge/project-in_development-brightgreen.svg?label=status&colorA=555555&colorB=ff8800)
 [![Join the chat at https://gitter.im/newdigate/teensy-eurorack](https://badges.gitter.im/newdigate/teensy-eurorack.svg)](https://gitter.im/newdigate/teensy-eurorack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -12,7 +12,7 @@
 
 extend a [teensy 4.1](https://www.pjrc.com/store/teensy40.html "teensy 4.1 board") with peripherals to interface with stereo line audio and eurorack modular equipment. 
 
-For stable, tested version please see [![Version 1.8.1](https://img.shields.io/badge/project-1.8.1-brightgreen.svg?label=verion&colorA=555555&colorB=ff4a88)](https://github.com/newdigate/teensy-eurorack/tree/1.8.1)
+For stable, tested version please see [![Version 1.8.1](https://img.shields.io/badge/project-1.8.1-brightgreen.svg?label=version&colorA=555555&colorB=ff4a88)](https://github.com/newdigate/teensy-eurorack/tree/1.8.1)
 
 * [specifications](#specifications)
 * [open source software-stack](#open-source-software-stack)
