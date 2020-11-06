@@ -50,8 +50,6 @@ F 3 "" H 1200 3150 50  0001 C CNN
 $EndComp
 Text Label 1200 1950 2    50   ~ 0
 ADC_MISO
-Text Label 1200 3550 2    50   ~ 0
-ADC_SCK
 Text Label 1200 3650 2    50   ~ 0
 ADC_CS
 $Comp
@@ -100,19 +98,6 @@ F 3 "" H 900 3050 50  0001 C CNN
 	1    900  3050
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR074
-U 1 1 5EE71FB6
-P 550 4350
-F 0 "#PWR074" H 550 4100 50  0001 C CNN
-F 1 "GND" H 555 4177 50  0000 C CNN
-F 2 "" H 550 4350 50  0001 C CNN
-F 3 "" H 550 4350 50  0001 C CNN
-	1    550  4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	550  4050 1200 4050
 Wire Wire Line
 	1200 4150 1200 4250
 Text Label 1200 4250 2    50   ~ 0
@@ -1654,12 +1639,12 @@ Wire Wire Line
 $Comp
 L power:+3V3 #PWR083
 U 1 1 5F063899
-P 10600 1750
-F 0 "#PWR083" H 10600 1600 50  0001 C CNN
-F 1 "+3V3" H 10615 1923 50  0000 C CNN
-F 2 "" H 10600 1750 50  0001 C CNN
-F 3 "" H 10600 1750 50  0001 C CNN
-	1    10600 1750
+P 10300 1750
+F 0 "#PWR083" H 10300 1600 50  0001 C CNN
+F 1 "+3V3" H 10315 1923 50  0000 C CNN
+F 2 "" H 10300 1750 50  0001 C CNN
+F 3 "" H 10300 1750 50  0001 C CNN
+	1    10300 1750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1689,17 +1674,6 @@ Text Label 7450 1350 0    49   ~ 0
 P2
 Text Label 7450 750  0    49   ~ 0
 P3
-$Comp
-L Connector_Generic:Conn_01x14 JB1
-U 1 1 5EF74B39
-P 11050 1450
-F 0 "JB1" H 10968 525 50  0000 C CNN
-F 1 "Conn_01x14" H 10968 616 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x14_P2.54mm_Vertical" H 11050 1450 50  0001 C CNN
-F 3 "~" H 11050 1450 50  0001 C CNN
-	1    11050 1450
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	10250 1950 10850 1950
 Wire Wire Line
@@ -1901,9 +1875,6 @@ F 3 "" H 10500 2750 50  0001 C CNN
 	1    10500 2750
 	-1   0    0    -1  
 $EndComp
-NoConn ~ 10850 1450
-NoConn ~ 10850 1550
-NoConn ~ 10850 1650
 NoConn ~ 850  7650
 NoConn ~ 1600 7650
 NoConn ~ 2350 7650
@@ -1917,8 +1888,6 @@ Wire Wire Line
 	3650 3550 3700 3550
 Wire Wire Line
 	10250 950  10850 950 
-Wire Wire Line
-	10600 1750 10850 1750
 Wire Wire Line
 	7850 1450 7950 1450
 Wire Wire Line
@@ -2594,8 +2563,6 @@ F 3 "" H 4250 3900 50  0001 C CNN
 	1    4250 3900
 	1    0    0    -1  
 $EndComp
-Text Label 4750 3500 2    50   ~ 0
-DAC_SDOUT
 NoConn ~ 4750 4300
 NoConn ~ 4750 4200
 NoConn ~ 4750 1750
@@ -2613,7 +2580,7 @@ DAC_SCK
 Wire Wire Line
 	3850 3400 4750 3400
 Wire Wire Line
-	3850 950  3850 3400
+	3850 950  3850 1650
 Wire Wire Line
 	4750 950  3850 950 
 $Comp
@@ -2657,15 +2624,13 @@ Wire Wire Line
 Wire Wire Line
 	9100 1250 9850 1250
 Wire Wire Line
-	9850 1450 9100 1450
-Wire Wire Line
 	9850 1550 9100 1550
 Text Label 9100 1650 0    49   ~ 0
 ADC_BUSY
 Text Label 9100 1950 0    49   ~ 0
 ADC_CONVST
 Text Label 9100 1850 0    49   ~ 0
-ADC_SCK
+ADC_RANGE
 Text Label 9100 1750 0    49   ~ 0
 ADC_CS
 Wire Wire Line
@@ -2702,8 +2667,6 @@ Wire Wire Line
 	9400 850  9850 850 
 Text Label 9100 1550 0    49   ~ 0
 DAC_SYNC
-Text Label 9100 1450 0    49   ~ 0
-DAC_SDOUT
 Wire Wire Line
 	9100 2050 9850 2050
 Wire Wire Line
@@ -2811,15 +2774,48 @@ F 3 "" H 550 3650 50  0001 C CNN
 	1    550  3650
 	1    0    0    -1  
 $EndComp
+Text Label 1200 4050 2    49   ~ 0
+ADC_RANGE
+Text Label 1200 3550 2    50   ~ 0
+DAC_SCK
 $Comp
-L Device:R R2
-U 1 1 5F5296C2
-P 550 4200
-F 0 "R2" H 620 4246 50  0000 L CNN
-F 1 "4.7k" H 620 4155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 480 4200 50  0001 C CNN
-F 3 "~" H 550 4200 50  0001 C CNN
-	1    550  4200
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5FA6E2AB
+P 4150 1650
+F 0 "J?" H 4100 2150 50  0000 L CNN
+F 1 "Conn_01x01" H 3850 2050 50  0000 L CNN
+F 2 "" H 4150 1650 50  0001 C CNN
+F 3 "" H 4150 1650 50  0001 C CNN
+	1    4150 1650
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3950 1650 3850 1650
+Connection ~ 3850 1650
+Wire Wire Line
+	3850 1650 3850 3400
+NoConn ~ 4750 3500
+Text Label 9850 1450 2    49   ~ 0
+GND
+$Comp
+L Connector_Generic:Conn_01x14 JB1
+U 1 1 5EF74B39
+P 11050 1450
+F 0 "JB1" H 10968 525 50  0000 C CNN
+F 1 "Conn_01x14" H 10968 616 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x14_P2.54mm_Vertical" H 11050 1450 50  0001 C CNN
+F 3 "~" H 11050 1450 50  0001 C CNN
+	1    11050 1450
+	1    0    0    1   
+$EndComp
+Text Label 10850 1450 2    49   ~ 0
+GND
+Text Label 10850 1650 2    49   ~ 0
+GND
+Text Label 10850 1550 2    49   ~ 0
+ADC_RESET
+Text Label 1200 3950 2    49   ~ 0
+ADC_RESET
+Wire Wire Line
+	10300 1750 10850 1750
 $EndSCHEMATC

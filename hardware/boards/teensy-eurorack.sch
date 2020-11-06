@@ -1261,7 +1261,6 @@ F 3 "" H 10950 6400 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 NoConn ~ 10150 3350
-NoConn ~ 10150 3150
 NoConn ~ 10150 2550
 NoConn ~ 10150 2050
 NoConn ~ 10150 2650
@@ -1305,12 +1304,6 @@ Connection ~ 1650 6950
 Connection ~ 7750 6250
 Wire Wire Line
 	7750 4050 8800 4050
-NoConn ~ 8700 4750
-NoConn ~ 8700 4650
-NoConn ~ 8700 4550
-NoConn ~ 7750 4550
-NoConn ~ 7750 4650
-NoConn ~ 7750 4750
 Wire Wire Line
 	7350 6250 7750 6250
 $Comp
@@ -1409,8 +1402,6 @@ F 3 "" H 8250 4450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9450 5050 10850 5050
-Text Label 9450 4550 0    49   ~ 0
-DAC_SDOUT
 Text Label 9450 4650 0    49   ~ 0
 DAC_SYNC
 Wire Wire Line
@@ -1515,8 +1506,6 @@ Wire Wire Line
 Wire Wire Line
 	10850 4650 9450 4650
 Wire Wire Line
-	10850 4550 9450 4550
-Wire Wire Line
 	9450 4450 9950 4450
 Wire Wire Line
 	9450 4350 10850 4350
@@ -1586,4 +1575,47 @@ Text Label 9450 4950 0    49   ~ 0
 ADC_RANGE
 Text Label 10150 2950 0    49   ~ 0
 ADC_RANGE
+$Comp
+L power:GND #PWR?
+U 1 1 5FA5C96B
+P 10950 4550
+F 0 "#PWR?" H 10950 4300 50  0001 C CNN
+F 1 "GND" H 10955 4377 50  0001 C CNN
+F 2 "" H 10950 4550 50  0001 C CNN
+F 3 "" H 10950 4550 50  0001 C CNN
+	1    10950 4550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 4550 10950 4550
+$Comp
+L power:GND #PWR?
+U 1 1 5FA650F8
+P 8800 4750
+F 0 "#PWR?" H 8800 4500 50  0001 C CNN
+F 1 "GND" H 8805 4577 50  0001 C CNN
+F 2 "" H 8800 4750 50  0001 C CNN
+F 3 "" H 8800 4750 50  0001 C CNN
+	1    8800 4750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FA85CAE
+P 8800 4550
+F 0 "#PWR?" H 8800 4300 50  0001 C CNN
+F 1 "GND" H 8805 4377 50  0001 C CNN
+F 2 "" H 8800 4550 50  0001 C CNN
+F 3 "" H 8800 4550 50  0001 C CNN
+	1    8800 4550
+	-1   0    0    -1  
+$EndComp
+Text Label 7750 4650 0    49   ~ 0
+ADC_RESET
+Text Label 10150 3150 0    49   ~ 0
+ADC_RESET
+Wire Wire Line
+	7750 4550 8800 4550
+Wire Wire Line
+	7750 4750 8800 4750
 $EndSCHEMATC
