@@ -908,7 +908,7 @@ Text Label 7950 2850 2    49   ~ 0
 DAC_SCK
 Text Label 7950 2750 2    49   ~ 0
 DAC_SDIN
-Text Label 10150 3250 0    49   ~ 0
+Text Label 10150 2750 0    49   ~ 0
 ADC_MISO
 Text Label 10150 2950 0    49   ~ 0
 ADC_SCK
@@ -924,10 +924,8 @@ Text Label 7950 1450 2    49   ~ 0
 ADC_BUSY
 Text Label 7950 1650 2    49   ~ 0
 ADC_CONVST
-Text Label 10150 2050 0    49   ~ 0
+Text Label 10150 2850 0    49   ~ 0
 DAC_SYNC
-Text Label 10150 2550 0    49   ~ 0
-DAC_SDOUT
 $Comp
 L Connector_Generic:Conn_02x08_Odd_Even J28
 U 1 1 5EE93454
@@ -1266,8 +1264,8 @@ F 3 "" H 10950 6400 50  0001 C CNN
 $EndComp
 NoConn ~ 10150 3350
 NoConn ~ 10150 3150
-NoConn ~ 10150 2850
-NoConn ~ 10150 2750
+NoConn ~ 10150 2550
+NoConn ~ 10150 2050
 NoConn ~ 10150 2650
 NoConn ~ 7950 3350
 NoConn ~ 7950 2450
@@ -1587,4 +1585,5 @@ Text Label 3050 5050 2    49   ~ 0
 LRCLK
 Text Label 3050 4350 2    49   ~ 0
 LRCLK
+NoConn ~ 10150 3250
 $EndSCHEMATC
