@@ -910,8 +910,6 @@ Text Label 7950 2750 2    49   ~ 0
 DAC_SDIN
 Text Label 10150 2750 0    49   ~ 0
 ADC_MISO
-Text Label 10150 2950 0    49   ~ 0
-ADC_SCK
 Text Label 10150 3050 0    49   ~ 0
 ADC_CS
 Text Label 7950 1150 2    49   ~ 0
@@ -1411,10 +1409,6 @@ F 3 "" H 8250 4450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9450 5050 10850 5050
-Wire Wire Line
-	9450 4950 10850 4950
-Wire Wire Line
-	9450 5150 10850 5150
 Text Label 9450 4550 0    49   ~ 0
 DAC_SDOUT
 Text Label 9450 4650 0    49   ~ 0
@@ -1506,8 +1500,6 @@ Text Label 7750 4350 0    49   ~ 0
 ADC_MISO
 Text Label 9450 4850 0    49   ~ 0
 ADC_CS
-Text Label 9450 4950 0    49   ~ 0
-ADC_SCK
 Text Label 9450 5050 0    49   ~ 0
 ADC_CONVST
 Text Label 9450 4750 0    49   ~ 0
@@ -1586,4 +1578,12 @@ LRCLK
 Text Label 3050 4350 2    49   ~ 0
 LRCLK
 NoConn ~ 10150 3250
+Wire Wire Line
+	9450 4950 10900 4950
+Wire Wire Line
+	9450 5150 10900 5150
+Text Label 9450 4950 0    49   ~ 0
+ADC_RANGE
+Text Label 10150 2950 0    49   ~ 0
+ADC_RANGE
 $EndSCHEMATC
