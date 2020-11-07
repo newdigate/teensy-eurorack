@@ -1518,12 +1518,6 @@ Wire Notes Line
 	7250 500  7250 6500
 Wire Notes Line
 	7250 3500 11200 3500
-Wire Wire Line
-	7950 3250 7700 3250
-Wire Wire Line
-	7700 3250 7700 2850
-Wire Wire Line
-	7700 2850 7950 2850
 Text Label 10150 1650 0    49   ~ 0
 LRCLK
 Text Label 3050 5050 2    49   ~ 0
@@ -1584,4 +1578,5 @@ Wire Wire Line
 	7750 4750 8800 4750
 NoConn ~ 9450 3950
 NoConn ~ 9450 3850
+NoConn ~ 7950 3250
 $EndSCHEMATC
