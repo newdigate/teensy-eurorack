@@ -1405,16 +1405,6 @@ Wire Wire Line
 Text Label 9450 4650 0    49   ~ 0
 DAC_SYNC
 Wire Wire Line
-	10100 3950 10850 3950
-Connection ~ 10100 3950
-Wire Wire Line
-	10100 3800 10100 3950
-Wire Wire Line
-	9850 3850 10850 3850
-Connection ~ 9850 3850
-Wire Wire Line
-	9850 3800 9850 3850
-Wire Wire Line
 	8400 3950 8700 3950
 Connection ~ 8400 3950
 Wire Wire Line
@@ -1433,28 +1423,6 @@ F 1 "+12V" H 8415 3973 50  0000 C CNN
 F 2 "" H 8400 3800 50  0001 C CNN
 F 3 "" H 8400 3800 50  0001 C CNN
 	1    8400 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR0152
-U 1 1 5F0A0203
-P 10100 3800
-F 0 "#PWR0152" H 10100 3650 50  0001 C CNN
-F 1 "+12V" H 10115 3973 50  0000 C CNN
-F 2 "" H 10100 3800 50  0001 C CNN
-F 3 "" H 10100 3800 50  0001 C CNN
-	1    10100 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:-12V #PWR0151
-U 1 1 5F09FD24
-P 9850 3800
-F 0 "#PWR0151" H 9850 3900 50  0001 C CNN
-F 1 "-12V" H 9865 3973 50  0000 C CNN
-F 2 "" H 9850 3800 50  0001 C CNN
-F 3 "" H 9850 3800 50  0001 C CNN
-	1    9850 3800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1513,8 +1481,6 @@ Wire Wire Line
 	9450 4150 10850 4150
 Wire Wire Line
 	9450 4050 10850 4050
-Wire Wire Line
-	9450 3950 10100 3950
 $Comp
 L power:+5V #PWR0143
 U 1 1 5F2119BB
@@ -1538,8 +1504,6 @@ Text Label 9450 4050 0    49   ~ 0
 TFT_CS
 Text Label 9450 4150 0    49   ~ 0
 TFT_DC
-Wire Wire Line
-	9450 3850 9850 3850
 Wire Wire Line
 	7750 3850 8100 3850
 Connection ~ 3050 4550
@@ -1618,4 +1582,6 @@ Wire Wire Line
 	7750 4550 8800 4550
 Wire Wire Line
 	7750 4750 8800 4750
+NoConn ~ 9450 3950
+NoConn ~ 9450 3850
 $EndSCHEMATC
