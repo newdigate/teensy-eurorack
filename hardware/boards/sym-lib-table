@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name teensy-eurorack)(type Legacy)(uri ${KIPRJMOD}/teensy-eurorack.lib)(options "")(descr ""))
+  (lib (name teensy-eurorack-rescue)(type Legacy)(uri ${KIPRJMOD}/teensy-eurorack-rescue.lib)(options "")(descr ""))
 )
