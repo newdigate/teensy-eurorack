@@ -2042,26 +2042,26 @@ F 3 "" H 6500 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C33
+L Device:CP C33
 U 1 1 5F01A320
 P 6700 4650
-F 0 "C33" H 6815 4696 50  0000 L CNN
-F 1 "10u" H 6815 4605 50  0000 L CNN
+F 0 "C33" H 6450 4700 50  0000 L CNN
+F 1 "10u" H 6450 4600 50  0000 L CNN
 F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.00mm" H 6738 4500 50  0001 C CNN
 F 3 "~" H 6700 4650 50  0001 C CNN
 	1    6700 4650
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C32
+L Device:CP C32
 U 1 1 5F0199E8
 P 6500 4650
-F 0 "C32" H 6250 4700 50  0000 L CNN
-F 1 "0.1u" H 6250 4600 50  0000 L CNN
+F 0 "C32" H 6600 4700 50  0000 L CNN
+F 1 "0.1u" H 6600 4600 50  0000 L CNN
 F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.00mm" H 6538 4500 50  0001 C CNN
 F 3 "~" H 6500 4650 50  0001 C CNN
 	1    6500 4650
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:-12V #PWR066
@@ -2174,7 +2174,7 @@ F 3 "~" H 4200 5250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C23
+L Device:CP C23
 U 1 1 5F0093E0
 P 4400 4600
 F 0 "C23" H 4515 4646 50  0000 L CNN
@@ -2185,7 +2185,7 @@ F 3 "~" H 4400 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C19
+L Device:CP C19
 U 1 1 5F008568
 P 4200 4600
 F 0 "C19" H 3900 4650 50  0000 L CNN
@@ -2295,15 +2295,15 @@ F 3 "" H 6700 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C34
+L Device:CP C34
 U 1 1 5EFF5A69
 P 6700 2100
-F 0 "C34" H 6815 2146 50  0000 L CNN
-F 1 "10u" H 6815 2055 50  0000 L CNN
+F 0 "C34" H 6450 2150 50  0000 L CNN
+F 1 "10u" H 6500 2000 50  0000 L CNN
 F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.00mm" H 6738 1950 50  0001 C CNN
 F 3 "~" H 6700 2100 50  0001 C CNN
 	1    6700 2100
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:-12V #PWR070
@@ -2328,7 +2328,7 @@ F 3 "" H 4150 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C21
+L Device:CP C21
 U 1 1 5EFF14C2
 P 4150 2100
 F 0 "C21" H 3900 2150 50  0000 L CNN
@@ -2372,15 +2372,15 @@ F 3 "" H 4350 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C31
+L Device:CP C31
 U 1 1 5EFEC162
 P 6500 2100
-F 0 "C31" H 6250 2150 50  0000 L CNN
-F 1 "0.1u" H 6250 2050 50  0000 L CNN
+F 0 "C31" H 6600 2150 50  0000 L CNN
+F 1 "0.1u" H 6600 2050 50  0000 L CNN
 F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.00mm" H 6538 1950 50  0001 C CNN
 F 3 "~" H 6500 2100 50  0001 C CNN
 	1    6500 2100
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:-12V #PWR061
@@ -2764,7 +2764,7 @@ Wire Wire Line
 NoConn ~ 9850 850 
 NoConn ~ 9850 750 
 $Comp
-L Device:C C25
+L Device:CP C25
 U 1 1 5EFEB20A
 P 4350 2100
 F 0 "C25" H 4465 2146 50  0000 L CNN
