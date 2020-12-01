@@ -1,4 +1,4 @@
-update=Monday, 30 November 2020 at 10:55:01
+update=Monday, 30 November 2020 at 20:54:30
 version=1
 last_client=kicad
 [general]
@@ -33,19 +33,19 @@ AllowBlindVias=0
 RequireCourtyardDefinitions=0
 ProhibitOverlappingCourtyards=1
 MinTrackWidth=0.1524
-MinViaDiameter=0.2032
-MinViaDrill=0.1016
-MinMicroViaDiameter=0.2
+MinViaDiameter=0.45
+MinViaDrill=0.25
+MinMicroViaDiameter=0.25
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
 TrackWidth1=0.2286
 TrackWidth2=0.1524
 TrackWidth3=0.2286
 TrackWidth4=0.4064
-ViaDiameter1=0.4064
-ViaDrill1=0.2032
-ViaDiameter2=0.4064
-ViaDrill2=0.2032
+ViaDiameter1=0.45
+ViaDrill1=0.25
+ViaDiameter2=0.45
+ViaDrill2=0.25
 dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
@@ -75,15 +75,15 @@ SolderPasteClearance=0
 SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
-Type=2
+Type=1
 Enabled=1
 [pcbnew/Layer.In1.Cu]
 Name=In1.Cu
-Type=2
+Type=0
 Enabled=1
 [pcbnew/Layer.In2.Cu]
 Name=In2.Cu
-Type=2
+Type=0
 Enabled=1
 [pcbnew/Layer.In3.Cu]
 Name=In3.Cu
@@ -244,10 +244,10 @@ Enabled=0
 Name=Default
 Clearance=0.1524
 TrackWidth=0.2286
-ViaDiameter=0.4064
-ViaDrill=0.2032
-uViaDiameter=0.4064
-uViaDrill=0.2032
+ViaDiameter=0.45
+ViaDrill=0.25
+uViaDiameter=0.45
+uViaDrill=0.25
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
