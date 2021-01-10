@@ -96,7 +96,7 @@ What you can do if you like to see progress with this project?
 <img src='hardware/images/mainboard-top.png' width='300px'/> <img src='hardware/images/mainboard-bottom.png' width='300px'/> 
 
 ## breakout board
-* standard double layer printed circuit board
+* ~~double~~ 4 layer printed circuit board
   * thinkness: 1.6mm  
   * minimum trace: 6 mil
   * minimum clearance: 6 mil
