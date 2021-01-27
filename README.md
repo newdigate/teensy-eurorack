@@ -93,7 +93,7 @@ What you can do if you like to see progress with this project?
 * 4 x stereo 6.35mm TRS jack outputs
 * pin sockets to connect breakout board
 
-<img src='hardware/images/mainboard-top.png' width='300px'/> <img src='hardware/images/mainboard-bottom.png' width='300px'/> 
+<img src='hardware/images/boards/mainboard-top.png' width='300px'/> <img src='hardware/images/boards/mainboard-bottom.png' width='300px'/> 
 
 ## breakout board
 * ~~double~~ 4 layer printed circuit board
@@ -112,7 +112,7 @@ What you can do if you like to see progress with this project?
 * 4 x linear pots
 * 3 x rotary encoders with switches 
 
-<img src='hardware/images/breakoutboard-top.png' width='300px'/> <img src='hardware/images/breakoutboard-bottom.png' width='300px'/> 
+<img src='hardware/images/boards/breakout-top.png' width='300px'/> <img src='hardware/images/boards/breakout-bottom.png' width='300px'/> 
 
 # [panel design](hardware/panel)
 <img src='hardware/panel/images/panel-front.svg' width='300px'/>
