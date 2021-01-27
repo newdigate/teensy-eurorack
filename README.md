@@ -8,7 +8,7 @@
 )](https://kicad-pcb.org/)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-**open source [hardware](hardware) and [software](software) for a [teensy 4.1](https://www.pjrc.com/store/teensy40.html "teensy 4.1 board") eurorack shield** 
+**open source [hardware](hardware) and [software](software) for a 30-channel 16-bit analog [teensy 4.1](https://www.pjrc.com/store/teensy40.html "teensy 4.1 board") eurorack shield** 
 
 extend a [teensy 4.1](https://www.pjrc.com/store/teensy40.html "teensy 4.1 board") with peripherals to interface with stereo line audio and eurorack modular equipment. 
 
