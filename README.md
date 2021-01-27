@@ -75,8 +75,6 @@ What you can do if you like to see progress with this project?
 * download kicad and freecad, clone this repo, make improvements, commit & send pull-requests, and raise issues...
 
 ## social media
-* facebook: 
-  * [Moolet](https://www.facebook.com/Moolet-249737938397431/)
 * youtube:
   * [Nic N](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) 
 
