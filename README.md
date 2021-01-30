@@ -101,8 +101,7 @@ What you can do if you like to see progress with this project?
   * minimum clearance: 6 mil
   * dimension: 110mm*111mm
 * 8 x 3.5mm jack socket for analog control voltage inputs
-* 4 x 3.5mm jack socket for analog control voltage outputs
-* 4 x 3.5mm jack socket for 5v GPIO (general purpose inputs or outputs)
+* 8 x 3.5mm jack socket for analog control voltage outputs
 * midi in/out DIN sockets
 * usb device/host
   * USB-B: USB device mode
