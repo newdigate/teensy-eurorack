@@ -129,14 +129,17 @@ What you can do if you like to see progress with this project?
 * [side-channel stereo audio separation with teensy 4.0](https://www.youtube.com/watch?v=N0IBevm4hTQ)
 
 ## versions
-### v2.0.2b
+### v2.0.2
 * Mainboard: spaced out traces as there appeared to be some interference under certain circumstances.
 
-### v2.0.1b
+### v2.0.1
 * Mainboard: add daisy chain TX/RX connector on back side to communicate between multiple boards
 * Breakout board: changed back to double layer board.
 
-### v2.0.0b
+### v2.0.0(b)
+* Breakout board: Corrected polarity of +-12V pin headers on breakout board (ouch!!!)
+
+### v2.0.0
 * SPI: separated ADC, DAC from display: 
   * st7735 display has its own dedicated SPI - (SPI0, stays the same)
   * ADC / DAC are now sharing SPI1
