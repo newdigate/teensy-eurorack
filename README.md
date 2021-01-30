@@ -142,6 +142,7 @@ What you can do if you like to see progress with this project?
 
 ### v2.0.0(b)
 * Breakout board: Corrected polarity of +-12V pin headers on breakout board (ouch!!!)
+* change ADC to use external 2.5v voltage reference, same as DAC voltage reference now 
 
 ### v2.0.0
 * SPI: separated ADC, DAC from display: 
