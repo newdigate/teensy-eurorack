@@ -176,20 +176,10 @@ status:
 ```
   
 ## todo 
-- [ ] General
-  - [ ] cleanup / refactor footprints, replace footprints and symbols imported from eagle with kicad equivalents
-- [ ] Breakout board for rotary encoders and pots
-  - [x] ~~order~~
-  - [ ] assemble
-  - [ ] verify
-  - [ ] firmware
-  - [ ] document
-  - [ ] certify
-- [x] ~~panel~~
-  - [x] ~~measurements~~
-  - [x] ~~design~~
-- [ ] finalize circuits / boards
-- [ ]  testing
+- [ ] finalize design / circuits / boards
+- [x] ~~order~~ (v.2.0.2)
+- [ ] assemble
+- [ ] testing
   - [ ] CS42448 audio codec
     - [ ] Audio input
     - [ ] Audio output
@@ -199,14 +189,12 @@ status:
   - [ ] usb host
   - [ ] usb device
   - [ ] midi in/out
-  - [x] ~~st7735 display~~
-  - [x] ~~sd card extension & adapter~~
+  - [ ] st7735 display
+  - [ ] sd card extension & adapter
 - [ ] Document 
   - [ ] order & build process
   - [ ] software process
 - [ ] Firmware
-  - [ ] Sliced audio loops
-  - [ ] Midi looping
 
 # build
 * testing automated build and packaging 
