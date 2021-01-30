@@ -70,6 +70,7 @@ There are some improvements I'd like to make later
 There is a journal of my progress, [journal.md](hardware/JOURNAL.md) 
 
 What you can do if you like to see progress with this project?
+* sponsor via paypal.me: [paypal.me/nicnewdigate](https://paypal.me/nicnewdigate) - please leave a message :)
 * star this repository (means you need a github account - go for it!!)
 * subscribe [Nic N on youtube](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) 
 * download kicad and freecad, clone this repo, make improvements, commit & send pull-requests, and raise issues...
@@ -118,39 +119,33 @@ What you can do if you like to see progress with this project?
 # assembly technical drawings 
 <img src='hardware/images/technical-drawing.svg' width='500px'/>
 
-## videos 
-
-* Teensy 4.0 eurorack shield design intro
-
-[![youtube: Teensy 4.0 eurorack shield design intro](https://img.youtube.com/vi/aNUSEszbnYU/0.jpg)](https://www.youtube.com/watch?v=aNUSEszbnYU)
-
-* 0v to 10v control voltage input, output and display using teensy 4.0
-
-[![youtube: 0v to 10v control voltage input, output and display using teensy 4.0](https://img.youtube.com/vi/5d5x8F7HRko/0.jpg)](https://www.youtube.com/watch?v=5d5x8F7HRko)
-
-* DIY assembly build - teensy 4.0 eurorack audio module
-
-[![DIY assembly build - teensy 4.0 eurorack audio module](https://img.youtube.com/vi/oZzPgpTrEhc/0.jpg)](https://www.youtube.com/watch?v=oZzPgpTrEhc)
-
-* assembling teensy eurorack shield
-
-[![youtube: assembly teensy eurorack shield](https://img.youtube.com/vi/Jx2KgpoT3WY/0.jpg)](https://www.youtube.com/watch?v=Jx2KgpoT3WY)
-
-* assembly timelapse
-
-[![youtube: assembly timelapse](https://img.youtube.com/vi/s-514rDjirY/0.jpg)](https://www.youtube.com/watch?v=s-514rDjirY)
-
-* Eurorack digital audio modules powered by teensy micro-controller
-
-[![youtube: Eurorack digital audio modules powered by teensy micro-controller](https://img.youtube.com/vi/6zt6OF7UOTc/0.jpg)](https://www.youtube.com/watch?v=6zt6OF7UOTc)
-
-* side-channel stereo audio separation with teensy 4.0
-
-[![side-channel stereo audio separation with teensy 4.0](https://img.youtube.com/vi/N0IBevm4hTQ/0.jpg)](https://www.youtube.com/watch?v=N0IBevm4hTQ)
-
-
+## youtube videos 
+* [youtube: Teensy 4.0 eurorack shield design intro](https://www.youtube.com/watch?v=aNUSEszbnYU)
+* [youtube: 0v to 10v control voltage input, output and display using teensy 4.0](https://www.youtube.com/watch?v=5d5x8F7HRko)
+* [DIY assembly build - teensy 4.0 eurorack audio module](https://www.youtube.com/watch?v=oZzPgpTrEhc)
+* [youtube: assembly teensy eurorack shield](https://www.youtube.com/watch?v=Jx2KgpoT3WY)
+* [youtube: assembly timelapse](https://www.youtube.com/watch?v=s-514rDjirY)
+* [youtube: Eurorack digital audio modules powered by teensy micro-controller](https://www.youtube.com/watch?v=6zt6OF7UOTc)
+* [side-channel stereo audio separation with teensy 4.0](https://www.youtube.com/watch?v=N0IBevm4hTQ)
 
 ## versions
+### v2.0.2
+* Mainboard: spaced out traces as there appeared to be some interference under certain circumstances.
+
+### v2.0.1
+* Mainboard: add daisy chain TX/RX connector on back side to communicate between multiple boards
+* Breakout board: changed back to double layer board.
+
+### v2.0.0(b)
+* Breakout board: Corrected polarity of +-12V pin headers on breakout board (ouch!!!)
+
+### v2.0.0
+* SPI: separated ADC, DAC from display: 
+  * st7735 display has its own dedicated SPI - (SPI0, stays the same)
+  * ADC / DAC are now sharing SPI1
+* integrated ADC and DAC into teensy audio library.
+* added one more ad5754 DAC for total of 8 control voltage analog output channels
+
 ### v1.9.1b
 * mainboard: correction: reconnected LRCLK to codec.
 
