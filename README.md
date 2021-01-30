@@ -15,8 +15,6 @@ some peripherals to extend your [teensy 4.1](https://www.pjrc.com/store/teensy40
 For stable, tested version please see [![Version 1.8.1](https://img.shields.io/badge/project-1.8.1-brightgreen.svg?label=version&colorA=555555&colorB=ff4a88)](https://github.com/newdigate/teensy-eurorack/tree/1.8.1)
 
 <img src='hardware/images/kryonos.png' width='500px'/>
-<img src='hardware/docs/teensy-eurorack.svg' width='800px'/>
-<img src='hardware/docs/teensy-eurorack-breakout.svg' width='800px'/>
 
 * [specifications](#specifications)
 * [open source software-stack](#open-source-software-stack)
@@ -25,6 +23,7 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
 * [printed circuit boards](#printed-circuit-boards)
   * [mainboard](#mainboard)
   * [breakout board](#breakout-board)
+* [schematics](#schematics)  
 * [panel design](#panel-design)  
 * [assembly technical drawings](#assembly-technical-drawings)
 * [videos](#videos)
@@ -111,6 +110,10 @@ What you can do if you like to see progress with this project?
 * 3 x rotary encoders with switches 
 
 <img src='hardware/images/boards/breakout-top.png' width='300px'/> <img src='hardware/images/boards/breakout-bottom.png' width='300px'/> 
+
+# schematics
+<img src='hardware/docs/teensy-eurorack.svg' width='800px'/>
+<img src='hardware/docs/teensy-eurorack-breakout.svg' width='800px'/>
 
 # [panel design](hardware/panel)
 <img src='hardware/panel/images/panel-front.svg' width='300px'/>
