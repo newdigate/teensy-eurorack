@@ -128,10 +128,12 @@ What you can do if you like to see progress with this project?
 * [side-channel stereo audio separation with teensy 4.0](https://www.youtube.com/watch?v=N0IBevm4hTQ)
 
 ## versions
-### v2.0.2
+### v2.0.2 
+* committed on branch [teensy-eurorack/spaced-tracks](https://github.com/newdigate/teensy-eurorack/tree/spaced-tracks)
 * Mainboard: spaced out traces as there appeared to be some interference under certain circumstances.
 
 ### v2.0.1
+* committed on branch [teensy-eurorack/master](https://github.com/newdigate/teensy-eurorack/tree/master)
 * Mainboard: add daisy chain TX/RX connector on back side to communicate between multiple boards
 * Breakout board: changed back to double layer board.
 
