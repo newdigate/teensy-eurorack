@@ -70,6 +70,7 @@ There are some improvements I'd like to make later
 There is a journal of my progress, [journal.md](hardware/JOURNAL.md) 
 
 What you can do if you like to see progress with this project?
+* sponsor via paypal.me: [paypal.me/nicnewdigate](https://paypal.me/nicnewdigate) - please leave a message :)
 * star this repository (means you need a github account - go for it!!)
 * subscribe [Nic N on youtube](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) 
 * download kicad and freecad, clone this repo, make improvements, commit & send pull-requests, and raise issues...
@@ -151,6 +152,20 @@ What you can do if you like to see progress with this project?
 
 
 ## versions
+### v2.0.2b
+* Mainboard: spaced out traces as there appeared to be some interference under certain circumstances.
+
+### v2.0.1b
+* Mainboard: add daisy chain TX/RX connector on back side to communicate between multiple boards
+* Breakout board: changed back to double layer board.
+
+### v2.0.0b
+* SPI: separated ADC, DAC from display: 
+  * st7735 display has its own dedicated SPI - (SPI0, stays the same)
+  * ADC / DAC are now sharing SPI1
+* integrated ADC and DAC into teensy audio library.
+* added one more ad5754 DAC for total of 8 control voltage analog output channels
+
 ### v1.9.1b
 * mainboard: correction: reconnected LRCLK to codec.
 
