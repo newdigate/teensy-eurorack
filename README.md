@@ -16,6 +16,7 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
 
 <img src='hardware/images/kryonos.png' width='500px'/>
 
+* [sponsor](#sponsor)
 * [specifications](#specifications)
 * [open source software-stack](#open-source-software-stack)
 * [support](#support)
@@ -29,6 +30,10 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
 * [videos](#videos)
 * [versions](#versions)
 * [todo](#todo)
+
+## sponsor
+* BitCoin: bc1qxkm5nhzf5wqhgtxx8fcqw328z2jxhv25qmm2d9 ![BitCoin](https://img.balancebadge.io/btc/bc1qxkm5nhzf5wqhgtxx8fcqw328z2jxhv25qmm2d9.svg)
+* paypal.me: [paypal.me/nicnewdigate](https://paypal.me/nicnewdigate)
 
 ## specifications
 * **microcontrollers:** 
@@ -69,14 +74,10 @@ There are some improvements I'd like to make later
 There is a journal of my progress, [journal.md](hardware/JOURNAL.md) 
 
 What you can do if you like to see progress with this project?
-* sponsor via paypal.me: [paypal.me/nicnewdigate](https://paypal.me/nicnewdigate) - please leave a message :)
 * star this repository (means you need a github account - go for it!!)
 * subscribe [Nic N on youtube](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) 
 * download kicad and freecad, clone this repo, make improvements, commit & send pull-requests, and raise issues...
 
-## social media
-* youtube:
-  * [Nic N](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) 
 
 # printed circuit boards
 ## [mainboard](hardware/boards/mainboard) 
@@ -122,13 +123,14 @@ What you can do if you like to see progress with this project?
 <img src='hardware/images/technical-drawing.svg' width='500px'/>
 
 ## youtube videos 
-* [youtube: Teensy 4.0 eurorack shield design intro](https://www.youtube.com/watch?v=aNUSEszbnYU)
-* [youtube: 0v to 10v control voltage input, output and display using teensy 4.0](https://www.youtube.com/watch?v=5d5x8F7HRko)
-* [DIY assembly build - teensy 4.0 eurorack audio module](https://www.youtube.com/watch?v=oZzPgpTrEhc)
-* [youtube: assembly teensy eurorack shield](https://www.youtube.com/watch?v=Jx2KgpoT3WY)
-* [youtube: assembly timelapse](https://www.youtube.com/watch?v=s-514rDjirY)
-* [youtube: Eurorack digital audio modules powered by teensy micro-controller](https://www.youtube.com/watch?v=6zt6OF7UOTc)
-* [side-channel stereo audio separation with teensy 4.0](https://www.youtube.com/watch?v=N0IBevm4hTQ)
+* [Nic N](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) 
+  * [youtube: Teensy 4.0 eurorack shield design intro](https://www.youtube.com/watch?v=aNUSEszbnYU)
+  * [youtube: 0v to 10v control voltage input, output and display using teensy 4.0](https://www.youtube.com/watch?v=5d5x8F7HRko)
+  * [youtube: DIY assembly build - teensy 4.0 eurorack audio module](https://www.youtube.com/watch?v=oZzPgpTrEhc)
+  * [youtube: assembly teensy eurorack shield](https://www.youtube.com/watch?v=Jx2KgpoT3WY)
+  * [youtube: assembly timelapse](https://www.youtube.com/watch?v=s-514rDjirY)
+  * [youtube: Eurorack digital audio modules powered by teensy micro-controller](https://www.youtube.com/watch?v=6zt6OF7UOTc)
+  * [youtube: side-channel stereo audio separation with teensy 4.0](https://www.youtube.com/watch?v=N0IBevm4hTQ)
 
 ## versions
 ### v2.0.2 
