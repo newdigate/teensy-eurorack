@@ -1,5 +1,5 @@
 # teensy eurorack audio shield 
-![Version 2.0](https://img.shields.io/badge/project-2.0-brightgreen.svg?label=version&colorA=555555&colorB=ff4a88)
+![Version 2.0.2](https://img.shields.io/badge/project-2.0.2-brightgreen.svg?label=version&colorA=555555&colorB=ff4a88)
 [![Teensy 4.1](https://img.shields.io/badge/project-4.1-brightgreen.svg?label=teensy&colorA=555555&colorB=ff8aff&logo=)](https://www.pjrc.com/store/teensy41.html)
 ![in testing](https://img.shields.io/badge/project-in_testing-brightgreen.svg?label=status&colorA=555555&colorB=ff8800)
 [![Join the chat at https://gitter.im/newdigate/teensy-eurorack](https://badges.gitter.im/newdigate/teensy-eurorack.svg)](https://gitter.im/newdigate/teensy-eurorack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -15,9 +15,8 @@ some peripherals to extend your [teensy 4.1](https://www.pjrc.com/store/teensy40
 For stable, tested version please see [![Version 1.8.1](https://img.shields.io/badge/project-1.8.1-brightgreen.svg?label=version&colorA=555555&colorB=ff4a88)](https://github.com/newdigate/teensy-eurorack/tree/1.8.1)
 
 <img src='hardware/images/kryonos.png' width='500px'/>
-<img src='hardware/docs/teensy-eurorack.svg' width='800px'/>
-<img src='hardware/docs/teensy-eurorack-breakout.svg' width='800px'/>
 
+* [sponsor](#sponsor)
 * [specifications](#specifications)
 * [open source software-stack](#open-source-software-stack)
 * [support](#support)
@@ -25,11 +24,16 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
 * [printed circuit boards](#printed-circuit-boards)
   * [mainboard](#mainboard)
   * [breakout board](#breakout-board)
+* [schematics](#schematics)  
 * [panel design](#panel-design)  
 * [assembly technical drawings](#assembly-technical-drawings)
 * [videos](#videos)
 * [versions](#versions)
 * [todo](#todo)
+
+## sponsor
+* BitCoin: bc1qxkm5nhzf5wqhgtxx8fcqw328z2jxhv25qmm2d9 ![BitCoin](https://img.balancebadge.io/btc/bc1qxkm5nhzf5wqhgtxx8fcqw328z2jxhv25qmm2d9.svg)
+* paypal.me: [paypal.me/nicnewdigate](https://paypal.me/nicnewdigate)
 
 ## specifications
 * **microcontrollers:** 
@@ -70,14 +74,10 @@ There are some improvements I'd like to make later
 There is a journal of my progress, [journal.md](hardware/JOURNAL.md) 
 
 What you can do if you like to see progress with this project?
-* sponsor via paypal.me: [paypal.me/nicnewdigate](https://paypal.me/nicnewdigate) - please leave a message :)
 * star this repository (means you need a github account - go for it!!)
 * subscribe [Nic N on youtube](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) 
 * download kicad and freecad, clone this repo, make improvements, commit & send pull-requests, and raise issues...
 
-## social media
-* youtube:
-  * [Nic N](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) 
 
 # printed circuit boards
 ## [mainboard](hardware/boards/mainboard) 
@@ -112,6 +112,10 @@ What you can do if you like to see progress with this project?
 
 <img src='hardware/images/boards/breakout-top.png' width='300px'/> <img src='hardware/images/boards/breakout-bottom.png' width='300px'/> 
 
+# schematics
+<img src='hardware/docs/teensy-eurorack.svg' width='800px'/>
+<img src='hardware/docs/teensy-eurorack-breakout.svg' width='800px'/>
+
 # [panel design](hardware/panel)
 <img src='hardware/panel/images/panel-front.svg' width='300px'/>
 
@@ -119,24 +123,28 @@ What you can do if you like to see progress with this project?
 <img src='hardware/images/technical-drawing.svg' width='500px'/>
 
 ## youtube videos 
-* [youtube: Teensy 4.0 eurorack shield design intro](https://www.youtube.com/watch?v=aNUSEszbnYU)
-* [youtube: 0v to 10v control voltage input, output and display using teensy 4.0](https://www.youtube.com/watch?v=5d5x8F7HRko)
-* [DIY assembly build - teensy 4.0 eurorack audio module](https://www.youtube.com/watch?v=oZzPgpTrEhc)
-* [youtube: assembly teensy eurorack shield](https://www.youtube.com/watch?v=Jx2KgpoT3WY)
-* [youtube: assembly timelapse](https://www.youtube.com/watch?v=s-514rDjirY)
-* [youtube: Eurorack digital audio modules powered by teensy micro-controller](https://www.youtube.com/watch?v=6zt6OF7UOTc)
-* [side-channel stereo audio separation with teensy 4.0](https://www.youtube.com/watch?v=N0IBevm4hTQ)
+* [Nic N](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) 
+  * [youtube: Teensy 4.0 eurorack shield design intro](https://www.youtube.com/watch?v=aNUSEszbnYU)
+  * [youtube: 0v to 10v control voltage input, output and display using teensy 4.0](https://www.youtube.com/watch?v=5d5x8F7HRko)
+  * [youtube: DIY assembly build - teensy 4.0 eurorack audio module](https://www.youtube.com/watch?v=oZzPgpTrEhc)
+  * [youtube: assembly teensy eurorack shield](https://www.youtube.com/watch?v=Jx2KgpoT3WY)
+  * [youtube: assembly timelapse](https://www.youtube.com/watch?v=s-514rDjirY)
+  * [youtube: Eurorack digital audio modules powered by teensy micro-controller](https://www.youtube.com/watch?v=6zt6OF7UOTc)
+  * [youtube: side-channel stereo audio separation with teensy 4.0](https://www.youtube.com/watch?v=N0IBevm4hTQ)
 
 ## versions
-### v2.0.2
+### v2.0.2 
+* committed on branch [teensy-eurorack/spaced-tracks](https://github.com/newdigate/teensy-eurorack/tree/spaced-tracks)
 * Mainboard: spaced out traces as there appeared to be some interference under certain circumstances.
 
 ### v2.0.1
+* committed on branch [teensy-eurorack/master](https://github.com/newdigate/teensy-eurorack/tree/master)
 * Mainboard: add daisy chain TX/RX connector on back side to communicate between multiple boards
 * Breakout board: changed back to double layer board.
 
 ### v2.0.0(b)
 * Breakout board: Corrected polarity of +-12V pin headers on breakout board (ouch!!!)
+* change ADC to use external 2.5v voltage reference, same as DAC voltage reference now 
 
 ### v2.0.0
 * SPI: separated ADC, DAC from display: 
@@ -170,20 +178,10 @@ status:
 ```
   
 ## todo 
-- [ ] General
-  - [ ] cleanup / refactor footprints, replace footprints and symbols imported from eagle with kicad equivalents
-- [ ] Breakout board for rotary encoders and pots
-  - [x] ~~order~~
-  - [ ] assemble
-  - [ ] verify
-  - [ ] firmware
-  - [ ] document
-  - [ ] certify
-- [x] ~~panel~~
-  - [x] ~~measurements~~
-  - [x] ~~design~~
-- [ ] finalize circuits / boards
-- [ ]  testing
+- [ ] finalize design / circuits / boards
+- [x] ~~order~~ (v.2.0.2)
+- [ ] assemble
+- [ ] testing
   - [ ] CS42448 audio codec
     - [ ] Audio input
     - [ ] Audio output
@@ -193,14 +191,12 @@ status:
   - [ ] usb host
   - [ ] usb device
   - [ ] midi in/out
-  - [x] ~~st7735 display~~
-  - [x] ~~sd card extension & adapter~~
+  - [ ] st7735 display
+  - [ ] sd card extension & adapter
 - [ ] Document 
   - [ ] order & build process
   - [ ] software process
 - [ ] Firmware
-  - [ ] Sliced audio loops
-  - [ ] Midi looping
 
 # build
 * testing automated build and packaging 
