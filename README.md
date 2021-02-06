@@ -124,6 +124,7 @@ What you can do if you like to see progress with this project?
 
 ## youtube videos 
 * [Nic N](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) 
+  * [youtube: Assembling custom eurorack audio shield for teensy 4.1](https://www.youtube.com/watch?v=PzaJ3Wq1Fsc)
   * [youtube: Teensy 4.0 eurorack shield design intro](https://www.youtube.com/watch?v=aNUSEszbnYU)
   * [youtube: 0v to 10v control voltage input, output and display using teensy 4.0](https://www.youtube.com/watch?v=5d5x8F7HRko)
   * [youtube: DIY assembly build - teensy 4.0 eurorack audio module](https://www.youtube.com/watch?v=oZzPgpTrEhc)
