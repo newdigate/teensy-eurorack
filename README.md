@@ -33,7 +33,7 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
 
 ## sponsor
 * [patreon/teensy_eurorack](https://www.patreon.com/teensy_eurorack)
-* BitCoin: bc1qxkm5nhzf5wqhgtxx8fcqw328z2jxhv25qmm2d9 ![BitCoin](https://img.balancebadge.io/btc/bc1qxkm5nhzf5wqhgtxx8fcqw328z2jxhv25qmm2d9.svg)
+* BitCoin: bc1qxkm5nhzf5wqhgtxx8fcqw328z2jxhv25qmm2d9
 * paypal.me: [paypal.me/nicnewdigate](https://paypal.me/nicnewdigate)
 
 ## specifications
