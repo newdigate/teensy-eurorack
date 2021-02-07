@@ -63,9 +63,9 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
 * Some images have been rendered using [Blender 2.81](https://www.blender.org/)
 
 ## improvements
-This project is a work-in-progress! The functionality has been tested and are working at a basic level.
+The basic functions of the teensy eurorack shield have been tested and are working at a basic level. Unfortunately version 2 is not entirely ready yet, Im still in the process of varifying it, hopefully shouldnt be too long now... 
 
-There are some improvements I'd like to make at some point. let me know your thoughts!
+At this point Im just focusing on finalising/polishing the current version, but there are some improvements I'd like to make at some point.
 * add 4x jack sockets for analog output of knobs on breakout board. 
 * use 3.5mm jack sockets (as well as standard midi din connectors) for midi in and out. 
 * switch to active audio input and output circuitry, allow switchable 0dB / 12dB gain, for guitar signals.
