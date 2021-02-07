@@ -19,7 +19,7 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
 * [sponsor](#sponsor)
 * [specifications](#specifications)
 * [open source software-stack](#open-source-software-stack)
-* [support](#support)
+* [improvements](#improvements)
 * [social media](#social-media)
 * [printed circuit boards](#printed-circuit-boards)
   * [mainboard](#mainboard)
@@ -62,23 +62,22 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
 * All mechanical designs are created using [FreeCAD](https://github.com/FreeCAD/FreeCAD)
 * Some images have been rendered using [Blender 2.81](https://www.blender.org/)
 
-## support
-This project is a work-in-progress! The functionality has been tested and are working at a basic level. 
+## improvements
+This project is a work-in-progress! The functionality has been tested and are working at a basic level.
 
-There are some improvements I'd like to make later
-* improve noise to signal ratio on pots on breakout board.
+There are some improvements I'd like to make at some point. let me know your thoughts!
 * add 4x jack sockets for analog output of knobs on breakout board. 
 * use 3.5mm jack sockets (as well as standard midi din connectors) for midi in and out. 
 * switch to active audio input and output circuitry, allow switchable 0dB / 12dB gain, for guitar signals.
 * let me know if you're think there something else that can be improved, added, removed. 
 
-There is a journal of my progress, [journal.md](hardware/JOURNAL.md) 
+There is a journal of my progress (its a bit out of date, sorry) - [journal.md](hardware/JOURNAL.md) 
 
 What you can do if you like to see progress with this project?
+* [#sponsor](sponsor)...
 * star this repository (means you need a github account - go for it!!)
 * subscribe [Nic N on youtube](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) 
 * download kicad and freecad, clone this repo, make improvements, commit & send pull-requests, and raise issues...
-
 
 # printed circuit boards
 ## [mainboard](hardware/boards/mainboard) 
