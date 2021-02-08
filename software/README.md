@@ -12,5 +12,5 @@
  * cmake macros for compiling c++ for arm cortex 
    * [teensy-cmake-macros](https://github.com/newdigate/teensy-cmake-macros)
  * Audio level and CV level meters 
-  * [teensy-audio-display-components](https://github.com/newdigate/teensy-audio-display-components)
+   * [teensy-audio-display-components](https://github.com/newdigate/teensy-audio-display-components)
    
