@@ -18,8 +18,9 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
 
 * [sponsor](#sponsor)
 * [specifications](#specifications)
-* [teensy eurorack source code libraries](#teensy-eurorack-source-code-libraries)
+* [license](#license)
 * [open source software-stack](#open-source-software-stack)
+* [teensy eurorack source code libraries](#teensy-eurorack-source-code-libraries)
 * [improvements](#improvements)
 * [social media](#social-media)
 * [printed circuit boards](#printed-circuit-boards)
@@ -55,15 +56,15 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
   * arm gnu toolchain [downloads](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)
   * teensy [audio library](https://www.pjrc.com/teensy/gui/)
 
-## MIT open source license
-* MIT license unless otherwise specified on a per file basis.
+## license
+* All artifacts are MIT license unless otherwise specified on a per file basis.
 
 ## Open source software stack
 * All [schematics](hardware/CIRCUITS.md) and boards are created using [Kicad](http://kicad-pcb.org/) 
 * All mechanical designs are created using [FreeCAD](https://github.com/FreeCAD/FreeCAD)
 * Some images have been rendered using [Blender 2.81](https://www.blender.org/)
 
-# teensy eurorack source code libraries
+## teensy eurorack source code libraries
  * Teensy Audio library drivers for ad5754, ad7606 via SPI
    * [teensy-audio-ad5754-ad7606](https://github.com/newdigate/teensy-audio-ad5754-ad7606)
  * simple standard midi file reader 
