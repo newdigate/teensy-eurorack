@@ -14,7 +14,7 @@ some peripherals to extend your [teensy 4.1](https://www.pjrc.com/store/teensy40
 
 For stable, tested version please see [![Version 1.8.1](https://img.shields.io/badge/project-1.8.1-brightgreen.svg?label=version&colorA=555555&colorB=ff4a88)](https://github.com/newdigate/teensy-eurorack/tree/1.8.1)
 
-<img src='hardware/images/kryonos.png' width='500px'/>
+<img src='hardware/images/teensy-eurorack.svg' width='250px'/>
 
 * [sponsor](#sponsor)
 * [specifications](#specifications)
