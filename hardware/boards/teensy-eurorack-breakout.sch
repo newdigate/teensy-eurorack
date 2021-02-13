@@ -443,17 +443,6 @@ $EndComp
 Wire Wire Line
 	8500 2350 8700 2350
 $Comp
-L power:+5V #PWR075
-U 1 1 5F77388A
-P 8250 2250
-F 0 "#PWR075" H 8250 2100 50  0001 C CNN
-F 1 "+5V" H 8265 2423 50  0000 C CNN
-F 2 "" H 8250 2250 50  0001 C CNN
-F 3 "" H 8250 2250 50  0001 C CNN
-	1    8250 2250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x08 J1
 U 1 1 5F7A6B6D
 P 8900 2650
@@ -465,14 +454,11 @@ F 3 "~" H 8900 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8250 2250 8250 2450
-Wire Wire Line
 	8250 2450 8700 2450
 Wire Wire Line
 	8250 2450 8250 2750
 Wire Wire Line
 	8250 2750 8700 2750
-Connection ~ 8250 2450
 Wire Wire Line
 	8250 2750 8250 3050
 Wire Wire Line
@@ -2779,4 +2765,18 @@ F 3 "" H 3450 3850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3300 3850 3450 3850
+Connection ~ 8250 2450
+Wire Wire Line
+	8250 2250 8250 2450
+$Comp
+L power:+3V3 #PWR?
+U 1 1 602A3473
+P 8250 2250
+F 0 "#PWR?" H 8250 2100 50  0001 C CNN
+F 1 "+3V3" H 8265 2423 50  0000 C CNN
+F 2 "" H 8250 2250 50  0001 C CNN
+F 3 "" H 8250 2250 50  0001 C CNN
+	1    8250 2250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
