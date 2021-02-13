@@ -191,11 +191,6 @@ updated to teesy 4.1 and improvements to make easier to build
 * replaced RGB encoders with regular encoders
 * replaced analog-GND-to-digital-GND footprint with a 0805 zero ohm resistor footprint. (DRC checks can pass now...)
 * (temporarily) removed serial TX/RX to unused eurorack power pins
-```
-status:
-  25/07/2020:
-    * received pcbs, stencil and components
-```
   
 ## todo 
 - [ ] finalize design / circuits / boards
