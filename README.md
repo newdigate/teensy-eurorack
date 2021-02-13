@@ -152,8 +152,8 @@ What you can do if you like to see progress with this project?
   * [youtube: side-channel stereo audio separation with teensy 4.0](https://www.youtube.com/watch?v=N0IBevm4hTQ)
 
 ## versions
-### v2.0.3 
-* breakout: st7735 display changed vcc, reset, backlight from 5v to 3v3. (As SPI is 3v3, when 5V vcc on at7735, and 3v3 logic levels, bad things happen)
+### v2.0.3 (Saturday 13/02/2021)
+* breakout: st7735 display changed vcc, reset, backlight from 5v to 3v3.
 
 ### v2.0.2 
 * Mainboard: spaced out traces as there appeared to be some interference under certain circumstances.
