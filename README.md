@@ -155,10 +155,10 @@ What you can do if you like to see progress with this project?
 ### v2.0.3 (Saturday 13/02/2021)
 * breakout: st7735 display changed vcc, reset, backlight from 5v to 3v3.
 
-### v2.0.2 
+### v2.0.2 (31/01/2021)
 * Mainboard: spaced out traces as there appeared to be some interference under certain circumstances.
 
-### v2.0.1
+### v2.0.1 (27/01/2021) 
 * Mainboard: add daisy chain TX/RX connector on back side to communicate between multiple boards
 * Breakout board: changed back to double layer board.
 
