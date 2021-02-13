@@ -1,5 +1,5 @@
 # teensy eurorack audio shield 
-![Version 2.0.2](https://img.shields.io/badge/project-2.0.2-brightgreen.svg?label=version&colorA=555555&colorB=ff4a88)
+![Version 2.0.3](https://img.shields.io/badge/project-2.0.3-brightgreen.svg?label=version&colorA=555555&colorB=ff4a88)
 [![Teensy 4.1](https://img.shields.io/badge/project-4.1-brightgreen.svg?label=teensy&colorA=555555&colorB=ff8aff&logo=)](https://www.pjrc.com/store/teensy41.html)
 ![in testing](https://img.shields.io/badge/project-in_testing-brightgreen.svg?label=status&colorA=555555&colorB=ff8800)
 [![Join the chat at https://gitter.im/newdigate/teensy-eurorack](https://badges.gitter.im/newdigate/teensy-eurorack.svg)](https://gitter.im/newdigate/teensy-eurorack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -152,12 +152,13 @@ What you can do if you like to see progress with this project?
   * [youtube: side-channel stereo audio separation with teensy 4.0](https://www.youtube.com/watch?v=N0IBevm4hTQ)
 
 ## versions
+### v2.0.3 
+* breakout: st7735 display changed vcc, reset, backlight from 5v to 3v3. (As SPI is 3v3, when 5V vcc on at7735, and 3v3 logic levels, bad things happen)
+
 ### v2.0.2 
-* committed on branch [teensy-eurorack/spaced-tracks](https://github.com/newdigate/teensy-eurorack/tree/spaced-tracks)
 * Mainboard: spaced out traces as there appeared to be some interference under certain circumstances.
 
 ### v2.0.1
-* committed on branch [teensy-eurorack/master](https://github.com/newdigate/teensy-eurorack/tree/master)
 * Mainboard: add daisy chain TX/RX connector on back side to communicate between multiple boards
 * Breakout board: changed back to double layer board.
 
