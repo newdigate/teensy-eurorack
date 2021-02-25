@@ -194,19 +194,18 @@ updated to teesy 4.1 and improvements to make easier to build
   
 ## todo 
 - [ ] finalize design / circuits / boards
-- [x] ~~order~~ (v.2.0.2)
-- [ ] assemble
+- [x] ~~order~~ (v.2.0.3)
+- [x] ~~assemble~~
 - [ ] testing
-  - [ ] CS42448 audio codec
-    - [ ] Audio input
-    - [ ] Audio output
-  - [ ] control voltage input
-  - [ ] control voltage output
-  - [ ] gpio (input & output) 
+  - [x] ~~CS42448 audio codec~~
+    - [x] ~~Audio input~~
+    - [x] ~~Audio output~~
+  - [x] ~~control voltage input~~
+  - [x] ~~control voltage output~~
   - [ ] usb host
   - [ ] usb device
   - [ ] midi in/out
-  - [ ] st7735 display
+  - [x] ~~st7735 display~~
   - [ ] sd card extension & adapter
 - [ ] Document 
   - [ ] order & build process
