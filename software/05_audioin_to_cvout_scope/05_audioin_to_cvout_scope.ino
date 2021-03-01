@@ -30,10 +30,6 @@ AudioControlCS42448      cs42448_1;      //xy=614,540
 #define TFT_RST   0 // RST can use any pin
 #include <ST7735_t3.h> // Hardware-specific library
 ST7735_t3 tft = ST7735_t3(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
-
-#include "DrawingCanvas_st7735.h"
-#include "DrawingCanvas.h"
-DrawingCanvas_st7735 canvas(tft);
 void setup() {
   AudioMemory(80);
   Serial.begin(9600);
@@ -65,8 +61,8 @@ void updateScope2() {
   if (oscilliscope_x2 < 3) {
     return;
   }
-  tft.drawLine(oscilliscope_x2, 64.0f + (lastbuffer2[oscilliscope_x2-1] / 256.0f), oscilliscope_x2 + 1, 64.0f + (lastbuffer2[oscilliscope_x2] / 256.0f), ST7735_BLACK);
-  tft.drawLine(oscilliscope_x2, 64.0f + (buffer2[oscilliscope_x2-1] / 256.0f), oscilliscope_x2 + 1, 64.0f + (buffer2[oscilliscope_x2] / 256.0f), ST7735_CYAN);
+  tft.drawLine(oscilliscope_x2, 64.0f + (lastbuffer2[oscilliscope_x2-1] / 512.0f), oscilliscope_x2 + 1, 64.0f + (lastbuffer2[oscilliscope_x2] / 512.0f), ST7735_BLACK);
+  tft.drawLine(oscilliscope_x2, 64.0f + (buffer2[oscilliscope_x2-1] / 512.0f), oscilliscope_x2 + 1, 64.0f + (buffer2[oscilliscope_x2] / 512.0f), ST7735_CYAN);
 
 //  canvas.drawLine(oscilliscope_x2, 64.0f + (buffer2[oscilliscope_x2-1] / 256.0f), oscilliscope_x2 + 1, 64.0f + (buffer2[oscilliscope_x2] / 256.0f), ST7735_RED, LineEndpointStyle::NoneAntialiased, LineEndpointStyle::None);
 }
