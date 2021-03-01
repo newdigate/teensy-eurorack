@@ -1255,7 +1255,6 @@ F 3 "" H 10950 6400 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 NoConn ~ 10150 3350
-NoConn ~ 10150 2650
 NoConn ~ 7950 3350
 NoConn ~ 7950 2450
 Connection ~ 3050 4650
@@ -1637,4 +1636,6 @@ Wire Wire Line
 	10500 2050 10850 2050
 Wire Wire Line
 	10850 1850 11150 1850
+Text Label 10150 2650 0    49   ~ 0
+LRCLK
 $EndSCHEMATC
