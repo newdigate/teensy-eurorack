@@ -1,55 +1,16 @@
 #include <SPI.h> //MUST include the SPI library or this won't work.
-
-/* AD5754R Register Map */
-#define AD5754R_REG_DAC             0x00 // DAC register
-#define AD5754R_REG_RANGE_SELECT    0x01 // Output range select register
-#define AD5754R_REG_POWER_CONTROL   0x02 // Power control register
-#define AD5754R_REG_CONTROL         0x03 // Control register
-
-/* AD5754R Channel Address */
-#define AD5754R_DAC_A               0x00 // Address of channel A 
-#define AD5754R_DAC_B               0x01 // Address of channel B
-#define AD5754R_DAC_C               0x02 // Address of channel C
-#define AD5754R_DAC_D               0x03 // Address of channel D
-#define AD5754R_DAC_ALL             0x04 // All four DACs 
-
-/* AD5754R Range Bits */
-#define AD5754R_UNIPOLAR_5_RANGE    0x00 // 0..+5(V)        
-#define AD5754R_UNIPOLAR_10_RANGE   0x01 // 0..+10(V)       
-#define AD5754R_UNIPOLAR_10_8_RANGE 0x02 // 0..+10.8(V)     
-#define AD5754R_BIPOLAR_5_RANGE     0x03 // -5..+5(V)       
-#define AD5754R_BIPOLAR_10_RANGE    0x04 // -10...+10(V)    
-#define AD5754R_BIPOLAR_10_8_RANGE  0x05 // -10.8...+10.8(V) 
-
-/* Control Functions */
-#define AD5754R_NOP_OPERATION       0x00 // No operation instruction used in readback operations.
-#define AD5754R_SDO_DISABLE         0x11 // Set by the user to disable the SDO output.
-#define AD5754R_CLR_SELECT          0x12 // Selects the clear code: 0V, Midscale or Negative full scale.
-#define AD5754R_CLAMP_ENABLE        0x14 // Set by the user to enable the current-limit clamp.
-#define AD5754R_TSD_ENABLE          0x18 // Set by the user to enable the thermal shutdown feature.
-#define AD5754R_CLEAR               0x40 // Sets the DAC registers to the clear code and updates the outputs.
-#define AD5754R_LOAD                0x50 // Updates the DAC registers and, consequently, the DAC outputs.
-
-#define DA_SYNC 16
-#define DA_CLK 27
-#define DA_MOSI 26
-#define DA_MISO 41
-#define TFT_CS 6
+#include "ad5754.h"
+#include "teensy_eurorack.h"
 
 void setup() {
   // put your setup code here, to run once:
   pinMode(DA_SYNC, OUTPUT);
   digitalWrite(DA_SYNC, HIGH); 
 
-  pinMode(TFT_CS, OUTPUT);
-  digitalWrite(TFT_CS, HIGH); 
-
   Serial.begin(9600);
-  /*
-    while (!Serial) {
+  while (!Serial) {
     delay(100);
   }
-  */
 
   Serial.println("connected...");
    
@@ -68,44 +29,25 @@ void setup() {
    
   AD5754R_RangeSelect(AD5754R_DAC_ALL, AD5754R_UNIPOLAR_5_RANGE);
  
-  AD5754R_LoadDac2(AD5754R_DAC_ALL, 0xffff, AD5754R_DAC_ALL, 0xffff);
+  AD5754R_LoadDac(AD5754R_DAC_ALL, 0xffff);
 
 //  AD5754R_GetRegisterValue(AD5754R_REG_POWER_CONTROL);
 }
 
 
 uint16_t control_voltage1 = 0x0000;
-uint16_t control_voltage2 = 0x0000;
 
 void loop() {
   control_voltage1++;
-  control_voltage2--;
-  AD5754R_LoadDac2(AD5754R_DAC_A, control_voltage1, AD5754R_DAC_A, control_voltage2);
-  AD5754R_LoadDac2(AD5754R_DAC_B, control_voltage1, AD5754R_DAC_B, control_voltage2);
-  AD5754R_LoadDac2(AD5754R_DAC_C, control_voltage1, AD5754R_DAC_C, control_voltage2);
-  AD5754R_LoadDac2(AD5754R_DAC_D, control_voltage1, AD5754R_DAC_D, control_voltage2);
-  delayMicroseconds(1);
+  AD5754R_LoadDac(AD5754R_DAC_ALL, control_voltage1);
 }
+
 
 void SendData(unsigned char *p){ //CHECKED OK
   //Serial.print("(send: ");
 
   digitalWrite(DA_SYNC,LOW);
   for (int i=2; i>= 0; i--){ //MSB first
-
-    SPI1.transfer (p[i]);
-    //Serial.print(p[i], BIN);
-    //Serial.print(" ");
-  }
-  digitalWrite(DA_SYNC,HIGH);
-  //Serial.println(")");
-} 
-
-void SendData2(unsigned char *p){ //CHECKED OK
-  //Serial.print("(send: ");
-
-  digitalWrite(DA_SYNC,LOW);
-  for (int i=5; i>= 0; i--){ //MSB first
 
     SPI1.transfer (p[i]);
     //Serial.print(p[i], BIN);
@@ -131,25 +73,6 @@ void SPIReadData(byte raw[]){
   
   Serial.printf("\n");
   digitalWrite(DA_SYNC, HIGH); 
-}
-
-void AD5754R_SetRegisterValue2(unsigned char regBits,
-                             unsigned char adrBits,
-                             unsigned short registerValue,
-                             unsigned char regBits2,
-                             unsigned char adrBits2,
-                             unsigned short registerValue2)
-{
-   
-    unsigned char registerWord[6] = {0};
-    registerWord[2] = (regBits << 3) + adrBits;
-    registerWord[1] = (registerValue & 0xFF00) >> 8;
-    registerWord[0] = (registerValue & 0x00FF) >> 0;
-
-    registerWord[5] = (regBits2 << 3) + adrBits2;
-    registerWord[4] = (registerValue2 & 0xFF00) >> 8;
-    registerWord[3] = (registerValue2 & 0x00FF) >> 0;
-    SendData2(registerWord);
 }
 
 void AD5754R_SetRegisterValue(unsigned char regBits,
@@ -233,12 +156,6 @@ void AD5754R_LoadDac(unsigned char dacChannel, unsigned short dacValue)
 {
     //Serial.printf("AD5754R_LoadDac(%x, %x)...", dacChannel, dacValue );
     AD5754R_SetRegisterValue(AD5754R_REG_DAC, dacChannel, dacValue);
-}
-
-void AD5754R_LoadDac2(unsigned char dacChannel, unsigned short dacValue, unsigned char dac2Channel, unsigned short dac2Value)
-{
-    //Serial.printf("AD5754R_LoadDac(%x, %x)...", dacChannel, dacValue );
-    AD5754R_SetRegisterValue2(AD5754R_REG_DAC, dacChannel, dacValue, AD5754R_REG_DAC, dac2Channel, dac2Value);
 }
 
 /***************************************************************************//**

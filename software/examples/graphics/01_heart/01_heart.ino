@@ -5,13 +5,18 @@ DrawingCanvas_st7735 canvas(tft);
 
 uint16_t color = ST7735_WHITE;
 uint16_t bgcolor = ST7735_BLACK;
+bool useAntialiasing = true;
 
 void setup() {
     tft.initR(INITR_GREENTAB);
     tft.setRotation(3);
 
-    float x_offset = 0.0f;
-    float y_offset = 0.0f;
+
+}
+
+void loop() {
+    useAntialiasing = !useAntialiasing;
+    canvas.setUseAntialiasing(useAntialiasing);
     tft.fillScreen(bgcolor);
     uint startTime = micros();
     canvas.drawLine(64.054863, 116.356781,
@@ -65,8 +70,6 @@ void setup() {
     uint stopTime = micros();
 
     Serial.printf("done in %i microseconds\n", stopTime - startTime);
-}
-
-void loop() {
-    delay(100);
+    
+    delay(500);
 }

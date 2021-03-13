@@ -7,6 +7,7 @@
 AudioInputTDM            tdm1;           //xy=401,330
 AudioRecordQueue         queue2;         //xy=671,170
 AudioOutputTDM           tdm3;           //xy=962,420
+AudioSynthWaveformSine   sine1;          //xy=272,218
 AudioOutputSharedAD5754Dual     ad5754;           //xy=514,291
 AudioInputSharedAD7606          ad7606;
 AudioConnection          patchCord18(ad7606, 0, queue2, 0);
@@ -30,6 +31,10 @@ AudioControlCS42448      cs42448_1;      //xy=614,540
 #define TFT_RST   0 // RST can use any pin
 #include <ST7735_t3.h> // Hardware-specific library
 ST7735_t3 tft = ST7735_t3(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
+
+#include "DrawingCanvas_st7735.h"
+#include "DrawingCanvas.h"
+DrawingCanvas_st7735 canvas(tft);
 void setup() {
   AudioMemory(80);
   Serial.begin(9600);
@@ -43,7 +48,9 @@ void setup() {
   tft.initR(INITR_GREENTAB);
   tft.setRotation(3);
   tft.fillScreen(ST7735_BLACK);
-   
+  sine1.frequency(1600);
+  sine1.amplitude(0.8);
+    
   queue2.begin();  
 }
 
@@ -54,15 +61,15 @@ int16_t lastbuffer2[128];
 void updateScope2() {
 
   oscilliscope_x2 = oscilliscope_x2 + 1;
-  if (oscilliscope_x2 > 126) {
+  if (oscilliscope_x2 > 127) {
     return;
   }
 
   if (oscilliscope_x2 < 3) {
     return;
   }
-  tft.drawLine(oscilliscope_x2, 64.0f + (lastbuffer2[oscilliscope_x2-1] / 512.0f), oscilliscope_x2 + 1, 64.0f + (lastbuffer2[oscilliscope_x2] / 512.0f), ST7735_BLACK);
-  tft.drawLine(oscilliscope_x2, 64.0f + (buffer2[oscilliscope_x2-1] / 512.0f), oscilliscope_x2 + 1, 64.0f + (buffer2[oscilliscope_x2] / 512.0f), ST7735_CYAN);
+  tft.drawLine(oscilliscope_x2, 64.0f + (lastbuffer2[oscilliscope_x2-1] / 256.0f), oscilliscope_x2 + 1, 64.0f + (lastbuffer2[oscilliscope_x2] / 256.0f), ST7735_BLACK);
+  tft.drawLine(oscilliscope_x2, 64.0f + (buffer2[oscilliscope_x2-1] / 256.0f), oscilliscope_x2 + 1, 64.0f + (buffer2[oscilliscope_x2] / 256.0f), ST7735_CYAN);
 
 //  canvas.drawLine(oscilliscope_x2, 64.0f + (buffer2[oscilliscope_x2-1] / 256.0f), oscilliscope_x2 + 1, 64.0f + (buffer2[oscilliscope_x2] / 256.0f), ST7735_RED, LineEndpointStyle::NoneAntialiased, LineEndpointStyle::None);
 }

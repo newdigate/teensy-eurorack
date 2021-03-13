@@ -1,15 +1,35 @@
 #include <Audio.h>
+
+// https://github.com/newdigate/teensy-audio-ad5754-ad7606/tree/remove-timer
 #include "input_shared_ad7606.h"
 #include "output_shared_ad5754_dual.h"
 
+// default configuration for teensy-eurorack v2
+#define AD7607_BUSY 3
+#define AD7607_START_CONVERSION 5
+#define AD7607_CHIP_SELECT 36
+#define AD7607_RESET 35 // teensy-control-voltage == 4
+#define AD7607_RANGE_SELECT 37
+#define DA_SYNC 38
+#define LRCLK_CPY 40 
+
 // GUItool: begin automatically generated code
 AudioInputTDM            tdm1;           //xy=401,330
-AudioRecordQueue         queue2;         //xy=671,170
 AudioOutputTDM           tdm3;           //xy=962,420
 AudioOutputSharedAD5754Dual     ad5754;           //xy=514,291
 AudioInputSharedAD7606          ad7606;
-AudioConnection          patchCord18(ad7606, 0, queue2, 0);
-AudioControlCS42448      cs42448_1;      //xy=614,540
+
+AudioRecordQueue                queue2;         //xy=671,170
+AudioConnection                 patchCord18(ad7606, 0, queue2, 0);
+AudioConnection                 patchCord1(tdm1, 0, ad5754, 0);
+AudioConnection                 patchCord2(tdm1, 0, ad5754, 1);
+AudioConnection                 patchCord3(tdm1, 0, ad5754, 2);
+AudioConnection                 patchCord4(tdm1, 0, ad5754, 3);
+AudioConnection                 patchCord5(tdm1, 0, ad5754, 4);
+AudioConnection                 patchCord6(tdm1, 0, ad5754, 5);
+AudioConnection                 patchCord7(tdm1, 0, ad5754, 6);
+AudioConnection                 patchCord8(tdm1, 0, ad5754, 7); 
+AudioControlCS42448             cs42448_1;      //xy=614,540
 // GUItool: end automatically generated code
 
 #define TFT_SCLK 13  // SCLK can also use pin 14
@@ -21,14 +41,22 @@ AudioControlCS42448      cs42448_1;      //xy=614,540
 ST7735_t3 tft = ST7735_t3(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
 
 void setup() {
-  AudioMemory(80);
-  SPI.begin();
- 
+
+  Serial.begin(9600);
+  AudioNoInterrupts();  
+
+  AudioMemory(160);
+  //ad5754.begin(AD7607_BUSY, AD7607_START_CONVERSION, AD7607_CHIP_SELECT, AD7607_RESET, AD7607_RANGE_SELECT,DA_SYNC,LRCLK_CPY);
+  //ad7606.begin(AD7607_BUSY, AD7607_START_CONVERSION, AD7607_CHIP_SELECT, AD7607_RESET, AD7607_RANGE_SELECT,DA_SYNC,LRCLK_CPY);
+  cs42448_1.enable();
+  cs42448_1.volume(1);
+  AudioInterrupts();    // enable, both tones will start together
+  delay(100);
+  //pinMode(40, INPUT); 
   tft.initR(INITR_GREENTAB);
   tft.setRotation(3);
-  
   tft.fillScreen(ST7735_BLACK);
-  Serial.begin(9600);
+   
   queue2.begin();  
 }
 
@@ -39,12 +67,17 @@ int16_t lastbuffer2[128];
 void updateScope2() {
 
   oscilliscope_x2 = oscilliscope_x2 + 1;
-  if (oscilliscope_x2 > 127) {
+  if (oscilliscope_x2 > 126) {
     return;
   }
 
-  tft.drawLine(oscilliscope_x2, 64 + (lastbuffer2[oscilliscope_x2-1] >> 8), oscilliscope_x2 + 1, 64 + (lastbuffer2[oscilliscope_x2] >> 8), ST7735_BLACK);
-  tft.drawLine(oscilliscope_x2, 64 + (buffer2[oscilliscope_x2-1] >> 8), oscilliscope_x2 + 1, 64 + (buffer2[oscilliscope_x2] >> 8), ST7735_RED);
+  if (oscilliscope_x2 < 3) {
+    return;
+  }
+  tft.drawLine(oscilliscope_x2, 64.0f + (lastbuffer2[oscilliscope_x2-1] / 512.0f), oscilliscope_x2 + 1, 64.0f + (lastbuffer2[oscilliscope_x2] / 512.0f), ST7735_BLACK);
+  tft.drawLine(oscilliscope_x2, 64.0f + (buffer2[oscilliscope_x2-1] / 512.0f), oscilliscope_x2 + 1, 64.0f + (buffer2[oscilliscope_x2] / 512.0f), ST7735_CYAN);
+
+//  canvas.drawLine(oscilliscope_x2, 64.0f + (buffer2[oscilliscope_x2-1] / 256.0f), oscilliscope_x2 + 1, 64.0f + (buffer2[oscilliscope_x2] / 256.0f), ST7735_RED, LineEndpointStyle::NoneAntialiased, LineEndpointStyle::None);
 }
 
 unsigned count = 0;

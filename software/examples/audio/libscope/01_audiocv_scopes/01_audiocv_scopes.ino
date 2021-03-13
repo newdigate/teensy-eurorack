@@ -1,26 +1,14 @@
 #include <Audio.h>
-
-// https://github.com/newdigate/teensy-audio-ad5754-ad7606/tree/remove-timer
-#include "input_shared_ad7606.h"
-#include "output_shared_ad5754_dual.h"
-
-// default configuration for teensy-eurorack v2
-#define AD7607_BUSY 3
-#define AD7607_START_CONVERSION 5
-#define AD7607_CHIP_SELECT 36
-#define AD7607_RESET 35 // teensy-control-voltage == 4
-#define AD7607_RANGE_SELECT 37
-#define DA_SYNC 38
-#define LRCLK_CPY 40 
+#include "teensy_eurorack.h"
+#include "teensy_eurorack_audio.h"
 
 // GUItool: begin automatically generated code
-AudioInputTDM            tdm1;           //xy=401,330
-AudioOutputTDM           tdm3;           //xy=962,420
-AudioOutputSharedAD5754Dual     ad5754;           //xy=514,291
-AudioInputSharedAD7606          ad7606;
-
+AudioInputTDM                   tdm1;           //xy=401,330
+AudioOutputTDM                  tdm3;           //xy=962,420
 AudioRecordQueue                queue2;         //xy=671,170
 AudioRecordQueue                queue1;         //xy=671,170
+AudioOutputSharedAD5754Dual     ad5754;           //xy=514,291
+AudioInputSharedAD7606          ad7606;
 AudioConnection                 patchCord19(tdm1, 0, queue1, 0);
 AudioConnection                 patchCord18(ad7606, 0, queue2, 0);
 AudioConnection                 patchCord1(tdm1, 0, ad5754, 0);
@@ -42,6 +30,8 @@ AudioControlCS42448             cs42448_1;      //xy=614,540
 #include <ST7735_t3.h> // Hardware-specific library
 ST7735_t3 tft = ST7735_t3(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
 
+unsigned long start_time;
+
 void setup() {
 
   Serial.begin(9600);
@@ -61,6 +51,8 @@ void setup() {
    
   queue1.begin();  
   queue2.begin();  
+
+  start_time = millis();
 }
 
 
@@ -106,7 +98,7 @@ void updateScope2() {
 }
 
 
-unsigned count = 0;
+unsigned count = 0, count2 = 0;
 void loop() {
    count++;
 
@@ -153,7 +145,13 @@ void loop() {
   updateScope(); 
 
   if (count % 5000000 == 0) {
-    Serial.print("all=");
+    unsigned long newmillis = millis() - start_time;
+     
+    count2++;
+    Serial.print(newmillis / (1000.0 * 60.0));
+    Serial.print(" minutes: ");
+    Serial.print(count2);
+    Serial.print(" all=");
     Serial.print(AudioProcessorUsage());
     Serial.print(",");
     Serial.print(AudioProcessorUsageMax());
@@ -167,17 +165,4 @@ void loop() {
     Serial.print(memfree());
     Serial.println();
   }
-}
-
-
-unsigned memfree(void) {
-  extern unsigned long _ebss;
-  extern unsigned long _sdata;
-  extern unsigned long _estack;
-  const unsigned DTCM_START = 0x20000000UL;
-  unsigned dtcm = (unsigned)&_estack - DTCM_START;
-  unsigned stackinuse = (unsigned) &_estack -  (unsigned) __builtin_frame_address(0);
-  unsigned varsinuse = (unsigned)&_ebss - (unsigned)&_sdata;
-  unsigned freemem = dtcm - (stackinuse + varsinuse);
-  return freemem;
 }

@@ -220,5 +220,12 @@ updated to teesy 4.1 and improvements to make easier to build
 
 # credits 
 * https://github.com/dgouramanis/usdextendercable
+
+# Sponsored by
+Massive thanks to these generous people who have provided support!
+* Hannes Schnaitter
+* Daniel Hengeveld [thedaniel on github](https://github.com/thedaniel)
+* Derek Brost
+
 ## 3d models
 * potentiometer: https://grabcad.com/library/potentiometer-30
