@@ -38,8 +38,6 @@ void setup() {
   AudioNoInterrupts();  
 
   AudioMemory(160);
-  //ad5754.begin(AD7607_BUSY, AD7607_START_CONVERSION, AD7607_CHIP_SELECT, AD7607_RESET, AD7607_RANGE_SELECT,DA_SYNC,LRCLK_CPY);
-  //ad7606.begin(AD7607_BUSY, AD7607_START_CONVERSION, AD7607_CHIP_SELECT, AD7607_RESET, AD7607_RANGE_SELECT,DA_SYNC,LRCLK_CPY);
   cs42448_1.enable();
   cs42448_1.volume(1);
   AudioInterrupts();    // enable, both tones will start together
