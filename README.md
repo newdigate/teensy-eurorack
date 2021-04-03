@@ -20,7 +20,7 @@
 * [license](#license)
 * [open source software-stack](#open-source-software-stack)
 * [building / interactive BOM files](#Building)
-* [teensy eurorack source code libraries](#teensy-eurorack-source-code-libraries)
+* [source code](#source-code)
 * [improvements](#improvements)
 * [printed circuit boards](#printed-circuit-boards)
   * [mainboard](#mainboard)
@@ -73,7 +73,7 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
   * [mainboard](https://newdigate.github.io/teensy-eurorack/teensy-eurorack)
   * [breakoutboard](https://newdigate.github.io/teensy-eurorack/teensy-eurorack-breakout)
 
-# teensy eurorack source code libraries
+# source code
  * Teensy Audio library drivers for ad5754, ad7606 via SPI
    * [teensy-audio-ad5754-ad7606](https://github.com/newdigate/teensy-audio-ad5754-ad7606)
  * simple standard midi file reader 
