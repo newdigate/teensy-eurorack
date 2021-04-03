@@ -152,6 +152,12 @@ What you can do if you like to see progress with this project?
   * [youtube: side-channel stereo audio separation with teensy 4.0](https://www.youtube.com/watch?v=N0IBevm4hTQ)
 
 ## versions
+### v2.1 (Saturday 3 April 2021)
+* **Improvement**: Mainboard: Tie LRCLK pin 20 to pin40 to sync DAC/ADC sampling w/ audio sampling
+* **FIXED**: breakout: add 1k pull-up resistor to MIDI rx pin
+* mainboard: silkscreen: add Kicad OpenSourceHardware logo
+* breakout: silkscreen: add Kicad OpenSourceHardware logo
+
 ### v2.0.3 (Saturday 13/02/2021)
 * breakout: st7735 display changed vcc, reset, backlight from 5v to 3v3.
 
