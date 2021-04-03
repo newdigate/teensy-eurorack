@@ -8,11 +8,10 @@
 )](https://kicad-pcb.org/)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 -------------------------------
+
 **open source [hardware](hardware) and [software](software) for a 30-channel (14 in / 16 out) 16-bit analog [teensy 4.1](https://www.pjrc.com/store/teensy40.html "teensy 4.1 board") eurorack shield** 
 
-add some peripherals to extend your [teensy 4.1](https://www.pjrc.com/store/teensy40.html "teensy 4.1 board") to interface with analog line audio and eurorack control voltages (-10 to +10 volts)
-
-For stable, tested version please see [![Version 1.8.1](https://img.shields.io/badge/project-1.8.1-brightgreen.svg?label=version&colorA=555555&colorB=ff4a88)](https://github.com/newdigate/teensy-eurorack/tree/1.8.1)
+* add peripherals to extend your [teensy 4.1](https://www.pjrc.com/store/teensy40.html "teensy 4.1 board") to interface with analog line audio and eurorack control voltages (-10 to +10 volts)
 
 <img src='hardware/images/teensy-eurorack.svg' width='250px'/>
 
@@ -32,6 +31,8 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
 * [videos](#videos)
 * [versions](#versions)
 * [todo](#todo)
+
+For stable, tested version please see [![Version 1.8.1](https://img.shields.io/badge/project-1.8.1-brightgreen.svg?label=version&colorA=555555&colorB=ff4a88)](https://github.com/newdigate/teensy-eurorack/tree/1.8.1)
 
 ## sponsor
 * [patreon/teensy_eurorack](https://www.patreon.com/teensy_eurorack)
