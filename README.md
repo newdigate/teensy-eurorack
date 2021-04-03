@@ -19,27 +19,30 @@
 * [specifications](#specifications)
 * [license](#license)
 * [open source software-stack](#open-source-software-stack)
+* [building / interactive BOM files](#Building)
 * [teensy eurorack source code libraries](#teensy-eurorack-source-code-libraries)
 * [improvements](#improvements)
-* [social media](#social-media)
 * [printed circuit boards](#printed-circuit-boards)
   * [mainboard](#mainboard)
   * [breakout board](#breakout-board)
 * [schematics](#schematics)  
 * [panel design](#panel-design)  
 * [assembly technical drawings](#assembly-technical-drawings)
-* [videos](#videos)
+* [youtube videos](#youtube-videos)
 * [versions](#versions)
 * [todo](#todo)
+* [continuous-integration](#continuous-integration)
+* [credits](#credits)
+* [sponsored by](#sponsored-by)
 
 For stable, tested version please see [![Version 1.8.1](https://img.shields.io/badge/project-1.8.1-brightgreen.svg?label=version&colorA=555555&colorB=ff4a88)](https://github.com/newdigate/teensy-eurorack/tree/1.8.1)
 
-## sponsor
+# sponsor
 * [patreon/teensy_eurorack](https://www.patreon.com/teensy_eurorack)
 * BitCoin: bc1qxkm5nhzf5wqhgtxx8fcqw328z2jxhv25qmm2d9
 * paypal.me: [paypal.me/nicnewdigate](https://paypal.me/nicnewdigate)
 
-## specifications
+# specifications
 * **microcontrollers:** 
   * 600 Mhz ARM cortex m7 ( [teensy 4.1 board](https://www.pjrc.com/store/teensy41.html "teensy 4.1 board") )
 * **audio:** multi-channel audio codec ( 6-in / 8-out 24-bit sound card - [CS42448](https://statics.cirrus.com/pubs/proDatasheet/CS42448_F5.pdf) )
@@ -57,15 +60,20 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
   * arm gnu toolchain [downloads](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)
   * teensy [audio library](https://www.pjrc.com/teensy/gui/)
 
-## license
+# license
 * All artifacts are MIT license unless otherwise specified on a per file basis.
 
-## Open source software stack
+# open source software stack
 * All [schematics](hardware/CIRCUITS.md) and boards are created using [Kicad](http://kicad-pcb.org/) 
 * All mechanical designs are created using [FreeCAD](https://github.com/FreeCAD/FreeCAD)
 * Some images have been rendered using [Blender 2.81](https://www.blender.org/)
 
-## teensy eurorack source code libraries
+# building
+* Interactive BOM urls:
+  * [mainboard](https://newdigate.github.io/teensy-eurorack/teensy-eurorack)
+  * [breakoutboard](https://newdigate.github.io/teensy-eurorack/teensy-eurorack-breakout)
+
+# teensy eurorack source code libraries
  * Teensy Audio library drivers for ad5754, ad7606 via SPI
    * [teensy-audio-ad5754-ad7606](https://github.com/newdigate/teensy-audio-ad5754-ad7606)
  * simple standard midi file reader 
@@ -81,7 +89,7 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
  * Audio level and CV level meters 
    * [teensy-audio-display-components](https://github.com/newdigate/teensy-audio-display-components)
 
-## improvements
+# improvements
 The basic functions of the teensy eurorack shield have been tested and are working at a basic level. Unfortunately version 2 is not entirely ready yet, Im still in the process of varifying it, hopefully shouldnt be too long now... 
 
 At this point Im just focusing on finalising/polishing the current version, but there are some improvements I'd like to make at some point.
@@ -141,7 +149,7 @@ What you can do if you like to see progress with this project?
 # assembly technical drawings 
 <img src='hardware/images/technical-drawing.svg' width='500px'/>
 
-## youtube videos 
+# youtube videos 
 * [Nic N](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) 
   * [youtube: Assembling custom eurorack audio shield for teensy 4.1](https://www.youtube.com/watch?v=PzaJ3Wq1Fsc)
   * [youtube: Teensy 4.0 eurorack shield design intro](https://www.youtube.com/watch?v=aNUSEszbnYU)
@@ -152,43 +160,43 @@ What you can do if you like to see progress with this project?
   * [youtube: Eurorack digital audio modules powered by teensy micro-controller](https://www.youtube.com/watch?v=6zt6OF7UOTc)
   * [youtube: side-channel stereo audio separation with teensy 4.0](https://www.youtube.com/watch?v=N0IBevm4hTQ)
 
-## versions
-### v2.1 (Saturday 3 April 2021)
+# versions
+## v2.1 (Saturday 3 April 2021)
 * **Improvement**: Mainboard: Tie LRCLK pin 20 to pin40 to sync DAC/ADC sampling w/ audio sampling
 * **FIXED**: breakout: add 1k pull-up resistor to MIDI rx pin
 * mainboard: silkscreen: add Kicad OpenSourceHardware logo
 * breakout: silkscreen: add Kicad OpenSourceHardware logo
 
-### v2.0.3 (Saturday 13/02/2021)
+## v2.0.3 (Saturday 13/02/2021)
 * breakout: st7735 display changed vcc, reset, backlight from 5v to 3v3.
 
-### v2.0.2 (31/01/2021)
+## v2.0.2 (31/01/2021)
 * Mainboard: spaced out traces as there appeared to be some interference under certain circumstances.
 
-### v2.0.1 (27/01/2021) 
+## v2.0.1 (27/01/2021) 
 * Mainboard: add daisy chain TX/RX connector on back side to communicate between multiple boards
 * Breakout board: changed back to double layer board.
 
-### v2.0.0(b)
+## v2.0.0(b)
 * Breakout board: Corrected polarity of +-12V pin headers on breakout board (ouch!!!)
 * change ADC to use external 2.5v voltage reference, same as DAC voltage reference now 
 
-### v2.0.0
+## v2.0.0
 * SPI: separated ADC, DAC from display: 
   * st7735 display has its own dedicated SPI - (SPI0, stays the same)
   * ADC / DAC are now sharing SPI1
 * integrated ADC and DAC into teensy audio library.
 * added one more ad5754 DAC for total of 8 control voltage analog output channels
 
-### v1.9.1b
+## v1.9.1b
 * mainboard: correction: reconnected LRCLK to codec.
 
-### v1.9.1
+## v1.9.1
 * connected DAC_SCK output (pin 19) to pin 31
   * allow cable select to be asserted on minor spi data cycle after every 24 or 48 spi clock cycles, using interrupt on pin 31.
     * hopefully this will allow DMA spi transfers to AD5754 and which will make integration with teensy audio library much easier
 
-### v1.9 
+## v1.9 
 updated to teesy 4.1 and improvements to make easier to build
 * updated from teensy 4.0 to teensy 4.1
 * schematic, footprint and pcb clean-up 
@@ -199,7 +207,7 @@ updated to teesy 4.1 and improvements to make easier to build
 * replaced analog-GND-to-digital-GND footprint with a 0805 zero ohm resistor footprint. (DRC checks can pass now...)
 * (temporarily) removed serial TX/RX to unused eurorack power pins
   
-## todo 
+# todo 
 - [ ] finalize design / circuits / boards
 - [x] ~~order~~ (v.2.0.3)
 - [x] ~~assemble~~
@@ -219,7 +227,7 @@ updated to teesy 4.1 and improvements to make easier to build
   - [ ] software process
 - [ ] Firmware
 
-# build
+# continuous-integration 
 * testing automated build and packaging 
 * [github.com/pwuertz/kicad_picknplace_assistant](https://github.com/pwuertz/kicad_picknplace_assistant)
 * [github.com/productize/kicad-automation-scripts](https://github.com/productize/kicad-automation-scripts)
@@ -228,11 +236,8 @@ updated to teesy 4.1 and improvements to make easier to build
 # credits 
 * https://github.com/dgouramanis/usdextendercable
 
-# Sponsored by
+# sponsored by
 Massive thanks to these generous people who have provided support!
 * Hannes Schnaitter
 * Daniel Hengeveld [thedaniel on github](https://github.com/thedaniel)
 * Derek Brost
-
-## 3d models
-* potentiometer: https://grabcad.com/library/potentiometer-30
