@@ -1,5 +1,5 @@
 # teensy eurorack audio shield 
-![Version 2.0.3](https://img.shields.io/badge/project-2.0.3-brightgreen.svg?label=version&colorA=555555&colorB=ff4a88)
+![Version 2.1](https://img.shields.io/badge/project-2.1-brightgreen.svg?label=version&colorA=555555&colorB=ff4a88)
 [![Teensy 4.1](https://img.shields.io/badge/project-4.1-brightgreen.svg?label=teensy&colorA=555555&colorB=ff8aff&logo=)](https://www.pjrc.com/store/teensy41.html)
 ![in testing](https://img.shields.io/badge/project-in_testing-brightgreen.svg?label=status&colorA=555555&colorB=ff8800)
 [![Join the chat at https://gitter.im/newdigate/teensy-eurorack](https://badges.gitter.im/newdigate/teensy-eurorack.svg)](https://gitter.im/newdigate/teensy-eurorack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
