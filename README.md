@@ -74,8 +74,6 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
 # building
 * Parts
   * Parts not on BOM (or not available through mouser) 
-    * Teensy 4.1 (with pins)
-    * 100mm FPC cable same side connectors, 1mm pitch, 8 conductors
     * mainboard:
       * J4, J5, J6, J7, J8, J9, J10: [Octopart ACJS-MV5](https://octopart.com/acjs-mv-5-amphenol+sine+systems-73882518?r=sp)
       * 2.54mm pitch pin headers and sockets
