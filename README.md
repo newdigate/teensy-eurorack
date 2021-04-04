@@ -11,7 +11,10 @@
 
 **open source [hardware](hardware) and [software](software) for a 30-channel (14 in / 16 out) 16-bit analog [teensy 4.1](https://www.pjrc.com/store/teensy40.html "teensy 4.1 board") eurorack shield** 
 
-* add peripherals to extend your [teensy 4.1](https://www.pjrc.com/store/teensy40.html "teensy 4.1 board") to interface with analog line audio and eurorack control voltages (-10 to +10 volts)
+* add peripherals to extend your [teensy 4.1](https://www.pjrc.com/store/teensy40.html "teensy 4.1 board") to interface with 
+  * analog line audio (6 in / 8 out)
+  * analog control voltages (8 in / 8 out: -10 to +10 volts)
+  * midi in/out
 
 <img src='hardware/images/teensy-eurorack.svg' width='250px'/>
 
