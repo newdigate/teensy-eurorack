@@ -91,11 +91,12 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
     * JMUSBA1, JMUSBB1, JUSBA1, JUSBB1: 01x04 male pin header (for usb-a and usb-b connector breakouts)
     * JDAISYM1, JDAISYS1: 01x03 male pin header for serial tx/rx daisy chain
 * breakout:
-  * USBA1: USB-A socket: samtec USB-A-S-X-X-VT no longer seems to be available, I have add Samtec USB-A-S-F-B-TH, it looks very similar.
-  * 16 x Thonkicons: JIN1, JIN2, JIN3, JIN4, JIN5, JIN6, JIN7, JIN8, JOUT1, JOUT2, JOUT3, JOUT4, JOUT5, JOUT6, JOUT7, JOUT8
-  * 1 x ST7735 (1.44" display)
-  * 4 x 9mm snap-in pots: 9MM_SNAP-IN_POT: RV1, RV2, RV3, RV4
-  * 3 x rotary encoders w/switches: Alps_EC12E-Switch_Vertical_H20mm_CircularMountingHoles: SW1, SW2, SW3
+  * [pjs008u-3000-0 yamaichi](https://octopart.com/pjs008u-3000-0-yamaichi-20649952?r=sp)
+  * USBA1: USB-A socket: samtec USB-A-S-X-X-VT no longer seems to be available, I have added Samtec USB-A-S-F-B-TH, it looks very similar.
+  * [PJ398SM](https://www.thonk.co.uk/shop/thonkiconn) x 16
+  * 1 x ST7735 (1.44 inch TFT LCD ST7735 SPI display module 128*128 8pin 65K color)
+  * 4 x 9mm snap-in pots: 9MM_SNAP-IN_POT
+  * 3 x rotary encoders w/switches: Alps_EC12E-Switch_Vertical_H20mm_CircularMountingHoles
   * 2.54mm pitch pin headers and sockets
     * JBUSBA1, JBUSBB1: 01x04 female pin socket
     * JB3, JB4: 01x08 female pin socket
