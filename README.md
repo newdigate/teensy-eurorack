@@ -85,11 +85,6 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
   * J4, J5, J6, J7, J8, J9, J10: [Octopart ACJS-MV5](https://octopart.com/acjs-mv-5-amphenol+sine+systems-73882518?r=sp)
   * 2.54mm pitch pin headers and sockets
     * J28: Eurorack power header: either male or female (2 x 8)
-    * J27: 01x02 male pin header for 5v power selection jumper setting ( @2.54mm pitch   
-    * JM1, JM2: 01x14 male pin header
-    * JM3, JM4: 01x08 male pin header
-    * JMUSBA1, JMUSBB1, JUSBA1, JUSBB1: 01x04 male pin header (for usb-a and usb-b connector breakouts)
-    * JDAISYM1, JDAISYS1: 01x03 male pin header for serial tx/rx daisy chain
 * breakout:
   * [pjs008u-3000-0 yamaichi](https://octopart.com/pjs008u-3000-0-yamaichi-20649952?r=sp)
   * USBA1: USB-A socket: samtec USB-A-S-X-X-VT no longer seems to be available, I have added Samtec USB-A-S-F-B-TH, it looks very similar.
@@ -97,11 +92,7 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
   * 1 x ST7735 (1.44 inch TFT LCD ST7735 SPI display module 128*128 8pin 65K color)
   * 4 x 9mm snap-in pots: 9MM_SNAP-IN_POT
   * 3 x rotary encoders w/switches: Alps_EC12E-Switch_Vertical_H20mm_CircularMountingHoles
-  * 2.54mm pitch pin headers and sockets
-    * JBUSBA1, JBUSBB1: 01x04 female pin socket
-    * JB3, JB4: 01x08 female pin socket
-    * JB1, JB2: 01x14 female pin socket
-   
+
 ## interactive html boms online
   * [mainboard](https://newdigate.github.io/teensy-eurorack/teensy-eurorack)
   * [breakoutboard](https://newdigate.github.io/teensy-eurorack/teensy-eurorack-breakout)
