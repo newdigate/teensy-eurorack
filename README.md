@@ -91,8 +91,16 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
     * JMUSBA1, JMUSBB1, JUSBA1, JUSBB1: 01x04 male pin header (for usb-a and usb-b connector breakouts)
     * JDAISYM1, JDAISYS1: 01x03 male pin header for serial tx/rx daisy chain
 * breakout:
- * USB-A socket
-
+  * 1 x USBA1 USB-A socket USB-A-S-X-X-VT
+  * 16 x Thonkicons: JIN1, JIN2, JIN3, JIN4, JIN5, JIN6, JIN7, JIN8, JOUT1, JOUT2, JOUT3, JOUT4, JOUT5, JOUT6, JOUT7, JOUT8
+  * 1 x ST7735 (1.44" display)
+  * 4 x 9mm snap-in pots: 9MM_SNAP-IN_POT: RV1, RV2, RV3, RV4
+  * 3 x rotary encoders w/switches: Alps_EC12E-Switch_Vertical_H20mm_CircularMountingHoles: SW1, SW2, SW3
+  * 2.54mm pitch pin headers and sockets
+    * JBUSBA1, JBUSBB1: 01x04 female pin socket
+    * JB3, JB4: 01x08 female pin socket
+    * JB1, JB2: 01x14 female pin socket
+   
 ## interactive html boms online
   * [mainboard](https://newdigate.github.io/teensy-eurorack/teensy-eurorack)
   * [breakoutboard](https://newdigate.github.io/teensy-eurorack/teensy-eurorack-breakout)
