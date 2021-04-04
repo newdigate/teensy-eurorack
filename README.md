@@ -72,6 +72,15 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
 * Some images have been rendered using [Blender 2.81](https://www.blender.org/)
 
 # building
+* Parts
+  * Parts not on BOM:
+    * Teensy 4.1 (with pins)
+    * 100m FPC cable same side connectors, 1mm pitch, 8 conductors
+    * pin headers and sockets
+    * USB-A socket
+  * Mouser BOM
+    * [mainboard](https://eu.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=e554cc1725)
+    * [breakoutboard](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=76e89a9e69)
 * Interactive BOM urls:
   * [mainboard](https://newdigate.github.io/teensy-eurorack/teensy-eurorack)
   * [breakoutboard](https://newdigate.github.io/teensy-eurorack/teensy-eurorack-breakout)
