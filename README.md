@@ -73,11 +73,20 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
 
 # building
 * Parts
-  * Parts not on BOM:
+  * Parts not on BOM (or not available through mouser) 
     * Teensy 4.1 (with pins)
     * 100mm FPC cable same side connectors, 1mm pitch, 8 conductors
-    * pin headers and sockets
-    * USB-A socket
+    * mainboard:
+      * J4, J5, J6, J7, J8, J9, J10: [Octopart ACJS-MV5](https://octopart.com/acjs-mv-5-amphenol+sine+systems-73882518?r=sp)
+      * 2.54mm pitch pin headers and sockets
+        * J28: Eurorack power header: either male or female (2 x 8)
+        * J27: 01x02 male pin header for 5v power selection jumper setting ( @2.54mm pitch   
+        * JM1, JM2: 01x14 male pin header
+        * JM3, JM4: 01x08 male pin header
+        * JMUSBA1, JMUSBB1, JUSBA1, JUSBB1: 01x04 male pin header (for usb-a and usb-b connector breakouts)
+        * JDAISYM1, JDAISYS1: 01x03 male pin header for serial tx/rx daisy chain
+    * breakout:
+      * USB-A socket
   * Mouser BOM
     * [mainboard](https://eu.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=e554cc1725)
     * [breakoutboard](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=76e89a9e69)
