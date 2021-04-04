@@ -23,7 +23,7 @@
 * [license](#license)
 * [open source software-stack](#open-source-software-stack)
 * [build](#build)
-  * [souring parts](#souring-parts)
+  * [sourcing parts](#souring-parts)
     * [mouser boms](#mouser-boms)
     * [parts not on mouser boms](#parts-not-on-mouser-boms)
   * [interactive html boms online](#interactive-html-boms-online)
@@ -76,7 +76,7 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
 * Some images have been rendered using [Blender 2.81](https://www.blender.org/)
 
 # build
-## souring parts
+## sourcing parts
 ### mouser boms
 * [mainboard](https://eu.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=e554cc1725)
 * [breakoutboard](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=76e89a9e69)
