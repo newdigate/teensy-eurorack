@@ -91,7 +91,7 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
     * JMUSBA1, JMUSBB1, JUSBA1, JUSBB1: 01x04 male pin header (for usb-a and usb-b connector breakouts)
     * JDAISYM1, JDAISYS1: 01x03 male pin header for serial tx/rx daisy chain
 * breakout:
-  * 1 x USBA1 USB-A socket USB-A-S-X-X-VT
+  * USBA1: USB-A socket: samtec USB-A-S-X-X-VT no longer seems to be available, I have add Samtec USB-A-S-F-B-TH, it looks very similar.
   * 16 x Thonkicons: JIN1, JIN2, JIN3, JIN4, JIN5, JIN6, JIN7, JIN8, JOUT1, JOUT2, JOUT3, JOUT4, JOUT5, JOUT6, JOUT7, JOUT8
   * 1 x ST7735 (1.44" display)
   * 4 x 9mm snap-in pots: 9MM_SNAP-IN_POT: RV1, RV2, RV3, RV4
