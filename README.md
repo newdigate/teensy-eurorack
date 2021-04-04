@@ -22,7 +22,11 @@
 * [specifications](#specifications)
 * [license](#license)
 * [open source software-stack](#open-source-software-stack)
-* [building / interactive BOM files](#Building)
+* [build](#build)
+  * [souring parts](#souring-parts)
+    * [mouser boms](#mouser-boms)
+    * [parts not on mouser boms](#parts-not-on-mouser-boms)
+  * [interactive html boms online](#interactive-html-boms-online)
 * [source code](#source-code)
 * [improvements](#improvements)
 * [printed circuit boards](#printed-circuit-boards)
@@ -71,24 +75,25 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
 * All mechanical designs are created using [FreeCAD](https://github.com/FreeCAD/FreeCAD)
 * Some images have been rendered using [Blender 2.81](https://www.blender.org/)
 
-# building
-* Parts
-  * Parts not on BOM (or not available through mouser) 
-    * mainboard:
-      * J4, J5, J6, J7, J8, J9, J10: [Octopart ACJS-MV5](https://octopart.com/acjs-mv-5-amphenol+sine+systems-73882518?r=sp)
-      * 2.54mm pitch pin headers and sockets
-        * J28: Eurorack power header: either male or female (2 x 8)
-        * J27: 01x02 male pin header for 5v power selection jumper setting ( @2.54mm pitch   
-        * JM1, JM2: 01x14 male pin header
-        * JM3, JM4: 01x08 male pin header
-        * JMUSBA1, JMUSBB1, JUSBA1, JUSBB1: 01x04 male pin header (for usb-a and usb-b connector breakouts)
-        * JDAISYM1, JDAISYS1: 01x03 male pin header for serial tx/rx daisy chain
-    * breakout:
-      * USB-A socket
-  * Mouser BOM
-    * [mainboard](https://eu.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=e554cc1725)
-    * [breakoutboard](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=76e89a9e69)
-* Interactive BOM urls:
+# build
+## souring parts
+### mouser boms
+* [mainboard](https://eu.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=e554cc1725)
+* [breakoutboard](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=76e89a9e69)
+### parts not on mouser boms
+* mainboard:
+  * J4, J5, J6, J7, J8, J9, J10: [Octopart ACJS-MV5](https://octopart.com/acjs-mv-5-amphenol+sine+systems-73882518?r=sp)
+  * 2.54mm pitch pin headers and sockets
+    * J28: Eurorack power header: either male or female (2 x 8)
+    * J27: 01x02 male pin header for 5v power selection jumper setting ( @2.54mm pitch   
+    * JM1, JM2: 01x14 male pin header
+    * JM3, JM4: 01x08 male pin header
+    * JMUSBA1, JMUSBB1, JUSBA1, JUSBB1: 01x04 male pin header (for usb-a and usb-b connector breakouts)
+    * JDAISYM1, JDAISYS1: 01x03 male pin header for serial tx/rx daisy chain
+* breakout:
+ * USB-A socket
+
+## interactive html boms online
   * [mainboard](https://newdigate.github.io/teensy-eurorack/teensy-eurorack)
   * [breakoutboard](https://newdigate.github.io/teensy-eurorack/teensy-eurorack-breakout)
 
