@@ -75,7 +75,7 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
 * Parts
   * Parts not on BOM:
     * Teensy 4.1 (with pins)
-    * 100m FPC cable same side connectors, 1mm pitch, 8 conductors
+    * 100mm FPC cable same side connectors, 1mm pitch, 8 conductors
     * pin headers and sockets
     * USB-A socket
   * Mouser BOM
