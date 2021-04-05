@@ -77,6 +77,8 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
 
 # build
 ## sourcing parts
+Most parts are available from mouser.com - you can use the 2 mouser BOMs below as a template to create an order. 
+
 ### mouser boms
 * [mainboard](https://eu.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=e554cc1725)
 * [breakoutboard](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=76e89a9e69)
@@ -95,7 +97,7 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
   * USBA1: USB-A socket: samtec USB-A-S-X-X-VT no longer seems to be available, I have added Samtec USB-A-S-F-B-TH, it looks very similar.
   * [PJ398SM](https://www.thonk.co.uk/shop/thonkiconn) x 16
   * 1 x ST7735 (1.44 inch TFT LCD ST7735 SPI display module 128*128 8pin 65K color)
-  * 4 x 9mm snap-in pots: 9MM_SNAP-IN_POT
+  * 4 x 9mm snap-in pots: [alpha-9mm-pots](https://www.thonk.co.uk/shop/alpha-9mm-pots/) - You want linear (B-series) not audio (A-series) B5K or B10K should be ideal.
   * 3 x rotary encoders w/switches: Alps_EC12E-Switch_Vertical_H20mm_CircularMountingHoles
 
 ## interactive html boms online
