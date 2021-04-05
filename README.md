@@ -23,6 +23,7 @@
 * [license](#license)
 * [open source software-stack](#open-source-software-stack)
 * [build](#build)
+  * [order pcbs](#order-pcbs)
   * [sourcing parts](#sourcing-parts)
     * [mouser boms](#mouser-boms)
     * [parts not on mouser boms](#parts-not-on-mouser-boms)
@@ -76,7 +77,7 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
 * Some images have been rendered using [Blender 2.81](https://www.blender.org/)
 
 # build
-## order boards
+## order pcbs
 * Use these gerber files to order three pcboards
   * the uSD-card extender should be about 0.6mm - 0.8mm thick
   * if you're using solder paste, you'll need to order the stencils of the bottom-side of main- and breakout boards.   
