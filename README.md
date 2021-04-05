@@ -78,10 +78,13 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
 
 # build
 ## order pcbs
-* Use these gerber files to order three pcboards
+* Use these gerber files to order 3 pcboards
   * the uSD-card extender should be about 0.6mm - 0.8mm thick
   * if you're using solder paste, you'll need to order the stencils of the bottom-side of main- and breakout boards.   
-[gerber zips](https://github.com/newdigate/teensy-eurorack/tree/master/hardware/gerbers)
+  
+* [gerbers-breakout.zip](https://github.com/newdigate/teensy-eurorack/raw/master/hardware/gerbers/gerbers-breakout.zip)
+* [gerbers-mainboard.zip](https://github.com/newdigate/teensy-eurorack/raw/master/hardware/gerbers/gerbers-mainboard.zip)
+* [gerbers-uSD_extender_male.zip](https://github.com/newdigate/teensy-eurorack/raw/master/hardware/gerbers/gerbers-uSD_extender_male.zip)
 
 ## sourcing parts
 Most parts are available from mouser.com - you can use the mouser BOMs below as a template to create an order. 
