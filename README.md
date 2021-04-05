@@ -23,7 +23,7 @@
 * [license](#license)
 * [open source software-stack](#open-source-software-stack)
 * [build](#build)
-  * [sourcing parts](#souring-parts)
+  * [sourcing parts](#sourcing-parts)
     * [mouser boms](#mouser-boms)
     * [parts not on mouser boms](#parts-not-on-mouser-boms)
   * [interactive html boms online](#interactive-html-boms-online)
@@ -76,8 +76,14 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
 * Some images have been rendered using [Blender 2.81](https://www.blender.org/)
 
 # build
+## order boards
+* Use these gerber files to order three pcboards
+  * the uSD-card extender should be about 0.6mm - 0.8mm thick
+  * if you're using solder paste, you'll need to order the stencils of the bottom-side of main- and breakout boards.   
+[gerber zips](https://github.com/newdigate/teensy-eurorack/tree/master/hardware/gerbers)
+
 ## sourcing parts
-Most parts are available from mouser.com - you can use the 2 mouser BOMs below as a template to create an order. 
+Most parts are available from mouser.com - you can use the mouser BOMs below as a template to create an order. 
 
 ### mouser boms
 * [mainboard](https://eu.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=e554cc1725)
@@ -89,16 +95,16 @@ Most parts are available from mouser.com - you can use the 2 mouser BOMs below a
     * for Europe: download [Front Panel Designer](https://www.schaeffer-ag.de/en/front-panel-designer)
   * CNC your own with [FreeCad](https://www.freecadweb.org/downloads.php): [panel.FCStd](https://github.com/newdigate/teensy-eurorack/blob/master/hardware/panel/panel.FCStd) 
 * mainboard:
-  * J4, J5, J6, J7, J8, J9, J10: [Octopart ACJS-MV5](https://octopart.com/acjs-mv-5-amphenol+sine+systems-73882518?r=sp)
   * 2.54mm pitch pin headers and sockets
-    * J28: Eurorack power header: either male or female (2 x 8)
+    * J28: Eurorack power header: either male or female (2 x 8), I use female as my eurorack power (tip top) has male connectors. 
 * breakout:
-  * [pjs008u-3000-0 yamaichi](https://octopart.com/pjs008u-3000-0-yamaichi-20649952?r=sp)
-  * USBA1: USB-A socket: samtec USB-A-S-X-X-VT no longer seems to be available, I have added Samtec USB-A-S-F-B-TH, it looks very similar.
-  * [PJ398SM](https://www.thonk.co.uk/shop/thonkiconn) x 16
-  * 1 x ST7735 (1.44 inch TFT LCD ST7735 SPI display module 128*128 8pin 65K color)
+  * uSD card socket: [pjs008u-3000-0 yamaichi](https://octopart.com/pjs008u-3000-0-yamaichi-20649952?r=sp)
+  * display: ST7735 (1.44 inch TFT LCD ST7735 SPI display module 128*128 8pin 65K color)
+  * 16 x thonkiconns: [PJ398SM](https://www.thonk.co.uk/shop/thonkiconn)
   * 4 x 9mm snap-in pots: [alpha-9mm-pots](https://www.thonk.co.uk/shop/alpha-9mm-pots/) - You want linear (B-series) not audio (A-series) B5K or B10K should be ideal.
   * 3 x rotary encoders w/switches: Alps_EC12E-Switch_Vertical_H20mm_CircularMountingHoles
+
+**Caution**: On the BOM I have substituted USB-A socket: samtec USB-A-S-X-X-VT no longer seems to be available, so I have replaced with Samtec USB-A-S-F-B-TH, it looks very similar, will update when I've managed to test. 
 
 ## interactive html boms online
   * [mainboard](https://newdigate.github.io/teensy-eurorack/teensy-eurorack)
