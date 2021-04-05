@@ -141,7 +141,7 @@ At this point Im just focusing on finalising/polishing the current version, but 
 
 There is a journal of my progress (its a bit out of date, sorry) - [journal.md](hardware/JOURNAL.md) 
 
-What you can do if you like to see progress with this project?
+**What you can do if you like to see progress with this project?**
 * [#sponsor](#sponsor)...
 * star this repository (means you need a github account - go for it!!)
 * subscribe [Nic N on youtube](https://www.youtube.com/channel/UChMicDp8wUXYzBhEN-Wvb5g) 
