@@ -81,6 +81,11 @@ For stable, tested version please see [![Version 1.8.1](https://img.shields.io/b
 * [mainboard](https://eu.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=e554cc1725)
 * [breakoutboard](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=76e89a9e69)
 ### parts not on mouser boms
+* panel: 
+  * order from Front Panel Express: [.fpd](https://github.com/newdigate/teensy-eurorack/tree/master/hardware/panel/fpd)
+    * for US: download [Front Panel Express](https://www.frontpanelexpress.com)
+    * for Europe: download [Front Panel Designer](https://www.schaeffer-ag.de/en/front-panel-designer)
+  * CNC your own with [FreeCad](https://www.freecadweb.org/downloads.php): [panel.FCStd](https://github.com/newdigate/teensy-eurorack/blob/master/hardware/panel/panel.FCStd) 
 * mainboard:
   * J4, J5, J6, J7, J8, J9, J10: [Octopart ACJS-MV5](https://octopart.com/acjs-mv-5-amphenol+sine+systems-73882518?r=sp)
   * 2.54mm pitch pin headers and sockets
@@ -233,7 +238,7 @@ updated to teesy 4.1 and improvements to make easier to build
   
 # todo 
 - [ ] finalize design / circuits / boards
-- [x] ~~order~~ (v.2.0.3)
+- [x] ~~order~~ (v.2.1)
 - [x] ~~assemble~~
 - [ ] testing
   - [x] ~~CS42448 audio codec~~
@@ -241,11 +246,12 @@ updated to teesy 4.1 and improvements to make easier to build
     - [x] ~~Audio output~~
   - [x] ~~control voltage input~~
   - [x] ~~control voltage output~~
-  - [ ] usb host
-  - [ ] usb device
-  - [ ] midi in/out
+  - [x] ~~usb host~~
+  - [x] ~~usb device~~
+  - [ ] midi in
+  - [x] ~~midi out~~
   - [x] ~~st7735 display~~
-  - [ ] sd card extension & adapter
+  - [x] ~~sd card extension & adapter~~
 - [ ] Document 
   - [ ] order & build process
   - [ ] software process
