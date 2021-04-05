@@ -4,6 +4,8 @@
 #ifndef TEENSY_EURORACK_TEENSY_EURORACK_H
 #define TEENSY_EURORACK_TEENSY_EURORACK_H
 
+#include "teensy_eurorack_pins.h"
+
 #define TFT_SCLK 13     // SCLK can also use pin 14
 #define TFT_MOSI 11     // MOSI can also use pin 7
 #define TFT_CS   6      // CS & DC can use pins 2, 6, 9, 10, 15, 20, 21, 22, 23

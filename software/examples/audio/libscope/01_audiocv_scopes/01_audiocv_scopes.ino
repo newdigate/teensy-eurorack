@@ -1,7 +1,7 @@
 #include <Audio.h>
 #include "teensy_eurorack.h"
 #include "teensy_eurorack_audio.h"
-
+ 
 // GUItool: begin automatically generated code
 AudioInputTDM                   tdm1;           //xy=401,330
 AudioOutputTDM                  tdm3;           //xy=962,420
@@ -37,7 +37,7 @@ void setup() {
   Serial.begin(9600);
   AudioNoInterrupts();  
 
-  AudioMemory(160);
+  AudioMemory(360);
   cs42448_1.enable();
   cs42448_1.volume(1);
   AudioInterrupts();    // enable, both tones will start together
@@ -45,8 +45,7 @@ void setup() {
   //pinMode(40, INPUT); 
   tft.initR(INITR_GREENTAB);
   tft.setRotation(3);
-  tft.fillScreen(ST7735_BLACK);
-   
+  tft.fillScreen(ST7735_BLACK); 
   queue1.begin();  
   queue2.begin();  
 
@@ -95,6 +94,8 @@ void updateScope2() {
 //  canvas.drawLine(oscilliscope_x2, 64.0f + (buffer2[oscilliscope_x2-1] / 256.0f), oscilliscope_x2 + 1, 64.0f + (buffer2[oscilliscope_x2] / 256.0f), ST7735_RED, LineEndpointStyle::NoneAntialiased, LineEndpointStyle::None);
 }
 
+char timestring[] = "                      ";
+    
 
 unsigned count = 0, count2 = 0;
 void loop() {
@@ -142,25 +143,47 @@ void loop() {
   }
   updateScope(); 
 
-  if (count % 5000000 == 0) {
+  if (count % 50000 == 0) {   
     unsigned long newmillis = millis() - start_time;
+
+    tft.setCursor(0,0);
+    tft.setTextColor(ST7735_BLACK);
+    tft.print(timestring);
      
     count2++;
-    Serial.print(newmillis / (1000.0 * 60.0));
-    Serial.print(" minutes: ");
-    Serial.print(count2);
-    Serial.print(" all=");
-    Serial.print(AudioProcessorUsage());
-    Serial.print(",");
-    Serial.print(AudioProcessorUsageMax());
-    Serial.print("    ");
-    Serial.print("Memory: ");
-    Serial.print(AudioMemoryUsage());
-    Serial.print(",");
-    Serial.print(AudioMemoryUsageMax());
-    Serial.print("    ");
-    Serial.print("Free Mem: ");
-    Serial.print(memfree());
-    Serial.println();
+    unsigned long days = newmillis / (1000 * 60 * 60 * 24);
+    unsigned long remainer = newmillis - (days * 1000 * 60 * 60 * 24);
+    unsigned long hours = remainer / (1000 * 60 * 60);
+    remainer = remainer - (hours * 1000 * 60 * 60);
+    unsigned long minutes = remainer / (1000 * 60);
+    remainer = remainer - (minutes * 1000 * 60);
+    unsigned long seconds = remainer / 1000;
+    remainer = remainer - (seconds * 1000);
+
+    //tft.fillScreen(ST7735_BLACK);
+
+
+    int n = sprintf(timestring, "%2u:%2u:%2u:%2u.%3u ", days, hours, minutes, seconds, remainer);
+    if (count2 % 20 == 0) {
+      Serial.print(timestring);
+      Serial.print(count2);
+      Serial.print(" all=");
+      Serial.print(AudioProcessorUsage());
+      Serial.print(",");
+      Serial.print(AudioProcessorUsageMax());
+      Serial.print("    ");
+      Serial.print("Memory: ");
+      Serial.print(AudioMemoryUsage());
+      Serial.print(",");
+      Serial.print(AudioMemoryUsageMax());
+      Serial.print("    ");
+      Serial.print("Free Mem: ");
+      Serial.print(memfree());
+      Serial.println();
+    }
+    tft.setCursor(0,0);
+    tft.setTextColor(ST7735_WHITE);
+    tft.print(timestring);
+    
   }
 }
