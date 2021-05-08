@@ -1,6 +1,7 @@
 #include "DrawingCanvas_st7735.h"
 #include "ST7735_t3.h"
-ST7735_t3 tft = ST7735_t3(1,2,3);
+#include "teensy_eurorack.h"
+ST7735_t3 tft = ST7735_t3(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
 DrawingCanvas_st7735 canvas(tft);
 
 uint16_t color = ST7735_WHITE;
