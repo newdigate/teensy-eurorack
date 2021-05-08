@@ -1,7 +1,7 @@
 # teensy eurorack audio shield 
 ![Version 2.1](https://img.shields.io/badge/project-2.1-brightgreen.svg?label=version&colorA=555555&colorB=ff4a88)
 [![Teensy 4.1](https://img.shields.io/badge/project-4.1-brightgreen.svg?label=teensy&colorA=555555&colorB=ff8aff&logo=)](https://www.pjrc.com/store/teensy41.html)
-![in testing](https://img.shields.io/badge/project-in_testing-brightgreen.svg?label=status&colorA=555555&colorB=ff8800)
+![success](https://img.shields.io/badge/project-tested-brightgreen.svg?label=status&colorA=555555&colorB=00a000)
 [![Join the chat at https://gitter.im/newdigate/teensy-eurorack](https://badges.gitter.im/newdigate/teensy-eurorack.svg)](https://gitter.im/newdigate/teensy-eurorack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![kicad pcb ops CI](https://github.com/newdigate/teensy-eurorack/workflows/kicad%20pcb%20ops%20CI/badge.svg?branch=master)](https://github.com/newdigate/teensy-eurorack/actions?query=branch%3Amaster)
 [![built with kicad](https://img.shields.io/badge/project-v5.1.6-brightgreen.svg?label=kicad&colorA=555555&colorB=8a8fff&logo=
@@ -43,7 +43,6 @@
 * [credits](#credits)
 * [sponsored by](#sponsored-by)
 
-For stable, tested version please see [![Version 1.8.1](https://img.shields.io/badge/project-1.8.1-brightgreen.svg?label=version&colorA=555555&colorB=ff4a88)](https://github.com/newdigate/teensy-eurorack/tree/1.8.1)
 
 # sponsor
 * [patreon/teensy_eurorack](https://www.patreon.com/teensy_eurorack)
