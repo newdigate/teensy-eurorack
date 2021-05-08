@@ -283,3 +283,4 @@ Massive thanks to these generous people who have provided support!
 * Hannes Schnaitter
 * Daniel Hengeveld [thedaniel on github](https://github.com/thedaniel)
 * Derek Brost
+* Martin Eigel
