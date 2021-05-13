@@ -1,0 +1,10 @@
+#teensy compiler options
+set(TEENSY_VERSION 40 CACHE STRING "Set to the Teensy version corresponding to your board (30 or 31 allowed)" FORCE)
+set(CPU_CORE_SPEED 600000000 CACHE STRING "Set to 24000000, 48000000, 72000000 or 96000000 to set CPU core speed" FORCE) # Derived variables
+set(CPU cortex-m7 CACHE STRING "Set to cortex-m7, cortex-m4")
+
+set(COMPILERPATH "/opt/gcc-arm-none-eabi-9-2019-q4-major/bin/")
+#set(COMPILERPATH "/Applications/ARM/bin/")
+set(DEPSPATH "/home/runner/work/teensy-eurorack/teensy-eurorack/deps")
+#set(DEPSPATH "/Users/nicholasnewdigate/Development/github/newdigate/temp_dep")
+set(COREPATH "${DEPSPATH}/cores/teensy4/")
