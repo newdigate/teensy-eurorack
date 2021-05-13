@@ -49,6 +49,13 @@ jobs:
 
       - uses: actions/checkout@v2
         with:
+          repository: PaulStoffregen/Audio.git
+          path: deps/SPI
+          fetch-depth: 1
+          ref: master
+
+      - uses: actions/checkout@v2
+        with:
           repository: PaulStoffregen/Encoder.git
           path: deps/Encoder
           fetch-depth: 1
