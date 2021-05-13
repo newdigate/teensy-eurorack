@@ -50,7 +50,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           repository: PaulStoffregen/Audio.git
-          path: deps/SPI
+          path: deps/Audio
           fetch-depth: 1
           ref: master
 
