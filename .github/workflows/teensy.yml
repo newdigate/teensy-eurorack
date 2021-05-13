@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'software/**'
+      - '.github/workflows/teensy.yml'
 
 jobs:
   build:

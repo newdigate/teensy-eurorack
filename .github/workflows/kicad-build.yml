@@ -12,7 +12,7 @@ on:
     - 'hardware/boards/fp-lib-table'
     - 'hardware/boards/sym-lib-table'
     - 'hardware/boards/fp-info-cache'
-    - '.github/workflows/**'
+    - '.github/workflows/kicad-build.yml'
 
 jobs:
   
