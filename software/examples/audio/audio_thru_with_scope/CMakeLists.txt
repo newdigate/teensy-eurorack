@@ -12,6 +12,6 @@ import_arduino_library(${DEPSPATH} Audio)
 import_arduino_library(${DEPSPATH} Audio/utility)
 
 import_arduino_library_absolute(${CMAKE_CURRENT_SOURCE_DIR}/../../../src)
-teensy_add_executable(midi_out ${SOURCEFILES})
+teensy_add_executable(audio_thru_with_scope ${SOURCEFILES})
 
 set(CMAKE_VERBOSE_MAKEFILE 1)

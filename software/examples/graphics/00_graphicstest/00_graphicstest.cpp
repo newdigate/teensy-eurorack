@@ -58,10 +58,23 @@
 // For 1.44" and 1.8" TFT with ST7735 use
 ST7735_t3 tft = ST7735_t3(TFT_CS, TFT_DC, TFT_RST);
 
-// For 1.54" TFT with ST7789
-//ST7789_t3 tft = ST7789_t3(TFT_CS,  TFT_DC, TFT_RST);
-
 float p = 3.1415926;
+
+void testlines(uint16_t color);
+void testdrawtext(const char *text, uint16_t color);
+void testfastlines(uint16_t color1, uint16_t color2) ;
+
+void testdrawrects(uint16_t color);
+
+void testfillrects(uint16_t color1, uint16_t color2);
+void testfillcircles(uint8_t radius, uint16_t color);
+void testdrawcircles(uint8_t radius, uint16_t color) ;
+
+void testtriangles() ;
+void testroundrects();
+
+void tftPrintTest();
+void mediabuttons();
 
 
 void setup(void) {

@@ -1,9 +1,9 @@
 #include <Audio.h>
-#include "output_spi.h"
+#include "teensy_eurorack_audio.h"
 
 // GUItool: begin automatically generated code
 AudioOutputTDM           tdm2;           //xy=1037.8889694213867,542.1110763549805
-AudioOutputSPI           spi;         //xy=253.8888282775879,242.22220611572266
+AudioInputOutputSPI           spi;         //xy=253.8888282775879,242.22220611572266
 AudioSynthWaveformSineHires   sine1;          //xy=766.9999732971191,97.77776336669922
 AudioSynthWaveformSineHires   sine2;          //xy=766.999927520752,133.3333683013916
 AudioSynthWaveformSineHires   sine8;          //xy=769.2221870422363,356.66664123535156
