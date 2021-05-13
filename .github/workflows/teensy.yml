@@ -1,0 +1,92 @@
+name: teensy40
+
+on:
+  push:
+    paths:
+      - 'software/**'
+    paths-ignore:
+      - 'software/**.md'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/checkout@v2
+        with:
+          repository: newdigate/teensy-cmake-macros
+          path: deps/teensy-cmake-macros
+
+      - uses: actions/checkout@v2
+        with:
+          repository: PaulStoffregen/cores.git
+          path: deps/cores
+          fetch-depth: 1
+          ref: master
+
+      - uses: actions/checkout@v2
+        with:
+          repository: PaulStoffregen/SD.git
+          path: deps/SD
+          fetch-depth: 1
+          ref: Juse_Use_SdFat
+
+      - uses: actions/checkout@v2
+        with:
+          repository: greiman/SdFat.git
+          path: deps/SdFat
+          fetch-depth: 1
+          ref: master
+
+      - uses: actions/checkout@v2
+        with:
+          repository: PaulStoffregen/SPI.git
+          path: deps/SPI
+          fetch-depth: 1
+          ref: master
+
+      - uses: actions/checkout@v2
+        with:
+          repository: PaulStoffregen/Encoder.git
+          path: deps/Encoder
+          fetch-depth: 1
+          ref: master
+
+      - uses: actions/checkout@v2
+        with:
+          repository: newdigate/teensy-audio-libtftscope.git
+          path: deps/teensy-audio-libtftscope
+          fetch-depth: 1
+          ref: main
+
+      - uses: actions/checkout@v2
+        with:
+          repository: newdigate/teensy-libcurve.git
+          path: deps/teensy-libcurve
+          fetch-depth: 1
+          ref: main
+
+      - uses: actions/checkout@v2
+        with:
+          repository: thomasfredericks/Bounce2
+          path: deps/Bounce2
+          fetch-depth: 1
+          ref: master
+
+      - name: download toolchain
+        run: |
+          curl  -L "https://developer.arm.com/-/media/Files/downloads/gnu-rm/9-2019q4/RC2.1/gcc-arm-none-eabi-9-2019-q4-major-x86_64-linux.tar.bz2" --output /tmp/gcc-arm-none-eabi.tar.bz2
+          mkdir -p /opt
+          cd /opt
+          tar xjf /tmp/gcc-arm-none-eabi.tar.bz2
+          rm /tmp/gcc-arm-none-eabi.tar.bz2
+          echo "/opt/gcc-arm-none-eabi-9-2019-q4-major/bin"
+
+      - name: install teensy-cmake-macros
+        run: cd deps/teensy-cmake-macros && mkdir cmake-build-debug && cd cmake-build-debug && cmake -DCMAKE_BUILD_TYPE=Debug .. && sudo make install
+
+      - name: build
+        run: mkdir cmake-build-debug && cd cmake-build-debug && cmake -DCMAKE_BUILD_TYPE=Debug .. && make
