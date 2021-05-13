@@ -1,7 +1,9 @@
+#include <ST7735_t3.h> // Hardware-specific library
 #include "teensy_eurorack.h"
+ST7735_t3 tft = ST7735_t3(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
 
 #include <Encoder.h>
-#include <Bounce.h>
+#include <Bounce2.h>
 Bounce button0 = Bounce(TEENSY_EURORACK_PIN_ENC1_SW, 15);
 Bounce button1 = Bounce(TEENSY_EURORACK_PIN_ENC2_SW, 15);
 Bounce button2 = Bounce(TEENSY_EURORACK_PIN_ENC3_SW, 15);
@@ -10,15 +12,25 @@ Encoder Knob1(TEENSY_EURORACK_PIN_ENC1_A, TEENSY_EURORACK_PIN_ENC1_B);
 Encoder Knob2(TEENSY_EURORACK_PIN_ENC2_A, TEENSY_EURORACK_PIN_ENC2_B);
 Encoder Knob3(TEENSY_EURORACK_PIN_ENC3_A, TEENSY_EURORACK_PIN_ENC3_B);
 
+
 void setup() {
 
    
   Serial.begin(9600);
+
   pinMode(TEENSY_EURORACK_PIN_ENC1_SW, INPUT_PULLUP);
   pinMode(TEENSY_EURORACK_PIN_ENC2_SW, INPUT_PULLUP);
   pinMode(TEENSY_EURORACK_PIN_ENC3_SW, INPUT_PULLUP);
 
-  Serial.println("Encoders test");
+  tft.initR(INITR_144GREENTAB);
+  tft.setRotation(3);
+  tft.fillScreen(ST7735_BLACK);
+
+
+  pinMode(TEENSY_EURORACK_PIN_ENC1_A, INPUT_PULLUP);
+
+  tft.println("Encoders test + display");
+  Serial.println("Encoders test + display");
 }
 
 

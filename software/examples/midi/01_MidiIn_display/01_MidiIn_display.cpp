@@ -4,13 +4,23 @@
 
 ST7735_t3 tft = ST7735_t3(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
 
-MIDI_CREATE_DEFAULT_INSTANCE();
+MIDI_CREATE_INSTANCE(HardwareSerial, Serial1, MIDI)
+
+void handleNoteOn(byte channel, byte pitch, byte velocity)
+{
+    tft.printf("+ %02x %02x %02x\n", channel, pitch, velocity);
+    tft.updateScreen();
+}
+
+void handleNoteOff(byte channel, byte pitch, byte velocity)
+{
+    tft.printf("- %02x %02x %02x\n", channel, pitch, velocity);
+    tft.updateScreen();
+}
 
 void setup()
 {  
-
   Serial.begin(115200);
-
 
   tft.initR(INITR_144GREENTAB); // initialize a ST7735R chip, green tab
   tft.setRotation(3);
@@ -52,14 +62,3 @@ void loop()
     tft.updateScreen();
 }
 
-void handleNoteOn(byte channel, byte pitch, byte velocity)
-{
-  tft.printf("+ %02x %02x %02x\n", channel, pitch, velocity);
-  tft.updateScreen();
-}
-
-void handleNoteOff(byte channel, byte pitch, byte velocity)
-{
-  tft.printf("- %02x %02x %02x\n", channel, pitch, velocity);
-  tft.updateScreen();
-}
