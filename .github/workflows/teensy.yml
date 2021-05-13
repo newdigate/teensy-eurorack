@@ -4,8 +4,6 @@ on:
   push:
     paths:
       - 'software/**'
-    paths-ignore:
-      - 'software/**.md'
 
 jobs:
   build:
