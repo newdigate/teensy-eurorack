@@ -9,8 +9,7 @@ ST7735_t3 TFT = ST7735_t3(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
 // GUItool: begin automatically generated code
 AudioOutputTDM                  tdm2;           //xy=514,291
 AudioInputTDM                  tdm;           //xy=514,291
-AudioOutputSharedAD5754Dual     ad5754;           //xy=514,291
-AudioInputSharedAD7606          ad7606;
+AudioInputOutputSPI         ad7606_ad5754;         //xy=484,1490
 AudioSynthWaveformSine   sine1;          //xy=272,218
 AudioSynthWaveformSine   sine2;          //xy=272,218
 AudioSynthWaveformSine   sine3;          //xy=272,218
@@ -35,23 +34,23 @@ AudioRecordQueue         audioRecordQueue12;
 AudioRecordQueue         audioRecordQueue13; 
 AudioRecordQueue         audioRecordQueue14;
  
-AudioConnection          patchCord1(sine1, 0, ad5754, 0);
-AudioConnection          patchCord2(sine2, 0, ad5754, 1);
-AudioConnection          patchCord3(sine3, 0, ad5754, 2);
-AudioConnection          patchCord4(sine4, 0, ad5754, 3);
-AudioConnection          patchCord5(sine5, 0, ad5754, 4);
-AudioConnection          patchCord6(sine6, 0, ad5754, 5);
-AudioConnection          patchCord7(sine7, 0, ad5754, 6);
-AudioConnection          patchCord8(sine8, 0, ad5754, 7);
+AudioConnection          patchCord1(sine1, 0, ad7606_ad5754, 0);
+AudioConnection          patchCord2(sine2, 0, ad7606_ad5754, 1);
+AudioConnection          patchCord3(sine3, 0, ad7606_ad5754, 2);
+AudioConnection          patchCord4(sine4, 0, ad7606_ad5754, 3);
+AudioConnection          patchCord5(sine5, 0, ad7606_ad5754, 4);
+AudioConnection          patchCord6(sine6, 0, ad7606_ad5754, 5);
+AudioConnection          patchCord7(sine7, 0, ad7606_ad5754, 6);
+AudioConnection          patchCord8(sine8, 0, ad7606_ad5754, 7);
 
-AudioConnection          patchCord9(ad7606, 0, audioRecordQueue1, 0);
-AudioConnection          patchCord10(ad7606, 1, audioRecordQueue2, 0);
-AudioConnection          patchCord11(ad7606, 2, audioRecordQueue3, 0);
-AudioConnection          patchCord12(ad7606, 3, audioRecordQueue4, 0);
-AudioConnection          patchCord13(ad7606, 4, audioRecordQueue5, 0);
-AudioConnection          patchCord14(ad7606, 5, audioRecordQueue6, 0);
-AudioConnection          patchCord15(ad7606, 6, audioRecordQueue7, 0);
-AudioConnection          patchCord16(ad7606, 7, audioRecordQueue8, 0);
+AudioConnection          patchCord9(ad7606_ad5754, 0, audioRecordQueue1, 0);
+AudioConnection          patchCord10(ad7606_ad5754, 1, audioRecordQueue2, 0);
+AudioConnection          patchCord11(ad7606_ad5754, 2, audioRecordQueue3, 0);
+AudioConnection          patchCord12(ad7606_ad5754, 3, audioRecordQueue4, 0);
+AudioConnection          patchCord13(ad7606_ad5754, 4, audioRecordQueue5, 0);
+AudioConnection          patchCord14(ad7606_ad5754, 5, audioRecordQueue6, 0);
+AudioConnection          patchCord15(ad7606_ad5754, 6, audioRecordQueue7, 0);
+AudioConnection          patchCord16(ad7606_ad5754, 7, audioRecordQueue8, 0);
 
 AudioConnection          patchCord17(tdm, 0, audioRecordQueue9, 0);
 AudioConnection          patchCord18(tdm, 2, audioRecordQueue10, 0);
