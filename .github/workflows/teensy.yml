@@ -63,6 +63,26 @@ jobs:
 
       - uses: actions/checkout@v2
         with:
+          repository: PaulStoffregen/SerialFlash.git
+          path: deps/SerialFlash
+          fetch-depth: 1
+          ref: master
+
+      - uses: actions/checkout@v2
+        with:
+          repository: PaulStoffregen/arm_math.git
+          path: deps/arm_math
+          ref: master
+
+      - uses: actions/checkout@v2
+        with:
+          repository: PaulStoffregen/Wire.git
+          path: deps/Wire
+          fetch-depth: 1
+          ref: master
+
+      - uses: actions/checkout@v2
+        with:
           repository: newdigate/teensy-audio-libtftscope.git
           path: deps/teensy-audio-libtftscope
           fetch-depth: 1
