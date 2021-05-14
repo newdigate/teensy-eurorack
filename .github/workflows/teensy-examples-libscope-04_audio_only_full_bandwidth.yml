@@ -3,8 +3,9 @@ name: teensy40
 on:
   push:
     paths:
-      - 'software/**'
-      - '.github/workflows/teensy.yml'
+      - 'software/src/**'
+      - 'software/examples/audio/libscope/04_audio_only_full_bandwidth/**'
+      - '.github/workflows/**'
 
 jobs:
   build:

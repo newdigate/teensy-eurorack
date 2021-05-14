@@ -3,8 +3,9 @@ name: teensy40
 on:
   push:
     paths:
-      - 'software/**'
-      - '.github/workflows/teensy.yml'
+      - 'software/src/**'
+      - 'software/examples/graphics/01_heart/**'
+      - '.github/workflows/**'
 
 jobs:
   build:

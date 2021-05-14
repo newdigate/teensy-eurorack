@@ -3,8 +3,9 @@ name: teensy40
 on:
   push:
     paths:
-      - 'software/**'
-      - '.github/workflows/teensy.yml'
+      - 'software/src/**'
+      - 'software/examples/midi/01_MidiIn_display/**'
+      - '.github/workflows/**'
 
 jobs:
   build:
@@ -92,6 +93,13 @@ jobs:
         with:
           repository: thomasfredericks/Bounce2
           path: deps/Bounce2
+          fetch-depth: 1
+          ref: master
+
+      - uses: actions/checkout@v2
+        with:
+          repository: FortySevenEffects/arduino_midi_library
+          path: deps/arduino_midi_library
           fetch-depth: 1
           ref: master
 
