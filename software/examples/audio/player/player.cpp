@@ -42,7 +42,7 @@
 #define BUTTON4 30  //PREV 
 
 #include <ST7735_t3.h> // Hardware-specific library
-#include "TFTProgressBar.h"
+#include "tftprogressbar.h"
 #include "teensy_eurorack.h"
 
 Encoder myEnc(31, 32);
