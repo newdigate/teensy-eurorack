@@ -4,6 +4,7 @@
 ![success](https://img.shields.io/badge/project-tested-brightgreen.svg?label=status&colorA=555555&colorB=00a000)
 [![Join the chat at https://gitter.im/newdigate/teensy-eurorack](https://badges.gitter.im/newdigate/teensy-eurorack.svg)](https://gitter.im/newdigate/teensy-eurorack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![kicad pcb ops CI](https://github.com/newdigate/teensy-eurorack/workflows/kicad%20pcb%20ops%20CI/badge.svg?branch=master)](https://github.com/newdigate/teensy-eurorack/actions?query=branch%3Amaster)
+[![teensy40](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy.yml)
 [![built with kicad](https://img.shields.io/badge/project-v5.1.6-brightgreen.svg?label=kicad&colorA=555555&colorB=8a8fff&logo=
 )](https://kicad-pcb.org/)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
