@@ -1,4 +1,4 @@
-name: teensy40
+name: example-ad5754-02
 
 on:
   push:

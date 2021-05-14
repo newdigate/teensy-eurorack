@@ -1,4 +1,4 @@
-name: teensy40
+name: example-knobs-just-encoders-and-display
 
 on:
   push:

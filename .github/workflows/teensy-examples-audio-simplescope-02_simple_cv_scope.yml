@@ -1,4 +1,4 @@
-name: teensy40
+name: example-cv-scope
 
 on:
   push:

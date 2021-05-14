@@ -1,4 +1,4 @@
-name: teensy40
+name: example-graphics-heart
 
 on:
   push:

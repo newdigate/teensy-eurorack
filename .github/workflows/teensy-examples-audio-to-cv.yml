@@ -1,4 +1,4 @@
-name: teensy40
+name: example-audio-to-cv
 
 on:
   push:

@@ -1,4 +1,4 @@
-name: teensy40
+name: example-midi-in
 
 on:
   push:
