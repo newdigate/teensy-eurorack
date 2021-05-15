@@ -29,12 +29,14 @@
     * output sine waves on all audio outputs
     * display all audio inputs on a scope view
   
-
-* [audio/player](audio/player) using [FrankBoesing/Arduino-Teensy-Codec-lib](https://github.com/FrankBoesing/Arduino-Teensy-Codec-lib)
-  * play .mp3 and .aac audio files from micro SD card
-  * read mp3 tags
-  * display jpeg of album cover if available
-  
+* codec - using [FrankBoesing/Arduino-Teensy-Codec-lib](https://github.com/FrankBoesing/Arduino-Teensy-Codec-lib)
+  * [audio/codec/01_Mp3FilePlayer](audio/codec/01_Mp3FilePlayer) 
+    * play .mp3 file from micro SD card
+  * [audio/codec/02_Play_and_display](audio/codec/02_Play_and_display)
+    * play .mp3 and .aac audio files from micro SD card
+    * read mp3 tags
+    * display jpeg of album cover if available
+ 
 
 * [audio/simple_scope](audio/simple_scope)
   * [audio/simple_scope/01_audiocv_scope](audio/simple_scope/01_audiocv_scope)
