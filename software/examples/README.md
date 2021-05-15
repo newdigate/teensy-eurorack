@@ -61,3 +61,41 @@
 [midi](midi)
  * [midi/01_MidiIn_display](midi/01_MidiIn_display)
  * [midi/02_MidiOut](midi/02_MidiOut)
+
+
+
+## builds
+[![example-ad5754-01](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-ad5754-01.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-ad5754-01.yml)
+
+[![example-ad5754-02](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-ad5754-02.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-ad5754-02.yml)
+
+[![example-audio-libscope-audio-only](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-libscope-04_audio_only_full_bandwidth.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-libscope-04_audio_only_full_bandwidth.yml)
+
+[![example-audio-libscope-fullbandwidth](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-libscope-03_full_bandwidth.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-libscope-03_full_bandwidth.yml)
+
+[![example-audio-libscope-input](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-libscope-02_input_scopes.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-libscope-02_input_scopes.yml)
+
+[![example-audio-player](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-audio-player.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-audio-player.yml)
+
+[![example-audio-thru](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-audio-thru_with_scope.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-audio-thru_with_scope.yml)
+
+[![example-audio-thru](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-audio-thru_with_scope.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-audio-thru_with_scope.yml)
+
+[![example-audiocv-scope](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-audio-simplescope-01_audiocv_scope.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-audio-simplescope-01_audiocv_scope.yml)
+
+[![example-cv-out](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-cv-out.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-cv-out.yml)
+
+[![example-cv-scope](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-audio-simplescope-02_simple_cv_scope.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-audio-simplescope-02_simple_cv_scope.yml)
+
+[![example-graphics-heart](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-graphics-01_heart.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-graphics-01_heart.yml)
+
+[![example-graphics-test](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-graphics-00_graphicstest.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-graphics-00_graphicstest.yml)
+
+[![example-knobs-just-encoders](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-knobs-just-encoders.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-knobs-just-encoders.yml)
+
+[![example-knobs-just-encoders-and-display](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-knobs-just-encoders_and_display.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-knobs-just-encoders_and_display.yml)
+
+[![example-midi-in](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-midi-01_midiin_display.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-midi-01_midiin_display.yml)
+
+[![example-midi-out](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-midi-02_midiout.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-midi-02_midiout.yml)
+
