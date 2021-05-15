@@ -1,4 +1,4 @@
-name: example-audio-player
+name: example-audio-codec-02-play_and_display
 
 on:
   push:

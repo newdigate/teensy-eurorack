@@ -1,4 +1,4 @@
-name: example-audio-player
+name: example-audio-codec-01-mp3fileplayer
 
 on:
   push:
