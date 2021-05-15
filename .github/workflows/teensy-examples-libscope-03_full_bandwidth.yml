@@ -1,9 +1,10 @@
-name: teensy40
+name: example-audio-libscope-fullbandwidth
 
 on:
   push:
     paths:
       - 'software/src/**'
+      - 'software/examples/audio/libscope/03_full_bandwidth/**'
       - '.github/workflows/**'
 
 jobs:
@@ -136,4 +137,4 @@ jobs:
         run: cd deps/teensy-cmake-macros && mkdir cmake-build-debug && cd cmake-build-debug && cmake -DCMAKE_BUILD_TYPE=Debug .. && sudo make install
 
       - name: build
-        run: cd software/src && mkdir cmake-build-debug && cd cmake-build-debug && cmake -DCMAKE_BUILD_TYPE=Debug .. && make
+        run: cd software/examples/audio/libscope/03_full_bandwidth && mkdir cmake-build-debug && cd cmake-build-debug && cmake -DCMAKE_BUILD_TYPE=Debug .. && make

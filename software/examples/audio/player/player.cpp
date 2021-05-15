@@ -18,17 +18,12 @@
 // 
 // MP3/AAC library code by Frank Boesing.
 
-
-#define AUDIO_BOARD // if using audioboard 
-//#define PWMDAC // if using DAC and PWM as output.  (dac ~ pin 14 = left ch, PWM ~ pin 3 ~ 4 + resistor dac right ch)
-
 #include <Audio.h>
-//#include <Wire.h>
 #include <SPI.h>
 #include <SD.h>
-#include <Bounce.h> //Buttons
+#include "Bounce2.h" //Buttons
 #include <EEPROM.h> // store last track
-#include "BAGuitar.h"
+
 #include <play_sd_mp3.h> //mp3 decoder
 #include <play_sd_aac.h> // AAC decoder
 #include "ID3Reader.h"
@@ -46,19 +41,14 @@
 #define BUTTON3 6  //PREV 
 #define BUTTON4 30  //PREV 
 
-#include <Adafruit_GFX.h>    // Core graphics library
-#include <Adafruit_ST7735.h> // Hardware-specific library
-#include "TFTProgressBar.h"
+#include <ST7735_t3.h> // Hardware-specific library
+#include "tftprogressbar.h"
+#include "teensy_eurorack.h"
 
 Encoder myEnc(31, 32);
 
-#define sclk 14 //27  // SCLK can also use pin 13,14,27zz
-#define mosi 7  // MOSI can also use pin 7,11,28
-#define cs   6  // CS & DC can use pins 2, 6, 9, 10, 15, 20, 21, 22, 23
-#define dc   12   //  but certain pairs must NOT be used: 2+10, 6+9, 20+23, 21+22
-#define rst  17   // RST can use any pin
+ST7735_t3 tft = ST7735_t3(TFT_CS, TFT_DC, TFT_RST);
 
-Adafruit_ST7735 tft = Adafruit_ST7735(cs, dc, mosi, sclk, rst);
 TFTProgressBar progressBar = TFTProgressBar(tft);
 
 Bounce bouncer1 = Bounce(BUTTON1, 50); 
@@ -66,7 +56,6 @@ Bounce bouncer2 = Bounce(BUTTON2, 50);
 Bounce bouncer3 = Bounce(BUTTON3, 50);
 Bounce bouncer4 = Bounce(BUTTON4, 50);
 
-const int chipSelect = BUILTIN_SDCARD;  // if using another pin for SD card CS.
 int track;
 int tracknum;
 int trackext[255]; // 0= nothing, 1= mp3, 2= aac, 3= wav.
@@ -77,16 +66,11 @@ boolean trackchange;
 boolean dirchange;
 boolean paused;
 
+
+AudioOutputTDM           tdm;
+
 AudioPlaySdMp3           playMp31; 
 AudioPlaySdAac           playAac1;  
-#ifdef PWMDAC
-AudioOutputAnalog        dac1;   
-AudioOutputPWM           pwm1;   
-#endif
-
-#ifdef AUDIO_BOARD
-AudioOutputI2S           i2s1;   
-#endif
 
 AudioMixer4              mixleft;
 AudioMixer4              mixright;
@@ -98,25 +82,14 @@ AudioConnection          patch2(playMp31,1,mixright,0);
 AudioConnection          patch1a(playAac1, 0, mixleft, 1);
 AudioConnection          patch2a(playAac1, 1, mixright, 1);
 
-#ifdef PWMDAC
-AudioConnection          patch3(mixleft,0,dac1,0);
-AudioConnection          patch4(mixright,0,pwm1,0);
-#endif
+AudioConnection          patch3(mixleft, 0, tdm, 0);
+AudioConnection          patch4(mixright, 0, tdm, 2);
+AudioControlCS42448      cs42448;
 
-#ifdef AUDIO_BOARD
-AudioConnection          patch5(mixleft, 0, i2s1, 0);
-AudioConnection          patch6(mixright, 0, i2s1, 1);
-//AudioControlSGTL5000     sgtl5000_1;     //xy=240,153
-using namespace BAGuitar;
-BAAudioControlWM8731      codecControl;
-//AudioControlWM8731       codecControl;       //xy=706,916
-
-#endif
-
-unsigned long numDirectories = 0;
 unsigned long currentDirectory = 0;
-String currentPath; 
+String currentPath;
 
+int  __bss_end = 0; // needed to compile, used in codecs.cpp : int AudioCodec::freeRam(void)
 
 long oldPosition = -999;
 long positionAtStartOfChange = 0;
@@ -124,21 +97,23 @@ unsigned long encHasntChangedSince = 0;
 boolean encoderChanged = false;
 
 bool readDirectory();
-void drawJpeg(const File &jpegFile, Adafruit_ST7735 &tft, int xpos, int ypos);
-void renderJPEG( Adafruit_ST7735 &tft, int xpos, int ypos);
+void drawJpeg(const File &jpegFile, ST7735_t3 &tft, int xpos, int ypos);
+void renderJPEG( ST7735_t3 &tft, int xpos, int ypos);
+void drawJpeg(const char *filename);
+
+void nexttrack();
+String getCurrentDir();
+void nextDirectory();
+void prevtrack();
+void pausetrack();
+void randomtrack();
+void controls();
+void serialcontrols();
 
 void setup() {
   Serial.begin(115200);
 
-  
-#ifdef AUDIO_BOARD
-  SPI.setMOSI(7);
-  SPI.setSCK(14);
 
-#endif
-
-
-  
   //setup pins with pullups
   pinMode(BUTTON1,INPUT_PULLUP);
   pinMode(BUTTON3,INPUT_PULLUP);
@@ -158,13 +133,8 @@ void setup() {
   // detailed information, see the MemoryAndCpuUsage example
   //AudioMemory(16);
 
-  codecControl.disable();
-  delay(100);
+  cs42448.enable();
   AudioMemory(24);
-
-  Serial.println("Enabling codec...\n");
-  codecControl.enable();
-  Serial.println("Enabled...\n");
   delay(100);
   
   //put the gain a bit lower, some MP3 files will clip otherwise.
@@ -172,7 +142,7 @@ void setup() {
   mixright.gain(0,0.5);
 
   //Start SD card
-  if (!(SD.begin(chipSelect))) {
+  if (!(SD.begin(BUILTIN_SDCARD))) {
     // stop here, but print a message repetitively
     while (1) {
       Serial.println("Unable to access the SD card");
@@ -180,10 +150,6 @@ void setup() {
     }
   } 
   Serial.println("started sdcard...\n");
-  //Starting to index the SD card for MP3/AAC.
-   
-
-
 
 
   tft.initR(INITR_GREENTAB); // initialize a ST7735R chip, green tab
@@ -347,6 +313,7 @@ void playFileAAC(const char *filename)
     serialcontrols();
   }
 }
+
 bool readDirectory() {
   tracknum = 0;
   currentPath = getCurrentDir();
@@ -637,7 +604,7 @@ void randomtrack(){
 
 
 
-void drawJpeg(const File &jpegFile, Adafruit_ST7735 &tft, int xpos, int ypos) {
+void drawJpeg(const File &jpegFile, ST7735_t3 &tft, int xpos, int ypos) {
 
   Serial.println("===========================");
   Serial.print("Drawing file: "); 
@@ -678,7 +645,7 @@ void drawJpeg(const File &jpegFile, Adafruit_ST7735 &tft, int xpos, int ypos) {
 //====================================================================================
 //   Decode and paint onto the TFT screen
 //====================================================================================
-void renderJPEG( Adafruit_ST7735 &tft, int xpos, int ypos) {
+void renderJPEG( ST7735_t3 &tft, int xpos, int ypos) {
 
   // retrieve infomration about the image
   uint16_t *pImg;

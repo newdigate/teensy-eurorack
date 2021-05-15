@@ -2,11 +2,11 @@
 #define TFTPROGRESSBAR_H
 
 #include "Arduino.h"
-#include <Adafruit_GFX.h> 
+#include <ST7735_t3.h> // Hardware-specific library
 
 class TFTProgressBar {
 public:
-  TFTProgressBar(Adafruit_GFX &tft) : _tft(tft) {
+  TFTProgressBar(ST7735_t3 &tft) : _tft(tft) {
     
   }
 
@@ -23,7 +23,7 @@ public:
   
 private: 
   unsigned _lastProgress = 0;
-  Adafruit_GFX &_tft;
+    ST7735_t3 &_tft;
  
 };
 

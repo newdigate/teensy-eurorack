@@ -1,9 +1,10 @@
-name: teensy40
+name: example-knobs-just-encoders
 
 on:
   push:
     paths:
       - 'software/src/**'
+      - 'software/examples/knobs/just_encoders/**'
       - '.github/workflows/**'
 
 jobs:
@@ -49,13 +50,6 @@ jobs:
 
       - uses: actions/checkout@v2
         with:
-          repository: PaulStoffregen/ST7735_t3.git
-          path: deps/ST7735_t3
-          fetch-depth: 1
-          ref: master
-
-      - uses: actions/checkout@v2
-        with:
           repository: PaulStoffregen/Audio.git
           path: deps/Audio
           fetch-depth: 1
@@ -90,36 +84,8 @@ jobs:
 
       - uses: actions/checkout@v2
         with:
-          repository: newdigate/teensy-audio-libtftscope.git
-          path: deps/teensy-audio-libtftscope
-          fetch-depth: 1
-          ref: main
-
-      - uses: actions/checkout@v2
-        with:
-          repository: newdigate/teensy-libcurve.git
-          path: deps/teensy-libcurve
-          fetch-depth: 1
-          ref: main
-
-      - uses: actions/checkout@v2
-        with:
           repository: thomasfredericks/Bounce2
           path: deps/Bounce2
-          fetch-depth: 1
-          ref: master
-
-      - uses: actions/checkout@v2
-        with:
-          repository: dxinteractive/ResponsiveAnalogRead
-          path: deps/ResponsiveAnalogRead
-          fetch-depth: 1
-          ref: master
-
-      - uses: actions/checkout@v2
-        with:
-          repository: FortySevenEffects/arduino_midi_library
-          path: deps/arduino_midi_library
           fetch-depth: 1
           ref: master
 
@@ -136,4 +102,4 @@ jobs:
         run: cd deps/teensy-cmake-macros && mkdir cmake-build-debug && cd cmake-build-debug && cmake -DCMAKE_BUILD_TYPE=Debug .. && sudo make install
 
       - name: build
-        run: cd software/src && mkdir cmake-build-debug && cd cmake-build-debug && cmake -DCMAKE_BUILD_TYPE=Debug .. && make
+        run: cd software/examples/knobs/just_encoders && mkdir cmake-build-debug && cd cmake-build-debug && cmake -DCMAKE_BUILD_TYPE=Debug .. && make
