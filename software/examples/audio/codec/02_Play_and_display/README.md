@@ -1,6 +1,6 @@
 # MP3, AAC audio player
 
-[![example-audio-player](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-audio-player.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-audio-player.yml)
+[![example-audio-codec-02-play_and_display](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-audio-codec-02_play_and_display.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-audio-codec-02_play_and_display.yml)
 
 ## Dependencies, code adaptions:
 * MP3/AAC library code by Frank Boesing.
