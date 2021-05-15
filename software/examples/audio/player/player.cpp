@@ -33,28 +33,21 @@
 #define minimum(a,b)     (((a) < (b)) ? (a) : (b))
 
 
-#define ENCODER_DO_NOT_USE_INTERRUPTS
+//#define ENCODER_DO_NOT_USE_INTERRUPTS
 #include <Encoder.h>
 
-#define BUTTON1 4  //NEXT
-#define BUTTON2 5  //Play Pause
-#define BUTTON3 6  //PREV 
-#define BUTTON4 30  //PREV 
-
 #include <ST7735_t3.h> // Hardware-specific library
-#include "tftprogressbar.h"
 #include "teensy_eurorack.h"
 
-Encoder myEnc(31, 32);
+Encoder myEnc(TEENSY_EURORACK_PIN_ENC2_A, TEENSY_EURORACK_PIN_ENC2_B);
 
 ST7735_t3 tft = ST7735_t3(TFT_CS, TFT_DC, TFT_RST);
 
-TFTProgressBar progressBar = TFTProgressBar(tft);
+//TFTProgressBar progressBar = TFTProgressBar(tft);
 
-Bounce bouncer1 = Bounce(BUTTON1, 50); 
-Bounce bouncer2 = Bounce(BUTTON2, 50); 
-Bounce bouncer3 = Bounce(BUTTON3, 50);
-Bounce bouncer4 = Bounce(BUTTON4, 50);
+Bounce bouncer1 = Bounce(TEENSY_EURORACK_PIN_ENC1_SW, 50); 
+Bounce bouncer2 = Bounce(TEENSY_EURORACK_PIN_ENC2_SW, 50); 
+Bounce bouncer3 = Bounce(TEENSY_EURORACK_PIN_ENC3_SW, 50);
 
 int track;
 int tracknum;
@@ -86,15 +79,12 @@ AudioConnection          patch3(mixleft, 0, tdm, 0);
 AudioConnection          patch4(mixright, 0, tdm, 2);
 AudioControlCS42448      cs42448;
 
-unsigned long currentDirectory = 0;
+long currentDirectory = 0;
 String currentPath;
 
 int  __bss_end = 0; // needed to compile, used in codecs.cpp : int AudioCodec::freeRam(void)
 
-long oldPosition = -999;
-long positionAtStartOfChange = 0;
-unsigned long encHasntChangedSince = 0;
-boolean encoderChanged = false;
+long oldPosition = 0;
 
 bool readDirectory();
 void drawJpeg(const File &jpegFile, ST7735_t3 &tft, int xpos, int ypos);
@@ -115,17 +105,18 @@ void setup() {
 
 
   //setup pins with pullups
-  pinMode(BUTTON1,INPUT_PULLUP);
-  pinMode(BUTTON3,INPUT_PULLUP);
-  pinMode(BUTTON2,INPUT_PULLUP);  
-  pinMode(BUTTON4,INPUT_PULLUP);  
+  pinMode(TEENSY_EURORACK_PIN_ENC1_SW,INPUT_PULLUP);
+  pinMode(TEENSY_EURORACK_PIN_ENC2_SW,INPUT_PULLUP);
+  pinMode(TEENSY_EURORACK_PIN_ENC3_SW,INPUT_PULLUP);  
+  pinMode(TEENSY_EURORACK_PIN_ENC1_A,INPUT_PULLUP);
+  pinMode(TEENSY_EURORACK_PIN_ENC1_B,INPUT_PULLUP);  
 
   //EEPROM.write(0, 0); 
   //EEPROM.write(1, 0);
   
   // reads the last track what was playing.
-  track = EEPROM.read(0); 
-  currentDirectory = EEPROM.read(1);
+  //track = EEPROM.read(0); 
+  //currentDirectory = EEPROM.read(1);
  //currentDirectory = 0;
  
   Serial.printf("dir: %d \t\t track: %d\n", currentDirectory, track);
@@ -133,9 +124,10 @@ void setup() {
   // detailed information, see the MemoryAndCpuUsage example
   //AudioMemory(16);
 
+  AudioMemory(160);
   cs42448.enable();
-  AudioMemory(24);
-  delay(100);
+  cs42448.volume(1);
+  AudioInterrupts(); 
   
   //put the gain a bit lower, some MP3 files will clip otherwise.
   mixleft.gain(0,0.5);
@@ -381,17 +373,14 @@ void controls() {
   bouncer1.update();
   bouncer2.update();
   bouncer3.update();
-  bouncer4.update();
+
   if ( bouncer1.fallingEdge()) { 
     nexttrack();
   }
   if ( bouncer2.fallingEdge()) {  
     pausetrack();
   }
-  if ( bouncer3.fallingEdge()) { 
-    prevtrack();
-  }  
-  if ( bouncer4.fallingEdge()) {
+  if ( bouncer3.fallingEdge()) {
     playMp31.stop();
     playAac1.stop();
     while (!readDirectory()) { 
@@ -403,21 +392,9 @@ void controls() {
 
   long newPosition = myEnc.read();
   if (newPosition != oldPosition) {
-    if (!encoderChanged) {
       oldPosition = newPosition;
-    //Serial.println(newPosition);
-      encHasntChangedSince = millis();
-    }
-    encoderChanged = true;
-    if (encoderChanged && millis() - encHasntChangedSince >= 100) {
-      signed char delta = delta = (newPosition > oldPosition)? 1 : -1;
-      oldPosition = newPosition;
-
-
-
-
-      
-      currentDirectory += delta;
+   
+      currentDirectory = newPosition / 4;
       Serial.printf("currentDirectory %d \n", currentDirectory);
 
       tft.fillScreen(ST7735_BLACK);
@@ -426,8 +403,6 @@ void controls() {
       tft.setTextColor(ST7735_GREEN);   
       tft.print(currentDirectory);
       tft.print("\n");
-      encoderChanged = false;
-   }
   }
 }
 
