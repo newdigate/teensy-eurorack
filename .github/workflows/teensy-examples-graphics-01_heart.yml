@@ -6,6 +6,7 @@ on:
       - 'software/src/**'
       - 'software/examples/graphics/01_heart/**'
       - '.github/workflows/**'
+      - '!**.md'
 
 jobs:
   build:

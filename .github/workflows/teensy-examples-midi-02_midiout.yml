@@ -6,6 +6,7 @@ on:
       - 'software/src/**'
       - 'software/examples/midi/02_MidiOut/**'
       - '.github/workflows/**'
+      - '!**.md'
 
 jobs:
   build:

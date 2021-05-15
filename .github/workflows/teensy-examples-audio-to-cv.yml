@@ -6,6 +6,7 @@ on:
       - 'software/src/**'
       - 'software/examples/audio/audio_to_cv/01_audio_to_cv/**'
       - '.github/workflows/**'
+      - '!**.md'
 
 jobs:
   build:

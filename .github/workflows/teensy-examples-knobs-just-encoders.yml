@@ -6,6 +6,7 @@ on:
       - 'software/src/**'
       - 'software/examples/knobs/just_encoders/**'
       - '.github/workflows/**'
+      - '!**.md'
 
 jobs:
   build:

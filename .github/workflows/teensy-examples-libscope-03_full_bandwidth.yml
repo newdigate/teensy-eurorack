@@ -6,6 +6,7 @@ on:
       - 'software/src/**'
       - 'software/examples/audio/libscope/03_full_bandwidth/**'
       - '.github/workflows/**'
+      - '!**.md'
 
 jobs:
   build:
