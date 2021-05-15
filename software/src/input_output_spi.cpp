@@ -291,7 +291,7 @@ void AudioInputOutputSPI::tx_complete_isr(void)
 void AudioInputOutputSPI::update(void)
 {
 
-    unsigned int i, j;
+    unsigned int i;
 
     audio_block_t *out_block[8];
 
