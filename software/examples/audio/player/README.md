@@ -1,5 +1,7 @@
 # MP3, AAC audio player
 
+[![example-audio-player](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-audio-player.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-audio-player.yml)
+
 ## Dependencies, code adaptions:
 * MP3/AAC library code by Frank Boesing.
   * https://github.com/FrankBoesing/Arduino-Teensy-Codec-lib
