@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - 'software/src/**'
-      - 'software/examples/audio/player/**'
+      - 'software/examples/audio/codec/01_Mp3FilePlayer/**'
       - '.github/workflows/**'
       - '!**.md'
 
@@ -124,4 +124,4 @@ jobs:
         run: cd deps/teensy-cmake-macros && mkdir cmake-build-debug && cd cmake-build-debug && cmake -DCMAKE_BUILD_TYPE=Debug .. && sudo make install
 
       - name: build
-        run: cd software/examples/audio/player && mkdir cmake-build-debug && cd cmake-build-debug && cmake -DCMAKE_BUILD_TYPE=Debug .. && make
+        run: cd software/examples/audio/codec/01_Mp3FilePlayer && mkdir cmake-build-debug && cd cmake-build-debug && cmake -DCMAKE_BUILD_TYPE=Debug .. && make
