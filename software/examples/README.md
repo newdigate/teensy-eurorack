@@ -51,8 +51,13 @@
 
 * [knobs](knobs)
   * [knobs/just_encoders](knobs/just_encoders)
+    * read values of 3 rotary encoders
+    * output changes on serial monitor
   * [knobs/just_encoders_and_display](knobs/just_encoders_and_display)
-
+    * read values of 3 rotary encoders
+    * output changes on serial monitor
+    * initialize st7735 and display some text
+  
 [midi](midi)
  * [midi/01_MidiIn_display](midi/01_MidiIn_display)
  * [midi/02_MidiOut](midi/02_MidiOut)
