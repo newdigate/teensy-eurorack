@@ -1,3 +1,5 @@
+# [examples](examples)
+
 # software libraries
  * simple standard midi file reader 
    * [midi-smf-reader](https://github.com/newdigate/midi-smf-reader)
@@ -9,6 +11,9 @@
    * [teensy-audio-libtftscope](https://github.com/newdigate/teensy-audio-libtftscope)
  * Audio level and CV level meters 
    * [teensy-audio-display-components](https://github.com/newdigate/teensy-audio-display-components)
+ * teensy-libcurve 
+   * [teensy-libcurve](https://github.com/newdigate/teensy-libcurve)
+   * draw beziers and antialiased lines
 
 # build dependencies
 * cmake macros for compiling c++ for arm cortex
