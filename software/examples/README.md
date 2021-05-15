@@ -36,8 +36,9 @@
     * play .mp3 and .aac audio files from micro SD card
     * read mp3 tags
     * display jpeg of album cover if available
+    * use rotary encoder to change directory
+    * use buttons to pause/play, next, load-directory
  
-
 * [audio/simple_scope](audio/simple_scope)
   * [audio/simple_scope/01_audiocv_scope](audio/simple_scope/01_audiocv_scope)
     * display graph of incoming audio and cv (no dependencies) 
@@ -77,7 +78,9 @@
 
 [![example-audio-libscope-input](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-libscope-02_input_scopes.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-libscope-02_input_scopes.yml)
 
-[![example-audio-player](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-audio-player.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-audio-player.yml)
+[![example-audio-codec-01-mp3fileplayer](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-audio-codec-01_mp3fileplayer.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-audio-codec-01_mp3fileplayer.yml)
+
+[![example-audio-codec-02-play_and_display](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-audio-codec-02_play_and_display.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-audio-codec-02_play_and_display.yml)
 
 [![example-audio-thru](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-audio-thru_with_scope.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-audio-thru_with_scope.yml)
 
