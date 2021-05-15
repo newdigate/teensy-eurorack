@@ -8,7 +8,7 @@
   
 
 * [audio](audio): examples using teensy audio library
-  * [audio/audio_to_cv](audio/audio_to_cv)
+  * [audio/audio_to_cv/01_audio_to_cv](audio/audio_to_cv/01_audio_to_cv)
     * route audio in -> audio out 
     * display audio in wave graph
   * [audio/audio_to_cv/01_audio_to_cv](audio/audio_to_cv/01_audio_to_cv) 
