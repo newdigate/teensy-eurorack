@@ -1,0 +1,113 @@
+name: example-audio-display-levels-01
+
+on:
+  push:
+    paths:
+      - 'software/src/**'
+      - 'software/examples/audio/display_levels/01_display_levels/**'
+      - '.github/workflows/**'
+      - '!**.md'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/checkout@v2
+        with:
+          repository: newdigate/teensy-cmake-macros
+          path: deps/teensy-cmake-macros
+
+      - uses: actions/checkout@v2
+        with:
+          repository: PaulStoffregen/cores.git
+          path: deps/cores
+          fetch-depth: 1
+          ref: master
+
+      - uses: actions/checkout@v2
+        with:
+          repository: PaulStoffregen/SD.git
+          path: deps/SD
+          fetch-depth: 1
+          ref: Juse_Use_SdFat
+
+      - uses: actions/checkout@v2
+        with:
+          repository: greiman/SdFat.git
+          path: deps/SdFat
+          fetch-depth: 1
+          ref: master
+
+      - uses: actions/checkout@v2
+        with:
+          repository: PaulStoffregen/SPI.git
+          path: deps/SPI
+          fetch-depth: 1
+          ref: master
+
+      - uses: actions/checkout@v2
+        with:
+          repository: PaulStoffregen/ST7735_t3.git
+          path: deps/ST7735_t3
+          fetch-depth: 1
+          ref: master
+
+      - uses: actions/checkout@v2
+        with:
+          repository: PaulStoffregen/Audio.git
+          path: deps/Audio
+          fetch-depth: 1
+          ref: master
+
+      - uses: actions/checkout@v2
+        with:
+          repository: PaulStoffregen/Encoder.git
+          path: deps/Encoder
+          fetch-depth: 1
+          ref: master
+
+      - uses: actions/checkout@v2
+        with:
+          repository: PaulStoffregen/SerialFlash.git
+          path: deps/SerialFlash
+          fetch-depth: 1
+          ref: master
+
+      - uses: actions/checkout@v2
+        with:
+          repository: PaulStoffregen/arm_math.git
+          path: deps/arm_math
+          ref: master
+
+      - uses: actions/checkout@v2
+        with:
+          repository: PaulStoffregen/Wire.git
+          path: deps/Wire
+          fetch-depth: 1
+          ref: master
+
+      - uses: actions/checkout@v2
+        with:
+          repository: newdigate/teensy-audio-display-components
+          path: deps/teensy-audio-display-components
+          fetch-depth: 1
+          ref: main
+
+      - name: download toolchain
+        run: |
+          curl  -L "https://developer.arm.com/-/media/Files/downloads/gnu-rm/9-2019q4/RC2.1/gcc-arm-none-eabi-9-2019-q4-major-x86_64-linux.tar.bz2" --output /tmp/gcc-arm-none-eabi.tar.bz2
+          mkdir -p /opt
+          cd /opt
+          tar xjf /tmp/gcc-arm-none-eabi.tar.bz2
+          rm /tmp/gcc-arm-none-eabi.tar.bz2
+          echo "/opt/gcc-arm-none-eabi-9-2019-q4-major/bin"
+
+      - name: install teensy-cmake-macros
+        run: cd deps/teensy-cmake-macros && mkdir cmake-build-debug && cd cmake-build-debug && cmake -DCMAKE_BUILD_TYPE=Debug .. && sudo make install
+
+      - name: build
+        run: cd software/examples/audio/display_levels/01_display_levels && mkdir cmake-build-debug && cd cmake-build-debug && cmake -DCMAKE_BUILD_TYPE=Debug .. && make
