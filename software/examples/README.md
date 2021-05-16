@@ -72,6 +72,8 @@
 
 [![example-ad5754-02](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-ad5754-02.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-ad5754-02.yml)
 
+[![example-audio-display-levels-01](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-audio-display-levels-01.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-audio-display-levels-01.yml)
+
 [![example-audio-libscope-audio-only](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-libscope-04_audio_only_full_bandwidth.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-libscope-04_audio_only_full_bandwidth.yml)
 
 [![example-audio-libscope-fullbandwidth](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-libscope-03_full_bandwidth.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy-examples-libscope-03_full_bandwidth.yml)
