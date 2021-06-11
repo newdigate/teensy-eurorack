@@ -16,6 +16,7 @@
   * analog line audio (6 in / 8 out)
   * analog control voltages (8 in / 8 out: -10 to +10 volts)
   * midi in/out
+* [teensy eurorack audio gui](https://newdigate.github.io/teensy-eurorack-audio-gui)
 
 <img src='hardware/images/teensy-eurorack.svg' width='250px'/>
 
