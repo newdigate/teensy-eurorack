@@ -19,6 +19,7 @@
   * midi in/out
   * microSD socket breakout
   * USB-A host and USB-B devices
+  * 4 potentiometers, 3 encoders w/switch
 * online designer [teensy eurorack audio gui](https://newdigate.github.io/teensy-eurorack-audio-gui) [^](https://github.com/newdigate/teensy-eurorack-audio-gui)
 
 # contents
