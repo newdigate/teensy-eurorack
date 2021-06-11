@@ -1,6 +1,7 @@
 // Plays a RAW (16-bit signed) PCM audio file at slower or faster rate
 #include <Arduino.h>
 #include <Audio.h>
+#include <Bounce.h>
 #include <ResponsiveAnalogRead.h>
 #include "playarrayresmp.h"
 #include "teensy_eurorack.h"
@@ -14,8 +15,10 @@ AudioControlCS42448      cs42448;      //xy=475,513
 // GUItool: end automatically generated code
 
 ResponsiveAnalogRead analogPot1(TEENSY_EURORACK_PIN_POT1, true, 1.0);
+Bounce button0 = Bounce(TEENSY_EURORACK_PIN_ENC1_SW, 15);
 extern unsigned int kick_raw_len;
 extern unsigned char kick_raw[];
+bool toggleInterpolation = true;
 
 void setup() {
     Serial.begin(9600);
@@ -23,22 +26,31 @@ void setup() {
     cs42448.enable();
     cs42448.volume(1.0f);
     
-    pinMode(TEENSY_EURORACK_PIN_POT1, INPUT_DISABLE);
+    pinMode(TEENSY_EURORACK_PIN_POT1, INPUT_DISABLE);   // i.e. Analog
+    pinMode(TEENSY_EURORACK_PIN_ENC1_SW, INPUT_PULLUP);
+    
     analogReadResolution(12);
     analogPot1.enableEdgeSnap();
     analogPot1.setAnalogResolution(4096);
     
-    rraw_a1.enableInterpolation(true);    
+    rraw_a1.enableInterpolation(toggleInterpolation);    
 }
 
 void loop() {
+    button0.update();
     analogPot1.update();
     if(analogPot1.hasChanged()) {
         float ff = (analogPot1.getValue()/2048.0) - 1.0f;
         rraw_a1.setPlaybackRate(ff);
-        Serial.printf("rate changed to %f", ff);
+        //Serial.printf("rate changed to %f", ff);
     }
-  
+    
+    if (button0.fallingEdge()) {
+        toggleInterpolation = !toggleInterpolation;
+        rraw_a1.enableInterpolation(toggleInterpolation);
+        Serial.printf("Interpolation %i\n", toggleInterpolation );
+    }
+    
     if (!rraw_a1.isPlaying()) {
         delay(500);
         rraw_a1.play((int16_t *)kick_raw, kick_raw_len/2);
