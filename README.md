@@ -8,7 +8,8 @@
 [![built with kicad](https://img.shields.io/badge/project-v5.1.6-brightgreen.svg?label=kicad&colorA=555555&colorB=8a8fff&logo=
 )](https://kicad-pcb.org/)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
--------------------------------
+
+<img src='hardware/images/teensy-eurorack.svg' width='250px'/>
 
 **open source [hardware](hardware) and [software](software) for a 30-channel (14 in / 16 out) 16-bit analog [teensy 4.1](https://www.pjrc.com/store/teensy40.html "teensy 4.1 board") eurorack shield** 
 
@@ -16,8 +17,12 @@
   * analog line audio (6 in / 8 out)
   * analog control voltages (8 in / 8 out: -10 to +10 volts)
   * midi in/out
+  * microSD socket breakout
+  * USB-A host and USB-B devices
+  * 4 potentiometers, 3 encoders w/switch
+* online designer [teensy eurorack audio gui](https://newdigate.github.io/teensy-eurorack-audio-gui) [^](https://github.com/newdigate/teensy-eurorack-audio-gui)
 
-<img src='hardware/images/teensy-eurorack.svg' width='250px'/>
+# contents
 
 * [sponsor](#sponsor)
 * [specifications](#specifications)
