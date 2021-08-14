@@ -11,7 +11,7 @@
 
 <img src='hardware/images/teensy-eurorack.svg' width='250px'/>
 
-**open source [hardware](hardware) and [software](software) for a 30-channel (14 in / 16 out) 16-bit analog [teensy 4.1](https://www.pjrc.com/store/teensy40.html "teensy 4.1 board") eurorack shield** 
+**open source [hardware](hardware) and [software](https://github.com/newdigate/teensy-eurorack-software) for a 30-channel (14 in / 16 out) 16-bit analog [teensy 4.1](https://www.pjrc.com/store/teensy40.html "teensy 4.1 board") eurorack shield** 
 
 * add peripherals to extend your [teensy 4.1](https://www.pjrc.com/store/teensy40.html "teensy 4.1 board") to interface with 
   * analog line audio (6 in / 8 out)
@@ -22,8 +22,10 @@
   * 4 potentiometers, 3 encoders w/switch
 * online designer [teensy eurorack audio gui](https://newdigate.github.io/teensy-eurorack-audio-gui) [^](https://github.com/newdigate/teensy-eurorack-audio-gui)
 
-# contents
+* updates 
+  * 14 August 2021 : software and examples have moved to this repo [newdigate/teensy-eurorack-software](https://github.com/newdigate/teensy-eurorack-software)
 
+# contents
 * [sponsor](#sponsor)
 * [specifications](#specifications)
 * [license](#license)
