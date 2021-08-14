@@ -22,7 +22,7 @@
   * 4 potentiometers, 3 encoders w/switch
 * online designer [teensy eurorack audio gui](https://newdigate.github.io/teensy-eurorack-audio-gui) [^](https://github.com/newdigate/teensy-eurorack-audio-gui)
 
-* updates 
+# updates 
   * 14 August 2021 : software and examples have moved to this repo [newdigate/teensy-eurorack-software](https://github.com/newdigate/teensy-eurorack-software)
 
 # contents
