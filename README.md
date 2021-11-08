@@ -6,7 +6,7 @@
 [![kicad pcb ops CI](https://github.com/newdigate/teensy-eurorack/workflows/kicad%20pcb%20ops%20CI/badge.svg?branch=master)](https://github.com/newdigate/teensy-eurorack/actions?query=branch%3Amaster)
 [![teensy40](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy.yml)
 [![built with kicad](https://img.shields.io/badge/project-v5.1.6-brightgreen.svg?label=kicad&colorA=555555&colorB=8a8fff&logo=
-)](https://kicad-pcb.org/)
+)](https://kicad.org/)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 <img src='hardware/images/teensy-eurorack.svg' width='250px'/>
@@ -79,7 +79,7 @@
 * All artifacts are MIT license unless otherwise specified on a per file basis.
 
 # open source software stack
-* All [schematics](hardware/CIRCUITS.md) and boards are created using [Kicad](http://kicad-pcb.org/) 
+* All [schematics](hardware/CIRCUITS.md) and boards are created using [Kicad](https://kicad.org/) 
 * All mechanical designs are created using [FreeCAD](https://github.com/FreeCAD/FreeCAD)
 * Some images have been rendered using [Blender 2.81](https://www.blender.org/)
 
