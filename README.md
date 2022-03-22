@@ -14,7 +14,7 @@
 
 Sponsored by:
 
-<a href="pcbway.com"><img src='https://pcbwayfile.s3-us-west-2.amazonaws.com/project/21/05/05/0141152434522.jpg' width='125px'/></a>
+<a href="https://pcbway.com"><img src='https://pcbwayfile.s3-us-west-2.amazonaws.com/project/21/05/05/0141152434522.jpg' width='125px'/></a>
 
 **open source [hardware](hardware) and [software](https://github.com/newdigate/teensy-eurorack-software) for a 30-channel (14 in / 16 out) 16-bit analog [teensy 4.1](https://www.pjrc.com/store/teensy40.html "teensy 4.1 board") eurorack shield** 
 
