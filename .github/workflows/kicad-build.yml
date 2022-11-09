@@ -23,7 +23,7 @@ jobs:
     - name: checkout
       uses: actions/checkout@v2
     - name: package schematic and pcbs
-      id: hello
+      id: hello1
       uses: newdigate/kicad-github-action@v1.0.9
       with:
         kicad-project-path: "hardware/boards"
