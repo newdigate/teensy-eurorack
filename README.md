@@ -59,7 +59,6 @@ Sponsored by:
 
 # sponsor
 * [patreon/teensy_eurorack](https://www.patreon.com/teensy_eurorack)
-* BitCoin: bc1qxkm5nhzf5wqhgtxx8fcqw328z2jxhv25qmm2d9
 * paypal.me: [paypal.me/nicnewdigate](https://paypal.me/nicnewdigate)
 
 # specifications
@@ -120,7 +119,7 @@ Most parts are available from mouser.com - you can use the mouser BOMs below as 
   * 4 x 9mm snap-in pots: [alpha-9mm-pots](https://www.thonk.co.uk/shop/alpha-9mm-pots/) - You want linear (B-series) not audio (A-series) B5K or B10K should be ideal.
   * 3 x rotary encoders w/switches: Alps_EC12E-Switch_Vertical_H20mm_CircularMountingHoles
 
-**Caution**: On the BOM I have substituted USB-A socket: samtec USB-A-S-X-X-VT no longer seems to be available, so I have replaced with Samtec USB-A-S-F-B-TH, it looks very similar, will update when I've managed to test. 
+**Correction**: On the BOM I have wrong USB-A socket: please use samtec USB-A-S-X-X-VT. Samtec USB-A-S-F-B-TH is right angle and not suitable
 
 ## interactive html boms online
   * [mainboard](https://newdigate.github.io/teensy-eurorack/teensy-eurorack)
@@ -294,5 +293,4 @@ Massive thanks to these generous people who have provided support!
 * Daniel Hengeveld [thedaniel on github](https://github.com/thedaniel)
 * Derek Brost
 * Martin Eigel
-
-(just testing)
+* Morgan Massens
