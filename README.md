@@ -119,7 +119,7 @@ Most parts are available from mouser.com - you can use the mouser BOMs below as 
   * 4 x 9mm snap-in pots: [alpha-9mm-pots](https://www.thonk.co.uk/shop/alpha-9mm-pots/) - You want linear (B-series) not audio (A-series) B5K or B10K should be ideal.
   * 3 x rotary encoders w/switches: Alps_EC12E-Switch_Vertical_H20mm_CircularMountingHoles
 
-**Update**: USB-A-S-X-X-VT is no longer available. (Amphenol Commercial Products GSB11111ALF)[Amphenol Commercial Products GSB11111ALF] looks like it may be a good replacement.
+**Update**: USB-A-S-X-X-VT is no longer available. [Amphenol Commercial Products GSB11111ALF](https://mou.sr/3OmC2OO) looks like it may be a good replacement.
 
 ## interactive html boms online
   * [mainboard](https://newdigate.github.io/teensy-eurorack/teensy-eurorack)
