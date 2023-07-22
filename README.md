@@ -115,6 +115,7 @@ Most parts are available from mouser.com - you can use the mouser BOMs below as 
 * breakout:
   * uSD card socket: [pjs008u-3000-0 yamaichi](https://octopart.com/pjs008u-3000-0-yamaichi-20649952?r=sp)
   * display: ST7735 (1.44 inch TFT LCD ST7735 SPI display module 128*128 8pin 65K color)
+    <img src='hardware/images/st7735.jpg' width='200px'/>
   * 16 x thonkiconns: [PJ398SM](https://www.thonk.co.uk/shop/thonkiconn)
   * 4 x 9mm snap-in pots: [alpha-9mm-pots](https://www.thonk.co.uk/shop/alpha-9mm-pots/) - You want linear (B-series) not audio (A-series) B5K or B10K should be ideal.
   * 3 x rotary encoders w/switches: Alps_EC12E-Switch_Vertical_H20mm_CircularMountingHoles
